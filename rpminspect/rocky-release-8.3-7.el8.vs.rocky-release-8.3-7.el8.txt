@@ -1,0 +1,407 @@
+rpminspect:
+-----------
+1) version
+
+Result: INFO
+Waiver Authorization: Not Waivable
+
+Details:
+rpminspect version 1.4
+
+
+
+2) command line
+
+Result: INFO
+Waiver Authorization: Not Waivable
+
+Details:
+rpminspect -v -c /home/vagrant/rpminspect/rocky.yaml -E virus,javabytecode --output=rocky-release-8.3-7.el8.vs.rocky-release-8.3-7.el8.txt rocky-release-8.3-7.el8 rocky-release-8.3-8.el8
+
+
+
+license:
+--------
+1) Valid License Tag in rocky-gpg-keys-8.3-8.el8.noarch: GPLv2
+
+Result: INFO
+Waiver Authorization: Not Waivable
+
+
+
+2) Valid License Tag in rocky-repos-8.3-8.el8.noarch: GPLv2
+
+Result: INFO
+Waiver Authorization: Not Waivable
+
+
+
+3) Valid License Tag in rocky-release-8.3-8.el8.noarch: GPLv2
+
+Result: INFO
+Waiver Authorization: Not Waivable
+
+
+
+4) Valid License Tag in rocky-release-8.3-8.el8.noarch: GPLv2
+
+Result: INFO
+Waiver Authorization: Not Waivable
+
+
+
+Result: OK
+Waiver Authorization: Not Waivable
+
+
+
+empty-payload:
+--------------
+Result: OK
+Waiver Authorization: Not Waivable
+
+
+
+lost-payload:
+-------------
+Result: OK
+Waiver Authorization: Not Waivable
+
+
+
+header-metadata:
+----------------
+Result: OK
+Waiver Authorization: Not Waivable
+
+
+
+man-pages:
+----------
+Result: OK
+Waiver Authorization: Not Waivable
+
+
+
+xml-files:
+----------
+Result: OK
+Waiver Authorization: Not Waivable
+
+
+
+elf-object-properties:
+----------------------
+Result: OK
+Waiver Authorization: Not Waivable
+
+
+
+desktop-entry-files:
+--------------------
+Result: OK
+Waiver Authorization: Not Waivable
+
+
+
+dist-tag:
+---------
+Result: OK
+Waiver Authorization: Not Waivable
+
+
+
+spec-file-name:
+---------------
+Result: OK
+Waiver Authorization: Not Waivable
+
+
+
+changed-files:
+--------------
+1) File /etc/issue changed content on noarch.
+
+Result: VERIFY
+Waiver Authorization: Anyone
+
+
+
+2) File /etc/issue.net changed content on noarch.
+
+Result: VERIFY
+Waiver Authorization: Anyone
+
+
+
+moved-files:
+------------
+Result: OK
+Waiver Authorization: Not Waivable
+
+
+
+removed-files:
+--------------
+Result: OK
+Waiver Authorization: Not Waivable
+
+
+
+added-files:
+------------
+Result: OK
+Waiver Authorization: Not Waivable
+
+
+
+upstream:
+---------
+1) New upstream source file `Rocky-issue` appeared
+
+Result: VERIFY
+Waiver Authorization: Anyone
+
+Suggested Remedy:
+Unexpected changed source archive content.  The version of the package did not change between builds, but the source archive content did.  This may be deliberate, but needs inspection.
+
+ownership:
+----------
+Result: OK
+Waiver Authorization: Not Waivable
+
+
+
+shell-syntax:
+-------------
+Result: OK
+Waiver Authorization: Not Waivable
+
+
+
+annocheck:
+----------
+Result: OK
+Waiver Authorization: Not Waivable
+
+
+
+dso-deps:
+---------
+Result: OK
+Waiver Authorization: Not Waivable
+
+
+
+filesize:
+---------
+1) /etc/issue grew by 3% on noarch
+
+Result: INFO
+Waiver Authorization: Not Waivable
+
+
+
+2) /etc/issue.net grew by 3% on noarch
+
+Result: INFO
+Waiver Authorization: Not Waivable
+
+
+
+Result: OK
+Waiver Authorization: Not Waivable
+
+
+
+permissions:
+------------
+Result: OK
+Waiver Authorization: Not Waivable
+
+
+
+capabilities:
+-------------
+Result: OK
+Waiver Authorization: Not Waivable
+
+
+
+kernel-modules:
+---------------
+Result: OK
+Waiver Authorization: Not Waivable
+
+
+
+changelog:
+----------
+1) %changelog modified between the rocky-release-8.3-7.el8 and rocky-release-8.3-8.el8 builds
+
+Result: INFO
+Waiver Authorization: Not Waivable
+
+Details:
+@@ -1,3 +1,7 @@
++* Sun Apr 18 2021 Louis Abel <label@rockylinux.org> - 8.3-8
++- Emphasize that this is not a production ready release
++- rpmlint
++
+ * Wed Apr 14 2021 Louis Abel <label@rockylinux.org> - 8.3-7
+ - Fix mantis links
+
+
+
+
+path-migration:
+---------------
+Result: OK
+Waiver Authorization: Not Waivable
+
+
+
+lto:
+----
+Result: OK
+Waiver Authorization: Not Waivable
+
+
+
+symlinks:
+---------
+Result: OK
+Waiver Authorization: Not Waivable
+
+
+
+files:
+------
+Result: OK
+Waiver Authorization: Not Waivable
+
+
+
+types:
+------
+Result: OK
+Waiver Authorization: Not Waivable
+
+
+
+abidiff:
+--------
+Result: OK
+Waiver Authorization: Not Waivable
+
+
+
+kmidiff:
+--------
+Result: OK
+Waiver Authorization: Not Waivable
+
+
+
+config:
+-------
+1) %config file content change for /etc/issue in rocky-release on noarch
+
+Result: VERIFY
+Waiver Authorization: Anyone
+
+Details:
+--- /var/tmp/rpminspect/rocky-release-8.3.pROmm0/before/noarch/rocky-release-8.3-7.el8.noarch//etc/issue	2021-04-23 06:33:38.631603205 +0000
++++ /var/tmp/rpminspect/rocky-release-8.3.pROmm0/after/noarch/rocky-release-8.3-8.el8.noarch//etc/issue	2021-04-23 06:33:35.846499853 +0000
+@@ -1,4 +1,4 @@
+-    `.-/+++++++++/-.`
++    [0;32m`.-/+++++++++/-.`
+   `-+++++++++++++++++-`
+  .+++++++++++++++++++++.
+ -+++++++++++++++++++++++.
+@@ -10,11 +10,11 @@
+  .+++-`   ./+++++++++:`
+   `-`   ./+++++++++++-
+        -+++++++++:-.`
++[0m
++[1;31mWARNING: THIS RELEASE IS NOT FOR PRODUCTION. YOU SHOULD NOT UPDATE FROM THIS
++         INSTALLATION. THIS INSTALLATION IS NOT SUPPORTED.[0m
+
+-WARNING: THIS RELEASE IS NOT FOR PRODUCTION. YOU CANNOT AND SHOULD NOT UPDATE
+-         FROM THIS INSTALLATION. THIS INSTALLATION IS NOT SUPPORTED.
+-
+-         PLEASE REPORT ALL PRE-PRODUCTION BUGS OR ISSUES TO OUR BUG TRACKER AT:
++         [1;32mPLEASE REPORT ALL PRE-PRODUCTION BUGS OR ISSUES TO OUR BUG TRACKER AT:[0m
+          https://bugs.rockylinux.org
+
+ \S -- TEST RELEASE -- EVALUATION ONLY
+
+Suggested Remedy:
+Changes to %config should be done carefully.  Make sure you have installed the correct file and in the correct location.  If a package is restructuring configuration files, make sure the package can handle upgrading an existing package -or- honor the old file locations.
+
+2) %config file content change for /etc/issue.net in rocky-release on noarch
+
+Result: VERIFY
+Waiver Authorization: Anyone
+
+Details:
+--- /var/tmp/rpminspect/rocky-release-8.3.pROmm0/before/noarch/rocky-release-8.3-7.el8.noarch//etc/issue.net	2021-04-23 06:33:38.631603205 +0000
++++ /var/tmp/rpminspect/rocky-release-8.3.pROmm0/after/noarch/rocky-release-8.3-8.el8.noarch//etc/issue.net	2021-04-23 06:33:35.846499853 +0000
+@@ -1,4 +1,4 @@
+-    `.-/+++++++++/-.`
++    [0;32m`.-/+++++++++/-.`
+   `-+++++++++++++++++-`
+  .+++++++++++++++++++++.
+ -+++++++++++++++++++++++.
+@@ -10,11 +10,11 @@
+  .+++-`   ./+++++++++:`
+   `-`   ./+++++++++++-
+        -+++++++++:-.`
++[0m
++[1;31mWARNING: THIS RELEASE IS NOT FOR PRODUCTION. YOU SHOULD NOT UPDATE FROM THIS
++         INSTALLATION. THIS INSTALLATION IS NOT SUPPORTED.[0m
+
+-WARNING: THIS RELEASE IS NOT FOR PRODUCTION. YOU CANNOT AND SHOULD NOT UPDATE
+-         FROM THIS INSTALLATION. THIS INSTALLATION IS NOT SUPPORTED.
+-
+-         PLEASE REPORT ALL PRE-PRODUCTION BUGS OR ISSUES TO OUR BUG TRACKER AT:
++         [1;32mPLEASE REPORT ALL PRE-PRODUCTION BUGS OR ISSUES TO OUR BUG TRACKER AT:[0m
+          https://bugs.rockylinux.org
+
+ \S -- TEST RELEASE -- EVALUATION ONLY
+
+Suggested Remedy:
+Changes to %config should be done carefully.  Make sure you have installed the correct file and in the correct location.  If a package is restructuring configuration files, make sure the package can handle upgrading an existing package -or- honor the old file locations.
+
+doc:
+----
+Result: OK
+Waiver Authorization: Not Waivable
+
+
+
+patches:
+--------
+Result: OK
+Waiver Authorization: Not Waivable
+
+
+
+politics:
+---------
+Result: OK
+Waiver Authorization: Not Waivable
+
+
+
+bad-functions:
+--------------
+Result: OK
+Waiver Authorization: Not Waivable
+
+
+
+runpath:
+--------
+Result: OK
+Waiver Authorization: Not Waivable

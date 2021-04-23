@@ -1,0 +1,123 @@
+rpminspect:
+-----------
+1) version
+
+Result: INFO
+Waiver Authorization: Not Waivable
+
+Details:
+rpminspect version 1.4
+
+
+
+2) command line
+
+Result: INFO
+Waiver Authorization: Not Waivable
+
+Details:
+/usr/bin/rpminspect -c /usr/share/rpminspect/fedora.yaml -T abidiff --verbose --format=text --output=rpminspect-fedora.abidiff.verbose.runc-1.0.0-56.rc5.dev.git2abd837.module_el8.3.0+569+1bada2e4.x86_64.rpm.vs.runc-1.0.0-64.rc10.module_el8.3.0+479+69e2ae26.x86_64.rpm.txt runc-1.0.0-56.rc5.dev.git2abd837.module_el8.3.0+569+1bada2e4.x86_64.rpm runc-1.0.0-64.rc10.module_el8.3.0+479+69e2ae26.x86_64.rpm
+
+
+
+abidiff:
+--------
+1) Comparing old vs. new version of /usr/bin/runc in package runc on x86_64 revealed ABI differences.
+
+Result: BAD
+Waiver Authorization: Anyone
+
+Details:
+Command: abidiff /before/runc-1.0.0-56.rc5.dev.git2abd837.module_el8.3.0+569+1bada2e4.x86_64//usr/bin/runc /after/runc-1.0.0-64.rc10.module_el8.3.0+479+69e2ae26.x86_64//usr/bin/runc
+
+Functions changes summary: 0 Removed, 0 Changed, 0 Added function
+Variables changes summary: 0 Removed, 0 Changed, 0 Added variable
+Function symbols changes summary: 44 Removed, 28 Added function symbols not referenced by debug info
+Variable symbols changes summary: 0 Removed, 2 Added variable symbols not referenced by debug info
+
+44 Removed function symbols not referenced by debug info:
+
+  [D] _cgo_0504433a81c8_Cfunc__Cmalloc
+  [D] _cgo_0504433a81c8_Cfunc_add_struct_arg_cmp
+  [D] _cgo_0504433a81c8_Cfunc_free
+  [D] _cgo_0504433a81c8_Cfunc_get_major_version
+  [D] _cgo_0504433a81c8_Cfunc_get_micro_version
+  [D] _cgo_0504433a81c8_Cfunc_get_minor_version
+  [D] _cgo_0504433a81c8_Cfunc_make_arg_cmp_array
+  [D] _cgo_0504433a81c8_Cfunc_seccomp_arch_add
+  [D] _cgo_0504433a81c8_Cfunc_seccomp_arch_exist
+  [D] _cgo_0504433a81c8_Cfunc_seccomp_arch_native
+  [D] _cgo_0504433a81c8_Cfunc_seccomp_arch_remove
+  [D] _cgo_0504433a81c8_Cfunc_seccomp_attr_get
+  [D] _cgo_0504433a81c8_Cfunc_seccomp_attr_set
+  [D] _cgo_0504433a81c8_Cfunc_seccomp_export_bpf
+  [D] _cgo_0504433a81c8_Cfunc_seccomp_export_pfc
+  [D] _cgo_0504433a81c8_Cfunc_seccomp_init
+  [D] _cgo_0504433a81c8_Cfunc_seccomp_load
+  [D] _cgo_0504433a81c8_Cfunc_seccomp_merge
+  [D] _cgo_0504433a81c8_Cfunc_seccomp_release
+  [D] _cgo_0504433a81c8_Cfunc_seccomp_reset
+  [D] _cgo_0504433a81c8_Cfunc_seccomp_rule_add_array
+  [D] _cgo_0504433a81c8_Cfunc_seccomp_rule_add_exact_array
+  [D] _cgo_0504433a81c8_Cfunc_seccomp_syscall_priority
+  [D] _cgo_0504433a81c8_Cfunc_seccomp_syscall_resolve_name
+  [D] _cgo_0504433a81c8_Cfunc_seccomp_syscall_resolve_name_arch
+  [D] _cgo_0504433a81c8_Cfunc_seccomp_syscall_resolve_num_arch
+  [D] _cgo_1b5c94ca6bf8_Cfunc__Cmalloc
+  [D] _cgo_1b5c94ca6bf8_Cfunc_dlclose
+  [D] _cgo_1b5c94ca6bf8_Cfunc_dlerror
+  [D] _cgo_1b5c94ca6bf8_Cfunc_dlopen
+  [D] _cgo_1b5c94ca6bf8_Cfunc_dlsym
+  [D] _cgo_1b5c94ca6bf8_Cfunc_free
+  [D] _cgo_1b5c94ca6bf8_Cfunc_my_strlen
+  [D] _cgo_b9d35688d949_Cfunc__Cmalloc
+  [D] _cgo_b9d35688d949_Cfunc_am_session_leader
+  [D] _cgo_b9d35688d949_Cfunc_free
+  [D] _cgo_b9d35688d949_Cfunc_my_sd_pid_get_owner_uid
+  [D] _cgo_b9d35688d949_Cfunc_my_sd_pid_get_slice
+  [D] _cgo_b9d35688d949_Cfunc_my_sd_pid_get_unit
+  [D] am_session_leader
+  [D] my_sd_pid_get_owner_uid
+  [D] my_sd_pid_get_slice
+  [D] my_sd_pid_get_unit
+  [D] my_strlen
+
+28 Added function symbols not referenced by debug info:
+
+  [A] _cgo_e3ef74848b91_Cfunc__Cmalloc
+  [A] _cgo_e3ef74848b91_Cfunc_add_struct_arg_cmp
+  [A] _cgo_e3ef74848b91_Cfunc_free
+  [A] _cgo_e3ef74848b91_Cfunc_get_major_version
+  [A] _cgo_e3ef74848b91_Cfunc_get_micro_version
+  [A] _cgo_e3ef74848b91_Cfunc_get_minor_version
+  [A] _cgo_e3ef74848b91_Cfunc_make_arg_cmp_array
+  [A] _cgo_e3ef74848b91_Cfunc_seccomp_api_get
+  [A] _cgo_e3ef74848b91_Cfunc_seccomp_api_set
+  [A] _cgo_e3ef74848b91_Cfunc_seccomp_arch_add
+  [A] _cgo_e3ef74848b91_Cfunc_seccomp_arch_exist
+  [A] _cgo_e3ef74848b91_Cfunc_seccomp_arch_native
+  [A] _cgo_e3ef74848b91_Cfunc_seccomp_arch_remove
+  [A] _cgo_e3ef74848b91_Cfunc_seccomp_attr_get
+  [A] _cgo_e3ef74848b91_Cfunc_seccomp_attr_set
+  [A] _cgo_e3ef74848b91_Cfunc_seccomp_export_bpf
+  [A] _cgo_e3ef74848b91_Cfunc_seccomp_export_pfc
+  [A] _cgo_e3ef74848b91_Cfunc_seccomp_init
+  [A] _cgo_e3ef74848b91_Cfunc_seccomp_load
+  [A] _cgo_e3ef74848b91_Cfunc_seccomp_merge
+  [A] _cgo_e3ef74848b91_Cfunc_seccomp_release
+  [A] _cgo_e3ef74848b91_Cfunc_seccomp_reset
+  [A] _cgo_e3ef74848b91_Cfunc_seccomp_rule_add_array
+  [A] _cgo_e3ef74848b91_Cfunc_seccomp_rule_add_exact_array
+  [A] _cgo_e3ef74848b91_Cfunc_seccomp_syscall_priority
+  [A] _cgo_e3ef74848b91_Cfunc_seccomp_syscall_resolve_name
+  [A] _cgo_e3ef74848b91_Cfunc_seccomp_syscall_resolve_name_arch
+  [A] _cgo_e3ef74848b91_Cfunc_seccomp_syscall_resolve_num_arch
+
+2 Added variable symbols not referenced by debug info:
+
+  [A] C_ACT_LOG
+  [A] C_ATTRIBUTE_LOG
+
+
+Suggested Remedy:
+ABI changes introduced during maintenance updates can lead to problems for users.  See the abidiff(1) documentation and the distribution ABI policies to determine if this detected change is allowed.
