@@ -22,7 +22,7 @@ $ chmod +x ./xsos
 ## Using `xsos`
 
 ```
-$ sudo ./xsos ./xsos --bios --os --cpu --disks --ethtool --lspci --mem --mpath | \
+$ sudo ./xsos --bios --os --cpu --disks --ethtool --lspci --mem --mpath | \
     tee "${HOME}/$(sudo dmidecode -t 1 | awk '/UUID:/ {print $2}').xsos.out"
 $ cat *.xsos.out
 ```
