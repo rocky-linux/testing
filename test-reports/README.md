@@ -34,7 +34,7 @@ $ cat *.xsos.out
 
 ```
 $ sudo ./xsos -x --bios --os --cpu --disks --ethtool --lspci --mem --mpath --scrub | \
-    tee "${HOME}/$(uuidgen).xsos.out"
+    tee "${HOME}/$(sudo dmidecode -t 1 | awk '/UUID:/ {print $2}').xsos.out"
 $ cat *.xsos.out
 ```
 
