@@ -1,0 +1,213 @@
+DMIDECODE
+  BIOS:
+    Vend: Dell Inc.
+    Vers: 1.4.8
+    Date: 10/25/2012
+    BIOS Rev: 1.4
+    FW Rev:
+  System:
+    Mfr:  Dell Inc.
+    Prod: PowerEdge R720
+    Vers: Not Specified
+    Ser:  SCRUBBED
+    UUID: SCRUBBED
+  CPU:
+    2 of 2 CPU sockets populated, 8 cores/16 threads per CPU
+    16 total cores, 32 total threads
+    Mfr:  Intel
+    Fam:  Xeon
+    Freq: 2200 MHz
+    Vers: Intel(R) Xeon(R) CPU E5-2660 0 @ 2.20GHz
+  Memory:
+    Total: 65536 MiB (64 GiB)
+    DIMMs: 8 of 24 populated
+    MaxCapacity: 786432 MiB (768 GiB / 0.75 TiB)
+
+OS
+  Hostname: SCRUBBED
+  Distro:   [redhat-release] CentOS release 6.10 (Final)
+            [centos-release] CentOS release 6.10 (Final)
+            [rocks-release] Rocks release 6.2 (SideWinder)
+  RHN:      (missing)
+  RHSM:     (missing)
+  YUM:      1 enabled plugins: fastestmirror
+  Runlevel: N 3  (default 3)
+  SELinux:  disabled  (default disabled)
+  Arch:     mach=x86_64  cpu=x86_64  platform=x86_64
+  Kernel:
+    Booted kernel:  2.6.32-754.2.1.el6.x86_64
+    GRUB default:   2.6.32-754.2.1.el6.x86_64
+    Build version:
+      Linux version 2.6.32-754.2.1.el6.x86_64 (mockbuild@x86-01.bsys.centos.org) (gcc version 4.4.7 20120313 (Red Hat 4.4.7-23) (GCC) )
+      #1 SMP Fri Jul 13 12:50:12 UTC 2018
+    Booted kernel cmdline:
+
+    GRUB default kernel cmdline:
+      ro root=UUID=5cc3a507-583c-48e6-affd-c366c238a2d1 rd_NO_LUKS rd_NO_LVM LANG=en_US.iso885915 rd_NO_MD SYSFONT=lat0-sun16
+      KEYBOARDTYPE=pc KEYTABLE=us rd_NO_DM rhgb quiet crashkernel=auto
+    Taint-check: 513  (see https://access.redhat.com/solutions/40594)
+       0  PROPRIETARY_MODULE: Proprietary module has been loaded
+       9  WARN: Taint on warning
+    - - - - - - - - - - - - - - - - - - -
+  Sys time:  Fri May  7 11:10:51 PDT 2021
+  Boot time: Wed Sep 11 06:52:16 PDT 2019  (epoch: 1568209936)
+  Time Zone: America/Los_Angeles
+  Uptime:    604 days,  4:18,  1 user
+  LoadAvg:   [32 CPU] 0.17 (1%), 0.15 (0%), 0.10 (0%)
+  /proc/stat:
+    procs_running: 1   procs_blocked: 0    processes [Since boot]: 2767857443
+    cpu [Utilization since boot]:
+      us 0%, ni 0%, sys 0%, idle 100%, iowait 0%, irq 0%, sftirq 0%, steal 0%
+
+CPU
+  32 logical processors (16 CPU cores)
+  2 Intel Xeon CPU E5-2660 0 @ 2.20GHz (flags: aes,constant_tsc,ht,lm,nx,pae,vmx)
+  └─16 threads / 8 cores each
+
+MEMORY
+  Stats graphed as percent of MemTotal:
+    MemUsed    ▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊....................  60.1%
+    Buffers    ..................................................   0.3%
+    Cached     ▊▊................................................   5.0%
+    HugePages  ..................................................   0.0%
+    Dirty      ..................................................   0.0%
+  RAM:
+    63 GiB total ram
+    37.9 GiB (60%) used
+    34.5 GiB (55%) used excluding Buffers/Cached
+    0 GiB (0%) dirty
+  HugePages:
+    No ram pre-allocated to HugePages
+  THP:
+    356352 kB allocated to THP
+  LowMem/Slab/PageTables/Shmem:
+    2.12 GiB (3%) of total ram used for Slab
+    0.01 GiB (0%) of total ram used for PageTables
+    0 GiB (0%) of total ram used for Shmem
+  Swap:
+    No system swap space configured
+
+STORAGE
+  Multipath:
+    dm0  22  TiB
+    dm1  22  TiB
+    dm2  22  TiB
+    dm3  22  TiB
+    dm4  22  TiB
+    dm5  22  TiB
+  Whole Disks from /proc/partitions:
+    1 disks, totaling 136 GiB (0.13 TiB)
+    (12 multipath/mdraid components hidden)
+    - - - - - - - - - - - - - - - - - - - - -
+    Disk 	Size in GiB
+    ----	-----------
+    sda 	136
+
+  Disk layout from lsblk:
+    NAME         MAJ:MIN  RM   SIZE RO TYPE  MOUNTPOINT
+    sda            8:0     0 136.1G  0 disk
+    ├─sda1         8:1     0  80.1G  0 part  /
+    └─sda2         8:2     0    56G  0 part  /scratch
+    sr0           11:0     1  1024M  0 rom
+    sdb            8:16    0  21.8T  0 disk
+    └─dm0 (dm-4) 253:4     0  21.8T  0 mpath
+    sdh            8:112   0  21.8T  0 disk
+    └─dm0 (dm-4) 253:4     0  21.8T  0 mpath
+    sdd            8:48    0  21.8T  0 disk
+    └─dm2 (dm-5) 253:5     0  21.8T  0 mpath
+    sdc            8:32    0  21.8T  0 disk
+    └─dm1 (dm-2) 253:2     0  21.8T  0 mpath
+    sde            8:64    0  21.8T  0 disk
+    └─dm3 (dm-0) 253:0     0  21.8T  0 mpath
+    sdf            8:80    0  21.8T  0 disk
+    └─dm4 (dm-3) 253:3     0  21.8T  0 mpath
+    sdg            8:96    0  21.8T  0 disk
+    └─dm5 (dm-1) 253:1     0  21.8T  0 mpath
+    sdi            8:128   0  21.8T  0 disk
+    └─dm1 (dm-2) 253:2     0  21.8T  0 mpath
+    sdj            8:144   0  21.8T  0 disk
+    └─dm2 (dm-5) 253:5     0  21.8T  0 mpath
+    sdk            8:160   0  21.8T  0 disk
+    └─dm3 (dm-0) 253:0     0  21.8T  0 mpath
+    sdl            8:176   0  21.8T  0 disk
+    └─dm4 (dm-3) 253:3     0  21.8T  0 mpath
+    sdm            8:192   0  21.8T  0 disk
+    └─dm5 (dm-1) 253:1     0  21.8T  0 mpath
+    SCRUBBED
+
+  Filesystem usage from df:
+    Filesystem             1K-blocks      Used   Available Use% Mounted on
+    /dev/sda1               82518640  13300832    65019408  17% /
+    /dev/sda2               57713908     53064    54722428   1% /scratch
+    vmpool/nas           63378747264         0 63378747264   0% /nas
+    SCRUBBED
+
+DM-MULTIPATH
+  dm5 (3690b11c00022436500000273515d5271) dm-1 DELL,MD32xx
+  size=22T features='3 queue_if_no_path pg_init_retries 50' hwhandler='1 rdac' wp=rw
+  |-+- policy='round-robin 0' prio=14 status=active
+  | `- 7:0:1:5 sdm 8:192 active ready running
+  `-+- policy='round-robin 0' prio=9 status=enabled
+    `- 7:0:0:5 sdg 8:96  active ready running
+
+  dm4 (3690b11c0002226020000021f515d51a9) dm-3 DELL,MD32xx
+  size=22T features='3 queue_if_no_path pg_init_retries 50' hwhandler='1 rdac' wp=rw
+  |-+- policy='round-robin 0' prio=14 status=active
+  | `- 7:0:1:4 sdl 8:176 active ready running
+  `-+- policy='round-robin 0' prio=9 status=enabled
+    `- 7:0:0:4 sdf 8:80  active ready running
+
+  dm3 (3690b11c0002243650000026e515d51bc) dm-0 DELL,MD32xx
+  size=22T features='3 queue_if_no_path pg_init_retries 50' hwhandler='1 rdac' wp=rw
+  |-+- policy='round-robin 0' prio=14 status=active
+  | `- 7:0:1:3 sdk 8:160 active ready running
+  `-+- policy='round-robin 0' prio=9 status=enabled
+    `- 7:0:0:3 sde 8:64  active ready running
+
+  dm2 (3690b11c0002226020000021c515d50c1) dm-5 DELL,MD32xx
+  size=22T features='3 queue_if_no_path pg_init_retries 50' hwhandler='1 rdac' wp=rw
+  |-+- policy='round-robin 0' prio=14 status=active
+  | `- 7:0:1:2 sdj 8:144 active ready running
+  `-+- policy='round-robin 0' prio=9 status=enabled
+    `- 7:0:0:2 sdd 8:48  active ready running
+
+  dm1 (3690b11c00022436500000269515d50b8) dm-2 DELL,MD32xx
+  size=22T features='3 queue_if_no_path pg_init_retries 50' hwhandler='1 rdac' wp=rw
+  |-+- policy='round-robin 0' prio=14 status=active
+  | `- 7:0:1:1 sdi 8:128 active ready running
+  `-+- policy='round-robin 0' prio=9 status=enabled
+    `- 7:0:0:1 sdc 8:32  active ready running
+
+  dm0 (3690b11c00022260200000218515d4f39) dm-4 DELL,MD32xx
+  size=22T features='3 queue_if_no_path pg_init_retries 50' hwhandler='1 rdac' wp=rw
+  |-+- policy='round-robin 0' prio=14 status=active
+  | `- 7:0:1:0 sdh 8:112 active ready running
+  `-+- policy='round-robin 0' prio=9 status=enabled
+    `- 7:0:0:0 sdb 8:16  active ready running
+
+LSPCI
+  Net:
+    (1) Mellanox Technologies MT27500 Family [ConnectX-3]
+    1 quad-port (4) Intel Corporation I350 Gigabit Network Connection (rev 01)
+    1 dual-port (2) Intel Corporation Ethernet 10G 2P X520 Adapter (rev 01)
+  Storage:
+    (1) Intel Corporation C600/X79 series chipset 6-Port SATA AHCI Controller (rev 05)
+    (1) LSI Logic / Symbios Logic MegaRAID SAS 2208 [Thunderbolt] (rev 05)
+    (1) LSI Logic / Symbios Logic SAS2008 PCI-Express Fusion-MPT SAS-2 [Falcon] (rev 03)
+  VGA:
+    Matrox Electronics Systems Ltd. G200eR2
+
+ETHTOOL
+  Interface Status:
+    em1       0000:01:00.0  link=DOWN                           rx ring 256/4096  drv igb v5.3.0-k / fw 1.56, 0x800009b6, 14.0.12
+    em2       0000:01:00.1  link=DOWN                           rx ring 256/4096  drv igb v5.3.0-k / fw 1.56, 0x800009b6, 14.0.12
+    em3       0000:01:00.2  link=DOWN                           rx ring 256/4096  drv igb v5.3.0-k / fw 1.56, 0x800009b6, 14.0.12
+    em4       0000:01:00.3  link=DOWN                           rx ring 256/4096  drv igb v5.3.0-k / fw 1.56, 0x800009b6, 14.0.12
+    ib0       0000:42:00.0  link=up 56000Mb/s full (autoneg=Y)  rx ring 512/8192  drv ib_ipoib v3.3-1.0.4_03 Jul 2016 / fw 2.30.8000
+    ib0.9251  0000:42:00.0  link=up 56000Mb/s full (autoneg=Y)  rx ring 512/8192  drv ib_ipoib v3.3-1.0.4_03 Jul 2016 / fw 2.30.8000
+    ib0.9252  0000:42:00.0  link=up 56000Mb/s full (autoneg=Y)  rx ring 512/8192  drv ib_ipoib v3.3-1.0.4_03 Jul 2016 / fw 2.30.8000
+    ib0.9253  0000:42:00.0  link=up 56000Mb/s full (autoneg=Y)  rx ring 512/8192  drv ib_ipoib v3.3-1.0.4_03 Jul 2016 / fw 2.30.8000
+    p6p1      0000:04:00.0  link=up 10000Mb/s full (autoneg=Y)  rx ring 512/4096  drv ixgbe v4.2.1-k / fw 0x8000030d
+    p6p2      0000:04:00.1  link=DOWN                           rx ring 512/4096  drv ixgbe v4.2.1-k / fw 0x8000030d
+  Interface Errors:
+    [None]
