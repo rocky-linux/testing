@@ -1,0 +1,86 @@
+~ ❯ docker image inspect rocky-8-x86_64:8
+[
+    {
+        "Id": "sha256:06ee938aec44da01f06197279d76346d3aded905cd5517942d3c9d6dc2b7c740",
+        "RepoTags": [
+            "rocky-8-x86_64:8"
+        ],
+        "RepoDigests": [],
+        "Parent": "",
+        "Comment": "buildkit.dockerfile.v0",
+        "Created": "2021-05-07T04:02:43.61420155Z",
+        "Container": "",
+        "ContainerConfig": {
+            "Hostname": "",
+            "Domainname": "",
+            "User": "",
+            "AttachStdin": false,
+            "AttachStdout": false,
+            "AttachStderr": false,
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": null,
+            "Cmd": null,
+            "Image": "",
+            "Volumes": null,
+            "WorkingDir": "",
+            "Entrypoint": null,
+            "OnBuild": null,
+            "Labels": null
+        },
+        "DockerVersion": "",
+        "Author": "",
+        "Config": {
+            "Hostname": "",
+            "Domainname": "",
+            "User": "",
+            "AttachStdin": false,
+            "AttachStdout": false,
+            "AttachStderr": false,
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+            ],
+            "Cmd": [
+                "/bin/bash"
+            ],
+            "ArgsEscaped": true,
+            "Image": "",
+            "Volumes": null,
+            "WorkingDir": "/",
+            "Entrypoint": null,
+            "OnBuild": null,
+            "Labels": {
+                "org.label-schema.build-date": "20210506",
+                "org.label-schema.license": "GPLv2",
+                "org.label-schema.name": "Rocky Base Image",
+                "org.label-schema.schema-version": "1.0",
+                "org.label-schema.vendor": "Trevor Cooper"
+            }
+        },
+        "Architecture": "amd64",
+        "Os": "linux",
+        "Size": 858522959,
+        "VirtualSize": 858522959,
+        "GraphDriver": {
+            "Data": {
+                "MergedDir": "/var/lib/docker/overlay2/qifevxk4py0hsky4uyb0mzqmz/merged",
+                "UpperDir": "/var/lib/docker/overlay2/qifevxk4py0hsky4uyb0mzqmz/diff",
+                "WorkDir": "/var/lib/docker/overlay2/qifevxk4py0hsky4uyb0mzqmz/work"
+            },
+            "Name": "overlay2"
+        },
+        "RootFS": {
+            "Type": "layers",
+            "Layers": [
+                "sha256:c11e46251f76fb22f1e92f20b0b1419bdf7c096a23383ec6baa8a54e04315b71"
+            ]
+        },
+        "Metadata": {
+            "LastTagTime": "2021-05-07T04:02:48.619889321Z"
+        }
+    }
+]

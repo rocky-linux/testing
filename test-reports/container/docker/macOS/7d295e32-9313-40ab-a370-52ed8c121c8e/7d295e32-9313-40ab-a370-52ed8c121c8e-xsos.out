@@ -1,0 +1,67 @@
+OS
+  Hostname: SCRUBBED
+  Distro:   [redhat-release] Rocky Linux release 8.3
+            [rocky-release] Rocky Linux release 8.3
+            [os-release] Rocky Linux 8.3 8.3
+  RHN:      (missing)
+  RHSM:     (missing)
+  YUM:      1 enabled plugins: debuginfo-install
+  Runlevel: unknown  (default )
+  SELinux:  disabled  (default enforcing)
+  Arch:     mach=x86_64  cpu=x86_64  platform=x86_64
+  Kernel:
+    Booted kernel:  5.10.25-linuxkit
+    GRUB default:   unknown  (no grub config file)
+    Build version:
+      Linux version 5.10.25-linuxkit (root@cef9c358b34d) (gcc (Alpine 9.2.0) 9.2.0, GNU ld (GNU Binutils) 2.33.1) #1 SMP Tue
+      Mar 23 09:27:39 UTC 2021
+    Booted kernel cmdline:
+
+    GRUB default kernel cmdline:
+      unknown  (no grub config file)
+    Taint-check: 4096  (see https://access.redhat.com/solutions/40594)
+      12  OOT_MODULE: Out-of-tree module has been loaded
+    - - - - - - - - - - - - - - - - - - -
+  Sys time:  Fri May  7 04:26:34 UTC 2021
+  Boot time: Sat May  1 04:18:09 UTC 2021  (epoch: 1619842689)
+  Uptime:    6 days, 8 min,  0 users
+  LoadAvg:   [8 CPU] 0.02 (0%), 0.07 (1%), 0.10 (1%)
+  /proc/stat:
+    procs_running: 1   procs_blocked: 0    processes [Since boot]: 2564115
+    cpu [Utilization since boot]:
+      us 0%, ni 0%, sys 0%, idle 99%, iowait 0%, irq 0%, sftirq 0%, steal 0%
+
+CPU
+  8 logical processors
+  8 Intel Core i9-9900K CPU @ 3.60GHz (flags: aes,constant_tsc,ht,lm,nx,pae,rdrand)
+
+MEMORY
+  Stats graphed as percent of MemTotal:
+    MemUsed    ▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊...  94.8%
+    Buffers    ▊▊▊...............................................   5.6%
+    Cached     ▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊...........................  45.8%
+    HugePages  ..................................................   0.0%
+    Dirty      ..................................................   0.0%
+  RAM:
+    1.9 GiB total ram
+    1.8 GiB (95%) used
+    0.8 GiB (43%) used excluding Buffers/Cached
+    0 GiB (0%) dirty
+  HugePages:
+    No ram pre-allocated to HugePages
+  THP:
+    20480 kB allocated to THP
+  LowMem/Slab/PageTables/Shmem:
+    0.16 GiB (8%) of total ram used for Slab
+    0.01 GiB (0%) of total ram used for PageTables
+    0.11 GiB (6%) of total ram used for Shmem
+  Swap:
+    0.5 GiB (50%) used of 1 GiB total
+
+IP4
+  Interface     Master IF  MAC Address        MTU     State  IPv4 Address
+  =========     =========  =================  ======  =====  ==================
+  lo            -          -                  65536   up     ⣿⣿⣿.⣿⣿⣿.⣿⣿⣿.⣿⣿⣿/⣿⣿
+  tunl0@NONE    -          -                  1480    DOWN   -
+  ip6tnl0@NONE  -          -                  1452    DOWN   -
+  eth0@if25     -          ⣿⣿:⣿⣿:⣿⣿:⣿⣿:⣿⣿:⣿⣿  1500    up     ⣿⣿⣿.⣿⣿⣿.⣿⣿⣿.⣿⣿⣿/⣿⣿

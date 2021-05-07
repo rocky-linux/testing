@@ -1,0 +1,3 @@
+~ ❯ docker container list
+CONTAINER ID   IMAGE              COMMAND       CREATED         STATUS         PORTS     NAMES
+a36fe2564052   rocky-8-x86_64:8   "/bin/bash"   5 minutes ago   Up 5 minutes             nervous_vaughan

@@ -1,0 +1,69 @@
+[root@comet-09-01 ~]# ./xsos -boc
+DMIDECODE
+  BIOS:
+    Vend: American Megatrends Inc.
+    Vers: S2S_3A14
+    Date: 09/18/2014
+    BIOS Rev: 5.6
+    FW Rev:   3.16
+  System:
+    Mfr:  Quanta Computer Inc
+    Prod: QuantaPlex T41S-2U
+    Vers: To be filled by O.E.M.
+    Ser:  ⣿⣿⣿⣿⣿⣿⣿
+    UUID: ⣿⣿⣿⣿⣿⣿⣿⣿-⣿⣿⣿⣿-⣿⣿⣿⣿-⣿⣿⣿⣿-⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+  CPU:
+    2 of 2 CPU sockets populated, 8 cores/16 threads per CPU
+    16 total cores, 32 total threads
+    Mfr:  Intel
+    Fam:  Xeon
+    Freq: 2600 MHz
+    Vers: Intel(R) Xeon(R) CPU E5-2640 v3 @ 2.60GHz
+  Memory:
+    Total: 262144 MiB (256 GiB)
+    DIMMs: 16 of 16 populated
+    MaxCapacity: 524288 MiB (512 GiB / 0.50 TiB)
+
+OS
+  Hostname: SCRUBBED
+  Distro:   [redhat-release] CentOS release 6.10 (Final)
+            [centos-release] CentOS release 6.10 (Final)
+            [rocks-release] Rocks release 6.2 (SideWinder)
+  RHN:      (missing)
+  RHSM:     (missing)
+  YUM:      1 enabled plugins: fastestmirror
+  Runlevel: N 3  (default 3)
+  SELinux:  disabled  (default disabled)
+  Arch:     mach=x86_64  cpu=x86_64  platform=x86_64
+  Kernel:
+    Booted kernel:  2.6.32-754.2.1.el6.x86_64
+    GRUB default:   2.6.32-754.2.1.el6.x86_64
+    Build version:
+      Linux version 2.6.32-754.2.1.el6.x86_64 (mockbuild@x86-01.bsys.centos.org) (gcc version 4.4.7 20120313 (Red Hat 4.4.7-23) (GCC) )
+      #1 SMP Fri Jul 13 12:50:12 UTC 2018
+    Booted kernel cmdline:
+      ro root=UUID=22263503-dc8d-47f4-9c27-4d0b76a238dd rd_NO_LUKS LANG=en_US.iso885915 rd_MD_UUID=ec369fc6:115b2fb5:febb4562:322f3c39
+      KEYTABLE=us SYSFONT=lat0-sun16 rd_MD_UUID=a59a1634:ae407566:87248693:2c068b23 rd_NO_LVM rd_NO_DM rhgb quiet intel_iommu=on
+      crashkernel=145M@48M
+    GRUB default kernel cmdline:
+      ro root=UUID=22263503-dc8d-47f4-9c27-4d0b76a238dd rd_NO_LUKS LANG=en_US.iso885915 rd_MD_UUID=ec369fc6:115b2fb5:febb4562:322f3c39
+      KEYTABLE=us SYSFONT=lat0-sun16 rd_MD_UUID=a59a1634:ae407566:87248693:2c068b23 rd_NO_LVM rd_NO_DM rhgb quiet intel_iommu=on
+      crashkernel=auto
+    Taint-check: 513  (see https://access.redhat.com/solutions/40594)
+       0  PROPRIETARY_MODULE: Proprietary module has been loaded
+       9  WARN: Taint on warning
+    - - - - - - - - - - - - - - - - - - -
+  Sys time:  Thu May  6 19:55:53 PDT 2021
+  Boot time: Fri Oct  5 03:56:23 PDT 2018  (epoch: 1538736983)
+  Time Zone: America/Los_Angeles
+  Uptime:    944 days, 15:59,  1 user
+  LoadAvg:   [16 CPU] 0.00 (0%), 0.02 (0%), 0.00 (0%)
+  /proc/stat:
+    procs_running: 1   procs_blocked: 0    processes [Since boot]: 1194850179
+    cpu [Utilization since boot]:
+      us 0%, ni 0%, sys 0%, idle 99%, iowait 0%, irq 0%, sftirq 0%, steal 0%
+
+CPU
+  16 logical processors (16 CPU cores)
+  2 Intel Xeon CPU E5-2640 v3 @ 2.60GHz (flags: aes,constant_tsc,ht,lm,nx,pae,rdrand,vmx)
+  └─8 threads / 8 cores each

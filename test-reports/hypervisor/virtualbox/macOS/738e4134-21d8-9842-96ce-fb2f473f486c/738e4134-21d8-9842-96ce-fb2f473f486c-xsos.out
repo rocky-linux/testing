@@ -1,0 +1,119 @@
+DMIDECODE
+  BIOS:
+    Vend: innotek GmbH
+    Vers: VirtualBox
+    Date: 12/01/2006
+    BIOS Rev:
+    FW Rev:
+  System:
+    Mfr:  innotek GmbH
+    Prod: VirtualBox
+    Vers: 1.2
+    Ser:  ⣿
+    UUID: ⣿⣿⣿⣿⣿⣿⣿⣿-⣿⣿⣿⣿-⣿⣿⣿⣿-⣿⣿⣿⣿-⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+  CPU:
+    0 of 0 CPU sockets populated, 0 cores/0 threads per CPU
+    0 total cores, 0 total threads
+    Mfr:
+    Fam:
+    Freq:
+    Vers:
+  Memory:
+    Total: 0 MiB (0 GiB)
+    DIMMs: 0 of 0 populated
+    MaxCapacity: 0 MiB (0 GiB / 0.00 TiB)
+
+OS
+  Hostname: SCRUBBED
+  Distro:   [redhat-release] Rocky Linux release 8.3
+            [rocky-release] Rocky Linux release 8.3
+            [os-release] Rocky Linux 8.3 8.3
+  RHN:      (missing)
+  RHSM:     (missing)
+  YUM:      1 enabled plugins: debuginfo-install
+  Runlevel: N 3  (default multi-user)
+  SELinux:  enforcing  (default enforcing)
+  Arch:     mach=x86_64  cpu=x86_64  platform=x86_64
+  Kernel:
+    Booted kernel:  4.18.0-240.22.1.el8.x86_64
+    GRUB default:
+    Build version:
+      Linux version 4.18.0-240.22.1.el8.x86_64 (mockbuild@7dfc074d1e13452e94271ec95cb31ed9) (gcc version 8.3.1 20191121 (Red
+      Hat 8.3.1-5) (GCC)) #1 SMP Mon Apr 12 04:29:16 UTC 2021
+    Booted kernel cmdline:
+
+    GRUB default kernel cmdline:
+
+    Taint-check: 134217728  (see https://access.redhat.com/solutions/40594)
+      27  BIT_BY_ZOMBIE: Kernel booted with OMGZOMBIES param
+    - - - - - - - - - - - - - - - - - - -
+  Sys time:  Thu May  6 21:00:44 PDT 2021
+  Boot time: Wed May  5 23:23:07 PDT 2021  (epoch: 1620282187)
+  Time Zone: America/Los_Angeles
+  Uptime:    21:37,  1 user
+  LoadAvg:   [2 CPU] 0.00 (0%), 0.00 (0%), 0.02 (1%)
+  /proc/stat:
+    procs_running: 1   procs_blocked: 0    processes [Since boot]: 97890
+    cpu [Utilization since boot]:
+      us 1%, ni 0%, sys 0%, idle 98%, iowait 0%, irq 0%, sftirq 0%, steal 0%
+
+CPU
+  2 logical processors (2 CPU cores)
+  1 Intel Core i9-9900K CPU @ 3.60GHz (flags: aes,constant_tsc,ht,lm,nx,pae,rdrand)
+  └─2 threads / 2 cores each
+
+MEMORY
+  Stats graphed as percent of MemTotal:
+    MemUsed    ▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊.......  85.4%
+    Buffers    ..................................................   0.0%
+    Cached     ▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊...................  61.9%
+    HugePages  ..................................................   0.0%
+    Dirty      ..................................................   0.0%
+  RAM:
+    0.8 GiB total ram
+    0.7 GiB (85%) used
+    0.2 GiB (23%) used excluding Buffers/Cached
+    0 GiB (0%) dirty
+  HugePages:
+    No ram pre-allocated to HugePages
+  THP:
+    4096 kB allocated to THP
+  LowMem/Slab/PageTables/Shmem:
+    0.11 GiB (13%) of total ram used for Slab
+    0.01 GiB (1%) of total ram used for PageTables
+    0 GiB (0%) of total ram used for Shmem
+  Swap:
+    0.1 GiB (8%) used of 0.8 GiB total
+
+STORAGE
+  Whole Disks from /proc/partitions:
+    1 disks, totaling 8 GiB (0.01 TiB)
+    - - - - - - - - - - - - - - - - - - - - -
+    Disk 	Size in GiB
+    ----	-----------
+    sda 	8
+
+  Disk layout from lsblk:
+    NAME        MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
+    sda           8:0    0    8G  0 disk
+    ├─sda1        8:1    0    1G  0 part /boot
+    └─sda2        8:2    0    7G  0 part
+      ├─rl-root 253:0    0  6.2G  0 lvm  /
+      └─rl-swap 253:1    0  820M  0 lvm  [SWAP]
+    sr0          11:0    1 1024M  0 rom
+
+  Filesystem usage from df:
+    Filesystem          1K-blocks    Used Available Use% Mounted on
+    /dev/mapper/rl-root   6486016 4401624   2084392  68% /
+    /dev/sda1             1038336  197104    841232  19% /boot
+
+ETHTOOL
+  Interface Status:
+    enp0s3  0000:00:03.0  link=up 1000Mb/s full (autoneg=Y)  rx ring 256/4096  drv e1000 v7.3.21-k8-NAPI / fw UNKNOWN
+  Interface Errors:
+    [None]
+
+sed: -e expression #1, char 40: unterminated `s' command
+Warning: multipath command not present in PATH
+
+Warning: lspci command not present in PATH
