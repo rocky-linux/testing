@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dmidecode>
+  <DMIversion type="SMBIOS" version="2.5">SMBIOS 2.5 present</DMIversion>
+  <BIOSinfo dmispec="7.1" type="0" handle="0x0000" size="20">
+    <DMIdescription>BIOS Information</DMIdescription>
+    <Vendor>innotek GmbH</Vendor>
+    <Version>VirtualBox</Version>
+    <ReleaseDate>12/01/2006</ReleaseDate>
+    <Address>0xe0000</Address>
+    <RuntimeSize flags="0x20000" unit="KB">128</RuntimeSize>
+    <ROMsize unit="KB">128</ROMsize>
+    <Characteristics level="0" dmispec="7.1.1" flags="0x48018090">
+      <flags>
+        <flag enabled="1">ISA is supported</flag>
+        <flag enabled="0">MCA is supported</flag>
+        <flag enabled="0">EISA is supported</flag>
+        <flag enabled="1">PCI is supported</flag>
+        <flag enabled="0">PC Card (PCMCIA) is supported</flag>
+        <flag enabled="0">PNP is supported</flag>
+        <flag enabled="0">APM is supported</flag>
+        <flag enabled="0">BIOS is upgradeable</flag>
+        <flag enabled="0">BIOS shadowing is allowed</flag>
+        <flag enabled="0">VLB is supported</flag>
+        <flag enabled="0">ESCD support is available</flag>
+        <flag enabled="1">Boot from CD is supported</flag>
+        <flag enabled="1">Selectable boot is supported</flag>
+        <flag enabled="0">BIOS ROM is socketed</flag>
+        <flag enabled="0">Boot from PC Card (PCMCIA) is supported</flag>
+        <flag enabled="0">EDD is supported</flag>
+        <flag enabled="0">Japanese floppy for NEC 9800 1.2 MB is supported (int 13h)</flag>
+        <flag enabled="0">Japanese floppy for Toshiba 1.2 MB is supported (int 13h)</flag>
+        <flag enabled="0">5.25"/360 kB floppy services are supported (int 13h)</flag>
+        <flag enabled="0">5.25"/1.2 MB floppy services are supported (int 13h)</flag>
+        <flag enabled="0">3.5"/720 kB floppy services are supported (int 13h)</flag>
+        <flag enabled="0">3.5"/2.88 MB floppy services are supported (int 13h)</flag>
+        <flag enabled="0">Print screen service is supported (int 5h)</flag>
+        <flag enabled="1">8042 keyboard services are supported (int 9h)</flag>
+        <flag enabled="0">Serial services are supported (int 14h)</flag>
+        <flag enabled="0">Printer services are supported (int 17h)</flag>
+        <flag enabled="1">CGA/mono video services are supported (int 10h)</flag>
+        <flag enabled="0">NEC PC-98</flag>
+      </flags>
+    </Characteristics>
+    <Characteristics level="x1" dmispec="7.1.2.1" flags="0x0001">
+      <characteristic enabled="1">ACPI</characteristic>
+      <characteristic enabled="0">USB legacy</characteristic>
+      <characteristic enabled="0">AGP</characteristic>
+      <characteristic enabled="0">I2O boot</characteristic>
+      <characteristic enabled="0">LS-120 boot</characteristic>
+      <characteristic enabled="0">ATAPI Zip drive boot</characteristic>
+      <characteristic enabled="0">IEEE 1394 boot</characteristic>
+      <characteristic enabled="0">Smart battery</characteristic>
+    </Characteristics>
+    <Characteristics level="x2" dmispec="7.1.2.2" flags="0x0000">
+      <characteristic enabled="0">BIOS boot specification</characteristic>
+      <characteristic enabled="0">Function key-initiated network boot</characteristic>
+      <characteristic enabled="0">Targeted content distribution</characteristic>
+      <characteristic enabled="0">UEFI is supported</characteristic>
+      <characteristic enabled="0">System is a virtual machine</characteristic>
+    </Characteristics>
+  </BIOSinfo>
+  <SystemInfo dmispec="7.2" type="1" handle="0x0001" size="27">
+    <DMIdescription>System Information</DMIdescription>
+    <Manufacturer>innotek GmbH</Manufacturer>
+    <ProductName>VirtualBox</ProductName>
+    <Version>1.2</Version>
+    <SerialNumber>[REDACTED]</SerialNumber>
+    <SystemUUID dmispec="7.2">738e4134-21d8-9842-96ce-fb2f473f486c</SystemUUID>
+    <SystemWakeUpType dmispec="7.2.2" flags="0x0006">Power Switch</SystemWakeUpType>
+    <SKUnumber not_specified="1"/>
+    <Family>Virtual Machine</Family>
+  </SystemInfo>
+  <BaseBoardInfo dmispec="7.3" type="2" handle="0x0008" size="15">
+    <DMIdescription>Base Board Information</DMIdescription>
+    <Manufacturer>Oracle Corporation</Manufacturer>
+    <ProductName>VirtualBox</ProductName>
+    <Version>1.2</Version>
+    <SerialNumber>[REDACTED]</SerialNumber>
+    <AssetTag not_specified="1"/>
+    <Features dmispec="7.3.1" flags="0x0001">
+      <feature>Board is a hosting board</feature>
+    </Features>
+    <ChassisLocation not_specified="1"/>
+    <ChassisHandle>0x0003</ChassisHandle>
+    <Type dmispec="7.3.2" flags="0x000a">Motherboard</Type>
+    <ContainedObjectHandles count="0"/>
+  </BaseBoardInfo>
+  <ChassisInfo dmispec="7.4" type="3" handle="0x0003" size="13">
+    <DMIdescription>Chassis Information</DMIdescription>
+    <Manufacturer>Oracle Corporation</Manufacturer>
+    <ChassisType dmispec="7.4.1" flags="0x0001" available="1">Other</ChassisType>
+    <ChassisLock dmispec="7.4.1" flags="0x0000">Not Present</ChassisLock>
+    <Version not_specified="1"/>
+    <SerialNumber not_specified="1"/>
+    <AssetTag not_specified="1"/>
+    <ChassisStates>
+      <BootUp dmispec="7.4.2" flags="0x0003">Safe</BootUp>
+      <PowerSupply dmispec="7.4.2" flags="0x0003">Safe</PowerSupply>
+      <Thermal dmispec="7.4.2" flags="0x0003">Safe</Thermal>
+    </ChassisStates>
+    <SecurityStatus dmispec="7.4.3" flags="0x0003">None</SecurityStatus>
+  </ChassisInfo>
+  <OEMstrings dmispec="7.12" type="11" count="2" handle="0x0002" size="7">
+    <DMIdescription>OEM Strings</DMIdescription>
+    <Record index="1">vboxVer_6.1.18</Record>
+    <Record index="2">vboxRev_142142</Record>
+  </OEMstrings>
+</dmidecode>

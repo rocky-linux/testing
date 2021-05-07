@@ -1,0 +1,68 @@
+DMIDECODE
+  BIOS:
+    Vend: Dell Inc.
+    Vers: 1.0.9 [MRC_1_10]
+    Date: 06/21/2015
+    BIOS Rev: 1.0
+    FW Rev:
+  System:
+    Mfr:  Dell Inc.
+    Prod: PowerEdge R930
+    Vers: Not Specified
+    Ser:  ⣿⣿⣿⣿⣿⣿⣿
+    UUID: ⣿⣿⣿⣿⣿⣿⣿⣿-⣿⣿⣿⣿-⣿⣿⣿⣿-⣿⣿⣿⣿-⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+  CPU:
+    4 of 4 CPU sockets populated, 16 cores/16 threads per CPU
+    64 total cores, 64 total threads
+    Mfr:  Intel
+    Fam:  Xeon
+    Freq: 2200 MHz
+    Vers: Intel(R) Xeon(R) CPU E7-8860 v3 @ 2.20GHz
+  Memory:
+    Total: 1572864 MiB (1536 GiB)
+    DIMMs: 48 of 96 populated
+    MaxCapacity: 6291456 MiB (6144 GiB / 6.00 TiB)
+
+OS
+  Hostname: SCRUBBED
+  Distro:   [redhat-release] CentOS Linux release 7.6.1810 (Core)
+            [centos-release] CentOS Linux release 7.6.1810 (Core)
+            [rocks-release] Rocks release 7.0 (Manzanita)
+            [os-release] CentOS Linux 7 (Core) 7 (Core)
+  RHN:      (missing)
+  RHSM:     (missing)
+  YUM:      2 enabled plugins: fastestmirror, langpacks
+  Runlevel: unknown  (default multi-user)
+  SELinux:  disabled  (default disabled)
+  Arch:     mach=x86_64  cpu=x86_64  platform=x86_64
+  Kernel:
+    Booted kernel:  3.10.0-957.12.2.el7.x86_64
+    GRUB default:     (Warning: grub.conf lacks "default="; showing title 0)
+    Build version:
+      Linux version 3.10.0-957.12.2.el7.x86_64 (mockbuild@kbuilder.bsys.centos.org) (gcc version 4.8.5 20150623 (Red Hat 4.8.5-36) (GCC)
+      ) #1 SMP Tue May 14 21:24:32 UTC 2019
+    Booted kernel cmdline:
+      root=UUID=734bda80-cdfd-4097-be3c-ccc6ae7b4dd5 ro selinux=0 ipv6.disable=1 intel_iommu=on intel_idle.max_cstate=0
+      processor.max_cstate=0 idle=poll spectre_v2=off nopti spec_store_bypass_disable=off vga=788
+    GRUB default kernel cmdline:  (Warning: grub.conf lacks "default="; showing title 0)
+
+    Taint-check: 536883201  (see https://access.redhat.com/solutions/40594)
+       0  PROPRIETARY_MODULE: Proprietary module has been loaded
+      12  OOT_MODULE: Out-of-tree module has been loaded
+      13  UNSIGNED_MODULE: Unsigned module has been loaded
+      29  TECH_PREVIEW: Technology Preview code is loaded
+    - - - - - - - - - - - - - - - - - - -
+  Sys time:  Thu May  6 20:23:45 PDT 2021
+  Boot time: Tue Mar 10 13:20:35 PDT 2020  (epoch: 1583871635)
+  Time Zone: America/Los_Angeles
+  Uptime:    422 days,  7:03,  0 users
+  LoadAvg:   [64 CPU] 0.01 (0%), 0.04 (0%), 0.05 (0%)
+  /proc/stat:
+    procs_running: 1   procs_blocked: 0    processes [Since boot]: 318946131
+    cpu [Utilization since boot]:
+      us 22%, ni 0%, sys 2%, idle 76%, iowait 0%, irq 0%, sftirq 0%, steal 0%
+
+CPU
+  64 logical processors (64 CPU cores)
+  4 Intel Xeon CPU E7-8860 v3 @ 2.20GHz (flags: aes,constant_tsc,ht,lm,nx,pae,rdrand,vmx)
+  └─16 threads / 16 cores each

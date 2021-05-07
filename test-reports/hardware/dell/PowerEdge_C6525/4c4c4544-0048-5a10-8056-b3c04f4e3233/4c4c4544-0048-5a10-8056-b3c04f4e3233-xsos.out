@@ -1,0 +1,70 @@
+$ ./xsos -boc
+DMIDECODE
+  BIOS:
+    Vend: Dell Inc.
+    Vers: 1.4.8
+    Date: 05/06/2020
+    BIOS Rev: 1.4
+    FW Rev:
+  System:
+    Mfr:  Dell Inc.
+    Prod: PowerEdge C6525
+    Vers: Not Specified
+    Ser:  ⣿⣿⣿⣿⣿⣿⣿
+    UUID: ⣿⣿⣿⣿⣿⣿⣿⣿-⣿⣿⣿⣿-⣿⣿⣿⣿-⣿⣿⣿⣿-⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+  CPU:
+    1 of 2 CPU sockets populated, 64 cores/128 threads per CPU
+    64 total cores, 128 total threads
+    Mfr:  Not Specified
+    Fam:  Unknown
+    Freq: 2250 MHz
+    Vers: Not Specified
+  Memory:
+    Total: 131072 MiB (128 GiB)
+    DIMMs: 8 of 80 populated
+    MaxCapacity: 2097152 MiB (2048 GiB / 2.00 TiB)
+
+OS
+  Hostname: SCRUBBED
+  Distro:   [redhat-release] CentOS Linux release 8.1.1911 (Core)
+            [centos-release] CentOS Linux release 8.1.1911 (Core)
+            [cm-release] Cluster Manager v9.0
+            master
+            [os-release] CentOS Linux 8 (Core) 8 (Core)
+  RHN:      serverURL = https://enter.your.server.url.here/XMLRPC
+            enableProxy = 0
+  RHSM:     (missing)
+  YUM:      1 enabled plugins: debuginfo-install
+  Runlevel: N 3  (default multi-user)
+  SELinux:  disabled  (default disabled)
+  Arch:     mach=x86_64  cpu=x86_64  platform=x86_64
+  Kernel:
+    Booted kernel:  4.18.0-147.el8.x86_64
+    GRUB default:
+    Build version:
+      Linux version 4.18.0-147.el8.x86_64 (mockbuild@kbuilder.bsys.centos.org) (gcc version 8.3.1 20190507 (Red Hat 8.3.1-4) (GCC))
+      #1 SMP Wed Dec 4 21:51:45 UTC 2019
+    Booted kernel cmdline:
+      BOOT_IMAGE=(hd0,gpt1)/vmlinuz-4.18.0-147.el8.x86_64 root=UUID=040bb373-679c-4dcb-91ae-774ef29cb84e ro vconsole.keymap=us
+      crashkernel=auto vconsole.font=latarcyrheb-sun16 biosdevname=0 rd.driver.blacklist=nouveau
+    GRUB default kernel cmdline:
+
+    Taint-check: 536883200  (see https://access.redhat.com/solutions/40594)
+      12  OOT_MODULE: Out-of-tree module has been loaded
+      13  UNSIGNED_MODULE: Unsigned module has been loaded
+      29  TECH_PREVIEW: Technology Preview code is loaded
+    - - - - - - - - - - - - - - - - - - -
+  Sys time:  Thu May  6 19:54:32 PDT 2021
+  Boot time: Thu Apr 29 21:43:53 PDT 2021  (epoch: 1619757833)
+  Time Zone: America/Los_Angeles
+  Uptime:    6 days, 22:10,  2 users
+  LoadAvg:   [128 CPU] 0.00 (0%), 0.02 (0%), 0.00 (0%)
+  /proc/stat:
+    procs_running: 1   procs_blocked: 0    processes [Since boot]: 1907100
+    cpu [Utilization since boot]:
+      us 0%, ni 0%, sys 0%, idle 100%, iowait 0%, irq 0%, sftirq 0%, steal 0%
+
+CPU
+  128 logical processors (64 CPU cores)
+  1 AMD EPYC 7742 64-Core Processor (flags: aes,constant_tsc,ht,lm,nx,pae,rdrand,svm)
+  └─128 threads / 64 cores each
