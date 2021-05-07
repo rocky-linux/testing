@@ -1,0 +1,195 @@
+rpminspect:
+-----------
+1) version
+Result: INFO
+Waiver Authorization: Not Waivable
+
+Details:
+rpminspect version 1.4
+
+
+
+2) command line
+Result: INFO
+Waiver Authorization: Not Waivable
+
+Details:
+rpminspect -v -c /home/vagrant/rpminspect/rocky.yaml -E virus,javabytecode --output=rocky-release-8.3-8.el8.txt rocky-release-8.3-8.el8
+
+
+
+license:
+--------
+1) Valid License Tag in rocky-gpg-keys-8.3-8.el8.noarch: GPLv2
+Result: INFO
+Waiver Authorization: Not Waivable
+
+
+
+2) Valid License Tag in rocky-repos-8.3-8.el8.noarch: GPLv2
+Result: INFO
+Waiver Authorization: Not Waivable
+
+
+
+3) Valid License Tag in rocky-release-8.3-8.el8.noarch: GPLv2
+Result: INFO
+Waiver Authorization: Not Waivable
+
+
+
+4) Valid License Tag in rocky-release-8.3-8.el8.noarch: GPLv2
+Result: INFO
+Waiver Authorization: Not Waivable
+
+
+
+Result: OK
+Waiver Authorization: Not Waivable
+
+
+
+empty-payload:
+--------------
+Result: OK
+Waiver Authorization: Not Waivable
+
+
+
+header-metadata:
+----------------
+Result: OK
+Waiver Authorization: Not Waivable
+
+
+
+man-pages:
+----------
+Result: OK
+Waiver Authorization: Not Waivable
+
+
+
+xml-files:
+----------
+Result: OK
+Waiver Authorization: Not Waivable
+
+
+
+elf-object-properties:
+----------------------
+Result: OK
+Waiver Authorization: Not Waivable
+
+
+
+desktop-entry-files:
+--------------------
+Result: OK
+Waiver Authorization: Not Waivable
+
+
+
+dist-tag:
+---------
+Result: OK
+Waiver Authorization: Not Waivable
+
+
+
+spec-file-name:
+---------------
+Result: OK
+Waiver Authorization: Not Waivable
+
+
+
+ownership:
+----------
+Result: OK
+Waiver Authorization: Not Waivable
+
+
+
+shell-syntax:
+-------------
+Result: OK
+Waiver Authorization: Not Waivable
+
+
+
+annocheck:
+----------
+Result: OK
+Waiver Authorization: Not Waivable
+
+
+
+permissions:
+------------
+Result: OK
+Waiver Authorization: Not Waivable
+
+
+
+capabilities:
+-------------
+Result: OK
+Waiver Authorization: Not Waivable
+
+
+
+path-migration:
+---------------
+Result: OK
+Waiver Authorization: Not Waivable
+
+
+
+lto:
+----
+Result: OK
+Waiver Authorization: Not Waivable
+
+
+
+symlinks:
+---------
+Result: OK
+Waiver Authorization: Not Waivable
+
+
+
+files:
+------
+Result: OK
+Waiver Authorization: Not Waivable
+
+
+
+patches:
+--------
+Result: OK
+Waiver Authorization: Not Waivable
+
+
+
+politics:
+---------
+Result: OK
+Waiver Authorization: Not Waivable
+
+
+
+bad-functions:
+--------------
+Result: OK
+Waiver Authorization: Not Waivable
+
+
+
+runpath:
+--------
+Result: OK
+Waiver Authorization: Not Waivable
