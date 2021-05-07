@@ -32,7 +32,7 @@ $ cat *.xsos.out
 `xsos` will let you scrub information from the report which is probably a good idea. If you wish to scrub everything automatically before uploading using the following comand instead...
 
 ```
-$ sudo ./xsos --scrub ./xsos --bios --os --cpu --disks --ethtool --lspci --mem --mpath | \
+$ sudo ./xsos --bios --os --cpu --disks --ethtool --lspci --mem --mpath --scrub | \
     tee "${HOME}/$(uuidgen).xsos.out"
 $ cat *.xsos.out
 ```
