@@ -1,0 +1,135 @@
+DMIDECODE
+  BIOS:
+    Vend: American Megatrends Inc.
+    Vers: 1301
+    Date: 11/28/2013
+    BIOS Rev: 4.6
+    FW Rev:  
+  System:
+    Mfr:  Equus Computer Systems
+    Prod: Nobilis
+    Vers: System Version
+    Ser:  ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿ 
+    UUID: ⣿⣿⣿⣿⣿⣿⣿⣿-⣿⣿⣿⣿-⣿⣿⣿⣿-⣿⣿⣿⣿-⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+  CPU:
+    1 of 1 CPU sockets populated, 2 cores/2 threads per CPU
+    2 total cores, 2 total threads
+    Mfr:  Intel
+    Fam:  Core 2 Duo
+    Freq: 3400 MHz
+    Vers: Intel(R) Core(TM) i3-3240 CPU @ 3.40GHz
+  Memory:
+    Total: 8192 MiB (8 GiB)
+    DIMMs: 2 of 4 populated
+    MaxCapacity: 16384 MiB (16 GiB / 0.02 TiB)
+
+OS
+  Hostname: SCRUBBED
+  Distro:   [redhat-release] Rocky Linux release 8.3
+            [rocky-release] Rocky Linux release 8.3
+            [os-release] Rocky Linux 8.3 8.3
+  RHN:      (missing)
+  RHSM:     (missing)
+  YUM:      1 enabled plugins: debuginfo-install
+  Runlevel: N 3  (default multi-user)
+  SELinux:  enforcing  (default enforcing)
+  Arch:     mach=x86_64  cpu=x86_64  platform=x86_64
+  Kernel:
+    Booted kernel:  4.18.0-240.22.1.el8.x86_64
+    GRUB default:   unknown  (no grub config file)  
+    Build version:
+      Linux version 4.18.0-240.22.1.el8.x86_64 (mockbuild@7dfc074d1e13452e94271ec95cb31ed9) (gcc version 8.3.1 20191121 (Red Hat 
+      8.3.1-5) (GCC)) #1 SMP Mon Apr 12 04:29:16 UTC 2021
+    Booted kernel cmdline:
+      BOOT_IMAGE=(hd0,gpt2)/boot/vmlinuz-4.18.0-240.22.1.el8.x86_64 root=UUID=b19f5d9b-c763-4af4-979d-8e03d4d1ee51 ro 
+      i915.preliminary_hw_support=1 crashkernel=auto rd.lvm.lv=VolGroup/usr
+    GRUB default kernel cmdline:  
+      unknown  (no grub config file)
+    Taint-check: 0  (kernel untainted)
+    - - - - - - - - - - - - - - - - - - -
+  Sys time:  Fri May  7 21:10:10 CDT 2021
+  Boot time: Fri May  7 18:44:05 CDT 2021  (epoch: 1620431045)
+  Time Zone: America/Chicago
+  Uptime:    2:26,  1 user
+  LoadAvg:   [4 CPU] 0.05 (1%), 0.03 (1%), 0.00 (0%)
+  /proc/stat:
+    procs_running: 1   procs_blocked: 0    processes [Since boot]: 18277
+    cpu [Utilization since boot]:
+      us 0%, ni 0%, sys 0%, idle 100%, iowait 0%, irq 0%, sftirq 0%, steal 0%
+
+CPU
+  4 logical processors (2 CPU cores)
+  1 Intel Core i3-3240 CPU @ 3.40GHz (flags: constant_tsc,ht,lm,nx,pae,vmx) 
+  └─4 threads / 2 cores each
+
+MEMORY
+  Stats graphed as percent of MemTotal:
+    MemUsed    ▊▊▊▊..............................................   8.5%
+    Buffers    ..................................................   0.3%
+    Cached     ▊▊................................................   4.6%
+    HugePages  ..................................................   0.0%
+    Dirty      ..................................................   0.0%
+  RAM:
+    7.5 GiB total ram
+    0.6 GiB (8%) used
+    0.3 GiB (4%) used excluding Buffers/Cached
+    0 GiB (0%) dirty
+  HugePages:
+    No ram pre-allocated to HugePages
+  THP:
+    22528 kB allocated to THP 
+  LowMem/Slab/PageTables/Shmem:
+    0.13 GiB (2%) of total ram used for Slab
+    0.01 GiB (0%) of total ram used for PageTables
+    0.01 GiB (0%) of total ram used for Shmem
+  Swap:
+    No system swap space configured
+
+STORAGE
+  Whole Disks from /proc/partitions:
+    2 disks, totaling 298 GiB (0.29 TiB)
+    - - - - - - - - - - - - - - - - - - - - -
+    Disk 	Size in GiB
+    ----	-----------
+    sda 	75
+    sdb 	224
+
+  Disk layout from lsblk:
+    NAME             MAJ:MIN RM   SIZE RO TYPE MOUNTPOINT
+    sda                8:0    0  74.5G  0 disk 
+    ├─sda1             8:1    0   300M  0 part /boot/efi
+    ├─sda2             8:2    0    20G  0 part /
+    └─sda3             8:3    0  54.2G  0 part 
+      ├─VolGroup-usr 253:0    0    10G  0 lvm  /usr
+      ├─VolGroup-tmp 253:1    0   4.2G  0 lvm  /tmp
+      └─VolGroup-var 253:2    0    40G  0 lvm  /var
+    sdb                8:16   0 223.6G  0 disk 
+    └─sdb1             8:17   0 223.6G  0 part /var/lib/longhorn
+    sr0               11:0    1  1024M  0 rom  
+
+  Filesystem usage from df:
+    Filesystem               1K-blocks    Used Available Use% Mounted on
+    /dev/sda2                 20511312  203184  19243168   2% /
+    /dev/mapper/VolGroup-usr  10255636 1411652   8303312  15% /usr
+    /dev/mapper/VolGroup-tmp   4276568   17296   4022320   1% /tmp
+    /dev/mapper/VolGroup-var  41022688  215416  38693736   1% /var
+    /dev/sdb1                229700940   61468 217901616   1% /var/lib/longhorn
+    /dev/sda1                   307016    7064    299952   3% /boot/efi
+
+DM-MULTIPATH
+  [No paths detected]
+
+LSPCI
+  Net:
+    (1) Realtek Semiconductor Co., Ltd. RTL8111/8168/8411 PCI Express Gigabit Ethernet Controller (rev 09)
+  Storage:
+    (1) Intel Corporation 6 Series/C200 Series Chipset Family 6 port Desktop SATA AHCI Controller (rev 05)
+  VGA:
+    Intel Corporation Xeon E3-1200 v2/3rd Gen Core processor Graphics Controller (rev 09)
+
+ETHTOOL
+  Interface Status:
+    enp3s0  0000:03:00.0  link=up 1000Mb/s full (autoneg=Y)  rx ring UNKNOWN  drv r8169 / fw rtl8168f-1_0.0.5 06/18/12
+  Interface Errors:
+    [None]
+
