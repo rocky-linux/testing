@@ -1,0 +1,136 @@
+DMIDECODE
+  BIOS:
+    Vend: LENOVO
+    Vers: GIET99WW (2.49 )
+    Date: 03/17/2020
+    BIOS Rev: 2.49
+    FW Rev:   1.18
+  System:
+    Mfr:  LENOVO
+    Prod: 20AMS0CG0D
+    Vers: ThinkPad X240
+    Ser:  ⣿⣿⣿⣿⣿⣿⣿⣿
+    UUID: ⣿⣿⣿⣿⣿⣿⣿⣿-⣿⣿⣿⣿-⣿⣿⣿⣿-⣿⣿⣿⣿-⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+  CPU:
+    1 of 1 CPU sockets populated, 2 cores/4 threads per CPU
+    2 total cores, 4 total threads
+    Mfr:  Intel(R) Corporation
+    Fam:  Core i7
+    Freq: 2100 MHz
+    Vers: Intel(R) Core(TM) i7-4600U CPU @ 2.10GHz
+  Memory:
+    Total: 8192 MiB (8 GiB)
+    DIMMs: 1 of 1 populated
+    MaxCapacity: 8192 MiB (8 GiB / 0.01 TiB)
+
+OS
+  Hostname: SCRUBBED
+  Distro:   [redhat-release] Rocky Linux release 8.3
+            [rocky-release] Rocky Linux release 8.3
+            [os-release] Rocky Linux 8.3 8.3
+  RHN:      (missing)
+  RHSM:     hostname = SCRUBBED
+            proxy_hostname =
+  YUM:      2 enabled plugins: debuginfo-install, product-id
+  Runlevel: N 5  (default graphical)
+  SELinux:  enforcing  (default enforcing)
+  Arch:     mach=x86_64  cpu=x86_64  platform=x86_64
+  Kernel:
+    Booted kernel:  4.18.0-240.22.1.el8_3.x86_64
+    GRUB default:   unknown  (no grub config file)  
+    Build version:
+      Linux version 4.18.0-240.22.1.el8_3.x86_64 (mockbuild@mock) (gcc version 8.3.1 20191121 (Red Hat 8.3.1-5) (GCC)) #1 SMP Thu Apr 29 22:34:29 EDT 2021
+    Booted kernel cmdline:
+      BOOT_IMAGE=(hd0,gpt2)/vmlinuz-4.18.0-240.22.1.el8_3.x86_64 root=/dev/mapper/rl-root ro crashkernel=auto resume=/dev/mapper/rl-swap rd.luks.uuid=luks-ae856cbd-c216-4646-abc1-2feb2f138c21 
+      rd.lvm.lv=rl/root rd.lvm.lv=rl/swap rhgb quiet psmouse.synaptics_intertouch=0
+    GRUB default kernel cmdline:  
+      unknown  (no grub config file)
+    Taint-check: 0  (kernel untainted)
+    - - - - - - - - - - - - - - - - - - -
+  Sys time:  Sat May  8 10:57:47 BST 2021
+  Boot time: Mon May  3 17:58:45 BST 2021  (epoch: 1620061125)
+  Time Zone: Europe/London
+  Uptime:    4 days, 16:59,  2 users
+  LoadAvg:   [4 CPU] 0.80 (20%), 0.85 (21%), 0.85 (21%)
+  /proc/stat:
+    procs_running: 1   procs_blocked: 0    processes [Since boot]: 279004
+    cpu [Utilization since boot]:
+      us 7%, ni 0%, sys 2%, idle 91%, iowait 0%, irq 0%, sftirq 0%, steal 0%
+
+CPU
+  4 logical processors (2 CPU cores)
+  1 Intel Core i7-4600U CPU @ 2.10GHz (flags: aes,constant_tsc,ht,lm,nx,pae,rdrand,vmx) 
+  └─4 threads / 2 cores each
+
+MEMORY
+  Stats graphed as percent of MemTotal:
+    MemUsed    ▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊...  94.4%
+    Buffers    ..................................................   0.0%
+    Cached     ▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊..................................  32.9%
+    HugePages  ..................................................   0.0%
+    Dirty      ..................................................   0.1%
+  RAM:
+    7.5 GiB total ram
+    7.1 GiB (94%) used
+    4.6 GiB (62%) used excluding Buffers/Cached
+    0 GiB (0%) dirty
+  HugePages:
+    No ram pre-allocated to HugePages
+  THP:
+    423936 kB allocated to THP 
+  LowMem/Slab/PageTables/Shmem:
+    0.34 GiB (5%) of total ram used for Slab
+    0.11 GiB (2%) of total ram used for PageTables
+    0.66 GiB (9%) of total ram used for Shmem
+  Swap:
+    4.8 GiB (62%) used of 7.8 GiB total
+
+STORAGE
+  Whole Disks from /proc/partitions:
+    1 disks, totaling 224 GiB (0.22 TiB)
+    - - - - - - - - - - - - - - - - - - - - -
+    Disk 	Size in GiB
+    ----	-----------
+    sda 	224
+
+  Disk layout from lsblk:
+    NAME                                          MAJ:MIN RM   SIZE RO TYPE  MOUNTPOINT
+    sda                                             8:0    0 223.6G  0 disk  
+    ├─sda1                                          8:1    0   600M  0 part  /boot/efi
+    ├─sda2                                          8:2    0     1G  0 part  /boot
+    └─sda3                                          8:3    0   222G  0 part  
+      └─luks-ae856cbd-c216-4646-abc1-2feb2f138c21 253:0    0   222G  0 crypt 
+        ├─rl-root                                 253:1    0    70G  0 lvm   /
+        ├─rl-swap                                 253:2    0   7.8G  0 lvm   [SWAP]
+        └─rl-home                                 253:3    0 144.2G  0 lvm   /home
+
+  Filesystem usage from df:
+    Filesystem          1K-blocks     Used Available Use% Mounted on
+    /dev/mapper/rl-root  73348104 18021592  55326512  25% /
+    /dev/sda2             1038336   332328    706008  33% /boot
+    /dev/mapper/rl-home 151130012 29113536 122016476  20% /home
+    /dev/sda1              613184     6552    606632   2% /boot/efi
+    /dev/fuse                   0        0         0    - /run/user/1000/doc
+    /dev/mapper/rl-root  73348104 18021592  55326512  25% /var/lib/containers/storage/overlay
+
+DM-MULTIPATH
+  [No paths detected]
+
+LSPCI
+  Net:
+    (1) Intel Corporation Ethernet Connection I218-LM (rev 04)
+    (1) Intel Corporation Wireless 7260 (rev 83)
+  Storage:
+    (1) Intel Corporation 8 Series SATA Controller 1 [AHCI mode] (rev 04)
+  VGA:
+    Intel Corporation Haswell-ULT Integrated Graphics Controller (rev 0b)
+
+ETHTOOL
+  Interface Status:
+    enp0s25     0000:00:19.0  link=DOWN  rx ring 256/4096  drv e1000e v3.2.6-k / fw 0.6-3
+    virbr0      N/A           link=DOWN  rx ring UNKNOWN   drv bridge v2.3 / fw N/A
+    virbr0-nic  tap           link=DOWN  rx ring UNKNOWN   drv tun v1.6 / fw UNKNOWN
+    wlp3s0      0000:03:00.0  link=up    rx ring 0/0       drv iwlwifi v4.18.0-240.22.1.el8_3.x86_64 / fw 17.3216344376.0 7260-17.ucode
+  Interface Errors:
+    wlp3s0  rx_dropped: 26799
+
