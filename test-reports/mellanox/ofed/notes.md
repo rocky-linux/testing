@@ -145,7 +145,7 @@ RPM build errors:
 
 The `ambigous python shebang` error is being produced by `/usr/lib/rpm/redhat/brp-mangle-shebangs`.
 This was an upstream change in Fedora -> RHEL 8 a while ago in [Make_ambiguous_python_shebangs_error](https://fedoraproject.org/wiki/Changes/Make_ambiguous_python_shebangs_error#Detailed_Description).
-At fist I thought it could be just commented out so that the script would not give this error when an ambigous python was detected.
+At first I thought it could be just commented out so that the script would not give this error when an ambigous python was detected.
 However, this only led to RPMs not being able to install due to a `/usr/bin/python` dependency.
 
 Looking into the `mlnx-ofa_kernel.spec` file there are some OS detection lines to force Python 3 in `RHEL 8` compatible systems:
