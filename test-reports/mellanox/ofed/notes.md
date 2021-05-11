@@ -75,13 +75,16 @@ Build mlnx-ofa_kernel 4.9 RPM
 Running  rpmbuild --rebuild  --define '_topdir /tmp/MLNX_OFED_LINUX-4.9-3.1.5.0-4.18.0-240.22.1.el8.x86_64/mlnx_iso.4090689/OFED_topdir' --define '_sourcedir %{_topdir}/SOURCES' --define '_specdir %{_topdir}/SPECS' --define '_srcrpmdir %{_topdir}/SRPMS' --define '_rpmdir %{_topdir}/RPMS'  --nodeps --define '_dist .rhel8u3' --define 'configure_options   --with-core-mod --with-user_mad-mod --with-user_access-mod --with-addr_trans-mod --with-mlxfw-mod --with-mlx4-mod --with-mlx4_en-mod --with-mlx5-mod --with-mlx5-ipsec --with-ipoib-mod --with-innova-flex --with-innova-ipsec --with-mdev-mod --with-srp-mod --with-iser-mod --with-isert-mod' --define 'KVERSION 4.18.0-240.22.1.el8.x86_64' --define 'K_SRC /lib/modules/4.18.0-240.22.1.el8.x86_64/build' --define '_prefix /usr' /tmp/MLNX_OFED_SRC-4.9-3.1.5.0/SRPMS/mlnx-ofa_kernel-4.9-OFED.4.9.3.1.5.1.src.rpm
 Failed to build mlnx-ofa_kernel 4.9 RPM
 Collecting debug info...
-See /tmp/MLNX_OFED_LINUX-4.9-3.1.5.0-4.18.0-240.22.1.el8.x86_64/mlnx_iso.4090689_logs/OFED.938456.logs/mlnx-ofa_kernel-4.9.rpmbuild.log```
+See /tmp/MLNX_OFED_LINUX-4.9-3.1.5.0-4.18.0-240.22.1.el8.x86_64/mlnx_iso.4090689_logs/OFED.938456.logs/mlnx-ofa_kernel-4.9.rpmbuild.log
+```
 
 Yet again, the top level error is not informitive, however, when you look at the command that it fails on you can get a little hidden gem:
 
 ```bash
 rpmbuild --rebuild  --define '_topdir /tmp/MLNX_OFED_LINUX-4.9-3.1.5.0-4.18.0-240.22.1.el8.x86_64/mlnx_iso.4090689/OFED_topdir' --define '_sourcedir %{_topdir}/SOURCES' --define '_specdir %{_topdir}/SPECS' --define '_srcrpmdir %{_topdir}/SRPMS' --define '_rpmdir %{_topdir}/RPMS'  --nodeps --define '_dist .rhel8u3' --define 'configure_options   --with-core-mod --with-user_mad-mod --with-user_access-mod --with-addr_trans-mod --with-mlxfw-mod --with-mlx4-mod --with-mlx4_en-mod --with-mlx5-mod --with-mlx5-ipsec --with-ipoib-mod --with-innova-flex --with-innova-ipsec --with-mdev-mod --with-srp-mod --with-iser-mod --with-isert-mod' --define 'KVERSION 4.18.0-240.22.1.el8.x86_64' --define 'K_SRC /lib/modules/4.18.0-240.22.1.el8.x86_64/build' --define '_prefix /usr' /tmp/MLNX_OFED_SRC-4.9-3.1.5.0/SRPMS/mlnx-ofa_kernel-4.9-OFED.4.9.3.1.5.1.src.rpm
+
 ...
+
 Bytecompiling .py files below /tmp/MLNX_OFED_LINUX-4.9-3.1.5.0-4.18.0-240.22.1.el8.x86_64/mlnx_iso.4090689/OFED_topdir/BUILDROOT/mlnx-ofa_kernel-4.9-OFED.4.9.3.1.5.1.rhel8u3.x86_64/usr/lib/python2.7 using /usr/bin/python2.7
 + /usr/lib/rpm/brp-python-hardlink
 + PYTHON3=/usr/libexec/platform-python
