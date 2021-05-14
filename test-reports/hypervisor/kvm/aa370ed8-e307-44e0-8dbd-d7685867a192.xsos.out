@@ -1,0 +1,125 @@
+DMIDECODE
+  BIOS:
+    Vend: Seabios
+    Vers: 0.5.1
+    Date: 01/01/2011
+    BIOS Rev: 1.0
+    FW Rev:  
+  System:
+    Mfr:  Red Hat
+    Prod: KVM
+    Vers: RHEL 7.0.0 PC (i440FX + PIIX, 1996)
+    Ser:  ⣿⣿⣿ ⣿⣿⣿⣿⣿⣿⣿⣿⣿
+    UUID: ⣿⣿⣿⣿⣿⣿⣿⣿-⣿⣿⣿⣿-⣿⣿⣿⣿-⣿⣿⣿⣿-⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+  CPU:
+    4 of 4 CPU sockets populated, 0 cores/0 threads per CPU
+    0 total cores, 0 total threads
+    Mfr:  Bochs
+    Fam: 
+    Freq: 2000 MHz
+    Vers: Not Specified
+  Memory:
+    Total: 4096 MiB (4 GiB)
+    DIMMs: 1 of 3 populated
+    MaxCapacity: 4096 MiB (4 GiB / 0.00 TiB)
+
+OS
+  Hostname: SCRUBBED
+  Distro:   [redhat-release] Rocky Linux release 8.3
+            [rocky-release] Rocky Linux release 8.3
+            [os-release] Rocky Linux 8.3 8.3
+  RHN:      (missing)
+  RHSM:     (missing)
+  YUM:      1 enabled plugins: debuginfo-install
+  Runlevel: N 3  (default multi-user)
+  SELinux:  enforcing  (default enforcing)
+  Arch:     mach=x86_64  cpu=x86_64  platform=x86_64
+  Kernel:
+    Booted kernel:  4.18.0-240.22.1.el8.x86_64
+    GRUB default:     
+    Build version:
+      Linux version 4.18.0-240.22.1.el8.x86_64 (mockbuild@7dfc074d1e13452e94271ec95cb31ed9) (gcc version 8.3.1 20191121 (Red 
+      Hat 8.3.1-5) (GCC)) #1 SMP Mon Apr 12 04:29:16 UTC 2021
+    Booted kernel cmdline:
+      BOOT_IMAGE=(hd0,msdos1)/vmlinuz-4.18.0-240.22.1.el8.x86_64 root=/dev/mapper/rl-root ro crashkernel=auto 
+      resume=/dev/mapper/rl-swap rd.lvm.lv=rl/root rd.lvm.lv=rl/swap
+    GRUB default kernel cmdline:  
+      
+    Taint-check: 0  (kernel untainted)
+    - - - - - - - - - - - - - - - - - - -
+  Sys time:  Fri May  7 17:02:47 CDT 2021
+  Boot time: Fri May  7 16:56:26 CDT 2021  (epoch: 1620424586)
+  Time Zone: America/Chicago
+  Uptime:    6 min,  1 user
+  LoadAvg:   [4 CPU] 0.01 (0%), 0.16 (4%), 0.10 (2%)
+  /proc/stat:
+    procs_running: 2   procs_blocked: 0    processes [Since boot]: 13844
+    cpu [Utilization since boot]:
+      us 5%, ni 0%, sys 1%, idle 93%, iowait 0%, irq 0%, sftirq 0%, steal 0%
+
+CPU
+  4 logical processors 
+  4 Intel Core Processor (Haswell, IBRS) (flags: aes,constant_tsc,lm,nx,pae) 
+
+MEMORY
+  Stats graphed as percent of MemTotal:
+    MemUsed    ▊▊▊▊▊▊▊...........................................  14.6%
+    Buffers    ..................................................   0.1%
+    Cached     ▊▊▊▊..............................................   8.1%
+    HugePages  ..................................................   0.0%
+    Dirty      ..................................................   0.0%
+  RAM:
+    3.7 GiB total ram
+    0.5 GiB (15%) used
+    0.2 GiB (6%) used excluding Buffers/Cached
+    0 GiB (0%) dirty
+  HugePages:
+    No ram pre-allocated to HugePages
+  THP:
+    10240 kB allocated to THP 
+  LowMem/Slab/PageTables/Shmem:
+    0.11 GiB (3%) of total ram used for Slab
+    0.01 GiB (0%) of total ram used for PageTables
+    0.01 GiB (0%) of total ram used for Shmem
+  Swap:
+    0 GiB (0%) used of 4 GiB total
+
+STORAGE
+  Whole Disks from /proc/partitions:
+    1 disks, totaling 50 GiB (0.05 TiB)
+    - - - - - - - - - - - - - - - - - - - - -
+    Disk 	Size in GiB
+    ----	-----------
+    vda 	50
+
+  Disk layout from lsblk:
+    NAME        MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
+    sr0          11:0    1 1024M  0 rom  
+    vda         252:0    0   50G  0 disk 
+    ├─vda1      252:1    0    1G  0 part /boot
+    └─vda2      252:2    0   49G  0 part 
+      ├─rl-root 253:0    0   45G  0 lvm  /
+      └─rl-swap 253:1    0    4G  0 lvm  [SWAP]
+
+  Filesystem usage from df:
+    Filesystem          1K-blocks    Used Available Use% Mounted on
+    /dev/mapper/rl-root  47195632 1859408  45336224   4% /
+    /dev/vda1             1038336  180404    857932  18% /boot
+
+DM-MULTIPATH
+  [No paths detected]
+
+LSPCI
+  Net:
+    (1) Red Hat, Inc. Virtio network device
+  Storage:
+    (1) Red Hat, Inc. Virtio block device
+  VGA:
+    Red Hat, Inc. QXL paravirtual graphic card (rev 04)
+
+ETHTOOL
+  Interface Status:
+    ens3  0000:00:03.0  link=up Unknown! unknown! (autoneg=N)  rx ring 256/256  drv virtio_net v1.0.0 / fw UNKNOWN
+  Interface Errors:
+    [None]
+

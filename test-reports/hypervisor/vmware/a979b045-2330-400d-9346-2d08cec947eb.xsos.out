@@ -1,0 +1,118 @@
+DMIDECODE
+  BIOS:
+    Vend: Phoenix Technologies LTD
+    Vers: 6.00
+    Date: 07/22/2020
+    BIOS Rev: 4.6
+    FW Rev:   0.0
+  System:
+    Mfr:  VMware, Inc.
+    Prod: VMware Virtual Platform
+    Vers: None
+    Ser:  ⣿⣿⣿⣿⣿⣿-⣿⣿ ⣿⣿ ⣿⣿ ⣿⣿ ⣿⣿ ⣿⣿ ⣿⣿ ⣿⣿-⣿⣿ ⣿⣿ ⣿⣿ ⣿⣿ ⣿⣿ ⣿⣿ ⣿⣿ ⣿⣿
+    UUID: ⣿⣿⣿⣿⣿⣿⣿⣿-⣿⣿⣿⣿-⣿⣿⣿⣿-⣿⣿⣿⣿-⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+  CPU:
+    128 of 128 CPU sockets populated, 1 cores/0 threads per CPU
+    128 total cores, 0 total threads
+    Mfr:  GenuineIntel
+    Fam:  Unknown
+    Freq: 2900 MHz
+    Vers: Intel(R) Core(TM) i7-7600U CPU @ 2.80GHz
+  Memory:
+    Total: 2048 MiB (2 GiB)
+    DIMMs: 1 of 192 populated
+    MaxCapacity: 3072 MiB (3 GiB / 0.00 TiB)
+
+OS
+  Hostname: SCRUBBED
+  Distro:   [redhat-release] Rocky Linux release 8.3
+            [rocky-release] Rocky Linux release 8.3
+            [os-release] Rocky Linux 8.3 8.3
+  RHN:      (missing)
+  RHSM:     (missing)
+  YUM:      1 enabled plugins: debuginfo-install
+  Runlevel: N 3  (default multi-user)
+  SELinux:  enforcing  (default enforcing)
+  Arch:     mach=x86_64  cpu=x86_64  platform=x86_64
+  Kernel:
+    Booted kernel:  4.18.0-240.22.1.el8.x86_64
+    GRUB default:     
+    Build version:
+      Linux version 4.18.0-240.22.1.el8.x86_64 (mockbuild@7dfc074d1e13452e94271ec95cb31ed9) (gcc 
+      version 8.3.1 20191121 (Red Hat 8.3.1-5) (GCC)) #1 SMP Mon Apr 12 04:29:16 UTC 2021
+    Booted kernel cmdline:
+      BOOT_IMAGE=(hd0,msdos1)/vmlinuz-4.18.0-240.22.1.el8.x86_64 root=/dev/mapper/rl_rocky-root 
+      ro crashkernel=auto resume=/dev/mapper/rl_rocky-swap rd.lvm.lv=rl_rocky/root 
+      rd.lvm.lv=rl_rocky/swap
+    GRUB default kernel cmdline:  
+      
+    Taint-check: 134217728  (see https://access.redhat.com/solutions/40594)
+      27  BIT_BY_ZOMBIE: Kernel booted with OMGZOMBIES param
+    - - - - - - - - - - - - - - - - - - -
+  Sys time:  Wed May 12 14:22:24 CEST 2021
+  Boot time: Wed May 12 14:12:35 CEST 2021  (epoch: 1620821555)
+  Time Zone: Europe/Belgrade
+  Uptime:    9 min,  1 user
+  LoadAvg:   [2 CPU] 0.00 (0%), 0.06 (3%), 0.06 (3%)
+  /proc/stat:
+    procs_running: 1   procs_blocked: 0    processes [Since boot]: 10535
+    cpu [Utilization since boot]:
+      us 2%, ni 0%, sys 2%, idle 95%, iowait 0%, irq 1%, sftirq 0%, steal 0%
+
+CPU
+  2 logical processors 
+  2 Intel Core i7-7600U CPU @ 2.80GHz (flags: aes,constant_tsc,lm,nx,pae,rdrand) 
+
+MEMORY
+  Stats graphed as percent of MemTotal:
+    MemUsed    ▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊..................................  32.7%
+    Buffers    ..................................................   0.2%
+    Cached     ▊▊▊▊▊▊▊▊..........................................  16.3%
+    HugePages  ..................................................   0.0%
+    Dirty      ..................................................   0.0%
+  RAM:
+    1.8 GiB total ram
+    0.6 GiB (33%) used
+    0.3 GiB (16%) used excluding Buffers/Cached
+    0 GiB (0%) dirty
+  HugePages:
+    No ram pre-allocated to HugePages
+  THP:
+    16384 kB allocated to THP 
+  LowMem/Slab/PageTables/Shmem:
+    0.11 GiB (6%) of total ram used for Slab
+    0.01 GiB (0%) of total ram used for PageTables
+    0.01 GiB (0%) of total ram used for Shmem
+  Swap:
+    0 GiB (0%) used of 1.6 GiB total
+
+STORAGE
+  Whole Disks from /proc/partitions:
+    1 disks, totaling 16 GiB (0.02 TiB)
+    - - - - - - - - - - - - - - - - - - - - -
+    Disk 	Size in GiB
+    ----	-----------
+    sda 	16
+
+  Disk layout from lsblk:
+    NAME              MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
+    sda                 8:0    0   16G  0 disk 
+    ├─sda1              8:1    0    1G  0 part /boot
+    └─sda2              8:2    0   15G  0 part 
+      ├─rl_rocky-root 253:0    0 13.4G  0 lvm  /
+      └─rl_rocky-swap 253:1    0  1.6G  0 lvm  [SWAP]
+    sr0                11:0    1  681M  0 rom  
+
+  Filesystem usage from df:
+    Filesystem                1K-blocks    Used Available Use% Mounted on
+    /dev/mapper/rl_rocky-root  14034944 1687568  12347376  13% /
+    /dev/sda1                   1038336  180816    857520  18% /boot
+
+LSPCI
+  Net:
+    (1) Intel Corporation 82545EM Gigabit Ethernet Controller (Copper) (rev 01)
+  Storage:
+    (1) Broadcom / LSI 53c1030 PCI-X Fusion-MPT Dual Ultra320 SCSI (rev 01)
+  VGA:
+    VMware SVGA II Adapter
+
