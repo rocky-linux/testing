@@ -1,97 +1,97 @@
-[1;31mDMIDECODE[0;0m
-[1;35m  BIOS:[0;0m
-    [1;34mVend:[0;0m Vultr
-    [1;34mVers:[0;0m Not Specified
-    [1;34mDate:[0;0m Not Specified
-    [1;34mBIOS Rev:[0;0m 0.0
-    [1;34mFW Rev:[0;0m  
-[1;35m  System:[0;0m
-    [1;34mMfr:[0;0m  Vultr
-    [1;34mProd:[0;0m VC2
-    [1;34mVers:[0;0m pc-i440fx-5.2
-    [1;34mSer:[0;0m  ⣿⣿⣿⣿⣿⣿⣿⣿
-    [1;34mUUID:[0;0m ⣿⣿⣿⣿⣿⣿⣿⣿-⣿⣿⣿⣿-⣿⣿⣿⣿-⣿⣿⣿⣿-⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
-[1;35m  CPU:[0;0m
-    [0;0m[1;1m1 of 1 CPU sockets populated, 1 cores/1 threads per CPU
+DMIDECODE
+  BIOS:
+    Vend: Vultr
+    Vers: Not Specified
+    Date: Not Specified
+    BIOS Rev: 0.0
+    FW Rev:  
+  System:
+    Mfr:  Vultr
+    Prod: VC2
+    Vers: pc-i440fx-5.2
+    Ser:  ⣿⣿⣿⣿⣿⣿⣿⣿
+    UUID: ⣿⣿⣿⣿⣿⣿⣿⣿-⣿⣿⣿⣿-⣿⣿⣿⣿-⣿⣿⣿⣿-⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+  CPU:
+    1 of 1 CPU sockets populated, 1 cores/1 threads per CPU
     1 total cores, 1 total threads
-    [1;34mMfr:[0;0m  QEMU
-    [1;34mFam:[0;0m 
-    [1;34mFreq:[0;0m 2000 MHz
-    [1;34mVers:[0;0m pc-i440fx-5.2
-[1;35m  Memory:[0;0m
-    [1;34mTotal:[0;0m 1024 MiB (1 GiB)
-    [1;34mDIMMs:[0;0m 1 of 1 populated
-    [1;34mMaxCapacity:[0;0m 1024 MiB (1 GiB / 0.00 TiB)
+    Mfr:  QEMU
+    Fam: 
+    Freq: 2000 MHz
+    Vers: pc-i440fx-5.2
+  Memory:
+    Total: 1024 MiB (1 GiB)
+    DIMMs: 1 of 1 populated
+    MaxCapacity: 1024 MiB (1 GiB / 0.00 TiB)
 
-[1;31mOS[0;0m
-  [1;35mHostname:[0;0m [1;33mSCRUBBED[0;0m
-  [1;35mDistro:[0;0m   [0;0m[1;1m[redhat-release][0;0m [40m[1;31mRocky Linux release 8.3[0;0m
-            [0;0m[1;1m[rocky-release][0;0m Rocky Linux release 8.3
-            [0;0m[1;1m[os-release][0;0m Rocky Linux 8.3 8.3
-  [1;35mRHN:[0;0m      [0;31m(missing)[0;0m
-  [1;35mRHSM:[0;0m     [0;31m(missing)[0;0m
-  [1;35mYUM:[0;0m      1 enabled plugins: debuginfo-install
-  [1;35mRunlevel:[0;0m N 3  (default multi-user)
-  [1;35mSELinux:[0;0m  enforcing  (default enforcing)
-  [1;35mArch:[0;0m     mach=x86_64  cpu=x86_64  platform=x86_64
-  [1;35mKernel:[0;0m
-    [1;34mBooted kernel:[0;0m  4.18.0-240.22.1.el8.x86_64
-    [1;34mGRUB default:[0;0m     
-    [1;34mBuild version:[0;0m
-[0;33m      Linux version 4.18.0-240.22.1.el8.x86_64 (mockbuild@7dfc074d1e13452e94271ec95cb31ed9) (gcc version 8.3.1 20191121 (Red Hat 8.3.1-5) (GCC)) #1 SMP Mon Apr 12 04:29:16 UTC 2021[0;0m
-    [1;34mBooted kernel cmdline:[0;0m
+OS
+  Hostname: SCRUBBED
+  Distro:   [redhat-release] Rocky Linux release 8.3
+            [rocky-release] Rocky Linux release 8.3
+            [os-release] Rocky Linux 8.3 8.3
+  RHN:      (missing)
+  RHSM:     (missing)
+  YUM:      1 enabled plugins: debuginfo-install
+  Runlevel: N 3  (default multi-user)
+  SELinux:  enforcing  (default enforcing)
+  Arch:     mach=x86_64  cpu=x86_64  platform=x86_64
+  Kernel:
+    Booted kernel:  4.18.0-240.22.1.el8.x86_64
+    GRUB default:     
+    Build version:
+      Linux version 4.18.0-240.22.1.el8.x86_64 (mockbuild@7dfc074d1e13452e94271ec95cb31ed9) (gcc version 8.3.1 20191121 (Red Hat 8.3.1-5) (GCC)) #1 SMP Mon Apr 12 04:29:16 UTC 2021
+    Booted kernel cmdline:
       
-    [1;34mGRUB default kernel cmdline:[0;0m  
+    GRUB default kernel cmdline:  
       
-    [1;34mTaint-check:[0;0m 0[0;0m  (kernel untainted)
-    [0;37m- - - - - - - - - - - - - - - - - - -[0;0m
-  [1;35mSys time:[0;0m  Fri May  7 18:32:27 [0;0m[1;1mCDT[0;0m 2021
-  [1;35mBoot time:[0;0m Fri May  7 18:25:18 [0;0m[1;1mCDT[0;0m 2021  (epoch: 1620429918)
-  [1;35mTime Zone:[0;0m America/Chicago
-  [1;35mUptime:[0;0m    7 min,  3 users
-  [1;35mLoadAvg:[0;0m   [0;0m[1;1m[1 CPU][0;0m 0.14 ([0;32m14%[0;0m), 0.47 ([0;32m47%[0;0m), 0.31 ([0;32m31%[0;0m)
-  [1;35m/proc/stat:[0;0m
-    [1;34mprocs_running:[0;0m 2   [1;34mprocs_blocked:[0;0m 0    [1;34mprocesses [Since boot]:[0;0m 34134
-    [1;34mcpu [Utilization since boot]:[0;0m
+    Taint-check: 0  (kernel untainted)
+    - - - - - - - - - - - - - - - - - - -
+  Sys time:  Fri May  7 18:32:27 CDT 2021
+  Boot time: Fri May  7 18:25:18 CDT 2021  (epoch: 1620429918)
+  Time Zone: America/Chicago
+  Uptime:    7 min,  3 users
+  LoadAvg:   [1 CPU] 0.14 (14%), 0.47 (47%), 0.31 (31%)
+  /proc/stat:
+    procs_running: 2   procs_blocked: 0    processes [Since boot]: 34134
+    cpu [Utilization since boot]:
       us 30%, ni 1%, sys 8%, idle 60%, iowait 1%, irq 0%, sftirq 0%, steal 0%
 
-[1;31mCPU[0;0m
-  [0;0m[1;1m1 logical processors[0;0m 
+CPU
+  1 logical processors 
   1 Intel Core Processor (Broadwell, no TSX, IBRS) (flags: aes,constant_tsc,lm,nx,pae,rdrand) 
 
-[1;31mMEMORY[0;0m
-  [1;35mStats graphed as percent of MemTotal:[0;0m
-    [0;32mMemUsed    ▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊[0;0m........  [0;32m84.2%[0;0m
-    [0;35mBuffers    [0;0m..................................................   [0;35m0.2%[0;0m
-    [0;34mCached     ▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊[0;0m.......................  [0;34m54.7%[0;0m
-    [0;36mHugePages  [0;0m..................................................   [0;36m0.0%[0;0m
-    [0;31mDirty      [0;0m..................................................   [0;31m0.0%[0;0m
-  [1;35mRAM:[0;0m
-    [0;0m[1;1m0.8 GiB total ram[0;0m
+MEMORY
+  Stats graphed as percent of MemTotal:
+    MemUsed    ▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊........  84.2%
+    Buffers    ..................................................   0.2%
+    Cached     ▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊.......................  54.7%
+    HugePages  ..................................................   0.0%
+    Dirty      ..................................................   0.0%
+  RAM:
+    0.8 GiB total ram
     0.7 GiB (84%) used
-    [0;0m[1;1m0.2 GiB (29%) used excluding Buffers/Cached[0;0m
+    0.2 GiB (29%) used excluding Buffers/Cached
     0 GiB (0%) dirty
-  [1;35mHugePages:[0;0m
+  HugePages:
     No ram pre-allocated to HugePages
-  [1;35mTHP:[0;0m
-    8192 kB allocated to THP [0;0m
-  [1;35mLowMem/Slab/PageTables/Shmem:[0;0m
+  THP:
+    8192 kB allocated to THP 
+  LowMem/Slab/PageTables/Shmem:
     0.11 GiB (14%) of total ram used for Slab
     0.01 GiB (1%) of total ram used for PageTables
     0 GiB (0%) of total ram used for Shmem
-  [1;35mSwap:[0;0m
+  Swap:
     0 GiB (0%) used of 2.1 GiB total
 
-[1;31mSTORAGE[0;0m
-  [1;35mWhole Disks from /proc/partitions:[0;0m
-    [0;0m[1;1m1 disks, totaling 25 GiB (0.02 TiB)[0;0m
-    [0;37m- - - - - - - - - - - - - - - - - - - - -[0;0m
-    [1;34mDisk 	Size in GiB
-    ----	-----------[0;0m
+STORAGE
+  Whole Disks from /proc/partitions:
+    1 disks, totaling 25 GiB (0.02 TiB)
+    - - - - - - - - - - - - - - - - - - - - -
+    Disk 	Size in GiB
+    ----	-----------
     vda 	25
 
-  [1;35mDisk layout from lsblk:[0;0m
-    [0;0m[1;1mNAME                  MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT[0;0m
+  Disk layout from lsblk:
+    NAME                  MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
     sr0                    11:0    1 1024M  0 rom  
     vda                   252:0    0   25G  0 disk 
     ├─vda1                252:1    0    1G  0 part /boot
@@ -99,22 +99,22 @@
       ├─rl_jotenhiem-root 253:0    0 21.9G  0 lvm  /
       └─rl_jotenhiem-swap 253:1    0  2.2G  0 lvm  [SWAP]
 
-  [1;35mFilesystem usage from df:[0;0m
-    [0;0m[1;1mFilesystem                    1K-blocks    Used Available Use% Mounted on[0;0m
+  Filesystem usage from df:
+    Filesystem                    1K-blocks    Used Available Use% Mounted on
     /dev/mapper/rl_jotenhiem-root  22897744 2469520  20428224  11% /
     /dev/vda1                       1038336  181556    856780  18% /boot
 
-[1;31mLSPCI[0;0m
-[1;35m  Net:[0;0m
-   [0;0m[1;1m (1) [0;0mRed Hat, Inc. Virtio network device
-[1;35m  Storage:[0;0m
-   [0;0m[1;1m (1) [0;0mRed Hat, Inc. Virtio block device
-[1;35m  VGA:[0;0m
+LSPCI
+  Net:
+    (1) Red Hat, Inc. Virtio network device
+  Storage:
+    (1) Red Hat, Inc. Virtio block device
+  VGA:
     Cirrus Logic GD 5446
 
-[1;31mETHTOOL[0;0m
-[1;35m  Interface Status:[0;0m
-[0;32m    ens3  0000:00:03.0  link=up Unknown! unknown! (autoneg=N)  rx ring 256/256  drv virtio_net v1.0.0 / fw UNKNOWN[0;0m
-[1;35m  Interface Errors:[0;0m
-[0;33m    [0;37m[None]
-[0;0m
+ETHTOOL
+  Interface Status:
+    ens3  0000:00:03.0  link=up Unknown! unknown! (autoneg=N)  rx ring 256/256  drv virtio_net v1.0.0 / fw UNKNOWN
+  Interface Errors:
+    [None]
+
