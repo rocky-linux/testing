@@ -1,0 +1,135 @@
+DMIDECODE
+  BIOS:
+    Vend: HP
+    Vers: P62
+    Date: 07/02/2013
+    BIOS Rev:
+    FW Rev:   2.27
+  System:
+    Mfr:  HP
+    Prod: ProLiant DL380 G6
+    Vers: Not Specified
+    Ser:  ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿      
+    UUID: ⣿⣿⣿⣿⣿⣿⣿⣿-⣿⣿⣿⣿-⣿⣿⣿⣿-⣿⣿⣿⣿-⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+  CPU:
+    1 of 2 CPU sockets populated, 4 cores/8 threads per CPU
+    4 total cores, 8 total threads
+    Mfr:  Intel
+    Fam:  Xeon
+    Freq: 2800 MHz
+    Vers: Intel(R) Xeon(R) CPU X5560 @ 2.80GHz 
+  Memory:
+    Total: 8192 MiB (8 GiB)
+    DIMMs: 2 of 18 populated
+    MaxCapacity: 393216 MiB (384 GiB / 0.38 TiB)
+
+OS
+  Hostname: SCRUBBED
+  Distro:   [redhat-release] Rocky Linux release 8.3
+            [rocky-release] Rocky Linux release 8.3
+            [os-release] Rocky Linux 8 8
+  RHN:      (missing)
+  RHSM:     (missing)
+  YUM:      1 enabled plugins: debuginfo-install
+  Runlevel: N 3  (default multi-user)
+  SELinux:  enforcing  (default enforcing)
+  Arch:     mach=x86_64  cpu=x86_64  platform=x86_64
+  Kernel:
+    Booted kernel:  4.18.0-240.22.1.el8.x86_64
+    GRUB default:     
+    Build version:
+      Linux version 4.18.0-240.22.1.el8.x86_64 (mockbuild@7dfc074d1e13452e94271ec95cb31ed9) (gcc version 8.3.1 20191121 (Red 
+      Hat 8.3.1-5) (GCC)) #1 SMP Mon Apr 12 04:29:16 UTC 2021
+    Booted kernel cmdline:
+      
+    GRUB default kernel cmdline:  
+      
+    Taint-check: 2048  (see https://access.redhat.com/solutions/40594)
+      11  FIRMWARE_WORKAROUND: Working around severe firmware bug
+    - - - - - - - - - - - - - - - - - - -
+  Sys time:  Fri May 14 16:04:15 CDT 2021
+  Boot time: Fri May 14 15:15:45 CDT 2021  (epoch: 1621023345)
+  Time Zone: America/Chicago
+  Uptime:    48 min,  2 users
+  LoadAvg:   [8 CPU] 0.00 (0%), 0.00 (0%), 0.00 (0%)
+  /proc/stat:
+    procs_running: 1   procs_blocked: 0    processes [Since boot]: 40768
+    cpu [Utilization since boot]:
+      us 1%, ni 0%, sys 0%, idle 99%, iowait 0%, irq 0%, sftirq 0%, steal 0%
+
+CPU
+  8 logical processors (4 CPU cores)
+  1 Intel Xeon CPU X5560 @ 2.80GHz (flags: constant_tsc,ht,lm,nx,pae,vmx) 
+  └─8 threads / 4 cores each
+
+MEMORY
+  Stats graphed as percent of MemTotal:
+    MemUsed    ▊▊▊▊..............................................   7.7%
+    Buffers    ..................................................   0.0%
+    Cached     ▊.................................................   3.0%
+    HugePages  ..................................................   0.0%
+    Dirty      ..................................................   0.0%
+  RAM:
+    7.6 GiB total ram
+    0.6 GiB (8%) used
+    0.4 GiB (5%) used excluding Buffers/Cached
+    0 GiB (0%) dirty
+  HugePages:
+    No ram pre-allocated to HugePages
+  THP:
+    12288 kB allocated to THP 
+  LowMem/Slab/PageTables/Shmem:
+    0.18 GiB (2%) of total ram used for Slab
+    0.01 GiB (0%) of total ram used for PageTables
+    0.01 GiB (0%) of total ram used for Shmem
+  Swap:
+    0 GiB (0%) used of 7.9 GiB total
+
+STORAGE
+  Whole Disks from /proc/partitions:
+    2 disks, totaling 425 GiB (0.41 TiB)
+    - - - - - - - - - - - - - - - - - - - - -
+    Disk 	Size in GiB
+    ----	-----------
+    sda 	410
+    sdb 	15
+
+  Disk layout from lsblk:
+    NAME                                          MAJ:MIN RM   SIZE RO TYPE  MOUNTPOINT
+    sda                                             8:0    0   410G  0 disk  
+    ├─sda1                                          8:1    0     1G  0 part  /boot
+    └─sda2                                          8:2    0   409G  0 part  
+      └─luks-ef38cc77-b0f4-4efc-95b0-854525b532cb 253:0    0   409G  0 crypt 
+        ├─rl-root                                 253:1    0    70G  0 lvm   /
+        ├─rl-swap                                 253:2    0   7.9G  0 lvm   [SWAP]
+        └─rl-home                                 253:3    0 331.1G  0 lvm   /home
+    sdb                                             8:16   1  14.6G  0 disk  
+    └─sdb1                                          8:17   1  14.6G  0 part  /mnt/usb
+    sr0                                            11:0    1  1024M  0 rom   
+
+  Filesystem usage from df:
+    Filesystem          1K-blocks    Used Available Use% Mounted on
+    /dev/mapper/rl-root  73352200 2204284  71147916   4% /
+    /dev/mapper/rl-home 347032004 2452620 344579384   1% /home
+    /dev/sda1             1038336  184444    853892  18% /boot
+    /dev/sdb1            15241664 4546144  10695520  30% /mnt/usb
+
+LSPCI
+  Net:
+    1 dual-port (2) Intel Corporation 82571EB/82571GB Gigabit Ethernet Controller D0/D1 (copper applications) (rev 06)
+    2 dual-port (4) Broadcom Inc. and subsidiaries NetXtreme II BCM5709 Gigabit Ethernet (rev 20)
+  Storage:
+    (1) Hewlett-Packard Company Smart Array G6 controllers (rev 01)
+  VGA:
+    Advanced Micro Devices, Inc. [AMD/ATI] ES1000 (rev 02)
+
+ETHTOOL
+  Interface Status:
+    enp2s0f0  0000:02:00.0  link=DOWN  rx ring 255/2040  drv bnx2 v2.2.6 / fw bc 5.2.3 NCSI 2.0.12
+    enp2s0f1  0000:02:00.1  link=DOWN  rx ring 255/2040  drv bnx2 v2.2.6 / fw bc 5.2.3 NCSI 2.0.12
+    enp3s0f0  0000:03:00.0  link=DOWN  rx ring 255/2040  drv bnx2 v2.2.6 / fw bc 5.2.3
+    enp3s0f1  0000:03:00.1  link=DOWN  rx ring 255/2040  drv bnx2 v2.2.6 / fw bc 5.2.3
+    ens3f0    0000:0d:00.0  link=DOWN  rx ring 256/4096  drv e1000e v3.2.6-k / fw 5.11-2
+    ens3f1    0000:0d:00.1  link=DOWN  rx ring 256/4096  drv e1000e v3.2.6-k / fw 5.11-2
+  Interface Errors:
+    [None]
