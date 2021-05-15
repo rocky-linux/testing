@@ -1,0 +1,131 @@
+DMIDECODE
+  BIOS:
+    Vend: innotek GmbH
+    Vers: VirtualBox
+    Date: 12/01/2006
+    BIOS Rev:
+    FW Rev:  
+  System:
+    Mfr:  innotek GmbH
+    Prod: VirtualBox
+    Vers: 1.2
+    Ser:  ⣿
+    UUID: ⣿⣿⣿⣿⣿⣿⣿⣿-⣿⣿⣿⣿-⣿⣿⣿⣿-⣿⣿⣿⣿-⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+  CPU:
+    0 of 0 CPU sockets populated, 0 cores/0 threads per CPU
+    0 total cores, 0 total threads
+    Mfr: 
+    Fam: 
+    Freq:
+    Vers:
+  Memory:
+    Total: 0 MiB (0 GiB)
+    DIMMs: 0 of 0 populated
+    MaxCapacity: 0 MiB (0 GiB / 0.00 TiB)
+
+OS
+  Hostname: SCRUBBED
+  Distro:   [redhat-release] Rocky Linux release 8.3
+            [rocky-release] Rocky Linux release 8.3
+            [os-release] Rocky Linux 8.3 8.3
+  RHN:      (missing)
+  RHSM:     hostname = SCRUBBED
+            proxy_hostname =
+  YUM:      2 enabled plugins: debuginfo-install, product-id
+  Runlevel: N 5  (default graphical)
+  SELinux:  enforcing  (default enforcing)
+  Arch:     mach=x86_64  cpu=x86_64  platform=x86_64
+  Kernel:
+    Booted kernel:  4.18.0-240.22.1.el8.x86_64
+    GRUB default:     
+    Build version:
+      Linux version 4.18.0-240.22.1.el8.x86_64 (mockbuild@7dfc074d1e13452e94271ec95cb31ed9) (gcc version 8.3.1 20191121 (Red Hat 8.3.1-5) (GCC)) #1 SMP Mon Apr 12 04:29:16 UTC 2021
+    Booted kernel cmdline:
+      BOOT_IMAGE=(hd0,msdos1)/vmlinuz-4.18.0-240.22.1.el8.x86_64 root=/dev/mapper/rl-root ro crashkernel=auto resume=/dev/mapper/rl-swap rd.lvm.lv=rl/root rd.lvm.lv=rl/swap rhgb quiet
+    GRUB default kernel cmdline:  
+      
+    Taint-check: 134217728  (see https://access.redhat.com/solutions/40594)
+      27  BIT_BY_ZOMBIE: Kernel booted with OMGZOMBIES param
+    - - - - - - - - - - - - - - - - - - -
+  Sys time:  Tue May 11 12:37:08 EDT 2021
+  Boot time: Tue May 11 11:59:47 EDT 2021  (epoch: 1620748787)
+  Time Zone: America/New_York
+  Uptime:    37 min,  1 user
+  LoadAvg:   [4 CPU] 0.18 (4%), 0.12 (3%), 0.18 (4%)
+  /proc/stat:
+    procs_running: 1   procs_blocked: 0    processes [Since boot]: 8195
+    cpu [Utilization since boot]:
+      us 1%, ni 0%, sys 0%, idle 96%, iowait 2%, irq 0%, sftirq 0%, steal 0%
+
+CPU
+  4 logical processors (4 CPU cores)
+  1 AMD Ryzen 7 3700X 8-Core Processor (flags: aes,constant_tsc,ht,lm,nx,pae,rdrand) 
+  └─4 threads / 4 cores each
+
+MEMORY
+  Stats graphed as percent of MemTotal:
+    MemUsed    ▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊...................................  30.0%
+    Buffers    ..................................................   0.0%
+    Cached     ▊▊▊▊▊▊............................................  12.2%
+    HugePages  ..................................................   0.0%
+    Dirty      ..................................................   0.0%
+  RAM:
+    7.6 GiB total ram
+    2.3 GiB (30%) used
+    1.3 GiB (18%) used excluding Buffers/Cached
+    0 GiB (0%) dirty
+  HugePages:
+    No ram pre-allocated to HugePages
+  THP:
+    530432 kB allocated to THP 
+  LowMem/Slab/PageTables/Shmem:
+    0.21 GiB (3%) of total ram used for Slab
+    0.05 GiB (1%) of total ram used for PageTables
+    0.02 GiB (0%) of total ram used for Shmem
+  Swap:
+    0 GiB (0%) used of 6.4 GiB total
+
+STORAGE
+  Whole Disks from /proc/partitions:
+    1 disks, totaling 64 GiB (0.06 TiB)
+    - - - - - - - - - - - - - - - - - - - - -
+    Disk 	Size in GiB
+    ----	-----------
+    sda 	64
+
+  Disk layout from lsblk:
+    NAME        MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
+    sda           8:0    0   64G  0 disk 
+    ├─sda1        8:1    0    1G  0 part /boot
+    └─sda2        8:2    0   63G  0 part 
+      ├─rl-root 253:0    0   38G  0 lvm  /
+      ├─rl-swap 253:1    0  6.4G  0 lvm  [SWAP]
+      └─rl-home 253:2    0 18.6G  0 lvm  /home
+    sr0          11:0    1 58.3M  0 rom  /run/media/penguin/VBox_GAs_6.1.18
+
+  Filesystem usage from df:
+    Filesystem          1K-blocks    Used Available Use% Mounted on
+    /dev/mapper/rl-root  39855092 4861640  34993452  13% /
+    /dev/mapper/rl-home  19458048  181864  19276184   1% /home
+    /dev/sda1             1038336  245580    792756  24% /boot
+    /dev/sr0                59724   59724         0 100% /run/media/penguin/VBox_GAs_6.1.18
+
+DM-MULTIPATH
+  [No paths detected]
+
+LSPCI
+  Net:
+    (1) Intel Corporation 82540EM Gigabit Ethernet Controller (rev 02)
+  Storage:
+    (1) Intel Corporation 82801HM/HEM (ICH8M/ICH8M-E) SATA Controller [AHCI mode] (rev 02)
+  VGA:
+    VMware SVGA II Adapter
+
+ETHTOOL
+  Interface Status:
+    enp0s3      0000:00:03.0  link=up 1000Mb/s full (autoneg=Y)  rx ring 256/4096  drv e1000 v7.3.21-k8-NAPI / fw UNKNOWN
+    virbr0      N/A           link=DOWN                          rx ring UNKNOWN   drv bridge v2.3 / fw N/A
+    virbr0-nic  tap           link=DOWN                          rx ring UNKNOWN   drv tun v1.6 / fw UNKNOWN
+  Interface Errors:
+    [None]
+

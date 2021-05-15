@@ -1,0 +1,137 @@
+DMIDECODE
+  BIOS:
+    Vend: American Megatrends Inc.
+    Vers: H.30
+    Date: 11/30/2020
+    BIOS Rev: 5.17
+    FW Rev:  
+  System:
+    Mfr:  Micro-Star International Co., Ltd
+    Prod: MS-7C02
+    Vers: 3.0
+    Ser:  ⣿⣿ ⣿⣿ ⣿⣿⣿⣿⣿⣿ ⣿⣿ ⣿⣿⣿⣿⣿⣿
+    UUID: ⣿⣿⣿⣿⣿⣿⣿⣿-⣿⣿⣿⣿-⣿⣿⣿⣿-⣿⣿⣿⣿-⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+  CPU:
+    1 of 1 CPU sockets populated, 8 cores/16 threads per CPU
+    8 total cores, 16 total threads
+    Mfr:  Advanced Micro Devices, Inc.
+    Fam:  Zen
+    Freq: 3600 MHz
+    Vers: AMD Ryzen 7 3700X 8-Core Processor 
+  Memory:
+    Total: 32768 MiB (32 GiB)
+    DIMMs: 4 of 8 populated
+    MaxCapacity: 131072 MiB (128 GiB / 0.12 TiB)
+
+OS
+  Hostname: SCRUBBED
+  Distro:   [redhat-release] Rocky Linux release 8.3
+            [rocky-release] Rocky Linux release 8.3
+            [os-release] Rocky Linux 8.3 8.3
+  RHN:      (missing)
+  RHSM:     hostname = SCRUBBED
+            proxy_hostname =
+  YUM:      2 enabled plugins: debuginfo-install, product-id
+  Runlevel: N 5  (default graphical)
+  SELinux:  enforcing  (default enforcing)
+  Arch:     mach=x86_64  cpu=x86_64  platform=x86_64
+  Kernel:
+    Booted kernel:  4.18.0-240.22.1.el8.x86_64
+    GRUB default:   unknown  (no grub config file)  
+    Build version:
+     (Rescue mode detected; build info captured from logs of last boot)
+      Linux version 4.18.0-240.22.1.el8.x86_64 (mockbuild@7dfc074d1e13452e94271ec95cb31ed9) (gcc version 8.3.1 
+      20191121 (Red Hat 8.3.1-5) (GCC)) #1 SMP Mon Apr 12 04:29:16 UTC 2021
+    Booted kernel cmdline:
+     (Rescue mode detected)
+      root=/dev/nvme0n1p3
+    GRUB default kernel cmdline:  
+      unknown  (no grub config file)
+    Taint-check: 0  (kernel untainted)
+    - - - - - - - - - - - - - - - - - - -
+  Sys time:  Tue May 11 17:20:02 EDT 2021
+  Boot time: Tue May 11 17:11:33 EDT 2021  (epoch: 1620767493)
+  Time Zone: America/New_York
+  Uptime:    8 min,  1 user
+  LoadAvg:   [16 CPU] 0.50 (3%), 0.92 (6%), 0.52 (3%)
+  /proc/stat:
+    procs_running: 2   procs_blocked: 0    processes [Since boot]: 5062
+    cpu [Utilization since boot]:
+      us 3%, ni 0%, sys 0%, idle 96%, iowait 1%, irq 0%, sftirq 0%, steal 0%
+
+CPU
+  16 logical processors (8 CPU cores)
+  1 AMD Ryzen 7 3700X 8-Core Processor (flags: aes,constant_tsc,ht,lm,nx,pae,rdrand,svm) 
+  └─16 threads / 8 cores each
+
+MEMORY
+  WARNING: RESCUE MODE DETECTED
+  meminfo reflects rescue env; inspect sysctl.conf manually for HugePages
+  Stats graphed as percent of MemTotal:
+    MemUsed    ▊▊▊▊▊.............................................  10.7%
+    Buffers    ..................................................   0.1%
+    Cached     ▊▊................................................   3.2%
+    HugePages  ..................................................   0.0%
+    Dirty      ..................................................   0.0%
+  RAM:
+    31.3 GiB total ram
+    3.3 GiB (11%) used
+    2.3 GiB (7%) used excluding Buffers/Cached
+    0 GiB (0%) dirty
+  HugePages:
+    No ram pre-allocated to HugePages
+  THP:
+    253952 kB allocated to THP 
+  LowMem/Slab/PageTables/Shmem:
+    0.35 GiB (1%) of total ram used for Slab
+    0.06 GiB (0%) of total ram used for PageTables
+    0.2 GiB (1%) of total ram used for Shmem
+  Swap:
+    No system swap space configured
+
+STORAGE
+  Whole Disks from /proc/partitions:
+    1 disks, totaling 1863 GiB (1.82 TiB)
+    - - - - - - - - - - - - - - - - - - - - -
+    Disk 	Size in GiB
+    ----	-----------
+    sda 	1863
+
+  Disk layout from lsblk:
+    NAME        MAJ:MIN RM   SIZE RO TYPE MOUNTPOINT
+    sda           8:0    0   1.8T  0 disk 
+    ├─sda1        8:1    0   1.4T  0 part 
+    ├─sda2        8:2    0   233G  0 part 
+    └─sda3        8:3    0   233G  0 part /home
+    nvme0n1     259:0    0 465.8G  0 disk 
+    ├─nvme0n1p1 259:1    0   486M  0 part /boot/efi
+    ├─nvme0n1p2 259:2    0 238.4G  0 part 
+    ├─nvme0n1p3 259:3    0 124.6G  0 part /
+    └─nvme0n1p4 259:4    0 102.3G  0 part 
+
+  Filesystem usage from df:
+    Filesystem     1K-blocks    Used Available Use% Mounted on
+    /dev/nvme0n1p3 128059612 5805100 115706392   5% /
+    /dev/nvme0n1p1    496672   16804    479868   4% /boot/efi
+    /dev/sda3      239449716  167652 227048952   1% /home
+
+DM-MULTIPATH
+  [No paths detected]
+
+LSPCI
+  Net:
+    (1) Intel Corporation Wi-Fi 6 AX200 (rev 1a)
+    (1) Realtek Semiconductor Co., Ltd. RTL8111/8168/8411 PCI Express Gigabit Ethernet Controller (rev 15)
+  Storage:
+    (1) Advanced Micro Devices, Inc. [AMD] 400 Series Chipset SATA Controller (rev 01)
+  VGA:
+    Advanced Micro Devices, Inc. [AMD/ATI] Baffin [Radeon RX 550 640SP / RX 560/560X] (rev cf)
+
+ETHTOOL
+  Interface Status:
+    enp34s0     0000:22:00.0  link=DOWN  rx ring UNKNOWN  drv r8169 / fw rtl8168h-2_0.0.2 02/26/15
+    virbr0      N/A           link=DOWN  rx ring UNKNOWN  drv bridge v2.3 / fw N/A
+    virbr0-nic  tap           link=DOWN  rx ring UNKNOWN  drv tun v1.6 / fw UNKNOWN
+  Interface Errors:
+    [None]
+

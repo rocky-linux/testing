@@ -17,22 +17,23 @@ Follow the guide...
 ```
 $ curl -Lo ./xsos bit.ly/xsos-direct
 $ chmod +x ./xsos
+$ dnf install -y pciutils # Needed for lspci
 ```
 
 ## Using `xsos`
 
 ```
-$ sudo ./xsos ./xsos --bios --os --cpu --disks --ethtool --lspci --mem --mpath | \
+$ sudo ./xsos -x --bios --os --cpu --disks --ethtool --lspci --mem --mpath | \
     tee "${HOME}/$(sudo dmidecode -t 1 | awk '/UUID:/ {print $2}').xsos.out"
 $ cat *.xsos.out
 ```
 
 ### Scrubbing Private Information
 
-`xsos` will let you scrub information from the report which is probably a good idea. If you wish to scrub everything automatically before uploading using the following comand instead...
+`xsos` will let you scrub information from the report which is probably a good idea. If you wish to scrub everything automatically before uploading using the following comand instead. This will generate a random UUID instead of using your system UUID.
 
 ```
-$ sudo ./xsos --bios --os --cpu --disks --ethtool --lspci --mem --mpath --scrub | \
+$ sudo ./xsos -x --bios --os --cpu --disks --ethtool --lspci --mem --mpath --scrub | \
     tee "${HOME}/$(uuidgen).xsos.out"
 $ cat *.xsos.out
 ```
