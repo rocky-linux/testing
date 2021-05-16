@@ -1,0 +1,94 @@
+DMIDECODE
+  BIOS:
+    Vend: HP
+    Vers: P79
+    Date: 06/03/2019
+    BIOS Rev: 2.22
+    FW Rev:   2.70
+  System:
+    Mfr:  HP
+    Prod: ProLiant DL580 Gen8
+    Vers: P79
+    Ser:  ⣿⣿⣿⣿⣿⣿⣿
+    UUID: ⣿⣿⣿⣿⣿⣿⣿⣿-⣿⣿⣿⣿-⣿⣿⣿⣿-⣿⣿⣿⣿-⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+  CPU:
+    4 of 4 CPU sockets populated, 15 cores/30 threads per CPU
+    60 total cores, 120 total threads
+    Mfr:  Intel(R) Corporation
+    Fam:  Xeon
+    Freq: 2500 MHz
+    Vers: Intel(R) Xeon(R) CPU E7-4880 v2 @ 2.50GHz
+  Memory:
+    Total: 32768 MiB (32 GiB)
+    DIMMs: 8 of 96 populated
+    MaxCapacity: 6291456 MiB (6144 GiB / 6.00 TiB)
+
+OS
+  Hostname: dl580g8.lab.local
+  Distro:   [redhat-release] Rocky Linux release 8.3
+            [rocky-release] Rocky Linux release 8.3
+            [os-release] Rocky Linux 8 8
+  RHN:      (missing)
+  RHSM:     hostname = subscription.rhsm.redhat.com
+            proxy_hostname =
+  YUM:      2 enabled plugins: debuginfo-install, product-id
+  Runlevel: N 3  (default multi-user)
+  SELinux:  enforcing  (default enforcing)
+  Arch:     mach=x86_64  cpu=x86_64  platform=x86_64
+  Kernel:
+    Booted kernel:  4.18.0-240.22.1.el8.x86_64
+    GRUB default:   unknown  (no grub config file)  
+    Build version:
+      Linux version 4.18.0-240.22.1.el8.x86_64 (mockbuild@7dfc074d1e13452e94271ec95cb31ed9) (gcc version 8.3.1 20191121 (Red 
+      Hat 8.3.1-5) (GCC)) #1 SMP Mon Apr 12 04:29:16 UTC 2021
+    Booted kernel cmdline:
+      BOOT_IMAGE=(hd0,gpt2)/vmlinuz-4.18.0-240.22.1.el8.x86_64 root=/dev/mapper/rl-root ro crashkernel=auto 
+      resume=/dev/mapper/rl-swap rd.lvm.lv=rl/root rd.lvm.lv=rl/swap rhgb quiet
+    GRUB default kernel cmdline:  
+      unknown  (no grub config file)
+    Taint-check: 0  (kernel untainted)
+    - - - - - - - - - - - - - - - - - - -
+  Sys time:  Fri May  7 16:04:39 CDT 2021
+  Boot time: Fri May  7 15:42:10 CDT 2021  (epoch: 1620420130)
+  Time Zone: America/Chicago
+  Uptime:    22 min,  1 user
+  LoadAvg:   [120 CPU] 0.00 (0%), 0.00 (0%), 0.02 (0%)
+  /proc/stat:
+    procs_running: 1   procs_blocked: 0    processes [Since boot]: 4003
+    cpu [Utilization since boot]:
+      us 0%, ni 0%, sys 0%, idle 100%, iowait 0%, irq 0%, sftirq 0%, steal 0%
+
+CPU
+  120 logical processors (60 CPU cores)
+  4 Intel Xeon CPU E7-4880 v2 @ 2.50GHz (flags: aes,constant_tsc,ht,lm,nx,pae,rdrand,vmx) 
+  └─30 threads / 15 cores each
+
+STORAGE
+  Whole Disks from /proc/partitions:
+    2 disks, totaling 573 GiB (0.56 TiB)
+    - - - - - - - - - - - - - - - - - - - - -
+    Disk 	Size in GiB
+    ----	-----------
+    sda 	559
+    sdb 	15
+
+  Disk layout from lsblk:
+    NAME        MAJ:MIN RM   SIZE RO TYPE MOUNTPOINT
+    sda           8:0    0 558.9G  0 disk 
+    ├─sda1        8:1    0   600M  0 part /boot/efi
+    ├─sda2        8:2    0     1G  0 part /boot
+    └─sda3        8:3    0 557.3G  0 part 
+      ├─rl-root 253:0    0    70G  0 lvm  /
+      ├─rl-swap 253:1    0  15.7G  0 lvm  [SWAP]
+      └─rl-home 253:2    0 471.6G  0 lvm  /home
+    sdb           8:16   1  14.6G  0 disk 
+    └─sdb1        8:17   1  14.6G  0 part /mnt/usb
+
+  Filesystem usage from df:
+    Filesystem          1K-blocks    Used Available Use% Mounted on
+    /dev/mapper/rl-root  73364480 2422568  70941912   4% /
+    /dev/sda2             1030144  195168    834976  19% /boot
+    /dev/sda1              613184    7036    606148   2% /boot/efi
+    /dev/mapper/rl-home 494252032 3481584 490770448   1% /home
+    /dev/sdb1            15241664  186768  15054896   2% /mnt/usb
+
