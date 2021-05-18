@@ -22,14 +22,14 @@ OS
     Taint-check: 134217728  (see https://access.redhat.com/solutions/40594)
       27  BIT_BY_ZOMBIE: Kernel booted with OMGZOMBIES param
     - - - - - - - - - - - - - - - - - - -
-  Sys time:  Tue May 18 11:26:33 UTC 2021
+  Sys time:  Tue May 18 13:35:42 UTC 2021
   Boot time: Tue May 18 11:16:21 UTC 2021  (epoch: 1621336581)
-  Uptime:    10 min,  0 users
-  LoadAvg:   [2 CPU] 0.00 (0%), 0.08 (4%), 0.07 (4%)
+  Uptime:    2:19,  0 users
+  LoadAvg:   [2 CPU] 0.00 (0%), 0.03 (2%), 0.00 (0%)
   /proc/stat:
-    procs_running: 1   procs_blocked: 0    processes [Since boot]: 2173
+    procs_running: 2   procs_blocked: 0    processes [Since boot]: 4338
     cpu [Utilization since boot]:
-      us 1%, ni 0%, sys 2%, idle 97%, iowait 0%, irq 0%, sftirq 1%, steal 0%
+      us 0%, ni 0%, sys 0%, idle 99%, iowait 0%, irq 0%, sftirq 0%, steal 0%
 
 CPU
   2 logical processors (2 CPU cores)
@@ -38,15 +38,15 @@ CPU
 
 MEMORY
   Stats graphed as percent of MemTotal:
-    MemUsed    ▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊................................  35.5%
+    MemUsed    ▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊.............................  41.5%
     Buffers    ..................................................   0.2%
-    Cached     ▊▊▊▊▊▊▊▊▊▊▊.......................................  21.1%
+    Cached     ▊▊▊▊▊▊▊▊▊▊▊▊▊.....................................  26.4%
     HugePages  ..................................................   0.0%
     Dirty      ..................................................   0.0%
   RAM:
     1.8 GiB total ram
-    0.6 GiB (35%) used
-    0.3 GiB (14%) used excluding Buffers/Cached
+    0.7 GiB (41%) used
+    0.3 GiB (15%) used excluding Buffers/Cached
     0 GiB (0%) dirty
   HugePages:
     No ram pre-allocated to HugePages
@@ -60,5 +60,8 @@ MEMORY
     0 GiB (0%) used of 1.6 GiB total
 
 IP4
+  Interface  Master IF  MAC Address        MTU     State  IPv4 Address
+  =========  =========  =================  ======  =====  ==================
+  lo         -          -                  65536   up     ⣿⣿⣿.⣿⣿⣿.⣿⣿⣿.⣿⣿⣿/⣿⣿
+  eth0@if6   -          ⣿⣿:⣿⣿:⣿⣿:⣿⣿:⣿⣿:⣿⣿  1500    up     ⣿⣿⣿.⣿⣿⣿.⣿⣿⣿.⣿⣿⣿/⣿⣿
 
-sed: -e expression #1, char 40: unterminated `s' command
