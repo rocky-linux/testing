@@ -1,0 +1,133 @@
+DMIDECODE
+  BIOS:
+    Vend: LENOVO
+    Vers: GLETA1WW (2.55 )
+    Date: 04/20/2020
+    BIOS Rev: 2.55
+    FW Rev:   1.13
+  System:
+    Mfr:  LENOVO
+    Prod: 20AWS04A00
+    Vers: ThinkPad T440p
+    Ser:  PB01SSAB
+    UUID: 9f0b9081-43e8-11cb-bad2-84e7389df2b5
+  CPU:
+    1 of 1 CPU sockets populated, 2 cores/4 threads per CPU
+    2 total cores, 4 total threads
+    Mfr:  Intel(R) Corporation
+    Fam:  Core i7
+    Freq: 2900 MHz
+    Vers: Intel(R) Core(TM) i7-4600M CPU @ 2.90GHz
+  Memory:
+    Total: 8192 MiB (8 GiB)
+    DIMMs: 1 of 2 populated
+    MaxCapacity: 16384 MiB (16 GiB / 0.02 TiB)
+
+OS
+  Hostname: Deathstar
+  Distro:   [redhat-release] Rocky Linux release 8.3
+            [rocky-release] Rocky Linux release 8.3
+            [os-release] Rocky Linux 8.3 8.3
+  RHN:      (missing)
+  RHSM:     (missing)
+  YUM:      1 enabled plugins: debuginfo-install
+  Runlevel: N 5  (default graphical)
+  SELinux:  enforcing  (default enforcing)
+  Arch:     mach=x86_64  cpu=x86_64  platform=x86_64
+  Kernel:
+    Booted kernel:  4.18.0-240.22.1.el8.x86_64
+    GRUB default:     
+    Build version:
+      Linux version 4.18.0-240.22.1.el8.x86_64 
+      (mockbuild@7dfc074d1e13452e94271ec95cb31ed9) (gcc version 8.3.1 
+      20191121 (Red Hat 8.3.1-5) (GCC)) #1 SMP Mon Apr 12 04:29:16 UTC 2021
+    Booted kernel cmdline:
+      BOOT_IMAGE=(hd0,msdos1)/vmlinuz-4.18.0-240.22.1.el8.x86_64 
+      root=UUID=22136ab9-df7f-4cc2-a29f-c60c2769e41d ro 
+      resume=UUID=3c0ab50d-b304-4048-b525-ab3daa395dd6
+    GRUB default kernel cmdline:  
+      
+    Taint-check: 0  (kernel untainted)
+    - - - - - - - - - - - - - - - - - - -
+  Sys time:  Sat May 15 14:02:46 CEST 2021
+  Boot time: Sat May 15 14:00:55 CEST 2021  (epoch: 1621080055)
+  Time Zone: Europe/Amsterdam
+  Uptime:    1 min,  1 user
+  LoadAvg:   [4 CPU] 1.53 (38%), 0.88 (22%), 0.34 (8%)
+  /proc/stat:
+    procs_running: 1   procs_blocked: 0    processes [Since boot]: 2426
+    cpu [Utilization since boot]:
+      us 14%, ni 0%, sys 3%, idle 74%, iowait 8%, irq 0%, sftirq 0%, steal 0%
+
+CPU
+  4 logical processors (2 CPU cores)
+  1 Intel Core i7-4600M CPU @ 2.90GHz (flags: aes,constant_tsc,ht,lm,nx,pae,rdrand) 
+  └─4 threads / 2 cores each
+
+MEMORY
+  Stats graphed as percent of MemTotal:
+    MemUsed    ▊▊▊▊▊▊▊▊▊▊▊.......................................  22.8%
+    Buffers    ..................................................   0.4%
+    Cached     ▊▊▊▊▊.............................................  9.1%
+    HugePages  ..................................................   0.0%
+    Dirty      ..................................................   0.0%
+  RAM:
+    7.5 GiB total ram
+    1.7 GiB (23%) used
+    1 GiB (13%) used excluding Buffers/Cached
+    0 GiB (0%) dirty
+  HugePages:
+    No ram pre-allocated to HugePages
+  THP:
+    79872 kB allocated to THP 
+  LowMem/Slab/PageTables/Shmem:
+    0.15 GiB (2%) of total ram used for Slab
+    0.04 GiB (1%) of total ram used for PageTables
+    0.19 GiB (3%) of total ram used for Shmem
+  Swap:
+    0 GiB (0%) used of 6 GiB total
+
+STORAGE
+  Whole Disks from /proc/partitions:
+    2 disks, totaling 473 GiB (0.46 TiB)
+    - - - - - - - - - - - - - - - - - - - - -
+    Disk 	Size in GiB
+    ----	-----------
+    sda 	466
+    sdb 	8
+
+  Disk layout from lsblk:
+    NAME   MAJ:MIN RM   SIZE RO TYPE MOUNTPOINT
+    sda      8:0    0 465.8G  0 disk 
+    ├─sda1   8:1    0     1G  0 part /boot
+    ├─sda2   8:2    0    52G  0 part /
+    ├─sda3   8:3    0     6G  0 part [SWAP]
+    ├─sda4   8:4    0     1K  0 part 
+    └─sda5   8:5    0 406.8G  0 part /home
+    sdb      8:16   1   7.5G  0 disk 
+    └─sdb1   8:17   1   7.5G  0 part /run/media/redman/8GB
+    sr0     11:0    1  1024M  0 rom  
+
+  Filesystem usage from df:
+    Filesystem     1K-blocks    Used Available Use% Mounted on
+    /dev/sda2       53408096 3319728  47345688   7% /
+    /dev/sda1         999320  117524    812984  13% /boot
+    /dev/sda5      418772904 2255812 395174836   1% /home
+    /dev/sdb1        7847944 2384748   5463196  31% /run/media/patrick/8GB
+
+LSPCI
+  Net:
+    (1) Intel Corporation Wireless 7260 (rev 83)
+    (1) Intel Corporation Ethernet Connection I217-LM (rev 04)
+  Storage:
+    (1) Intel Corporation 8 Series/C220 Series Chipset Family 6-port SATA Controller 1 [AHCI mode] (rev 04)
+  VGA:
+    Intel Corporation 4th Gen Core Processor Integrated Graphics Controller (rev 06)
+    NVIDIA Corporation GK208M [GeForce GT 730M] (rev a1)
+
+ETHTOOL
+  Interface Status:
+    enp0s25  0000:00:19.0  link=DOWN  rx ring 256/4096  drv e1000e v3.2.6-k / fw 0.13-3
+    wlp4s0   0000:04:00.0  link=DOWN  rx ring 0/0       drv iwlwifi v4.18.0-240.22.1.el8.x86_64 / fw 17.3216344376.0 7260-17.ucode
+  Interface Errors:
+    [None]

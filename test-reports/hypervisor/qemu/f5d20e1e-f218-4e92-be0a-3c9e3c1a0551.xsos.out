@@ -1,0 +1,129 @@
+DMIDECODE
+  BIOS:
+    Vend: SeaBIOS
+    Vers: 1.14.0-2
+    Date: 04/01/2014
+    BIOS Rev: 0.0
+    FW Rev:  
+  System:
+    Mfr:  QEMU
+    Prod: Standard PC (Q35 + ICH9, 2009)
+    Vers: pc-q35-5.2
+    Ser:  ⣿⣿⣿ ⣿⣿⣿⣿⣿⣿⣿⣿⣿
+    UUID: ⣿⣿⣿⣿⣿⣿⣿⣿-⣿⣿⣿⣿-⣿⣿⣿⣿-⣿⣿⣿⣿-⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+  CPU:
+    4 of 4 CPU sockets populated, 1 cores/1 threads per CPU
+    4 total cores, 4 total threads
+    Mfr:  QEMU
+    Fam: 
+    Freq: 2000 MHz
+    Vers: pc-q35-5.2
+  Memory:
+    Total: 8192 MiB (8 GiB)
+    DIMMs: 1 of 1 populated
+    MaxCapacity: 8192 MiB (8 GiB / 0.01 TiB)
+
+OS
+  Hostname: SCRUBBED
+  Distro:   [redhat-release] Rocky Linux release 8.3
+            [rocky-release] Rocky Linux release 8.3
+            [os-release] Rocky Linux 8.3 8.3
+  RHN:      (missing)
+  RHSM:     hostname = SCRUBBED
+            proxy_hostname =
+  YUM:      2 enabled plugins: debuginfo-install, product-id
+  Runlevel: N 5  (default graphical)
+  SELinux:  enforcing  (default enforcing)
+  Arch:     mach=x86_64  cpu=x86_64  platform=x86_64
+  Kernel:
+    Booted kernel:  4.18.0-240.22.1.el8.x86_64
+    GRUB default:     
+    Build version:
+      Linux version 4.18.0-240.22.1.el8.x86_64 (mockbuild@7dfc074d1e13452e94271ec95cb31ed9) (gcc version 8.3.1 20191121 (Red Hat 8.3.1-5) (GCC)) #1 SMP Mon Apr 12 04:29:16 UTC 2021
+    Booted kernel cmdline:
+      BOOT_IMAGE=(hd0,msdos1)/vmlinuz-4.18.0-240.22.1.el8.x86_64 root=/dev/mapper/rl-root ro crashkernel=auto resume=/dev/mapper/rl-swap rd.lvm.lv=rl/root rd.lvm.lv=rl/swap rhgb quiet
+    GRUB default kernel cmdline:  
+      
+    Taint-check: 0  (kernel untainted)
+    - - - - - - - - - - - - - - - - - - -
+  Sys time:  Sun May 16 15:11:33 EDT 2021
+  Boot time: Sun May 16 15:02:26 EDT 2021  (epoch: 1621191746)
+  Time Zone: America/New_York
+  Uptime:    9 min,  1 user
+  LoadAvg:   [4 CPU] 0.27 (7%), 0.20 (5%), 0.11 (3%)
+  /proc/stat:
+    procs_running: 3   procs_blocked: 0    processes [Since boot]: 3249
+    cpu [Utilization since boot]:
+      us 5%, ni 0%, sys 1%, idle 94%, iowait 0%, irq 0%, sftirq 0%, steal 0%
+
+CPU
+  4 logical processors 
+  4 AMD EPYC-Rome Processor (flags: aes,lm,nx,pae,rdrand,svm) 
+
+MEMORY
+  Stats graphed as percent of MemTotal:
+    MemUsed    ▊▊▊▊▊▊▊▊▊▊▊▊▊.....................................  25.4%
+    Buffers    ..................................................   0.0%
+    Cached     ▊▊▊▊▊.............................................  10.2%
+    HugePages  ..................................................   0.0%
+    Dirty      ..................................................   0.0%
+  RAM:
+    7.6 GiB total ram
+    1.9 GiB (25%) used
+    1.2 GiB (15%) used excluding Buffers/Cached
+    0 GiB (0%) dirty
+  HugePages:
+    No ram pre-allocated to HugePages
+  THP:
+    296960 kB allocated to THP 
+  LowMem/Slab/PageTables/Shmem:
+    0.16 GiB (2%) of total ram used for Slab
+    0.05 GiB (1%) of total ram used for PageTables
+    0.02 GiB (0%) of total ram used for Shmem
+  Swap:
+    0 GiB (0%) used of 6.4 GiB total
+
+STORAGE
+  Whole Disks from /proc/partitions:
+    1 disks, totaling 64 GiB (0.06 TiB)
+    - - - - - - - - - - - - - - - - - - - - -
+    Disk 	Size in GiB
+    ----	-----------
+    vda 	64
+
+  Disk layout from lsblk:
+    NAME        MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
+    sr0          11:0    1 1024M  0 rom  
+    vda         252:0    0   64G  0 disk 
+    ├─vda1      252:1    0    1G  0 part /boot
+    └─vda2      252:2    0   63G  0 part 
+      ├─rl-root 253:0    0   38G  0 lvm  /
+      ├─rl-swap 253:1    0  6.4G  0 lvm  [SWAP]
+      └─rl-home 253:2    0 18.6G  0 lvm  /home
+
+  Filesystem usage from df:
+    Filesystem          1K-blocks    Used Available Use% Mounted on
+    /dev/mapper/rl-root  39855092 6105148  33749944  16% /
+    /dev/mapper/rl-home  19458048  185580  19272468   1% /home
+    /dev/vda1             1038336  245716    792620  24% /boot
+
+DM-MULTIPATH
+  [No paths detected]
+
+LSPCI
+  Net:
+    (1) Red Hat, Inc. Virtio network device (rev 01)
+  Storage:
+    (1) Intel Corporation 82801IR/IO/IH (ICH9R/DO/DH) 6 port SATA Controller [AHCI mode] (rev 02)
+    (1) Red Hat, Inc. Virtio block device (rev 01)
+  VGA:
+    Red Hat, Inc. QXL paravirtual graphic card (rev 05)
+
+ETHTOOL
+  Interface Status:
+    enp1s0      0000:01:00.0  link=up Unknown! unknown! (autoneg=N)  rx ring 256/256  drv virtio_net v1.0.0 / fw UNKNOWN
+    virbr0      N/A           link=DOWN                              rx ring UNKNOWN  drv bridge v2.3 / fw N/A
+    virbr0-nic  tap           link=DOWN                              rx ring UNKNOWN  drv tun v1.6 / fw UNKNOWN
+  Interface Errors:
+    [None]
+
