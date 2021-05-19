@@ -1,4 +1,3 @@
-$ ./xsos -boc
 DMIDECODE
   BIOS:
     Vend: Dell Inc.
@@ -13,8 +12,8 @@ DMIDECODE
     Ser:  ⣿⣿⣿⣿⣿⣿⣿
     UUID: ⣿⣿⣿⣿⣿⣿⣿⣿-⣿⣿⣿⣿-⣿⣿⣿⣿-⣿⣿⣿⣿-⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
   CPU:
-    1 of 2 CPU sockets populated, 64 cores/128 threads per CPU
-    64 total cores, 128 total threads
+    1 of 2 CPU sockets populated, 64 cores/64 threads per CPU
+    64 total cores, 64 total threads
     Mfr:  Not Specified
     Fam:  Unknown
     Freq: 2250 MHz
@@ -26,45 +25,112 @@ DMIDECODE
 
 OS
   Hostname: SCRUBBED
-  Distro:   [redhat-release] CentOS Linux release 8.1.1911 (Core)
-            [centos-release] CentOS Linux release 8.1.1911 (Core)
+  Distro:   [redhat-release] Rocky Linux release 8.3
             [cm-release] Cluster Manager v9.0
-            master
-            [os-release] CentOS Linux 8 (Core) 8 (Core)
-  RHN:      serverURL = https://enter.your.server.url.here/XMLRPC
+            slave
+            [rocky-release] Rocky Linux release 8.3
+            [os-release] Rocky Linux 8.3 8.3
+  RHN:      serverURL = SCRUBBED
             enableProxy = 0
-  RHSM:     (missing)
-  YUM:      1 enabled plugins: debuginfo-install
+  RHSM:     hostname = SCRUBBED
+            proxy_hostname =
+  YUM:      2 enabled plugins: debuginfo-install, product-id
   Runlevel: N 3  (default multi-user)
   SELinux:  disabled  (default disabled)
   Arch:     mach=x86_64  cpu=x86_64  platform=x86_64
   Kernel:
-    Booted kernel:  4.18.0-147.el8.x86_64
+    Booted kernel:  4.18.0-240.22.1.el8.x86_64
     GRUB default:
     Build version:
-      Linux version 4.18.0-147.el8.x86_64 (mockbuild@kbuilder.bsys.centos.org) (gcc version 8.3.1 20190507 (Red Hat 8.3.1-4) (GCC))
-      #1 SMP Wed Dec 4 21:51:45 UTC 2019
+      Linux version 4.18.0-240.22.1.el8.x86_64 (mockbuild@7dfc074d1e13452e94271ec95cb31ed9) (gcc
+      version 8.3.1 20191121 (Red Hat 8.3.1-5) (GCC)) #1 SMP Mon Apr 12 04:29:16 UTC 2021
     Booted kernel cmdline:
-      BOOT_IMAGE=(hd0,gpt1)/vmlinuz-4.18.0-147.el8.x86_64 root=UUID=040bb373-679c-4dcb-91ae-774ef29cb84e ro vconsole.keymap=us
-      crashkernel=auto vconsole.font=latarcyrheb-sun16 biosdevname=0 rd.driver.blacklist=nouveau
+      BOOT_IMAGE=node/vmlinuz.devexp-1-01 initrd=node/initrd.devexp-1-01  nouveau.modeset=0
+      console=tty0 ip=10.21.1.17:10.21.1.3:10.21.1.2:255.255.255.0 BOOTIF=01-1c-34-da-62-c3-58
     GRUB default kernel cmdline:
 
-    Taint-check: 536883200  (see https://access.redhat.com/solutions/40594)
-      12  OOT_MODULE: Out-of-tree module has been loaded
-      13  UNSIGNED_MODULE: Unsigned module has been loaded
-      29  TECH_PREVIEW: Technology Preview code is loaded
+    Taint-check: 134217728  (see https://access.redhat.com/solutions/40594)
+      27  BIT_BY_ZOMBIE: Kernel booted with OMGZOMBIES param
     - - - - - - - - - - - - - - - - - - -
-  Sys time:  Thu May  6 19:54:32 PDT 2021
-  Boot time: Thu Apr 29 21:43:53 PDT 2021  (epoch: 1619757833)
+  Sys time:  Fri May 14 02:24:13 PDT 2021
+  Boot time: Fri May 14 01:45:02 PDT 2021  (epoch: 1620981902)
   Time Zone: America/Los_Angeles
-  Uptime:    6 days, 22:10,  2 users
-  LoadAvg:   [128 CPU] 0.00 (0%), 0.02 (0%), 0.00 (0%)
+  Uptime:    39 min,  2 users
+  LoadAvg:   [64 CPU] 0.00 (0%), 0.08 (0%), 0.11 (0%)
   /proc/stat:
-    procs_running: 1   procs_blocked: 0    processes [Since boot]: 1907100
+    procs_running: 1   procs_blocked: 0    processes [Since boot]: 10521
     cpu [Utilization since boot]:
       us 0%, ni 0%, sys 0%, idle 100%, iowait 0%, irq 0%, sftirq 0%, steal 0%
 
 CPU
-  128 logical processors (64 CPU cores)
+  64 logical processors (64 CPU cores)
   1 AMD EPYC 7742 64-Core Processor (flags: aes,constant_tsc,ht,lm,nx,pae,rdrand,svm)
-  └─128 threads / 64 cores each
+  └─64 threads / 64 cores each
+
+MEMORY
+  Stats graphed as percent of MemTotal:
+    MemUsed    ▊.................................................   2.7%
+    Buffers    ..................................................   0.0%
+    Cached     ..................................................   0.3%
+    HugePages  ..................................................   0.0%
+    Dirty      ..................................................   0.0%
+  RAM:
+    125.5 GiB total ram
+    3.4 GiB (3%) used
+    3 GiB (2%) used excluding Buffers/Cached
+    0 GiB (0%) dirty
+  HugePages:
+    No ram pre-allocated to HugePages
+  THP:
+    36864 kB allocated to THP
+  LowMem/Slab/PageTables/Shmem:
+    0.48 GiB (0%) of total ram used for Slab
+    0.01 GiB (0%) of total ram used for PageTables
+    0.08 GiB (0%) of total ram used for Shmem
+  Swap:
+    No system swap space configured
+
+STORAGE
+  Whole Disks from /proc/partitions:
+    1 disks, totaling 224 GiB (0.22 TiB)
+    - - - - - - - - - - - - - - - - - - - - -
+    Disk 	Size in GiB
+    ----	-----------
+    sda 	224
+
+  Disk layout from lsblk:
+    NAME        MAJ:MIN RM   SIZE RO TYPE MOUNTPOINT
+    sda           8:0    1 223.6G  0 disk
+    ├─sda1        8:1    1   100M  0 part /boot/efi
+    ├─sda2        8:2    1    64G  0 part /
+    └─sda3        8:3    1    20G  0 part /tmp
+    nvme0n1     259:0    0 931.5G  0 disk
+    └─nvme0n1p1 259:2    0 931.5G  0 part /scratch
+
+  Filesystem usage from df:
+    Filesystem     1K-blocks    Used Available Use% Mounted on
+    /dev/sda2       65531436 5653716  56505896  10% /
+    /dev/sda1         102182       0    102182   0% /boot/efi
+    /dev/sda3       20511312   45100  19401252   1% /tmp
+    /dev/nvme0n1p1 960378896   77872 911446652   1% /scratch
+
+LSPCI
+  Net:
+    (1) Broadcom Inc. and subsidiaries NetXtreme BCM5720 2-port Gigabit Ethernet PCIe
+    1 dual-port (2) Mellanox Technologies MT27800 Family [ConnectX-5]
+  Storage:
+    (1) Advanced Micro Devices, Inc. [AMD] FCH SATA Controller [AHCI mode] (rev 51)
+  VGA:
+    Matrox Electronics Systems Ltd. Integrated Matrox G200eW3 Graphics Controller (rev 04)
+
+ETHTOOL
+  Interface Status:
+    eno1   0000:c1:00.0  link=up 1000Mb/s full (autoneg=Y)    rx ring 200/2047   drv tg3 v3.137 / fw FFV21.40.9 bc 5720-v1.39
+    eno33  0000:01:00.0  link=up 10000Mb/s full (autoneg=Y)   rx ring 1024/8192  drv mlx5_core v5.0-0 / fw 16.25.4062 (DEL0000000016)
+    eno34  0000:01:00.1  link=DOWN                            rx ring 1024/8192  drv mlx5_core v5.0-0 / fw 16.25.4062 (DEL0000000016)
+    ib0    0000:41:00.0  link=up 100000Mb/s full (autoneg=N)  rx ring 512/8192   drv mlx5_core[ib_ipoib] v5.0-0 / fw 20.26.4300 (DEL0000000013)
+  Interface Errors:
+    eno33  rx_steer_missed_packets: 171409
+    - - - - - - - - - - - - - - - - - - -
+    ib0  rx_err_lane_0_phy: 48767609
+         rx_err_lane_1_phy: 24289760

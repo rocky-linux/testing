@@ -1,0 +1,67 @@
+OS
+  Hostname: SCRUBBED
+  Distro:   [redhat-release] Rocky Linux release 8.3
+            [rocky-release] Rocky Linux release 8.3
+            [os-release] Rocky Linux 8.3 8.3
+  RHN:      (missing)
+  RHSM:     (missing)
+  YUM:      No yum plugin info (missing etc/yum/pluginconf.d/*.conf)
+  Runlevel: unknown  (default multi-user)
+  SELinux:  status unknown (default unknown)
+  Arch:     mach=x86_64  cpu=x86_64  platform=x86_64
+  Kernel:
+    Booted kernel:  4.18.0-240.22.1.el8.x86_64
+    GRUB default:   unknown  (no grub config file)
+    Build version:
+      Linux version 4.18.0-240.22.1.el8.x86_64 (mockbuild@7dfc074d1e13452e94271ec95cb31ed9) (gcc version 8.3.1 20191121 (Red Hat 8.3.1-5) (GCC)) #1 SMP Mon
+      Apr 12 04:29:16 UTC 2021
+    Booted kernel cmdline:
+
+    GRUB default kernel cmdline:
+      unknown  (no grub config file)
+    Taint-check: 134217728  (see https://access.redhat.com/solutions/40594)
+      27  BIT_BY_ZOMBIE: Kernel booted with OMGZOMBIES param
+    - - - - - - - - - - - - - - - - - - -
+  Sys time:  Tue May 18 13:35:42 UTC 2021
+  Boot time: Tue May 18 11:16:21 UTC 2021  (epoch: 1621336581)
+  Uptime:    2:19,  0 users
+  LoadAvg:   [2 CPU] 0.00 (0%), 0.03 (2%), 0.00 (0%)
+  /proc/stat:
+    procs_running: 2   procs_blocked: 0    processes [Since boot]: 4338
+    cpu [Utilization since boot]:
+      us 0%, ni 0%, sys 0%, idle 99%, iowait 0%, irq 0%, sftirq 0%, steal 0%
+
+CPU
+  2 logical processors (2 CPU cores)
+  1 Intel Core i7-7600U CPU @ 2.80GHz (flags: constant_tsc,ht,lm,nx,pae)
+  └─2 threads / 2 cores each
+
+MEMORY
+  Stats graphed as percent of MemTotal:
+    MemUsed    ▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊.............................  41.5%
+    Buffers    ..................................................   0.2%
+    Cached     ▊▊▊▊▊▊▊▊▊▊▊▊▊.....................................  26.4%
+    HugePages  ..................................................   0.0%
+    Dirty      ..................................................   0.0%
+  RAM:
+    1.8 GiB total ram
+    0.7 GiB (41%) used
+    0.3 GiB (15%) used excluding Buffers/Cached
+    0 GiB (0%) dirty
+  HugePages:
+    No ram pre-allocated to HugePages
+  THP:
+    20480 kB allocated to THP
+  LowMem/Slab/PageTables/Shmem:
+    0.09 GiB (5%) of total ram used for Slab
+    0.01 GiB (0%) of total ram used for PageTables
+    0.01 GiB (0%) of total ram used for Shmem
+  Swap:
+    0 GiB (0%) used of 1.6 GiB total
+
+IP4
+  Interface  Master IF  MAC Address        MTU     State  IPv4 Address
+  =========  =========  =================  ======  =====  ==================
+  lo         -          -                  65536   up     ⣿⣿⣿.⣿⣿⣿.⣿⣿⣿.⣿⣿⣿/⣿⣿
+  eth0@if6   -          ⣿⣿:⣿⣿:⣿⣿:⣿⣿:⣿⣿:⣿⣿  1500    up     ⣿⣿⣿.⣿⣿⣿.⣿⣿⣿.⣿⣿⣿/⣿⣿
+
