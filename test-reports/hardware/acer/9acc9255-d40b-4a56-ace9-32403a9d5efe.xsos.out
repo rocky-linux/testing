@@ -1,0 +1,150 @@
+DMIDECODE
+  BIOS:
+    Vend: Insyde Corp.
+    Vers: V1.18
+    Date: 06/18/2020
+    BIOS Rev: 1.18
+    FW Rev:   1.16
+  System:
+    Mfr:  Acer
+    Prod: Nitro AN515-42
+    Vers: V1.18
+    Ser:  ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+    UUID: ⣿⣿⣿⣿⣿⣿⣿⣿-⣿⣿⣿⣿-⣿⣿⣿⣿-⣿⣿⣿⣿-⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+  CPU:
+    1 of 1 CPU sockets populated, 4 cores/8 threads per CPU
+    4 total cores, 8 total threads
+    Mfr:  Advanced Micro Devices, Inc.
+    Fam:  Zen
+    Freq: 2000 MHz
+    Vers: AMD Ryzen 5 2500U with Radeon Vega Mobile Gfx 
+  Memory:
+    Total: 8192 MiB (8 GiB)
+    DIMMs: 1 of 3 populated
+    MaxCapacity: 65536 MiB (64 GiB / 0.06 TiB)
+
+OS
+  Hostname: SCRUBBED
+  Distro:   [redhat-release] Rocky Linux release 8.3
+            [rocky-release] Rocky Linux release 8.3
+            [os-release] Rocky Linux 8.3 8.3
+  RHN:      (missing)
+  RHSM:     hostname = SCRUBBED
+            proxy_hostname =
+  YUM:      2 enabled plugins: debuginfo-install, product-id
+  Runlevel: N 5  (default graphical)
+  SELinux:  enforcing  (default enforcing)
+  Arch:     mach=x86_64  cpu=x86_64  platform=x86_64
+  Kernel:
+    Booted kernel:  4.18.0-240.22.1.el8.x86_64
+    GRUB default:   unknown  (no grub config file)  
+    Build version:
+     (Rescue mode detected; build info captured from logs of last boot)
+      Linux version 4.18.0-240.22.1.el8.x86_64 
+      (mockbuild@7dfc074d1e13452e94271ec95cb31ed9) (gcc version 8.3.1 
+      20191121 (Red Hat 8.3.1-5) (GCC)) #1 SMP Mon Apr 12 04:29:16 UTC 2021
+    Booted kernel cmdline:
+     (Rescue mode detected)
+      root=/dev/sdb6
+    GRUB default kernel cmdline:  
+      unknown  (no grub config file)
+    Taint-check: 0  (kernel untainted)
+    - - - - - - - - - - - - - - - - - - -
+  Sys time:  Wed May 19 18:06:44 EDT 2021
+  Boot time: Wed May 19 18:01:30 EDT 2021  (epoch: 1621461690)
+  Time Zone: America/New_York
+  Uptime:    5 min,  1 user
+  LoadAvg:   [8 CPU] 0.29 (4%), 0.50 (6%), 0.26 (3%)
+  /proc/stat:
+    procs_running: 2   procs_blocked: 0    processes [Since boot]: 3771
+    cpu [Utilization since boot]:
+      us 4%, ni 0%, sys 1%, idle 93%, iowait 1%, irq 0%, sftirq 0%, steal 0%
+
+CPU
+  8 logical processors (4 CPU cores)
+  1 AMD Ryzen 5 2500U with Radeon Vega Mobile Gfx (flags: aes,constant_tsc,ht,lm,nx,pae,rdrand,svm) 
+  └─8 threads / 4 cores each
+
+MEMORY
+  WARNING: RESCUE MODE DETECTED
+  meminfo reflects rescue env; inspect sysctl.conf manually for HugePages
+  Stats graphed as percent of MemTotal:
+    MemUsed    ▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊..............................  39.6%
+    Buffers    ..................................................   0.6%
+    Cached     ▊▊▊▊▊▊▊▊..........................................  15.4%
+    HugePages  ..................................................   0.0%
+    Dirty      ..................................................   0.0%
+  RAM:
+    6.7 GiB total ram
+    2.6 GiB (40%) used
+    1.6 GiB (24%) used excluding Buffers/Cached
+    0 GiB (0%) dirty
+  HugePages:
+    No ram pre-allocated to HugePages
+  THP:
+    192512 kB allocated to THP 
+  LowMem/Slab/PageTables/Shmem:
+    0.25 GiB (4%) of total ram used for Slab
+    0.05 GiB (1%) of total ram used for PageTables
+    0.1 GiB (1%) of total ram used for Shmem
+  Swap:
+    No system swap space configured
+
+STORAGE
+  Whole Disks from /proc/partitions:
+    2 disks, totaling 1051 GiB (1.03 TiB)
+    - - - - - - - - - - - - - - - - - - - - -
+    Disk 	Size in GiB
+    ----	-----------
+    sda 	932
+    sdb 	119
+
+  Disk layout from lsblk:
+    NAME   MAJ:MIN RM   SIZE RO TYPE MOUNTPOINT
+    sda      8:0    0 931.5G  0 disk 
+    ├─sda1   8:1    0 151.3G  0 part 
+    ├─sda2   8:2    0 443.2G  0 part /home
+    ├─sda3   8:3    0   317G  0 part 
+    └─sda4   8:4    0    20G  0 part 
+    sdb      8:16   0 119.2G  0 disk 
+    ├─sdb1   8:17   0   100M  0 part /boot/efi
+    ├─sdb2   8:18   0    16M  0 part 
+    ├─sdb3   8:19   0  58.1G  0 part 
+    ├─sdb4   8:20   0   516M  0 part 
+    ├─sdb5   8:21   0   477M  0 part 
+    ├─sdb6   8:22   0  28.6G  0 part /
+    ├─sdb7   8:23   0     1G  0 part 
+    └─sdb8   8:24   0  30.5G  0 part 
+
+  Filesystem usage from df:
+    Filesystem     1K-blocks    Used Available Use% Mounted on
+    /dev/sdb6       29394940 5449096  22429608  20% /
+    /dev/sdb1          98304   73102     25202  75% /boot/efi
+    /dev/sda2      456417576  142260 433020892   1% /home
+
+DM-MULTIPATH
+  [No paths detected]
+
+LSPCI
+  Net:
+    (1) Qualcomm Atheros QCA6174 802.11ac Wireless Network Adapter (rev 32)
+    (1) Realtek Semiconductor Co., Ltd. RTL8111/8168/8411 PCI Express Gigabit Ethernet Controller (rev 12)
+  Storage:
+    (1) Advanced Micro Devices, Inc. [AMD] FCH SATA Controller [AHCI mode] (rev 61)
+  VGA:
+    Advanced Micro Devices, Inc. [AMD/ATI] Raven Ridge [Radeon Vega Series / Radeon Vega Mobile Series] (rev c4)
+
+ETHTOOL
+  Interface Status:
+    enp2s0f1    0000:02:00.1  link=DOWN  rx ring UNKNOWN  drv r8169 / fw rtl8411-2_0.0.1 07/08/13
+    virbr0      N/A           link=DOWN  rx ring UNKNOWN  drv bridge v2.3 / fw N/A
+    virbr0-nic  tap           link=DOWN  rx ring UNKNOWN  drv tun v1.6 / fw UNKNOWN
+    wlp3s0      0000:03:00.0  link=up    rx ring 0/0      drv ath10k_pci v4.18.0-240.22.1.el8.x86_64 / fw WLAN.RM.4.4.1-00140-QCARMSWPZ-1
+  Interface Errors:
+    wlp3s0  rx_dropped: 232
+            d_phy_error: 5
+            d_rx_extra_frags_ring1: 272
+            d_rx_extra_frags_ring2: 317
+            d_rx_phy_err_drops: 5
+            d_rx_mpdu_errors: 484
+
