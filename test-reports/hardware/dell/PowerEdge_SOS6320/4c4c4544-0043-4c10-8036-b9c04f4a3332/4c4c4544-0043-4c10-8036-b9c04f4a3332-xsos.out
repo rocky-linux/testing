@@ -25,45 +25,110 @@ DMIDECODE
 
 OS
   Hostname: SCRUBBED
-  Distro:   [redhat-release] CentOS Linux release 7.6.1810 (Core)
-            [centos-release] CentOS Linux release 7.6.1810 (Core)
-            [rocks-release] Rocks release 7.0 (Manzanita)
-            [os-release] CentOS Linux 7 (Core) 7 (Core)
+  Distro:   [redhat-release] Rocky Linux release 8.3
+            [rocky-release] Rocky Linux release 8.3
+            [os-release] Rocky Linux 8.3 8.3
   RHN:      (missing)
   RHSM:     (missing)
-  YUM:      2 enabled plugins: fastestmirror, langpacks
-  Runlevel: unknown  (default multi-user)
-  SELinux:  disabled  (default disabled)
+  YUM:      1 enabled plugins: debuginfo-install
+  Runlevel: N 3  (default multi-user)
+  SELinux:  enforcing  (default enforcing)
   Arch:     mach=x86_64  cpu=x86_64  platform=x86_64
   Kernel:
-    Booted kernel:  3.10.0-957.12.2.el7.x86_64
-    GRUB default:     (Warning: grub.conf lacks "default="; showing title 0)
+    Booted kernel:  4.18.0-240.22.1.el8.x86_64
+    GRUB default:
     Build version:
-      Linux version 3.10.0-957.12.2.el7.x86_64 (mockbuild@kbuilder.bsys.centos.org) (gcc version 4.8.5 20150623 (Red Hat 4.8.5-36) (GCC)
-      ) #1 SMP Tue May 14 21:24:32 UTC 2019
+      Linux version 4.18.0-240.22.1.el8.x86_64 (mockbuild@7dfc074d1e13452e94271ec95cb31ed9) (gcc version 8.3.1 20191121 (Red Hat 8.3.1-5)
+      (GCC)) #1 SMP Mon Apr 12 04:29:16 UTC 2021
     Booted kernel cmdline:
-      root=UUID=1cd08e5d-480b-4c49-8be7-930cf65c7449 ro rd.md.uuid=6ca7780a:392b3cba:f5f0b8e1:09639170
-      rd.md.uuid=b892bbd1:21da7606:fbcdbd8d:0255a437 selinux=0 ipv6.disable=1 intel_iommu=on intel_idle.max_cstate=0
-      processor.max_cstate=0 idle=poll spectre_v2=off nopti spec_store_bypass_disable=off vga=788
-    GRUB default kernel cmdline:  (Warning: grub.conf lacks "default="; showing title 0)
+      BOOT_IMAGE=(hd0,msdos1)/vmlinuz-4.18.0-240.22.1.el8.x86_64 root=/dev/mapper/rl_comet--01--56-root ro crashkernel=auto
+      resume=/dev/mapper/rl_comet--01--56-swap rd.lvm.lv=rl_comet-01-56/root rd.lvm.lv=rl_comet-01-56/swap rhgb quiet
+    GRUB default kernel cmdline:
 
-    Taint-check: 536883201  (see https://access.redhat.com/solutions/40594)
-       0  PROPRIETARY_MODULE: Proprietary module has been loaded
-      12  OOT_MODULE: Out-of-tree module has been loaded
-      13  UNSIGNED_MODULE: Unsigned module has been loaded
-      29  TECH_PREVIEW: Technology Preview code is loaded
+    Taint-check: 0  (kernel untainted)
     - - - - - - - - - - - - - - - - - - -
-  Sys time:  Thu May  6 20:25:35 PDT 2021
-  Boot time: Mon Oct  5 12:30:18 PDT 2020  (epoch: 1601926218)
+  Sys time:  Wed May 26 21:36:07 PDT 2021
+  Boot time: Wed May 26 21:22:38 PDT 2021  (epoch: 1622089358)
   Time Zone: America/Los_Angeles
-  Uptime:    213 days,  7:55,  0 users
-  LoadAvg:   [24 CPU] 0.00 (0%), 0.02 (0%), 0.05 (0%)
+  Uptime:    13 min,  1 user
+  LoadAvg:   [24 CPU] 0.13 (1%), 0.11 (0%), 0.09 (0%)
   /proc/stat:
-    procs_running: 1   procs_blocked: 0    processes [Since boot]: 1009882723
+    procs_running: 1   procs_blocked: 0    processes [Since boot]: 15876
     cpu [Utilization since boot]:
-      us 39%, ni 0%, sys 1%, idle 60%, iowait 0%, irq 0%, sftirq 0%, steal 0%
+      us 0%, ni 0%, sys 0%, idle 99%, iowait 0%, irq 0%, sftirq 0%, steal 0%
 
 CPU
   24 logical processors (24 CPU cores)
   2 Intel Xeon CPU E5-2680 v3 @ 2.50GHz (flags: aes,constant_tsc,ht,lm,nx,pae,rdrand,vmx)
   └─12 threads / 12 cores each
+
+MEMORY
+  Stats graphed as percent of MemTotal:
+    MemUsed    ..................................................   0.8%
+    Buffers    ..................................................   0.0%
+    Cached     ..................................................   0.2%
+    HugePages  ..................................................   0.0%
+    Dirty      ..................................................   0.0%
+  RAM:
+    125.2 GiB total ram
+    1.1 GiB (1%) used
+    0.7 GiB (1%) used excluding Buffers/Cached
+    0 GiB (0%) dirty
+  HugePages:
+    No ram pre-allocated to HugePages
+  THP:
+    14336 kB allocated to THP
+  LowMem/Slab/PageTables/Shmem:
+    0.24 GiB (0%) of total ram used for Slab
+    0.01 GiB (0%) of total ram used for PageTables
+    0.01 GiB (0%) of total ram used for Shmem
+  Swap:
+    0 GiB (0%) used of 4 GiB total
+
+STORAGE
+  Whole Disks from /proc/partitions:
+    2 disks, totaling 298 GiB (0.29 TiB)
+    - - - - - - - - - - - - - - - - - - - - -
+    Disk 	Size in GiB
+    ----	-----------
+    sda 	149
+    sdb 	149
+
+  Disk layout from lsblk:
+    NAME                      MAJ:MIN RM   SIZE RO TYPE MOUNTPOINT
+    sda                         8:0    0 149.1G  0 disk
+    ├─sda1                      8:1    0     1G  0 part /boot
+    └─sda2                      8:2    0 148.1G  0 part
+      ├─rl_comet--01--56-root 253:0    0    70G  0 lvm  /
+      ├─rl_comet--01--56-swap 253:1    0     4G  0 lvm  [SWAP]
+      └─rl_comet--01--56-home 253:2    0 223.1G  0 lvm  /home
+    sdb                         8:16   0 149.1G  0 disk
+    └─sdb1                      8:17   0 149.1G  0 part
+      └─rl_comet--01--56-home 253:2    0 223.1G  0 lvm  /home
+    sr0                        11:0    1   681M  0 rom
+
+  Filesystem usage from df:
+    Filesystem                        1K-blocks    Used Available Use% Mounted on
+    /dev/mapper/rl_comet--01--56-root  73364480 1913904  71450576   3% /
+    /dev/sda1                           1038336  197168    841168  19% /boot
+    /dev/mapper/rl_comet--01--56-home 233816528 1663300 232153228   1% /home
+
+DM-MULTIPATH
+  [No paths detected]
+
+LSPCI
+  Net:
+    (1) Mellanox Technologies MT27500 Family [ConnectX-3]
+    1 dual-port (2) Intel Corporation 82599ES 10-Gigabit SFI/SFP+ Network Connection (rev 01)
+  Storage:
+    (1) Intel Corporation C610/X99 series chipset 6-Port SATA Controller [AHCI mode] (rev 05)
+    (1) Intel Corporation C610/X99 series chipset sSATA Controller [AHCI mode] (rev 05)
+  VGA:
+    Matrox Electronics Systems Ltd. G200eR2 (rev 01)
+
+ETHTOOL
+  Interface Status:
+    enp129s0f0  0000:81:00.0  link=up 10000Mb/s full (autoneg=N)  rx ring 512/4096  drv ixgbe v5.1.0-k-rh8.2.0 / fw 0x800004e0
+    enp129s0f1  0000:81:00.1  link=DOWN                           rx ring 512/4096  drv ixgbe v5.1.0-k-rh8.2.0 / fw 0x800004e0
+  Interface Errors:
+    [None]
