@@ -1,0 +1,117 @@
+DMIDECODE
+  BIOS:
+    Vend: Xen
+    Vers: 4.2.amazon
+    Date: 08/24/2006
+    BIOS Rev: 4.2
+    FW Rev:
+  System:
+    Mfr:  Xen
+    Prod: HVM domU
+    Vers: 4.2.amazon
+    Ser:  ec272dfe-e4dd-142a-5cf4-049243497161
+    UUID: ec272dfe-e4dd-142a-5cf4-049243497161
+  CPU:
+    1 of 1 CPU sockets populated, 0 cores/0 threads per CPU
+    0 total cores, 0 total threads
+    Mfr:  Intel
+    Fam:
+    Freq: 2400 MHz
+    Vers: Not Specified
+  Memory:
+    Total: 1024 MiB (1 GiB)
+    DIMMs: 1 of 2 populated
+    MaxCapacity: 1024 MiB (1 GiB / 0.00 TiB)
+
+OS
+  Hostname: ip-172-31-5-194.us-east-2.compute.internal
+  Distro:   [redhat-release] Rocky Linux release 8.3
+            [rocky-release] Rocky Linux release 8.3
+            [os-release] Rocky Linux 8.3 8.3
+  RHN:      (missing)
+  RHSM:     (missing)
+  YUM:      1 enabled plugins: debuginfo-install
+  Runlevel: N 3  (default multi-user)
+  SELinux:  enforcing  (default enforcing)
+  Arch:     mach=x86_64  cpu=x86_64  platform=x86_64
+  Kernel:
+    Booted kernel:  4.18.0-240.22.1.el8.x86_64
+    GRUB default:   4.18.0-240.22.1.el8.x86_64
+    Build version:
+      Linux version 4.18.0-240.22.1.el8.x86_64 (mockbuild@7dfc074d1e13452e94271ec95cb31ed9) (gcc version 8.3.1 20191121 (Red Hat 8.3.1-5)
+      (GCC)) #1 SMP Mon Apr 12 04:29:16 UTC 2021
+    Booted kernel cmdline:
+      BOOT_IMAGE=(hd0,msdos1)/boot/vmlinuz-4.18.0-240.22.1.el8.x86_64 root=UUID=3619fbce-d9ee-4bc7-82ae-a3913dc9c079 ro
+      console=ttyS0,115200n8 no_timer_check net.ifnames=0 nvme_core.io_timeout=4294967295 nvme_core.max_retries=10 crashkernel=auto
+    GRUB default kernel cmdline:
+      ro root=UUID=3619fbce-d9ee-4bc7-82ae-a3913dc9c079 console=hvc0 LANG=en_US.UTF-8
+    Taint-check: 0  (kernel untainted)
+    - - - - - - - - - - - - - - - - - - -
+  Sys time:  Fri May 28 00:31:11 UTC 2021
+  Boot time: Fri May 28 00:24:53 UTC 2021  (epoch: 1622161493)
+  Time Zone: UTC
+  Uptime:    6 min,  1 user
+  LoadAvg:   [1 CPU] 0.14 (14%), 0.17 (17%), 0.09 (9%)
+  /proc/stat:
+    procs_running: 2   procs_blocked: 0    processes [Since boot]: 13518
+    cpu [Utilization since boot]:
+      us 11%, ni 0%, sys 3%, idle 79%, iowait 3%, irq 1%, sftirq 0%, steal 2%
+
+CPU
+  1 logical processors
+  1 Intel Xeon CPU E5-2676 v3 @ 2.40GHz (flags: aes,constant_tsc,ht,lm,nx,pae,rdrand)
+
+MEMORY
+  Stats graphed as percent of MemTotal:
+    MemUsed    ▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊................  68.6%
+    Buffers    ..................................................   0.3%
+    Cached     ▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊............................  43.5%
+    HugePages  ..................................................   0.0%
+    Dirty      ..................................................   0.8%
+  RAM:
+    0.8 GiB total ram
+    0.5 GiB (69%) used
+    0.2 GiB (25%) used excluding Buffers/Cached
+    0.01 GiB (1%) dirty
+  HugePages:
+    No ram pre-allocated to HugePages
+  THP:
+    10240 kB allocated to THP
+  LowMem/Slab/PageTables/Shmem:
+    0.09 GiB (12%) of total ram used for Slab
+    0.01 GiB (1%) of total ram used for PageTables
+    0.01 GiB (1%) of total ram used for Shmem
+  Swap:
+    No system swap space configured
+
+STORAGE
+  Whole Disks from /proc/partitions:
+    1 disks, totaling 10 GiB (0.01 TiB)
+    - - - - - - - - - - - - - - - - - - - - -
+    Disk 	Size in GiB
+    ----	-----------
+    xvda 	10
+
+  Disk layout from lsblk:
+    NAME    MAJ:MIN RM SIZE RO TYPE MOUNTPOINT
+    xvda    202:0    0  10G  0 disk
+    └─xvda1 202:1    0  10G  0 part /
+
+  Filesystem usage from df:
+    Filesystem     1K-blocks    Used Available Use% Mounted on
+    /dev/xvda1      10474476 1419348   9055128  14% /
+
+DM-MULTIPATH
+  [No paths detected]
+
+LSPCI
+  Net:
+  Storage:
+  VGA:
+    Cirrus Logic GD 5446
+
+ETHTOOL
+  Interface Status:
+    eth0  vif-0  link=up  rx ring UNKNOWN  drv vif / fw UNKNOWN
+  Interface Errors:
+    [None]
