@@ -1,0 +1,126 @@
+DMIDECODE
+  BIOS:
+    Vend: innotek GmbH
+    Vers: VirtualBox
+    Date: 12/01/2006
+    BIOS Rev:
+    FW Rev:  
+  System:
+    Mfr:  innotek GmbH
+    Prod: VirtualBox
+    Vers: 1.2
+    Ser:  ⣿
+    UUID: ⣿⣿⣿⣿⣿⣿⣿⣿-⣿⣿⣿⣿-⣿⣿⣿⣿-⣿⣿⣿⣿-⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+  CPU:
+    0 of 0 CPU sockets populated, 0 cores/0 threads per CPU
+    0 total cores, 0 total threads
+    Mfr: 
+    Fam: 
+    Freq:
+    Vers:
+  Memory:
+    Total: 0 MiB (0 GiB)
+    DIMMs: 0 of 0 populated
+    MaxCapacity: 0 MiB (0 GiB / 0.00 TiB)
+
+OS
+  Hostname: SCRUBBED
+  Distro:   [redhat-release] Rocky Linux release 8.4 (Green Obsidian)
+            [rocky-release] Rocky Linux release 8.4 (Green Obsidian)
+            [os-release] Rocky Linux 8.4 (Green Obsidian) 8.4 (Green Obsidian)
+  RHN:      (missing)
+  RHSM:     (missing)
+  YUM:      1 enabled plugins: debuginfo-install
+  Runlevel: N 3  (default multi-user)
+  SELinux:  enforcing  (default enforcing)
+  Arch:     mach=x86_64  cpu=x86_64  platform=x86_64
+  Kernel:
+    Booted kernel:  4.18.0-305.el8.x86_64
+    GRUB default:     
+    Build version:
+      Linux version 4.18.0-305.el8.x86_64 (mockbuild@ord1-prod-x86build004.svc.aws.rockylinux.org) (gcc version 8.4.1 20200928 (Red Hat 8.4.1-1) (GCC)) #1 
+      SMP Thu May 27 16:46:28 UTC 2021
+    Booted kernel cmdline:
+      BOOT_IMAGE=(hd0,msdos1)/vmlinuz-4.18.0-305.el8.x86_64 root=/dev/mapper/cl_centos8-root ro no_timer_check crashkernel=auto 
+      resume=/dev/mapper/cl_centos8-swap rd.lvm.lv=cl_centos8/root rd.lvm.lv=cl_centos8/swap biosdevname=0 net.ifnames=0 rhgb quiet
+    GRUB default kernel cmdline:  
+      
+    Taint-check: 12288  (see https://access.redhat.com/solutions/40594)
+      12  OOT_MODULE: Out-of-tree module has been loaded
+      13  UNSIGNED_MODULE: Unsigned module has been loaded
+    - - - - - - - - - - - - - - - - - - -
+  Sys time:  Mon Jun  7 07:10:46 UTC 2021
+  Boot time: Sat Jun  5 02:42:57 UTC 2021  (epoch: 1622860977)
+  Time Zone: UTC
+  Uptime:    2 days,  4:27,  1 user
+  LoadAvg:   [2 CPU] 0.10 (5%), 0.04 (2%), 0.01 (0%)
+  /proc/stat:
+    procs_running: 1   procs_blocked: 0    processes [Since boot]: 382766
+    cpu [Utilization since boot]:
+      us 1%, ni 0%, sys 1%, idle 98%, iowait 0%, irq 0%, sftirq 0%, steal 0%
+
+CPU
+  2 logical processors (2 CPU cores)
+  1 Intel Core i9-9900K CPU @ 3.60GHz (flags: aes,constant_tsc,ht,lm,nx,pae,rdrand) 
+  └─2 threads / 2 cores each
+
+MEMORY
+  Stats graphed as percent of MemTotal:
+    MemUsed    ▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊.............................  42.1%
+    Buffers    ..................................................   0.1%
+    Cached     ▊▊▊▊▊▊▊▊▊▊▊.......................................  21.4%
+    HugePages  ..................................................   0.0%
+    Dirty      ..................................................   0.4%
+  RAM:
+    1.8 GiB total ram
+    0.7 GiB (42%) used
+    0.4 GiB (21%) used excluding Buffers/Cached
+    0.01 GiB (0%) dirty
+  HugePages:
+    No ram pre-allocated to HugePages
+  THP:
+    24576 kB allocated to THP 
+  LowMem/Slab/PageTables/Shmem:
+    0.21 GiB (12%) of total ram used for Slab
+    0.01 GiB (0%) of total ram used for PageTables
+    0.01 GiB (0%) of total ram used for Shmem
+  Swap:
+    0 GiB (0%) used of 2.1 GiB total
+
+STORAGE
+  Whole Disks from /proc/partitions:
+    1 disks, totaling 128 GiB (0.12 TiB)
+    - - - - - - - - - - - - - - - - - - - - -
+    Disk 	Size in GiB
+    ----	-----------
+    sda 	128
+
+  Disk layout from lsblk:
+    NAME                MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
+    sda                   8:0    0  128G  0 disk 
+    ├─sda1                8:1    0    1G  0 part /boot
+    └─sda2                8:2    0  127G  0 part 
+      ├─cl_centos8-root 253:0    0   70G  0 lvm  /
+      └─cl_centos8-swap 253:1    0  2.1G  0 lvm  [SWAP]
+
+  Filesystem usage from df:
+    Filesystem                   1K-blocks       Used Available Use% Mounted on
+    /dev/mapper/cl_centos8-root   73364480    2807744  70556736   4% /
+    /dev/sda1                      1038336     201884    836452  20% /boot
+
+DM-MULTIPATH
+  [No paths detected]
+
+LSPCI
+  Net:
+    (1) Red Hat, Inc. Virtio network device
+  Storage:
+  VGA:
+    InnoTek Systemberatung GmbH VirtualBox Graphics Adapter
+
+ETHTOOL
+  Interface Status:
+    eth0  0000:00:03.0  link=up Unknown! unknown! (autoneg=N)  rx ring 256/256  drv virtio_net v1.0.0 / fw UNKNOWN
+  Interface Errors:
+    [None]
+
