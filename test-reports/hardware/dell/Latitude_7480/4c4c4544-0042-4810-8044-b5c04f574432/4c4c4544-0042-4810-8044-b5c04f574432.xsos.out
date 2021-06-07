@@ -1,0 +1,142 @@
+#################################################################
+# Issues: 
+#   * neither touchpad mouse nor mouse nub worked during install
+#     both worked after installation of Workstation and Gnome
+#   * wifi is "Intel Corporation Wireless 8265 / 8275" and did
+#     not work in other EL tested distros either.
+#################################################################
+
+DMIDECODE
+  BIOS:
+    Vend: Dell Inc.
+    Vers: 1.19.0
+    Date: 07/26/2020
+    BIOS Rev: 1.19
+    FW Rev:  
+  System:
+    Mfr:  Dell Inc.
+    Prod: Latitude 7480
+    Vers: Not Specified
+    Ser:  SCRUBBED
+    UUID: 4c4c4544-0042-4810-8044-b5c04f574432
+  CPU:
+    1 of 1 CPU sockets populated, 2 cores/4 threads per CPU
+    2 total cores, 4 total threads
+    Mfr:  Intel(R) Corporation
+    Fam:  Core i7
+    Freq: 2300 MHz
+    Vers: Intel(R) Core(TM) i7-6600U CPU @ 2.60GHz
+  Memory:
+    Total: 32768 MiB (32 GiB)
+    DIMMs: 2 of 4 populated
+    MaxCapacity: 32768 MiB (32 GiB / 0.03 TiB)
+
+OS
+  Hostname: rocky-test
+  Distro:   [redhat-release] Rocky Linux release 8.3
+            [rocky-release] Rocky Linux release 8.3
+            [os-release] Rocky Linux 8.3 8.3
+  RHN:      (missing)
+  RHSM:     hostname = subscription.rhsm.redhat.com
+            proxy_hostname =
+  YUM:      2 enabled plugins: debuginfo-install, product-id
+  Runlevel: 3 5  (default multi-user)
+  SELinux:  enforcing  (default enforcing)
+  Arch:     mach=x86_64  cpu=x86_64  platform=x86_64
+  Kernel:
+    Booted kernel:  4.18.0-240.22.1.el8.x86_64
+    GRUB default:   unknown  (no grub config file)  
+    Build version:
+      Linux version 4.18.0-240.22.1.el8.x86_64 (mockbuild@7dfc074d1e13452e94271ec95cb31ed9) (gcc version 8.3.1 20191121 (Red Hat 8.3.1-5) (GCC)) #1 SMP Mon Apr 12 04:29:16 UTC 2021
+    Booted kernel cmdline:
+      BOOT_IMAGE=(hd0,gpt2)/vmlinuz-4.18.0-240.22.1.el8.x86_64 root=/dev/mapper/rl_rocky--test-root ro crashkernel=auto resume=/dev/mapper/rl_rocky--test-swap rd.lvm.lv=rl_rocky-test/root 
+      rd.lvm.lv=rl_rocky-test/swap
+    GRUB default kernel cmdline:  
+      unknown  (no grub config file)
+    Taint-check: 512  (see https://access.redhat.com/solutions/40594)
+       9  WARN: Taint on warning
+    - - - - - - - - - - - - - - - - - - -
+  Sys time:  Wed May 19 19:51:40 CDT 2021
+  Boot time: Wed May 19 19:24:54 CDT 2021  (epoch: 1621470294)
+  Time Zone: America/Chicago
+  Uptime:    26 min,  1 user
+  LoadAvg:   [4 CPU] 0.38 (10%), 0.24 (6%), 0.27 (7%)
+  /proc/stat:
+    procs_running: 1   procs_blocked: 0    processes [Since boot]: 38441
+    cpu [Utilization since boot]:
+      us 7%, ni 0%, sys 2%, idle 90%, iowait 0%, irq 1%, sftirq 0%, steal 0%
+
+CPU
+  4 logical processors (2 CPU cores)
+  1 Intel Core i7-6600U CPU @ 2.60GHz (flags: aes,constant_tsc,ht,lm,nx,pae,rdrand,vmx) 
+  └─4 threads / 2 cores each
+
+MEMORY
+  Stats graphed as percent of MemTotal:
+    MemUsed    ▊▊▊▊▊▊▊▊▊.........................................  18.0%
+    Buffers    ..................................................   0.0%
+    Cached     ▊▊▊▊▊▊............................................  11.9%
+    HugePages  ..................................................   0.0%
+    Dirty      ..................................................   0.0%
+  RAM:
+    31.1 GiB total ram
+    5.6 GiB (18%) used
+    1.9 GiB (6%) used excluding Buffers/Cached
+    0.01 GiB (0%) dirty
+  HugePages:
+    No ram pre-allocated to HugePages
+  THP:
+    284672 kB allocated to THP 
+  LowMem/Slab/PageTables/Shmem:
+    0.46 GiB (1%) of total ram used for Slab
+    0.06 GiB (0%) of total ram used for PageTables
+    0.42 GiB (1%) of total ram used for Shmem
+  Swap:
+    0 GiB (0%) used of 15.7 GiB total
+
+STORAGE
+  Whole Disks from /proc/partitions:
+    1 disks, totaling 477 GiB (0.47 TiB)
+    - - - - - - - - - - - - - - - - - - - - -
+    Disk 	Size in GiB
+    ----	-----------
+    sda 	477
+
+  Disk layout from lsblk:
+    NAME                    MAJ:MIN RM   SIZE RO TYPE MOUNTPOINT
+    sda                       8:0    0   477G  0 disk 
+    ├─sda1                    8:1    0   600M  0 part /boot/efi
+    ├─sda2                    8:2    0     1G  0 part /boot
+    └─sda3                    8:3    0 475.4G  0 part 
+      ├─rl_rocky--test-root 253:0    0    70G  0 lvm  /
+      ├─rl_rocky--test-swap 253:1    0  15.7G  0 lvm  [SWAP]
+      └─rl_rocky--test-home 253:2    0 389.7G  0 lvm  /home
+
+  Filesystem usage from df:
+    Filesystem                      1K-blocks    Used Available Use% Mounted on
+    /dev/mapper/rl_rocky--test-root  73364480 5073996  68290484   7% /
+    /dev/sda2                         1038336  178792    859544  18% /boot
+    /dev/sda1                          613184    7036    606148   2% /boot/efi
+    /dev/mapper/rl_rocky--test-home 408384688 2928084 405456604   1% /home
+
+DM-MULTIPATH
+  [No paths detected]
+
+LSPCI
+  Net:
+    (1) Intel Corporation Ethernet Connection (4) I219-LM (rev 21)
+    (1) Intel Corporation Wireless 8265 / 8275 (rev 78)
+  Storage:
+    (1) Intel Corporation 82801 Mobile SATA Controller [RAID mode] (rev 21)
+  VGA:
+    Intel Corporation Skylake GT2 [HD Graphics 520] (rev 07)
+
+ETHTOOL
+  Interface Status:
+    enp0s31f6   0000:00:1f.6  link=up 1000Mb/s full (autoneg=Y)  rx ring 256/4096  drv e1000e v3.2.6-k / fw 0.1-4
+    virbr0      N/A           link=DOWN                          rx ring UNKNOWN   drv bridge v2.3 / fw N/A
+    virbr0-nic  tap           link=DOWN                          rx ring UNKNOWN   drv tun v1.6 / fw UNKNOWN
+    wlp2s0      0000:02:00.0  link=DOWN                          rx ring 0/0       drv iwlwifi v4.18.0-240.22.1.el8.x86_64 / fw 36.79ff3ccf.0 8265-36.ucode
+  Interface Errors:
+    [None]
+
