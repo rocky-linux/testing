@@ -130,18 +130,18 @@ do
 					then
 						case "${target}" in
 							rhel)
-                rpm_first_char=$(echo "$rpm_name" | head -c 1)
-            		local_package_full_path="${local_package_path}/${repo}/Packages/${rpm_first_char}/${rpm_name}"
+								rpm_first_char=$(echo "$rpm_name" | head -c 1)
+								local_package_full_path="${local_package_path}/${repo}/Packages/${rpm_first_char}/${rpm_name}"
 								;;
 							*)
-                local_package_full_path="${local_package_path}/${repo}/Packages/${rpm_name}"
-                ;;
+								local_package_full_path="${local_package_path}/${repo}/Packages/${rpm_name}"
+								;;
 						esac
-            rpminspect-fedora -v -E metadata,files,patches,virus,javabytecode,disttag,specname \
-              --format=json \
-              --output="${rpminspect_base}/${target}/${releasever}/${repo}/${nvra_pkg_name}.json" \
-              "${local_package_full_path}" \
-              >"${rpminspect_base}/${target}/${releasever}/${repo}/${nvra_pkg_name}.rpminspect.out"
+						rpminspect-fedora -v -E metadata,files,patches,virus,javabytecode,disttag,specname \
+							--format=json \
+							--output="${rpminspect_base}/${target}/${releasever}/${repo}/${nvra_pkg_name}.json" \
+							"${local_package_full_path}" \
+							>"${rpminspect_base}/${target}/${releasever}/${repo}/${nvra_pkg_name}.rpminspect.out"
 
 						ret=$?
 						set -e
