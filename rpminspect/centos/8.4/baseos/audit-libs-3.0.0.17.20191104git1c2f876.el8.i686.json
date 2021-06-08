@@ -1,0 +1,157 @@
+{
+   "rpminspect": [
+     {
+       "result": "INFO",
+       "waiver authorization": "Not Waivable",
+       "message": "version",
+       "details": "rpminspect version 1.5"
+     },
+     {
+       "result": "INFO",
+       "waiver authorization": "Not Waivable",
+       "message": "command line",
+       "details": "\/usr\/bin\/rpminspect -c \/usr\/share\/rpminspect\/fedora.yaml -v -E metadata,files,patches,virus,javabytecode,disttag,specname --format=json --output=\/home\/vagrant\/data\/rpminspect\/centos\/8.4\/baseos\/audit-libs-3.0.0.17.20191104git1c2f876.el8.i686.json \/home\/vagrant\/data\/repos\/centos\/8.4\/baseos\/Packages\/audit-libs-3.0-0.17.20191104git1c2f876.el8.i686.rpm"
+     }
+   ],
+   "license": [
+     {
+       "result": "INFO",
+       "waiver authorization": "Not Waivable",
+       "message": "Valid License Tag in audit-libs-3.0-0.17.20191104git1c2f876.el8.i686: LGPLv2+"
+     },
+     {
+       "result": "OK",
+       "waiver authorization": "Not Waivable"
+     }
+   ],
+   "empty-payload": [
+     {
+       "result": "OK",
+       "waiver authorization": "Not Waivable"
+     }
+   ],
+   "man-pages": [
+     {
+       "result": "OK",
+       "waiver authorization": "Not Waivable"
+     }
+   ],
+   "xml-files": [
+     {
+       "result": "OK",
+       "waiver authorization": "Not Waivable"
+     }
+   ],
+   "elf-object-properties": [
+     {
+       "result": "OK",
+       "waiver authorization": "Not Waivable"
+     }
+   ],
+   "desktop-entry-files": [
+     {
+       "result": "OK",
+       "waiver authorization": "Not Waivable"
+     }
+   ],
+   "ownership": [
+     {
+       "result": "OK",
+       "waiver authorization": "Not Waivable"
+     }
+   ],
+   "shell-syntax": [
+     {
+       "result": "OK",
+       "waiver authorization": "Not Waivable"
+     }
+   ],
+   "annocheck": [
+     {
+       "result": "INFO",
+       "waiver authorization": "Not Waivable",
+       "message": "annocheck 'hardened' test passes for \/lib\/libaudit.so.1.0.0 on i686",
+       "details": "annocheck: Version 9.50.\nHardened: \/lib\/libaudit.so.1.0.0: warn: Could not find separate debug file: libaudit.so.1.0.0-3.0-0.17.20191104git1c2f876.el8.i386.debug.\nHardened: \/lib\/libaudit.so.1.0.0: info: Notes produced by assembler plugin version 1\nHardened: \/lib\/libaudit.so.1.0.0: info: Notes produced by gcc plugin version 8.90\nHardened: \/lib\/libaudit.so.1.0.0: info: Set binary producer to GCC version 8.\nHardened: \/lib\/libaudit.so.1.0.0: warn: Could not find separate debug file: libaudit.so.1.0.0-3.0-0.17.20191104git1c2f876.el8.i386.debug.\nHardened: \/lib\/libaudit.so.1.0.0: info: Notes produced by gcc plugin version 8.78\nHardened: \/lib\/libaudit.so.1.0.0: warn: Could not find separate debug file: libaudit.so.1.0.0-3.0-0.17.20191104git1c2f876.el8.i386.debug.\nHardened: \/lib\/libaudit.so.1.0.0: PASS: No gaps found.\nHardened: \/lib\/libaudit.so.1.0.0: skip: Test for -Wl,-z-now.  (Dynamic segment present, but no dynamic relocations found).\nHardened: \/lib\/libaudit.so.1.0.0: skip: Branch protection.  (Not an AArch64 binary).\nHardened: \/lib\/libaudit.so.1.0.0: PASS: Compiled with -fcf-protection.\nHardened: \/lib\/libaudit.so.1.0.0: PASS: One dynamic section\/segment found.\nHardened: \/lib\/libaudit.so.1.0.0: skip: Test of dynamic tags.  (AArch64 specific).\nHardened: \/lib\/libaudit.so.1.0.0: skip: Entry point instruction is ENDBR.  (Not an executable).\nHardened: \/lib\/libaudit.so.1.0.0: PASS: Compiled with -D_FORTIFY_SOURCE=2.\nHardened: \/lib\/libaudit.so.1.0.0: PASS: Compiled with -D_GLIBCXX_ASSERTIONS.\nHardened: \/lib\/libaudit.so.1.0.0: skip: Test for -Wl,-z,relro.  (No dynamic relocations).\nHardened: \/lib\/libaudit.so.1.0.0: PASS: Stack not executable.\nHardened: \/lib\/libaudit.so.1.0.0: skip: The LTO setting was not recorded (probably due to the use of an old version of the annobin plugin).\nHardened: \/lib\/libaudit.so.1.0.0: PASS: Compiled with sufficient optimization.\nHardened: \/lib\/libaudit.so.1.0.0: PASS: Compiled with PIC\/PIE.\nHardened: \/lib\/libaudit.so.1.0.0: PASS: Compiled as a position independent binary.\nHardened: \/lib\/libaudit.so.1.0.0: PASS: Good GNU Property note.\nHardened: \/lib\/libaudit.so.1.0.0: PASS: DT_RPATH\/DT_RUNPATH absent or rooted at \/usr.\nHardened: \/lib\/libaudit.so.1.0.0: PASS: No RWX segments found.\nHardened: \/lib\/libaudit.so.1.0.0: PASS: Consistent use of the -fshort-enum option.\nHardened: \/lib\/libaudit.so.1.0.0: PASS: Compiled with -fstack-clash-protection.\nHardened: \/lib\/libaudit.so.1.0.0: PASS: Compiled with sufficient stack protection.\nHardened: \/lib\/libaudit.so.1.0.0: PASS: Compiled with -mstack_realign.\nHardened: \/lib\/libaudit.so.1.0.0: PASS: No text relocations found.\nHardened: \/lib\/libaudit.so.1.0.0: PASS: No thread cancellation problems.\nHardened: \/lib\/libaudit.so.1.0.0: PASS: Compiled with either -Wall and\/or -Wformat-security.\nHardened: \/lib\/libaudit.so.1.0.0: PASS: GOT\/PLT relocations are read only.\nHardened: \/lib\/libaudit.so.1.0.0: PASS.",
+       "remedy": "See annocheck(1) for more information."
+     },
+     {
+       "result": "INFO",
+       "waiver authorization": "Not Waivable",
+       "message": "annocheck 'hardened' test passes for \/lib\/libauparse.so.0.0.0 on i686",
+       "details": "annocheck: Version 9.50.\nHardened: \/lib\/libauparse.so.0.0.0: warn: Could not find separate debug file: libauparse.so.0.0.0-3.0-0.17.20191104git1c2f876.el8.i386.debug.\nHardened: \/lib\/libauparse.so.0.0.0: info: Notes produced by assembler plugin version 1\nHardened: \/lib\/libauparse.so.0.0.0: info: Notes produced by gcc plugin version 8.90\nHardened: \/lib\/libauparse.so.0.0.0: warn: Could not find separate debug file: libauparse.so.0.0.0-3.0-0.17.20191104git1c2f876.el8.i386.debug.\nHardened: \/lib\/libauparse.so.0.0.0: info: Set binary producer to GCC version 8.\nHardened: \/lib\/libauparse.so.0.0.0: warn: Could not find separate debug file: libauparse.so.0.0.0-3.0-0.17.20191104git1c2f876.el8.i386.debug.\nHardened: \/lib\/libauparse.so.0.0.0: warn: Could not find separate debug file: libauparse.so.0.0.0-3.0-0.17.20191104git1c2f876.el8.i386.debug.\nHardened: \/lib\/libauparse.so.0.0.0: info: Notes produced by gcc plugin version 8.78\nHardened: \/lib\/libauparse.so.0.0.0: warn: Could not find separate debug file: libauparse.so.0.0.0-3.0-0.17.20191104git1c2f876.el8.i386.debug.\nHardened: \/lib\/libauparse.so.0.0.0: warn: Could not find separate debug file: libauparse.so.0.0.0-3.0-0.17.20191104git1c2f876.el8.i386.debug.\nHardened: \/lib\/libauparse.so.0.0.0: PASS: No gaps found.\nHardened: \/lib\/libauparse.so.0.0.0: skip: Test for -Wl,-z-now.  (Dynamic segment present, but no dynamic relocations found).\nHardened: \/lib\/libauparse.so.0.0.0: skip: Branch protection.  (Not an AArch64 binary).\nHardened: \/lib\/libauparse.so.0.0.0: PASS: Compiled with -fcf-protection.\nHardened: \/lib\/libauparse.so.0.0.0: PASS: One dynamic section\/segment found.\nHardened: \/lib\/libauparse.so.0.0.0: skip: Test of dynamic tags.  (AArch64 specific).\nHardened: \/lib\/libauparse.so.0.0.0: skip: Entry point instruction is ENDBR.  (Not an executable).\nHardened: \/lib\/libauparse.so.0.0.0: PASS: Compiled with -D_FORTIFY_SOURCE=2.\nHardened: \/lib\/libauparse.so.0.0.0: PASS: Compiled with -D_GLIBCXX_ASSERTIONS.\nHardened: \/lib\/libauparse.so.0.0.0: skip: Test for -Wl,-z,relro.  (No dynamic relocations).\nHardened: \/lib\/libauparse.so.0.0.0: PASS: Stack not executable.\nHardened: \/lib\/libauparse.so.0.0.0: skip: The LTO setting was not recorded (probably due to the use of an old version of the annobin plugin).\nHardened: \/lib\/libauparse.so.0.0.0: PASS: Compiled with sufficient optimization.\nHardened: \/lib\/libauparse.so.0.0.0: PASS: Compiled with PIC\/PIE.\nHardened: \/lib\/libauparse.so.0.0.0: PASS: Compiled as a position independent binary.\nHardened: \/lib\/libauparse.so.0.0.0: PASS: Good GNU Property note.\nHardened: \/lib\/libauparse.so.0.0.0: PASS: DT_RPATH\/DT_RUNPATH absent or rooted at \/usr.\nHardened: \/lib\/libauparse.so.0.0.0: PASS: No RWX segments found.\nHardened: \/lib\/libauparse.so.0.0.0: PASS: Consistent use of the -fshort-enum option.\nHardened: \/lib\/libauparse.so.0.0.0: PASS: Compiled with -fstack-clash-protection.\nHardened: \/lib\/libauparse.so.0.0.0: PASS: Compiled with sufficient stack protection.\nHardened: \/lib\/libauparse.so.0.0.0: PASS: Compiled with -mstack_realign.\nHardened: \/lib\/libauparse.so.0.0.0: PASS: No text relocations found.\nHardened: \/lib\/libauparse.so.0.0.0: PASS: No thread cancellation problems.\nHardened: \/lib\/libauparse.so.0.0.0: PASS: Compiled with either -Wall and\/or -Wformat-security.\nHardened: \/lib\/libauparse.so.0.0.0: PASS: GOT\/PLT relocations are read only.\nHardened: \/lib\/libauparse.so.0.0.0: PASS.",
+       "remedy": "See annocheck(1) for more information."
+     },
+     {
+       "result": "OK",
+       "waiver authorization": "Not Waivable"
+     }
+   ],
+   "permissions": [
+     {
+       "result": "OK",
+       "waiver authorization": "Not Waivable"
+     }
+   ],
+   "capabilities": [
+     {
+       "result": "OK",
+       "waiver authorization": "Not Waivable"
+     }
+   ],
+   "path-migration": [
+     {
+       "result": "VERIFY",
+       "waiver authorization": "Anyone",
+       "message": "File \/lib\/libaudit.so.1 found should be in \/usr\/lib on i686",
+       "remedy": "Files should not be installed in old directory names.  Modify the package to install the affected file to the preferred directory."
+     },
+     {
+       "result": "VERIFY",
+       "waiver authorization": "Anyone",
+       "message": "File \/lib\/libaudit.so.1.0.0 found should be in \/usr\/lib on i686",
+       "remedy": "Files should not be installed in old directory names.  Modify the package to install the affected file to the preferred directory."
+     },
+     {
+       "result": "VERIFY",
+       "waiver authorization": "Anyone",
+       "message": "File \/lib\/libauparse.so.0 found should be in \/usr\/lib on i686",
+       "remedy": "Files should not be installed in old directory names.  Modify the package to install the affected file to the preferred directory."
+     },
+     {
+       "result": "VERIFY",
+       "waiver authorization": "Anyone",
+       "message": "File \/lib\/libauparse.so.0.0.0 found should be in \/usr\/lib on i686",
+       "remedy": "Files should not be installed in old directory names.  Modify the package to install the affected file to the preferred directory."
+     }
+   ],
+   "lto": [
+     {
+       "result": "OK",
+       "waiver authorization": "Not Waivable"
+     }
+   ],
+   "symlinks": [
+     {
+       "result": "OK",
+       "waiver authorization": "Not Waivable"
+     }
+   ],
+   "politics": [
+     {
+       "result": "OK",
+       "waiver authorization": "Not Waivable"
+     }
+   ],
+   "bad-functions": [
+     {
+       "result": "OK",
+       "waiver authorization": "Not Waivable"
+     }
+   ],
+   "runpath": [
+     {
+       "result": "OK",
+       "waiver authorization": "Not Waivable"
+     }
+   ]
+ }

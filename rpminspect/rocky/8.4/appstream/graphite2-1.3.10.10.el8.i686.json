@@ -1,0 +1,134 @@
+{
+   "rpminspect": [
+     {
+       "result": "INFO",
+       "waiver authorization": "Not Waivable",
+       "message": "version",
+       "details": "rpminspect version 1.5"
+     },
+     {
+       "result": "INFO",
+       "waiver authorization": "Not Waivable",
+       "message": "command line",
+       "details": "\/usr\/bin\/rpminspect -c \/usr\/share\/rpminspect\/fedora.yaml -v -E metadata,files,patches,virus,javabytecode,disttag,specname --format=json --output=\/home\/vagrant\/data\/rpminspect\/rocky\/8.4\/appstream\/graphite2-1.3.10.10.el8.i686.json \/home\/vagrant\/data\/repos\/rocky\/8.4\/appstream\/Packages\/graphite2-1.3.10-10.el8.i686.rpm"
+     }
+   ],
+   "license": [
+     {
+       "result": "BAD",
+       "waiver authorization": "Not Waivable",
+       "message": "Unapproved license in graphite2-1.3.10-10.el8.i686: MPL",
+       "remedy": "The specified license abbreviation is not listed as approved in the license database.  The license database is specified in the rpminspect configuration file.  Check this file and send a pull request to the appropriate upstream project to update the database.  If the license is listed in the database but marked unapproved, you may need to work with the legal team regarding options for this software."
+     }
+   ],
+   "empty-payload": [
+     {
+       "result": "OK",
+       "waiver authorization": "Not Waivable"
+     }
+   ],
+   "man-pages": [
+     {
+       "result": "OK",
+       "waiver authorization": "Not Waivable"
+     }
+   ],
+   "xml-files": [
+     {
+       "result": "OK",
+       "waiver authorization": "Not Waivable"
+     }
+   ],
+   "elf-object-properties": [
+     {
+       "result": "OK",
+       "waiver authorization": "Not Waivable"
+     }
+   ],
+   "desktop-entry-files": [
+     {
+       "result": "OK",
+       "waiver authorization": "Not Waivable"
+     }
+   ],
+   "ownership": [
+     {
+       "result": "OK",
+       "waiver authorization": "Not Waivable"
+     }
+   ],
+   "shell-syntax": [
+     {
+       "result": "OK",
+       "waiver authorization": "Not Waivable"
+     }
+   ],
+   "annocheck": [
+     {
+       "result": "INFO",
+       "waiver authorization": "Not Waivable",
+       "message": "annocheck 'hardened' test passes for \/usr\/bin\/gr2fonttest on i686",
+       "details": "annocheck: Version 9.50.\nHardened: \/usr\/bin\/gr2fonttest: warn: Could not find separate debug file: gr2fonttest-1.3.10-10.el8.i386.debug.\nHardened: \/usr\/bin\/gr2fonttest: info: Notes produced by assembler plugin version 1\nHardened: \/usr\/bin\/gr2fonttest: info: Notes produced by gcc plugin version 9.23\nHardened: \/usr\/bin\/gr2fonttest: info: Set binary producer to GCC version 8.\nHardened: \/usr\/bin\/gr2fonttest: warn: Could not find separate debug file: gr2fonttest-1.3.10-10.el8.i386.debug.\nHardened: \/usr\/bin\/gr2fonttest: PASS: No gaps found.\nHardened: \/usr\/bin\/gr2fonttest: skip: Test for -Wl,-z-now.  (Dynamic segment present, but no dynamic relocations found).\nHardened: \/usr\/bin\/gr2fonttest: skip: Branch protection.  (Not an AArch64 binary).\nHardened: \/usr\/bin\/gr2fonttest: PASS: Compiled with -fcf-protection.\nHardened: \/usr\/bin\/gr2fonttest: PASS: One dynamic section\/segment found.\nHardened: \/usr\/bin\/gr2fonttest: skip: Test of dynamic tags.  (AArch64 specific).\nHardened: \/usr\/bin\/gr2fonttest: PASS: Entry point instruction is ENDBR.\nHardened: \/usr\/bin\/gr2fonttest: PASS: Compiled with -D_FORTIFY_SOURCE=2.\nHardened: \/usr\/bin\/gr2fonttest: PASS: Compiled with -D_GLIBCXX_ASSERTIONS.\nHardened: \/usr\/bin\/gr2fonttest: skip: Test for -Wl,-z,relro.  (No dynamic relocations).\nHardened: \/usr\/bin\/gr2fonttest: PASS: Stack not executable.\nHardened: \/usr\/bin\/gr2fonttest: skip: The LTO setting was not recorded (probably due to the use of an old version of the annobin plugin).\nHardened: \/usr\/bin\/gr2fonttest: PASS: Compiled with sufficient optimization.\nHardened: \/usr\/bin\/gr2fonttest: PASS: Compiled with PIC\/PIE.\nHardened: \/usr\/bin\/gr2fonttest: PASS: Compiled as a position independent binary.\nHardened: \/usr\/bin\/gr2fonttest: PASS: Good GNU Property note.\nHardened: \/usr\/bin\/gr2fonttest: PASS: DT_RPATH\/DT_RUNPATH absent or rooted at \/usr.\nHardened: \/usr\/bin\/gr2fonttest: PASS: No RWX segments found.\nHardened: \/usr\/bin\/gr2fonttest: PASS: Consistent use of the -fshort-enum option.\nHardened: \/usr\/bin\/gr2fonttest: PASS: Compiled with -fstack-clash-protection.\nHardened: \/usr\/bin\/gr2fonttest: PASS: Compiled with sufficient stack protection.\nHardened: \/usr\/bin\/gr2fonttest: PASS: Compiled with -mstack_realign.\nHardened: \/usr\/bin\/gr2fonttest: PASS: No text relocations found.\nHardened: \/usr\/bin\/gr2fonttest: PASS: No thread cancellation problems.\nHardened: \/usr\/bin\/gr2fonttest: PASS: Compiled with either -Wall and\/or -Wformat-security.\nHardened: \/usr\/bin\/gr2fonttest: PASS: GOT\/PLT relocations are read only.\nHardened: \/usr\/bin\/gr2fonttest: PASS.",
+       "remedy": "See annocheck(1) for more information."
+     },
+     {
+       "result": "INFO",
+       "waiver authorization": "Not Waivable",
+       "message": "annocheck 'hardened' test passes for \/usr\/lib\/libgraphite2.so.3.0.1 on i686",
+       "details": "annocheck: Version 9.50.\nHardened: \/usr\/lib\/libgraphite2.so.3.0.1: warn: Could not find separate debug file: libgraphite2.so.3.0.1-1.3.10-10.el8.i386.debug.\nHardened: \/usr\/lib\/libgraphite2.so.3.0.1: info: Notes produced by assembler plugin version 1\nHardened: \/usr\/lib\/libgraphite2.so.3.0.1: info: Notes produced by gcc plugin version 9.23\nHardened: \/usr\/lib\/libgraphite2.so.3.0.1: info: Set binary producer to GCC version 8.\nHardened: \/usr\/lib\/libgraphite2.so.3.0.1: warn: Could not find separate debug file: libgraphite2.so.3.0.1-1.3.10-10.el8.i386.debug.\nHardened: \/usr\/lib\/libgraphite2.so.3.0.1: warn: Could not find separate debug file: libgraphite2.so.3.0.1-1.3.10-10.el8.i386.debug.\nHardened: \/usr\/lib\/libgraphite2.so.3.0.1: warn: Could not find separate debug file: libgraphite2.so.3.0.1-1.3.10-10.el8.i386.debug.\nHardened: \/usr\/lib\/libgraphite2.so.3.0.1: warn: Could not find separate debug file: libgraphite2.so.3.0.1-1.3.10-10.el8.i386.debug.\nHardened: \/usr\/lib\/libgraphite2.so.3.0.1: PASS: No gaps found.\nHardened: \/usr\/lib\/libgraphite2.so.3.0.1: skip: Test for -Wl,-z-now.  (Dynamic segment present, but no dynamic relocations found).\nHardened: \/usr\/lib\/libgraphite2.so.3.0.1: skip: Branch protection.  (Not an AArch64 binary).\nHardened: \/usr\/lib\/libgraphite2.so.3.0.1: PASS: Compiled with -fcf-protection.\nHardened: \/usr\/lib\/libgraphite2.so.3.0.1: PASS: One dynamic section\/segment found.\nHardened: \/usr\/lib\/libgraphite2.so.3.0.1: skip: Test of dynamic tags.  (AArch64 specific).\nHardened: \/usr\/lib\/libgraphite2.so.3.0.1: skip: Entry point instruction is ENDBR.  (Not an executable).\nHardened: \/usr\/lib\/libgraphite2.so.3.0.1: PASS: Compiled with -D_FORTIFY_SOURCE=2.\nHardened: \/usr\/lib\/libgraphite2.so.3.0.1: PASS: Compiled with -D_GLIBCXX_ASSERTIONS.\nHardened: \/usr\/lib\/libgraphite2.so.3.0.1: skip: Test for -Wl,-z,relro.  (No dynamic relocations).\nHardened: \/usr\/lib\/libgraphite2.so.3.0.1: PASS: Stack not executable.\nHardened: \/usr\/lib\/libgraphite2.so.3.0.1: skip: The LTO setting was not recorded (probably due to the use of an old version of the annobin plugin).\nHardened: \/usr\/lib\/libgraphite2.so.3.0.1: PASS: Compiled with sufficient optimization.\nHardened: \/usr\/lib\/libgraphite2.so.3.0.1: PASS: Compiled with PIC\/PIE.\nHardened: \/usr\/lib\/libgraphite2.so.3.0.1: PASS: Compiled as a position independent binary.\nHardened: \/usr\/lib\/libgraphite2.so.3.0.1: PASS: Good GNU Property note.\nHardened: \/usr\/lib\/libgraphite2.so.3.0.1: PASS: DT_RPATH\/DT_RUNPATH absent or rooted at \/usr.\nHardened: \/usr\/lib\/libgraphite2.so.3.0.1: PASS: No RWX segments found.\nHardened: \/usr\/lib\/libgraphite2.so.3.0.1: PASS: Consistent use of the -fshort-enum option.\nHardened: \/usr\/lib\/libgraphite2.so.3.0.1: PASS: Compiled with -fstack-clash-protection.\nHardened: \/usr\/lib\/libgraphite2.so.3.0.1: PASS: Compiled with sufficient stack protection.\nHardened: \/usr\/lib\/libgraphite2.so.3.0.1: PASS: Compiled with -mstack_realign.\nHardened: \/usr\/lib\/libgraphite2.so.3.0.1: PASS: No text relocations found.\nHardened: \/usr\/lib\/libgraphite2.so.3.0.1: PASS: No thread cancellation problems.\nHardened: \/usr\/lib\/libgraphite2.so.3.0.1: PASS: Compiled with either -Wall and\/or -Wformat-security.\nHardened: \/usr\/lib\/libgraphite2.so.3.0.1: PASS: GOT\/PLT relocations are read only.\nHardened: \/usr\/lib\/libgraphite2.so.3.0.1: PASS.",
+       "remedy": "See annocheck(1) for more information."
+     },
+     {
+       "result": "OK",
+       "waiver authorization": "Not Waivable"
+     }
+   ],
+   "permissions": [
+     {
+       "result": "OK",
+       "waiver authorization": "Not Waivable"
+     }
+   ],
+   "capabilities": [
+     {
+       "result": "OK",
+       "waiver authorization": "Not Waivable"
+     }
+   ],
+   "path-migration": [
+     {
+       "result": "OK",
+       "waiver authorization": "Not Waivable"
+     }
+   ],
+   "lto": [
+     {
+       "result": "OK",
+       "waiver authorization": "Not Waivable"
+     }
+   ],
+   "symlinks": [
+     {
+       "result": "OK",
+       "waiver authorization": "Not Waivable"
+     }
+   ],
+   "politics": [
+     {
+       "result": "OK",
+       "waiver authorization": "Not Waivable"
+     }
+   ],
+   "bad-functions": [
+     {
+       "result": "OK",
+       "waiver authorization": "Not Waivable"
+     }
+   ],
+   "runpath": [
+     {
+       "result": "OK",
+       "waiver authorization": "Not Waivable"
+     }
+   ]
+ }

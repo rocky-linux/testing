@@ -1,0 +1,182 @@
+{
+   "rpminspect": [
+     {
+       "result": "INFO",
+       "waiver authorization": "Not Waivable",
+       "message": "version",
+       "details": "rpminspect version 1.5"
+     },
+     {
+       "result": "INFO",
+       "waiver authorization": "Not Waivable",
+       "message": "command line",
+       "details": "\/usr\/bin\/rpminspect -c \/usr\/share\/rpminspect\/fedora.yaml -v -E metadata,files,patches,virus,javabytecode,disttag,specname --format=json --output=\/home\/vagrant\/data\/rpminspect\/rocky\/8.4\/powertools\/flite-1.3.31.el8.i686.json \/home\/vagrant\/data\/repos\/rocky\/8.4\/powertools\/Packages\/flite-1.3-31.el8.i686.rpm"
+     }
+   ],
+   "license": [
+     {
+       "result": "INFO",
+       "waiver authorization": "Not Waivable",
+       "message": "Valid License Tag in flite-1.3-31.el8.i686: MIT"
+     },
+     {
+       "result": "OK",
+       "waiver authorization": "Not Waivable"
+     }
+   ],
+   "empty-payload": [
+     {
+       "result": "OK",
+       "waiver authorization": "Not Waivable"
+     }
+   ],
+   "man-pages": [
+     {
+       "result": "OK",
+       "waiver authorization": "Not Waivable"
+     }
+   ],
+   "xml-files": [
+     {
+       "result": "OK",
+       "waiver authorization": "Not Waivable"
+     }
+   ],
+   "elf-object-properties": [
+     {
+       "result": "OK",
+       "waiver authorization": "Not Waivable"
+     }
+   ],
+   "desktop-entry-files": [
+     {
+       "result": "OK",
+       "waiver authorization": "Not Waivable"
+     }
+   ],
+   "ownership": [
+     {
+       "result": "OK",
+       "waiver authorization": "Not Waivable"
+     }
+   ],
+   "shell-syntax": [
+     {
+       "result": "OK",
+       "waiver authorization": "Not Waivable"
+     }
+   ],
+   "annocheck": [
+     {
+       "result": "INFO",
+       "waiver authorization": "Not Waivable",
+       "message": "annocheck 'hardened' test passes for \/usr\/bin\/flite on i686",
+       "details": "annocheck: Version 9.50.\nHardened: \/usr\/bin\/flite: warn: Could not find separate debug file: flite-1.3-31.el8.i386.debug.\nHardened: \/usr\/bin\/flite: info: Notes produced by assembler plugin version 1\nHardened: \/usr\/bin\/flite: info: Notes produced by gcc plugin version 9.23\nHardened: \/usr\/bin\/flite: info: Set binary producer to GCC version 8.\nHardened: \/usr\/bin\/flite: warn: Could not find separate debug file: flite-1.3-31.el8.i386.debug.\nHardened: \/usr\/bin\/flite: warn: Could not find separate debug file: flite-1.3-31.el8.i386.debug.\nHardened: \/usr\/bin\/flite: warn: Could not find separate debug file: flite-1.3-31.el8.i386.debug.\nHardened: \/usr\/bin\/flite: warn: Could not find separate debug file: flite-1.3-31.el8.i386.debug.\nHardened: \/usr\/bin\/flite: warn: Could not find separate debug file: flite-1.3-31.el8.i386.debug.\nHardened: \/usr\/bin\/flite: PASS: No gaps found.\nHardened: \/usr\/bin\/flite: skip: Test for -Wl,-z-now.  (Dynamic segment present, but no dynamic relocations found).\nHardened: \/usr\/bin\/flite: skip: Branch protection.  (Not an AArch64 binary).\nHardened: \/usr\/bin\/flite: PASS: Compiled with -fcf-protection.\nHardened: \/usr\/bin\/flite: PASS: One dynamic section\/segment found.\nHardened: \/usr\/bin\/flite: skip: Test of dynamic tags.  (AArch64 specific).\nHardened: \/usr\/bin\/flite: PASS: Entry point instruction is ENDBR.\nHardened: \/usr\/bin\/flite: PASS: Compiled with -D_FORTIFY_SOURCE=2.\nHardened: \/usr\/bin\/flite: PASS: Compiled with -D_GLIBCXX_ASSERTIONS.\nHardened: \/usr\/bin\/flite: skip: Test for -Wl,-z,relro.  (No dynamic relocations).\nHardened: \/usr\/bin\/flite: PASS: Stack not executable.\nHardened: \/usr\/bin\/flite: skip: The LTO setting was not recorded (probably due to the use of an old version of the annobin plugin).\nHardened: \/usr\/bin\/flite: PASS: Compiled with sufficient optimization.\nHardened: \/usr\/bin\/flite: PASS: Compiled with PIC\/PIE.\nHardened: \/usr\/bin\/flite: PASS: Compiled as a position independent binary.\nHardened: \/usr\/bin\/flite: PASS: Good GNU Property note.\nHardened: \/usr\/bin\/flite: PASS: DT_RPATH\/DT_RUNPATH absent or rooted at \/usr.\nHardened: \/usr\/bin\/flite: PASS: No RWX segments found.\nHardened: \/usr\/bin\/flite: PASS: Consistent use of the -fshort-enum option.\nHardened: \/usr\/bin\/flite: PASS: Compiled with -fstack-clash-protection.\nHardened: \/usr\/bin\/flite: PASS: Compiled with sufficient stack protection.\nHardened: \/usr\/bin\/flite: PASS: Compiled with -mstack_realign.\nHardened: \/usr\/bin\/flite: PASS: No text relocations found.\nHardened: \/usr\/bin\/flite: PASS: No thread cancellation problems.\nHardened: \/usr\/bin\/flite: PASS: Compiled with either -Wall and\/or -Wformat-security.\nHardened: \/usr\/bin\/flite: PASS: GOT\/PLT relocations are read only.\nHardened: \/usr\/bin\/flite: PASS.",
+       "remedy": "See annocheck(1) for more information."
+     },
+     {
+       "result": "INFO",
+       "waiver authorization": "Not Waivable",
+       "message": "annocheck 'hardened' test passes for \/usr\/bin\/flite_time on i686",
+       "details": "annocheck: Version 9.50.\nHardened: \/usr\/bin\/flite_time: warn: Could not find separate debug file: flite_time-1.3-31.el8.i386.debug.\nHardened: \/usr\/bin\/flite_time: info: Notes produced by assembler plugin version 1\nHardened: \/usr\/bin\/flite_time: info: Notes produced by gcc plugin version 9.23\nHardened: \/usr\/bin\/flite_time: info: Set binary producer to GCC version 8.\nHardened: \/usr\/bin\/flite_time: warn: Could not find separate debug file: flite_time-1.3-31.el8.i386.debug.\nHardened: \/usr\/bin\/flite_time: warn: Could not find separate debug file: flite_time-1.3-31.el8.i386.debug.\nHardened: \/usr\/bin\/flite_time: warn: Could not find separate debug file: flite_time-1.3-31.el8.i386.debug.\nHardened: \/usr\/bin\/flite_time: PASS: No gaps found.\nHardened: \/usr\/bin\/flite_time: skip: Test for -Wl,-z-now.  (Dynamic segment present, but no dynamic relocations found).\nHardened: \/usr\/bin\/flite_time: skip: Branch protection.  (Not an AArch64 binary).\nHardened: \/usr\/bin\/flite_time: PASS: Compiled with -fcf-protection.\nHardened: \/usr\/bin\/flite_time: PASS: One dynamic section\/segment found.\nHardened: \/usr\/bin\/flite_time: skip: Test of dynamic tags.  (AArch64 specific).\nHardened: \/usr\/bin\/flite_time: PASS: Entry point instruction is ENDBR.\nHardened: \/usr\/bin\/flite_time: PASS: Compiled with -D_FORTIFY_SOURCE=2.\nHardened: \/usr\/bin\/flite_time: PASS: Compiled with -D_GLIBCXX_ASSERTIONS.\nHardened: \/usr\/bin\/flite_time: skip: Test for -Wl,-z,relro.  (No dynamic relocations).\nHardened: \/usr\/bin\/flite_time: PASS: Stack not executable.\nHardened: \/usr\/bin\/flite_time: skip: The LTO setting was not recorded (probably due to the use of an old version of the annobin plugin).\nHardened: \/usr\/bin\/flite_time: PASS: Compiled with sufficient optimization.\nHardened: \/usr\/bin\/flite_time: PASS: Compiled with PIC\/PIE.\nHardened: \/usr\/bin\/flite_time: PASS: Compiled as a position independent binary.\nHardened: \/usr\/bin\/flite_time: PASS: Good GNU Property note.\nHardened: \/usr\/bin\/flite_time: PASS: DT_RPATH\/DT_RUNPATH absent or rooted at \/usr.\nHardened: \/usr\/bin\/flite_time: PASS: No RWX segments found.\nHardened: \/usr\/bin\/flite_time: PASS: Consistent use of the -fshort-enum option.\nHardened: \/usr\/bin\/flite_time: PASS: Compiled with -fstack-clash-protection.\nHardened: \/usr\/bin\/flite_time: PASS: Compiled with sufficient stack protection.\nHardened: \/usr\/bin\/flite_time: PASS: Compiled with -mstack_realign.\nHardened: \/usr\/bin\/flite_time: PASS: No text relocations found.\nHardened: \/usr\/bin\/flite_time: PASS: No thread cancellation problems.\nHardened: \/usr\/bin\/flite_time: PASS: Compiled with either -Wall and\/or -Wformat-security.\nHardened: \/usr\/bin\/flite_time: PASS: GOT\/PLT relocations are read only.\nHardened: \/usr\/bin\/flite_time: PASS.",
+       "remedy": "See annocheck(1) for more information."
+     },
+     {
+       "result": "INFO",
+       "waiver authorization": "Not Waivable",
+       "message": "annocheck 'hardened' test passes for \/usr\/lib\/libflite.so.1.3 on i686",
+       "details": "annocheck: Version 9.50.\nHardened: \/usr\/lib\/libflite.so.1.3: warn: Could not find separate debug file: libflite.so.1.3-1.3-31.el8.i386.debug.\nHardened: \/usr\/lib\/libflite.so.1.3: info: Notes produced by assembler plugin version 1\nHardened: \/usr\/lib\/libflite.so.1.3: info: Notes produced by gcc plugin version 9.23\nHardened: \/usr\/lib\/libflite.so.1.3: info: Set binary producer to GCC version 8.\nHardened: \/usr\/lib\/libflite.so.1.3: warn: Could not find separate debug file: libflite.so.1.3-1.3-31.el8.i386.debug.\nHardened: \/usr\/lib\/libflite.so.1.3: PASS: No gaps found.\nHardened: \/usr\/lib\/libflite.so.1.3: skip: Test for -Wl,-z-now.  (Dynamic segment present, but no dynamic relocations found).\nHardened: \/usr\/lib\/libflite.so.1.3: skip: Branch protection.  (Not an AArch64 binary).\nHardened: \/usr\/lib\/libflite.so.1.3: PASS: Compiled with -fcf-protection.\nHardened: \/usr\/lib\/libflite.so.1.3: PASS: One dynamic section\/segment found.\nHardened: \/usr\/lib\/libflite.so.1.3: skip: Test of dynamic tags.  (AArch64 specific).\nHardened: \/usr\/lib\/libflite.so.1.3: skip: Entry point instruction is ENDBR.  (Not an executable).\nHardened: \/usr\/lib\/libflite.so.1.3: PASS: Compiled with -D_FORTIFY_SOURCE=2.\nHardened: \/usr\/lib\/libflite.so.1.3: PASS: Compiled with -D_GLIBCXX_ASSERTIONS.\nHardened: \/usr\/lib\/libflite.so.1.3: skip: Test for -Wl,-z,relro.  (No dynamic relocations).\nHardened: \/usr\/lib\/libflite.so.1.3: PASS: Stack not executable.\nHardened: \/usr\/lib\/libflite.so.1.3: skip: The LTO setting was not recorded (probably due to the use of an old version of the annobin plugin).\nHardened: \/usr\/lib\/libflite.so.1.3: PASS: Compiled with sufficient optimization.\nHardened: \/usr\/lib\/libflite.so.1.3: PASS: Compiled with PIC\/PIE.\nHardened: \/usr\/lib\/libflite.so.1.3: PASS: Compiled as a position independent binary.\nHardened: \/usr\/lib\/libflite.so.1.3: PASS: Good GNU Property note.\nHardened: \/usr\/lib\/libflite.so.1.3: PASS: DT_RPATH\/DT_RUNPATH absent or rooted at \/usr.\nHardened: \/usr\/lib\/libflite.so.1.3: PASS: No RWX segments found.\nHardened: \/usr\/lib\/libflite.so.1.3: PASS: Consistent use of the -fshort-enum option.\nHardened: \/usr\/lib\/libflite.so.1.3: PASS: Compiled with -fstack-clash-protection.\nHardened: \/usr\/lib\/libflite.so.1.3: PASS: Compiled with sufficient stack protection.\nHardened: \/usr\/lib\/libflite.so.1.3: PASS: Compiled with -mstack_realign.\nHardened: \/usr\/lib\/libflite.so.1.3: PASS: No text relocations found.\nHardened: \/usr\/lib\/libflite.so.1.3: PASS: No thread cancellation problems.\nHardened: \/usr\/lib\/libflite.so.1.3: PASS: Compiled with either -Wall and\/or -Wformat-security.\nHardened: \/usr\/lib\/libflite.so.1.3: PASS: GOT\/PLT relocations are read only.\nHardened: \/usr\/lib\/libflite.so.1.3: PASS.",
+       "remedy": "See annocheck(1) for more information."
+     },
+     {
+       "result": "INFO",
+       "waiver authorization": "Not Waivable",
+       "message": "annocheck 'hardened' test passes for \/usr\/lib\/libflite_cmu_time_awb.so.1.3 on i686",
+       "details": "annocheck: Version 9.50.\nHardened: \/usr\/lib\/libflite_cmu_time_awb.so.1.3: warn: Could not find separate debug file: libflite_cmu_time_awb.so.1.3-1.3-31.el8.i386.debug.\nHardened: \/usr\/lib\/libflite_cmu_time_awb.so.1.3: info: Notes produced by assembler plugin version 1\nHardened: \/usr\/lib\/libflite_cmu_time_awb.so.1.3: info: Notes produced by gcc plugin version 9.23\nHardened: \/usr\/lib\/libflite_cmu_time_awb.so.1.3: info: Set binary producer to GCC version 8.\nHardened: \/usr\/lib\/libflite_cmu_time_awb.so.1.3: warn: Could not find separate debug file: libflite_cmu_time_awb.so.1.3-1.3-31.el8.i386.debug.\nHardened: \/usr\/lib\/libflite_cmu_time_awb.so.1.3: PASS: No gaps found.\nHardened: \/usr\/lib\/libflite_cmu_time_awb.so.1.3: skip: Test for -Wl,-z-now.  (Dynamic segment present, but no dynamic relocations found).\nHardened: \/usr\/lib\/libflite_cmu_time_awb.so.1.3: skip: Branch protection.  (Not an AArch64 binary).\nHardened: \/usr\/lib\/libflite_cmu_time_awb.so.1.3: PASS: Compiled with -fcf-protection.\nHardened: \/usr\/lib\/libflite_cmu_time_awb.so.1.3: PASS: One dynamic section\/segment found.\nHardened: \/usr\/lib\/libflite_cmu_time_awb.so.1.3: skip: Test of dynamic tags.  (AArch64 specific).\nHardened: \/usr\/lib\/libflite_cmu_time_awb.so.1.3: skip: Entry point instruction is ENDBR.  (Not an executable).\nHardened: \/usr\/lib\/libflite_cmu_time_awb.so.1.3: PASS: Compiled with -D_FORTIFY_SOURCE=2.\nHardened: \/usr\/lib\/libflite_cmu_time_awb.so.1.3: PASS: Compiled with -D_GLIBCXX_ASSERTIONS.\nHardened: \/usr\/lib\/libflite_cmu_time_awb.so.1.3: skip: Test for -Wl,-z,relro.  (No dynamic relocations).\nHardened: \/usr\/lib\/libflite_cmu_time_awb.so.1.3: PASS: Stack not executable.\nHardened: \/usr\/lib\/libflite_cmu_time_awb.so.1.3: skip: The LTO setting was not recorded (probably due to the use of an old version of the annobin plugin).\nHardened: \/usr\/lib\/libflite_cmu_time_awb.so.1.3: PASS: Compiled with sufficient optimization.\nHardened: \/usr\/lib\/libflite_cmu_time_awb.so.1.3: PASS: Compiled with PIC\/PIE.\nHardened: \/usr\/lib\/libflite_cmu_time_awb.so.1.3: PASS: Compiled as a position independent binary.\nHardened: \/usr\/lib\/libflite_cmu_time_awb.so.1.3: PASS: Good GNU Property note.\nHardened: \/usr\/lib\/libflite_cmu_time_awb.so.1.3: PASS: DT_RPATH\/DT_RUNPATH absent or rooted at \/usr.\nHardened: \/usr\/lib\/libflite_cmu_time_awb.so.1.3: PASS: No RWX segments found.\nHardened: \/usr\/lib\/libflite_cmu_time_awb.so.1.3: PASS: Consistent use of the -fshort-enum option.\nHardened: \/usr\/lib\/libflite_cmu_time_awb.so.1.3: PASS: Compiled with -fstack-clash-protection.\nHardened: \/usr\/lib\/libflite_cmu_time_awb.so.1.3: PASS: Compiled with sufficient stack protection.\nHardened: \/usr\/lib\/libflite_cmu_time_awb.so.1.3: PASS: Compiled with -mstack_realign.\nHardened: \/usr\/lib\/libflite_cmu_time_awb.so.1.3: PASS: No text relocations found.\nHardened: \/usr\/lib\/libflite_cmu_time_awb.so.1.3: PASS: No thread cancellation problems.\nHardened: \/usr\/lib\/libflite_cmu_time_awb.so.1.3: PASS: Compiled with either -Wall and\/or -Wformat-security.\nHardened: \/usr\/lib\/libflite_cmu_time_awb.so.1.3: PASS: GOT\/PLT relocations are read only.\nHardened: \/usr\/lib\/libflite_cmu_time_awb.so.1.3: PASS.",
+       "remedy": "See annocheck(1) for more information."
+     },
+     {
+       "result": "INFO",
+       "waiver authorization": "Not Waivable",
+       "message": "annocheck 'hardened' test passes for \/usr\/lib\/libflite_cmu_us_kal.so.1.3 on i686",
+       "details": "annocheck: Version 9.50.\nHardened: \/usr\/lib\/libflite_cmu_us_kal.so.1.3: warn: Could not find separate debug file: libflite_cmu_us_kal.so.1.3-1.3-31.el8.i386.debug.\nHardened: \/usr\/lib\/libflite_cmu_us_kal.so.1.3: info: Notes produced by assembler plugin version 1\nHardened: \/usr\/lib\/libflite_cmu_us_kal.so.1.3: info: Notes produced by gcc plugin version 9.23\nHardened: \/usr\/lib\/libflite_cmu_us_kal.so.1.3: info: Set binary producer to GCC version 8.\nHardened: \/usr\/lib\/libflite_cmu_us_kal.so.1.3: warn: Could not find separate debug file: libflite_cmu_us_kal.so.1.3-1.3-31.el8.i386.debug.\nHardened: \/usr\/lib\/libflite_cmu_us_kal.so.1.3: PASS: No gaps found.\nHardened: \/usr\/lib\/libflite_cmu_us_kal.so.1.3: skip: Test for -Wl,-z-now.  (Dynamic segment present, but no dynamic relocations found).\nHardened: \/usr\/lib\/libflite_cmu_us_kal.so.1.3: skip: Branch protection.  (Not an AArch64 binary).\nHardened: \/usr\/lib\/libflite_cmu_us_kal.so.1.3: PASS: Compiled with -fcf-protection.\nHardened: \/usr\/lib\/libflite_cmu_us_kal.so.1.3: PASS: One dynamic section\/segment found.\nHardened: \/usr\/lib\/libflite_cmu_us_kal.so.1.3: skip: Test of dynamic tags.  (AArch64 specific).\nHardened: \/usr\/lib\/libflite_cmu_us_kal.so.1.3: skip: Entry point instruction is ENDBR.  (Not an executable).\nHardened: \/usr\/lib\/libflite_cmu_us_kal.so.1.3: PASS: Compiled with -D_FORTIFY_SOURCE=2.\nHardened: \/usr\/lib\/libflite_cmu_us_kal.so.1.3: PASS: Compiled with -D_GLIBCXX_ASSERTIONS.\nHardened: \/usr\/lib\/libflite_cmu_us_kal.so.1.3: skip: Test for -Wl,-z,relro.  (No dynamic relocations).\nHardened: \/usr\/lib\/libflite_cmu_us_kal.so.1.3: PASS: Stack not executable.\nHardened: \/usr\/lib\/libflite_cmu_us_kal.so.1.3: skip: The LTO setting was not recorded (probably due to the use of an old version of the annobin plugin).\nHardened: \/usr\/lib\/libflite_cmu_us_kal.so.1.3: PASS: Compiled with sufficient optimization.\nHardened: \/usr\/lib\/libflite_cmu_us_kal.so.1.3: PASS: Compiled with PIC\/PIE.\nHardened: \/usr\/lib\/libflite_cmu_us_kal.so.1.3: PASS: Compiled as a position independent binary.\nHardened: \/usr\/lib\/libflite_cmu_us_kal.so.1.3: PASS: Good GNU Property note.\nHardened: \/usr\/lib\/libflite_cmu_us_kal.so.1.3: PASS: DT_RPATH\/DT_RUNPATH absent or rooted at \/usr.\nHardened: \/usr\/lib\/libflite_cmu_us_kal.so.1.3: PASS: No RWX segments found.\nHardened: \/usr\/lib\/libflite_cmu_us_kal.so.1.3: PASS: Consistent use of the -fshort-enum option.\nHardened: \/usr\/lib\/libflite_cmu_us_kal.so.1.3: PASS: Compiled with -fstack-clash-protection.\nHardened: \/usr\/lib\/libflite_cmu_us_kal.so.1.3: PASS: Compiled with sufficient stack protection.\nHardened: \/usr\/lib\/libflite_cmu_us_kal.so.1.3: PASS: Compiled with -mstack_realign.\nHardened: \/usr\/lib\/libflite_cmu_us_kal.so.1.3: PASS: No text relocations found.\nHardened: \/usr\/lib\/libflite_cmu_us_kal.so.1.3: PASS: No thread cancellation problems.\nHardened: \/usr\/lib\/libflite_cmu_us_kal.so.1.3: PASS: Compiled with either -Wall and\/or -Wformat-security.\nHardened: \/usr\/lib\/libflite_cmu_us_kal.so.1.3: PASS: GOT\/PLT relocations are read only.\nHardened: \/usr\/lib\/libflite_cmu_us_kal.so.1.3: PASS.",
+       "remedy": "See annocheck(1) for more information."
+     },
+     {
+       "result": "INFO",
+       "waiver authorization": "Not Waivable",
+       "message": "annocheck 'hardened' test passes for \/usr\/lib\/libflite_cmu_us_kal16.so.1.3 on i686",
+       "details": "annocheck: Version 9.50.\nHardened: \/usr\/lib\/libflite_cmu_us_kal16.so.1.3: warn: Could not find separate debug file: libflite_cmu_us_kal16.so.1.3-1.3-31.el8.i386.debug.\nHardened: \/usr\/lib\/libflite_cmu_us_kal16.so.1.3: info: Notes produced by assembler plugin version 1\nHardened: \/usr\/lib\/libflite_cmu_us_kal16.so.1.3: info: Notes produced by gcc plugin version 9.23\nHardened: \/usr\/lib\/libflite_cmu_us_kal16.so.1.3: info: Set binary producer to GCC version 8.\nHardened: \/usr\/lib\/libflite_cmu_us_kal16.so.1.3: warn: Could not find separate debug file: libflite_cmu_us_kal16.so.1.3-1.3-31.el8.i386.debug.\nHardened: \/usr\/lib\/libflite_cmu_us_kal16.so.1.3: PASS: No gaps found.\nHardened: \/usr\/lib\/libflite_cmu_us_kal16.so.1.3: skip: Test for -Wl,-z-now.  (Dynamic segment present, but no dynamic relocations found).\nHardened: \/usr\/lib\/libflite_cmu_us_kal16.so.1.3: skip: Branch protection.  (Not an AArch64 binary).\nHardened: \/usr\/lib\/libflite_cmu_us_kal16.so.1.3: PASS: Compiled with -fcf-protection.\nHardened: \/usr\/lib\/libflite_cmu_us_kal16.so.1.3: PASS: One dynamic section\/segment found.\nHardened: \/usr\/lib\/libflite_cmu_us_kal16.so.1.3: skip: Test of dynamic tags.  (AArch64 specific).\nHardened: \/usr\/lib\/libflite_cmu_us_kal16.so.1.3: skip: Entry point instruction is ENDBR.  (Not an executable).\nHardened: \/usr\/lib\/libflite_cmu_us_kal16.so.1.3: PASS: Compiled with -D_FORTIFY_SOURCE=2.\nHardened: \/usr\/lib\/libflite_cmu_us_kal16.so.1.3: PASS: Compiled with -D_GLIBCXX_ASSERTIONS.\nHardened: \/usr\/lib\/libflite_cmu_us_kal16.so.1.3: skip: Test for -Wl,-z,relro.  (No dynamic relocations).\nHardened: \/usr\/lib\/libflite_cmu_us_kal16.so.1.3: PASS: Stack not executable.\nHardened: \/usr\/lib\/libflite_cmu_us_kal16.so.1.3: skip: The LTO setting was not recorded (probably due to the use of an old version of the annobin plugin).\nHardened: \/usr\/lib\/libflite_cmu_us_kal16.so.1.3: PASS: Compiled with sufficient optimization.\nHardened: \/usr\/lib\/libflite_cmu_us_kal16.so.1.3: PASS: Compiled with PIC\/PIE.\nHardened: \/usr\/lib\/libflite_cmu_us_kal16.so.1.3: PASS: Compiled as a position independent binary.\nHardened: \/usr\/lib\/libflite_cmu_us_kal16.so.1.3: PASS: Good GNU Property note.\nHardened: \/usr\/lib\/libflite_cmu_us_kal16.so.1.3: PASS: DT_RPATH\/DT_RUNPATH absent or rooted at \/usr.\nHardened: \/usr\/lib\/libflite_cmu_us_kal16.so.1.3: PASS: No RWX segments found.\nHardened: \/usr\/lib\/libflite_cmu_us_kal16.so.1.3: PASS: Consistent use of the -fshort-enum option.\nHardened: \/usr\/lib\/libflite_cmu_us_kal16.so.1.3: PASS: Compiled with -fstack-clash-protection.\nHardened: \/usr\/lib\/libflite_cmu_us_kal16.so.1.3: PASS: Compiled with sufficient stack protection.\nHardened: \/usr\/lib\/libflite_cmu_us_kal16.so.1.3: PASS: Compiled with -mstack_realign.\nHardened: \/usr\/lib\/libflite_cmu_us_kal16.so.1.3: PASS: No text relocations found.\nHardened: \/usr\/lib\/libflite_cmu_us_kal16.so.1.3: PASS: No thread cancellation problems.\nHardened: \/usr\/lib\/libflite_cmu_us_kal16.so.1.3: PASS: Compiled with either -Wall and\/or -Wformat-security.\nHardened: \/usr\/lib\/libflite_cmu_us_kal16.so.1.3: PASS: GOT\/PLT relocations are read only.\nHardened: \/usr\/lib\/libflite_cmu_us_kal16.so.1.3: PASS.",
+       "remedy": "See annocheck(1) for more information."
+     },
+     {
+       "result": "INFO",
+       "waiver authorization": "Not Waivable",
+       "message": "annocheck 'hardened' test passes for \/usr\/lib\/libflite_cmulex.so.1.3 on i686",
+       "details": "annocheck: Version 9.50.\nHardened: \/usr\/lib\/libflite_cmulex.so.1.3: warn: Could not find separate debug file: libflite_cmulex.so.1.3-1.3-31.el8.i386.debug.\nHardened: \/usr\/lib\/libflite_cmulex.so.1.3: info: Notes produced by assembler plugin version 1\nHardened: \/usr\/lib\/libflite_cmulex.so.1.3: info: Notes produced by gcc plugin version 9.23\nHardened: \/usr\/lib\/libflite_cmulex.so.1.3: info: Set binary producer to GCC version 8.\nHardened: \/usr\/lib\/libflite_cmulex.so.1.3: warn: Could not find separate debug file: libflite_cmulex.so.1.3-1.3-31.el8.i386.debug.\nHardened: \/usr\/lib\/libflite_cmulex.so.1.3: PASS: No gaps found.\nHardened: \/usr\/lib\/libflite_cmulex.so.1.3: skip: Test for -Wl,-z-now.  (Dynamic segment present, but no dynamic relocations found).\nHardened: \/usr\/lib\/libflite_cmulex.so.1.3: skip: Branch protection.  (Not an AArch64 binary).\nHardened: \/usr\/lib\/libflite_cmulex.so.1.3: PASS: Compiled with -fcf-protection.\nHardened: \/usr\/lib\/libflite_cmulex.so.1.3: PASS: One dynamic section\/segment found.\nHardened: \/usr\/lib\/libflite_cmulex.so.1.3: skip: Test of dynamic tags.  (AArch64 specific).\nHardened: \/usr\/lib\/libflite_cmulex.so.1.3: skip: Entry point instruction is ENDBR.  (Not an executable).\nHardened: \/usr\/lib\/libflite_cmulex.so.1.3: PASS: Compiled with -D_FORTIFY_SOURCE=2.\nHardened: \/usr\/lib\/libflite_cmulex.so.1.3: PASS: Compiled with -D_GLIBCXX_ASSERTIONS.\nHardened: \/usr\/lib\/libflite_cmulex.so.1.3: skip: Test for -Wl,-z,relro.  (No dynamic relocations).\nHardened: \/usr\/lib\/libflite_cmulex.so.1.3: PASS: Stack not executable.\nHardened: \/usr\/lib\/libflite_cmulex.so.1.3: skip: The LTO setting was not recorded (probably due to the use of an old version of the annobin plugin).\nHardened: \/usr\/lib\/libflite_cmulex.so.1.3: PASS: Compiled with sufficient optimization.\nHardened: \/usr\/lib\/libflite_cmulex.so.1.3: PASS: Compiled with PIC\/PIE.\nHardened: \/usr\/lib\/libflite_cmulex.so.1.3: PASS: Compiled as a position independent binary.\nHardened: \/usr\/lib\/libflite_cmulex.so.1.3: PASS: Good GNU Property note.\nHardened: \/usr\/lib\/libflite_cmulex.so.1.3: PASS: DT_RPATH\/DT_RUNPATH absent or rooted at \/usr.\nHardened: \/usr\/lib\/libflite_cmulex.so.1.3: PASS: No RWX segments found.\nHardened: \/usr\/lib\/libflite_cmulex.so.1.3: PASS: Consistent use of the -fshort-enum option.\nHardened: \/usr\/lib\/libflite_cmulex.so.1.3: PASS: Compiled with -fstack-clash-protection.\nHardened: \/usr\/lib\/libflite_cmulex.so.1.3: PASS: Compiled with sufficient stack protection.\nHardened: \/usr\/lib\/libflite_cmulex.so.1.3: PASS: Compiled with -mstack_realign.\nHardened: \/usr\/lib\/libflite_cmulex.so.1.3: PASS: No text relocations found.\nHardened: \/usr\/lib\/libflite_cmulex.so.1.3: PASS: No thread cancellation problems.\nHardened: \/usr\/lib\/libflite_cmulex.so.1.3: PASS: Compiled with either -Wall and\/or -Wformat-security.\nHardened: \/usr\/lib\/libflite_cmulex.so.1.3: PASS: GOT\/PLT relocations are read only.\nHardened: \/usr\/lib\/libflite_cmulex.so.1.3: PASS.",
+       "remedy": "See annocheck(1) for more information."
+     },
+     {
+       "result": "INFO",
+       "waiver authorization": "Not Waivable",
+       "message": "annocheck 'hardened' test passes for \/usr\/lib\/libflite_usenglish.so.1.3 on i686",
+       "details": "annocheck: Version 9.50.\nHardened: \/usr\/lib\/libflite_usenglish.so.1.3: warn: Could not find separate debug file: libflite_usenglish.so.1.3-1.3-31.el8.i386.debug.\nHardened: \/usr\/lib\/libflite_usenglish.so.1.3: info: Notes produced by assembler plugin version 1\nHardened: \/usr\/lib\/libflite_usenglish.so.1.3: info: Notes produced by gcc plugin version 9.23\nHardened: \/usr\/lib\/libflite_usenglish.so.1.3: info: Set binary producer to GCC version 8.\nHardened: \/usr\/lib\/libflite_usenglish.so.1.3: warn: Could not find separate debug file: libflite_usenglish.so.1.3-1.3-31.el8.i386.debug.\nHardened: \/usr\/lib\/libflite_usenglish.so.1.3: PASS: No gaps found.\nHardened: \/usr\/lib\/libflite_usenglish.so.1.3: skip: Test for -Wl,-z-now.  (Dynamic segment present, but no dynamic relocations found).\nHardened: \/usr\/lib\/libflite_usenglish.so.1.3: skip: Branch protection.  (Not an AArch64 binary).\nHardened: \/usr\/lib\/libflite_usenglish.so.1.3: PASS: Compiled with -fcf-protection.\nHardened: \/usr\/lib\/libflite_usenglish.so.1.3: PASS: One dynamic section\/segment found.\nHardened: \/usr\/lib\/libflite_usenglish.so.1.3: skip: Test of dynamic tags.  (AArch64 specific).\nHardened: \/usr\/lib\/libflite_usenglish.so.1.3: skip: Entry point instruction is ENDBR.  (Not an executable).\nHardened: \/usr\/lib\/libflite_usenglish.so.1.3: PASS: Compiled with -D_FORTIFY_SOURCE=2.\nHardened: \/usr\/lib\/libflite_usenglish.so.1.3: PASS: Compiled with -D_GLIBCXX_ASSERTIONS.\nHardened: \/usr\/lib\/libflite_usenglish.so.1.3: skip: Test for -Wl,-z,relro.  (No dynamic relocations).\nHardened: \/usr\/lib\/libflite_usenglish.so.1.3: PASS: Stack not executable.\nHardened: \/usr\/lib\/libflite_usenglish.so.1.3: skip: The LTO setting was not recorded (probably due to the use of an old version of the annobin plugin).\nHardened: \/usr\/lib\/libflite_usenglish.so.1.3: PASS: Compiled with sufficient optimization.\nHardened: \/usr\/lib\/libflite_usenglish.so.1.3: PASS: Compiled with PIC\/PIE.\nHardened: \/usr\/lib\/libflite_usenglish.so.1.3: PASS: Compiled as a position independent binary.\nHardened: \/usr\/lib\/libflite_usenglish.so.1.3: PASS: Good GNU Property note.\nHardened: \/usr\/lib\/libflite_usenglish.so.1.3: PASS: DT_RPATH\/DT_RUNPATH absent or rooted at \/usr.\nHardened: \/usr\/lib\/libflite_usenglish.so.1.3: PASS: No RWX segments found.\nHardened: \/usr\/lib\/libflite_usenglish.so.1.3: PASS: Consistent use of the -fshort-enum option.\nHardened: \/usr\/lib\/libflite_usenglish.so.1.3: PASS: Compiled with -fstack-clash-protection.\nHardened: \/usr\/lib\/libflite_usenglish.so.1.3: PASS: Compiled with sufficient stack protection.\nHardened: \/usr\/lib\/libflite_usenglish.so.1.3: PASS: Compiled with -mstack_realign.\nHardened: \/usr\/lib\/libflite_usenglish.so.1.3: PASS: No text relocations found.\nHardened: \/usr\/lib\/libflite_usenglish.so.1.3: PASS: No thread cancellation problems.\nHardened: \/usr\/lib\/libflite_usenglish.so.1.3: PASS: Compiled with either -Wall and\/or -Wformat-security.\nHardened: \/usr\/lib\/libflite_usenglish.so.1.3: PASS: GOT\/PLT relocations are read only.\nHardened: \/usr\/lib\/libflite_usenglish.so.1.3: PASS.",
+       "remedy": "See annocheck(1) for more information."
+     },
+     {
+       "result": "OK",
+       "waiver authorization": "Not Waivable"
+     }
+   ],
+   "permissions": [
+     {
+       "result": "OK",
+       "waiver authorization": "Not Waivable"
+     }
+   ],
+   "capabilities": [
+     {
+       "result": "OK",
+       "waiver authorization": "Not Waivable"
+     }
+   ],
+   "path-migration": [
+     {
+       "result": "OK",
+       "waiver authorization": "Not Waivable"
+     }
+   ],
+   "lto": [
+     {
+       "result": "OK",
+       "waiver authorization": "Not Waivable"
+     }
+   ],
+   "symlinks": [
+     {
+       "result": "OK",
+       "waiver authorization": "Not Waivable"
+     }
+   ],
+   "politics": [
+     {
+       "result": "OK",
+       "waiver authorization": "Not Waivable"
+     }
+   ],
+   "bad-functions": [
+     {
+       "result": "VERIFY",
+       "waiver authorization": "Anyone",
+       "message": "\/usr\/lib\/libflite.so.1.3 may use forbidden functions on i686",
+       "details": "Forbidden function symbols found:\n\tgethostbyname\n\tinet_addr\n",
+       "remedy": "Forbidden symbols were found in an ELF file in the package.  The configuration settings for rpminspect indicate the named symbols are forbidden in packages.  If this is deliberate, you may want to disable the badfuncs inspection.  If it is not deliberate, check the man pages for the named symbols to see what API functions have replaced the forbidden symbols.  Usually a function is marked as deprecated but still provided in order to allow for backwards compatibility.  Whenever possible the deprecated functions should not be used."
+     }
+   ],
+   "runpath": [
+     {
+       "result": "OK",
+       "waiver authorization": "Not Waivable"
+     }
+   ]
+ }

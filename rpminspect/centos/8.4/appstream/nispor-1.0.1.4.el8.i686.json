@@ -1,0 +1,137 @@
+{
+   "rpminspect": [
+     {
+       "result": "INFO",
+       "waiver authorization": "Not Waivable",
+       "message": "version",
+       "details": "rpminspect version 1.5"
+     },
+     {
+       "result": "INFO",
+       "waiver authorization": "Not Waivable",
+       "message": "command line",
+       "details": "\/usr\/bin\/rpminspect -c \/usr\/share\/rpminspect\/fedora.yaml -v -E metadata,files,patches,virus,javabytecode,disttag,specname --format=json --output=\/home\/vagrant\/data\/rpminspect\/centos\/8.4\/appstream\/nispor-1.0.1.4.el8.i686.json \/home\/vagrant\/data\/repos\/centos\/8.4\/appstream\/Packages\/nispor-1.0.1-4.el8.i686.rpm"
+     }
+   ],
+   "license": [
+     {
+       "result": "INFO",
+       "waiver authorization": "Not Waivable",
+       "message": "Valid License Tag in nispor-1.0.1-4.el8.i686: ASL 2.0"
+     },
+     {
+       "result": "OK",
+       "waiver authorization": "Not Waivable"
+     }
+   ],
+   "empty-payload": [
+     {
+       "result": "OK",
+       "waiver authorization": "Not Waivable"
+     }
+   ],
+   "man-pages": [
+     {
+       "result": "OK",
+       "waiver authorization": "Not Waivable"
+     }
+   ],
+   "xml-files": [
+     {
+       "result": "OK",
+       "waiver authorization": "Not Waivable"
+     }
+   ],
+   "elf-object-properties": [
+     {
+       "result": "OK",
+       "waiver authorization": "Not Waivable"
+     }
+   ],
+   "desktop-entry-files": [
+     {
+       "result": "OK",
+       "waiver authorization": "Not Waivable"
+     }
+   ],
+   "ownership": [
+     {
+       "result": "OK",
+       "waiver authorization": "Not Waivable"
+     }
+   ],
+   "shell-syntax": [
+     {
+       "result": "OK",
+       "waiver authorization": "Not Waivable"
+     }
+   ],
+   "annocheck": [
+     {
+       "result": "INFO",
+       "waiver authorization": "Not Waivable",
+       "message": "annocheck 'hardened' test passes for \/usr\/bin\/npc on i686",
+       "details": "annocheck: Version 9.50.\nHardened: \/usr\/bin\/npc: warn: Could not find separate debug file: npc-1.0.1-4.el8.i386.debug.\nHardened: \/usr\/bin\/npc: info: Notes produced by assembler plugin version 1\nHardened: \/usr\/bin\/npc: skip: Not checking for gaps (non-gcc compiled binary).\nHardened: \/usr\/bin\/npc: skip: Test for -Wl,-z-now.  (Dynamic segment present, but no dynamic relocations found).\nHardened: \/usr\/bin\/npc: skip: Branch protection.  (Not an AArch64 binary).\nHardened: \/usr\/bin\/npc: skip: Test for control flow protection.  (Not built by gcc\/clang).\nHardened: \/usr\/bin\/npc: PASS: One dynamic section\/segment found.\nHardened: \/usr\/bin\/npc: skip: Test of dynamic tags.  (AArch64 specific).\nHardened: \/usr\/bin\/npc: skip: Entry point not ENDBR, but code not produced by a known compiler.\nHardened: \/usr\/bin\/npc: skip: Test for -D_FORTIFY_SOURCE=2.  (Not built by gcc\/clang).\nHardened: \/usr\/bin\/npc: skip: Test for -D_GLIBCXX_ASSERTONS.  (Not built by gcc\/clang).\nHardened: \/usr\/bin\/npc: skip: Test for -Wl,-z,relro.  (No dynamic relocations).\nHardened: \/usr\/bin\/npc: PASS: Stack not executable.\nHardened: \/usr\/bin\/npc: skip: Test of LTO enablement.  (Not built by gcc\/clang).\nHardened: \/usr\/bin\/npc: skip: Test of optimization level.  (Not built by gcc\/clang).\nHardened: \/usr\/bin\/npc: skip: Test for PIC compilation.  (Not built by gcc\/clang).\nHardened: \/usr\/bin\/npc: skip: Test for -pie.  (Not built with gcc\/clang).\nHardened: \/usr\/bin\/npc: PASS: DT_RPATH\/DT_RUNPATH absent or rooted at \/usr.\nHardened: \/usr\/bin\/npc: PASS: No RWX segments found.\nHardened: \/usr\/bin\/npc: skip: Test of enum size.  (Not built by gcc).\nHardened: \/usr\/bin\/npc: skip: Test for stack clash support.  (Not built by gcc).\nHardened: \/usr\/bin\/npc: skip: Test for stack protection.  (Not built by gcc\/clang).\nHardened: \/usr\/bin\/npc: skip: Test for stack realignment support.  (Not built by gcc).\nHardened: \/usr\/bin\/npc: PASS: No text relocations found.\nHardened: \/usr\/bin\/npc: PASS: No thread cancellation problems.\nHardened: \/usr\/bin\/npc: skip: Checking for warning options.  (Not built by gcc).\nHardened: \/usr\/bin\/npc: PASS: GOT\/PLT relocations are read only.\nHardened: \/usr\/bin\/npc: PASS.",
+       "remedy": "See annocheck(1) for more information."
+     },
+     {
+       "result": "INFO",
+       "waiver authorization": "Not Waivable",
+       "message": "annocheck 'hardened' test passes for \/usr\/lib\/libnispor.so.1.0.1 on i686",
+       "details": "annocheck: Version 9.50.\nHardened: \/usr\/lib\/libnispor.so.1.0.1: warn: Could not find separate debug file: libnispor.so.1.0.1-1.0.1-4.el8.i386.debug.\nHardened: \/usr\/lib\/libnispor.so.1.0.1: info: Notes produced by assembler plugin version 1\nHardened: \/usr\/lib\/libnispor.so.1.0.1: skip: Not checking for gaps (non-gcc compiled binary).\nHardened: \/usr\/lib\/libnispor.so.1.0.1: skip: Test for -Wl,-z-now.  (Dynamic segment present, but no dynamic relocations found).\nHardened: \/usr\/lib\/libnispor.so.1.0.1: skip: Branch protection.  (Not an AArch64 binary).\nHardened: \/usr\/lib\/libnispor.so.1.0.1: skip: Test for control flow protection.  (Not built by gcc\/clang).\nHardened: \/usr\/lib\/libnispor.so.1.0.1: PASS: One dynamic section\/segment found.\nHardened: \/usr\/lib\/libnispor.so.1.0.1: skip: Test of dynamic tags.  (AArch64 specific).\nHardened: \/usr\/lib\/libnispor.so.1.0.1: skip: Entry point instruction is ENDBR.  (Not an executable).\nHardened: \/usr\/lib\/libnispor.so.1.0.1: skip: Test for -D_FORTIFY_SOURCE=2.  (Not built by gcc\/clang).\nHardened: \/usr\/lib\/libnispor.so.1.0.1: skip: Test for -D_GLIBCXX_ASSERTONS.  (Not built by gcc\/clang).\nHardened: \/usr\/lib\/libnispor.so.1.0.1: skip: Test for -Wl,-z,relro.  (No dynamic relocations).\nHardened: \/usr\/lib\/libnispor.so.1.0.1: PASS: Stack not executable.\nHardened: \/usr\/lib\/libnispor.so.1.0.1: skip: Test of LTO enablement.  (Not built by gcc\/clang).\nHardened: \/usr\/lib\/libnispor.so.1.0.1: skip: Test of optimization level.  (Not built by gcc\/clang).\nHardened: \/usr\/lib\/libnispor.so.1.0.1: skip: Test for PIC compilation.  (Not built by gcc\/clang).\nHardened: \/usr\/lib\/libnispor.so.1.0.1: skip: Test for -pie.  (Not built with gcc\/clang).\nHardened: \/usr\/lib\/libnispor.so.1.0.1: PASS: DT_RPATH\/DT_RUNPATH absent or rooted at \/usr.\nHardened: \/usr\/lib\/libnispor.so.1.0.1: PASS: No RWX segments found.\nHardened: \/usr\/lib\/libnispor.so.1.0.1: skip: Test of enum size.  (Not built by gcc).\nHardened: \/usr\/lib\/libnispor.so.1.0.1: skip: Test for stack clash support.  (Not built by gcc).\nHardened: \/usr\/lib\/libnispor.so.1.0.1: skip: Test for stack protection.  (Not built by gcc\/clang).\nHardened: \/usr\/lib\/libnispor.so.1.0.1: skip: Test for stack realignment support.  (Not built by gcc).\nHardened: \/usr\/lib\/libnispor.so.1.0.1: PASS: No text relocations found.\nHardened: \/usr\/lib\/libnispor.so.1.0.1: PASS: No thread cancellation problems.\nHardened: \/usr\/lib\/libnispor.so.1.0.1: skip: Checking for warning options.  (Not built by gcc).\nHardened: \/usr\/lib\/libnispor.so.1.0.1: PASS: GOT\/PLT relocations are read only.\nHardened: \/usr\/lib\/libnispor.so.1.0.1: PASS.",
+       "remedy": "See annocheck(1) for more information."
+     },
+     {
+       "result": "OK",
+       "waiver authorization": "Not Waivable"
+     }
+   ],
+   "permissions": [
+     {
+       "result": "OK",
+       "waiver authorization": "Not Waivable"
+     }
+   ],
+   "capabilities": [
+     {
+       "result": "OK",
+       "waiver authorization": "Not Waivable"
+     }
+   ],
+   "path-migration": [
+     {
+       "result": "OK",
+       "waiver authorization": "Not Waivable"
+     }
+   ],
+   "lto": [
+     {
+       "result": "OK",
+       "waiver authorization": "Not Waivable"
+     }
+   ],
+   "symlinks": [
+     {
+       "result": "OK",
+       "waiver authorization": "Not Waivable"
+     }
+   ],
+   "politics": [
+     {
+       "result": "OK",
+       "waiver authorization": "Not Waivable"
+     }
+   ],
+   "bad-functions": [
+     {
+       "result": "OK",
+       "waiver authorization": "Not Waivable"
+     }
+   ],
+   "runpath": [
+     {
+       "result": "OK",
+       "waiver authorization": "Not Waivable"
+     }
+   ]
+ }

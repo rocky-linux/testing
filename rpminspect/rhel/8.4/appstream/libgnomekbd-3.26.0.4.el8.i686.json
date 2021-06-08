@@ -1,0 +1,142 @@
+{
+   "rpminspect": [
+     {
+       "result": "INFO",
+       "waiver authorization": "Not Waivable",
+       "message": "version",
+       "details": "rpminspect version 1.5"
+     },
+     {
+       "result": "INFO",
+       "waiver authorization": "Not Waivable",
+       "message": "command line",
+       "details": "\/usr\/bin\/rpminspect -c \/usr\/share\/rpminspect\/fedora.yaml -v -E metadata,files,patches,virus,javabytecode,disttag,specname --format=json --output=\/home\/vagrant\/data\/rpminspect\/rhel\/8.4\/appstream\/libgnomekbd-3.26.0.4.el8.i686.json \/home\/vagrant\/data\/repos\/rhel8\/8\/appstream\/Packages\/l\/libgnomekbd-3.26.0-4.el8.i686.rpm"
+     }
+   ],
+   "license": [
+     {
+       "result": "INFO",
+       "waiver authorization": "Not Waivable",
+       "message": "Valid License Tag in libgnomekbd-3.26.0-4.el8.i686: LGPLv2+"
+     },
+     {
+       "result": "OK",
+       "waiver authorization": "Not Waivable"
+     }
+   ],
+   "empty-payload": [
+     {
+       "result": "OK",
+       "waiver authorization": "Not Waivable"
+     }
+   ],
+   "man-pages": [
+     {
+       "result": "OK",
+       "waiver authorization": "Not Waivable"
+     }
+   ],
+   "xml-files": [
+     {
+       "result": "OK",
+       "waiver authorization": "Not Waivable"
+     }
+   ],
+   "elf-object-properties": [
+     {
+       "result": "OK",
+       "waiver authorization": "Not Waivable"
+     }
+   ],
+   "desktop-entry-files": [
+     {
+       "result": "VERIFY",
+       "waiver authorization": "Anyone",
+       "message": "Desktop file \/usr\/share\/applications\/gkbd-keyboard-display.desktop on i686 references icon preferences-desktop-keyboard but no subpackages contain preferences-desktop-keyboard",
+       "remedy": "Refer to the Desktop Entry Specification at https:\/\/standards.freedesktop.org\/desktop-entry-spec\/latest\/ for help correcting the errors and warnings"
+     }
+   ],
+   "ownership": [
+     {
+       "result": "OK",
+       "waiver authorization": "Not Waivable"
+     }
+   ],
+   "shell-syntax": [
+     {
+       "result": "OK",
+       "waiver authorization": "Not Waivable"
+     }
+   ],
+   "annocheck": [
+     {
+       "result": "VERIFY",
+       "waiver authorization": "Not Waivable",
+       "message": "annocheck 'hardened' test fails for \/usr\/bin\/gkbd-keyboard-display on i686",
+       "details": "annocheck: Version 9.50.\nHardened: \/usr\/bin\/gkbd-keyboard-display: warn: Could not find separate debug file: gkbd-keyboard-display-3.26.0-4.el8.i386.debug.\nHardened: \/usr\/bin\/gkbd-keyboard-display: info: Notes produced by assembler plugin version 1\nHardened: \/usr\/bin\/gkbd-keyboard-display: info: Notes produced by gcc plugin version 8\nHardened: \/usr\/bin\/gkbd-keyboard-display: info: Set binary producer to GCC version 8.\nHardened: \/usr\/bin\/gkbd-keyboard-display: warn: Could not find separate debug file: gkbd-keyboard-display-3.26.0-4.el8.i386.debug.\nHardened: \/usr\/bin\/gkbd-keyboard-display: warn: Could not find separate debug file: gkbd-keyboard-display-3.26.0-4.el8.i386.debug.\nHardened: \/usr\/bin\/gkbd-keyboard-display: warn: Could not find separate debug file: gkbd-keyboard-display-3.26.0-4.el8.i386.debug.\nHardened: \/usr\/bin\/gkbd-keyboard-display: warn: Could not find separate debug file: gkbd-keyboard-display-3.26.0-4.el8.i386.debug.\nHardened: \/usr\/bin\/gkbd-keyboard-display: PASS: No gaps found.\nHardened: \/usr\/bin\/gkbd-keyboard-display: skip: Test for -Wl,-z-now.  (Dynamic segment present, but no dynamic relocations found).\nHardened: \/usr\/bin\/gkbd-keyboard-display: skip: Branch protection.  (Not an AArch64 binary).\nHardened: \/usr\/bin\/gkbd-keyboard-display: PASS: Compiled with -fcf-protection.\nHardened: \/usr\/bin\/gkbd-keyboard-display: PASS: One dynamic section\/segment found.\nHardened: \/usr\/bin\/gkbd-keyboard-display: skip: Test of dynamic tags.  (AArch64 specific).\nHardened: \/usr\/bin\/gkbd-keyboard-display: FAIL: Entry point instruction is not ENDBR32.\nHardened: \/usr\/bin\/gkbd-keyboard-display:      (Entry Address: 0xf7a.  Bytes at this address: 31 ed 5e 89).\nHardened: \/usr\/bin\/gkbd-keyboard-display: PASS: Compiled with -D_FORTIFY_SOURCE=2.\nHardened: \/usr\/bin\/gkbd-keyboard-display: PASS: Compiled with -D_GLIBCXX_ASSERTIONS.\nHardened: \/usr\/bin\/gkbd-keyboard-display: skip: Test for -Wl,-z,relro.  (No dynamic relocations).\nHardened: \/usr\/bin\/gkbd-keyboard-display: PASS: Stack not executable.\nHardened: \/usr\/bin\/gkbd-keyboard-display: skip: The LTO setting was not recorded (probably due to the use of an old version of the annobin plugin).\nHardened: \/usr\/bin\/gkbd-keyboard-display: PASS: Compiled with sufficient optimization.\nHardened: \/usr\/bin\/gkbd-keyboard-display: PASS: Compiled with PIC\/PIE.\nHardened: \/usr\/bin\/gkbd-keyboard-display: PASS: Compiled as a position independent binary.\nHardened: \/usr\/bin\/gkbd-keyboard-display: PASS: Good GNU Property note.\nHardened: \/usr\/bin\/gkbd-keyboard-display: PASS: DT_RPATH\/DT_RUNPATH absent or rooted at \/usr.\nHardened: \/usr\/bin\/gkbd-keyboard-display: PASS: No RWX segments found.\nHardened: \/usr\/bin\/gkbd-keyboard-display: PASS: Consistent use of the -fshort-enum option.\nHardened: \/usr\/bin\/gkbd-keyboard-display: PASS: Compiled with -fstack-clash-protection.\nHardened: \/usr\/bin\/gkbd-keyboard-display: PASS: Compiled with sufficient stack protection.\nHardened: \/usr\/bin\/gkbd-keyboard-display: PASS: Compiled with -mstack_realign.\nHardened: \/usr\/bin\/gkbd-keyboard-display: PASS: No text relocations found.\nHardened: \/usr\/bin\/gkbd-keyboard-display: PASS: No thread cancellation problems.\nHardened: \/usr\/bin\/gkbd-keyboard-display: PASS: Compiled with either -Wall and\/or -Wformat-security.\nHardened: \/usr\/bin\/gkbd-keyboard-display: PASS: GOT\/PLT relocations are read only.",
+       "remedy": "See annocheck(1) for more information."
+     },
+     {
+       "result": "INFO",
+       "waiver authorization": "Not Waivable",
+       "message": "annocheck 'hardened' test passes for \/usr\/lib\/libgnomekbd.so.8.0.0 on i686",
+       "details": "annocheck: Version 9.50.\nHardened: \/usr\/lib\/libgnomekbd.so.8.0.0: warn: Could not find separate debug file: libgnomekbd.so.8.0.0-3.26.0-4.el8.i386.debug.\nHardened: \/usr\/lib\/libgnomekbd.so.8.0.0: info: Notes produced by assembler plugin version 1\nHardened: \/usr\/lib\/libgnomekbd.so.8.0.0: info: Notes produced by gcc plugin version 8\nHardened: \/usr\/lib\/libgnomekbd.so.8.0.0: info: Set binary producer to GCC version 8.\nHardened: \/usr\/lib\/libgnomekbd.so.8.0.0: warn: Could not find separate debug file: libgnomekbd.so.8.0.0-3.26.0-4.el8.i386.debug.\nHardened: \/usr\/lib\/libgnomekbd.so.8.0.0: warn: Could not find separate debug file: libgnomekbd.so.8.0.0-3.26.0-4.el8.i386.debug.\nHardened: \/usr\/lib\/libgnomekbd.so.8.0.0: PASS: No gaps found.\nHardened: \/usr\/lib\/libgnomekbd.so.8.0.0: skip: Test for -Wl,-z-now.  (Dynamic segment present, but no dynamic relocations found).\nHardened: \/usr\/lib\/libgnomekbd.so.8.0.0: skip: Branch protection.  (Not an AArch64 binary).\nHardened: \/usr\/lib\/libgnomekbd.so.8.0.0: PASS: Compiled with -fcf-protection.\nHardened: \/usr\/lib\/libgnomekbd.so.8.0.0: PASS: One dynamic section\/segment found.\nHardened: \/usr\/lib\/libgnomekbd.so.8.0.0: skip: Test of dynamic tags.  (AArch64 specific).\nHardened: \/usr\/lib\/libgnomekbd.so.8.0.0: skip: Entry point instruction is ENDBR.  (Not an executable).\nHardened: \/usr\/lib\/libgnomekbd.so.8.0.0: PASS: Compiled with -D_FORTIFY_SOURCE=2.\nHardened: \/usr\/lib\/libgnomekbd.so.8.0.0: PASS: Compiled with -D_GLIBCXX_ASSERTIONS.\nHardened: \/usr\/lib\/libgnomekbd.so.8.0.0: skip: Test for -Wl,-z,relro.  (No dynamic relocations).\nHardened: \/usr\/lib\/libgnomekbd.so.8.0.0: PASS: Stack not executable.\nHardened: \/usr\/lib\/libgnomekbd.so.8.0.0: skip: The LTO setting was not recorded (probably due to the use of an old version of the annobin plugin).\nHardened: \/usr\/lib\/libgnomekbd.so.8.0.0: PASS: Compiled with sufficient optimization.\nHardened: \/usr\/lib\/libgnomekbd.so.8.0.0: PASS: Compiled with PIC\/PIE.\nHardened: \/usr\/lib\/libgnomekbd.so.8.0.0: PASS: Compiled as a position independent binary.\nHardened: \/usr\/lib\/libgnomekbd.so.8.0.0: PASS: Good GNU Property note.\nHardened: \/usr\/lib\/libgnomekbd.so.8.0.0: PASS: DT_RPATH\/DT_RUNPATH absent or rooted at \/usr.\nHardened: \/usr\/lib\/libgnomekbd.so.8.0.0: PASS: No RWX segments found.\nHardened: \/usr\/lib\/libgnomekbd.so.8.0.0: PASS: Consistent use of the -fshort-enum option.\nHardened: \/usr\/lib\/libgnomekbd.so.8.0.0: PASS: Compiled with -fstack-clash-protection.\nHardened: \/usr\/lib\/libgnomekbd.so.8.0.0: PASS: Compiled with sufficient stack protection.\nHardened: \/usr\/lib\/libgnomekbd.so.8.0.0: PASS: Compiled with -mstack_realign.\nHardened: \/usr\/lib\/libgnomekbd.so.8.0.0: PASS: No text relocations found.\nHardened: \/usr\/lib\/libgnomekbd.so.8.0.0: PASS: No thread cancellation problems.\nHardened: \/usr\/lib\/libgnomekbd.so.8.0.0: PASS: Compiled with either -Wall and\/or -Wformat-security.\nHardened: \/usr\/lib\/libgnomekbd.so.8.0.0: PASS: GOT\/PLT relocations are read only.\nHardened: \/usr\/lib\/libgnomekbd.so.8.0.0: PASS.",
+       "remedy": "See annocheck(1) for more information."
+     },
+     {
+       "result": "INFO",
+       "waiver authorization": "Not Waivable",
+       "message": "annocheck 'hardened' test passes for \/usr\/lib\/libgnomekbdui.so.8.0.0 on i686",
+       "details": "annocheck: Version 9.50.\nHardened: \/usr\/lib\/libgnomekbdui.so.8.0.0: warn: Could not find separate debug file: libgnomekbdui.so.8.0.0-3.26.0-4.el8.i386.debug.\nHardened: \/usr\/lib\/libgnomekbdui.so.8.0.0: info: Notes produced by assembler plugin version 1\nHardened: \/usr\/lib\/libgnomekbdui.so.8.0.0: info: Notes produced by gcc plugin version 8\nHardened: \/usr\/lib\/libgnomekbdui.so.8.0.0: info: Set binary producer to GCC version 8.\nHardened: \/usr\/lib\/libgnomekbdui.so.8.0.0: warn: Could not find separate debug file: libgnomekbdui.so.8.0.0-3.26.0-4.el8.i386.debug.\nHardened: \/usr\/lib\/libgnomekbdui.so.8.0.0: warn: Could not find separate debug file: libgnomekbdui.so.8.0.0-3.26.0-4.el8.i386.debug.\nHardened: \/usr\/lib\/libgnomekbdui.so.8.0.0: warn: Could not find separate debug file: libgnomekbdui.so.8.0.0-3.26.0-4.el8.i386.debug.\nHardened: \/usr\/lib\/libgnomekbdui.so.8.0.0: warn: Could not find separate debug file: libgnomekbdui.so.8.0.0-3.26.0-4.el8.i386.debug.\nHardened: \/usr\/lib\/libgnomekbdui.so.8.0.0: warn: Could not find separate debug file: libgnomekbdui.so.8.0.0-3.26.0-4.el8.i386.debug.\nHardened: \/usr\/lib\/libgnomekbdui.so.8.0.0: warn: Could not find separate debug file: libgnomekbdui.so.8.0.0-3.26.0-4.el8.i386.debug.\nHardened: \/usr\/lib\/libgnomekbdui.so.8.0.0: PASS: No gaps found.\nHardened: \/usr\/lib\/libgnomekbdui.so.8.0.0: skip: Test for -Wl,-z-now.  (Dynamic segment present, but no dynamic relocations found).\nHardened: \/usr\/lib\/libgnomekbdui.so.8.0.0: skip: Branch protection.  (Not an AArch64 binary).\nHardened: \/usr\/lib\/libgnomekbdui.so.8.0.0: PASS: Compiled with -fcf-protection.\nHardened: \/usr\/lib\/libgnomekbdui.so.8.0.0: PASS: One dynamic section\/segment found.\nHardened: \/usr\/lib\/libgnomekbdui.so.8.0.0: skip: Test of dynamic tags.  (AArch64 specific).\nHardened: \/usr\/lib\/libgnomekbdui.so.8.0.0: skip: Entry point instruction is ENDBR.  (Not an executable).\nHardened: \/usr\/lib\/libgnomekbdui.so.8.0.0: PASS: Compiled with -D_FORTIFY_SOURCE=2.\nHardened: \/usr\/lib\/libgnomekbdui.so.8.0.0: PASS: Compiled with -D_GLIBCXX_ASSERTIONS.\nHardened: \/usr\/lib\/libgnomekbdui.so.8.0.0: skip: Test for -Wl,-z,relro.  (No dynamic relocations).\nHardened: \/usr\/lib\/libgnomekbdui.so.8.0.0: PASS: Stack not executable.\nHardened: \/usr\/lib\/libgnomekbdui.so.8.0.0: skip: The LTO setting was not recorded (probably due to the use of an old version of the annobin plugin).\nHardened: \/usr\/lib\/libgnomekbdui.so.8.0.0: PASS: Compiled with sufficient optimization.\nHardened: \/usr\/lib\/libgnomekbdui.so.8.0.0: PASS: Compiled with PIC\/PIE.\nHardened: \/usr\/lib\/libgnomekbdui.so.8.0.0: PASS: Compiled as a position independent binary.\nHardened: \/usr\/lib\/libgnomekbdui.so.8.0.0: PASS: Good GNU Property note.\nHardened: \/usr\/lib\/libgnomekbdui.so.8.0.0: PASS: DT_RPATH\/DT_RUNPATH absent or rooted at \/usr.\nHardened: \/usr\/lib\/libgnomekbdui.so.8.0.0: PASS: No RWX segments found.\nHardened: \/usr\/lib\/libgnomekbdui.so.8.0.0: PASS: Consistent use of the -fshort-enum option.\nHardened: \/usr\/lib\/libgnomekbdui.so.8.0.0: PASS: Compiled with -fstack-clash-protection.\nHardened: \/usr\/lib\/libgnomekbdui.so.8.0.0: PASS: Compiled with sufficient stack protection.\nHardened: \/usr\/lib\/libgnomekbdui.so.8.0.0: PASS: Compiled with -mstack_realign.\nHardened: \/usr\/lib\/libgnomekbdui.so.8.0.0: PASS: No text relocations found.\nHardened: \/usr\/lib\/libgnomekbdui.so.8.0.0: PASS: No thread cancellation problems.\nHardened: \/usr\/lib\/libgnomekbdui.so.8.0.0: PASS: Compiled with either -Wall and\/or -Wformat-security.\nHardened: \/usr\/lib\/libgnomekbdui.so.8.0.0: PASS: GOT\/PLT relocations are read only.\nHardened: \/usr\/lib\/libgnomekbdui.so.8.0.0: PASS.",
+       "remedy": "See annocheck(1) for more information."
+     }
+   ],
+   "permissions": [
+     {
+       "result": "OK",
+       "waiver authorization": "Not Waivable"
+     }
+   ],
+   "capabilities": [
+     {
+       "result": "OK",
+       "waiver authorization": "Not Waivable"
+     }
+   ],
+   "path-migration": [
+     {
+       "result": "OK",
+       "waiver authorization": "Not Waivable"
+     }
+   ],
+   "lto": [
+     {
+       "result": "OK",
+       "waiver authorization": "Not Waivable"
+     }
+   ],
+   "symlinks": [
+     {
+       "result": "OK",
+       "waiver authorization": "Not Waivable"
+     }
+   ],
+   "politics": [
+     {
+       "result": "OK",
+       "waiver authorization": "Not Waivable"
+     }
+   ],
+   "bad-functions": [
+     {
+       "result": "OK",
+       "waiver authorization": "Not Waivable"
+     }
+   ],
+   "runpath": [
+     {
+       "result": "OK",
+       "waiver authorization": "Not Waivable"
+     }
+   ]
+ }
