@@ -1,0 +1,125 @@
+DMIDECODE
+  BIOS:
+    Vend: innotek GmbH
+    Vers: VirtualBox
+    Date: 12/01/2006
+    BIOS Rev:
+    FW Rev:
+  System:
+    Mfr:  innotek GmbH
+    Prod: VirtualBox
+    Vers: 1.2
+    Ser:  ⣿
+    UUID: ⣿⣿⣿⣿⣿⣿⣿⣿-⣿⣿⣿⣿-⣿⣿⣿⣿-⣿⣿⣿⣿-⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+  CPU:
+    0 of 0 CPU sockets populated, 0 cores/0 threads per CPU
+    0 total cores, 0 total threads
+    Mfr:
+    Fam:
+    Freq:
+    Vers:
+  Memory:
+    Total: 0 MiB (0 GiB)
+    DIMMs: 0 of 0 populated
+    MaxCapacity: 0 MiB (0 GiB / 0.00 TiB)
+
+OS
+  Hostname: SCRUBBED
+  Distro:   [redhat-release] Rocky Linux release 8.4 (Green Obsidian)
+            [rocky-release] Rocky Linux release 8.4 (Green Obsidian)
+            [os-release] Rocky Linux 8.4 (Green Obsidian) 8.4 (Green Obsidian)
+  RHN:      (missing)
+  RHSM:     (missing)
+  YUM:      1 enabled plugins: debuginfo-install
+  Runlevel: N 3  (default multi-user)
+  SELinux:  enforcing  (default enforcing)
+  Arch:     mach=x86_64  cpu=x86_64  platform=x86_64
+  Kernel:
+    Booted kernel:  4.18.0-305.el8.x86_64
+    GRUB default:
+    Build version:
+      Linux version 4.18.0-305.el8.x86_64 (mockbuild@ord1-prod-x86build004.svc.aws.rockylinux.org) (gcc version 8.4.1 20200928
+      (Red Hat 8.4.1-1) (GCC)) #1 SMP Thu May 27 16:46:28 UTC 2021
+    Booted kernel cmdline:
+      BOOT_IMAGE=(hd0,msdos1)/vmlinuz-4.18.0-305.el8.x86_64 root=/dev/mapper/rl_rocky8u4-root ro
+      resume=/dev/mapper/rl_rocky8u4-swap rd.lvm.lv=rl_rocky8u4/root rd.lvm.lv=rl_rocky8u4/swap rhgb quiet
+    GRUB default kernel cmdline:
+
+    Taint-check: 0  (kernel untainted)
+    - - - - - - - - - - - - - - - - - - -
+  Sys time:  Mon Jun  7 00:30:18 PDT 2021
+  Boot time: Mon Jun  7 00:27:50 PDT 2021  (epoch: 1623050870)
+  Time Zone: America/Los_Angeles
+  Uptime:    2 min,  1 user
+  LoadAvg:   [2 CPU] 0.18 (9%), 0.11 (6%), 0.04 (2%)
+  /proc/stat:
+    procs_running: 1   procs_blocked: 0    processes [Since boot]: 9721
+    cpu [Utilization since boot]:
+      us 1%, ni 0%, sys 2%, idle 89%, iowait 8%, irq 0%, sftirq 0%, steal 0%
+
+CPU
+  2 logical processors (2 CPU cores)
+  1 Intel Core i9-9900K CPU @ 3.60GHz (flags: aes,constant_tsc,ht,lm,nx,pae,rdrand)
+  └─2 threads / 2 cores each
+
+MEMORY
+  Stats graphed as percent of MemTotal:
+    MemUsed    ▊▊▊▊▊▊▊▊▊▊▊▊......................................  24.2%
+    Buffers    ..................................................   0.2%
+    Cached     ▊▊▊▊▊▊▊...........................................  13.7%
+    HugePages  ..................................................   0.0%
+    Dirty      ▊.................................................   1.0%
+  RAM:
+    1.9 GiB total ram
+    0.5 GiB (24%) used
+    0.2 GiB (10%) used excluding Buffers/Cached
+    0.02 GiB (1%) dirty
+  HugePages:
+    No ram pre-allocated to HugePages
+  THP:
+    18432 kB allocated to THP
+  LowMem/Slab/PageTables/Shmem:
+    0.06 GiB (3%) of total ram used for Slab
+    0.01 GiB (0%) of total ram used for PageTables
+    0.01 GiB (0%) of total ram used for Shmem
+  Swap:
+    0 GiB (0%) used of 2.1 GiB total
+
+STORAGE
+  Whole Disks from /proc/partitions:
+    1 disks, totaling 32 GiB (0.03 TiB)
+    - - - - - - - - - - - - - - - - - - - - -
+    Disk 	Size in GiB
+    ----	-----------
+    sda 	32
+
+  Disk layout from lsblk:
+    NAME                 MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
+    sda                    8:0    0   32G  0 disk
+    ├─sda1                 8:1    0    1G  0 part /boot
+    └─sda2                 8:2    0   31G  0 part
+      ├─rl_rocky8u4-root 253:0    0   29G  0 lvm  /
+      └─rl_rocky8u4-swap 253:1    0  2.1G  0 lvm  [SWAP]
+    sr0                   11:0    1 1024M  0 rom
+
+  Filesystem usage from df:
+    Filesystem                   1K-blocks    Used Available Use% Mounted on
+    /dev/mapper/rl_rocky8u4-root  30328352 1714472  28613880   6% /
+    /dev/sda1                      1038336  183868    854468  18% /boot
+
+DM-MULTIPATH
+  [No paths detected]
+
+LSPCI
+  Net:
+    (1) Red Hat, Inc. Virtio network device
+  Storage:
+    (1) Intel Corporation 82801HM/HEM (ICH8M/ICH8M-E) SATA Controller [AHCI mode] (rev 02)
+  VGA:
+    VMware SVGA II Adapter
+
+ETHTOOL
+  Interface Status:
+    enp0s3  0000:00:03.0  link=up Unknown! unknown! (autoneg=N)  rx ring 256/256  drv virtio_net v1.0.0 / fw UNKNOWN
+  Interface Errors:
+    [None]
