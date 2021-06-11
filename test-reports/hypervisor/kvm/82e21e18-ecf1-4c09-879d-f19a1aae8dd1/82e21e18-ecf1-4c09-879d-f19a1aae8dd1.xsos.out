@@ -1,0 +1,133 @@
+DMIDECODE
+  BIOS:
+    Vend: Seabios
+    Vers: 0.5.1
+    Date: 01/01/2007
+    BIOS Rev: 1.0
+    FW Rev:
+  System:
+    Mfr:  Red Hat
+    Prod: KVM
+    Vers: RHEL 6.6.0 PC
+    Ser:  ⣿⣿⣿ ⣿⣿⣿⣿⣿⣿⣿⣿⣿
+    UUID: ⣿⣿⣿⣿⣿⣿⣿⣿-⣿⣿⣿⣿-⣿⣿⣿⣿-⣿⣿⣿⣿-⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+  CPU:
+    2 of 2 CPU sockets populated, 0 cores/0 threads per CPU
+    0 total cores, 0 total threads
+    Mfr:  Bochs
+    Fam:
+    Freq: 2000 MHz
+    Vers: Not Specified
+  Memory:
+    Total: 4096 MiB (4 GiB)
+    DIMMs: 1 of 3 populated
+    MaxCapacity: 4096 MiB (4 GiB / 0.00 TiB)
+
+OS
+  Hostname: SCRUBBED
+  Distro:   [redhat-release] Rocky Linux release 8.3
+            [rocky-release] Rocky Linux release 8.3
+            [os-release] Rocky Linux 8.3 8.3
+  RHN:      serverURL = SCRUBBED
+            enableProxy = 0
+  RHSM:     hostname = SCRUBBED
+            proxy_hostname =
+  YUM:      2 enabled plugins: debuginfo-install, product-id
+  Runlevel: N 5  (default graphical)
+  SELinux:  enforcing  (default enforcing)
+  Arch:     mach=x86_64  cpu=x86_64  platform=x86_64
+  Kernel:
+    Booted kernel:  4.18.0-240.22.1.el8.x86_64
+    GRUB default:
+    Build version:
+      Linux version 4.18.0-240.22.1.el8.x86_64 (mockbuild@7dfc074d1e13452e94271ec95cb31ed9) (gcc version 8.3.1 20191121 (Red
+      Hat 8.3.1-5) (GCC)) #1 SMP Mon Apr 12 04:29:16 UTC 2021
+    Booted kernel cmdline:
+      BOOT_IMAGE=(hd0,msdos1)/vmlinuz-4.18.0-240.22.1.el8.x86_64 root=UUID=9d90fd0c-4607-4eaa-a371-62ba54792833 ro
+      crashkernel=auto resume=UUID=1d562689-826b-4198-ba64-d1d437064999 rhgb quiet
+    GRUB default kernel cmdline:
+
+    Taint-check: 0  (kernel untainted)
+    - - - - - - - - - - - - - - - - - - -
+  Sys time:  Wed May 26 22:32:33 PDT 2021
+  Boot time: Wed May 26 22:30:02 PDT 2021  (epoch: 1622093402)
+  Time Zone: America/Los_Angeles
+  Uptime:    2 min,  1 user
+  LoadAvg:   [2 CPU] 0.40 (20%), 0.51 (26%), 0.22 (11%)
+  /proc/stat:
+    procs_running: 1   procs_blocked: 0    processes [Since boot]: 6240
+    cpu [Utilization since boot]:
+      us 12%, ni 0%, sys 4%, idle 83%, iowait 1%, irq 0%, sftirq 0%, steal 0%
+
+CPU
+  2 logical processors
+  2 Intel Xeon CPU E5-2640 v3 @ 2.60GHz (flags: aes,constant_tsc,lm,nx,pae,rdrand)
+
+MEMORY
+  Stats graphed as percent of MemTotal:
+    MemUsed    ▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊..................................  31.2%
+    Buffers    ..................................................   0.1%
+    Cached     ▊▊▊▊▊▊▊▊..........................................  15.9%
+    HugePages  ..................................................   0.0%
+    Dirty      ..................................................   0.0%
+  RAM:
+    3.7 GiB total ram
+    1.1 GiB (31%) used
+    0.6 GiB (15%) used excluding Buffers/Cached
+    0 GiB (0%) dirty
+  HugePages:
+    No ram pre-allocated to HugePages
+  THP:
+    69632 kB allocated to THP
+  LowMem/Slab/PageTables/Shmem:
+    0.12 GiB (3%) of total ram used for Slab
+    0.02 GiB (1%) of total ram used for PageTables
+    0.02 GiB (1%) of total ram used for Shmem
+  Swap:
+    0 GiB (0%) used of 16 GiB total
+
+STORAGE
+  Whole Disks from /proc/partitions:
+    1 disks, totaling 320 GiB (0.31 TiB)
+    - - - - - - - - - - - - - - - - - - - - -
+    Disk 	Size in GiB
+    ----	-----------
+    vda 	320
+
+  Disk layout from lsblk:
+    NAME   MAJ:MIN RM   SIZE RO TYPE MOUNTPOINT
+    sr0     11:0    1  1024M  0 rom
+    vda    253:0    0   320G  0 disk
+    ├─vda1 253:1    0   512M  0 part /boot
+    ├─vda3 253:3    0    16G  0 part [SWAP]
+    ├─vda4 253:4    0     1K  0 part
+    ├─vda5 253:5    0    20G  0 part /tmp
+    ├─vda6 253:6    0   180G  0 part /var
+    └─vda7 253:7    0 103.4G  0 part /
+
+  Filesystem usage from df:
+    Filesystem     1K-blocks    Used Available Use% Mounted on
+    /dev/vda7      108364088 5009492 103354596   5% /
+    /dev/vda1         516040  327528    162300  67% /boot
+    /dev/vda6      188651520 2365636 186285884   2% /var
+    /dev/vda5       20961280  179368  20781912   1% /tmp
+
+DM-MULTIPATH
+  [No paths detected]
+
+LSPCI
+  Net:
+    1 dual-port (2) Red Hat, Inc. Virtio network device
+  Storage:
+    (1) Red Hat, Inc. Virtio block device
+  VGA:
+    Cirrus Logic GD 5446
+
+ETHTOOL
+  Interface Status:
+    ens3        0000:00:03.0  link=up Unknown! unknown! (autoneg=N)  rx ring 256/256  drv virtio_net v1.0.0 / fw UNKNOWN
+    ens4        0000:00:04.0  link=up Unknown! unknown! (autoneg=N)  rx ring 256/256  drv virtio_net v1.0.0 / fw UNKNOWN
+    virbr0      N/A           link=DOWN                              rx ring UNKNOWN  drv bridge v2.3 / fw N/A
+    virbr0-nic  tap           link=DOWN                              rx ring UNKNOWN  drv tun v1.6 / fw UNKNOWN
+  Interface Errors:
+    [None]

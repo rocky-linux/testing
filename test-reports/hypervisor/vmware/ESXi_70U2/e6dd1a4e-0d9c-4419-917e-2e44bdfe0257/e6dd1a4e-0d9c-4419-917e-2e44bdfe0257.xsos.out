@@ -1,0 +1,125 @@
+DMIDECODE
+  BIOS:
+    Vend: Phoenix Technologies LTD
+    Vers: 6.00
+    Date: 11/12/2020
+    BIOS Rev: 4.6
+    FW Rev:   0.0
+  System:
+    Mfr:  VMware, Inc.
+    Prod: VMware Virtual Platform
+    Vers: None
+    Ser:  ⣿⣿⣿⣿⣿⣿-⣿⣿ ⣿⣿ ⣿⣿ ⣿⣿ ⣿⣿ ⣿⣿ ⣿⣿ ⣿⣿-⣿⣿ ⣿⣿ ⣿⣿ ⣿⣿ ⣿⣿ ⣿⣿ ⣿⣿ ⣿⣿
+    UUID: ⣿⣿⣿⣿⣿⣿⣿⣿-⣿⣿⣿⣿-⣿⣿⣿⣿-⣿⣿⣿⣿-⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+  CPU:
+    2 of 2 CPU sockets populated, 2 cores/0 threads per CPU
+    4 total cores, 0 total threads
+    Mfr:  GenuineIntel
+    Fam:  Unknown
+    Freq: 2500 MHz
+    Vers: Intel(R) Core(TM) i5-6500T CPU @ 2.50GHz
+  Memory:
+    Total: 2048 MiB (2 GiB)
+    DIMMs: 1 of 192 populated
+    MaxCapacity: 2048 MiB (2 GiB / 0.00 TiB)
+
+OS
+  Hostname: SCRUBBED
+  Distro:   [redhat-release] Rocky Linux release 8.4 (Green Obsidian)
+            [rocky-release] Rocky Linux release 8.4 (Green Obsidian)
+            [os-release] Rocky Linux 8.4 (Green Obsidian) 8.4 (Green Obsidian)
+  RHN:      (missing)
+  RHSM:     hostname = SCRUBBED
+            proxy_hostname =
+  YUM:      4 enabled plugins: debuginfo-install, product-id, subscription-manager, tracer_upload
+  Runlevel: N 3  (default multi-user)
+  SELinux:  enforcing  (default enforcing)
+  Arch:     mach=x86_64  cpu=x86_64  platform=x86_64
+  Kernel:
+    Booted kernel:  4.18.0-305.el8.x86_64
+    GRUB default:     
+    Build version:
+      Linux version 4.18.0-305.el8.x86_64 (mockbuild@ord1-prod-x86build004.svc.aws.rockylinux.org) (gcc version 8.4.1 20200928 (Red Hat 8.4.1-1) (GCC)) #1 SMP Thu May 27 16:46:28 UTC 2021
+    Booted kernel cmdline:
+      BOOT_IMAGE=(hd0,msdos1)/vmlinuz-4.18.0-305.el8.x86_64 root=UUID=7204f4ef-3cb6-41df-8531-7fc7d35f6a67 ro crashkernel=auto resume=UUID=c6536419-b664-46f5-92be-c5b2f994b191 rhgb quiet
+    GRUB default kernel cmdline:  
+      
+    Taint-check: 0  (kernel untainted)
+    - - - - - - - - - - - - - - - - - - -
+  Sys time:  Fri Jun  4 12:43:04 CEST 2021
+  Boot time: Fri Jun  4 12:41:07 CEST 2021  (epoch: 1622803267)
+  Time Zone: Europe/Vienna
+  Uptime:    1 min,  1 user
+  LoadAvg:   [2 CPU] 0.31 (16%), 0.26 (13%), 0.10 (5%)
+  /proc/stat:
+    procs_running: 1   procs_blocked: 0    processes [Since boot]: 5168
+    cpu [Utilization since boot]:
+      us 15%, ni 0%, sys 3%, idle 80%, iowait 1%, irq 0%, sftirq 0%, steal 0%
+
+CPU
+  2 logical processors (2 CPU cores)
+  1 Intel Core i5-6500T CPU @ 2.50GHz (flags: aes,constant_tsc,ht,lm,nx,pae,rdrand) 
+  └─2 threads / 2 cores each
+
+MEMORY
+  Stats graphed as percent of MemTotal:
+    MemUsed    ▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊...................................  29.6%
+    Buffers    ..................................................   0.2%
+    Cached     ▊▊▊▊▊▊▊...........................................  13.4%
+    HugePages  ..................................................   0.0%
+    Dirty      ..................................................   0.0%
+  RAM:
+    1.8 GiB total ram
+    0.5 GiB (30%) used
+    0.3 GiB (16%) used excluding Buffers/Cached
+    0 GiB (0%) dirty
+  HugePages:
+    No ram pre-allocated to HugePages
+  THP:
+    55296 kB allocated to THP 
+  LowMem/Slab/PageTables/Shmem:
+    0.09 GiB (5%) of total ram used for Slab
+    0.01 GiB (0%) of total ram used for PageTables
+    0.01 GiB (0%) of total ram used for Shmem
+  Swap:
+    0 GiB (0%) used of 1.6 GiB total
+
+STORAGE
+  Whole Disks from /proc/partitions:
+    1 disks, totaling 16 GiB (0.02 TiB)
+    - - - - - - - - - - - - - - - - - - - - -
+    Disk 	Size in GiB
+    ----	-----------
+    sda 	16
+
+  Disk layout from lsblk:
+    NAME   MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
+    sda      8:0    0   16G  0 disk 
+    ├─sda1   8:1    0    1G  0 part /boot
+    ├─sda2   8:2    0  1.6G  0 part [SWAP]
+    └─sda3   8:3    0 13.4G  0 part /
+    sr0     11:0    1 1024M  0 rom  
+
+  Filesystem usage from df:
+    Filesystem     1K-blocks    Used Available Use% Mounted on
+    /dev/sda3       14039040 1981292  12057748  15% /
+    /dev/sda1        1038336  249000    789336  24% /boot
+
+DM-MULTIPATH
+  [No paths detected]
+
+LSPCI
+  Net:
+    (1) VMware VMXNET3 Ethernet Controller (rev 01)
+  Storage:
+    (1) VMware SATA AHCI controller
+    (1) VMware PVSCSI SCSI Controller (rev 02)
+  VGA:
+    VMware SVGA II Adapter
+
+ETHTOOL
+  Interface Status:
+    ens160  0000:03:00.0  link=up 10000Mb/s full (autoneg=N)  rx ring 1024/4096  drv vmxnet3 v1.5.0.0-k-NAPI / fw UNKNOWN
+  Interface Errors:
+    [None]
+
