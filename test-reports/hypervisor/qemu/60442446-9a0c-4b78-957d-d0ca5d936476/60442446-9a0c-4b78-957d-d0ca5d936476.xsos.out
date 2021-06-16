@@ -1,0 +1,122 @@
+DMIDECODE
+  BIOS:
+    Vend: SeaBIOS
+    Vers: rel-1.14.0-0-g155821a1990b-prebuilt.qemu.org
+    Date: 04/01/2014
+    BIOS Rev: 0.0
+    FW Rev:  
+  System:
+    Mfr:  QEMU
+    Prod: Standard PC (Q35 + ICH9, 2009)
+    Vers: pc-q35-6.0
+    Ser:  ⣿⣿⣿ ⣿⣿⣿⣿⣿⣿⣿⣿⣿
+    UUID: ⣿⣿⣿ ⣿⣿⣿⣿⣿⣿⣿⣿
+  CPU:
+    2 of 2 CPU sockets populated, 1 cores/1 threads per CPU
+    2 total cores, 2 total threads
+    Mfr:  QEMU
+    Fam: 
+    Freq: 2000 MHz
+    Vers: pc-q35-6.0
+  Memory:
+    Total: 2048 MiB (2 GiB)
+    DIMMs: 1 of 1 populated
+    MaxCapacity: 2048 MiB (2 GiB / 0.00 TiB)
+
+OS
+  Hostname: SCRUBBED
+  Distro:   [redhat-release] Rocky Linux release 8.4 (Green Obsidian)
+            [rocky-release] Rocky Linux release 8.4 (Green Obsidian)
+            [os-release] Rocky Linux 8.4 (Green Obsidian) 8.4 (Green Obsidian)
+  RHN:      (missing)
+  RHSM:     (missing)
+  YUM:      1 enabled plugins: debuginfo-install
+  Runlevel: N 3  (default multi-user)
+  SELinux:  enforcing  (default enforcing)
+  Arch:     mach=x86_64  cpu=x86_64  platform=x86_64
+  Kernel:
+    Booted kernel:  4.18.0-305.el8.x86_64
+    GRUB default:     
+    Build version:
+      Linux version 4.18.0-305.el8.x86_64 (mockbuild@ord1-prod-x86build004.svc.aws.rockylinux.org) (gcc version 8.4.1 20200928 (Red Hat 8.4.1-1) (GCC)) #1 
+      SMP Thu May 27 16:46:28 UTC 2021
+    Booted kernel cmdline:
+      BOOT_IMAGE=(hd0,msdos1)/vmlinuz-4.18.0-305.el8.x86_64 root=/dev/mapper/rl_rocky-root ro crashkernel=auto resume=/dev/mapper/rl_rocky-swap 
+      rd.lvm.lv=rl_rocky/root rd.lvm.lv=rl_rocky/swap
+    GRUB default kernel cmdline:  
+      
+    Taint-check: 0  (kernel untainted)
+    - - - - - - - - - - - - - - - - - - -
+  Sys time:  Wed Jun 16 12:18:04 CEST 2021
+  Boot time: Wed Jun 16 12:14:01 CEST 2021  (epoch: 1623838441)
+  Time Zone: Europe/Belgrade
+  Uptime:    4 min,  1 user
+  LoadAvg:   [2 CPU] 0.13 (6%), 0.09 (4%), 0.03 (2%)
+  /proc/stat:
+    procs_running: 1   procs_blocked: 0    processes [Since boot]: 9989
+    cpu [Utilization since boot]:
+      us 3%, ni 0%, sys 4%, idle 91%, iowait 1%, irq 1%, sftirq 0%, steal 0%
+
+CPU
+  2 logical processors 
+  2 Intel Core i7-7600U CPU @ 2.80GHz (flags: lm,nx,pae,svm) 
+
+MEMORY
+  Stats graphed as percent of MemTotal:
+    MemUsed    ▊▊▊▊▊▊▊▊▊▊▊▊▊▊....................................  27.9%
+    Buffers    ..................................................   0.2%
+    Cached     ▊▊▊▊▊▊▊▊▊.........................................  17.0%
+    HugePages  ..................................................   0.0%
+    Dirty      ..................................................   0.0%
+  RAM:
+    1.8 GiB total ram
+    0.5 GiB (28%) used
+    0.2 GiB (11%) used excluding Buffers/Cached
+    0 GiB (0%) dirty
+  HugePages:
+    No ram pre-allocated to HugePages
+  THP:
+    10240 kB allocated to THP 
+  LowMem/Slab/PageTables/Shmem:
+    0.07 GiB (4%) of total ram used for Slab
+    0.01 GiB (0%) of total ram used for PageTables
+    0.01 GiB (0%) of total ram used for Shmem
+  Swap:
+    0 GiB (0%) used of 1.6 GiB total
+
+STORAGE
+  Whole Disks from /proc/partitions:
+    1 disks, totaling 16 GiB (0.02 TiB)
+    - - - - - - - - - - - - - - - - - - - - -
+    Disk 	Size in GiB
+    ----	-----------
+    sda 	16
+
+  Disk layout from lsblk:
+    NAME              MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
+    sda                 8:0    0   16G  0 disk 
+    ├─sda1              8:1    0    1G  0 part /boot
+    └─sda2              8:2    0   15G  0 part 
+      ├─rl_rocky-root 253:0    0 13.4G  0 lvm  /
+      └─rl_rocky-swap 253:1    0  1.6G  0 lvm  [SWAP]
+    sr0                11:0    1  720M  0 rom  
+
+  Filesystem usage from df:
+    Filesystem                1K-blocks    Used Available Use% Mounted on
+    /dev/mapper/rl_rocky-root  14034944 1619148  12415796  12% /
+    /dev/sda1                   1038336  183188    855148  18% /boot
+
+LSPCI
+  Net:
+    (1) VMware VMXNET3 Ethernet Controller (rev 01)
+  Storage:
+    (1) Intel Corporation 82801IR/IO/IH (ICH9R/DO/DH) 6 port SATA Controller [AHCI mode] (rev 02)
+  VGA:
+    Device 1234:1111 (rev 02)
+
+ETHTOOL
+  Interface Status:
+    enp0s2  0000:00:02.0  link=up 1000Mb/s full (autoneg=N)  rx ring 1024/4096  drv vmxnet3 v1.5.0.0-k-NAPI / fw UNKNOWN
+  Interface Errors:
+    [None]
+
