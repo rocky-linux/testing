@@ -1,0 +1,158 @@
+DMIDECODE
+  BIOS:
+    Vend: Dell Inc.
+    Vers: 1.7.0
+    Date: 12/14/2018
+    BIOS Rev: 1.7
+    FW Rev:  
+  System:
+    Mfr:  Dell Inc.
+    Prod: PowerEdge R440
+    Vers: Not Specified
+    Ser:  ⣿⣿⣿⣿⣿⣿⣿
+    UUID: ⣿⣿⣿⣿⣿⣿⣿⣿-⣿⣿⣿⣿-⣿⣿⣿⣿-⣿⣿⣿⣿-⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+  CPU:
+    2 of 2 CPU sockets populated, 16 cores/32 threads per CPU
+    32 total cores, 64 total threads
+    Mfr:  Intel
+    Fam:  Xeon
+    Freq: 2100 MHz
+    Vers: Intel(R) Xeon(R) Gold 6130 CPU @ 2.10GHz
+  Memory:
+    Total: 131072 MiB (128 GiB)
+    DIMMs: 4 of 16 populated
+    MaxCapacity: 2097152 MiB (2048 GiB / 2.00 TiB)
+
+OS
+  Hostname: SCRUBBED
+  Distro:   [redhat-release] Rocky Linux release 8.4 (Green Obsidian)
+            [rocky-release] Rocky Linux release 8.4 (Green Obsidian)
+            [os-release] Rocky Linux 8.4 (Green Obsidian) 8.4 (Green Obsidian)
+  RHN:      (missing)
+  RHSM:     (missing)
+  YUM:      1 enabled plugins: debuginfo-install
+  Runlevel: N 3  (default multi-user)
+  SELinux:  disabled  (default disabled)
+  Arch:     mach=x86_64  cpu=x86_64  platform=x86_64
+  Kernel:
+    Booted kernel:  4.18.0-305.el8.x86_64
+    GRUB default:   unknown  (no grub config file)  
+    Build version:
+      Linux version 4.18.0-305.el8.x86_64 (mockbuild@ord1-prod-x86build004.svc.aws.rockylinux.org) (gcc version 8.4.1 
+      20200928 (Red Hat 8.4.1-1) (GCC)) #1 SMP Thu May 27 16:46:28 UTC 2021
+    Booted kernel cmdline:
+      BOOT_IMAGE=(hd0,gpt2)/vmlinuz-4.18.0-305.el8.x86_64 root=/dev/mapper/SysVG-LogVolRoot ro crashkernel=auto 
+      resume=/dev/mapper/SysVG-LogVolSwap rd.lvm.lv=SysVG/LogVolRoot rd.luks.uuid=luks-f43b19ab-134d-4f75-8307-f3a82facaafd 
+      rd.lvm.lv=SysVG/LogVolSwap
+    GRUB default kernel cmdline:  
+      unknown  (no grub config file)
+    Taint-check: 2048  (see https://access.redhat.com/solutions/40594)
+      11  FIRMWARE_WORKAROUND: Working around severe firmware bug
+    - - - - - - - - - - - - - - - - - - -
+  Sys time:  Mon Jun 21 15:33:56 UTC 2021
+  Boot time: Thu Jun 17 14:17:14 UTC 2021  (epoch: 1623939434)
+  Time Zone: Etc/UTC
+  Uptime:    4 days,  1:16,  3 users
+  LoadAvg:   [64 CPU] 1.83 (3%), 1.81 (3%), 1.85 (3%)
+  /proc/stat:
+    procs_running: 4   procs_blocked: 0    processes [Since boot]: 18406188
+    cpu [Utilization since boot]:
+      us 2%, ni 0%, sys 1%, idle 97%, iowait 0%, irq 0%, sftirq 0%, steal 0%
+
+CPU
+  64 logical processors (32 CPU cores)
+  2 Intel Xeon Gold 6130 CPU @ 2.10GHz (flags: aes,constant_tsc,ht,lm,nx,pae,rdrand,vmx) 
+  └─32 threads / 16 cores each
+
+MEMORY
+  Stats graphed as percent of MemTotal:
+    MemUsed    ▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊..........  79.9%
+    Buffers    ▊.................................................   2.7%
+    Cached     ▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊...................  61.5%
+    HugePages  ..................................................   0.0%
+    Dirty      ..................................................   0.0%
+  RAM:
+    125.3 GiB total ram
+    100.1 GiB (80%) used
+    19.7 GiB (16%) used excluding Buffers/Cached
+    0.06 GiB (0%) dirty
+  HugePages:
+    No ram pre-allocated to HugePages
+  THP:
+    THP not currently in use
+  LowMem/Slab/PageTables/Shmem:
+    14.34 GiB (11%) of total ram used for Slab
+    0.13 GiB (0%) of total ram used for PageTables
+    4.25 GiB (3%) of total ram used for Shmem
+  Swap:
+    0 GiB (1%) used of 4 GiB total
+
+STORAGE
+  Whole Disks from /proc/partitions:
+    3 disks, totaling 9316 GiB (9.10 TiB)
+    - - - - - - - - - - - - - - - - - - - - -
+    Disk 	Size in GiB
+    ----	-----------
+    loop0 	3
+    sda 	1862
+    sdb 	7450
+
+  Disk layout from lsblk:
+    NAME                                          MAJ:MIN RM  SIZE RO TYPE  MOUNTPOINT
+    loop0                                           7:0    0  3.4G  0 loop  /home/dvd/install
+    sda                                             8:0    0  1.8T  0 disk  
+    ├─sda1                                          8:1    0   50M  0 part  /boot/efi
+    ├─sda2                                          8:2    0  500M  0 part  /boot
+    ├─sda3                                          8:3    0    1M  0 part  
+    └─sda4                                          8:4    0  1.8T  0 part  
+      └─luks-f43b19ab-134d-4f75-8307-f3a82facaafd 253:0    0  1.8T  0 crypt 
+        ├─SysVG-LogVolRoot                        253:1    0 97.8G  0 lvm   /
+        ├─SysVG-LogVolSwap                        253:2    0    4G  0 lvm   [SWAP]
+        ├─SysVG-LogVolDVD                         253:4    0  4.9G  0 lvm   /home/dvd
+        ├─SysVG-LogVolHome                        253:5    0  7.8G  0 lvm   /home
+        ├─SysVG-LogVolVarAudit                    253:6    0    5G  0 lvm   /var/log/audit
+        ├─SysVG-LogVolVarLog                      253:7    0    5G  0 lvm   /var/log
+        └─SysVG-LogVolVar                         253:8    0  3.1G  0 lvm   /var
+    sdb                                             8:16   0  7.3T  0 disk  
+    └─sdb1                                          8:17   0  7.3T  0 part  
+      └─luks-fe4f17e9-5e2c-4b81-aacb-103503be99b2 253:3    0  7.3T  0 crypt 
+        └─DataVG-LogVolData                       253:9    0  7.3T  0 lvm   /data
+
+  Filesystem usage from df:
+    Filesystem                        1K-blocks       Used  Available Use% Mounted on
+    /dev/mapper/SysVG-LogVolRoot      100396096    7503792   87749368   8% /
+    /dev/mapper/SysVG-LogVolHome        7997872      36404    7535484   1% /home
+    /dev/mapper/SysVG-LogVolVar         3095280     289912    2628424  10% /var
+    /dev/mapper/DataVG-LogVolData    7749216820 2421160764 4937446752  33% /data
+    /dev/mapper/SysVG-LogVolDVD         4998176    3611396    1113168  77% /home/dvd
+    /dev/mapper/SysVG-LogVolVarLog      5127228    1692752    3154312  35% /var/log
+    /dev/mapper/SysVG-LogVolVarAudit    5127228      20600    4826464   1% /var/log/audit
+    /dev/sda2                            506528     173084     333444  35% /boot
+    /dev/sda1                             51082       5876      45206  12% /boot/efi
+    /dev/loop0                          3591298    3591298          0 100% /home/dvd/install
+    /dev/mapper/SysVG-LogVolRoot      100396096    7503792   87749368   8% /usr/GunSmoke-1.5.0test-363/ftproot/signals
+
+DM-MULTIPATH
+  [No paths detected]
+
+LSPCI
+  Net:
+    1 dual-port (2) Broadcom Inc. and subsidiaries NetXtreme BCM5720 2-port Gigabit Ethernet PCIe
+    1 dual-port (2) Intel Corporation Ethernet Controller X710 for 10GbE SFP+ (rev 02)
+  Storage:
+    (1) Broadcom / LSI MegaRAID SAS-3 3108 [Invader] (rev 02)
+    (1) Intel Corporation C620 Series Chipset Family SSATA Controller [AHCI mode] (rev 09)
+    (1) Intel Corporation C620 Series Chipset Family SATA Controller [AHCI mode] (rev 09)
+  VGA:
+    Matrox Electronics Systems Ltd. Integrated Matrox G200eW3 Graphics Controller (rev 04)
+
+ETHTOOL
+  Interface Status:
+    eno1    0000:04:00.0  link=up 1000Mb/s full (autoneg=Y)   rx ring 200/2047  drv tg3 v4.18.0-305.el8.x86_64 / fw FFV21.40.2 bc 5720-v1.39
+    eno2    0000:04:00.1  link=up 1000Mb/s full (autoneg=Y)   rx ring 200/2047  drv tg3 v4.18.0-305.el8.x86_64 / fw FFV21.40.2 bc 5720-v1.39
+    ens3f0  0000:af:00.0  link=up 10000Mb/s full (autoneg=N)  rx ring 512/4096  drv i40e v4.18.0-305.el8.x86_64 / fw 6.80 0x80003d72 18.8.9
+    ens3f1  0000:af:00.1  link=DOWN                           rx ring 512/4096  drv i40e v4.18.0-305.el8.x86_64 / fw 6.80 0x80003d72 18.8.9
+  Interface Errors:
+    eno1  rx_discards: 177
+          mbuf_lwm_thresh_hit: 177
+
