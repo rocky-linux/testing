@@ -1,0 +1,125 @@
+DMIDECODE
+  BIOS:
+    Vend: SeaBIOS
+    Vers: rel-1.13.0-48-gd9c812dda519-prebuilt.qemu.org
+    Date: 04/01/2014
+    BIOS Rev: 0.0
+    FW Rev:  
+  System:
+    Mfr:  QEMU
+    Prod: Standard PC (i440FX + PIIX, 1996)
+    Vers: pc-i440fx-5.1
+    Ser:  ⣿⣿⣿ ⣿⣿⣿⣿⣿⣿⣿⣿⣿
+    UUID: ⣿⣿⣿⣿⣿⣿⣿⣿-⣿⣿⣿⣿-⣿⣿⣿⣿-⣿⣿⣿⣿-⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+  CPU:
+    1 of 1 CPU sockets populated, 4 cores/1 threads per CPU
+    4 total cores, 1 total threads
+    Mfr:  QEMU
+    Fam: 
+    Freq: 2000 MHz
+    Vers: pc-i440fx-5.1
+  Memory:
+    Total: 17000 MiB (17 GiB)
+    DIMMs: 2 of 2 populated
+    MaxCapacity: 17000 MiB (17 GiB / 0.02 TiB)
+
+OS
+  Hostname: SCRUBBED
+  Distro:   [redhat-release] Rocky Linux release 8.3
+            [rocky-release] Rocky Linux release 8.3
+            [os-release] Rocky Linux 8.3 8.3
+  RHN:      (missing)
+  RHSM:     hostname = SCRUBBED
+            proxy_hostname =
+  YUM:      2 enabled plugins: debuginfo-install, product-id
+  Runlevel: N 3  (default multi-user)
+  SELinux:  permissive  (default disabled)
+  Arch:     mach=x86_64  cpu=x86_64  platform=x86_64
+  Kernel:
+    Booted kernel:  4.18.0-240.22.1.el8.x86_64
+    GRUB default:     
+    Build version:
+      Linux version 4.18.0-240.22.1.el8.x86_64 (mockbuild@7dfc074d1e13452e94271ec95cb31ed9) (gcc version 8.3.1 20191121 (Red Hat 8.3.1-5) (GCC)) #1 SMP Mon Apr 12 04:29:16 UTC 2021
+    Booted kernel cmdline:
+      BOOT_IMAGE=(hd0,msdos1)/vmlinuz-4.18.0-240.22.1.el8.x86_64 root=/dev/mapper/rl-root ro crashkernel=auto resume=/dev/mapper/rl-swap rd.lvm.lv=rl/root rd.lvm.lv=rl/swap
+    GRUB default kernel cmdline:  
+      
+    Taint-check: 0  (kernel untainted)
+    - - - - - - - - - - - - - - - - - - -
+  Sys time:  Thu Jun 24 18:16:17 CDT 2021
+  Boot time: Sat May  1 21:35:50 CDT 2021  (epoch: 1619922950)
+  Time Zone: America/Chicago
+  Uptime:    53 days, 20:40,  1 user
+  LoadAvg:   [4 CPU] 0.23 (6%), 0.17 (4%), 0.08 (2%)
+  /proc/stat:
+    procs_running: 1   procs_blocked: 0    processes [Since boot]: 16394528
+    cpu [Utilization since boot]:
+      us 0%, ni 0%, sys 0%, idle 100%, iowait 0%, irq 0%, sftirq 0%, steal 0%
+
+CPU
+  4 logical processors (4 CPU cores)
+  1 Common KVM processor (flags: constant_tsc,ht,lm,nx,pae) 
+  └─4 threads / 4 cores each
+
+MEMORY
+  Stats graphed as percent of MemTotal:
+    MemUsed    ▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊.....................  58.6%
+    Buffers    ..................................................   0.0%
+    Cached     ▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊.........................  49.2%
+    HugePages  ..................................................   0.0%
+    Dirty      ..................................................   0.0%
+  RAM:
+    16.1 GiB total ram
+    9.4 GiB (59%) used
+    1.5 GiB (9%) used excluding Buffers/Cached
+    0 GiB (0%) dirty
+  HugePages:
+    No ram pre-allocated to HugePages
+  THP:
+    241664 kB allocated to THP 
+  LowMem/Slab/PageTables/Shmem:
+    0.85 GiB (5%) of total ram used for Slab
+    0.01 GiB (0%) of total ram used for PageTables
+    0.77 GiB (5%) of total ram used for Shmem
+  Swap:
+    0 GiB (0%) used of 6.4 GiB total
+
+STORAGE
+  Whole Disks from /proc/partitions:
+    1 disks, totaling 64 GiB (0.06 TiB)
+    - - - - - - - - - - - - - - - - - - - - -
+    Disk 	Size in GiB
+    ----	-----------
+    sda 	64
+
+  Disk layout from lsblk:
+    NAME        MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
+    sda           8:0    0   64G  0 disk 
+    ├─sda1        8:1    0    1G  0 part /boot
+    └─sda2        8:2    0   63G  0 part 
+      ├─rl-root 253:0    0 56.6G  0 lvm  /
+      └─rl-swap 253:1    0  6.4G  0 lvm  [SWAP]
+    sr0          11:0    1  1.8G  0 rom  
+
+  Filesystem usage from df:
+    Filesystem          1K-blocks    Used Available Use% Mounted on
+    /dev/mapper/rl-root  59313872 7874532  51439340  14% /
+    /dev/sda1             1038336  182444    855892  18% /boot
+
+DM-MULTIPATH
+  [No paths detected]
+
+LSPCI
+  Net:
+    (1) Red Hat, Inc. Virtio network device
+  Storage:
+    (1) Red Hat, Inc. Virtio SCSI
+  VGA:
+    Device 1234:1111 (rev 02)
+
+ETHTOOL
+  Interface Status:
+    ens18  0000:00:12.0  link=up Unknown! unknown! (autoneg=N)  rx ring 256/256  drv virtio_net v1.0.0 / fw UNKNOWN
+  Interface Errors:
+    [None]
+
