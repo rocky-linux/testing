@@ -1,0 +1,132 @@
+DMIDECODE
+  BIOS:
+    Vend: Dell Inc.
+    Vers: 2.7.0
+    Date: 08/19/2019
+    BIOS Rev: 2.7
+    FW Rev:  
+  System:
+    Mfr:  Dell Inc.
+    Prod: PowerEdge R420
+    Vers: Not Specified
+    Ser:  ⣿⣿⣿⣿⣿⣿⣿
+    UUID: ⣿⣿⣿⣿⣿⣿⣿⣿-⣿⣿⣿⣿-⣿⣿⣿⣿-⣿⣿⣿⣿-⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+  CPU:
+    2 of 2 CPU sockets populated, 4 cores/4 threads per CPU
+    8 total cores, 8 total threads
+    Mfr:  Intel
+    Fam:  Xeon
+    Freq: 2200 MHz
+    Vers: Intel(R) Xeon(R) CPU E5-2407 0 @ 2.20GHz
+  Memory:
+    Total: 8192 MiB (8 GiB)
+    DIMMs: 2 of 12 populated
+    MaxCapacity: 393216 MiB (384 GiB / 0.38 TiB)
+
+OS
+  Hostname: SCRUBBED
+  Distro:   [redhat-release] Rocky Linux release 8.4 (Green Obsidian)
+            [rocky-release] Rocky Linux release 8.4 (Green Obsidian)
+            [os-release] Rocky Linux 8.4 (Green Obsidian) 8.4 (Green Obsidian)
+  RHN:      (missing)
+  RHSM:     (missing)
+  YUM:      1 enabled plugins: debuginfo-install
+  Runlevel: N 3  (default multi-user)
+  SELinux:  enforcing  (default enforcing)
+  Arch:     mach=x86_64  cpu=x86_64  platform=x86_64
+  Kernel:
+    Booted kernel:  4.18.0-305.3.1.el8_4.x86_64
+    GRUB default:   unknown  (no grub config file)  
+    Build version:
+      Linux version 4.18.0-305.3.1.el8_4.x86_64 (mockbuild@ord1-prod-x86build003.svc.aws.rockylinux.org) (gcc version 8.4.1 20200928 (Red Hat 8.4.1-1) (GCC)) #1 SMP Thu 
+      Jun 17 07:52:48 UTC 2021
+    Booted kernel cmdline:
+      BOOT_IMAGE=(hd0,gpt2)/vmlinuz-4.18.0-305.3.1.el8_4.x86_64 root=/dev/mapper/rl-root ro crashkernel=auto resume=/dev/mapper/rl-swap rd.lvm.lv=rl/root 
+      rd.lvm.lv=rl/swap rhgb quiet
+    GRUB default kernel cmdline:  
+      unknown  (no grub config file)
+    Taint-check: 0  (kernel untainted)
+    - - - - - - - - - - - - - - - - - - -
+  Sys time:  Sat Jun 26 11:45:36 CDT 2021
+  Boot time: Fri Jun 25 04:06:08 CDT 2021  (epoch: 1624611968)
+  Time Zone: America/Chicago
+  Uptime:    1 day,  7:39,  1 user
+  LoadAvg:   [8 CPU] 0.08 (1%), 0.03 (0%), 0.06 (1%)
+  /proc/stat:
+    procs_running: 1   procs_blocked: 0    processes [Since boot]: 51667
+    cpu [Utilization since boot]:
+      us 0%, ni 0%, sys 0%, idle 100%, iowait 0%, irq 0%, sftirq 0%, steal 0%
+
+CPU
+  8 logical processors (8 CPU cores)
+  2 Intel Xeon CPU E5-2407 0 @ 2.20GHz (flags: aes,constant_tsc,ht,lm,nx,pae,vmx) 
+  └─4 threads / 4 cores each
+
+MEMORY
+  Stats graphed as percent of MemTotal:
+    MemUsed    ▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊...............................  38.8%
+    Buffers    ..................................................   0.1%
+    Cached     ▊▊▊▊▊▊▊▊▊▊▊▊▊▊....................................  28.1%
+    HugePages  ..................................................   0.0%
+    Dirty      ..................................................   0.0%
+  RAM:
+    7.5 GiB total ram
+    2.9 GiB (39%) used
+    0.8 GiB (11%) used excluding Buffers/Cached
+    0 GiB (0%) dirty
+  HugePages:
+    No ram pre-allocated to HugePages
+  THP:
+    157696 kB allocated to THP 
+  LowMem/Slab/PageTables/Shmem:
+    0.34 GiB (5%) of total ram used for Slab
+    0.01 GiB (0%) of total ram used for PageTables
+    0.01 GiB (0%) of total ram used for Shmem
+  Swap:
+    0 GiB (0%) used of 7.8 GiB total
+
+STORAGE
+  Whole Disks from /proc/partitions:
+    1 disks, totaling 465 GiB (0.45 TiB)
+    - - - - - - - - - - - - - - - - - - - - -
+    Disk 	Size in GiB
+    ----	-----------
+    sda 	465
+
+  Disk layout from lsblk:
+    NAME              MAJ:MIN RM   SIZE RO TYPE MOUNTPOINT
+    sda                 8:0    0 465.3G  0 disk 
+    ├─sda1              8:1    0     1G  0 part /boot/efi
+    ├─sda2              8:2    0     1G  0 part /boot
+    └─sda3              8:3    0 463.2G  0 part 
+      ├─rl-root       253:0    0   100G  0 lvm  /
+      ├─rl-swap       253:1    0   7.9G  0 lvm  [SWAP]
+      ├─rl-home       253:2    0   150G  0 lvm  /home
+      └─rl-opt_data01 253:3    0 205.4G  0 lvm  /opt/data01
+    sr0                11:0    1  1024M  0 rom  
+
+  Filesystem usage from df:
+    Filesystem                1K-blocks    Used Available Use% Mounted on
+    /dev/mapper/rl-root       104806400 4098152 100708248   4% /
+    /dev/sda2                   1038336  198028    840308  20% /boot
+    /dev/sda1                   1046512    5888   1040624   1% /boot/efi
+    /dev/mapper/rl-opt_data01 215278896 1534088 213744808   1% /opt/data01
+    /dev/mapper/rl-home       157209600 1130132 156079468   1% /home
+
+LSPCI
+  Net:
+    1 dual-port (2) Broadcom Inc. and subsidiaries NetXtreme BCM5720 2-port Gigabit Ethernet PCIe
+  Storage:
+    (1) Broadcom / LSI MegaRAID SAS 2008 [Falcon] (rev 03)
+    (1) Intel Corporation C600/X79 series chipset 6-Port SATA AHCI Controller (rev 05)
+  VGA:
+    Matrox Electronics Systems Ltd. G200eR2
+
+ETHTOOL
+  Interface Status:
+    eno1  0000:02:00.0  link=up 100Mb/s full (autoneg=Y)  rx ring 200/2047  drv tg3 v4.18.0-305.3.1.el8_4.x86_64 / fw FFV21.60.2 bc 5720-v1.39
+    eno2  0000:02:00.1  link=DOWN                         rx ring 200/2047  drv tg3 v4.18.0-305.3.1.el8_4.x86_64 / fw FFV21.60.2 bc 5720-v1.39
+  Interface Errors:
+    eno1  rx_discards: 1
+          mbuf_lwm_thresh_hit: 1
+
