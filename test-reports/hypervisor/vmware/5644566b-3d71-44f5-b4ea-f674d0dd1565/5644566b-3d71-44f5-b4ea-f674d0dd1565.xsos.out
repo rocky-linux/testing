@@ -1,0 +1,125 @@
+DMIDECODE
+  BIOS:
+    Vend: VMware, Inc.
+    Vers: VMW71.00V.16722896.B64.2008100651
+    Date: 08/10/2020
+    BIOS Rev:
+    FW Rev:  
+  System:
+    Mfr:  VMware, Inc.
+    Prod: VMware7,1
+    Vers: None
+    Ser:  ⣿⣿⣿⣿⣿⣿-⣿⣿ ⣿⣿ ⣿⣿ ⣿⣿ ⣿⣿ ⣿⣿ ⣿⣿ ⣿⣿-⣿⣿ ⣿⣿ ⣿⣿ ⣿⣿ ⣿⣿ ⣿⣿ ⣿⣿ ⣿⣿
+    UUID: ⣿⣿⣿⣿⣿⣿⣿⣿-⣿⣿⣿⣿-⣿⣿⣿⣿-⣿⣿⣿⣿-⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+  CPU:
+    2 of 128 CPU sockets populated, 1 cores/0 threads per CPU
+    2 total cores, 0 total threads
+    Mfr:  Not Specified
+    Fam:  Unknown
+    Freq: 2769 MHz
+    Vers: Unknown Processor
+  Memory:
+    Total: 2048 MiB (2 GiB)
+    DIMMs: 1 of 130 populated
+    MaxCapacity: 3072 MiB (3 GiB / 0.00 TiB)
+
+OS
+  Hostname: SCRUBBED
+  Distro:   [redhat-release] Rocky Linux release 8.4 (Green Obsidian)
+            [rocky-release] Rocky Linux release 8.4 (Green Obsidian)
+            [os-release] Rocky Linux 8.4 (Green Obsidian) 8.4 (Green Obsidian)
+  RHN:      (missing)
+  RHSM:     (missing)
+  YUM:      1 enabled plugins: debuginfo-install
+  Runlevel: N 3  (default multi-user)
+  SELinux:  enforcing  (default enforcing)
+  Arch:     mach=x86_64  cpu=x86_64  platform=x86_64
+  Kernel:
+    Booted kernel:  4.18.0-305.el8.x86_64
+    GRUB default:   unknown  (no grub config file)  
+    Build version:
+      Linux version 4.18.0-305.el8.x86_64 (mockbuild@ord1-prod-x86build004.svc.aws.rockylinux.org) (gcc version 8.4.1 20200928 (Red Hat 8.4.1-1) (GCC)) #1 
+      SMP Thu May 27 16:46:28 UTC 2021
+    Booted kernel cmdline:
+      BOOT_IMAGE=(hd0,gpt2)/vmlinuz-4.18.0-305.el8.x86_64 root=/dev/mapper/rl_rocky-root ro crashkernel=auto resume=/dev/mapper/rl_rocky-swap 
+      rd.lvm.lv=rl_rocky/root rd.lvm.lv=rl_rocky/swap rhgb quiet
+    GRUB default kernel cmdline:  
+      unknown  (no grub config file)
+    Taint-check: 134217728  (see https://access.redhat.com/solutions/40594)
+      27  BIT_BY_ZOMBIE: Kernel booted with OMGZOMBIES param
+    - - - - - - - - - - - - - - - - - - -
+  Sys time:  Mon Jun  7 09:44:56 EDT 2021
+  Boot time: Mon Jun  7 09:26:50 EDT 2021  (epoch: 1623072410)
+  Time Zone: America/New_York
+  Uptime:    18 min,  1 user
+  LoadAvg:   [2 CPU] 0.01 (0%), 0.05 (2%), 0.06 (3%)
+  /proc/stat:
+    procs_running: 1   procs_blocked: 0    processes [Since boot]: 14688
+    cpu [Utilization since boot]:
+      us 2%, ni 0%, sys 1%, idle 96%, iowait 0%, irq 1%, sftirq 0%, steal 0%
+
+CPU
+  2 logical processors 
+  2 Intel Core i7-7600U CPU @ 2.80GHz (flags: aes,constant_tsc,lm,nx,pae,rdrand) 
+
+MEMORY
+  Stats graphed as percent of MemTotal:
+    MemUsed    ▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊...............................  37.5%
+    Buffers    ..................................................   0.3%
+    Cached     ▊▊▊▊▊▊▊▊▊▊........................................  20.4%
+    HugePages  ..................................................   0.0%
+    Dirty      ..................................................   0.0%
+  RAM:
+    1.7 GiB total ram
+    0.7 GiB (38%) used
+    0.3 GiB (17%) used excluding Buffers/Cached
+    0 GiB (0%) dirty
+  HugePages:
+    No ram pre-allocated to HugePages
+  THP:
+    18432 kB allocated to THP 
+  LowMem/Slab/PageTables/Shmem:
+    0.1 GiB (6%) of total ram used for Slab
+    0.01 GiB (0%) of total ram used for PageTables
+    0.01 GiB (0%) of total ram used for Shmem
+  Swap:
+    0 GiB (0%) used of 1.6 GiB total
+
+STORAGE
+  Whole Disks from /proc/partitions:
+    1 disks, totaling 16 GiB (0.02 TiB)
+    - - - - - - - - - - - - - - - - - - - - -
+    Disk 	Size in GiB
+    ----	-----------
+    sda 	16
+
+  Disk layout from lsblk:
+    NAME              MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
+    sda                 8:0    0   16G  0 disk 
+    ├─sda1              8:1    0  600M  0 part /boot/efi
+    ├─sda2              8:2    0    1G  0 part /boot
+    └─sda3              8:3    0 14.4G  0 part 
+      ├─rl_rocky-root 253:0    0 12.8G  0 lvm  /
+      └─rl_rocky-swap 253:1    0  1.6G  0 lvm  [SWAP]
+    sr0                11:0    1 1024M  0 rom  
+
+  Filesystem usage from df:
+    Filesystem                1K-blocks    Used Available Use% Mounted on
+    /dev/mapper/rl_rocky-root  13420544 1464456  11956088  11% /
+    /dev/sda2                   1038336  197636    840700  20% /boot
+    /dev/sda1                    613184    2264    610920   1% /boot/efi
+
+LSPCI
+  Net:
+    (1) Intel Corporation 82545EM Gigabit Ethernet Controller (Copper) (rev 01)
+  Storage:
+    (1) Broadcom / LSI 53c1030 PCI-X Fusion-MPT Dual Ultra320 SCSI (rev 01)
+  VGA:
+    VMware SVGA II Adapter
+
+ETHTOOL
+  Interface Status:
+    ens33  0000:02:01.0  link=up 1000Mb/s full (autoneg=Y)  rx ring 256/4096  drv e1000 v7.3.21-k8-NAPI / fw UNKNOWN
+  Interface Errors:
+    [None]
+

@@ -1,0 +1,125 @@
+DMIDECODE
+  BIOS:
+    Vend: EFI Development Kit II / OVMF
+    Vers: 0.0.0
+    Date: 02/06/2015
+    BIOS Rev: 0.0
+    FW Rev:  
+  System:
+    Mfr:  Nutanix
+    Prod: AHV
+    Vers: RHEL 7.6.0 PC (i440FX + PIIX, 1996)
+    Ser:  ⣿⣿⣿⣿⣿⣿⣿⣿-⣿⣿⣿⣿-⣿⣿⣿⣿-⣿⣿⣿⣿-⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+    UUID: ⣿⣿⣿⣿⣿⣿⣿⣿-⣿⣿⣿⣿-⣿⣿⣿⣿-⣿⣿⣿⣿-⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+  CPU:
+    1 of 1 CPU sockets populated, 2 cores/1 threads per CPU
+    2 total cores, 1 total threads
+    Mfr:  Red Hat
+    Fam: 
+    Freq: 2000 MHz
+    Vers: RHEL 7.6.0 PC (i440FX + PIIX, 1996)
+  Memory:
+    Total: 2048 MiB (2 GiB)
+    DIMMs: 1 of 1 populated
+    MaxCapacity: 2048 MiB (2 GiB / 0.00 TiB)
+
+OS
+  Hostname: SCRUBBED
+  Distro:   [redhat-release] Rocky Linux release 8.4 (Green Obsidian)
+            [rocky-release] Rocky Linux release 8.4 (Green Obsidian)
+            [os-release] Rocky Linux 8.4 (Green Obsidian) 8.4 (Green Obsidian)
+  RHN:      (missing)
+  RHSM:     (missing)
+  YUM:      1 enabled plugins: debuginfo-install
+  Runlevel: N 3  (default multi-user)
+  SELinux:  enforcing  (default enforcing)
+  Arch:     mach=x86_64  cpu=x86_64  platform=x86_64
+  Kernel:
+    Booted kernel:  4.18.0-305.el8.x86_64
+    GRUB default:   unknown  (no grub config file)  
+    Build version:
+      Linux version 4.18.0-305.el8.x86_64 (mockbuild@ord1-prod-x86build004.svc.aws.rockylinux.org) (gcc version 8.4.1 20200928 (Red Hat 8.4.1-1) (GCC)) #1 
+      SMP Thu May 27 16:46:28 UTC 2021
+    Booted kernel cmdline:
+      BOOT_IMAGE=(hd0,gpt2)/vmlinuz-4.18.0-305.el8.x86_64 root=/dev/mapper/rl_rocky-root ro crashkernel=auto resume=/dev/mapper/rl_rocky-swap 
+      rd.lvm.lv=rl_rocky/root rd.lvm.lv=rl_rocky/swap
+    GRUB default kernel cmdline:  
+      unknown  (no grub config file)
+    Taint-check: 0  (kernel untainted)
+    - - - - - - - - - - - - - - - - - - -
+  Sys time:  Wed Jun  9 21:49:23 CEST 2021
+  Boot time: Wed Jun  9 21:44:01 CEST 2021  (epoch: 1623267841)
+  Time Zone: Europe/Belgrade
+  Uptime:    5 min,  1 user
+  LoadAvg:   [2 CPU] 0.22 (11%), 0.26 (13%), 0.12 (6%)
+  /proc/stat:
+    procs_running: 1   procs_blocked: 0    processes [Since boot]: 14413
+    cpu [Utilization since boot]:
+      us 6%, ni 0%, sys 6%, idle 78%, iowait 4%, irq 1%, sftirq 1%, steal 4%
+
+CPU
+  2 logical processors (2 CPU cores)
+  1 Intel Pentium CPU G4560 @ 3.50GHz (flags: aes,constant_tsc,ht,lm,nx,pae,rdrand) 
+  └─2 threads / 2 cores each
+
+MEMORY
+  Stats graphed as percent of MemTotal:
+    MemUsed    ▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊..............................  40.3%
+    Buffers    ..................................................   0.2%
+    Cached     ▊▊▊▊▊▊▊▊▊▊........................................  20.7%
+    HugePages  ..................................................   0.0%
+    Dirty      ..................................................   0.1%
+  RAM:
+    1.7 GiB total ram
+    0.7 GiB (40%) used
+    0.3 GiB (19%) used excluding Buffers/Cached
+    0 GiB (0%) dirty
+  HugePages:
+    No ram pre-allocated to HugePages
+  THP:
+    14336 kB allocated to THP 
+  LowMem/Slab/PageTables/Shmem:
+    0.1 GiB (6%) of total ram used for Slab
+    0.01 GiB (0%) of total ram used for PageTables
+    0.01 GiB (0%) of total ram used for Shmem
+  Swap:
+    0 GiB (0%) used of 1.6 GiB total
+
+STORAGE
+  Whole Disks from /proc/partitions:
+    1 disks, totaling 16 GiB (0.02 TiB)
+    - - - - - - - - - - - - - - - - - - - - -
+    Disk 	Size in GiB
+    ----	-----------
+    sda 	16
+
+  Disk layout from lsblk:
+    NAME              MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
+    sda                 8:0    0   16G  0 disk 
+    ├─sda1              8:1    0  600M  0 part /boot/efi
+    ├─sda2              8:2    0    1G  0 part /boot
+    └─sda3              8:3    0 14.4G  0 part 
+      ├─rl_rocky-root 253:0    0 12.8G  0 lvm  /
+      └─rl_rocky-swap 253:1    0  1.6G  0 lvm  [SWAP]
+    sr0                11:0    1 1024M  0 rom  
+
+  Filesystem usage from df:
+    Filesystem                1K-blocks    Used Available Use% Mounted on
+    /dev/mapper/rl_rocky-root  13420544 1585688  11834856  12% /
+    /dev/sda2                   1038336  177208    861128  18% /boot
+    /dev/sda1                    613184    2268    610916   1% /boot/efi
+
+LSPCI
+  Net:
+    (1) Red Hat, Inc. Virtio network device
+  Storage:
+    (1) Red Hat, Inc. Virtio SCSI
+  VGA:
+    Device 1234:1111 (rev 02)
+
+ETHTOOL
+  Interface Status:
+    ens3  0000:00:03.0  link=up Unknown! unknown! (autoneg=N)  rx ring 256/256  drv virtio_net v1.0.0 / fw UNKNOWN
+  Interface Errors:
+    [None]
+
