@@ -1,0 +1,155 @@
+DMIDECODE
+  BIOS:
+    Vend: Ampere(TM)
+    Vers: 0.9.20200724
+    Date: 2020/07/24
+    BIOS Rev: 5.15
+    FW Rev:   0.6
+  System:
+    Mfr:  WIWYNN
+    Prod: Mt.Jade Server System B81.03001.0005
+    Vers: EVT2
+    Ser:  ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+    UUID: ⣿⣿⣿⣿⣿⣿⣿⣿-⣿⣿⣿⣿-⣿⣿⣿⣿-⣿⣿⣿⣿-⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+  CPU:
+    2 of 2 CPU sockets populated, 80 cores/80 threads per CPU
+    160 total cores, 160 total threads
+    Mfr:  Ampere(TM)
+    Fam:  ARMv8
+    Freq: 2800 MHz
+    Vers: Ampere(TM) Altra(TM) Processor
+  Memory:
+    Total: 524288 MiB (512 GiB)
+    DIMMs: 32 of 160 populated
+    MaxCapacity: 8388608 MiB (8192 GiB / 8.00 TiB)
+
+OS
+  Hostname: SCRUBBED
+  Distro:   [redhat-release] Rocky Linux release 8.4 (Green Obsidian)
+            [rocky-release] Rocky Linux release 8.4 (Green Obsidian)
+            [os-release] Rocky Linux 8.4 (Green Obsidian) 8.4 (Green Obsidian)
+  RHN:      (missing)
+  RHSM:     (missing)
+  YUM:      1 enabled plugins: debuginfo-install
+  Runlevel: N 3  (default multi-user)
+  SELinux:  enforcing  (default enforcing)
+  Arch:     mach=aarch64  cpu=aarch64  platform=aarch64
+  Kernel:
+    Booted kernel:  4.18.0-305.3.1.el8_4.aarch64
+    GRUB default:     
+    Build version:
+      Linux version 4.18.0-305.3.1.el8_4.aarch64 (mockbuild@ord1-prod-a64build002.svc.aws.rockylinux.org) (gcc version 8.4.1 20200928 (Red Hat 8.4.1-1) (GCC)) #1 SMP Thu Jun 17 07:49:56 UTC 2021
+    Booted kernel cmdline:
+      BOOT_IMAGE=(hd1,gpt6)/boot/vmlinuz-4.18.0-305.3.1.el8_4.aarch64 root=UUID=f338f39e-ff9b-4c4a-9288-4846ae50227f ro crashkernel=auto
+    GRUB default kernel cmdline:  
+      
+    Taint-check: 0  (kernel untainted)
+    - - - - - - - - - - - - - - - - - - -
+  Sys time:  Mon Jun 28 11:47:36 EDT 2021
+  Boot time: Fri Jun 25 15:37:10 EDT 2021  (epoch: 1624649830)
+  Time Zone: America/New_York
+  Uptime:    2 days, 20:10,  1 user
+  LoadAvg:   [160 CPU] 0.03 (0%), 0.01 (0%), 0.00 (0%)
+  /proc/stat:
+    procs_running: 1   procs_blocked: 0    processes [Since boot]: 38664
+    cpu [Utilization since boot]:
+      us 0%, ni 0%, sys 0%, idle 100%, iowait 0%, irq 0%, sftirq 0%, steal 0%
+
+CPU
+  160 logical processors 
+   (flags: aes) 
+
+MEMORY
+  Stats graphed as percent of MemTotal:
+    MemUsed    ..................................................   1.0%
+    Buffers    ..................................................   0.0%
+    Cached     ..................................................   0.2%
+    HugePages  ..................................................   0.0%
+    Dirty      ..................................................   0.0%
+  RAM:
+    509.5 GiB total ram
+    5.1 GiB (1%) used
+    4.1 GiB (1%) used excluding Buffers/Cached
+    0 GiB (0%) dirty
+  HugePages:
+    No ram pre-allocated to HugePages
+  THP:
+    THP not currently in use
+  LowMem/Slab/PageTables/Shmem:
+    1.83 GiB (0%) of total ram used for Slab
+    0.01 GiB (0%) of total ram used for PageTables
+    0.05 GiB (0%) of total ram used for Shmem
+  Swap:
+    0 GiB (0%) used of 10 GiB total
+
+STORAGE
+  Whole Disks from /proc/partitions:
+    0 disks, totaling 0 GiB (0.00 TiB)
+    - - - - - - - - - - - - - - - - - - - - -
+    Disk 	Size in GiB
+    ----	-----------
+
+  Disk layout from lsblk:
+    NAME        MAJ:MIN RM   SIZE RO TYPE MOUNTPOINT
+    sr0          11:0    1   1.6G  0 rom  
+    nvme0n1     259:0    0 894.3G  0 disk 
+    ├─nvme0n1p1 259:1    0   600M  0 part /boot/efi
+    ├─nvme0n1p2 259:2    0    10G  0 part 
+    ├─nvme0n1p3 259:3    0    10G  0 part [SWAP]
+    ├─nvme0n1p4 259:4    0   300G  0 part 
+    ├─nvme0n1p5 259:5    0   300G  0 part 
+    ├─nvme0n1p6 259:6    0 251.7G  0 part /
+    ├─nvme0n1p7 259:7    0    22G  0 part 
+    └─nvme0n1p8 259:8    0  1007K  0 part 
+
+  Filesystem usage from df:
+    Filesystem     1K-blocks    Used Available Use% Mounted on
+    /dev/nvme0n1p6 263762416 3878652 259883764   2% /
+    /dev/nvme0n1p1    613184   17884    595300   3% /boot/efi
+
+DM-MULTIPATH
+  [No paths detected]
+
+LSPCI
+  Net:
+    1 dual-port (2) Mellanox Technologies MT27710 Family [ConnectX-4 Lx]
+  Storage:
+  VGA:
+    ASPEED Technology, Inc. ASPEED Graphics Family (rev 41)
+
+ETHTOOL
+  Interface Status:
+    enP4p3s0u1u3c2  usb-0004:03:00.0-1.3  link=up                             rx ring UNKNOWN    drv cdc_ether v22-Aug-2005 / fw CDC Ethernet Device
+    enP7p1s0f0      0007:01:00.0          link=DOWN                           rx ring 1024/8192  drv mlx5_core v5.0-0 / fw 14.28.2006 (MT_2420110034)
+    enP7p1s0f1      0007:01:00.1          link=up 25000Mb/s full (autoneg=Y)  rx ring 1024/8192  drv mlx5_core v5.0-0 / fw 14.28.2006 (MT_2420110034)
+  Interface Errors:
+    enP7p1s0f1  tx_tso_packets: 321
+                tx_tso_bytes: 755093
+                rx_steer_missed_packets: 169578
+                tx2_tso_packets: 9
+                tx2_tso_bytes: 7577
+                tx7_tso_packets: 107
+                tx7_tso_bytes: 260338
+                tx9_tso_packets: 4
+                tx9_tso_bytes: 3073
+                tx13_tso_packets: 42
+                tx13_tso_bytes: 106600
+                tx16_tso_packets: 12
+                tx16_tso_bytes: 10134
+                tx25_tso_packets: 9
+                tx25_tso_bytes: 23650
+                tx34_tso_packets: 71
+                tx34_tso_bytes: 182976
+                tx35_tso_packets: 3
+                tx35_tso_bytes: 5301
+                tx40_tso_packets: 7
+                tx40_tso_bytes: 15820
+                tx42_tso_packets: 16
+                tx42_tso_bytes: 41272
+                tx44_tso_packets: 22
+                tx44_tso_bytes: 58784
+                tx58_tso_packets: 7
+                tx58_tso_bytes: 15096
+                tx62_tso_packets: 12
+                tx62_tso_bytes: 24472
+

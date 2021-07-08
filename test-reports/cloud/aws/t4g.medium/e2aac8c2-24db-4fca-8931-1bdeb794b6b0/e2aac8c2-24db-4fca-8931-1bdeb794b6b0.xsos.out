@@ -1,0 +1,116 @@
+DMIDECODE
+  BIOS:
+    Vend: Amazon EC2
+    Vers: 1.0
+    Date: 11/1/2018
+    BIOS Rev: 1.0
+    FW Rev:
+  System:
+    Mfr:  Amazon EC2
+    Prod: t4g.medium
+    Vers: Not Specified
+    Ser:  ⣿⣿⣿⣿⣿⣿⣿⣿-⣿⣿⣿⣿-⣿⣿⣿⣿-⣿⣿⣿⣿-⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+    UUID: ⣿⣿⣿⣿⣿⣿⣿⣿-⣿⣿⣿⣿-⣿⣿⣿⣿-⣿⣿⣿⣿-⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+  CPU:
+    1 of 1 CPU sockets populated, 2 cores/2 threads per CPU
+    2 total cores, 2 total threads
+    Mfr:  AWS
+    Fam:  ARMv8
+    Freq: 2500 MHz
+    Vers: AWS Graviton2
+  Memory:
+    Total: 0 MiB (0 GiB)
+    DIMMs: 0 of 0 populated
+    MaxCapacity: 0 MiB (0 GiB / 0.00 TiB)
+
+OS
+  Hostname: SCRUBBED
+  Distro:   [redhat-release] Rocky Linux release 8.4 (Green Obsidian)
+            [rocky-release] Rocky Linux release 8.4 (Green Obsidian)
+            [os-release] Rocky Linux 8.4 (Green Obsidian) 8.4 (Green Obsidian)
+  RHN:      (missing)
+  RHSM:     (missing)
+  YUM:      1 enabled plugins: debuginfo-install
+  Runlevel: N 3  (default multi-user)
+  SELinux:  enforcing  (default enforcing)
+  Arch:     mach=aarch64  cpu=aarch64  platform=aarch64
+  Kernel:
+    Booted kernel:  4.18.0-305.3.1.el8_4.aarch64
+    GRUB default:   4.18.0-305.3.1.el8_4.aarch64
+    Build version:
+      Linux version 4.18.0-305.3.1.el8_4.aarch64 (mockbuild@ord1-prod-a64build002.svc.aws.rockylinux.org) (gcc version 8.4.1 20200928 (Red Hat 8.4.1-1) (GCC)) #1 SMP Thu Jun 17 07:49:56 UTC 2021
+    Booted kernel cmdline:
+      BOOT_IMAGE=(hd0,gpt2)/boot/vmlinuz-4.18.0-305.3.1.el8_4.aarch64 root=UUID=d2282e29-b38c-443f-a0ed-a65b4835594d ro console=ttyS0,115200n8 no_timer_check net.ifnames=0
+      nvme_core.io_timeout=4294967295 nvme_core.max_retries=10 crashkernel=auto console=tty0
+    GRUB default kernel cmdline:
+      ro root=UUID=d2282e29-b38c-443f-a0ed-a65b4835594d console=hvc0 LANG=en_US.UTF-8
+    Taint-check: 0  (kernel untainted)
+    - - - - - - - - - - - - - - - - - - -
+  Sys time:  Thu Jun 24 22:54:38 UTC 2021
+  Boot time: Thu Jun 24 22:20:42 UTC 2021  (epoch: 1624573242)
+  Time Zone: UTC
+  Uptime:    33 min,  1 user
+  LoadAvg:   [2 CPU] 0.29 (14%), 0.11 (6%), 0.03 (2%)
+  /proc/stat:
+    procs_running: 1   procs_blocked: 0    processes [Since boot]: 16648
+    cpu [Utilization since boot]:
+      us 1%, ni 0%, sys 0%, idle 97%, iowait 0%, irq 0%, sftirq 0%, steal 1%
+
+CPU
+  2 logical processors
+   (flags: aes)
+
+MEMORY
+  Stats graphed as percent of MemTotal:
+    MemUsed    ▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊............................  44.1%
+    Buffers    ..................................................   0.2%
+    Cached     ▊▊▊▊▊▊▊▊▊▊▊▊▊▊....................................  28.3%
+    HugePages  ..................................................   0.0%
+    Dirty      ▊▊................................................   3.6%
+  RAM:
+    3.4 GiB total ram
+    1.5 GiB (44%) used
+    0.5 GiB (16%) used excluding Buffers/Cached
+    0.12 GiB (4%) dirty
+  HugePages:
+    No ram pre-allocated to HugePages
+  THP:
+    THP not currently in use
+  LowMem/Slab/PageTables/Shmem:
+    0.13 GiB (4%) of total ram used for Slab
+    0.01 GiB (0%) of total ram used for PageTables
+    0.02 GiB (1%) of total ram used for Shmem
+  Swap:
+    No system swap space configured
+
+STORAGE
+  Whole Disks from /proc/partitions:
+    0 disks, totaling 0 GiB (0.00 TiB)
+    - - - - - - - - - - - - - - - - - - - - -
+    Disk        Size in GiB
+    ----        -----------
+
+  Disk layout from lsblk:
+    NAME        MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
+    nvme0n1     259:0    0   10G  0 disk
+    ├─nvme0n1p1 259:1    0  600M  0 part /boot/efi
+    └─nvme0n1p2 259:2    0  9.4G  0 part /
+
+  Filesystem usage from df:
+    Filesystem     1K-blocks    Used Available Use% Mounted on
+    /dev/nvme0n1p2   9860076 1656828   8203248  17% /
+    /dev/nvme0n1p1    613184    6892    606292   2% /boot/efi
+
+LSPCI
+  Net:
+    (1) Amazon.com, Inc. Elastic Network Adapter (ENA)
+  Storage:
+  VGA:
+
+ETHTOOL
+  Interface Status:
+    eth0  0000:00:05.0  link=up  rx ring 1024/2048  drv ena v4.18.0-305.3.1.el8_4.aarch64 / fw UNKNOWN
+  Interface Errors:
+    eth0  queue_0_tx_unmask_interrupt: 8679
+          queue_1_tx_unmask_interrupt: 7129
+
