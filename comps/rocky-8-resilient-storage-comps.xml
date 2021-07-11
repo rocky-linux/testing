@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE comps PUBLIC "-//Red Hat, Inc.//DTD Comps info//EN" "comps.dtd">
+<comps>
+  <group>
+    <id>ha</id>
+    <name>High Availability</name>
+    <name xml:lang="as">অতিমাত্ৰাত উপলব্ধ</name>
+    <name xml:lang="bn">অতিমাত্রায় উপলব্ধ</name>
+    <name xml:lang="cs">Vysoká dostupnost</name>
+    <name xml:lang="de">Hochverfügbarkeit</name>
+    <name xml:lang="de_CH">Hochverfügbarkeit</name>
+    <name xml:lang="es">Alta disponibilidad</name>
+    <name xml:lang="fr">Haute disponibilité</name>
+    <name xml:lang="gu">ઊંચી ઉપલબ્ધતા</name>
+    <name xml:lang="hi">उच्च उपलब्धता</name>
+    <name xml:lang="it">High Availability</name>
+    <name xml:lang="ja">高可用性</name>
+    <name xml:lang="kn">ಅತಿ ಲಭ್ಯತೆ</name>
+    <name xml:lang="ko">고가용성</name>
+    <name xml:lang="ml">ഹൈ അവയിലബിളിറ്റി</name>
+    <name xml:lang="mr">उच्च उपलब्धता</name>
+    <name xml:lang="or">ଅଧିକ ମାତ୍ରାରେ ଉପଲବ୍ଧତା</name>
+    <name xml:lang="pa">ਉੱਚ ਉਪਲੱਬਧਤਾ</name>
+    <name xml:lang="pl">Wysoka dostępność</name>
+    <name xml:lang="pt">Alta disponibilidade</name>
+    <name xml:lang="pt_BR">Alta disponibilidade</name>
+    <name xml:lang="ru">Высокий уровень доступности</name>
+    <name xml:lang="sv">Hög tillgänglighet</name>
+    <name xml:lang="ta">அதிகம் கிடைக்கூடியது</name>
+    <name xml:lang="te">అత్యధిక అందుబాటు</name>
+    <name xml:lang="uk">Висока доступність</name>
+    <name xml:lang="zh">高可用性</name>
+    <name xml:lang="zh_CN">高可用性</name>
+    <name xml:lang="zh_TW">高可用性</name>
+    <description>Infrastructure for highly available services and/or shared storage.</description>
+    <description xml:lang="as">অতিমাত্ৰাত উপলব্ধ সেৱা আৰু/বা যৌথ ব্যৱহাৰৰ সংৰক্ষণৰ বাবে আন্তঃগাথনী।</description>
+    <description xml:lang="bn">অতিমাত্রায় উপলব্ধ পরিসেবা এবং/অথবা যৌথ ব্যবহারের সংগ্রহস্থলের জন্য পরিকাঠামো।</description>
+    <description xml:lang="cs">Infrastruktura pro sdílená úložiště a služby s vysokou dostupností.</description>
+    <description xml:lang="de">Infrastruktur für Hochverfügbarkeitsdienste und/oder gemeinsame genutzter Storage.</description>
+    <description xml:lang="de_CH">Infrastruktur für Hochverfügbarkeitsdienste und/oder gemeinsame genutzter Storage.</description>
+    <description xml:lang="es">Infraestructura para servicios altamente disponibles y/o almacenaje compartido.</description>
+    <description xml:lang="fr">Infrastructure pour services de haute disponibilité et/ou stockage partagé.</description>
+    <description xml:lang="gu">ટોચની ઉપલબ્ધ સેવાઓ અને/અથવા વહેંચાયેલ સંગ્રહ માટે ઇન્ફ્રાસ્ટ્રક્ચર.</description>
+    <description xml:lang="hi">उच्च रूप से उपलब्ध सेवाओं और/या साझा भंडार के लिए आधारभूत ढाँचा.</description>
+    <description xml:lang="it">Infrastruttura per servizi altamente disponibili e/o storage condiviso.</description>
+    <description xml:lang="ja">高可用性サービスや共有ストレージのインフラストラクチャー。</description>
+    <description xml:lang="kn">ಅತಿಯಾಗಿ ಲಭ್ಯವಿರುವ ಸೇವೆಗಳು ಹಾಗು/ಅಥವ ಹಂಚಲಾದ ಶೇಖರಣೆಯ ಸಂಪನ್ಮೂಲ.</description>
+    <description xml:lang="ko">고가용성 서비스 또는/그리고 공유 저장소를 위한 인프라스트럭쳐.</description>
+    <description xml:lang="ml">ഹൈ അവയിലബിളിറ്റി സര്‍വീസുകള്‍, പങ്കിടുന്ന സ്റ്റോറേജ് എന്നിവയ്ക്കുള്ള ഇന്‍ഫ്രാസ്ട്രക്ടര്‍.</description>
+    <description xml:lang="mr">उच्च उपलब्ध सर्व्हिसेस् व/किंवा शेअर्ड स्टोरेजकरीता इंफ्रास्ट्रक्चर.</description>
+    <description xml:lang="or">ଅଧିକ ମାତ୍ରାରେ ଉପଲବ୍ଧ ସର୍ଭିସଗୁଡ଼ିକ ପାଇଁ ଅବସଂରଚନା ଏବଂ/ଅଥବା ସହଭାଗୀ ଭଣ୍ଡାର।</description>
+    <description xml:lang="pa">ਵੱਧ ਉਪਲੱਬਧ ਸੇਵਾਵਾਂ ਅਤੇ/ਜਾਂ ਸ਼ੇਅਰ ਸਟੋਰੇਜ਼ ਲਈ ਢਾਂਚਾ।</description>
+    <description xml:lang="pl">Infrastruktura dla wysoko dostępnych usług i/lub współdzielonej pamięci masowej.</description>
+    <description xml:lang="pt">Infraestrutura para serviços altamente disponíveis e/ou armazenamento compartilhado.</description>
+    <description xml:lang="pt_BR">Infraestrutura para serviços altamente disponíveis e/ou armazenamento compartilhado.</description>
+    <description xml:lang="ru">Инфраструктура служб с высоким уровнем доступа и общего хранилища.</description>
+    <description xml:lang="sv">Infrastruktur för tjänster med hög tillgänglighet och/eller delad lagring.</description>
+    <description xml:lang="ta">அதிகமாக கிடைக்கக்கூடிய சேவைகள் மற்றும்/அல்லது பகிரப்பட்ட சேமிபக்கதிற்கான உள்ளமைப்பு.</description>
+    <description xml:lang="te">అధికంగా అందుబాటులోవున్న సేవలు మరియు/లేదా భాగస్వామ్య నిల్వ కొరకు అవస్థాపన.</description>
+    <description xml:lang="uk">Інфраструктура служб з високим рівнем доступності та спільні сховища.</description>
+    <description xml:lang="zh">高可用性服務與/或共享儲存裝置的架構。</description>
+    <description xml:lang="zh_CN">用于高度可用服务和（或者）共享存储的基础设施。</description>
+    <description xml:lang="zh_TW">高可用性服務與/或共享儲存裝置的架構。</description>
+    <default>true</default>
+    <uservisible>false</uservisible>
+    <packagelist>
+      <packagereq type="mandatory">pacemaker</packagereq>
+      <packagereq type="mandatory">pacemaker-cts</packagereq>
+      <packagereq type="mandatory">pacemaker-nagios-plugins-metadata</packagereq>
+      <packagereq type="mandatory">pacemaker-remote</packagereq>
+      <packagereq type="mandatory">pacemaker-schemas</packagereq>
+      <packagereq type="default">fence-agents-aliyun</packagereq>
+      <packagereq type="default">fence-agents-all</packagereq>
+      <packagereq type="default">fence-agents-aws</packagereq>
+      <packagereq type="default">fence-agents-azure-arm</packagereq>
+      <packagereq type="default">fence-agents-gce</packagereq>
+      <packagereq type="default">omping</packagereq>
+      <packagereq type="default">pacemaker-doc</packagereq>
+      <packagereq type="default">pcs</packagereq>
+      <packagereq type="optional">awscli</packagereq>
+      <packagereq type="optional">booth</packagereq>
+      <packagereq type="optional">booth-arbitrator</packagereq>
+      <packagereq type="optional">booth-site</packagereq>
+      <packagereq type="optional">booth-test</packagereq>
+      <packagereq type="optional">clufter-cli</packagereq>
+      <packagereq type="optional">clufter-lib-ccs</packagereq>
+      <packagereq type="optional">clufter-lib-general</packagereq>
+      <packagereq type="optional">clufter-lib-pcs</packagereq>
+      <packagereq type="optional">corosync-qdevice</packagereq>
+      <packagereq type="optional">corosync-qnetd</packagereq>
+      <packagereq type="optional">libknet1-plugins-all</packagereq>
+      <packagereq type="optional">pcs-snmp</packagereq>
+      <packagereq type="optional">resource-agents</packagereq>
+      <packagereq type="optional">resource-agents-aliyun</packagereq>
+      <packagereq type="optional">resource-agents-gcp</packagereq>
+      <packagereq type="optional">sbd</packagereq>
+      <packagereq type="optional">spausedd</packagereq>
+    </packagelist>
+  </group>
+  <group>
+    <id>ha-devel</id>
+    <name>High Availability Devel</name>
+    <name xml:lang="de">Hochverfügbarkeitsentwicklung</name>
+    <name xml:lang="es">Desarrollo de alta disponibilidad</name>
+    <name xml:lang="fr">Dév Haute disponibilité</name>
+    <name xml:lang="it">Devel ad alta disponibilità</name>
+    <name xml:lang="ja">High Availability Devel</name>
+    <name xml:lang="ko">고 가용성 Devel</name>
+    <name xml:lang="pt_BR">Dispositivo de alta disponibilidade</name>
+    <name xml:lang="ru">Высокий уровень доступности</name>
+    <name xml:lang="zh_CN">高可用性开放</name>
+    <name xml:lang="zh_TW">高可用性開發</name>
+    <description>Devel packages for highly available services and/or shared storage.</description>
+    <description xml:lang="de">Entwickeln Sie Pakete für hochverfügbare Dienste und/oder gemeinsamen Speicher.</description>
+    <description xml:lang="es">Paquetes de desarrollo para servicios de alta disponibilidad y/o almacenamiento compartido.</description>
+    <description xml:lang="fr">Package développement pour les services haute disponibilité et/ou stockage partagé.</description>
+    <description xml:lang="it">Sviluppare pacchetti di sviluppo per servizi altamente disponibili e/o storage condiviso.</description>
+    <description xml:lang="ja">高可用性サービスや共有ストレージの Devel パッケージです。</description>
+    <description xml:lang="ko">고 가용성 서비스 및 / 또는 공유 스토리지를위한 패키지를 개발하십시오.</description>
+    <description xml:lang="pt_BR">Desenvolva pacotes para serviços altamente disponíveis e/ou armazenamento compartilhado.</description>
+    <description xml:lang="ru">Пакеты Devel для высокодоступных сервисов и/или совместного хранения данных.</description>
+    <description xml:lang="zh_CN">高可用性以及共享存储的开放软件包。</description>
+    <description xml:lang="zh_TW">為高可用性服務和/或共享存儲開發軟件包。</description>
+    <default>true</default>
+    <uservisible>false</uservisible>
+    <packagelist>
+      <packagereq type="mandatory">pacemaker-libs-devel</packagereq>
+    </packagelist>
+  </group>
+  <group>
+    <id>resilient-storage</id>
+    <name>Resilient Storage</name>
+    <name xml:lang="as">স্থিতিস্থাপক সংৰক্ষণ</name>
+    <name xml:lang="bn">রেসিলিয়েন্ট সংগ্রহস্থল</name>
+    <name xml:lang="cs">Odolné úložiště</name>
+    <name xml:lang="de">Resilient-Speicher</name>
+    <name xml:lang="de_CH">Resilient-Speicher</name>
+    <name xml:lang="es">Almacenamiento resistente</name>
+    <name xml:lang="fr">Espace de stockage résilient</name>
+    <name xml:lang="gu">રિઝિલિઅન્ટ સંગ્રહ</name>
+    <name xml:lang="hi">रेसीलियेंट भंडार</name>
+    <name xml:lang="it">Resilient Storage</name>
+    <name xml:lang="ja">Resilient Storage</name>
+    <name xml:lang="kn">ಮೊದಲಿನಂತಾಗಬಲ್ಲ ಶೇಖರಣೆ</name>
+    <name xml:lang="ko">내결함성 스토리지</name>
+    <name xml:lang="ml">റീസീലിയന്റ് സംഭരണം</name>
+    <name xml:lang="mr">रिझिलिअंट स्टोरेज</name>
+    <name xml:lang="or">ପୁଞ୍ଜୀଭୂତ ସଂରକ୍ଷଣ</name>
+    <name xml:lang="pa">ਰੈਜ਼ੀਲੀਏਂਟ ਭੰਡਾਰਣ</name>
+    <name xml:lang="pl">Elastyczne przechowywanie danych</name>
+    <name xml:lang="pt">Armazenamento Flexível</name>
+    <name xml:lang="pt_BR">Armazenamento Flexível</name>
+    <name xml:lang="ru">Надёжное хранилище</name>
+    <name xml:lang="ta">ரீசைலண்ட் சேமிப்பகம்.</name>
+    <name xml:lang="te">రెసిలియంట్ నిల్వ</name>
+    <name xml:lang="uk">Надійне сховище</name>
+    <name xml:lang="zh">高彈性的儲存裝置</name>
+    <name xml:lang="zh_CN">弹性存储</name>
+    <name xml:lang="zh_TW">高彈性的儲存裝置</name>
+    <description>Clustered storage, including the GFS2 file system.</description>
+    <description xml:lang="as">GFS2 ফাইলচিস্টেম সহ থুপ সংৰক্ষণ।</description>
+    <description xml:lang="cs">Úložný cluster, včetně souborového systému GFS2.</description>
+    <description xml:lang="de">Clustered-Storage, inklusive GFS2-Dateisystem.</description>
+    <description xml:lang="de_CH">Clustered-Storage, inklusive GFS2-Dateisystem.</description>
+    <description xml:lang="es">Almacenaje agrupado, incluido el sistema de archivos GFS2.</description>
+    <description xml:lang="fr">Stockage en cluster, y compris le système de fichiers GFS2.</description>
+    <description xml:lang="gu">GFS2 ફાઇલ સિસ્ટમને સમાવતું ક્લસ્ટરવાળું સ્ટોરેજ.</description>
+    <description xml:lang="hi">क्लस्टर किया भंडार, GFS2 फाइलसिस्टम के साथ.</description>
+    <description xml:lang="it">Storage clusterizzato incluso il filesystem GFS2.</description>
+    <description xml:lang="ja">GFS2 ファイルシステムなど、クラスタ化したストレージです。</description>
+    <description xml:lang="kn">GFS2 ಕಡತವ್ಯವಸ್ಥೆಯನ್ನೂ ಒಳಗೊಂಡಿರುವಂತೆ, ಕ್ಲಸ್ಟರ್ ಶೇಖರಣೆ.</description>
+    <description xml:lang="ko">GFS2 파일시스템이 들어 있는 클러스터 스토리지입니다.</description>
+    <description xml:lang="ml">ജിഎഫ്എസ്2 ഫയല്‍ സിസ്റ്റം ഉള്‍പ്പടെയുള്ള ക്ലസ്റ്റര്‍ഡ് സംഭരണം.</description>
+    <description xml:lang="mr">क्लस्टर्ज स्टोरेज, GFS2 फाइल प्रणाली समाविष्टीत.</description>
+    <description xml:lang="or">କ୍ଲଷ୍ଟର ସଂରକ୍ଷଣ, GFS2 ଫାଇଲତନ୍ତ୍ରକୁ ଅନ୍ତର୍ଭୁକ୍ତ କରି।</description>
+    <description xml:lang="pa">ਕਲੱਸਟਰ ਕੀਤਾ ਭੰਡਾਰਣ, GFS2 ਫਾਈਲ ਸਿਸਟਮ ਸਮੇਤ।</description>
+    <description xml:lang="pl">Przechowywanie danych w klastrach, w tym system plików GFS2.</description>
+    <description xml:lang="pt">Armazenamento em clusters, incluindo o filesystem GFS2.</description>
+    <description xml:lang="pt_BR">Armazenamento em clusters, incluindo o filesystem GFS2.</description>
+    <description xml:lang="ru">Кластерное хранилище и GFS2.</description>
+    <description xml:lang="ta">GFS2 கோப்பு முறைமை உள்ளிட்ட கிளஸ்ட்டர்டு சேமிப்பகம்.</description>
+    <description xml:lang="te">క్లస్టర్డ్ నిల్వ, GFS2 ఫైల్ సిస్టమ్‌తో కలిపి.</description>
+    <description xml:lang="uk">Кластерне сховище, зокрема файлова система GFS2.</description>
+    <description xml:lang="zh">叢集儲存裝置，包括 GFS2 檔案系統。</description>
+    <description xml:lang="zh_CN">集群存储，其中包括 GFS2 文件系统。</description>
+    <description xml:lang="zh_TW">叢集儲存裝置，包括 GFS2 檔案系統。</description>
+    <default>true</default>
+    <uservisible>false</uservisible>
+    <packagelist>
+      <packagereq type="mandatory">gfs2-utils</packagereq>
+      <packagereq type="mandatory">lvm2-lockd</packagereq>
+      <packagereq type="default">dlm</packagereq>
+      <packagereq type="optional">cmirror</packagereq>
+      <packagereq type="optional">ctdb</packagereq>
+      <packagereq type="optional">resource-agents</packagereq>
+      <packagereq type="optional">resource-agents-aliyun</packagereq>
+      <packagereq type="optional">resource-agents-gcp</packagereq>
+    </packagelist>
+  </group>
+</comps>
