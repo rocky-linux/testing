@@ -1,0 +1,263 @@
+# OS Release:
+NAME="Rocky Linux"
+VERSION="8.4 (Green Obsidian)"
+ID="rocky"
+ID_LIKE="rhel fedora"
+VERSION_ID="8.4"
+PLATFORM_ID="platform:el8"
+PRETTY_NAME="Rocky Linux 8.4 (Green Obsidian)"
+ANSI_COLOR="0;32"
+CPE_NAME="cpe:/o:rocky:rocky:8.4:GA"
+HOME_URL="https://rockylinux.org/"
+BUG_REPORT_URL="https://bugs.rockylinux.org/"
+ROCKY_SUPPORT_PRODUCT="Rocky Linux"
+ROCKY_SUPPORT_PRODUCT_VERSION="8"
+Rocky Linux release 8.4 (Green Obsidian)
+
+# Desktop Environments
+
+
+# Desktop Installed
+
+
+# SELinux Status
+Enforcing
+
+SELINUX=enforcing
+SELINUXTYPE=targeted
+
+# SELinux Errors
+      1 comm="systemd-modules"
+
+# CPU Info
+64  AMD EPYC 7742 64-Core Processor
+
+# 64-bit Support
+Yes
+
+# Virtualization Support
+Yes
+
+# Load Average
+ 12:47:50 up 7 min,  1 user,  load average: 0.07, 0.05, 0.01
+
+# Memory usage
+              total        used        free      shared  buff/cache   available
+Mem:         128248        1587      126178          12         483      125891
+Swap:             0           0           0
+
+# Top 5 CPU hogs
+       0    1360  4.9  0.0 114832 15800 ?        Ss   12:40   0:22 systemd-udevd
+       0       1  4.8  0.0 252080 14576 ?        Ss   12:40   0:22 systemd
+       0    6961  1.8  0.0  27672  5520 tty1     Ss   12:42   0:06 bash
+       0    2316  0.2  0.0      0     0 ?        R    12:40   0:01 kworker/36:2+events
+       0    1929  0.1  0.0  92320  7908 ?        Ss   12:40   0:00 sshd
+
+# Top 5 memory hogs
+     998    1808  0.0  0.0 2026600 25988 ?       Ssl  12:40   0:00 polkitd
+     996    1814  0.0  0.0  10700  1896 ?        Ss   12:40   0:00 lsmd
+     989    1823  0.0  0.0 119732  3320 ?        S    12:40   0:00 chronyd
+      81    1813  0.0  0.0  64712  5616 ?        Ssl  12:40   0:00 dbus-daemon
+      32    1773  0.0  0.0  67176  5484 ?        Ss   12:40   0:00 rpcbind
+
+# Disk space usage
+Filesystem     Type      Size  Used Avail Use% Mounted on
+devtmpfs       devtmpfs   63G     0   63G   0% /dev
+tmpfs          tmpfs      63G     0   63G   0% /dev/shm
+tmpfs          tmpfs      63G  9.9M   63G   1% /run
+tmpfs          tmpfs      63G     0   63G   0% /sys/fs/cgroup
+/dev/sda2      ext4       63G  2.2G   58G   4% /
+/dev/sda3      ext4       20G   45M   19G   1% /tmp
+/dev/sda1      vfat      100M  5.8M   95M   6% /boot/efi
+/dev/nvme0n1p1 ext4      916G   77M  870G   1% /scratch
+tmpfs          tmpfs      13G     0   13G   0% /run/user/0
+
+# Block Devices
+/dev/sda2: LABEL="root" UUID="45da619d-7d8e-45f4-9307-fe9585dff0e1" BLOCK_SIZE="4096" TYPE="ext4" PARTLABEL="/" PARTUUID="bef01a8b-76de-42a9-a96c-626953803df9"
+/dev/nvme0n1: PTUUID="40000391-101c-40d5-97d1-27baec388283" PTTYPE="gpt"
+/dev/nvme0n1p1: UUID="63b702a8-a93c-440e-aa09-9ec62943b0eb" BLOCK_SIZE="4096" TYPE="ext4" PARTLABEL="/scratch" PARTUUID="49ea7bf8-8757-4776-a420-8c3a11ff2ada"
+/dev/sda1: SEC_TYPE="msdos" UUID="11B1-FABA" BLOCK_SIZE="512" TYPE="vfat" PARTLABEL="EFI System Partition" PARTUUID="327a6632-25a7-467d-81b9-8f1dda4d9885"
+/dev/sda3: UUID="4d950f54-417b-48d1-a9f2-77d3c1712934" BLOCK_SIZE="4096" TYPE="ext4" PARTLABEL="/tmp" PARTUUID="5e509196-e2e3-4637-ad54-5a6fde4804ef"
+
+# PCI devices
+00:00.0 Host bridge [0600]: Advanced Micro Devices, Inc. [AMD] Starship/Matisse Root Complex [1022:1480]
+00:00.2 IOMMU [0806]: Advanced Micro Devices, Inc. [AMD] Starship/Matisse IOMMU [1022:1481]
+00:01.0 Host bridge [0600]: Advanced Micro Devices, Inc. [AMD] Starship/Matisse PCIe Dummy Host Bridge [1022:1482]
+00:01.1 PCI bridge [0604]: Advanced Micro Devices, Inc. [AMD] Starship/Matisse GPP Bridge [1022:1483]
+00:02.0 Host bridge [0600]: Advanced Micro Devices, Inc. [AMD] Starship/Matisse PCIe Dummy Host Bridge [1022:1482]
+00:03.0 Host bridge [0600]: Advanced Micro Devices, Inc. [AMD] Starship/Matisse PCIe Dummy Host Bridge [1022:1482]
+00:04.0 Host bridge [0600]: Advanced Micro Devices, Inc. [AMD] Starship/Matisse PCIe Dummy Host Bridge [1022:1482]
+00:05.0 Host bridge [0600]: Advanced Micro Devices, Inc. [AMD] Starship/Matisse PCIe Dummy Host Bridge [1022:1482]
+00:07.0 Host bridge [0600]: Advanced Micro Devices, Inc. [AMD] Starship/Matisse PCIe Dummy Host Bridge [1022:1482]
+00:07.1 PCI bridge [0604]: Advanced Micro Devices, Inc. [AMD] Starship/Matisse Internal PCIe GPP Bridge 0 to bus[E:B] [1022:1484]
+00:08.0 Host bridge [0600]: Advanced Micro Devices, Inc. [AMD] Starship/Matisse PCIe Dummy Host Bridge [1022:1482]
+00:08.1 PCI bridge [0604]: Advanced Micro Devices, Inc. [AMD] Starship/Matisse Internal PCIe GPP Bridge 0 to bus[E:B] [1022:1484]
+00:14.0 SMBus [0c05]: Advanced Micro Devices, Inc. [AMD] FCH SMBus Controller [1022:790b] (rev 61)
+00:14.3 ISA bridge [0601]: Advanced Micro Devices, Inc. [AMD] FCH LPC Bridge [1022:790e] (rev 51)
+00:18.0 Host bridge [0600]: Advanced Micro Devices, Inc. [AMD] Starship Device 24; Function 0 [1022:1490]
+00:18.1 Host bridge [0600]: Advanced Micro Devices, Inc. [AMD] Starship Device 24; Function 1 [1022:1491]
+00:18.2 Host bridge [0600]: Advanced Micro Devices, Inc. [AMD] Starship Device 24; Function 2 [1022:1492]
+00:18.3 Host bridge [0600]: Advanced Micro Devices, Inc. [AMD] Starship Device 24; Function 3 [1022:1493]
+00:18.4 Host bridge [0600]: Advanced Micro Devices, Inc. [AMD] Starship Device 24; Function 4 [1022:1494]
+00:18.5 Host bridge [0600]: Advanced Micro Devices, Inc. [AMD] Starship Device 24; Function 5 [1022:1495]
+00:18.6 Host bridge [0600]: Advanced Micro Devices, Inc. [AMD] Starship Device 24; Function 6 [1022:1496]
+00:18.7 Host bridge [0600]: Advanced Micro Devices, Inc. [AMD] Starship Device 24; Function 7 [1022:1497]
+01:00.0 Ethernet controller [0200]: Mellanox Technologies MT27800 Family [ConnectX-5] [15b3:1017]
+01:00.1 Ethernet controller [0200]: Mellanox Technologies MT27800 Family [ConnectX-5] [15b3:1017]
+02:00.0 Non-Essential Instrumentation [1300]: Advanced Micro Devices, Inc. [AMD] Starship/Matisse PCIe Dummy Function [1022:148a]
+02:00.2 Encryption controller [1080]: Advanced Micro Devices, Inc. [AMD] Starship/Matisse PTDMA [1022:1498]
+03:00.0 Non-Essential Instrumentation [1300]: Advanced Micro Devices, Inc. [AMD] Starship/Matisse Reserved SPP [1022:1485]
+03:00.2 Encryption controller [1080]: Advanced Micro Devices, Inc. [AMD] Starship/Matisse PTDMA [1022:1498]
+03:00.3 USB controller [0c03]: Advanced Micro Devices, Inc. [AMD] Starship USB 3.0 Host Controller [1022:148c]
+40:00.0 Host bridge [0600]: Advanced Micro Devices, Inc. [AMD] Starship/Matisse Root Complex [1022:1480]
+40:00.2 IOMMU [0806]: Advanced Micro Devices, Inc. [AMD] Starship/Matisse IOMMU [1022:1481]
+40:01.0 Host bridge [0600]: Advanced Micro Devices, Inc. [AMD] Starship/Matisse PCIe Dummy Host Bridge [1022:1482]
+40:02.0 Host bridge [0600]: Advanced Micro Devices, Inc. [AMD] Starship/Matisse PCIe Dummy Host Bridge [1022:1482]
+40:03.0 Host bridge [0600]: Advanced Micro Devices, Inc. [AMD] Starship/Matisse PCIe Dummy Host Bridge [1022:1482]
+40:03.1 PCI bridge [0604]: Advanced Micro Devices, Inc. [AMD] Starship/Matisse GPP Bridge [1022:1483]
+40:04.0 Host bridge [0600]: Advanced Micro Devices, Inc. [AMD] Starship/Matisse PCIe Dummy Host Bridge [1022:1482]
+40:05.0 Host bridge [0600]: Advanced Micro Devices, Inc. [AMD] Starship/Matisse PCIe Dummy Host Bridge [1022:1482]
+40:07.0 Host bridge [0600]: Advanced Micro Devices, Inc. [AMD] Starship/Matisse PCIe Dummy Host Bridge [1022:1482]
+40:07.1 PCI bridge [0604]: Advanced Micro Devices, Inc. [AMD] Starship/Matisse Internal PCIe GPP Bridge 0 to bus[E:B] [1022:1484]
+40:08.0 Host bridge [0600]: Advanced Micro Devices, Inc. [AMD] Starship/Matisse PCIe Dummy Host Bridge [1022:1482]
+40:08.1 PCI bridge [0604]: Advanced Micro Devices, Inc. [AMD] Starship/Matisse Internal PCIe GPP Bridge 0 to bus[E:B] [1022:1484]
+41:00.0 Infiniband controller [0207]: Mellanox Technologies MT28908 Family [ConnectX-6] [15b3:101b]
+42:00.0 Non-Essential Instrumentation [1300]: Advanced Micro Devices, Inc. [AMD] Starship/Matisse PCIe Dummy Function [1022:148a]
+42:00.2 Encryption controller [1080]: Advanced Micro Devices, Inc. [AMD] Starship/Matisse PTDMA [1022:1498]
+43:00.0 Non-Essential Instrumentation [1300]: Advanced Micro Devices, Inc. [AMD] Starship/Matisse Reserved SPP [1022:1485]
+43:00.1 Encryption controller [1080]: Advanced Micro Devices, Inc. [AMD] Starship/Matisse Cryptographic Coprocessor PSPCPP [1022:1486]
+43:00.2 Encryption controller [1080]: Advanced Micro Devices, Inc. [AMD] Starship/Matisse PTDMA [1022:1498]
+43:00.3 USB controller [0c03]: Advanced Micro Devices, Inc. [AMD] Starship USB 3.0 Host Controller [1022:148c]
+80:00.0 Host bridge [0600]: Advanced Micro Devices, Inc. [AMD] Starship/Matisse Root Complex [1022:1480]
+80:00.2 IOMMU [0806]: Advanced Micro Devices, Inc. [AMD] Starship/Matisse IOMMU [1022:1481]
+80:01.0 Host bridge [0600]: Advanced Micro Devices, Inc. [AMD] Starship/Matisse PCIe Dummy Host Bridge [1022:1482]
+80:02.0 Host bridge [0600]: Advanced Micro Devices, Inc. [AMD] Starship/Matisse PCIe Dummy Host Bridge [1022:1482]
+80:03.0 Host bridge [0600]: Advanced Micro Devices, Inc. [AMD] Starship/Matisse PCIe Dummy Host Bridge [1022:1482]
+80:04.0 Host bridge [0600]: Advanced Micro Devices, Inc. [AMD] Starship/Matisse PCIe Dummy Host Bridge [1022:1482]
+80:05.0 Host bridge [0600]: Advanced Micro Devices, Inc. [AMD] Starship/Matisse PCIe Dummy Host Bridge [1022:1482]
+80:07.0 Host bridge [0600]: Advanced Micro Devices, Inc. [AMD] Starship/Matisse PCIe Dummy Host Bridge [1022:1482]
+80:07.1 PCI bridge [0604]: Advanced Micro Devices, Inc. [AMD] Starship/Matisse Internal PCIe GPP Bridge 0 to bus[E:B] [1022:1484]
+80:08.0 Host bridge [0600]: Advanced Micro Devices, Inc. [AMD] Starship/Matisse PCIe Dummy Host Bridge [1022:1482]
+80:08.1 PCI bridge [0604]: Advanced Micro Devices, Inc. [AMD] Starship/Matisse Internal PCIe GPP Bridge 0 to bus[E:B] [1022:1484]
+80:08.2 PCI bridge [0604]: Advanced Micro Devices, Inc. [AMD] Starship/Matisse Internal PCIe GPP Bridge 0 to bus[E:B] [1022:1484]
+81:00.0 Non-Essential Instrumentation [1300]: Advanced Micro Devices, Inc. [AMD] Starship/Matisse PCIe Dummy Function [1022:148a]
+81:00.2 Encryption controller [1080]: Advanced Micro Devices, Inc. [AMD] Starship/Matisse PTDMA [1022:1498]
+82:00.0 Non-Essential Instrumentation [1300]: Advanced Micro Devices, Inc. [AMD] Starship/Matisse Reserved SPP [1022:1485]
+82:00.2 Encryption controller [1080]: Advanced Micro Devices, Inc. [AMD] Starship/Matisse PTDMA [1022:1498]
+83:00.0 SATA controller [0106]: Advanced Micro Devices, Inc. [AMD] FCH SATA Controller [AHCI mode] [1022:7901] (rev 51)
+c0:00.0 Host bridge [0600]: Advanced Micro Devices, Inc. [AMD] Starship/Matisse Root Complex [1022:1480]
+c0:00.2 IOMMU [0806]: Advanced Micro Devices, Inc. [AMD] Starship/Matisse IOMMU [1022:1481]
+c0:01.0 Host bridge [0600]: Advanced Micro Devices, Inc. [AMD] Starship/Matisse PCIe Dummy Host Bridge [1022:1482]
+c0:02.0 Host bridge [0600]: Advanced Micro Devices, Inc. [AMD] Starship/Matisse PCIe Dummy Host Bridge [1022:1482]
+c0:03.0 Host bridge [0600]: Advanced Micro Devices, Inc. [AMD] Starship/Matisse PCIe Dummy Host Bridge [1022:1482]
+c0:03.1 PCI bridge [0604]: Advanced Micro Devices, Inc. [AMD] Starship/Matisse GPP Bridge [1022:1483]
+c0:03.2 PCI bridge [0604]: Advanced Micro Devices, Inc. [AMD] Starship/Matisse GPP Bridge [1022:1483]
+c0:04.0 Host bridge [0600]: Advanced Micro Devices, Inc. [AMD] Starship/Matisse PCIe Dummy Host Bridge [1022:1482]
+c0:05.0 Host bridge [0600]: Advanced Micro Devices, Inc. [AMD] Starship/Matisse PCIe Dummy Host Bridge [1022:1482]
+c0:05.1 PCI bridge [0604]: Advanced Micro Devices, Inc. [AMD] Starship/Matisse GPP Bridge [1022:1483]
+c0:05.2 PCI bridge [0604]: Advanced Micro Devices, Inc. [AMD] Starship/Matisse GPP Bridge [1022:1483]
+c0:07.0 Host bridge [0600]: Advanced Micro Devices, Inc. [AMD] Starship/Matisse PCIe Dummy Host Bridge [1022:1482]
+c0:07.1 PCI bridge [0604]: Advanced Micro Devices, Inc. [AMD] Starship/Matisse Internal PCIe GPP Bridge 0 to bus[E:B] [1022:1484]
+c0:08.0 Host bridge [0600]: Advanced Micro Devices, Inc. [AMD] Starship/Matisse PCIe Dummy Host Bridge [1022:1482]
+c0:08.1 PCI bridge [0604]: Advanced Micro Devices, Inc. [AMD] Starship/Matisse Internal PCIe GPP Bridge 0 to bus[E:B] [1022:1484]
+c1:00.0 Ethernet controller [0200]: Broadcom Inc. and subsidiaries NetXtreme BCM5720 2-port Gigabit Ethernet PCIe [14e4:165f]
+c2:00.0 PCI bridge [0604]: PLDA PCI Express Bridge [1556:be00] (rev 02)
+c3:00.0 VGA compatible controller [0300]: Matrox Electronics Systems Ltd. Integrated Matrox G200eW3 Graphics Controller [102b:0536] (rev 04)
+c4:00.0 Non-Volatile memory controller [0108]: Intel Corporation NVMe Datacenter SSD [3DNAND, Beta Rock Controller] [8086:0a54]
+c6:00.0 Non-Essential Instrumentation [1300]: Advanced Micro Devices, Inc. [AMD] Starship/Matisse PCIe Dummy Function [1022:148a]
+c6:00.2 Encryption controller [1080]: Advanced Micro Devices, Inc. [AMD] Starship/Matisse PTDMA [1022:1498]
+c7:00.0 Non-Essential Instrumentation [1300]: Advanced Micro Devices, Inc. [AMD] Starship/Matisse Reserved SPP [1022:1485]
+c7:00.2 Encryption controller [1080]: Advanced Micro Devices, Inc. [AMD] Starship/Matisse PTDMA [1022:1498]
+
+# USB devices
+
+
+# DRM Information
+fb: switching to mgag200drmfb from EFI VGA
+[drm] Initialized mgag200 1.0.0 20110418 for 0000:c3:00.0 on minor 0
+mgag200 0000:c3:00.0: [drm] VGA-1: EDID is invalid:
+fbcon: mgag200drmfb (fb0) is primary device
+mgag200 0000:c3:00.0: [drm] fb0: mgag200drmfb frame buffer device
+
+# Xorg modules
+
+
+# GL Support
+
+
+# Xorg errors
+
+
+# Kernel Buffer Tail
+[   15.772502] IPv6: ADDRCONF(NETDEV_UP): eno1: link is not ready
+[   15.774749] IPv6: ADDRCONF(NETDEV_UP): eno34: link is not ready
+[   15.775065] IPv6: ADDRCONF(NETDEV_UP): ib0: link is not ready
+[   17.495120] tg3 0000:c1:00.0 eno1: Link is up at 1000 Mbps, full duplex
+[   17.495126] tg3 0000:c1:00.0 eno1: Flow control is on for TX and on for RX
+[   17.495127] tg3 0000:c1:00.0 eno1: EEE is enabled
+[   17.495141] IPv6: ADDRCONF(NETDEV_CHANGE): eno1: link becomes ready
+[   27.388306] IPv6: ADDRCONF(NETDEV_CHANGE): ib0: link becomes ready
+[  407.623609] device-mapper: uevent: version 1.0.3
+[  407.623771] device-mapper: ioctl: 4.43.0-ioctl (2020-10-01) initialised: dm-devel@redhat.com
+
+# Last few reboots
+runlevel (to lvl 3)   4.18.0-305.3.1.e Mon Jun 28 12:40   still running
+reboot   system boot  4.18.0-305.3.1.e Mon Jun 28 12:40   still running
+
+wtmp begins Mon Jun 28 12:40:08 2021
+
+# DNF Repos
+repo id                         repo name
+appstream                       Rocky Linux 8 - AppStream
+baseos                          Rocky Linux 8 - BaseOS
+extras                          Rocky Linux 8 - Extras
+total 44
+-rw-r--r--. 1 root root  700 Jun 19 07:20 Rocky-AppStream.repo
+-rw-r--r--. 1 root root  685 Jun 19 07:20 Rocky-BaseOS.repo
+-rw-r--r--. 1 root root  713 Jun 19 07:20 Rocky-Devel.repo
+-rw-r--r--. 1 root root  685 Jun 19 07:20 Rocky-Extras.repo
+-rw-r--r--. 1 root root  721 Jun 19 07:20 Rocky-HighAvailability.repo
+-rw-r--r--. 1 root root  680 Jun 19 07:20 Rocky-Media.repo
+-rw-r--r--. 1 root root  685 Jun 19 07:20 Rocky-Plus.repo
+-rw-r--r--. 1 root root  705 Jun 19 07:20 Rocky-PowerTools.repo
+-rw-r--r--. 1 root root  736 Jun 19 07:20 Rocky-ResilientStorage.repo
+-rw-r--r--. 1 root root  671 Jun 19 07:20 Rocky-RT.repo
+-rw-r--r--. 1 root root 2407 Jun 19 07:20 Rocky-Sources.repo
+[main]
+gpgcheck=1
+installonly_limit=3
+clean_requirements_on_remove=True
+best=True
+skip_if_unavailable=False
+
+# Last 20 packages
+rpaste-0.1-2.el8.noarch                       Mon 28 Jun 2021 12:47:37 PM PDT
+gpg-pubkey-6d745a60-60287f36                  Mon 28 Jun 2021 12:47:35 PM PDT
+NetworkManager-config-server-1.30.0-7.el8.noarch Mon 28 Jun 2021 12:25:01 PM PDT
+iwl5000-firmware-8.83.5.1_1-102.el8.1.noarch  Mon 28 Jun 2021 12:25:01 PM PDT
+iwl3160-firmware-25.30.13.0-102.el8.1.noarch  Mon 28 Jun 2021 12:25:01 PM PDT
+iwl2030-firmware-18.168.6.1-102.el8.1.noarch  Mon 28 Jun 2021 12:25:01 PM PDT
+iwl2000-firmware-18.168.6.1-102.el8.1.noarch  Mon 28 Jun 2021 12:25:01 PM PDT
+iwl135-firmware-18.168.6.1-102.el8.1.noarch   Mon 28 Jun 2021 12:25:01 PM PDT
+iwl105-firmware-18.168.6.1-102.el8.1.noarch   Mon 28 Jun 2021 12:25:01 PM PDT
+iwl100-firmware-39.31.5.1-102.el8.1.noarch    Mon 28 Jun 2021 12:25:01 PM PDT
+iwl1000-firmware-39.31.5.1-102.el8.1.noarch   Mon 28 Jun 2021 12:25:01 PM PDT
+alsa-sof-firmware-1.6.1-2.el8.noarch          Mon 28 Jun 2021 12:25:01 PM PDT
+iwl7260-firmware-25.30.13.0-102.el8.1.noarch  Mon 28 Jun 2021 12:25:00 PM PDT
+iwl6050-firmware-41.28.5.1-102.el8.1.noarch   Mon 28 Jun 2021 12:25:00 PM PDT
+iwl6000g2b-firmware-18.168.6.1-102.el8.1.noarch Mon 28 Jun 2021 12:25:00 PM PDT
+iwl6000g2a-firmware-18.168.6.1-102.el8.1.noarch Mon 28 Jun 2021 12:25:00 PM PDT
+iwl6000-firmware-9.221.4.1-102.el8.1.noarch   Mon 28 Jun 2021 12:25:00 PM PDT
+iwl5150-firmware-8.24.2.2-102.el8.1.noarch    Mon 28 Jun 2021 12:25:00 PM PDT
+words-3.0-28.el8.noarch                       Mon 28 Jun 2021 12:24:59 PM PDT
+rootfiles-8.1-22.el8.noarch                   Mon 28 Jun 2021 12:24:59 PM PDT
+
+# EFI Support
+BootCurrent: 0007
+BootOrder: 0007,0000,0004
+Boot0000* Integrated NIC 1 Port 1 Partition 1	VenHw(d227c733-f75f-4341-b749-4d1759ec8538)
+Boot0001* BRCM MBA Slot C300 v20.14.0	BBS(128,BRCM MBA Slot C300 v20.14.0,0x0)............................u.........................................................A.....................B.R.C.M. .M.B.A. .S.l.o.t. .C.3.0.0. .v.2.0...1.4...0...
+Boot0002* FlexBoot v3.5.701 (PCI 01:00.0)	BBS(128,FlexBoot v3.5.701 (PCI 01:00.0),0x0)................`...........a.........................................................A.....................F.l.e.x.B.o.o.t. .v.3...5...7.0.1. .(.P.C.I. .0.1.:.0.0...0.)...
+Boot0003* Hard drive C:	VenHw(d6c0639f-c705-4eb9-aa4f-5802d8823de6)........................=......................................................&......A...............................M.Z.7.L.H.2.4.0.H.A.H.Q.0.D.3...
+Boot0004* Embedded NIC 1 Port 1 Partition 1	VenHw(3a191845-5f86-4e78-8fce-c4cff59f9daa)
+Boot0007* Rocky Linux	HD(1,GPT,327a6632-25a7-467d-81b9-8f1dda4d9885,0x1000,0x32000)/File(\EFI\rocky\shimx64.efi)
