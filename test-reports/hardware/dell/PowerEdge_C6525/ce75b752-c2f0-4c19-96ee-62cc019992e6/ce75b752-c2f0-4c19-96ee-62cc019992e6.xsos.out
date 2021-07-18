@@ -1,0 +1,135 @@
+DMIDECODE
+  BIOS:
+    Vend: Dell Inc.
+    Vers: 1.4.8
+    Date: 05/06/2020
+    BIOS Rev: 1.4
+    FW Rev:
+  System:
+    Mfr:  Dell Inc.
+    Prod: PowerEdge C6525
+    Vers: Not Specified
+    Ser:  ⣿⣿⣿⣿⣿⣿⣿
+    UUID: ⣿⣿⣿⣿⣿⣿⣿⣿-⣿⣿⣿⣿-⣿⣿⣿⣿-⣿⣿⣿⣿-⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+  CPU:
+    1 of 2 CPU sockets populated, 64 cores/64 threads per CPU
+    64 total cores, 64 total threads
+    Mfr:  Not Specified
+    Fam:  Unknown
+    Freq: 2250 MHz
+    Vers: Not Specified
+  Memory:
+    Total: 131072 MiB (128 GiB)
+    DIMMs: 8 of 48 populated
+    MaxCapacity: 2097152 MiB (2048 GiB / 2.00 TiB)
+
+OS
+  Hostname: SCRUBBED
+  Distro:   [redhat-release] Rocky Linux release 8.4 (Green Obsidian)
+            [rocky-release] Rocky Linux release 8.4 (Green Obsidian)
+            [os-release] Rocky Linux 8.4 (Green Obsidian) 8.4 (Green Obsidian)
+  RHN:      (missing)
+  RHSM:     (missing)
+  YUM:      1 enabled plugins: debuginfo-install
+  Runlevel: N 3  (default multi-user)
+  SELinux:  enforcing  (default enforcing)
+  Arch:     mach=x86_64  cpu=x86_64  platform=x86_64
+  Kernel:
+    Booted kernel:  4.18.0-305.3.1.el8_4.x86_64
+    GRUB default:   unknown  (no grub config file)
+    Build version:
+      Linux version 4.18.0-305.3.1.el8_4.x86_64 (mockbuild@ord1-prod-x86build003.svc.aws.rockylinux.org) (gcc version 8.4.1
+      20200928 (Red Hat 8.4.1-1) (GCC)) #1 SMP Thu Jun 17 07:52:48 UTC 2021
+    Booted kernel cmdline:
+      BOOT_IMAGE=(hd0,gpt2)/boot/vmlinuz-4.18.0-305.3.1.el8_4.x86_64 root=UUID=45da619d-7d8e-45f4-9307-fe9585dff0e1 ro
+      crashkernel=auto rhgb quiet
+    GRUB default kernel cmdline:
+      unknown  (no grub config file)
+    Taint-check: 0  (kernel untainted)
+    - - - - - - - - - - - - - - - - - - -
+  Sys time:  Mon Jun 28 12:47:23 PDT 2021
+  Boot time: Mon Jun 28 12:40:05 PDT 2021  (epoch: 1624909205)
+  Time Zone: America/Los_Angeles
+  Uptime:    7 min,  1 user
+  LoadAvg:   [64 CPU] 0.01 (0%), 0.04 (0%), 0.01 (0%)
+  /proc/stat:
+    procs_running: 3   procs_blocked: 0    processes [Since boot]: 7622
+    cpu [Utilization since boot]:
+      us 0%, ni 0%, sys 0%, idle 100%, iowait 0%, irq 0%, sftirq 0%, steal 0%
+
+CPU
+  64 logical processors (64 CPU cores)
+  1 AMD EPYC 7742 64-Core Processor (flags: aes,constant_tsc,ht,lm,nx,pae,rdrand,svm)
+  └─64 threads / 64 cores each
+
+MEMORY
+  Stats graphed as percent of MemTotal:
+    MemUsed    ▊.................................................   1.6%
+    Buffers    ..................................................   0.0%
+    Cached     ..................................................   0.3%
+    HugePages  ..................................................   0.0%
+    Dirty      ..................................................   0.0%
+  RAM:
+    125.2 GiB total ram
+    2 GiB (2%) used
+    1.7 GiB (1%) used excluding Buffers/Cached
+    0 GiB (0%) dirty
+  HugePages:
+    No ram pre-allocated to HugePages
+  THP:
+    16384 kB allocated to THP
+  LowMem/Slab/PageTables/Shmem:
+    0.41 GiB (0%) of total ram used for Slab
+    0.01 GiB (0%) of total ram used for PageTables
+    0.01 GiB (0%) of total ram used for Shmem
+  Swap:
+    No system swap space configured
+
+STORAGE
+  Whole Disks from /proc/partitions:
+    1 disks, totaling 224 GiB (0.22 TiB)
+    - - - - - - - - - - - - - - - - - - - - -
+    Disk 	Size in GiB
+    ----	-----------
+    sda 	224
+
+  Disk layout from lsblk:
+    NAME        MAJ:MIN RM   SIZE RO TYPE MOUNTPOINT
+    sda           8:0    1 223.6G  0 disk
+    ├─sda1        8:1    1   100M  0 part /boot/efi
+    ├─sda2        8:2    1    64G  0 part /
+    └─sda3        8:3    1    20G  0 part /tmp
+    nvme0n1     259:0    0 931.5G  0 disk
+    └─nvme0n1p1 259:1    0 931.5G  0 part /scratch
+
+  Filesystem usage from df:
+    Filesystem     1K-blocks    Used Available Use% Mounted on
+    /dev/sda2       65531436 2266832  59892780   4% /
+    /dev/sda3       20511312   45132  19401220   1% /tmp
+    /dev/sda1         102182    5860     96322   6% /boot/efi
+    /dev/nvme0n1p1 960378896   77852 911446672   1% /scratch
+
+DM-MULTIPATH
+  [No paths detected]
+
+LSPCI
+  Net:
+    (1) Broadcom Inc. and subsidiaries NetXtreme BCM5720 2-port Gigabit Ethernet PCIe
+    1 dual-port (2) Mellanox Technologies MT27800 Family [ConnectX-5]
+  Storage:
+    (1) Advanced Micro Devices, Inc. [AMD] FCH SATA Controller [AHCI mode] (rev 51)
+  VGA:
+    Matrox Electronics Systems Ltd. Integrated Matrox G200eW3 Graphics Controller (rev 04)
+
+ETHTOOL
+  Interface Status:
+    eno1        0000:c1:00.0  link=up 1000Mb/s full (autoneg=Y)    rx ring 200/2047   drv tg3 v4.18.0-305.3.1.el8_4.x86_64 / fw FFV21.40.9 bc 5720-v1.39
+    eno33       0000:01:00.0  link=up 10000Mb/s full (autoneg=Y)   rx ring 1024/8192  drv mlx5_core v5.0-0 / fw 16.25.4062 (DEL0000000016)
+    eno33.1901                link=up 10000Mb/s full (autoneg=Y)   rx ring UNKNOWN    drv 802.1Q VLAN Support v1.8 / fw N/A
+    eno34       0000:01:00.1  link=DOWN                            rx ring 1024/8192  drv mlx5_core v5.0-0 / fw 16.25.4062 (DEL0000000016)
+    ib0         0000:41:00.0  link=up 100000Mb/s full (autoneg=N)  rx ring 512/8192   drv mlx5_core[ib_ipoib] v5.0-0 / fw 20.26.4300 (DEL0000000013)
+  Interface Errors:
+    eno33  rx_steer_missed_packets: 42108
+    - - - - - - - - - - - - - - - - - - -
+    ib0  rx_err_lane_0_phy: 2253276
+         rx_err_lane_1_phy: 2230584

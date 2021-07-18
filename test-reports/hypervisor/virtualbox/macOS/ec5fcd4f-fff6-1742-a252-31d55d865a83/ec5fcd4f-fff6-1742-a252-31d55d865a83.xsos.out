@@ -1,0 +1,119 @@
+DMIDECODE
+  BIOS:
+    Vend: innotek GmbH
+    Vers: VirtualBox
+    Date: 12/01/2006
+    BIOS Rev:
+    FW Rev:  
+  System:
+    Mfr:  innotek GmbH
+    Prod: VirtualBox
+    Vers: 1.2
+    Ser:  0
+    UUID: ec5fcd4f-fff6-1742-a252-31d55d865a83
+  CPU:
+    0 of 0 CPU sockets populated, 0 cores/0 threads per CPU
+    0 total cores, 0 total threads
+    Mfr: 
+    Fam: 
+    Freq:
+    Vers:
+  Memory:
+    Total: 0 MiB (0 GiB)
+    DIMMs: 0 of 0 populated
+    MaxCapacity: 0 MiB (0 GiB / 0.00 TiB)
+
+OS
+  Hostname: rocky-8.4-boot
+  Distro:   [redhat-release] Rocky Linux release 8.4 (Green Obsidian)
+            [rocky-release] Rocky Linux release 8.4 (Green Obsidian)
+            [os-release] Rocky Linux 8.4 (Green Obsidian) 8.4 (Green Obsidian)
+  RHN:      (missing)
+  RHSM:     (missing)
+  YUM:      1 enabled plugins: debuginfo-install
+  Runlevel: N 3  (default multi-user)
+  SELinux:  permissive  (default permissive)
+  Arch:     mach=x86_64  cpu=x86_64  platform=x86_64
+  Kernel:
+    Booted kernel:  4.18.0-305.3.1.el8_4.x86_64
+    GRUB default:     
+    Build version:
+      Linux version 4.18.0-305.3.1.el8_4.x86_64 (mockbuild@ord1-prod-x86build003.svc.aws.rockylinux.org) (gcc version 8.4.1 
+      20200928 (Red Hat 8.4.1-1) (GCC)) #1 SMP Thu Jun 17 07:52:48 UTC 2021
+    Booted kernel cmdline:
+      BOOT_IMAGE=(hd0,msdos1)/boot/vmlinuz-4.18.0-305.3.1.el8_4.x86_64 root=UUID=740cbfe2-5279-4f50-8cea-a66012191f8e ro 
+      no_timer_check console=tty0 console=ttyS0,115200n8 net.ifnames=0 biosdevname=0 elevator=noop
+    GRUB default kernel cmdline:  
+      
+    Taint-check: 0  (kernel untainted)
+    - - - - - - - - - - - - - - - - - - -
+  Sys time:  Tue Jun 22 04:12:43 UTC 2021
+  Boot time: Tue Jun 22 03:58:37 UTC 2021  (epoch: 1624334317)
+  Time Zone: UTC
+  Uptime:    14 min,  1 user
+  LoadAvg:   [1 CPU] 0.16 (16%), 0.04 (4%), 0.01 (1%)
+  /proc/stat:
+    procs_running: 1   procs_blocked: 0    processes [Since boot]: 4181
+    cpu [Utilization since boot]:
+      us 0%, ni 0%, sys 0%, idle 99%, iowait 0%, irq 0%, sftirq 0%, steal 0%
+
+CPU
+  1 logical processors 
+  1 Intel Core i9-9900K CPU @ 3.60GHz (flags: aes,constant_tsc,ht,lm,nx,pae,rdrand) 
+
+MEMORY
+  Stats graphed as percent of MemTotal:
+    MemUsed    ▊▊▊▊▊▊▊▊▊▊▊.......................................  21.5%
+    Buffers    ..................................................   0.6%
+    Cached     ▊▊▊▊▊▊............................................  12.9%
+    HugePages  ..................................................   0.0%
+    Dirty      ..................................................   0.2%
+  RAM:
+    1.9 GiB total ram
+    0.4 GiB (21%) used
+    0.2 GiB (8%) used excluding Buffers/Cached
+    0 GiB (0%) dirty
+  HugePages:
+    No ram pre-allocated to HugePages
+  THP:
+    8192 kB allocated to THP 
+  LowMem/Slab/PageTables/Shmem:
+    0.05 GiB (3%) of total ram used for Slab
+    0.01 GiB (0%) of total ram used for PageTables
+    0.02 GiB (1%) of total ram used for Shmem
+  Swap:
+    0 GiB (0%) used of 2 GiB total
+
+STORAGE
+  Whole Disks from /proc/partitions:
+    1 disks, totaling 35 GiB (0.03 TiB)
+    - - - - - - - - - - - - - - - - - - - - -
+    Disk 	Size in GiB
+    ----	-----------
+    sda 	35
+
+  Disk layout from lsblk:
+    NAME   MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
+    sda      8:0    0 35.2G  0 disk 
+    └─sda1   8:1    0 35.2G  0 part /
+
+  Filesystem usage from df:
+    Filesystem     1K-blocks    Used Available Use% Mounted on
+    /dev/sda1       36021880 3489336  30673012  11% /
+
+DM-MULTIPATH
+  [No paths detected]
+
+LSPCI
+  Net:
+    (1) Red Hat, Inc. Virtio network device
+  Storage:
+  VGA:
+    VMware SVGA II Adapter
+
+ETHTOOL
+  Interface Status:
+    eth0  0000:00:03.0  link=up Unknown! unknown! (autoneg=N)  rx ring 256/256  drv virtio_net v1.0.0 / fw UNKNOWN
+  Interface Errors:
+    [None]
+

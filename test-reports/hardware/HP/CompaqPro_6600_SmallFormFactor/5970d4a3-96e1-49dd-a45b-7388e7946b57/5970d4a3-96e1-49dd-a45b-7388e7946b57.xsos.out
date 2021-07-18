@@ -1,0 +1,134 @@
+DMIDECODE
+  BIOS:
+    Vend: Hewlett-Packard
+    Vers: K01 v02.90
+    Date: 07/16/2013
+    BIOS Rev: 2.90
+    FW Rev:  
+  System:
+    Mfr:  Hewlett-Packard
+    Prod: HP Compaq Pro 6300 SFF
+    Vers: Not Specified
+    Ser:  ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+    UUID: ⣿⣿⣿⣿⣿⣿⣿⣿-⣿⣿⣿⣿-⣿⣿⣿⣿-⣿⣿⣿⣿-⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+  CPU:
+    1 of 1 CPU sockets populated, 4 cores/8 threads per CPU
+    4 total cores, 8 total threads
+    Mfr:  Intel
+    Fam:  Core i7
+    Freq: 3500 MHz
+    Vers: Intel(R) Core(TM) i7-3770K CPU @ 3.50GHz
+  Memory:
+    Total: 16384 MiB (16 GiB)
+    DIMMs: 4 of 8 populated
+    MaxCapacity: 32768 MiB (32 GiB / 0.03 TiB)
+
+OS
+  Hostname: SCRUBBED
+  Distro:   [redhat-release] Rocky Linux release 8.4 (Green Obsidian)
+            [rocky-release] Rocky Linux release 8.4 (Green Obsidian)
+            [os-release] Rocky Linux 8.4 (Green Obsidian) 8.4 (Green Obsidian)
+  RHN:      (missing)
+  RHSM:     hostname = SCRUBBED
+            proxy_hostname =
+  YUM:      2 enabled plugins: debuginfo-install, product-id
+  Runlevel: N 3  (default multi-user)
+  SELinux:  disabled  (default disabled)
+  Arch:     mach=x86_64  cpu=x86_64  platform=x86_64
+  Kernel:
+    Booted kernel:  4.18.0-305.7.1.el8_4.x86_64
+    GRUB default:   unknown  (no grub config file)  
+    Build version:
+      Linux version 4.18.0-305.7.1.el8_4.x86_64 
+      (mockbuild@ord1-prod-x86build004.svc.aws.rockylinux.org) (gcc version 
+      8.4.1 20200928 (Red Hat 8.4.1-1) (GCC)) #1 SMP Tue Jun 29 19:22:12 UTC 
+      2021
+    Booted kernel cmdline:
+      BOOT_IMAGE=(hd0,gpt2)/vmlinuz-4.18.0-305.7.1.el8_4.x86_64 
+      root=/dev/mapper/SysVG-LogVolRoot ro crashkernel=auto 
+      rd.lvm.lv=SysVG/LogVolRoot
+    GRUB default kernel cmdline:  
+      unknown  (no grub config file)
+    Taint-check: 0  (kernel untainted)
+    - - - - - - - - - - - - - - - - - - -
+  Sys time:  Sun Jul 11 19:35:44 UTC 2021
+  Boot time: Sun Jul 11 14:19:57 UTC 2021  (epoch: 1626013197)
+  Time Zone: Etc/UTC
+  Uptime:    5:15,  1 user
+  LoadAvg:   [8 CPU] 0.14 (2%), 0.12 (2%), 0.09 (1%)
+  /proc/stat:
+    procs_running: 1   procs_blocked: 0    processes [Since boot]: 41014
+    cpu [Utilization since boot]:
+      us 1%, ni 0%, sys 0%, idle 99%, iowait 0%, irq 0%, sftirq 0%, steal 0%
+
+CPU
+  8 logical processors (4 CPU cores)
+  1 Intel Core i7-3770K CPU @ 3.50GHz (flags: aes,constant_tsc,ht,lm,nx,pae,rdrand) 
+  └─8 threads / 4 cores each
+
+MEMORY
+  Stats graphed as percent of MemTotal:
+    MemUsed    ▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊........................  52.5%
+    Buffers    ..................................................   0.7%
+    Cached     ▊▊▊▊▊▊............................................  12.3%
+    HugePages  ..................................................   0.0%
+    Dirty      ..................................................   0.0%
+  RAM:
+    15.3 GiB total ram
+    8 GiB (52%) used
+    6 GiB (39%) used excluding Buffers/Cached
+    0 GiB (0%) dirty
+  HugePages:
+    No ram pre-allocated to HugePages
+  THP:
+    1306624 kB allocated to THP 
+  LowMem/Slab/PageTables/Shmem:
+    0.39 GiB (3%) of total ram used for Slab
+    0.1 GiB (1%) of total ram used for PageTables
+    0.05 GiB (0%) of total ram used for Shmem
+  Swap:
+    No system swap space configured
+
+STORAGE
+  Whole Disks from /proc/partitions:
+    1 disks, totaling 477 GiB (0.47 TiB)
+    - - - - - - - - - - - - - - - - - - - - -
+    Disk 	Size in GiB
+    ----	-----------
+    sda 	477
+
+  Disk layout from lsblk:
+    NAME                 MAJ:MIN RM   SIZE RO TYPE MOUNTPOINT
+    sda                    8:0    0   477G  0 disk 
+    ├─sda1                 8:1    0    50M  0 part /boot/efi
+    ├─sda2                 8:2    0   500M  0 part /boot
+    ├─sda3                 8:3    0     1M  0 part 
+    └─sda4                 8:4    0 476.4G  0 part 
+      └─SysVG-LogVolRoot 253:0    0 476.4G  0 lvm  /
+    sr0                   11:0    1  1024M  0 rom  
+
+  Filesystem usage from df:
+    Filesystem                   1K-blocks     Used Available Use% Mounted on
+    /dev/mapper/SysVG-LogVolRoot 490627008 19442992 446191864   5% /
+    /dev/sda2                       487634   260973    196965  57% /boot
+    /dev/sda1                        51082     5864     45218  12% /boot/efi
+
+DM-MULTIPATH
+  [No paths detected]
+
+LSPCI
+  Net:
+    (1) Intel Corporation 82579LM Gigabit Network Connection (Lewisville) (rev 04)
+  Storage:
+    (1) Intel Corporation 7 Series/C210 Series Chipset Family 6-port SATA Controller [AHCI mode] (rev 04)
+  VGA:
+    Intel Corporation Xeon E3-1200 v2/3rd Gen Core processor Graphics Controller (rev 09)
+
+ETHTOOL
+  Interface Status:
+    eno1       0000:00:19.0        link=up 1000Mb/s full (autoneg=Y)  rx ring 256/4096  drv e1000e v4.18.0-305.7.1.el8_4.x86_64 / fw 0.13-4
+    enp0s20u4  usb-0000:00:14.0-4  link=up 1000Mb/s full (autoneg=Y)  rx ring UNKNOWN   drv asix v22-Dec-2011 / fw ASIX AX88178 USB 2.0 Ethernet
+    tun0       tun                 link=up 10Mb/s full (autoneg=N)    rx ring UNKNOWN   drv tun v1.6 / fw UNKNOWN
+  Interface Errors:
+    eno1  rx_csum_offload_errors: 1
+
