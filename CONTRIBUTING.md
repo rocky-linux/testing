@@ -45,7 +45,7 @@ With that said, we must ask that:
 
 - Pull requests for test reports which are the output of running `./xsos` as
   described in the [Test Report README.md](./test-reports/README.md) *do not*
-  require am issue to be created in advance of submission. However, please be
+  require an issue to be created in advance of submission. However, please be
   sure to use the Test Report Pull Request Template to help ensure your PR meets
   our submission guidelines for Test Reports.
 
