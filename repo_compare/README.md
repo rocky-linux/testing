@@ -26,4 +26,3 @@ The example compares all modules found in RHEL AppStream and CodeReady against t
 Note that only the packages contained in a module are compared.  No other metadata (module version strings, etc.) is considered, as it is likely unique and not meant to be copied.
 
 WARNING:  As with the above script, the order of the arguments absolutely matters.  Generally RHEL repos should be listed first, as the source to compare against.
-
