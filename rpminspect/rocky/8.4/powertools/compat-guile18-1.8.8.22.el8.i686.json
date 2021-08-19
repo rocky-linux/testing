@@ -1,0 +1,290 @@
+{
+   "rpminspect": [
+     {
+       "result": "INFO",
+       "waiver authorization": "Not Waivable",
+       "message": "version",
+       "details": "rpminspect version 1.5"
+     },
+     {
+       "result": "INFO",
+       "waiver authorization": "Not Waivable",
+       "message": "command line",
+       "details": "\/usr\/bin\/rpminspect -c \/usr\/share\/rpminspect\/fedora.yaml -v -E metadata,files,patches,virus,javabytecode,disttag,specname --format=json --output=\/home\/vagrant\/data\/rpminspect\/rocky\/8.4\/powertools\/compat-guile18-1.8.8.22.el8.i686.json \/home\/vagrant\/data\/repos\/rocky\/8.4\/powertools\/Packages\/compat-guile18-1.8.8-22.el8.i686.rpm"
+     }
+   ],
+   "license": [
+     {
+       "result": "INFO",
+       "waiver authorization": "Not Waivable",
+       "message": "Valid License Tag in compat-guile18-1.8.8-22.el8.i686: LGPLv2+"
+     },
+     {
+       "result": "OK",
+       "waiver authorization": "Not Waivable"
+     }
+   ],
+   "empty-payload": [
+     {
+       "result": "OK",
+       "waiver authorization": "Not Waivable"
+     }
+   ],
+   "man-pages": [
+     {
+       "result": "OK",
+       "waiver authorization": "Not Waivable"
+     }
+   ],
+   "xml-files": [
+     {
+       "result": "OK",
+       "waiver authorization": "Not Waivable"
+     }
+   ],
+   "elf-object-properties": [
+     {
+       "result": "OK",
+       "waiver authorization": "Not Waivable"
+     }
+   ],
+   "desktop-entry-files": [
+     {
+       "result": "OK",
+       "waiver authorization": "Not Waivable"
+     }
+   ],
+   "ownership": [
+     {
+       "result": "OK",
+       "waiver authorization": "Not Waivable"
+     }
+   ],
+   "shell-syntax": [
+     {
+       "result": "BAD",
+       "waiver authorization": "Anyone",
+       "message": "\/usr\/share\/guile\/1.8\/scripts\/PROGRAM is not a valid sh script on i686",
+       "details": "\/var\/tmp\/rpminspect\/local.AhLBCP\/after\/\/home\/vagrant\/data\/repos\/rocky\/8.4\/powertools\/Packages\/compat-guile18-1.8.8-22.el8.i686\/\/usr\/share\/guile\/1.8\/scripts\/PROGRAM: line 6: syntax error near unexpected token `;;'\n\/var\/tmp\/rpminspect\/local.AhLBCP\/after\/\/home\/vagrant\/data\/repos\/rocky\/8.4\/powertools\/Packages\/compat-guile18-1.8.8-22.el8.i686\/\/usr\/share\/guile\/1.8\/scripts\/PROGRAM: line 6: `;;; PROGRAM --- Does something'",
+       "remedy": "The referenced shell script is invalid. Consider debugging it with the '-n' option on the shell to find and fix the problem."
+     },
+     {
+       "result": "BAD",
+       "waiver authorization": "Anyone",
+       "message": "\/usr\/share\/guile\/1.8\/scripts\/api-diff is not a valid sh script on i686",
+       "details": "\/var\/tmp\/rpminspect\/local.AhLBCP\/after\/\/home\/vagrant\/data\/repos\/rocky\/8.4\/powertools\/Packages\/compat-guile18-1.8.8-22.el8.i686\/\/usr\/share\/guile\/1.8\/scripts\/api-diff: line 6: syntax error near unexpected token `;;'\n\/var\/tmp\/rpminspect\/local.AhLBCP\/after\/\/home\/vagrant\/data\/repos\/rocky\/8.4\/powertools\/Packages\/compat-guile18-1.8.8-22.el8.i686\/\/usr\/share\/guile\/1.8\/scripts\/api-diff: line 6: `;;; api-diff --- diff guile-api.alist files'",
+       "remedy": "The referenced shell script is invalid. Consider debugging it with the '-n' option on the shell to find and fix the problem."
+     },
+     {
+       "result": "BAD",
+       "waiver authorization": "Anyone",
+       "message": "\/usr\/share\/guile\/1.8\/scripts\/autofrisk is not a valid sh script on i686",
+       "details": "\/var\/tmp\/rpminspect\/local.AhLBCP\/after\/\/home\/vagrant\/data\/repos\/rocky\/8.4\/powertools\/Packages\/compat-guile18-1.8.8-22.el8.i686\/\/usr\/share\/guile\/1.8\/scripts\/autofrisk: line 6: syntax error near unexpected token `;;'\n\/var\/tmp\/rpminspect\/local.AhLBCP\/after\/\/home\/vagrant\/data\/repos\/rocky\/8.4\/powertools\/Packages\/compat-guile18-1.8.8-22.el8.i686\/\/usr\/share\/guile\/1.8\/scripts\/autofrisk: line 6: `;;; autofrisk --- Generate module checks for use with auto* tools'",
+       "remedy": "The referenced shell script is invalid. Consider debugging it with the '-n' option on the shell to find and fix the problem."
+     },
+     {
+       "result": "BAD",
+       "waiver authorization": "Anyone",
+       "message": "\/usr\/share\/guile\/1.8\/scripts\/display-commentary is not a valid sh script on i686",
+       "details": "\/var\/tmp\/rpminspect\/local.AhLBCP\/after\/\/home\/vagrant\/data\/repos\/rocky\/8.4\/powertools\/Packages\/compat-guile18-1.8.8-22.el8.i686\/\/usr\/share\/guile\/1.8\/scripts\/display-commentary: line 6: syntax error near unexpected token `;;'\n\/var\/tmp\/rpminspect\/local.AhLBCP\/after\/\/home\/vagrant\/data\/repos\/rocky\/8.4\/powertools\/Packages\/compat-guile18-1.8.8-22.el8.i686\/\/usr\/share\/guile\/1.8\/scripts\/display-commentary: line 6: `;;; display-commentary --- As advertized'",
+       "remedy": "The referenced shell script is invalid. Consider debugging it with the '-n' option on the shell to find and fix the problem."
+     },
+     {
+       "result": "BAD",
+       "waiver authorization": "Anyone",
+       "message": "\/usr\/share\/guile\/1.8\/scripts\/doc-snarf is not a valid sh script on i686",
+       "details": "\/var\/tmp\/rpminspect\/local.AhLBCP\/after\/\/home\/vagrant\/data\/repos\/rocky\/8.4\/powertools\/Packages\/compat-guile18-1.8.8-22.el8.i686\/\/usr\/share\/guile\/1.8\/scripts\/doc-snarf: line 6: syntax error near unexpected token `;;'\n\/var\/tmp\/rpminspect\/local.AhLBCP\/after\/\/home\/vagrant\/data\/repos\/rocky\/8.4\/powertools\/Packages\/compat-guile18-1.8.8-22.el8.i686\/\/usr\/share\/guile\/1.8\/scripts\/doc-snarf: line 6: `;;; doc-snarf --- Extract documentation from source files'",
+       "remedy": "The referenced shell script is invalid. Consider debugging it with the '-n' option on the shell to find and fix the problem."
+     },
+     {
+       "result": "BAD",
+       "waiver authorization": "Anyone",
+       "message": "\/usr\/share\/guile\/1.8\/scripts\/frisk is not a valid sh script on i686",
+       "details": "\/var\/tmp\/rpminspect\/local.AhLBCP\/after\/\/home\/vagrant\/data\/repos\/rocky\/8.4\/powertools\/Packages\/compat-guile18-1.8.8-22.el8.i686\/\/usr\/share\/guile\/1.8\/scripts\/frisk: line 6: syntax error near unexpected token `;;'\n\/var\/tmp\/rpminspect\/local.AhLBCP\/after\/\/home\/vagrant\/data\/repos\/rocky\/8.4\/powertools\/Packages\/compat-guile18-1.8.8-22.el8.i686\/\/usr\/share\/guile\/1.8\/scripts\/frisk: line 6: `;;; frisk --- Grok the module interfaces of a body of files'",
+       "remedy": "The referenced shell script is invalid. Consider debugging it with the '-n' option on the shell to find and fix the problem."
+     },
+     {
+       "result": "BAD",
+       "waiver authorization": "Anyone",
+       "message": "\/usr\/share\/guile\/1.8\/scripts\/generate-autoload is not a valid sh script on i686",
+       "details": "\/var\/tmp\/rpminspect\/local.AhLBCP\/after\/\/home\/vagrant\/data\/repos\/rocky\/8.4\/powertools\/Packages\/compat-guile18-1.8.8-22.el8.i686\/\/usr\/share\/guile\/1.8\/scripts\/generate-autoload: line 6: syntax error near unexpected token `;;'\n\/var\/tmp\/rpminspect\/local.AhLBCP\/after\/\/home\/vagrant\/data\/repos\/rocky\/8.4\/powertools\/Packages\/compat-guile18-1.8.8-22.el8.i686\/\/usr\/share\/guile\/1.8\/scripts\/generate-autoload: line 6: `;;; generate-autoload --- Display define-module form with autoload info'",
+       "remedy": "The referenced shell script is invalid. Consider debugging it with the '-n' option on the shell to find and fix the problem."
+     },
+     {
+       "result": "BAD",
+       "waiver authorization": "Anyone",
+       "message": "\/usr\/share\/guile\/1.8\/scripts\/lint is not a valid sh script on i686",
+       "details": "\/var\/tmp\/rpminspect\/local.AhLBCP\/after\/\/home\/vagrant\/data\/repos\/rocky\/8.4\/powertools\/Packages\/compat-guile18-1.8.8-22.el8.i686\/\/usr\/share\/guile\/1.8\/scripts\/lint: line 6: syntax error near unexpected token `;;'\n\/var\/tmp\/rpminspect\/local.AhLBCP\/after\/\/home\/vagrant\/data\/repos\/rocky\/8.4\/powertools\/Packages\/compat-guile18-1.8.8-22.el8.i686\/\/usr\/share\/guile\/1.8\/scripts\/lint: line 6: `;;; lint --- Preemptive checks for coding errors in Guile Scheme code'",
+       "remedy": "The referenced shell script is invalid. Consider debugging it with the '-n' option on the shell to find and fix the problem."
+     },
+     {
+       "result": "BAD",
+       "waiver authorization": "Anyone",
+       "message": "\/usr\/share\/guile\/1.8\/scripts\/punify is not a valid sh script on i686",
+       "details": "\/var\/tmp\/rpminspect\/local.AhLBCP\/after\/\/home\/vagrant\/data\/repos\/rocky\/8.4\/powertools\/Packages\/compat-guile18-1.8.8-22.el8.i686\/\/usr\/share\/guile\/1.8\/scripts\/punify: line 6: syntax error near unexpected token `;;'\n\/var\/tmp\/rpminspect\/local.AhLBCP\/after\/\/home\/vagrant\/data\/repos\/rocky\/8.4\/powertools\/Packages\/compat-guile18-1.8.8-22.el8.i686\/\/usr\/share\/guile\/1.8\/scripts\/punify: line 6: `;;; punify --- Display Scheme code w\/o unnecessary comments \/ whitespace'",
+       "remedy": "The referenced shell script is invalid. Consider debugging it with the '-n' option on the shell to find and fix the problem."
+     },
+     {
+       "result": "BAD",
+       "waiver authorization": "Anyone",
+       "message": "\/usr\/share\/guile\/1.8\/scripts\/read-rfc822 is not a valid sh script on i686",
+       "details": "\/var\/tmp\/rpminspect\/local.AhLBCP\/after\/\/home\/vagrant\/data\/repos\/rocky\/8.4\/powertools\/Packages\/compat-guile18-1.8.8-22.el8.i686\/\/usr\/share\/guile\/1.8\/scripts\/read-rfc822: line 6: syntax error near unexpected token `;;'\n\/var\/tmp\/rpminspect\/local.AhLBCP\/after\/\/home\/vagrant\/data\/repos\/rocky\/8.4\/powertools\/Packages\/compat-guile18-1.8.8-22.el8.i686\/\/usr\/share\/guile\/1.8\/scripts\/read-rfc822: line 6: `;;; read-rfc822 --- Validate RFC822 file by displaying it to stdout'",
+       "remedy": "The referenced shell script is invalid. Consider debugging it with the '-n' option on the shell to find and fix the problem."
+     },
+     {
+       "result": "BAD",
+       "waiver authorization": "Anyone",
+       "message": "\/usr\/share\/guile\/1.8\/scripts\/read-scheme-source is not a valid sh script on i686",
+       "details": "\/var\/tmp\/rpminspect\/local.AhLBCP\/after\/\/home\/vagrant\/data\/repos\/rocky\/8.4\/powertools\/Packages\/compat-guile18-1.8.8-22.el8.i686\/\/usr\/share\/guile\/1.8\/scripts\/read-scheme-source: line 6: syntax error near unexpected token `;;'\n\/var\/tmp\/rpminspect\/local.AhLBCP\/after\/\/home\/vagrant\/data\/repos\/rocky\/8.4\/powertools\/Packages\/compat-guile18-1.8.8-22.el8.i686\/\/usr\/share\/guile\/1.8\/scripts\/read-scheme-source: line 6: `;;; read-scheme-source --- Read a file, recognizing scheme forms and comments'",
+       "remedy": "The referenced shell script is invalid. Consider debugging it with the '-n' option on the shell to find and fix the problem."
+     },
+     {
+       "result": "BAD",
+       "waiver authorization": "Anyone",
+       "message": "\/usr\/share\/guile\/1.8\/scripts\/read-text-outline is not a valid sh script on i686",
+       "details": "\/var\/tmp\/rpminspect\/local.AhLBCP\/after\/\/home\/vagrant\/data\/repos\/rocky\/8.4\/powertools\/Packages\/compat-guile18-1.8.8-22.el8.i686\/\/usr\/share\/guile\/1.8\/scripts\/read-text-outline: line 6: syntax error near unexpected token `;;'\n\/var\/tmp\/rpminspect\/local.AhLBCP\/after\/\/home\/vagrant\/data\/repos\/rocky\/8.4\/powertools\/Packages\/compat-guile18-1.8.8-22.el8.i686\/\/usr\/share\/guile\/1.8\/scripts\/read-text-outline: line 6: `;;; read-text-outline --- Read a text outline and display it as a sexp'",
+       "remedy": "The referenced shell script is invalid. Consider debugging it with the '-n' option on the shell to find and fix the problem."
+     },
+     {
+       "result": "BAD",
+       "waiver authorization": "Anyone",
+       "message": "\/usr\/share\/guile\/1.8\/scripts\/scan-api is not a valid sh script on i686",
+       "details": "\/var\/tmp\/rpminspect\/local.AhLBCP\/after\/\/home\/vagrant\/data\/repos\/rocky\/8.4\/powertools\/Packages\/compat-guile18-1.8.8-22.el8.i686\/\/usr\/share\/guile\/1.8\/scripts\/scan-api: line 6: syntax error near unexpected token `;;'\n\/var\/tmp\/rpminspect\/local.AhLBCP\/after\/\/home\/vagrant\/data\/repos\/rocky\/8.4\/powertools\/Packages\/compat-guile18-1.8.8-22.el8.i686\/\/usr\/share\/guile\/1.8\/scripts\/scan-api: line 6: `;;; scan-api --- Scan and group interpreter and libguile interface elements'",
+       "remedy": "The referenced shell script is invalid. Consider debugging it with the '-n' option on the shell to find and fix the problem."
+     },
+     {
+       "result": "BAD",
+       "waiver authorization": "Anyone",
+       "message": "\/usr\/share\/guile\/1.8\/scripts\/snarf-check-and-output-texi is not a valid sh script on i686",
+       "details": "\/var\/tmp\/rpminspect\/local.AhLBCP\/after\/\/home\/vagrant\/data\/repos\/rocky\/8.4\/powertools\/Packages\/compat-guile18-1.8.8-22.el8.i686\/\/usr\/share\/guile\/1.8\/scripts\/snarf-check-and-output-texi: line 6: syntax error near unexpected token `;;'\n\/var\/tmp\/rpminspect\/local.AhLBCP\/after\/\/home\/vagrant\/data\/repos\/rocky\/8.4\/powertools\/Packages\/compat-guile18-1.8.8-22.el8.i686\/\/usr\/share\/guile\/1.8\/scripts\/snarf-check-and-output-texi: line 6: `;;; snarf-check-and-output-texi --- called by the doc snarfer.'",
+       "remedy": "The referenced shell script is invalid. Consider debugging it with the '-n' option on the shell to find and fix the problem."
+     },
+     {
+       "result": "BAD",
+       "waiver authorization": "Anyone",
+       "message": "\/usr\/share\/guile\/1.8\/scripts\/snarf-guile-m4-docs is not a valid sh script on i686",
+       "details": "\/var\/tmp\/rpminspect\/local.AhLBCP\/after\/\/home\/vagrant\/data\/repos\/rocky\/8.4\/powertools\/Packages\/compat-guile18-1.8.8-22.el8.i686\/\/usr\/share\/guile\/1.8\/scripts\/snarf-guile-m4-docs: line 6: syntax error near unexpected token `;;'\n\/var\/tmp\/rpminspect\/local.AhLBCP\/after\/\/home\/vagrant\/data\/repos\/rocky\/8.4\/powertools\/Packages\/compat-guile18-1.8.8-22.el8.i686\/\/usr\/share\/guile\/1.8\/scripts\/snarf-guile-m4-docs: line 6: `;;; snarf-guile-m4-docs --- Parse guile.m4 comments for texi documentation'",
+       "remedy": "The referenced shell script is invalid. Consider debugging it with the '-n' option on the shell to find and fix the problem."
+     },
+     {
+       "result": "BAD",
+       "waiver authorization": "Anyone",
+       "message": "\/usr\/share\/guile\/1.8\/scripts\/summarize-guile-TODO is not a valid sh script on i686",
+       "details": "\/var\/tmp\/rpminspect\/local.AhLBCP\/after\/\/home\/vagrant\/data\/repos\/rocky\/8.4\/powertools\/Packages\/compat-guile18-1.8.8-22.el8.i686\/\/usr\/share\/guile\/1.8\/scripts\/summarize-guile-TODO: line 6: syntax error near unexpected token `;;'\n\/var\/tmp\/rpminspect\/local.AhLBCP\/after\/\/home\/vagrant\/data\/repos\/rocky\/8.4\/powertools\/Packages\/compat-guile18-1.8.8-22.el8.i686\/\/usr\/share\/guile\/1.8\/scripts\/summarize-guile-TODO: line 6: `;;; summarize-guile-TODO --- Display Guile TODO list in various ways'",
+       "remedy": "The referenced shell script is invalid. Consider debugging it with the '-n' option on the shell to find and fix the problem."
+     },
+     {
+       "result": "BAD",
+       "waiver authorization": "Anyone",
+       "message": "\/usr\/share\/guile\/1.8\/scripts\/use2dot is not a valid sh script on i686",
+       "details": "\/var\/tmp\/rpminspect\/local.AhLBCP\/after\/\/home\/vagrant\/data\/repos\/rocky\/8.4\/powertools\/Packages\/compat-guile18-1.8.8-22.el8.i686\/\/usr\/share\/guile\/1.8\/scripts\/use2dot: line 6: syntax error near unexpected token `;;'\n\/var\/tmp\/rpminspect\/local.AhLBCP\/after\/\/home\/vagrant\/data\/repos\/rocky\/8.4\/powertools\/Packages\/compat-guile18-1.8.8-22.el8.i686\/\/usr\/share\/guile\/1.8\/scripts\/use2dot: line 6: `;;; use2dot --- Display module dependencies as a DOT specification'",
+       "remedy": "The referenced shell script is invalid. Consider debugging it with the '-n' option on the shell to find and fix the problem."
+     }
+   ],
+   "annocheck": [
+     {
+       "result": "INFO",
+       "waiver authorization": "Not Waivable",
+       "message": "annocheck 'hardened' test passes for \/usr\/bin\/guile1.8 on i686",
+       "details": "annocheck: Version 9.50.\nHardened: \/usr\/bin\/guile1.8: warn: Could not find separate debug file: guile1.8-1.8.8-22.el8.i386.debug.\nHardened: \/usr\/bin\/guile1.8: info: Notes produced by assembler plugin version 1\nHardened: \/usr\/bin\/guile1.8: info: Notes produced by gcc plugin version 9.23\nHardened: \/usr\/bin\/guile1.8: info: Set binary producer to GCC version 8.\nHardened: \/usr\/bin\/guile1.8: warn: Could not find separate debug file: guile1.8-1.8.8-22.el8.i386.debug.\nHardened: \/usr\/bin\/guile1.8: warn: Could not find separate debug file: guile1.8-1.8.8-22.el8.i386.debug.\nHardened: \/usr\/bin\/guile1.8: warn: Could not find separate debug file: guile1.8-1.8.8-22.el8.i386.debug.\nHardened: \/usr\/bin\/guile1.8: PASS: No gaps found.\nHardened: \/usr\/bin\/guile1.8: skip: Test for -Wl,-z-now.  (Dynamic segment present, but no dynamic relocations found).\nHardened: \/usr\/bin\/guile1.8: skip: Branch protection.  (Not an AArch64 binary).\nHardened: \/usr\/bin\/guile1.8: PASS: Compiled with -fcf-protection.\nHardened: \/usr\/bin\/guile1.8: PASS: One dynamic section\/segment found.\nHardened: \/usr\/bin\/guile1.8: skip: Test of dynamic tags.  (AArch64 specific).\nHardened: \/usr\/bin\/guile1.8: PASS: Entry point instruction is ENDBR.\nHardened: \/usr\/bin\/guile1.8: PASS: Compiled with -D_FORTIFY_SOURCE=2.\nHardened: \/usr\/bin\/guile1.8: PASS: Compiled with -D_GLIBCXX_ASSERTIONS.\nHardened: \/usr\/bin\/guile1.8: skip: Test for -Wl,-z,relro.  (No dynamic relocations).\nHardened: \/usr\/bin\/guile1.8: PASS: Stack not executable.\nHardened: \/usr\/bin\/guile1.8: skip: The LTO setting was not recorded (probably due to the use of an old version of the annobin plugin).\nHardened: \/usr\/bin\/guile1.8: PASS: Compiled with sufficient optimization.\nHardened: \/usr\/bin\/guile1.8: PASS: Compiled with PIC\/PIE.\nHardened: \/usr\/bin\/guile1.8: PASS: Compiled as a position independent binary.\nHardened: \/usr\/bin\/guile1.8: PASS: Good GNU Property note.\nHardened: \/usr\/bin\/guile1.8: PASS: DT_RPATH\/DT_RUNPATH absent or rooted at \/usr.\nHardened: \/usr\/bin\/guile1.8: PASS: No RWX segments found.\nHardened: \/usr\/bin\/guile1.8: PASS: Consistent use of the -fshort-enum option.\nHardened: \/usr\/bin\/guile1.8: PASS: Compiled with -fstack-clash-protection.\nHardened: \/usr\/bin\/guile1.8: PASS: Compiled with sufficient stack protection.\nHardened: \/usr\/bin\/guile1.8: PASS: Compiled with -mstack_realign.\nHardened: \/usr\/bin\/guile1.8: PASS: No text relocations found.\nHardened: \/usr\/bin\/guile1.8: PASS: No thread cancellation problems.\nHardened: \/usr\/bin\/guile1.8: PASS: Compiled with either -Wall and\/or -Wformat-security.\nHardened: \/usr\/bin\/guile1.8: PASS: GOT\/PLT relocations are read only.\nHardened: \/usr\/bin\/guile1.8: PASS.",
+       "remedy": "See annocheck(1) for more information."
+     },
+     {
+       "result": "INFO",
+       "waiver authorization": "Not Waivable",
+       "message": "annocheck 'hardened' test passes for \/usr\/lib\/libguile-srfi-srfi-1-v-3.so.3.0.2 on i686",
+       "details": "annocheck: Version 9.50.\nHardened: \/usr\/lib\/libguile-srfi-srfi-1-v-3.so.3.0.2: warn: Could not find separate debug file: libguile-srfi-srfi-1-v-3.so.3.0.2-1.8.8-22.el8.i386.debug.\nHardened: \/usr\/lib\/libguile-srfi-srfi-1-v-3.so.3.0.2: info: Notes produced by assembler plugin version 1\nHardened: \/usr\/lib\/libguile-srfi-srfi-1-v-3.so.3.0.2: info: Notes produced by gcc plugin version 9.23\nHardened: \/usr\/lib\/libguile-srfi-srfi-1-v-3.so.3.0.2: info: Set binary producer to GCC version 8.\nHardened: \/usr\/lib\/libguile-srfi-srfi-1-v-3.so.3.0.2: warn: Could not find separate debug file: libguile-srfi-srfi-1-v-3.so.3.0.2-1.8.8-22.el8.i386.debug.\nHardened: \/usr\/lib\/libguile-srfi-srfi-1-v-3.so.3.0.2: PASS: No gaps found.\nHardened: \/usr\/lib\/libguile-srfi-srfi-1-v-3.so.3.0.2: skip: Test for -Wl,-z-now.  (Dynamic segment present, but no dynamic relocations found).\nHardened: \/usr\/lib\/libguile-srfi-srfi-1-v-3.so.3.0.2: skip: Branch protection.  (Not an AArch64 binary).\nHardened: \/usr\/lib\/libguile-srfi-srfi-1-v-3.so.3.0.2: PASS: Compiled with -fcf-protection.\nHardened: \/usr\/lib\/libguile-srfi-srfi-1-v-3.so.3.0.2: PASS: One dynamic section\/segment found.\nHardened: \/usr\/lib\/libguile-srfi-srfi-1-v-3.so.3.0.2: skip: Test of dynamic tags.  (AArch64 specific).\nHardened: \/usr\/lib\/libguile-srfi-srfi-1-v-3.so.3.0.2: skip: Entry point instruction is ENDBR.  (Not an executable).\nHardened: \/usr\/lib\/libguile-srfi-srfi-1-v-3.so.3.0.2: PASS: Compiled with -D_FORTIFY_SOURCE=2.\nHardened: \/usr\/lib\/libguile-srfi-srfi-1-v-3.so.3.0.2: PASS: Compiled with -D_GLIBCXX_ASSERTIONS.\nHardened: \/usr\/lib\/libguile-srfi-srfi-1-v-3.so.3.0.2: skip: Test for -Wl,-z,relro.  (No dynamic relocations).\nHardened: \/usr\/lib\/libguile-srfi-srfi-1-v-3.so.3.0.2: PASS: Stack not executable.\nHardened: \/usr\/lib\/libguile-srfi-srfi-1-v-3.so.3.0.2: skip: The LTO setting was not recorded (probably due to the use of an old version of the annobin plugin).\nHardened: \/usr\/lib\/libguile-srfi-srfi-1-v-3.so.3.0.2: PASS: Compiled with sufficient optimization.\nHardened: \/usr\/lib\/libguile-srfi-srfi-1-v-3.so.3.0.2: PASS: Compiled with PIC\/PIE.\nHardened: \/usr\/lib\/libguile-srfi-srfi-1-v-3.so.3.0.2: PASS: Compiled as a position independent binary.\nHardened: \/usr\/lib\/libguile-srfi-srfi-1-v-3.so.3.0.2: PASS: Good GNU Property note.\nHardened: \/usr\/lib\/libguile-srfi-srfi-1-v-3.so.3.0.2: PASS: DT_RPATH\/DT_RUNPATH absent or rooted at \/usr.\nHardened: \/usr\/lib\/libguile-srfi-srfi-1-v-3.so.3.0.2: PASS: No RWX segments found.\nHardened: \/usr\/lib\/libguile-srfi-srfi-1-v-3.so.3.0.2: PASS: Consistent use of the -fshort-enum option.\nHardened: \/usr\/lib\/libguile-srfi-srfi-1-v-3.so.3.0.2: PASS: Compiled with -fstack-clash-protection.\nHardened: \/usr\/lib\/libguile-srfi-srfi-1-v-3.so.3.0.2: PASS: Compiled with sufficient stack protection.\nHardened: \/usr\/lib\/libguile-srfi-srfi-1-v-3.so.3.0.2: PASS: Compiled with -mstack_realign.\nHardened: \/usr\/lib\/libguile-srfi-srfi-1-v-3.so.3.0.2: PASS: No text relocations found.\nHardened: \/usr\/lib\/libguile-srfi-srfi-1-v-3.so.3.0.2: PASS: No thread cancellation problems.\nHardened: \/usr\/lib\/libguile-srfi-srfi-1-v-3.so.3.0.2: PASS: Compiled with either -Wall and\/or -Wformat-security.\nHardened: \/usr\/lib\/libguile-srfi-srfi-1-v-3.so.3.0.2: PASS: GOT\/PLT relocations are read only.\nHardened: \/usr\/lib\/libguile-srfi-srfi-1-v-3.so.3.0.2: PASS.",
+       "remedy": "See annocheck(1) for more information."
+     },
+     {
+       "result": "INFO",
+       "waiver authorization": "Not Waivable",
+       "message": "annocheck 'hardened' test passes for \/usr\/lib\/libguile-srfi-srfi-13-14-v-3.so.3.0.1 on i686",
+       "details": "annocheck: Version 9.50.\nHardened: \/usr\/lib\/libguile-srfi-srfi-13-14-v-3.so.3.0.1: warn: Could not find separate debug file: libguile-srfi-srfi-13-14-v-3.so.3.0.1-1.8.8-22.el8.i386.debug.\nHardened: \/usr\/lib\/libguile-srfi-srfi-13-14-v-3.so.3.0.1: info: Notes produced by assembler plugin version 1\nHardened: \/usr\/lib\/libguile-srfi-srfi-13-14-v-3.so.3.0.1: info: Notes produced by gcc plugin version 9.23\nHardened: \/usr\/lib\/libguile-srfi-srfi-13-14-v-3.so.3.0.1: info: Set binary producer to GCC version 8.\nHardened: \/usr\/lib\/libguile-srfi-srfi-13-14-v-3.so.3.0.1: PASS: No gaps found.\nHardened: \/usr\/lib\/libguile-srfi-srfi-13-14-v-3.so.3.0.1: skip: Test for -Wl,-z-now.  (Dynamic segment present, but no dynamic relocations found).\nHardened: \/usr\/lib\/libguile-srfi-srfi-13-14-v-3.so.3.0.1: skip: Branch protection.  (Not an AArch64 binary).\nHardened: \/usr\/lib\/libguile-srfi-srfi-13-14-v-3.so.3.0.1: PASS: Compiled with -fcf-protection.\nHardened: \/usr\/lib\/libguile-srfi-srfi-13-14-v-3.so.3.0.1: PASS: One dynamic section\/segment found.\nHardened: \/usr\/lib\/libguile-srfi-srfi-13-14-v-3.so.3.0.1: skip: Test of dynamic tags.  (AArch64 specific).\nHardened: \/usr\/lib\/libguile-srfi-srfi-13-14-v-3.so.3.0.1: skip: Entry point instruction is ENDBR.  (Not an executable).\nHardened: \/usr\/lib\/libguile-srfi-srfi-13-14-v-3.so.3.0.1: PASS: Compiled with -D_FORTIFY_SOURCE=2.\nHardened: \/usr\/lib\/libguile-srfi-srfi-13-14-v-3.so.3.0.1: PASS: Compiled with -D_GLIBCXX_ASSERTIONS.\nHardened: \/usr\/lib\/libguile-srfi-srfi-13-14-v-3.so.3.0.1: skip: Test for -Wl,-z,relro.  (No dynamic relocations).\nHardened: \/usr\/lib\/libguile-srfi-srfi-13-14-v-3.so.3.0.1: PASS: Stack not executable.\nHardened: \/usr\/lib\/libguile-srfi-srfi-13-14-v-3.so.3.0.1: skip: The LTO setting was not recorded (probably due to the use of an old version of the annobin plugin).\nHardened: \/usr\/lib\/libguile-srfi-srfi-13-14-v-3.so.3.0.1: PASS: Compiled with sufficient optimization.\nHardened: \/usr\/lib\/libguile-srfi-srfi-13-14-v-3.so.3.0.1: PASS: Compiled with PIC\/PIE.\nHardened: \/usr\/lib\/libguile-srfi-srfi-13-14-v-3.so.3.0.1: PASS: Compiled as a position independent binary.\nHardened: \/usr\/lib\/libguile-srfi-srfi-13-14-v-3.so.3.0.1: PASS: Good GNU Property note.\nHardened: \/usr\/lib\/libguile-srfi-srfi-13-14-v-3.so.3.0.1: PASS: DT_RPATH\/DT_RUNPATH absent or rooted at \/usr.\nHardened: \/usr\/lib\/libguile-srfi-srfi-13-14-v-3.so.3.0.1: PASS: No RWX segments found.\nHardened: \/usr\/lib\/libguile-srfi-srfi-13-14-v-3.so.3.0.1: PASS: Consistent use of the -fshort-enum option.\nHardened: \/usr\/lib\/libguile-srfi-srfi-13-14-v-3.so.3.0.1: PASS: Compiled with -fstack-clash-protection.\nHardened: \/usr\/lib\/libguile-srfi-srfi-13-14-v-3.so.3.0.1: PASS: Compiled with sufficient stack protection.\nHardened: \/usr\/lib\/libguile-srfi-srfi-13-14-v-3.so.3.0.1: PASS: Compiled with -mstack_realign.\nHardened: \/usr\/lib\/libguile-srfi-srfi-13-14-v-3.so.3.0.1: PASS: No text relocations found.\nHardened: \/usr\/lib\/libguile-srfi-srfi-13-14-v-3.so.3.0.1: PASS: No thread cancellation problems.\nHardened: \/usr\/lib\/libguile-srfi-srfi-13-14-v-3.so.3.0.1: PASS: Compiled with either -Wall and\/or -Wformat-security.\nHardened: \/usr\/lib\/libguile-srfi-srfi-13-14-v-3.so.3.0.1: PASS: GOT\/PLT relocations are read only.\nHardened: \/usr\/lib\/libguile-srfi-srfi-13-14-v-3.so.3.0.1: PASS.",
+       "remedy": "See annocheck(1) for more information."
+     },
+     {
+       "result": "INFO",
+       "waiver authorization": "Not Waivable",
+       "message": "annocheck 'hardened' test passes for \/usr\/lib\/libguile-srfi-srfi-4-v-3.so.3.0.1 on i686",
+       "details": "annocheck: Version 9.50.\nHardened: \/usr\/lib\/libguile-srfi-srfi-4-v-3.so.3.0.1: warn: Could not find separate debug file: libguile-srfi-srfi-4-v-3.so.3.0.1-1.8.8-22.el8.i386.debug.\nHardened: \/usr\/lib\/libguile-srfi-srfi-4-v-3.so.3.0.1: info: Notes produced by assembler plugin version 1\nHardened: \/usr\/lib\/libguile-srfi-srfi-4-v-3.so.3.0.1: info: Notes produced by gcc plugin version 9.23\nHardened: \/usr\/lib\/libguile-srfi-srfi-4-v-3.so.3.0.1: info: Set binary producer to GCC version 8.\nHardened: \/usr\/lib\/libguile-srfi-srfi-4-v-3.so.3.0.1: PASS: No gaps found.\nHardened: \/usr\/lib\/libguile-srfi-srfi-4-v-3.so.3.0.1: skip: Test for -Wl,-z-now.  (Dynamic segment present, but no dynamic relocations found).\nHardened: \/usr\/lib\/libguile-srfi-srfi-4-v-3.so.3.0.1: skip: Branch protection.  (Not an AArch64 binary).\nHardened: \/usr\/lib\/libguile-srfi-srfi-4-v-3.so.3.0.1: PASS: Compiled with -fcf-protection.\nHardened: \/usr\/lib\/libguile-srfi-srfi-4-v-3.so.3.0.1: PASS: One dynamic section\/segment found.\nHardened: \/usr\/lib\/libguile-srfi-srfi-4-v-3.so.3.0.1: skip: Test of dynamic tags.  (AArch64 specific).\nHardened: \/usr\/lib\/libguile-srfi-srfi-4-v-3.so.3.0.1: skip: Entry point instruction is ENDBR.  (Not an executable).\nHardened: \/usr\/lib\/libguile-srfi-srfi-4-v-3.so.3.0.1: PASS: Compiled with -D_FORTIFY_SOURCE=2.\nHardened: \/usr\/lib\/libguile-srfi-srfi-4-v-3.so.3.0.1: PASS: Compiled with -D_GLIBCXX_ASSERTIONS.\nHardened: \/usr\/lib\/libguile-srfi-srfi-4-v-3.so.3.0.1: skip: Test for -Wl,-z,relro.  (No dynamic relocations).\nHardened: \/usr\/lib\/libguile-srfi-srfi-4-v-3.so.3.0.1: PASS: Stack not executable.\nHardened: \/usr\/lib\/libguile-srfi-srfi-4-v-3.so.3.0.1: skip: The LTO setting was not recorded (probably due to the use of an old version of the annobin plugin).\nHardened: \/usr\/lib\/libguile-srfi-srfi-4-v-3.so.3.0.1: PASS: Compiled with sufficient optimization.\nHardened: \/usr\/lib\/libguile-srfi-srfi-4-v-3.so.3.0.1: PASS: Compiled with PIC\/PIE.\nHardened: \/usr\/lib\/libguile-srfi-srfi-4-v-3.so.3.0.1: PASS: Compiled as a position independent binary.\nHardened: \/usr\/lib\/libguile-srfi-srfi-4-v-3.so.3.0.1: PASS: Good GNU Property note.\nHardened: \/usr\/lib\/libguile-srfi-srfi-4-v-3.so.3.0.1: PASS: DT_RPATH\/DT_RUNPATH absent or rooted at \/usr.\nHardened: \/usr\/lib\/libguile-srfi-srfi-4-v-3.so.3.0.1: PASS: No RWX segments found.\nHardened: \/usr\/lib\/libguile-srfi-srfi-4-v-3.so.3.0.1: PASS: Consistent use of the -fshort-enum option.\nHardened: \/usr\/lib\/libguile-srfi-srfi-4-v-3.so.3.0.1: PASS: Compiled with -fstack-clash-protection.\nHardened: \/usr\/lib\/libguile-srfi-srfi-4-v-3.so.3.0.1: PASS: Compiled with sufficient stack protection.\nHardened: \/usr\/lib\/libguile-srfi-srfi-4-v-3.so.3.0.1: PASS: Compiled with -mstack_realign.\nHardened: \/usr\/lib\/libguile-srfi-srfi-4-v-3.so.3.0.1: PASS: No text relocations found.\nHardened: \/usr\/lib\/libguile-srfi-srfi-4-v-3.so.3.0.1: PASS: No thread cancellation problems.\nHardened: \/usr\/lib\/libguile-srfi-srfi-4-v-3.so.3.0.1: PASS: Compiled with either -Wall and\/or -Wformat-security.\nHardened: \/usr\/lib\/libguile-srfi-srfi-4-v-3.so.3.0.1: PASS: GOT\/PLT relocations are read only.\nHardened: \/usr\/lib\/libguile-srfi-srfi-4-v-3.so.3.0.1: PASS.",
+       "remedy": "See annocheck(1) for more information."
+     },
+     {
+       "result": "INFO",
+       "waiver authorization": "Not Waivable",
+       "message": "annocheck 'hardened' test passes for \/usr\/lib\/libguile-srfi-srfi-60-v-2.so.2.0.2 on i686",
+       "details": "annocheck: Version 9.50.\nHardened: \/usr\/lib\/libguile-srfi-srfi-60-v-2.so.2.0.2: warn: Could not find separate debug file: libguile-srfi-srfi-60-v-2.so.2.0.2-1.8.8-22.el8.i386.debug.\nHardened: \/usr\/lib\/libguile-srfi-srfi-60-v-2.so.2.0.2: info: Notes produced by assembler plugin version 1\nHardened: \/usr\/lib\/libguile-srfi-srfi-60-v-2.so.2.0.2: info: Notes produced by gcc plugin version 9.23\nHardened: \/usr\/lib\/libguile-srfi-srfi-60-v-2.so.2.0.2: info: Set binary producer to GCC version 8.\nHardened: \/usr\/lib\/libguile-srfi-srfi-60-v-2.so.2.0.2: warn: Could not find separate debug file: libguile-srfi-srfi-60-v-2.so.2.0.2-1.8.8-22.el8.i386.debug.\nHardened: \/usr\/lib\/libguile-srfi-srfi-60-v-2.so.2.0.2: PASS: No gaps found.\nHardened: \/usr\/lib\/libguile-srfi-srfi-60-v-2.so.2.0.2: skip: Test for -Wl,-z-now.  (Dynamic segment present, but no dynamic relocations found).\nHardened: \/usr\/lib\/libguile-srfi-srfi-60-v-2.so.2.0.2: skip: Branch protection.  (Not an AArch64 binary).\nHardened: \/usr\/lib\/libguile-srfi-srfi-60-v-2.so.2.0.2: PASS: Compiled with -fcf-protection.\nHardened: \/usr\/lib\/libguile-srfi-srfi-60-v-2.so.2.0.2: PASS: One dynamic section\/segment found.\nHardened: \/usr\/lib\/libguile-srfi-srfi-60-v-2.so.2.0.2: skip: Test of dynamic tags.  (AArch64 specific).\nHardened: \/usr\/lib\/libguile-srfi-srfi-60-v-2.so.2.0.2: skip: Entry point instruction is ENDBR.  (Not an executable).\nHardened: \/usr\/lib\/libguile-srfi-srfi-60-v-2.so.2.0.2: PASS: Compiled with -D_FORTIFY_SOURCE=2.\nHardened: \/usr\/lib\/libguile-srfi-srfi-60-v-2.so.2.0.2: PASS: Compiled with -D_GLIBCXX_ASSERTIONS.\nHardened: \/usr\/lib\/libguile-srfi-srfi-60-v-2.so.2.0.2: skip: Test for -Wl,-z,relro.  (No dynamic relocations).\nHardened: \/usr\/lib\/libguile-srfi-srfi-60-v-2.so.2.0.2: PASS: Stack not executable.\nHardened: \/usr\/lib\/libguile-srfi-srfi-60-v-2.so.2.0.2: skip: The LTO setting was not recorded (probably due to the use of an old version of the annobin plugin).\nHardened: \/usr\/lib\/libguile-srfi-srfi-60-v-2.so.2.0.2: PASS: Compiled with sufficient optimization.\nHardened: \/usr\/lib\/libguile-srfi-srfi-60-v-2.so.2.0.2: PASS: Compiled with PIC\/PIE.\nHardened: \/usr\/lib\/libguile-srfi-srfi-60-v-2.so.2.0.2: PASS: Compiled as a position independent binary.\nHardened: \/usr\/lib\/libguile-srfi-srfi-60-v-2.so.2.0.2: PASS: Good GNU Property note.\nHardened: \/usr\/lib\/libguile-srfi-srfi-60-v-2.so.2.0.2: PASS: DT_RPATH\/DT_RUNPATH absent or rooted at \/usr.\nHardened: \/usr\/lib\/libguile-srfi-srfi-60-v-2.so.2.0.2: PASS: No RWX segments found.\nHardened: \/usr\/lib\/libguile-srfi-srfi-60-v-2.so.2.0.2: PASS: Consistent use of the -fshort-enum option.\nHardened: \/usr\/lib\/libguile-srfi-srfi-60-v-2.so.2.0.2: PASS: Compiled with -fstack-clash-protection.\nHardened: \/usr\/lib\/libguile-srfi-srfi-60-v-2.so.2.0.2: PASS: Compiled with sufficient stack protection.\nHardened: \/usr\/lib\/libguile-srfi-srfi-60-v-2.so.2.0.2: PASS: Compiled with -mstack_realign.\nHardened: \/usr\/lib\/libguile-srfi-srfi-60-v-2.so.2.0.2: PASS: No text relocations found.\nHardened: \/usr\/lib\/libguile-srfi-srfi-60-v-2.so.2.0.2: PASS: No thread cancellation problems.\nHardened: \/usr\/lib\/libguile-srfi-srfi-60-v-2.so.2.0.2: PASS: Compiled with either -Wall and\/or -Wformat-security.\nHardened: \/usr\/lib\/libguile-srfi-srfi-60-v-2.so.2.0.2: PASS: GOT\/PLT relocations are read only.\nHardened: \/usr\/lib\/libguile-srfi-srfi-60-v-2.so.2.0.2: PASS.",
+       "remedy": "See annocheck(1) for more information."
+     },
+     {
+       "result": "INFO",
+       "waiver authorization": "Not Waivable",
+       "message": "annocheck 'hardened' test passes for \/usr\/lib\/libguile.so.17.4.0 on i686",
+       "details": "annocheck: Version 9.50.\nHardened: \/usr\/lib\/libguile.so.17.4.0: warn: Could not find separate debug file: libguile.so.17.4.0-1.8.8-22.el8.i386.debug.\nHardened: \/usr\/lib\/libguile.so.17.4.0: info: Notes produced by assembler plugin version 1\nHardened: \/usr\/lib\/libguile.so.17.4.0: info: Notes produced by gcc plugin version 9.23\nHardened: \/usr\/lib\/libguile.so.17.4.0: info: Set binary producer to GCC version 8.\nHardened: \/usr\/lib\/libguile.so.17.4.0: warn: Could not find separate debug file: libguile.so.17.4.0-1.8.8-22.el8.i386.debug.\nHardened: \/usr\/lib\/libguile.so.17.4.0: warn: Could not find separate debug file: libguile.so.17.4.0-1.8.8-22.el8.i386.debug.\nHardened: \/usr\/lib\/libguile.so.17.4.0: PASS: No gaps found.\nHardened: \/usr\/lib\/libguile.so.17.4.0: skip: Test for -Wl,-z-now.  (Dynamic segment present, but no dynamic relocations found).\nHardened: \/usr\/lib\/libguile.so.17.4.0: skip: Branch protection.  (Not an AArch64 binary).\nHardened: \/usr\/lib\/libguile.so.17.4.0: PASS: Compiled with -fcf-protection.\nHardened: \/usr\/lib\/libguile.so.17.4.0: PASS: One dynamic section\/segment found.\nHardened: \/usr\/lib\/libguile.so.17.4.0: skip: Test of dynamic tags.  (AArch64 specific).\nHardened: \/usr\/lib\/libguile.so.17.4.0: skip: Entry point instruction is ENDBR.  (Not an executable).\nHardened: \/usr\/lib\/libguile.so.17.4.0: PASS: Compiled with -D_FORTIFY_SOURCE=2.\nHardened: \/usr\/lib\/libguile.so.17.4.0: PASS: Compiled with -D_GLIBCXX_ASSERTIONS.\nHardened: \/usr\/lib\/libguile.so.17.4.0: skip: Test for -Wl,-z,relro.  (No dynamic relocations).\nHardened: \/usr\/lib\/libguile.so.17.4.0: PASS: Stack not executable.\nHardened: \/usr\/lib\/libguile.so.17.4.0: skip: The LTO setting was not recorded (probably due to the use of an old version of the annobin plugin).\nHardened: \/usr\/lib\/libguile.so.17.4.0: PASS: Compiled with sufficient optimization.\nHardened: \/usr\/lib\/libguile.so.17.4.0: PASS: Compiled with PIC\/PIE.\nHardened: \/usr\/lib\/libguile.so.17.4.0: PASS: Compiled as a position independent binary.\nHardened: \/usr\/lib\/libguile.so.17.4.0: PASS: Good GNU Property note.\nHardened: \/usr\/lib\/libguile.so.17.4.0: PASS: DT_RPATH\/DT_RUNPATH absent or rooted at \/usr.\nHardened: \/usr\/lib\/libguile.so.17.4.0: PASS: No RWX segments found.\nHardened: \/usr\/lib\/libguile.so.17.4.0: PASS: Consistent use of the -fshort-enum option.\nHardened: \/usr\/lib\/libguile.so.17.4.0: PASS: Compiled with -fstack-clash-protection.\nHardened: \/usr\/lib\/libguile.so.17.4.0: PASS: Compiled with sufficient stack protection.\nHardened: \/usr\/lib\/libguile.so.17.4.0: PASS: Compiled with -mstack_realign.\nHardened: \/usr\/lib\/libguile.so.17.4.0: PASS: No text relocations found.\nHardened: \/usr\/lib\/libguile.so.17.4.0: PASS: No thread cancellation problems.\nHardened: \/usr\/lib\/libguile.so.17.4.0: PASS: Compiled with either -Wall and\/or -Wformat-security.\nHardened: \/usr\/lib\/libguile.so.17.4.0: PASS: GOT\/PLT relocations are read only.\nHardened: \/usr\/lib\/libguile.so.17.4.0: PASS.",
+       "remedy": "See annocheck(1) for more information."
+     },
+     {
+       "result": "INFO",
+       "waiver authorization": "Not Waivable",
+       "message": "annocheck 'hardened' test passes for \/usr\/lib\/libguilereadline-v-17.so.17.0.3 on i686",
+       "details": "annocheck: Version 9.50.\nHardened: \/usr\/lib\/libguilereadline-v-17.so.17.0.3: warn: Could not find separate debug file: libguilereadline-v-17.so.17.0.3-1.8.8-22.el8.i386.debug.\nHardened: \/usr\/lib\/libguilereadline-v-17.so.17.0.3: info: Notes produced by assembler plugin version 1\nHardened: \/usr\/lib\/libguilereadline-v-17.so.17.0.3: info: Notes produced by gcc plugin version 9.23\nHardened: \/usr\/lib\/libguilereadline-v-17.so.17.0.3: info: Set binary producer to GCC version 8.\nHardened: \/usr\/lib\/libguilereadline-v-17.so.17.0.3: warn: Could not find separate debug file: libguilereadline-v-17.so.17.0.3-1.8.8-22.el8.i386.debug.\nHardened: \/usr\/lib\/libguilereadline-v-17.so.17.0.3: PASS: No gaps found.\nHardened: \/usr\/lib\/libguilereadline-v-17.so.17.0.3: skip: Test for -Wl,-z-now.  (Dynamic segment present, but no dynamic relocations found).\nHardened: \/usr\/lib\/libguilereadline-v-17.so.17.0.3: skip: Branch protection.  (Not an AArch64 binary).\nHardened: \/usr\/lib\/libguilereadline-v-17.so.17.0.3: PASS: Compiled with -fcf-protection.\nHardened: \/usr\/lib\/libguilereadline-v-17.so.17.0.3: PASS: One dynamic section\/segment found.\nHardened: \/usr\/lib\/libguilereadline-v-17.so.17.0.3: skip: Test of dynamic tags.  (AArch64 specific).\nHardened: \/usr\/lib\/libguilereadline-v-17.so.17.0.3: skip: Entry point instruction is ENDBR.  (Not an executable).\nHardened: \/usr\/lib\/libguilereadline-v-17.so.17.0.3: PASS: Compiled with -D_FORTIFY_SOURCE=2.\nHardened: \/usr\/lib\/libguilereadline-v-17.so.17.0.3: PASS: Compiled with -D_GLIBCXX_ASSERTIONS.\nHardened: \/usr\/lib\/libguilereadline-v-17.so.17.0.3: skip: Test for -Wl,-z,relro.  (No dynamic relocations).\nHardened: \/usr\/lib\/libguilereadline-v-17.so.17.0.3: PASS: Stack not executable.\nHardened: \/usr\/lib\/libguilereadline-v-17.so.17.0.3: skip: The LTO setting was not recorded (probably due to the use of an old version of the annobin plugin).\nHardened: \/usr\/lib\/libguilereadline-v-17.so.17.0.3: PASS: Compiled with sufficient optimization.\nHardened: \/usr\/lib\/libguilereadline-v-17.so.17.0.3: PASS: Compiled with PIC\/PIE.\nHardened: \/usr\/lib\/libguilereadline-v-17.so.17.0.3: PASS: Compiled as a position independent binary.\nHardened: \/usr\/lib\/libguilereadline-v-17.so.17.0.3: PASS: Good GNU Property note.\nHardened: \/usr\/lib\/libguilereadline-v-17.so.17.0.3: PASS: DT_RPATH\/DT_RUNPATH absent or rooted at \/usr.\nHardened: \/usr\/lib\/libguilereadline-v-17.so.17.0.3: PASS: No RWX segments found.\nHardened: \/usr\/lib\/libguilereadline-v-17.so.17.0.3: PASS: Consistent use of the -fshort-enum option.\nHardened: \/usr\/lib\/libguilereadline-v-17.so.17.0.3: PASS: Compiled with -fstack-clash-protection.\nHardened: \/usr\/lib\/libguilereadline-v-17.so.17.0.3: PASS: Compiled with sufficient stack protection.\nHardened: \/usr\/lib\/libguilereadline-v-17.so.17.0.3: PASS: Compiled with -mstack_realign.\nHardened: \/usr\/lib\/libguilereadline-v-17.so.17.0.3: PASS: No text relocations found.\nHardened: \/usr\/lib\/libguilereadline-v-17.so.17.0.3: PASS: No thread cancellation problems.\nHardened: \/usr\/lib\/libguilereadline-v-17.so.17.0.3: PASS: Compiled with either -Wall and\/or -Wformat-security.\nHardened: \/usr\/lib\/libguilereadline-v-17.so.17.0.3: PASS: GOT\/PLT relocations are read only.\nHardened: \/usr\/lib\/libguilereadline-v-17.so.17.0.3: PASS.",
+       "remedy": "See annocheck(1) for more information."
+     },
+     {
+       "result": "OK",
+       "waiver authorization": "Not Waivable"
+     }
+   ],
+   "permissions": [
+     {
+       "result": "OK",
+       "waiver authorization": "Not Waivable"
+     }
+   ],
+   "capabilities": [
+     {
+       "result": "OK",
+       "waiver authorization": "Not Waivable"
+     }
+   ],
+   "path-migration": [
+     {
+       "result": "OK",
+       "waiver authorization": "Not Waivable"
+     }
+   ],
+   "lto": [
+     {
+       "result": "OK",
+       "waiver authorization": "Not Waivable"
+     }
+   ],
+   "symlinks": [
+     {
+       "result": "OK",
+       "waiver authorization": "Not Waivable"
+     }
+   ],
+   "politics": [
+     {
+       "result": "OK",
+       "waiver authorization": "Not Waivable"
+     }
+   ],
+   "bad-functions": [
+     {
+       "result": "VERIFY",
+       "waiver authorization": "Anyone",
+       "message": "\/usr\/lib\/libguile.so.17.4.0 may use forbidden functions on i686",
+       "details": "Forbidden function symbols found:\n\tgethostbyaddr\n\tgethostbyname\n\tinet_aton\n\tinet_makeaddr\n\tinet_netof\n\tinet_ntoa\n",
+       "remedy": "Forbidden symbols were found in an ELF file in the package.  The configuration settings for rpminspect indicate the named symbols are forbidden in packages.  If this is deliberate, you may want to disable the badfuncs inspection.  If it is not deliberate, check the man pages for the named symbols to see what API functions have replaced the forbidden symbols.  Usually a function is marked as deprecated but still provided in order to allow for backwards compatibility.  Whenever possible the deprecated functions should not be used."
+     }
+   ],
+   "runpath": [
+     {
+       "result": "OK",
+       "waiver authorization": "Not Waivable"
+     }
+   ]
+ }
