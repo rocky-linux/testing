@@ -11,9 +11,10 @@ def parse_dm_multipath(target_file):
     """Parses the DM_MULTIPATH section."""
     path = ""
     title = target_file.readline()
-    if title == "DM-MULTIPATH":
+    if "DM-MULTIPATH" in title:
         target_string = target_file.readline()
         while target_string.isspace() is False:
             path += target_string.strip()
             target_string = target_file.readline()
-    return DmMultipath(path)
+        return DmMultipath(path)
+    return DmMultipath("")

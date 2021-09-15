@@ -112,11 +112,18 @@ def read_time_tasks(target_file):
 def read_operating_system(target_file):
     """Reads operating system information from the report."""
     target_file.readline()
-    target_file.readline()
-    hostname = target_file.readline().split(':')[1].strip()
-    distro_info = read_distribution_info(target_file)
-    kernel_info = read_kernel_info(target_file)
-    time_tasks_info = read_time_tasks(target_file)
+    test_line = target_file.readline()
+    if "OS" in test_line:
+        hostname = target_file.readline().split(':')[1].strip()
+        distro_info = read_distribution_info(target_file)
+        kernel_info = read_kernel_info(target_file)
+        time_tasks_info = read_time_tasks(target_file)
+        return OperatingSystem(hostname, distro_info, kernel_info, time_tasks_info)
+    hostname = ''
+    distro_info = OperatingSystemDistroInfo('', '', '', '')
+    kernel_info = OperatingSystemKernelInfo('', '', '', '')
+    time_tasks_info = OperatingSystemTimeAndTasksInfo(
+        OperatingSystemTimeInfo('', '', '', ''), '', '')
     return OperatingSystem(hostname, distro_info, kernel_info, time_tasks_info)
 
 def read_kernel(target_file):

@@ -119,13 +119,19 @@ def read_memory_information(target_file):
 
 def read_dmidecode(target_file):
     """Reads and parses the DMI_DECODE section of the report."""
-    target_file.readline()
-    target_file.readline()
-    input_bios = read_bios_info(target_file)
-    target_file.readline()
-    user_system = read_user_system(target_file)
-    target_file.readline()
-    cpu = read_cpu_information(target_file)
-    target_file.readline()
-    memory = read_memory_information(target_file)
+    test_line = target_file.readline()
+    if 'DMI' in test_line:
+        target_file.readline()
+        input_bios = read_bios_info(target_file)
+        target_file.readline()
+        user_system = read_user_system(target_file)
+        target_file.readline()
+        cpu = read_cpu_information(target_file)
+        target_file.readline()
+        memory = read_memory_information(target_file)
+        return DmiDecode(input_bios, user_system, cpu, memory)
+    input_bios = Bios('', '', '', BiosRevisionData('', ''))
+    user_system = UserSystem('', '', '', '')
+    cpu = Cpu(CpuManufacturerInfo('', '', ''), '', '')
+    memory = Memory('', '', '')
     return DmiDecode(input_bios, user_system, cpu, memory)

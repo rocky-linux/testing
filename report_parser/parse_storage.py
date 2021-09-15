@@ -23,9 +23,6 @@ def read_whole_disks(target_file):
     target_file.readline()
     target_file.readline()
     target_file.readline()
-    target_file.readline()
-    target_file.readline()
-    target_file.readline()
     whole_disks = []
     find_alpha = r'\w+'
     find_digit = r'\d+'
@@ -39,17 +36,38 @@ def read_whole_disks(target_file):
 
 def read_storage_stats(target_file):
     """Reads partition information."""
-    whole_disks = read_whole_disks(target_file)
     target_file.readline()
-    disk_layout_lsblk = ""
-    filesystem_df = ""
-    target_string = target_file.readline()
-    while not target_string.isspace():
-        disk_layout_lsblk += target_string
+    test_string = target_file.readline()
+    if "STORAGE" in test_string:
+        target_file.readline()
+        whole_disks = read_whole_disks(target_file)
+        target_file.readline()
+        disk_layout_lsblk = ""
+        filesystem_df = ""
         target_string = target_file.readline()
-    target_file.readline()
-    target_string = target_file.readline()
-    while not target_string.isspace():
-        filesystem_df += target_string
+        while not target_string.isspace():
+            disk_layout_lsblk += target_string
+            target_string = target_file.readline()
+        target_file.readline()
         target_string = target_file.readline()
-    return StorageStats(whole_disks, disk_layout_lsblk, filesystem_df)
+        while not target_string.isspace():
+            filesystem_df += target_string
+            target_string = target_file.readline()
+        return StorageStats(whole_disks, disk_layout_lsblk, filesystem_df)
+    if "Whole" in test_string:
+        whole_disks = read_whole_disks(target_file)
+        target_file.readline()
+        disk_layout_lsblk = ""
+        filesystem_df = ""
+        target_string = target_file.readline()
+        while not target_string.isspace():
+            disk_layout_lsblk += target_string
+            target_string = target_file.readline()
+        target_file.readline()
+        target_string = target_file.readline()
+        while not target_string.isspace():
+            filesystem_df += target_string
+            target_string = target_file.readline()
+        return StorageStats(whole_disks, disk_layout_lsblk, filesystem_df)
+    whole_disks = []
+    return StorageStats(whole_disks, "", "")

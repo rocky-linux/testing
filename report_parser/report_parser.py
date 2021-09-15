@@ -11,9 +11,9 @@ import parse_dm_multipath
 import parse_lspci
 import parse_ethtool
 
-def test_dmidecode():
+def test_dmidecode(input_filename):
     """Parses up to the DMIDECODE section."""
-    test_dmi = parse_dmidecode.read_dmidecode(open('test.out'))
+    test_dmi = parse_dmidecode.read_dmidecode(open(input_filename))
     yaml.dump(test_dmi, open('output.yaml', 'w'))
 
 def test_read_operating_system(input_filename):

@@ -12,8 +12,15 @@ class CpuStats(yaml.YAMLObject):
 
 def read_cpu_stats(target_file):
     """Reads CPU statistics into a CpuStats object."""
-    target_file.readline()
-    logical_processors = target_file.readline().strip()
-    processors_desc = target_file.readline().strip()
-    threads_cores = target_file.readline().strip()
-    return CpuStats(logical_processors, processors_desc, threads_cores)
+    test_line = target_file.readline()
+    if "CPU" in test_line:
+        logical_processors = target_file.readline().strip()
+        processors_desc = target_file.readline().strip()
+        threads_cores = target_file.readline().strip()
+        return CpuStats(logical_processors, processors_desc, threads_cores)
+    if "logical processors" in test_line:
+        logical_processors = test_line.strip()
+        processors_desc = target_file.readline().strip()
+        threads_cores = target_file.readline().strip()
+        return CpuStats(logical_processors, processors_desc, threads_cores)
+    return CpuStats('', '', '')

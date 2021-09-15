@@ -53,44 +53,94 @@ class RamStats(yaml.YAMLObject):
         self.used_excluding_buffers = used_excluding_buffers
         self.dirty = dirty
 
-def read_memory_stats(target_file):
-    """Reads and parses memory stats."""
-    target_file.readline()
-    target_file.readline()
-    target_string = target_file.readline()
-    warnings = ""
-    if target_string.find("WARNING") != -1:
-        warnings = target_string.split(':')[1].strip() + ' ' + target_file.readline().strip()
-        target_file.readline()
-    else:
-        warnings = ""
+def assemble_memory_graph_info(warnings, target_file):
+    """Reads the memory graph and ram stats. Returns a MemoryGraphInfo object."""
     memory_graph = read_memory_graph(target_file)
     ram_stats = read_ram_stats(target_file)
-    target_file.readline()
-    huge_pages = target_file.readline().strip()
-    target_file.readline()
-    thp = target_file.readline().strip()
+    return MemoryGraphInfo(warnings, memory_graph, ram_stats)
+
+def assemble_low_mem_etc(target_file):
+    """Reads data for a MemoryLowMemSlabPageTablesShmem object."""
     target_file.readline()
     slab = target_file.readline().strip()
     page_tables = target_file.readline().strip()
     shmem = target_file.readline().strip()
     target_file.readline()
     swap = target_file.readline().strip()
-    memory_graph_info = MemoryGraphInfo(warnings, memory_graph, ram_stats)
-    low_mem_etc = MemoryLowMemSlabPageTablesShmem(slab, page_tables, shmem, swap)
-    return MemoryStats(memory_graph_info, huge_pages, thp, low_mem_etc)
+    return MemoryLowMemSlabPageTablesShmem(slab, page_tables, shmem, swap)
+
+def read_memory_stats(target_file):
+    """Reads and parses memory stats."""
+    target_file.readline()
+    test_line = target_file.readline()
+    if "MEMORY" in test_line:
+        target_string = target_file.readline()
+        warnings = ""
+        if target_string.find("WARNING") != -1:
+            warnings = target_string.split(':')[1].strip() + ' ' + target_file.readline().strip()
+            target_file.readline()
+        else:
+            warnings = ""
+        memory_graph_info = assemble_memory_graph_info(warnings, target_file)
+        target_file.readline()
+        huge_pages = target_file.readline().strip()
+        target_file.readline()
+        thp = target_file.readline().strip()
+        low_mem_etc = assemble_low_mem_etc(target_file)
+        return MemoryStats(memory_graph_info, huge_pages, thp, low_mem_etc)
+    if "WARNING" in test_line:
+        warnings = target_string.split(':')[1].strip() + ' ' + target_file.readline().strip()
+        target_file.readline()
+        memory_graph_info = assemble_memory_graph_info(warnings, target_file)
+        target_file.readline()
+        huge_pages = target_file.readline().strip()
+        target_file.readline()
+        thp = target_file.readline().strip()
+        low_mem_etc = assemble_low_mem_etc(target_file)
+        return MemoryStats(memory_graph_info, huge_pages, thp, low_mem_etc)
+    if "Stat" in test_line:
+        warnings = ""
+        memory_graph_info = assemble_memory_graph_info(warnings, target_file)
+        target_file.readline()
+        huge_pages = target_file.readline().strip()
+        target_file.readline()
+        thp = target_file.readline().strip()
+        low_mem_etc = assemble_low_mem_etc(target_file)
+        return MemoryStats(memory_graph_info, huge_pages, thp, low_mem_etc)
+    memory_graph_info = MemoryGraphInfo('', '', '')
+    low_mem_etc = MemoryLowMemSlabPageTablesShmem('', '', '', '')
+    return MemoryStats(memory_graph_info, '', '', low_mem_etc)
 
 def read_memory_graph(target_file):
     """Reads memory percentages from the memory graph."""
     percentage_expression_string = r'\d{1,3}\.\d\%'
-    mem_used = re.search(percentage_expression_string, target_file.readline()).group(0)
-    buffers = re.search(percentage_expression_string, target_file.readline()).group(0)
-    cached = re.search(percentage_expression_string, target_file.readline()).group(0)
-    huge_pages = re.search(percentage_expression_string, target_file.readline()).group(0)
-    dirty = re.search(percentage_expression_string, target_file.readline()).group(0)
+    mem_used_search = re.search(percentage_expression_string, target_file.readline())
+    if mem_used_search is None:
+        mem_used = "0.0%"
+    else:
+        mem_used = mem_used_search.group(0)
+    buffers_search = re.search(percentage_expression_string, target_file.readline())
+    if buffers_search is None:
+        buffers = "0.0%"
+    else:
+        buffers = buffers_search.group(0)
+    cached_search = re.search(percentage_expression_string, target_file.readline())
+    if cached_search is None:
+        cached = "0.0%"
+    else:
+        cached = cached_search.group(0)
+    huge_pages_search = re.search(percentage_expression_string, target_file.readline())
+    if huge_pages_search is None:
+        huge_pages = "0.0%"
+    else:
+        huge_pages = huge_pages_search.group(0)
+    dirty_search = re.search(percentage_expression_string, target_file.readline())
+    if dirty_search is None:
+        dirty = "0.0%"
+    else:
+        dirty = dirty_search.group(0)
     stats_graph_used = StatsGraphUsed(mem_used, buffers, cached)
     return StatsGraph(stats_graph_used, huge_pages, dirty)
-
 
 def read_ram_stats(target_file):
     """Reads RAM statistics."""
