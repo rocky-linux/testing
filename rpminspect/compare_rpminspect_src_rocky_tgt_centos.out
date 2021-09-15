@@ -1,0 +1,449 @@
+389-ds-base-1.4.3.16.13.module+el8.4.0+398+d030ca25.x86_64.rpminspect.out absent in centos
+389-ds-base-legacy-tools-1.4.3.16.13.module+el8.4.0+398+d030ca25.x86_64.rpminspect.out absent in centos
+389-ds-base-libs-1.4.3.16.13.module+el8.4.0+398+d030ca25.x86_64.rpminspect.out absent in centos
+anaconda-33.16.4.15.1.el8.rocky.x86_64.rpminspect.out absent in centos
+anaconda-install-env-deps-33.16.4.15.1.el8.rocky.x86_64.rpminspect.out absent in centos
+FAIL for annocheck between rpminspect/rocky/8.4/appstream/autogen-libopts-5.18.12.8.el8.i686.rpminspect.out and rpminspect/centos/8.4/appstream/autogen-libopts-5.18.12.8.el8.i686.rpminspect.out
+Running annocheck inspection...      FAIL		      |	Running annocheck inspection...      pass
+FAIL for badfuncs between rpminspect/rocky/8.4/appstream/bacula-libs-9.0.6.6.el8.x86_64.rpminspect.out and rpminspect/centos/8.4/appstream/bacula-libs-9.0.6.6.el8.x86_64.rpminspect.out
+Running annocheck inspection...      pass		      |	Running annocheck inspection...      FAIL
+bind-libs-lite-9.11.26.4.el8.i686.rpminspect.out absent in centos
+bind-libs-lite-9.11.26.4.el8.x86_64.rpminspect.out absent in centos
+bind-pkcs11-libs-9.11.26.4.el8.i686.rpminspect.out absent in centos
+bind-pkcs11-libs-9.11.26.4.el8.x86_64.rpminspect.out absent in centos
+buildah-tests-1.11.6.8.module+el8.4.0+536+994a2182.x86_64.rpminspect.out absent in centos
+FAIL for badfuncs between rpminspect/rocky/8.4/appstream/compat-openssl10-1.0.2o.3.el8.x86_64.rpminspect.out and rpminspect/centos/8.4/appstream/compat-openssl10-1.0.2o.3.el8.x86_64.rpminspect.out
+Running annocheck inspection...      pass		      |	Running annocheck inspection...      FAIL
+compiler-rt-11.0.0.1.module+el8.4.0+412+05cf643f.i686.rpminspect.out absent in centos
+compiler-rt-11.0.0.1.module+el8.4.0+412+05cf643f.i686.rpminspect.out absent in centos
+compiler-rt-11.0.0.1.module+el8.4.0+412+05cf643f.i686.rpminspect.out absent in centos
+compiler-rt-11.0.0.1.module+el8.4.0+412+05cf643f.x86_64.rpminspect.out absent in centos
+compiler-rt-11.0.0.1.module+el8.4.0+412+05cf643f.x86_64.rpminspect.out absent in centos
+conmon-2.0.15.1.module+el8.4.0+536+994a2182.x86_64.rpminspect.out absent in centos
+criu-3.12.9.module+el8.4.0+535+5beadeea.x86_64.rpminspect.out absent in centos
+criu-3.12.9.module+el8.4.0+535+5beadeea.x86_64.rpminspect.out absent in centos
+criu-3.12.9.module+el8.4.0+536+994a2182.x86_64.rpminspect.out absent in centos
+criu-3.12.9.module+el8.4.0+536+994a2182.x86_64.rpminspect.out absent in centos
+criu-3.15.1.module+el8.4.0+537+38cf4e42.x86_64.rpminspect.out absent in centos
+criu-3.15.1.module+el8.4.0+537+38cf4e42.x86_64.rpminspect.out absent in centos
+criu-3.15.1.module+el8.4.0+538+900cb89c.x86_64.rpminspect.out absent in centos
+criu-3.15.1.module+el8.4.0+538+900cb89c.x86_64.rpminspect.out absent in centos
+dotnet-5.0.203.1.el8.rocky.x86_64.rpminspect.out absent in centos
+dotnet-apphost-pack-3.0-3.0.3.1.el8_1.rocky.x86_64.rpminspect.out absent in centos
+dotnet-apphost-pack-3.0-3.0.3.1.el8_1.rocky.x86_64.rpminspect.out absent in centos
+dotnet-apphost-pack-3.1-3.1.15.1.el8.rocky.2.x86_64.rpminspect.out absent in centos
+dotnet-apphost-pack-5.0-5.0.6.1.el8.rocky.x86_64.rpminspect.out absent in centos
+dotnet-runtime-3.0-3.0.3.1.el8_1.rocky.x86_64.rpminspect.out absent in centos
+dotnet-sdk-2.1-2.1.524.1.el8.rocky.x86_64.rpminspect.out absent in centos
+dotnet-sdk-2.1.5xx-2.1.524.1.el8.rocky.x86_64.rpminspect.out absent in centos
+dotnet-sdk-3.0-3.0.103.1.el8_1.rocky.x86_64.rpminspect.out absent in centos
+dotnet-sdk-3.0-3.0.103.1.el8_1.rocky.x86_64.rpminspect.out absent in centos
+dotnet-sdk-3.1-3.1.115.1.el8.rocky.2.x86_64.rpminspect.out absent in centos
+dotnet-sdk-5.0-5.0.203.1.el8.rocky.x86_64.rpminspect.out absent in centos
+exiv2-libs-0.27.2.5.el8.i686.rpminspect.out absent in centos
+exiv2-libs-0.27.2.5.el8.x86_64.rpminspect.out absent in centos
+firefox-78.10.0.1.el8.x86_64.rpminspect.out absent in centos
+freeradius-3.0.20.3.module+el8.3.0+150+f95aa647.x86_64.rpminspect.out absent in centos
+freeradius-3.0.20.3.module+el8.3.0+150+f95aa647.x86_64.rpminspect.out absent in centos
+freeradius-postgresql-3.0.20.3.module+el8.3.0+150+f95aa647.x86_64.rpminspect.out absent in centos
+freeradius-unixODBC-3.0.20.3.module+el8.3.0+150+f95aa647.x86_64.rpminspect.out absent in centos
+freeradius-utils-3.0.20.3.module+el8.3.0+150+f95aa647.x86_64.rpminspect.out absent in centos
+freeradius-utils-3.0.20.3.module+el8.3.0+150+f95aa647.x86_64.rpminspect.out absent in centos
+fuse-overlayfs-0.3.5.module+el8.4.0+535+5beadeea.x86_64.rpminspect.out absent in centos
+fuse-overlayfs-0.7.8.1.module+el8.4.0+536+994a2182.x86_64.rpminspect.out absent in centos
+glassfish-el-api-3.0.1.0.7.b08.module+el8.3.0+133+b8b54b58.noarch.rpminspect.out absent in centos
+glassfish-jaxb-api-2.2.12.8.module+el8.3.0+53+ea062990.noarch.rpminspect.out absent in centos
+FAIL for desktop between rpminspect/rocky/8.4/appstream/gnome-system-monitor-3.28.2.1.el8.x86_64.rpminspect.out and rpminspect/centos/8.4/appstream/gnome-system-monitor-3.28.2.1.el8.x86_64.rpminspect.out
+Running annocheck inspection...      pass		      |	Running annocheck inspection...      FAIL
+go-toolset-1.15.7.1.module+el8.4.0+396+d2d16ae3.x86_64.rpminspect.out absent in centos
+golang-src-1.15.7.1.module+el8.4.0+396+d2d16ae3.noarch.rpminspect.out absent in centos
+golang-src-1.15.7.1.module+el8.4.0+396+d2d16ae3.noarch.rpminspect.out absent in centos
+golang-tests-1.15.7.1.module+el8.4.0+396+d2d16ae3.noarch.rpminspect.out absent in centos
+golang-tests-1.15.7.1.module+el8.4.0+396+d2d16ae3.noarch.rpminspect.out absent in centos
+golang-tests-1.15.7.1.module+el8.4.0+396+d2d16ae3.noarch.rpminspect.out absent in centos
+FAIL for badfuncs between rpminspect/rocky/8.4/appstream/guile-2.0.14.7.el8.i686.rpminspect.out and rpminspect/centos/8.4/appstream/guile-2.0.14.7.el8.i686.rpminspect.out
+Running annocheck inspection...      pass		      |	Running annocheck inspection...      FAIL
+FAIL for shellsyntax between rpminspect/rocky/8.4/appstream/guile-2.0.14.7.el8.i686.rpminspect.out and rpminspect/centos/8.4/appstream/guile-2.0.14.7.el8.i686.rpminspect.out
+Running annocheck inspection...      pass		      |	Running annocheck inspection...      FAIL
+FAIL for badfuncs between rpminspect/rocky/8.4/appstream/guile-2.0.14.7.el8.x86_64.rpminspect.out and rpminspect/centos/8.4/appstream/guile-2.0.14.7.el8.x86_64.rpminspect.out
+Running annocheck inspection...      pass		      |	Running annocheck inspection...      FAIL
+FAIL for shellsyntax between rpminspect/rocky/8.4/appstream/guile-2.0.14.7.el8.x86_64.rpminspect.out and rpminspect/centos/8.4/appstream/guile-2.0.14.7.el8.x86_64.rpminspect.out
+Running annocheck inspection...      pass		      |	Running annocheck inspection...      FAIL
+hawtjni-runtime-1.16.1.module+el8.3.0+241+f23502a8.noarch.rpminspect.out absent in centos
+httpd-2.4.37.30.module+el8.3.0+124+cde66633.x86_64.rpminspect.out absent in centos
+httpd-2.4.37.30.module+el8.3.0+124+cde66633.x86_64.rpminspect.out absent in centos
+httpd-2.4.37.30.module+el8.3.0+124+cde66633.x86_64.rpminspect.out absent in centos
+httpd-manual-2.4.37.30.module+el8.3.0+124+cde66633.noarch.rpminspect.out absent in centos
+inkscape-0.92.3.13.module+el8.4.0+533+773bb730.x86_64.rpminspect.out absent in centos
+inkscape-view-0.92.3.13.module+el8.4.0+533+773bb730.x86_64.rpminspect.out absent in centos
+ipa-server-trust-ad-4.9.2.3.module+el8.4.0+429+6bd33fea.x86_64.rpminspect.out absent in centos
+FAIL for runpath between rpminspect/rocky/8.4/appstream/jasper-libs-2.0.14.4.el8.i686.rpminspect.out and rpminspect/centos/8.4/appstream/jasper-libs-2.0.14.4.el8.i686.rpminspect.out
+Running annocheck inspection...      pass		      |	Running annocheck inspection...      FAIL
+FAIL for runpath between rpminspect/rocky/8.4/appstream/jasper-libs-2.0.14.4.el8.x86_64.rpminspect.out and rpminspect/centos/8.4/appstream/jasper-libs-2.0.14.4.el8.x86_64.rpminspect.out
+Running annocheck inspection...      pass		      |	Running annocheck inspection...      FAIL
+java-1.8.0-openjdk-1.8.0.292.b10.1.el8.x86_64.rpminspect.out absent in centos
+java-1.8.0-openjdk-demo-1.8.0.292.b10.1.el8.x86_64.rpminspect.out absent in centos
+java-1.8.0-openjdk-devel-1.8.0.292.b10.1.el8.x86_64.rpminspect.out absent in centos
+java-1.8.0-openjdk-devel-1.8.0.292.b10.1.el8.x86_64.rpminspect.out absent in centos
+java-1.8.0-openjdk-headless-1.8.0.292.b10.1.el8.x86_64.rpminspect.out absent in centos
+java-1.8.0-openjdk-headless-1.8.0.292.b10.1.el8.x86_64.rpminspect.out absent in centos
+java-1.8.0-openjdk-headless-slowdebug-1.8.0.292.b10.1.el8.x86_64.rpminspect.out absent in centos
+java-1.8.0-openjdk-headless-slowdebug-1.8.0.292.b10.1.el8.x86_64.rpminspect.out absent in centos
+java-1.8.0-openjdk-headless-slowdebug-1.8.0.292.b10.1.el8.x86_64.rpminspect.out absent in centos
+java-1.8.0-openjdk-slowdebug-1.8.0.292.b10.1.el8.x86_64.rpminspect.out absent in centos
+java-1.8.0-openjdk-slowdebug-1.8.0.292.b10.1.el8.x86_64.rpminspect.out absent in centos
+java-11-openjdk-devel-11.0.11.0.9.2.el8.x86_64.rpminspect.out absent in centos
+java-11-openjdk-devel-11.0.11.0.9.2.el8.x86_64.rpminspect.out absent in centos
+java-11-openjdk-headless-11.0.11.0.9.2.el8.x86_64.rpminspect.out absent in centos
+java-11-openjdk-headless-11.0.11.0.9.2.el8.x86_64.rpminspect.out absent in centos
+jboss-interceptors-1.2-api-1.0.0.8.module+el8.3.0+133+b8b54b58.noarch.rpminspect.out absent in centos
+FAIL for badfuncs between rpminspect/rocky/8.4/appstream/libasan6-10.2.1.8.2.el8.x86_64.rpminspect.out and rpminspect/centos/8.4/appstream/libasan6-10.2.1.8.2.el8.x86_64.rpminspect.out
+Running annocheck inspection...      pass		      |	Running annocheck inspection...      FAIL
+FAIL for runpath between rpminspect/rocky/8.4/appstream/libasan6-10.2.1.8.2.el8.x86_64.rpminspect.out and rpminspect/centos/8.4/appstream/libasan6-10.2.1.8.2.el8.x86_64.rpminspect.out
+Running annocheck inspection...      pass		      |	Running annocheck inspection...      FAIL
+libguestfs-inspect-icons-1.40.2.27.module+el8.4.0+534+4680a14e.noarch.rpminspect.out absent in centos
+libiscsi-1.18.0.8.module+el8.4.0+534+4680a14e.x86_64.rpminspect.out absent in centos
+libiscsi-utils-1.18.0.8.module+el8.4.0+534+4680a14e.x86_64.rpminspect.out absent in centos
+libomp-11.0.0.1.module+el8.4.0+412+05cf643f.i686.rpminspect.out absent in centos
+libpmem-debug-1.9.2.1.module+el8.4.0+447+c4138630.x86_64.rpminspect.out absent in centos
+libpmemblk-debug-1.9.2.1.module+el8.4.0+447+c4138630.x86_64.rpminspect.out absent in centos
+libpmemlog-debug-1.9.2.1.module+el8.4.0+447+c4138630.x86_64.rpminspect.out absent in centos
+libpmemobj-debug-1.9.2.1.module+el8.4.0+447+c4138630.x86_64.rpminspect.out absent in centos
+libpmempool-debug-1.9.2.1.module+el8.4.0+447+c4138630.x86_64.rpminspect.out absent in centos
+FAIL for license between rpminspect/rocky/8.4/appstream/librados2-12.2.7.9.el8.i686.rpminspect.out and rpminspect/centos/8.4/appstream/librados2-12.2.7.9.el8.i686.rpminspect.out
+Running annocheck inspection...      pass		      |	Running annocheck inspection...      FAIL
+FAIL for runpath between rpminspect/rocky/8.4/appstream/librados2-12.2.7.9.el8.i686.rpminspect.out and rpminspect/centos/8.4/appstream/librados2-12.2.7.9.el8.i686.rpminspect.out
+Running annocheck inspection...      pass		      |	Running annocheck inspection...      FAIL
+FAIL for license between rpminspect/rocky/8.4/appstream/librados2-12.2.7.9.el8.x86_64.rpminspect.out and rpminspect/centos/8.4/appstream/librados2-12.2.7.9.el8.x86_64.rpminspect.out
+Running annocheck inspection...      pass		      |	Running annocheck inspection...      FAIL
+FAIL for runpath between rpminspect/rocky/8.4/appstream/librados2-12.2.7.9.el8.x86_64.rpminspect.out and rpminspect/centos/8.4/appstream/librados2-12.2.7.9.el8.x86_64.rpminspect.out
+Running annocheck inspection...      pass		      |	Running annocheck inspection...      FAIL
+librpmem-debug-1.9.2.1.module+el8.4.0+447+c4138630.x86_64.rpminspect.out absent in centos
+libslirp-4.3.1.1.module+el8.4.0+537+38cf4e42.x86_64.rpminspect.out absent in centos
+libslirp-4.3.1.1.module+el8.4.0+538+900cb89c.x86_64.rpminspect.out absent in centos
+FAIL for annocheck between rpminspect/rocky/8.4/appstream/libtar-1.2.20.15.el8.i686.rpminspect.out and rpminspect/centos/8.4/appstream/libtar-1.2.20.15.el8.i686.rpminspect.out
+Running annocheck inspection...      FAIL		      |	Running annocheck inspection...      pass
+libvirt-6.0.0.35.module+el8.4.0+534+4680a14e.x86_64.rpminspect.out absent in centos
+libvirt-daemon-driver-storage-6.0.0.35.module+el8.4.0+534+4680a14e.x86_64.rpminspect.out absent in centos
+libvirt-daemon-kvm-6.0.0.35.module+el8.4.0+534+4680a14e.x86_64.rpminspect.out absent in centos
+libvncserver-0.9.11.15.el8_2.1.i686.rpminspect.out absent in centos
+libvncserver-0.9.11.15.el8_2.1.x86_64.rpminspect.out absent in centos
+llvm-test-11.0.0.2.module+el8.4.0+384+9fc331fd.i686.rpminspect.out absent in centos
+llvm-test-11.0.0.2.module+el8.4.0+384+9fc331fd.x86_64.rpminspect.out absent in centos
+llvm-toolset-11.0.0.1.module+el8.4.0+412+05cf643f.i686.rpminspect.out absent in centos
+llvm-toolset-11.0.0.1.module+el8.4.0+412+05cf643f.x86_64.rpminspect.out absent in centos
+log4j12-1.2.17.22.module+el8.3.0+214+edf13b3f.noarch.rpminspect.out absent in centos
+mariadb-backup-10.5.9.1.module+el8.4.0+431+26aaed18.x86_64.rpminspect.out absent in centos
+mariadb-common-10.3.28.1.module+el8.4.0+427+adf35707.x86_64.rpminspect.out absent in centos
+mariadb-common-10.5.9.1.module+el8.4.0+431+26aaed18.x86_64.rpminspect.out absent in centos
+mariadb-embedded-10.5.9.1.module+el8.4.0+431+26aaed18.x86_64.rpminspect.out absent in centos
+mariadb-server-10.3.28.1.module+el8.4.0+427+adf35707.x86_64.rpminspect.out absent in centos
+mariadb-server-10.5.9.1.module+el8.4.0+431+26aaed18.x86_64.rpminspect.out absent in centos
+mariadb-server-10.5.9.1.module+el8.4.0+431+26aaed18.x86_64.rpminspect.out absent in centos
+mariadb-test-10.3.28.1.module+el8.4.0+427+adf35707.x86_64.rpminspect.out absent in centos
+mariadb-test-10.5.9.1.module+el8.4.0+431+26aaed18.x86_64.rpminspect.out absent in centos
+mariadb-test-10.5.9.1.module+el8.4.0+431+26aaed18.x86_64.rpminspect.out absent in centos
+mercurial-4.8.2.1.module+el8.3.0+219+18f2b388.x86_64.rpminspect.out absent in centos
+mysql-server-8.0.21.1.module+el8.3.0+242+87d3366a.x86_64.rpminspect.out absent in centos
+mysql-test-8.0.21.1.module+el8.3.0+242+87d3366a.x86_64.rpminspect.out absent in centos
+nbdkit-1.16.2.4.module+el8.4.0+534+4680a14e.x86_64.rpminspect.out absent in centos
+nginx-all-modules-1.14.1.9.module+el8.3.0+121+6327f1ce.noarch.rpminspect.out absent in centos
+nginx-all-modules-1.16.1.1.module+el8.3.0+122+d50b30f6.1.noarch.rpminspect.out absent in centos
+nginx-all-modules-1.18.0.2.module+el8.3.0+123+03c466e9.noarch.rpminspect.out absent in centos
+FAIL for annocheck between rpminspect/rocky/8.4/appstream/nispor-1.0.1.4.el8.i686.rpminspect.out and rpminspect/centos/8.4/appstream/nispor-1.0.1.4.el8.i686.rpminspect.out
+Running annocheck inspection...      FAIL		      |	Running annocheck inspection...      pass
+nodejs-10.24.0.1.module+el8.3.0+101+f84c7154.x86_64.rpminspect.out absent in centos
+FAIL for annocheck between rpminspect/rocky/8.4/appstream/openblas-0.3.12.1.el8.x86_64.rpminspect.out and rpminspect/centos/8.4/appstream/openblas-0.3.12.1.el8.x86_64.rpminspect.out
+Running annocheck inspection...      FAIL		      |	Running annocheck inspection...      pass
+openwsman-server-2.6.5.7.el8_3.i686.rpminspect.out absent in centos
+openwsman-server-2.6.5.7.el8_3.x86_64.rpminspect.out absent in centos
+perl-5.30.1.452.module+el8.4.0+456+971dc263.x86_64.rpminspect.out absent in centos
+perl-CPAN-DistnameInfo-dummy-0.12.13.module+el8.4.0+523+c5865271.noarch.rpminspect.out absent in centos
+perl-FCGI-0.78.11.module+el8.4.0+506+21d0a743.x86_64.rpminspect.out absent in centos
+perl-FCGI-0.78.11.module+el8.4.0+506+a6442aa4.x86_64.rpminspect.out absent in centos
+perl-FCGI-0.78.11.module+el8.4.0+506+e1f027f0.x86_64.rpminspect.out absent in centos
+perl-core-5.24.4.404.module+el8.4.0+463+10533ad3.x86_64.rpminspect.out absent in centos
+perl-interpreter-5.24.4.404.module+el8.4.0+463+10533ad3.x86_64.rpminspect.out absent in centos
+perl-libs-5.24.4.404.module+el8.4.0+463+10533ad3.x86_64.rpminspect.out absent in centos
+php-7.2.24.1.module+el8.4.0+413+c9202dda.x86_64.rpminspect.out absent in centos
+php-7.3.20.1.module+el8.4.0+414+2e7afcdd.x86_64.rpminspect.out absent in centos
+php-7.4.6.4.module+el8.4.0+415+e936cba3.x86_64.rpminspect.out absent in centos
+php-cli-7.2.24.1.module+el8.4.0+413+c9202dda.x86_64.rpminspect.out absent in centos
+php-cli-7.3.20.1.module+el8.4.0+414+2e7afcdd.x86_64.rpminspect.out absent in centos
+php-cli-7.4.6.4.module+el8.4.0+415+e936cba3.x86_64.rpminspect.out absent in centos
+php-common-7.2.24.1.module+el8.4.0+413+c9202dda.x86_64.rpminspect.out absent in centos
+php-common-7.3.20.1.module+el8.4.0+414+2e7afcdd.x86_64.rpminspect.out absent in centos
+php-common-7.4.6.4.module+el8.4.0+415+e936cba3.x86_64.rpminspect.out absent in centos
+php-dbg-7.2.24.1.module+el8.4.0+413+c9202dda.x86_64.rpminspect.out absent in centos
+php-dbg-7.3.20.1.module+el8.4.0+414+2e7afcdd.x86_64.rpminspect.out absent in centos
+php-dbg-7.4.6.4.module+el8.4.0+415+e936cba3.x86_64.rpminspect.out absent in centos
+php-embedded-7.2.24.1.module+el8.4.0+413+c9202dda.x86_64.rpminspect.out absent in centos
+php-embedded-7.3.20.1.module+el8.4.0+414+2e7afcdd.x86_64.rpminspect.out absent in centos
+php-embedded-7.4.6.4.module+el8.4.0+415+e936cba3.x86_64.rpminspect.out absent in centos
+php-fpm-7.2.24.1.module+el8.4.0+413+c9202dda.x86_64.rpminspect.out absent in centos
+php-fpm-7.3.20.1.module+el8.4.0+414+2e7afcdd.x86_64.rpminspect.out absent in centos
+php-fpm-7.4.6.4.module+el8.4.0+415+e936cba3.x86_64.rpminspect.out absent in centos
+pki-tools-10.10.5.2.module+el8.4.0+418+b7ae1d4a.x86_64.rpminspect.out absent in centos
+platform-python-3.6.8.37.el8.rocky.i686.rpminspect.out absent in centos
+platform-python-debug-3.6.8.37.el8.rocky.i686.rpminspect.out absent in centos
+platform-python-debug-3.6.8.37.el8.rocky.i686.rpminspect.out absent in centos
+platform-python-debug-3.6.8.37.el8.rocky.i686.rpminspect.out absent in centos
+platform-python-debug-3.6.8.37.el8.rocky.i686.rpminspect.out absent in centos
+platform-python-debug-3.6.8.37.el8.rocky.x86_64.rpminspect.out absent in centos
+platform-python-debug-3.6.8.37.el8.rocky.x86_64.rpminspect.out absent in centos
+platform-python-debug-3.6.8.37.el8.rocky.x86_64.rpminspect.out absent in centos
+platform-python-devel-3.6.8.37.el8.rocky.i686.rpminspect.out absent in centos
+platform-python-devel-3.6.8.37.el8.rocky.i686.rpminspect.out absent in centos
+platform-python-devel-3.6.8.37.el8.rocky.x86_64.rpminspect.out absent in centos
+platform-python-devel-3.6.8.37.el8.rocky.x86_64.rpminspect.out absent in centos
+podman-1.0.0.8.git921f98f.module+el8.4.0+535+5beadeea.x86_64.rpminspect.out absent in centos
+podman-catatonit-3.0.1.6.module+el8.4.0+537+38cf4e42.x86_64.rpminspect.out absent in centos
+podman-catatonit-3.0.1.6.module+el8.4.0+538+900cb89c.x86_64.rpminspect.out absent in centos
+postgresql-docs-10.15.1.module+el8.4.0+423+7733d88a.x86_64.rpminspect.out absent in centos
+postgresql-docs-12.5.1.module+el8.4.0+424+71d47d9a.x86_64.rpminspect.out absent in centos
+postgresql-docs-13.2.1.module+el8.4.0+426+afe6ea8d.x86_64.rpminspect.out absent in centos
+postgresql-server-10.15.1.module+el8.4.0+423+7733d88a.x86_64.rpminspect.out absent in centos
+postgresql-server-12.5.1.module+el8.4.0+424+71d47d9a.x86_64.rpminspect.out absent in centos
+postgresql-server-9.6.20.1.module+el8.4.0+425+c789c394.x86_64.rpminspect.out absent in centos
+postgresql-upgrade-10.15.1.module+el8.4.0+423+7733d88a.x86_64.rpminspect.out absent in centos
+postgresql-upgrade-12.5.1.module+el8.4.0+424+71d47d9a.x86_64.rpminspect.out absent in centos
+postgresql-upgrade-13.2.1.module+el8.4.0+426+afe6ea8d.x86_64.rpminspect.out absent in centos
+pygobject2-2.28.7.4.module+el8.3.0+157+a69fdc85.x86_64.rpminspect.out absent in centos
+pygobject2-2.28.7.4.module+el8.3.0+157+a69fdc85.x86_64.rpminspect.out absent in centos
+pygobject2-codegen-2.28.7.4.module+el8.3.0+157+a69fdc85.x86_64.rpminspect.out absent in centos
+pygobject2-devel-2.28.7.4.module+el8.3.0+157+a69fdc85.x86_64.rpminspect.out absent in centos
+pygobject2-doc-2.28.7.4.module+el8.3.0+157+a69fdc85.x86_64.rpminspect.out absent in centos
+pygobject2-doc-2.28.7.4.module+el8.3.0+157+a69fdc85.x86_64.rpminspect.out absent in centos
+python2-coverage-4.5.1.4.module+el8.4.0+403+9ae17a31.x86_64.rpminspect.out absent in centos
+python2-debug-2.7.18.4.module+el8.4.0+403+9ae17a31.x86_64.rpminspect.out absent in centos
+python2-debug-2.7.18.4.module+el8.4.0+403+9ae17a31.x86_64.rpminspect.out absent in centos
+python2-devel-2.7.18.4.module+el8.4.0+403+9ae17a31.x86_64.rpminspect.out absent in centos
+python2-docutils-0.14.12.module+el8.4.0+403+9ae17a31.noarch.rpminspect.out absent in centos
+python2-libs-2.7.18.4.module+el8.4.0+403+9ae17a31.x86_64.rpminspect.out absent in centos
+python2-libs-2.7.18.4.module+el8.4.0+403+9ae17a31.x86_64.rpminspect.out absent in centos
+python2-scipy-1.0.0.20.module+el8.4.0+403+9ae17a31.x86_64.rpminspect.out absent in centos
+python3-docutils-0.14.12.module+el8.3.0+120+426d8baf.noarch.rpminspect.out absent in centos
+python3-idle-3.6.8.37.el8.rocky.i686.rpminspect.out absent in centos
+python3-idle-3.6.8.37.el8.rocky.x86_64.rpminspect.out absent in centos
+python3-scipy-1.0.0.20.module+el8.3.0+120+426d8baf.x86_64.rpminspect.out absent in centos
+python38-debug-3.8.6.3.module+el8.4.0+439+6f06c772.x86_64.rpminspect.out absent in centos
+python38-debug-3.8.6.3.module+el8.4.0+439+6f06c772.x86_64.rpminspect.out absent in centos
+python38-debug-3.8.6.3.module+el8.4.0+439+6f06c772.x86_64.rpminspect.out absent in centos
+python38-devel-3.8.6.3.module+el8.4.0+439+6f06c772.x86_64.rpminspect.out absent in centos
+python38-devel-3.8.6.3.module+el8.4.0+439+6f06c772.x86_64.rpminspect.out absent in centos
+python38-libs-3.8.6.3.module+el8.4.0+439+6f06c772.x86_64.rpminspect.out absent in centos
+python38-mod_wsgi-4.6.8.3.module+el8.4.0+442+7380150e.x86_64.rpminspect.out absent in centos
+python38-scipy-1.3.1.4.module+el8.4.0+442+7380150e.x86_64.rpminspect.out absent in centos
+python38-test-3.8.6.3.module+el8.4.0+439+6f06c772.x86_64.rpminspect.out absent in centos
+python39-devel-3.9.2.1.module+el8.4.0+441+cf15719f.x86_64.rpminspect.out absent in centos
+python39-devel-3.9.2.1.module+el8.4.0+441+cf15719f.x86_64.rpminspect.out absent in centos
+python39-libs-3.9.2.1.module+el8.4.0+441+cf15719f.x86_64.rpminspect.out absent in centos
+python39-mod_wsgi-4.7.1.4.module+el8.4.0+443+33e432e8.x86_64.rpminspect.out absent in centos
+python39-scipy-1.5.4.3.module+el8.4.0+443+33e432e8.x86_64.rpminspect.out absent in centos
+python39-test-3.9.2.1.module+el8.4.0+441+cf15719f.x86_64.rpminspect.out absent in centos
+qemu-kvm-4.2.0.48.module+el8.4.0+534+4680a14e.x86_64.rpminspect.out absent in centos
+qemu-kvm-core-4.2.0.48.module+el8.4.0+534+4680a14e.x86_64.rpminspect.out absent in centos
+qemu-kvm-core-4.2.0.48.module+el8.4.0+534+4680a14e.x86_64.rpminspect.out absent in centos
+FAIL for annocheck between rpminspect/rocky/8.4/appstream/qt5-qtbase-5.12.5.8.el8.x86_64.rpminspect.out and rpminspect/centos/8.4/appstream/qt5-qtbase-5.12.5.8.el8.x86_64.rpminspect.out
+Running annocheck inspection...      FAIL		      |	Running annocheck inspection...      pass
+rhc-worker-playbook-0.1.5.3.el8.x86_64.rpminspect.out absent in centos
+rhc-worker-playbook-0.1.5.3.el8.x86_64.rpminspect.out absent in centos
+rhn-setup-gnome-2.8.16.13.module+el8.3.0+178+27415451.x86_64.rpminspect.out absent in centos
+rhnlib-2.8.6.8.module+el8.3.0+178+27415451.noarch.rpminspect.out absent in centos
+rocky-backgrounds-84.5.1.el8.noarch.rpminspect.out absent in centos
+rocky-logos-ipa-84.5.1.el8.noarch.rpminspect.out absent in centos
+FAIL for runpath between rpminspect/rocky/8.4/appstream/rpm-ostree-libs-2020.7.3.el8.x86_64.rpminspect.out and rpminspect/centos/8.4/appstream/rpm-ostree-libs-2020.7.3.el8.x86_64.rpminspect.out
+Running annocheck inspection...      pass		      |	Running annocheck inspection...      FAIL
+ruby-libs-2.5.5.106.module+el8.4.0+387+26d1abcc.i686.rpminspect.out absent in centos
+ruby-libs-2.5.5.106.module+el8.4.0+387+26d1abcc.x86_64.rpminspect.out absent in centos
+ruby-libs-2.6.3.106.module+el8.4.0+446+80b53620.i686.rpminspect.out absent in centos
+ruby-libs-2.6.3.106.module+el8.4.0+446+80b53620.i686.rpminspect.out absent in centos
+ruby-libs-2.6.3.106.module+el8.4.0+446+80b53620.x86_64.rpminspect.out absent in centos
+ruby-libs-2.7.1.133.module+el8.4.0+411+b946f28c.i686.rpminspect.out absent in centos
+ruby-libs-2.7.1.133.module+el8.4.0+411+b946f28c.i686.rpminspect.out absent in centos
+ruby-libs-2.7.1.133.module+el8.4.0+411+b946f28c.x86_64.rpminspect.out absent in centos
+rubygem-mysql2-0.4.10.4.module+el8.3.0+167+5c390590.x86_64.rpminspect.out absent in centos
+rubygem-mysql2-0.5.2.1.module+el8.4.0+446+80b53620.x86_64.rpminspect.out absent in centos
+rubygem-mysql2-0.5.3.1.module+el8.4.0+411+b946f28c.x86_64.rpminspect.out absent in centos
+scala-apidoc-2.10.6.14.module+el8.3.0+241+f23502a8.noarch.rpminspect.out absent in centos
+slirp4netns-0.1.5.dev.gitc4e1bc5.module+el8.4.0+535+5beadeea.x86_64.rpminspect.out absent in centos
+slirp4netns-0.4.2.3.git21fdece.module+el8.4.0+536+994a2182.x86_64.rpminspect.out absent in centos
+slirp4netns-0.4.2.3.git21fdece.module+el8.4.0+536+994a2182.x86_64.rpminspect.out absent in centos
+slirp4netns-1.1.8.1.module+el8.4.0+537+38cf4e42.x86_64.rpminspect.out absent in centos
+slirp4netns-1.1.8.1.module+el8.4.0+538+900cb89c.x86_64.rpminspect.out absent in centos
+spacewalk-usix-2.8.1.5.module+el8.3.0+252+a4420673.noarch.rpminspect.out absent in centos
+squid-4.11.4.module+el8.4.0+404+316a0dc5.2.x86_64.rpminspect.out absent in centos
+FAIL for badfuncs between rpminspect/rocky/8.4/appstream/xorg-x11-server-utils-7.7.27.el8.x86_64.rpminspect.out and rpminspect/centos/8.4/appstream/xorg-x11-server-utils-7.7.27.el8.x86_64.rpminspect.out
+Running annocheck inspection...      pass		      |	Running annocheck inspection...      FAIL
+FAIL for annocheck between rpminspect/rocky/8.4/baseos/audit-libs-3.0.0.17.20191104git1c2f876.el8.i686.rpminspect.out and rpminspect/centos/8.4/baseos/audit-libs-3.0.0.17.20191104git1c2f876.el8.i686.rpminspect.out
+Running annocheck inspection...      FAIL		      |	Running annocheck inspection...      pass
+FAIL for pathmigration between rpminspect/rocky/8.4/baseos/audit-libs-3.0.0.17.20191104git1c2f876.el8.i686.rpminspect.out and rpminspect/centos/8.4/baseos/audit-libs-3.0.0.17.20191104git1c2f876.el8.i686.rpminspect.out
+Running annocheck inspection...      FAIL		      |	Running annocheck inspection...      pass
+bash-doc-4.4.20.1.el8.x86_64.rpminspect.out absent in centos
+bind-export-libs-9.11.26.4.el8.i686.rpminspect.out absent in centos
+bind-export-libs-9.11.26.4.el8.i686.rpminspect.out absent in centos
+bind-export-libs-9.11.26.4.el8.x86_64.rpminspect.out absent in centos
+bind-export-libs-9.11.26.4.el8.x86_64.rpminspect.out absent in centos
+FAIL for badfuncs between rpminspect/rocky/8.4/baseos/blktrace-1.2.0.10.el8.x86_64.rpminspect.out and rpminspect/centos/8.4/baseos/blktrace-1.2.0.10.el8.x86_64.rpminspect.out
+Running annocheck inspection...      pass		      |	Running annocheck inspection...      FAIL
+FAIL for pathmigration between rpminspect/rocky/8.4/baseos/cronie-1.5.2.4.el8.x86_64.rpminspect.out and rpminspect/centos/8.4/baseos/cronie-1.5.2.4.el8.x86_64.rpminspect.out
+Running annocheck inspection...      pass		      |	Running annocheck inspection...      FAIL
+dbus-1.12.8.12.el8_3.x86_64.rpminspect.out absent in centos
+dhcp-client-4.3.6.44.el8.x86_64.rpminspect.out absent in centos
+dhcp-libs-4.3.6.44.el8.i686.rpminspect.out absent in centos
+dhcp-libs-4.3.6.44.el8.x86_64.rpminspect.out absent in centos
+dhcp-relay-4.3.6.44.el8.x86_64.rpminspect.out absent in centos
+dhcp-server-4.3.6.44.el8.x86_64.rpminspect.out absent in centos
+FAIL for annocheck between rpminspect/rocky/8.4/baseos/e2fsprogs-libs-1.45.6.1.el8.i686.rpminspect.out and rpminspect/centos/8.4/baseos/e2fsprogs-libs-1.45.6.1.el8.i686.rpminspect.out
+Running annocheck inspection...      FAIL		      |	Running annocheck inspection...      pass
+glib2-2.56.4.9.el8.i686.rpminspect.out absent in centos
+glib2-2.56.4.9.el8.x86_64.rpminspect.out absent in centos
+glib2-tests-2.56.4.9.el8.x86_64.rpminspect.out absent in centos
+glib2-tests-2.56.4.9.el8.x86_64.rpminspect.out absent in centos
+glib2-tests-2.56.4.9.el8.x86_64.rpminspect.out absent in centos
+kernel-4.18.0.305.el8.x86_64.rpminspect.out absent in centos
+kernel-4.18.0.305.el8.x86_64.rpminspect.out absent in centos
+kernel-abi-stablelists-4.18.0.305.el8.noarch.rpminspect.out absent in centos
+kernel-core-4.18.0.305.el8.x86_64.rpminspect.out absent in centos
+kernel-cross-headers-4.18.0.305.el8.x86_64.rpminspect.out absent in centos
+kernel-debug-4.18.0.305.el8.x86_64.rpminspect.out absent in centos
+kernel-debug-4.18.0.305.el8.x86_64.rpminspect.out absent in centos
+kernel-debug-core-4.18.0.305.el8.x86_64.rpminspect.out absent in centos
+kernel-debug-devel-4.18.0.305.el8.x86_64.rpminspect.out absent in centos
+kernel-debug-modules-4.18.0.305.el8.x86_64.rpminspect.out absent in centos
+kernel-debug-modules-extra-4.18.0.305.el8.x86_64.rpminspect.out absent in centos
+kernel-devel-4.18.0.305.el8.x86_64.rpminspect.out absent in centos
+kernel-doc-4.18.0.305.el8.noarch.rpminspect.out absent in centos
+kernel-headers-4.18.0.305.el8.x86_64.rpminspect.out absent in centos
+kernel-modules-4.18.0.305.el8.x86_64.rpminspect.out absent in centos
+kernel-modules-extra-4.18.0.305.el8.x86_64.rpminspect.out absent in centos
+kernel-tools-4.18.0.305.el8.x86_64.rpminspect.out absent in centos
+kmod-redhat-atlantic-4.18.0_255.el8_dup8.3.1.el8.x86_64.rpminspect.out absent in centos
+kmod-redhat-bnxt_en-1.10.0_dup8.1.2.el8.x86_64.rpminspect.out absent in centos
+kmod-redhat-ice-0.8.2_k_dup8.2.1.el8.x86_64.rpminspect.out absent in centos
+kmod-redhat-ice-firmware-1.3.4.0_dup8.2.1.el8.x86_64.rpminspect.out absent in centos
+kmod-redhat-ionic-4.18.0.210_dup8.2.2.el8.x86_64.rpminspect.out absent in centos
+kmod-redhat-mlx5_core-5.0_0_dup8.2.2.el8.x86_64.rpminspect.out absent in centos
+kmod-redhat-mpt3sas-35.101.00.00_dup8.3.1.el8.x86_64.rpminspect.out absent in centos
+FAIL for annocheck between rpminspect/rocky/8.4/baseos/libacl-2.2.53.1.el8.i686.rpminspect.out and rpminspect/centos/8.4/baseos/libacl-2.2.53.1.el8.i686.rpminspect.out
+Running annocheck inspection...      FAIL		      |	Running annocheck inspection...      pass
+FAIL for annocheck between rpminspect/rocky/8.4/baseos/libcom_err-1.45.6.1.el8.i686.rpminspect.out and rpminspect/centos/8.4/baseos/libcom_err-1.45.6.1.el8.i686.rpminspect.out
+Running annocheck inspection...      FAIL		      |	Running annocheck inspection...      pass
+FAIL for annocheck between rpminspect/rocky/8.4/baseos/libss-1.45.6.1.el8.i686.rpminspect.out and rpminspect/centos/8.4/baseos/libss-1.45.6.1.el8.i686.rpminspect.out
+Running annocheck inspection...      FAIL		      |	Running annocheck inspection...      pass
+FAIL for license between rpminspect/rocky/8.4/baseos/mozjs52-52.9.0.2.el8.x86_64.rpminspect.out and rpminspect/centos/8.4/baseos/mozjs52-52.9.0.2.el8.x86_64.rpminspect.out
+Running annocheck inspection...      pass		      |	Running annocheck inspection...      FAIL
+FAIL for annocheck between rpminspect/rocky/8.4/baseos/ncurses-c++-libs-6.1.7.20180224.el8.i686.rpminspect.out and rpminspect/centos/8.4/baseos/ncurses-c++-libs-6.1.7.20180224.el8.i686.rpminspect.out
+Running annocheck inspection...      FAIL		      |	Running annocheck inspection...      pass
+FAIL for annocheck between rpminspect/rocky/8.4/baseos/ncurses-compat-libs-6.1.7.20180224.el8.i686.rpminspect.out and rpminspect/centos/8.4/baseos/ncurses-compat-libs-6.1.7.20180224.el8.i686.rpminspect.out
+Running annocheck inspection...      FAIL		      |	Running annocheck inspection...      pass
+FAIL for annocheck between rpminspect/rocky/8.4/baseos/ncurses-libs-6.1.7.20180224.el8.i686.rpminspect.out and rpminspect/centos/8.4/baseos/ncurses-libs-6.1.7.20180224.el8.i686.rpminspect.out
+Running annocheck inspection...      FAIL		      |	Running annocheck inspection...      pass
+opa-address-resolution-10.10.3.0.11.1.el8.rocky.x86_64.rpminspect.out absent in centos
+opa-basic-tools-10.10.3.0.11.1.el8.rocky.x86_64.rpminspect.out absent in centos
+opa-fastfabric-10.10.3.0.11.1.el8.rocky.x86_64.rpminspect.out absent in centos
+opa-fm-10.10.3.0.11.1.el8.rocky.x86_64.rpminspect.out absent in centos
+opa-libopamgt-10.10.3.0.11.1.el8.rocky.x86_64.rpminspect.out absent in centos
+openssh-clients-8.0p1.5.el8.x86_64.rpminspect.out absent in centos
+openssh-server-8.0p1.5.el8.x86_64.rpminspect.out absent in centos
+python3-libs-3.6.8.37.el8.rocky.i686.rpminspect.out absent in centos
+python3-libs-3.6.8.37.el8.rocky.i686.rpminspect.out absent in centos
+python3-libs-3.6.8.37.el8.rocky.x86_64.rpminspect.out absent in centos
+python3-perf-4.18.0.305.el8.x86_64.rpminspect.out absent in centos
+rocky-indexhtml-8.0.0.el8.noarch.rpminspect.out absent in centos
+rocky-logos-84.5.1.el8.x86_64.rpminspect.out absent in centos
+rocky-logos-httpd-84.5.1.el8.noarch.rpminspect.out absent in centos
+rocky-logos-httpd-84.5.1.el8.noarch.rpminspect.out absent in centos
+libknet1-1.18.1.el8.i686.rpminspect.out absent in centos
+libknet1-1.18.1.el8.x86_64.rpminspect.out absent in centos
+resource-agents-4.1.1.90.el8.x86_64.rpminspect.out absent in centos
+resource-agents-4.1.1.90.el8.x86_64.rpminspect.out absent in centos
+FAIL for license between rpminspect/rocky/8.4/powertools/SuperLU-5.2.0.7.el8.x86_64.rpminspect.out and rpminspect/centos/8.4/powertools/SuperLU-5.2.0.7.el8.x86_64.rpminspect.out
+Running annocheck inspection...      pass		      |	Running annocheck inspection...      FAIL
+bsh-manual-2.0.13.b6.module+el8.3.0+74+855e3f5d.noarch.rpminspect.out absent in centos
+byaccj-1.15.17.module+el8.3.0+74+855e3f5d.x86_64.rpminspect.out absent in centos
+FAIL for xml between rpminspect/rocky/8.4/powertools/cppcheck-1.83.1.el8.x86_64.rpminspect.out and rpminspect/centos/8.4/powertools/cppcheck-1.83.1.el8.x86_64.rpminspect.out
+Running annocheck inspection...      pass		      |	Running annocheck inspection...      FAIL
+glassfish-annotation-api-1.2.13.module+el8.3.0+74+855e3f5d.noarch.rpminspect.out absent in centos
+glassfish-annotation-api-javadoc-1.2.13.module+el8.3.0+74+855e3f5d.noarch.rpminspect.out absent in centos
+glassfish-el-api-3.0.1.0.7.b08.module+el8.3.0+74+855e3f5d.noarch.rpminspect.out absent in centos
+glassfish-legal-1.1.11.module+el8.3.0+74+855e3f5d.noarch.rpminspect.out absent in centos
+glassfish-master-pom-8.11.module+el8.3.0+74+855e3f5d.noarch.rpminspect.out absent in centos
+glassfish-servlet-api-3.1.0.14.module+el8.3.0+74+855e3f5d.noarch.rpminspect.out absent in centos
+glassfish-servlet-api-javadoc-3.1.0.14.module+el8.3.0+74+855e3f5d.noarch.rpminspect.out absent in centos
+FAIL for license between rpminspect/rocky/8.4/powertools/gmock-1.8.0.5.el8.i686.rpminspect.out and rpminspect/centos/8.4/powertools/gmock-1.8.0.5.el8.i686.rpminspect.out
+Running annocheck inspection...      pass		      |	Running annocheck inspection...      FAIL
+FAIL for license between rpminspect/rocky/8.4/powertools/gmock-1.8.0.5.el8.x86_64.rpminspect.out and rpminspect/centos/8.4/powertools/gmock-1.8.0.5.el8.x86_64.rpminspect.out
+Running annocheck inspection...      pass		      |	Running annocheck inspection...      FAIL
+FAIL for license between rpminspect/rocky/8.4/powertools/gtest-1.8.0.5.el8.i686.rpminspect.out and rpminspect/centos/8.4/powertools/gtest-1.8.0.5.el8.i686.rpminspect.out
+Running annocheck inspection...      pass		      |	Running annocheck inspection...      FAIL
+FAIL for license between rpminspect/rocky/8.4/powertools/gtest-1.8.0.5.el8.x86_64.rpminspect.out and rpminspect/centos/8.4/powertools/gtest-1.8.0.5.el8.x86_64.rpminspect.out
+Running annocheck inspection...      pass		      |	Running annocheck inspection...      FAIL
+java-1.8.0-openjdk-demo-fastdebug-1.8.0.292.b10.1.el8.x86_64.rpminspect.out absent in centos
+java-1.8.0-openjdk-demo-slowdebug-1.8.0.292.b10.1.el8.x86_64.rpminspect.out absent in centos
+java-1.8.0-openjdk-demo-slowdebug-1.8.0.292.b10.1.el8.x86_64.rpminspect.out absent in centos
+java-1.8.0-openjdk-devel-fastdebug-1.8.0.292.b10.1.el8.x86_64.rpminspect.out absent in centos
+java-1.8.0-openjdk-devel-fastdebug-1.8.0.292.b10.1.el8.x86_64.rpminspect.out absent in centos
+java-1.8.0-openjdk-devel-slowdebug-1.8.0.292.b10.1.el8.x86_64.rpminspect.out absent in centos
+java-1.8.0-openjdk-devel-slowdebug-1.8.0.292.b10.1.el8.x86_64.rpminspect.out absent in centos
+java-1.8.0-openjdk-devel-slowdebug-1.8.0.292.b10.1.el8.x86_64.rpminspect.out absent in centos
+java-1.8.0-openjdk-fastdebug-1.8.0.292.b10.1.el8.x86_64.rpminspect.out absent in centos
+java-1.8.0-openjdk-headless-fastdebug-1.8.0.292.b10.1.el8.x86_64.rpminspect.out absent in centos
+java-1.8.0-openjdk-headless-fastdebug-1.8.0.292.b10.1.el8.x86_64.rpminspect.out absent in centos
+java-11-openjdk-devel-fastdebug-11.0.11.0.9.2.el8.x86_64.rpminspect.out absent in centos
+java-11-openjdk-devel-fastdebug-11.0.11.0.9.2.el8.x86_64.rpminspect.out absent in centos
+java-11-openjdk-devel-slowdebug-11.0.11.0.9.2.el8.x86_64.rpminspect.out absent in centos
+java-11-openjdk-devel-slowdebug-11.0.11.0.9.2.el8.x86_64.rpminspect.out absent in centos
+java-11-openjdk-devel-slowdebug-11.0.11.0.9.2.el8.x86_64.rpminspect.out absent in centos
+java-11-openjdk-headless-fastdebug-11.0.11.0.9.2.el8.x86_64.rpminspect.out absent in centos
+java-11-openjdk-headless-fastdebug-11.0.11.0.9.2.el8.x86_64.rpminspect.out absent in centos
+java-11-openjdk-headless-slowdebug-11.0.11.0.9.2.el8.x86_64.rpminspect.out absent in centos
+java-11-openjdk-headless-slowdebug-11.0.11.0.9.2.el8.x86_64.rpminspect.out absent in centos
+java-11-openjdk-headless-slowdebug-11.0.11.0.9.2.el8.x86_64.rpminspect.out absent in centos
+java-11-openjdk-slowdebug-11.0.11.0.9.2.el8.x86_64.rpminspect.out absent in centos
+jboss-interceptors-1.2-api-1.0.0.8.module+el8.3.0+74+855e3f5d.noarch.rpminspect.out absent in centos
+jboss-interceptors-1.2-api-javadoc-1.0.0.8.module+el8.3.0+74+855e3f5d.noarch.rpminspect.out absent in centos
+jdom-demo-1.1.3.17.module+el8.3.0+74+855e3f5d.noarch.rpminspect.out absent in centos
+FAIL for license between rpminspect/rocky/8.4/powertools/libcephfs2-12.2.7.9.el8.i686.rpminspect.out and rpminspect/centos/8.4/powertools/libcephfs2-12.2.7.9.el8.i686.rpminspect.out
+Running annocheck inspection...      pass		      |	Running annocheck inspection...      FAIL
+FAIL for runpath between rpminspect/rocky/8.4/powertools/libcephfs2-12.2.7.9.el8.i686.rpminspect.out and rpminspect/centos/8.4/powertools/libcephfs2-12.2.7.9.el8.i686.rpminspect.out
+Running annocheck inspection...      pass		      |	Running annocheck inspection...      FAIL
+FAIL for license between rpminspect/rocky/8.4/powertools/libcephfs2-12.2.7.9.el8.x86_64.rpminspect.out and rpminspect/centos/8.4/powertools/libcephfs2-12.2.7.9.el8.x86_64.rpminspect.out
+Running annocheck inspection...      pass		      |	Running annocheck inspection...      FAIL
+FAIL for runpath between rpminspect/rocky/8.4/powertools/libcephfs2-12.2.7.9.el8.x86_64.rpminspect.out and rpminspect/centos/8.4/powertools/libcephfs2-12.2.7.9.el8.x86_64.rpminspect.out
+Running annocheck inspection...      pass		      |	Running annocheck inspection...      FAIL
+libiscsi-1.18.0.8.module+el8.4.0+534+4680a14e.i686.rpminspect.out absent in centos
+libiscsi-utils-1.18.0.8.module+el8.4.0+534+4680a14e.i686.rpminspect.out absent in centos
+libknet1-1.18.1.el8.i686.rpminspect.out absent in centos
+libknet1-1.18.1.el8.x86_64.rpminspect.out absent in centos
+libvirt-6.0.0.35.module+el8.4.0+534+4680a14e.i686.rpminspect.out absent in centos
+libvirt-daemon-driver-storage-6.0.0.35.module+el8.4.0+534+4680a14e.i686.rpminspect.out absent in centos
+mariadb-common-10.3.28.1.module+el8.4.0+427+adf35707.i686.rpminspect.out absent in centos
+mariadb-server-10.3.28.1.module+el8.4.0+427+adf35707.i686.rpminspect.out absent in centos
+mariadb-test-10.3.28.1.module+el8.4.0+427+adf35707.i686.rpminspect.out absent in centos
+maven-local-5.3.0.2.module+el8.3.0+74+855e3f5d.noarch.rpminspect.out absent in centos
+FAIL for license between rpminspect/rocky/8.4/powertools/mozjs52-devel-52.9.0.2.el8.x86_64.rpminspect.out and rpminspect/centos/8.4/powertools/mozjs52-devel-52.9.0.2.el8.x86_64.rpminspect.out
+Running annocheck inspection...      pass		      |	Running annocheck inspection...      FAIL
+FAIL for annocheck between rpminspect/rocky/8.4/powertools/openblas-Rblas-0.3.12.1.el8.x86_64.rpminspect.out and rpminspect/centos/8.4/powertools/openblas-Rblas-0.3.12.1.el8.x86_64.rpminspect.out
+Running annocheck inspection...      FAIL		      |	Running annocheck inspection...      pass
+FAIL for annocheck between rpminspect/rocky/8.4/powertools/openblas-serial64-0.3.12.1.el8.x86_64.rpminspect.out and rpminspect/centos/8.4/powertools/openblas-serial64-0.3.12.1.el8.x86_64.rpminspect.out
+Running annocheck inspection...      FAIL		      |	Running annocheck inspection...      pass
+FAIL for annocheck between rpminspect/rocky/8.4/powertools/openblas-serial64_-0.3.12.1.el8.x86_64.rpminspect.out and rpminspect/centos/8.4/powertools/openblas-serial64_-0.3.12.1.el8.x86_64.rpminspect.out
+Running annocheck inspection...      FAIL		      |	Running annocheck inspection...      pass
+pandoc-2.0.6.5.el8.1.x86_64.rpminspect.out absent in centos
+pandoc-2.0.6.5.el8.1.x86_64.rpminspect.out absent in centos
+pandoc-common-2.0.6.5.el8.1.noarch.rpminspect.out absent in centos
+python39-debug-3.9.2.1.module+el8.4.0+441+cf15719f.x86_64.rpminspect.out absent in centos
+python39-debug-3.9.2.1.module+el8.4.0+441+cf15719f.x86_64.rpminspect.out absent in centos
+python39-debug-3.9.2.1.module+el8.4.0+441+cf15719f.x86_64.rpminspect.out absent in centos
+python39-debug-3.9.2.1.module+el8.4.0+441+cf15719f.x86_64.rpminspect.out absent in centos
+qemu-kvm-tests-4.2.0.48.module+el8.4.0+534+4680a14e.x86_64.rpminspect.out absent in centos
+rrdtool-doc-1.7.0.16.el8_3.x86_64.rpminspect.out absent in centos
+spec-version-maven-plugin-1.2.11.module+el8.3.0+74+855e3f5d.noarch.rpminspect.out absent in centos
+spec-version-maven-plugin-javadoc-1.2.11.module+el8.3.0+74+855e3f5d.noarch.rpminspect.out absent in centos
+xalan-j2-demo-2.7.1.38.module+el8.3.0+74+855e3f5d.noarch.rpminspect.out absent in centos
+xml-commons-apis-manual-1.4.01.25.module+el8.3.0+74+855e3f5d.noarch.rpminspect.out absent in centos
+libknet1-1.18.1.el8.i686.rpminspect.out absent in centos
+libknet1-1.18.1.el8.x86_64.rpminspect.out absent in centos
+resource-agents-4.1.1.90.el8.x86_64.rpminspect.out absent in centos
+resource-agents-4.1.1.90.el8.x86_64.rpminspect.out absent in centos

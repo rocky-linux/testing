@@ -16,7 +16,7 @@ Result: INFO
 Waiver Authorization: Not Waivable
 
 Details:
-rpminspect -v -c /home/vagrant/rpminspect/rocky.yaml -E virus,javabytecode --output=rocky-release-8.3-7.el8.vs.rocky-release-8.3-7.el8.txt rocky-release-8.3-7.el8 rocky-release-8.3-8.el8
+rpminspect -v -c /home/vagrant/rpminspect/rocky.yaml -E virus,javabytecode --output=rocky-release-8.3-7.el8.vs.rocky-release-8.3-8.el8.txt rocky-release-8.3-7.el8 rocky-release-8.3-8.el8
 
 
 
