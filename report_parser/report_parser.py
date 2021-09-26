@@ -11,6 +11,12 @@ import parse_dm_multipath
 import parse_lspci
 import parse_ethtool
 
+class CustomDumper(yaml.Dumper):
+    """Custom dumper to pass yamllint sequence indentation check."""
+    def increase_indent(self, flow=False, indentless=False):
+        return super(CustomDumper, self).increase_indent(flow, False)
+
+
 def test_dmidecode(input_filename):
     """Parses up to the DMIDECODE section."""
     test_dmi = parse_dmidecode.read_dmidecode(open(input_filename))
@@ -133,14 +139,20 @@ def read_entire_file(input_filename, output_filename):
     test_lspci = parse_lspci.read_lspci(target_file)
     test_ethtool = parse_ethtool.read_ethtool(target_file)
     target_output = open(output_filename, 'w')
-    yaml.dump(test_dmi, target_output)
-    yaml.dump(test_os, target_output)
-    yaml.dump(test_cpu_stats, target_output)
-    yaml.dump(test_memory_stats, target_output)
-    yaml.dump(test_storage_stats, target_output)
-    yaml.dump(test_dm_multipath, target_output)
-    yaml.dump(test_lspci, target_output)
-    yaml.dump(test_ethtool, target_output)
+    test_list = [
+        test_dmi,
+        test_os,
+        test_cpu_stats,
+        test_memory_stats,
+        test_storage_stats,
+        test_dm_multipath,
+        test_lspci,
+        test_ethtool
+        ]
+    for test in test_list:
+        target_output.write("---\n")
+        yaml.dump(test, Dumper=CustomDumper, stream=target_output)
+    target_output.close()
 
 def main():
     """Calls the function to read the entire report."""
