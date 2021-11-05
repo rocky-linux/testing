@@ -1,6 +1,6 @@
-#!/bin/bash
+#!/bin/bash 
 
-# Simple script that takes a list of the modular packages in a group of repositories (like AppStream,CodeReady from RHEL 8) and
+# Simple script that takes a list of the modular packages in a group of repositories (like AppStream,CodeReady from RHEL 8) and 
 # compares them with the modules in another distribution (Like AppStream,PowerTools from Rocky 8)
 #
 # It uses straight dnf calls for its data, and requires the repos to be defined in repos.d/.  Also requires git
@@ -17,13 +17,13 @@ REPOS2=$2
 
 # Get a complete list of modules+versions we want to compare against (usually from RHEL 8)
 # This includes a list that consists of things like "perl:5.24 , perl:5.26 , python38:3.8" , etc.
-MODULE_LIST1=$(dnf --disablerepo '*'  --enablerepo "${REPOS1}"  module list  |
-grep -v '^Name'  |
-grep -v  '(RPMs)' |
-grep -v 'Hint:'  |
-grep -vi ' subscription ' |
-grep -vi ' metadata ' |
-grep -v '^$' |
+MODULE_LIST1=$(dnf --disablerepo '*'  --enablerepo "${REPOS1}"  module list  |  
+grep -v '^Name'  |  
+grep -v  '(RPMs)' |  
+grep -v 'Hint:'  |  
+grep -vi ' subscription ' | 
+grep -vi ' metadata ' | 
+grep -v '^$' | 
 awk '{print $1":"$2}')
 
 IFS='
@@ -73,27 +73,32 @@ for module in ${MODULE_LIST1}; do
   MODULE1=$(dnf --disablerepo '*'  --enablerepo "${REPOS1}"  module info  "${module}" 2> /dev/null)
   MODULE2=$(dnf --disablerepo '*'  --enablerepo "${REPOS2}"  module info  "${module}" 2> /dev/null)
 
-
+  
   # Isolate the latest released version of each module, that's the only one we're intrested in (indicated by the "Version   :" line in module info)
   latest_version1=$(echo "${MODULE1}"  |  grep 'Version   '  |  awk '{print $3}'  |  sort -n   |  tail -1)
   latest_version2=$(echo "${MODULE2}"  |  grep 'Version   '  |  awk '{print $3}'  |  sort -n   |  tail -1)
 
-
+  
   # Isolate individual module artifacts and write them (sorted) to a text file
-  # order of operations:  awk to find version string through blank line,
+  # order of operations:  awk to find version string through blank line, 
   # awk to find "Requires   :" line,
-  # sed to remove "Artifacts",
+  # sed to remove "Artifacts", 
   # awk to isolate module rpm artifact ($2),
-  # sed to remove everything after ".module" (which is unique per-distro), except for ending ".$arch" (src/noarch/x86_64/etc.)
-  # remove any blank lines,
+  # sed to remove the distro tag after module (module+el8.4.0+xyz)
+  # sed to remove the git hash after "module+" ONLY IF we have a minor patch release (ie. module ends in a ".1.x86_64" or a ".2.src" or something similar)
+  # sed to remove everything after .module in the normal case (no minor patch release at the end)
+  #everything after ".module" (which is unique per-distro), except for ending ".$arch" (src/noarch/x86_64/etc.)
+  # remove any blank lines, 
   # and finally sort and write to text file
   echo "${MODULE1}"  |
   awk "/${latest_version1}/ { show=1; next } show; /^$/ { show=0 }" |
   awk "/Requires    / { show=1; next } show; /^$/ { show=0 }" |
-  sed 's/Artifacts   //'  |
-  awk '{print $2}' |
-  sed 's/module.*\./module./g' |
-  grep -v '^$'  |
+  sed 's/Artifacts   //'  | 
+  awk '{print $2}' | 
+  sed 's/module+.*+/module+/g'  | 
+  sed 's/module+.*\.\(.*\)\./module.\1./g'  | 
+  sed 's/module+.*\./module./g'  | 
+  grep -v '^$'  |  
   sort   >  "/tmp/module_compare/${module}_1"
 
 
@@ -101,26 +106,28 @@ for module in ${MODULE_LIST1}; do
   echo "${MODULE2}"  |
   awk "/${latest_version2}/ { show=1; next } show; /^$/ { show=0 }" |
   awk "/Requires    / { show=1; next } show; /^$/ { show=0 }" |
-  sed 's/Artifacts   //'  |
-  awk '{print $2}' |
-  sed 's/module.*\./module./g' |
-  grep -v '^$'  |
+  sed 's/Artifacts   //'  | 
+  awk '{print $2}' | 
+  sed 's/module+.*+/module+/g'  |
+  sed 's/module+.*\.\(.*\)\./module.\1./g'  |
+  sed 's/module+.*\./module./g'  |
+  grep -v '^$'  |  
   sort   >  "/tmp/module_compare/${module}_2"
 
 
   # Get list of differences from source repo (the "-" in git diff)
   diff1=$(git --no-pager diff "/tmp/module_compare/${module}_1"  "/tmp/module_compare/${module}_2"   |  grep -A1000 '@@'  | grep '^\-' | sort)
-
+  
   # and the "+" (repo2):
   diff2=$(git --no-pager diff "/tmp/module_compare/${module}_1"  "/tmp/module_compare/${module}_2"   |  grep -A1000 '@@'  | grep '^\+' | sort)
-
-
+ 
+  
   # If module artifacts are completely identical, then we will say as much:
   if  [[ -z "${diff1}" ]] && [[ -z "${diff2}" ]]; then
     diff1="Identical Packages"
     diff2="Identical Packages"
   fi
-
+  
   # If module 2 is empty, then it doesn't exist:
   if [ -s "/tmp/module_compare/${module}_1" ] && [ ! -s "/tmp/module_compare/${module}_2" ];  then
     diff1="N/A"
