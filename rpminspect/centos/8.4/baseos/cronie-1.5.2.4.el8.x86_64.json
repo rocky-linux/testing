@@ -1,0 +1,147 @@
+{
+   "rpminspect": [
+     {
+       "result": "INFO",
+       "waiver authorization": "Not Waivable",
+       "message": "version",
+       "details": "rpminspect version 1.5"
+     },
+     {
+       "result": "INFO",
+       "waiver authorization": "Not Waivable",
+       "message": "command line",
+       "details": "\/usr\/bin\/rpminspect -c \/usr\/share\/rpminspect\/fedora.yaml -v -E metadata,files,patches,virus,javabytecode,disttag,specname --format=json --output=\/home\/vagrant\/data\/rpminspect\/centos\/8.4\/baseos\/cronie-1.5.2.4.el8.x86_64.json \/home\/vagrant\/data\/repos\/centos\/8.4\/baseos\/Packages\/cronie-1.5.2-4.el8.x86_64.rpm"
+     }
+   ],
+   "license": [
+     {
+       "result": "INFO",
+       "waiver authorization": "Not Waivable",
+       "message": "Valid License Tag in cronie-1.5.2-4.el8.x86_64: MIT and BSD and ISC and GPLv2+"
+     },
+     {
+       "result": "OK",
+       "waiver authorization": "Not Waivable"
+     }
+   ],
+   "empty-payload": [
+     {
+       "result": "OK",
+       "waiver authorization": "Not Waivable"
+     }
+   ],
+   "man-pages": [
+     {
+       "result": "OK",
+       "waiver authorization": "Not Waivable"
+     }
+   ],
+   "xml-files": [
+     {
+       "result": "OK",
+       "waiver authorization": "Not Waivable"
+     }
+   ],
+   "elf-object-properties": [
+     {
+       "result": "OK",
+       "waiver authorization": "Not Waivable"
+     }
+   ],
+   "desktop-entry-files": [
+     {
+       "result": "OK",
+       "waiver authorization": "Not Waivable"
+     }
+   ],
+   "ownership": [
+     {
+       "result": "OK",
+       "waiver authorization": "Not Waivable"
+     }
+   ],
+   "shell-syntax": [
+     {
+       "result": "OK",
+       "waiver authorization": "Not Waivable"
+     }
+   ],
+   "annocheck": [
+     {
+       "result": "VERIFY",
+       "waiver authorization": "Not Waivable",
+       "message": "annocheck 'hardened' test fails for \/usr\/bin\/cronnext on x86_64",
+       "details": "annocheck: Version 9.50.\nHardened: \/usr\/bin\/cronnext: warn: Could not find separate debug file: cronnext-1.5.2-4.el8.x86_64.debug.\nHardened: \/usr\/bin\/cronnext: info: Notes produced by gcc plugin version 8.64\nHardened: \/usr\/bin\/cronnext: info: Notes produced by assembler plugin version 1\nHardened: \/usr\/bin\/cronnext: info: Set binary producer to GCC version 8.\nHardened: \/usr\/bin\/cronnext: warn: Could not find separate debug file: cronnext-1.5.2-4.el8.x86_64.debug.\nHardened: \/usr\/bin\/cronnext: FAIL: (addr range: 0x2ef0..0x38e0): No stack protection enabled.\nHardened: \/usr\/bin\/cronnext: FAIL: (addr range: 0x2ef0..0x38e0): Compiled without -fstack-clash-protection.\nHardened: \/usr\/bin\/cronnext: warn: Could not find separate debug file: cronnext-1.5.2-4.el8.x86_64.debug.\nHardened: \/usr\/bin\/cronnext: FAIL: (addr range: 0x2aa0..0x2dfd): Compiled without -fstack-clash-protection.\nHardened: \/usr\/bin\/cronnext: warn: Could not find separate debug file: cronnext-1.5.2-4.el8.x86_64.debug.\nHardened: \/usr\/bin\/cronnext: FAIL: (addr range: 0x38e0..0x4c76): No stack protection enabled.\nHardened: \/usr\/bin\/cronnext: FAIL: (addr range: 0x38e0..0x4c76): Compiled without -fstack-clash-protection.\nHardened: \/usr\/bin\/cronnext: warn: Could not find separate debug file: cronnext-1.5.2-4.el8.x86_64.debug.\nHardened: \/usr\/bin\/cronnext: FAIL: (addr range: 0x4c80..0x5007): No stack protection enabled.\nHardened: \/usr\/bin\/cronnext: FAIL: (addr range: 0x4c80..0x5007): Compiled without -fstack-clash-protection.\nHardened: \/usr\/bin\/cronnext: warn: Could not find separate debug file: cronnext-1.5.2-4.el8.x86_64.debug.\nHardened: \/usr\/bin\/cronnext: FAIL: (addr range: 0x5010..0x5260): No stack protection enabled.\nHardened: \/usr\/bin\/cronnext: FAIL: (addr range: 0x5010..0x5260): Compiled without -fstack-clash-protection.\nHardened: \/usr\/bin\/cronnext: warn: Could not find separate debug file: cronnext-1.5.2-4.el8.x86_64.debug.\nHardened: \/usr\/bin\/cronnext: FAIL: (addr range: 0x5260..0x631a): No stack protection enabled.\nHardened: \/usr\/bin\/cronnext: FAIL: (addr range: 0x5260..0x631a): Compiled without -fstack-clash-protection.\nHardened: \/usr\/bin\/cronnext: warn: Could not find separate debug file: cronnext-1.5.2-4.el8.x86_64.debug.\nHardened: \/usr\/bin\/cronnext: FAIL: (addr range: 0x6320..0x6c8e): No stack protection enabled.\nHardened: \/usr\/bin\/cronnext: FAIL: (addr range: 0x6320..0x6c8e): Compiled without -fstack-clash-protection.\nHardened: \/usr\/bin\/cronnext: warn: Could not find separate debug file: cronnext-1.5.2-4.el8.x86_64.debug.\nHardened: \/usr\/bin\/cronnext: FAIL: (addr range: 0x6c90..0x7df1): No stack protection enabled.\nHardened: \/usr\/bin\/cronnext: FAIL: (addr range: 0x6c90..0x7df1): Compiled without -fstack-clash-protection.\nHardened: \/usr\/bin\/cronnext: warn: Could not find separate debug file: cronnext-1.5.2-4.el8.x86_64.debug.\nHardened: \/usr\/bin\/cronnext: FAIL: (addr range: 0x7e00..0x7fd3): No stack protection enabled.\nHardened: \/usr\/bin\/cronnext: FAIL: (addr range: 0x7e00..0x7fd3): Compiled without -fstack-clash-protection.\nHardened: \/usr\/bin\/cronnext: warn: Could not find separate debug file: cronnext-1.5.2-4.el8.x86_64.debug.\nHardened: \/usr\/bin\/cronnext: PASS: No gaps found.\nHardened: \/usr\/bin\/cronnext: skip: Test for -Wl,-z-now.  (Dynamic segment present, but no dynamic relocations found).\nHardened: \/usr\/bin\/cronnext: skip: Branch protection.  (Not an AArch64 binary).\nHardened: \/usr\/bin\/cronnext: PASS: Compiled with -fcf-protection.\nHardened: \/usr\/bin\/cronnext: PASS: One dynamic section\/segment found.\nHardened: \/usr\/bin\/cronnext: skip: Test of dynamic tags.  (AArch64 specific).\nHardened: \/usr\/bin\/cronnext: PASS: Entry point instruction is ENDBR.\nHardened: \/usr\/bin\/cronnext: PASS: Compiled with -D_FORTIFY_SOURCE=2.\nHardened: \/usr\/bin\/cronnext: PASS: Compiled with -D_GLIBCXX_ASSERTIONS.\nHardened: \/usr\/bin\/cronnext: skip: Test for -Wl,-z,relro.  (No dynamic relocations).\nHardened: \/usr\/bin\/cronnext: PASS: Stack not executable.\nHardened: \/usr\/bin\/cronnext: skip: The LTO setting was not recorded (probably due to the use of an old version of the annobin plugin).\nHardened: \/usr\/bin\/cronnext: PASS: Compiled with sufficient optimization.\nHardened: \/usr\/bin\/cronnext: PASS: Compiled with PIC\/PIE.\nHardened: \/usr\/bin\/cronnext: PASS: Compiled as a position independent binary.\nHardened: \/usr\/bin\/cronnext: PASS: Good GNU Property note.\nHardened: \/usr\/bin\/cronnext: PASS: DT_RPATH\/DT_RUNPATH absent or rooted at \/usr.\nHardened: \/usr\/bin\/cronnext: PASS: No RWX segments found.\nHardened: \/usr\/bin\/cronnext: PASS: Consistent use of the -fshort-enum option.\nHardened: \/usr\/bin\/cronnext: FAIL: Parts of the binary were compiled without stack clash protection.\nHardened: \/usr\/bin\/cronnext: FAIL: Parts of the binary were compiled without a suffcient -fstack-protector setting.\nHardened: \/usr\/bin\/cronnext: skip: Test for stack realignment support.  (Only needed on i686 binaries).\nHardened: \/usr\/bin\/cronnext: PASS: No text relocations found.\nHardened: \/usr\/bin\/cronnext: PASS: No thread cancellation problems.\nHardened: \/usr\/bin\/cronnext: PASS: Compiled with either -Wall and\/or -Wformat-security.\nHardened: \/usr\/bin\/cronnext: PASS: GOT\/PLT relocations are read only.",
+       "remedy": "See annocheck(1) for more information."
+     },
+     {
+       "result": "VERIFY",
+       "waiver authorization": "Not Waivable",
+       "message": "annocheck 'hardened' test fails for \/usr\/bin\/crontab on x86_64",
+       "details": "annocheck: Version 9.50.\nHardened: \/usr\/bin\/crontab: warn: Could not find separate debug file: crontab-1.5.2-4.el8.x86_64.debug.\nHardened: \/usr\/bin\/crontab: info: Notes produced by gcc plugin version 8.64\nHardened: \/usr\/bin\/crontab: info: Notes produced by assembler plugin version 1\nHardened: \/usr\/bin\/crontab: info: Set binary producer to GCC version 8.\nHardened: \/usr\/bin\/crontab: warn: Could not find separate debug file: crontab-1.5.2-4.el8.x86_64.debug.\nHardened: \/usr\/bin\/crontab: FAIL: (addr range: 0x45e0..0x60e8): No stack protection enabled.\nHardened: \/usr\/bin\/crontab: FAIL: (addr range: 0x45e0..0x60e8): Compiled without -fstack-clash-protection.\nHardened: \/usr\/bin\/crontab: warn: Could not find separate debug file: crontab-1.5.2-4.el8.x86_64.debug.\nHardened: \/usr\/bin\/crontab: FAIL: (addr range: 0x3c30..0x44ea): Compiled without -fstack-clash-protection.\nHardened: \/usr\/bin\/crontab: warn: Could not find separate debug file: crontab-1.5.2-4.el8.x86_64.debug.\nHardened: \/usr\/bin\/crontab: FAIL: (addr range: 0x60f0..0x7354): No stack protection enabled.\nHardened: \/usr\/bin\/crontab: FAIL: (addr range: 0x60f0..0x7354): Compiled without -fstack-clash-protection.\nHardened: \/usr\/bin\/crontab: warn: Could not find separate debug file: crontab-1.5.2-4.el8.x86_64.debug.\nHardened: \/usr\/bin\/crontab: FAIL: (addr range: 0x7360..0x841a): No stack protection enabled.\nHardened: \/usr\/bin\/crontab: FAIL: (addr range: 0x7360..0x841a): Compiled without -fstack-clash-protection.\nHardened: \/usr\/bin\/crontab: warn: Could not find separate debug file: crontab-1.5.2-4.el8.x86_64.debug.\nHardened: \/usr\/bin\/crontab: FAIL: (addr range: 0x8420..0x8d8e): No stack protection enabled.\nHardened: \/usr\/bin\/crontab: FAIL: (addr range: 0x8420..0x8d8e): Compiled without -fstack-clash-protection.\nHardened: \/usr\/bin\/crontab: warn: Could not find separate debug file: crontab-1.5.2-4.el8.x86_64.debug.\nHardened: \/usr\/bin\/crontab: FAIL: (addr range: 0x8d90..0x9ef1): No stack protection enabled.\nHardened: \/usr\/bin\/crontab: FAIL: (addr range: 0x8d90..0x9ef1): Compiled without -fstack-clash-protection.\nHardened: \/usr\/bin\/crontab: warn: Could not find separate debug file: crontab-1.5.2-4.el8.x86_64.debug.\nHardened: \/usr\/bin\/crontab: FAIL: (addr range: 0x9f00..0xa0d3): No stack protection enabled.\nHardened: \/usr\/bin\/crontab: FAIL: (addr range: 0x9f00..0xa0d3): Compiled without -fstack-clash-protection.\nHardened: \/usr\/bin\/crontab: warn: Could not find separate debug file: crontab-1.5.2-4.el8.x86_64.debug.\nHardened: \/usr\/bin\/crontab: PASS: No gaps found.\nHardened: \/usr\/bin\/crontab: skip: Test for -Wl,-z-now.  (Dynamic segment present, but no dynamic relocations found).\nHardened: \/usr\/bin\/crontab: skip: Branch protection.  (Not an AArch64 binary).\nHardened: \/usr\/bin\/crontab: PASS: Compiled with -fcf-protection.\nHardened: \/usr\/bin\/crontab: PASS: One dynamic section\/segment found.\nHardened: \/usr\/bin\/crontab: skip: Test of dynamic tags.  (AArch64 specific).\nHardened: \/usr\/bin\/crontab: PASS: Entry point instruction is ENDBR.\nHardened: \/usr\/bin\/crontab: PASS: Compiled with -D_FORTIFY_SOURCE=2.\nHardened: \/usr\/bin\/crontab: PASS: Compiled with -D_GLIBCXX_ASSERTIONS.\nHardened: \/usr\/bin\/crontab: skip: Test for -Wl,-z,relro.  (No dynamic relocations).\nHardened: \/usr\/bin\/crontab: PASS: Stack not executable.\nHardened: \/usr\/bin\/crontab: skip: The LTO setting was not recorded (probably due to the use of an old version of the annobin plugin).\nHardened: \/usr\/bin\/crontab: PASS: Compiled with sufficient optimization.\nHardened: \/usr\/bin\/crontab: PASS: Compiled with PIC\/PIE.\nHardened: \/usr\/bin\/crontab: PASS: Compiled as a position independent binary.\nHardened: \/usr\/bin\/crontab: PASS: Good GNU Property note.\nHardened: \/usr\/bin\/crontab: PASS: DT_RPATH\/DT_RUNPATH absent or rooted at \/usr.\nHardened: \/usr\/bin\/crontab: PASS: No RWX segments found.\nHardened: \/usr\/bin\/crontab: PASS: Consistent use of the -fshort-enum option.\nHardened: \/usr\/bin\/crontab: FAIL: Parts of the binary were compiled without stack clash protection.\nHardened: \/usr\/bin\/crontab: FAIL: Parts of the binary were compiled without a suffcient -fstack-protector setting.\nHardened: \/usr\/bin\/crontab: skip: Test for stack realignment support.  (Only needed on i686 binaries).\nHardened: \/usr\/bin\/crontab: PASS: No text relocations found.\nHardened: \/usr\/bin\/crontab: PASS: No thread cancellation problems.\nHardened: \/usr\/bin\/crontab: PASS: Compiled with either -Wall and\/or -Wformat-security.\nHardened: \/usr\/bin\/crontab: PASS: GOT\/PLT relocations are read only.",
+       "remedy": "See annocheck(1) for more information."
+     },
+     {
+       "result": "VERIFY",
+       "waiver authorization": "Not Waivable",
+       "message": "annocheck 'hardened' test fails for \/usr\/sbin\/crond on x86_64",
+       "details": "annocheck: Version 9.50.\nHardened: \/usr\/sbin\/crond: warn: Could not find separate debug file: crond-1.5.2-4.el8.x86_64.debug.\nHardened: \/usr\/sbin\/crond: info: Notes produced by gcc plugin version 8.64\nHardened: \/usr\/sbin\/crond: info: Notes produced by assembler plugin version 1\nHardened: \/usr\/sbin\/crond: info: Set binary producer to GCC version 8.\nHardened: \/usr\/sbin\/crond: warn: Could not find separate debug file: crond-1.5.2-4.el8.x86_64.debug.\nHardened: \/usr\/sbin\/crond: FAIL: (addr range: 0x4f00..0x57e1): No stack protection enabled.\nHardened: \/usr\/sbin\/crond: FAIL: (addr range: 0x4f00..0x57e1): Compiled without -fstack-clash-protection.\nHardened: \/usr\/sbin\/crond: warn: Could not find separate debug file: crond-1.5.2-4.el8.x86_64.debug.\nHardened: \/usr\/sbin\/crond: FAIL: (addr range: 0x42d0..0x4e03): Compiled without -fstack-clash-protection.\nHardened: \/usr\/sbin\/crond: warn: Could not find separate debug file: crond-1.5.2-4.el8.x86_64.debug.\nHardened: \/usr\/sbin\/crond: FAIL: (addr range: 0x57f0..0x6b86): No stack protection enabled.\nHardened: \/usr\/sbin\/crond: FAIL: (addr range: 0x57f0..0x6b86): Compiled without -fstack-clash-protection.\nHardened: \/usr\/sbin\/crond: warn: Could not find separate debug file: crond-1.5.2-4.el8.x86_64.debug.\nHardened: \/usr\/sbin\/crond: FAIL: (addr range: 0x6b90..0x6f17): No stack protection enabled.\nHardened: \/usr\/sbin\/crond: FAIL: (addr range: 0x6b90..0x6f17): Compiled without -fstack-clash-protection.\nHardened: \/usr\/sbin\/crond: warn: Could not find separate debug file: crond-1.5.2-4.el8.x86_64.debug.\nHardened: \/usr\/sbin\/crond: FAIL: (addr range: 0x6f20..0x7170): No stack protection enabled.\nHardened: \/usr\/sbin\/crond: FAIL: (addr range: 0x6f20..0x7170): Compiled without -fstack-clash-protection.\nHardened: \/usr\/sbin\/crond: warn: Could not find separate debug file: crond-1.5.2-4.el8.x86_64.debug.\nHardened: \/usr\/sbin\/crond: FAIL: (addr range: 0x7170..0x82a5): No stack protection enabled.\nHardened: \/usr\/sbin\/crond: FAIL: (addr range: 0x7170..0x82a5): Compiled without -fstack-clash-protection.\nHardened: \/usr\/sbin\/crond: warn: Could not find separate debug file: crond-1.5.2-4.el8.x86_64.debug.\nHardened: \/usr\/sbin\/crond: FAIL: (addr range: 0x82b0..0x873d): No stack protection enabled.\nHardened: \/usr\/sbin\/crond: FAIL: (addr range: 0x82b0..0x873d): Compiled without -fstack-clash-protection.\nHardened: \/usr\/sbin\/crond: warn: Could not find separate debug file: crond-1.5.2-4.el8.x86_64.debug.\nHardened: \/usr\/sbin\/crond: FAIL: (addr range: 0x8740..0x99a4): No stack protection enabled.\nHardened: \/usr\/sbin\/crond: FAIL: (addr range: 0x8740..0x99a4): Compiled without -fstack-clash-protection.\nHardened: \/usr\/sbin\/crond: warn: Could not find separate debug file: crond-1.5.2-4.el8.x86_64.debug.\nHardened: \/usr\/sbin\/crond: FAIL: (addr range: 0x99b0..0xaa6a): No stack protection enabled.\nHardened: \/usr\/sbin\/crond: FAIL: (addr range: 0x99b0..0xaa6a): Compiled without -fstack-clash-protection.\nHardened: \/usr\/sbin\/crond: warn: Could not find separate debug file: crond-1.5.2-4.el8.x86_64.debug.\nHardened: \/usr\/sbin\/crond: FAIL: (addr range: 0xaa70..0xb3de): No stack protection enabled.\nHardened: \/usr\/sbin\/crond: FAIL: (addr range: 0xaa70..0xb3de): Compiled without -fstack-clash-protection.\nHardened: \/usr\/sbin\/crond: warn: Could not find separate debug file: crond-1.5.2-4.el8.x86_64.debug.\nHardened: \/usr\/sbin\/crond: FAIL: (addr range: 0xb3e0..0xc541): No stack protection enabled.\nHardened: \/usr\/sbin\/crond: FAIL: (addr range: 0xb3e0..0xc541): Compiled without -fstack-clash-protection.\nHardened: \/usr\/sbin\/crond: warn: Could not find separate debug file: crond-1.5.2-4.el8.x86_64.debug.\nHardened: \/usr\/sbin\/crond: FAIL: (addr range: 0xc550..0xc723): No stack protection enabled.\nHardened: \/usr\/sbin\/crond: FAIL: (addr range: 0xc550..0xc723): Compiled without -fstack-clash-protection.\nHardened: \/usr\/sbin\/crond: warn: Could not find separate debug file: crond-1.5.2-4.el8.x86_64.debug.\nHardened: \/usr\/sbin\/crond: PASS: No gaps found.\nHardened: \/usr\/sbin\/crond: skip: Test for -Wl,-z-now.  (Dynamic segment present, but no dynamic relocations found).\nHardened: \/usr\/sbin\/crond: skip: Branch protection.  (Not an AArch64 binary).\nHardened: \/usr\/sbin\/crond: PASS: Compiled with -fcf-protection.\nHardened: \/usr\/sbin\/crond: PASS: One dynamic section\/segment found.\nHardened: \/usr\/sbin\/crond: skip: Test of dynamic tags.  (AArch64 specific).\nHardened: \/usr\/sbin\/crond: PASS: Entry point instruction is ENDBR.\nHardened: \/usr\/sbin\/crond: PASS: Compiled with -D_FORTIFY_SOURCE=2.\nHardened: \/usr\/sbin\/crond: PASS: Compiled with -D_GLIBCXX_ASSERTIONS.\nHardened: \/usr\/sbin\/crond: skip: Test for -Wl,-z,relro.  (No dynamic relocations).\nHardened: \/usr\/sbin\/crond: PASS: Stack not executable.\nHardened: \/usr\/sbin\/crond: skip: The LTO setting was not recorded (probably due to the use of an old version of the annobin plugin).\nHardened: \/usr\/sbin\/crond: PASS: Compiled with sufficient optimization.\nHardened: \/usr\/sbin\/crond: PASS: Compiled with PIC\/PIE.\nHardened: \/usr\/sbin\/crond: PASS: Compiled as a position independent binary.\nHardened: \/usr\/sbin\/crond: PASS: Good GNU Property note.\nHardened: \/usr\/sbin\/crond: PASS: DT_RPATH\/DT_RUNPATH absent or rooted at \/usr.\nHardened: \/usr\/sbin\/crond: PASS: No RWX segments found.\nHardened: \/usr\/sbin\/crond: PASS: Consistent use of the -fshort-enum option.\nHardened: \/usr\/sbin\/crond: FAIL: Parts of the binary were compiled without stack clash protection.\nHardened: \/usr\/sbin\/crond: FAIL: Parts of the binary were compiled without a suffcient -fstack-protector setting.\nHardened: \/usr\/sbin\/crond: skip: Test for stack realignment support.  (Only needed on i686 binaries).\nHardened: \/usr\/sbin\/crond: PASS: No text relocations found.\nHardened: \/usr\/sbin\/crond: PASS: No thread cancellation problems.\nHardened: \/usr\/sbin\/crond: PASS: Compiled with either -Wall and\/or -Wformat-security.\nHardened: \/usr\/sbin\/crond: PASS: GOT\/PLT relocations are read only.",
+       "remedy": "See annocheck(1) for more information."
+     }
+   ],
+   "permissions": [
+     {
+       "result": "BAD",
+       "waiver authorization": "Security",
+       "message": "\/usr\/bin\/crontab in cronie on x86_64 carries insecure mode 4755, Security Team review may be required"
+     },
+     {
+       "result": "OK",
+       "waiver authorization": "Not Waivable"
+     }
+   ],
+   "capabilities": [
+     {
+       "result": "OK",
+       "waiver authorization": "Not Waivable"
+     }
+   ],
+   "path-migration": [
+     {
+       "result": "VERIFY",
+       "waiver authorization": "Anyone",
+       "message": "File \/lib\/systemd\/system\/crond.service found should be in \/usr\/lib on x86_64",
+       "remedy": "Files should not be installed in old directory names.  Modify the package to install the affected file to the preferred directory."
+     }
+   ],
+   "lto": [
+     {
+       "result": "OK",
+       "waiver authorization": "Not Waivable"
+     }
+   ],
+   "symlinks": [
+     {
+       "result": "OK",
+       "waiver authorization": "Not Waivable"
+     }
+   ],
+   "politics": [
+     {
+       "result": "OK",
+       "waiver authorization": "Not Waivable"
+     }
+   ],
+   "bad-functions": [
+     {
+       "result": "OK",
+       "waiver authorization": "Not Waivable"
+     }
+   ],
+   "runpath": [
+     {
+       "result": "OK",
+       "waiver authorization": "Not Waivable"
+     }
+   ]
+ }

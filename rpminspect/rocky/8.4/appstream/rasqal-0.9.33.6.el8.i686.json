@@ -1,0 +1,140 @@
+{
+   "rpminspect": [
+     {
+       "result": "INFO",
+       "waiver authorization": "Not Waivable",
+       "message": "version",
+       "details": "rpminspect version 1.5"
+     },
+     {
+       "result": "INFO",
+       "waiver authorization": "Not Waivable",
+       "message": "command line",
+       "details": "\/usr\/bin\/rpminspect -c \/usr\/share\/rpminspect\/fedora.yaml -v -E metadata,files,patches,virus,javabytecode,disttag,specname --format=json --output=\/home\/vagrant\/data\/rpminspect\/rocky\/8.4\/appstream\/rasqal-0.9.33.6.el8.i686.json \/home\/vagrant\/data\/repos\/rocky\/8.4\/appstream\/Packages\/rasqal-0.9.33-6.el8.i686.rpm"
+     }
+   ],
+   "license": [
+     {
+       "result": "INFO",
+       "waiver authorization": "Not Waivable",
+       "message": "Valid License Tag in rasqal-0.9.33-6.el8.i686: LGPLv2+ or ASL 2.0"
+     },
+     {
+       "result": "OK",
+       "waiver authorization": "Not Waivable"
+     }
+   ],
+   "empty-payload": [
+     {
+       "result": "OK",
+       "waiver authorization": "Not Waivable"
+     }
+   ],
+   "man-pages": [
+     {
+       "result": "OK",
+       "waiver authorization": "Not Waivable"
+     }
+   ],
+   "xml-files": [
+     {
+       "result": "VERIFY",
+       "waiver authorization": "Anyone",
+       "message": "File \/usr\/share\/doc\/rasqal\/RELEASE.html is a malformed XML file on i686",
+       "details": "Element body content does not follow the DTD, expecting (p | h1 | h2 | h3 | h4 | h5 | h6 | div | ul | ol | dl | pre | hr | blockquote | address | fieldset | table | form | noscript | ins | del | script)*, got (h1 h2 p ul h3 p h3 p h3 p h3 p p p p h3 CDATA a CDATA br h3 p p p p h3 p h3 p h3 p h3 p p p p p p p p p h2 p ul h3 p p p h3 p h3 p p p p p p p h3 p h3 p p h2 p ul h3 p pre p p p h3 p p h3 p p p p p p p h3 p p p p p h3 p h3 p p p p p p p p p p p p h3 p p h2 p p ul h3 p p p h3 p p p h3 p p p h3 p p h3 p p p p p h3 p p p p h2 p p p p p ul h3 p p p p p p h3 p h3 p p p h3 p p p p p p h3 p p p h3 p p p p p p h2 p ul h3 p p h3 p p p h3 p p h3 p p p h3 p p p p p p p p p p h2 p ul h3 p p h3 p p p p p p p h3 p p p h3 p p p p p p h3 p h3 p p p h3 p h3 p h3 p p p ol p p ol p ul p p p p p h2 p ul h3 p h3 p p p p p p p p h3 p p p h3 p h3 p p p p p h2 p ul h3 p p p p p p p p p h3 p h3 p h3 p h3 p p p p p h3 p p p p p p p p h3 p h3 p p p h2 h3 p p p p p p h3 p h3 p h3 p p h3 p h2 p ul h3 p h3 p p h2 blockquote p p p h3 p h3 p ul h3 p ul p h3 p p ul p ul h3 p h3 p ul p ul p ul h3 p p ul p ul p p p p p p h3 p p p p p h3 p p p p p p h3 p p p p p p p p h3 p p p p p p p p p p p p p h3 p h3 p p p p p h2 p ul p ul h3 p p ul p p h3 p h3 p p p p p p h3 p p p h3 p p p p p h3 p p p p p h3 p p p p h3 p p p p h3 p p h3 p h3 p p h3 p p p h3 p p h3 p p p p p h3 p p p p h3 p h3 p h2 p ul p ul h3 p p h3 p p table p p p p p p p p h3 p p p p p p p p p ul p h3 p h3 p p p h3 p p h3 p h3 p p p p h2 p h2 p ul p ul h3 p p p p p pre p p pre h3 p pre p h3 p p pre p pre h3 p p pre h3 p p pre h3 p p p p p p p p p p h3 p h3 p p p p p p p p h2 blockquote p p ul h3 p pre p p pre p pre h3 p p pre h3 p p p pre p pre p pre p pre h3 p p h3 p p p p h3 p p pre p pre p pre h3 p p pre h3 p pre h3 p h3 p pre p pre h3 p p h3 p h3 p p p p p h3 p p pre h3 p h3 p p p pre p h3 p p p p h3 p p p p p p ol p p p p p ul p p p p p p p p p ul p pre p h3 p p p p p h2 blockquote blockquote h3 p p p p p p h3 p p p p p p h3 p h3 p h3 p h3 p p p p p h3 p h2 h3 p p blockquote p ul h3 p ul h3 p p ul p p p p h3 p p p p p p p p p p p p h3 p p pre p pre p pre p pre p pre h3 p h3 p h3 p p p h2 h3 p p p ul h3 p ul p p pre p p p pre p pre p pre p ul p h3 p ul p pre h3 p p pre p pre p pre p pre h3 p ul h3 p pre p h3 p p h3 p p h2 h3 p p p h3 p p p p p p h3 p p p h3 p p h3 p p p p p p p p h3 p p p h2 h3 p p p h3 p h3 p p pre p h3 p p p h3 p h3 p p p h3 p p p p p h3 p h3 p h2 h3 p p p p p h3 p ul p p p p p h3 p h3 p p p p p p h3 p p p p p p p p p p h3 p p h3 p p h3 p p h2 h3 p h3 p p p p ul p h3 p p p h3 p p p p h3 p h2 h3 p p p h3 p ul p p p p p h3 p p p p h3 p p p p p p p p p p h3 p p p h2 h3 p p p h3 p p p p p p h3 p p p p p p p p h2 h3 p p p p p h3 p p p ul p p p p p p h3 p p h3 p h2 h3 p p p p p h3 p p p p p p p h3 p p p p p p h3 p h2 p p h3 p p h3 p p p p h3 p p p p p p p p p h3 p p p p h2 p p p p p h2 p p p p p p p p p p p p h3 p p p p p p h2 p p p p h2 p p p table p p h2 p hr p )\n",
+       "remedy": "Correct the reported errors in the XML document"
+     }
+   ],
+   "elf-object-properties": [
+     {
+       "result": "OK",
+       "waiver authorization": "Not Waivable"
+     }
+   ],
+   "desktop-entry-files": [
+     {
+       "result": "OK",
+       "waiver authorization": "Not Waivable"
+     }
+   ],
+   "ownership": [
+     {
+       "result": "OK",
+       "waiver authorization": "Not Waivable"
+     }
+   ],
+   "shell-syntax": [
+     {
+       "result": "OK",
+       "waiver authorization": "Not Waivable"
+     }
+   ],
+   "annocheck": [
+     {
+       "result": "INFO",
+       "waiver authorization": "Not Waivable",
+       "message": "annocheck 'hardened' test passes for \/usr\/bin\/roqet on i686",
+       "details": "annocheck: Version 9.50.\nHardened: \/usr\/bin\/roqet: warn: Could not find separate debug file: roqet-0.9.33-6.el8.i386.debug.\nHardened: \/usr\/bin\/roqet: info: Notes produced by assembler plugin version 1\nHardened: \/usr\/bin\/roqet: info: Notes produced by gcc plugin version 9.23\nHardened: \/usr\/bin\/roqet: info: Set binary producer to GCC version 8.\nHardened: \/usr\/bin\/roqet: warn: Could not find separate debug file: roqet-0.9.33-6.el8.i386.debug.\nHardened: \/usr\/bin\/roqet: warn: Could not find separate debug file: roqet-0.9.33-6.el8.i386.debug.\nHardened: \/usr\/bin\/roqet: warn: Could not find separate debug file: roqet-0.9.33-6.el8.i386.debug.\nHardened: \/usr\/bin\/roqet: warn: Could not find separate debug file: roqet-0.9.33-6.el8.i386.debug.\nHardened: \/usr\/bin\/roqet: warn: Could not find separate debug file: roqet-0.9.33-6.el8.i386.debug.\nHardened: \/usr\/bin\/roqet: warn: Could not find separate debug file: roqet-0.9.33-6.el8.i386.debug.\nHardened: \/usr\/bin\/roqet: warn: Could not find separate debug file: roqet-0.9.33-6.el8.i386.debug.\nHardened: \/usr\/bin\/roqet: PASS: No gaps found.\nHardened: \/usr\/bin\/roqet: skip: Test for -Wl,-z-now.  (Dynamic segment present, but no dynamic relocations found).\nHardened: \/usr\/bin\/roqet: skip: Branch protection.  (Not an AArch64 binary).\nHardened: \/usr\/bin\/roqet: PASS: Compiled with -fcf-protection.\nHardened: \/usr\/bin\/roqet: PASS: One dynamic section\/segment found.\nHardened: \/usr\/bin\/roqet: skip: Test of dynamic tags.  (AArch64 specific).\nHardened: \/usr\/bin\/roqet: PASS: Entry point instruction is ENDBR.\nHardened: \/usr\/bin\/roqet: PASS: Compiled with -D_FORTIFY_SOURCE=2.\nHardened: \/usr\/bin\/roqet: PASS: Compiled with -D_GLIBCXX_ASSERTIONS.\nHardened: \/usr\/bin\/roqet: skip: Test for -Wl,-z,relro.  (No dynamic relocations).\nHardened: \/usr\/bin\/roqet: PASS: Stack not executable.\nHardened: \/usr\/bin\/roqet: skip: The LTO setting was not recorded (probably due to the use of an old version of the annobin plugin).\nHardened: \/usr\/bin\/roqet: PASS: Compiled with sufficient optimization.\nHardened: \/usr\/bin\/roqet: PASS: Compiled with PIC\/PIE.\nHardened: \/usr\/bin\/roqet: PASS: Compiled as a position independent binary.\nHardened: \/usr\/bin\/roqet: PASS: Good GNU Property note.\nHardened: \/usr\/bin\/roqet: PASS: DT_RPATH\/DT_RUNPATH absent or rooted at \/usr.\nHardened: \/usr\/bin\/roqet: PASS: No RWX segments found.\nHardened: \/usr\/bin\/roqet: PASS: Consistent use of the -fshort-enum option.\nHardened: \/usr\/bin\/roqet: PASS: Compiled with -fstack-clash-protection.\nHardened: \/usr\/bin\/roqet: PASS: Compiled with sufficient stack protection.\nHardened: \/usr\/bin\/roqet: PASS: Compiled with -mstack_realign.\nHardened: \/usr\/bin\/roqet: PASS: No text relocations found.\nHardened: \/usr\/bin\/roqet: PASS: No thread cancellation problems.\nHardened: \/usr\/bin\/roqet: PASS: Compiled with either -Wall and\/or -Wformat-security.\nHardened: \/usr\/bin\/roqet: PASS: GOT\/PLT relocations are read only.\nHardened: \/usr\/bin\/roqet: PASS.",
+       "remedy": "See annocheck(1) for more information."
+     },
+     {
+       "result": "INFO",
+       "waiver authorization": "Not Waivable",
+       "message": "annocheck 'hardened' test passes for \/usr\/lib\/librasqal.so.3.0.0 on i686",
+       "details": "annocheck: Version 9.50.\nHardened: \/usr\/lib\/librasqal.so.3.0.0: warn: Could not find separate debug file: librasqal.so.3.0.0-0.9.33-6.el8.i386.debug.\nHardened: \/usr\/lib\/librasqal.so.3.0.0: info: Notes produced by assembler plugin version 1\nHardened: \/usr\/lib\/librasqal.so.3.0.0: info: Notes produced by gcc plugin version 9.23\nHardened: \/usr\/lib\/librasqal.so.3.0.0: info: Set binary producer to GCC version 8.\nHardened: \/usr\/lib\/librasqal.so.3.0.0: warn: Could not find separate debug file: librasqal.so.3.0.0-0.9.33-6.el8.i386.debug.\nHardened: \/usr\/lib\/librasqal.so.3.0.0: warn: Could not find separate debug file: librasqal.so.3.0.0-0.9.33-6.el8.i386.debug.\nHardened: \/usr\/lib\/librasqal.so.3.0.0: warn: Could not find separate debug file: librasqal.so.3.0.0-0.9.33-6.el8.i386.debug.\nHardened: \/usr\/lib\/librasqal.so.3.0.0: warn: Could not find separate debug file: librasqal.so.3.0.0-0.9.33-6.el8.i386.debug.\nHardened: \/usr\/lib\/librasqal.so.3.0.0: PASS: No gaps found.\nHardened: \/usr\/lib\/librasqal.so.3.0.0: skip: Test for -Wl,-z-now.  (Dynamic segment present, but no dynamic relocations found).\nHardened: \/usr\/lib\/librasqal.so.3.0.0: skip: Branch protection.  (Not an AArch64 binary).\nHardened: \/usr\/lib\/librasqal.so.3.0.0: PASS: Compiled with -fcf-protection.\nHardened: \/usr\/lib\/librasqal.so.3.0.0: PASS: One dynamic section\/segment found.\nHardened: \/usr\/lib\/librasqal.so.3.0.0: skip: Test of dynamic tags.  (AArch64 specific).\nHardened: \/usr\/lib\/librasqal.so.3.0.0: skip: Entry point instruction is ENDBR.  (Not an executable).\nHardened: \/usr\/lib\/librasqal.so.3.0.0: PASS: Compiled with -D_FORTIFY_SOURCE=2.\nHardened: \/usr\/lib\/librasqal.so.3.0.0: PASS: Compiled with -D_GLIBCXX_ASSERTIONS.\nHardened: \/usr\/lib\/librasqal.so.3.0.0: skip: Test for -Wl,-z,relro.  (No dynamic relocations).\nHardened: \/usr\/lib\/librasqal.so.3.0.0: PASS: Stack not executable.\nHardened: \/usr\/lib\/librasqal.so.3.0.0: skip: The LTO setting was not recorded (probably due to the use of an old version of the annobin plugin).\nHardened: \/usr\/lib\/librasqal.so.3.0.0: PASS: Compiled with sufficient optimization.\nHardened: \/usr\/lib\/librasqal.so.3.0.0: PASS: Compiled with PIC\/PIE.\nHardened: \/usr\/lib\/librasqal.so.3.0.0: PASS: Compiled as a position independent binary.\nHardened: \/usr\/lib\/librasqal.so.3.0.0: PASS: Good GNU Property note.\nHardened: \/usr\/lib\/librasqal.so.3.0.0: PASS: DT_RPATH\/DT_RUNPATH absent or rooted at \/usr.\nHardened: \/usr\/lib\/librasqal.so.3.0.0: PASS: No RWX segments found.\nHardened: \/usr\/lib\/librasqal.so.3.0.0: PASS: Consistent use of the -fshort-enum option.\nHardened: \/usr\/lib\/librasqal.so.3.0.0: PASS: Compiled with -fstack-clash-protection.\nHardened: \/usr\/lib\/librasqal.so.3.0.0: PASS: Compiled with sufficient stack protection.\nHardened: \/usr\/lib\/librasqal.so.3.0.0: PASS: Compiled with -mstack_realign.\nHardened: \/usr\/lib\/librasqal.so.3.0.0: PASS: No text relocations found.\nHardened: \/usr\/lib\/librasqal.so.3.0.0: PASS: No thread cancellation problems.\nHardened: \/usr\/lib\/librasqal.so.3.0.0: PASS: Compiled with either -Wall and\/or -Wformat-security.\nHardened: \/usr\/lib\/librasqal.so.3.0.0: PASS: GOT\/PLT relocations are read only.\nHardened: \/usr\/lib\/librasqal.so.3.0.0: PASS.",
+       "remedy": "See annocheck(1) for more information."
+     },
+     {
+       "result": "OK",
+       "waiver authorization": "Not Waivable"
+     }
+   ],
+   "permissions": [
+     {
+       "result": "OK",
+       "waiver authorization": "Not Waivable"
+     }
+   ],
+   "capabilities": [
+     {
+       "result": "OK",
+       "waiver authorization": "Not Waivable"
+     }
+   ],
+   "path-migration": [
+     {
+       "result": "OK",
+       "waiver authorization": "Not Waivable"
+     }
+   ],
+   "lto": [
+     {
+       "result": "OK",
+       "waiver authorization": "Not Waivable"
+     }
+   ],
+   "symlinks": [
+     {
+       "result": "OK",
+       "waiver authorization": "Not Waivable"
+     }
+   ],
+   "politics": [
+     {
+       "result": "OK",
+       "waiver authorization": "Not Waivable"
+     }
+   ],
+   "bad-functions": [
+     {
+       "result": "OK",
+       "waiver authorization": "Not Waivable"
+     }
+   ],
+   "runpath": [
+     {
+       "result": "OK",
+       "waiver authorization": "Not Waivable"
+     }
+   ]
+ }

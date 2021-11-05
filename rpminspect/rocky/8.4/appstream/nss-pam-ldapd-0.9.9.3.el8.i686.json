@@ -1,0 +1,161 @@
+{
+   "rpminspect": [
+     {
+       "result": "INFO",
+       "waiver authorization": "Not Waivable",
+       "message": "version",
+       "details": "rpminspect version 1.5"
+     },
+     {
+       "result": "INFO",
+       "waiver authorization": "Not Waivable",
+       "message": "command line",
+       "details": "\/usr\/bin\/rpminspect -c \/usr\/share\/rpminspect\/fedora.yaml -v -E metadata,files,patches,virus,javabytecode,disttag,specname --format=json --output=\/home\/vagrant\/data\/rpminspect\/rocky\/8.4\/appstream\/nss-pam-ldapd-0.9.9.3.el8.i686.json \/home\/vagrant\/data\/repos\/rocky\/8.4\/appstream\/Packages\/nss-pam-ldapd-0.9.9-3.el8.i686.rpm"
+     }
+   ],
+   "license": [
+     {
+       "result": "INFO",
+       "waiver authorization": "Not Waivable",
+       "message": "Valid License Tag in nss-pam-ldapd-0.9.9-3.el8.i686: LGPLv2+"
+     },
+     {
+       "result": "OK",
+       "waiver authorization": "Not Waivable"
+     }
+   ],
+   "empty-payload": [
+     {
+       "result": "OK",
+       "waiver authorization": "Not Waivable"
+     }
+   ],
+   "man-pages": [
+     {
+       "result": "OK",
+       "waiver authorization": "Not Waivable"
+     }
+   ],
+   "xml-files": [
+     {
+       "result": "OK",
+       "waiver authorization": "Not Waivable"
+     }
+   ],
+   "elf-object-properties": [
+     {
+       "result": "OK",
+       "waiver authorization": "Not Waivable"
+     }
+   ],
+   "desktop-entry-files": [
+     {
+       "result": "OK",
+       "waiver authorization": "Not Waivable"
+     }
+   ],
+   "ownership": [
+     {
+       "result": "OK",
+       "waiver authorization": "Not Waivable"
+     }
+   ],
+   "shell-syntax": [
+     {
+       "result": "OK",
+       "waiver authorization": "Not Waivable"
+     }
+   ],
+   "annocheck": [
+     {
+       "result": "INFO",
+       "waiver authorization": "Not Waivable",
+       "message": "annocheck 'hardened' test passes for \/lib\/libnss_ldap.so.2 on i686",
+       "details": "annocheck: Version 9.50.\nHardened: \/lib\/libnss_ldap.so.2: warn: Could not find separate debug file: libnss_ldap.so.2-0.9.9-3.el8.i386.debug.\nHardened: \/lib\/libnss_ldap.so.2: info: Notes produced by assembler plugin version 1\nHardened: \/lib\/libnss_ldap.so.2: info: Notes produced by gcc plugin version 9.23\nHardened: \/lib\/libnss_ldap.so.2: info: Set binary producer to GCC version 8.\nHardened: \/lib\/libnss_ldap.so.2: warn: Could not find separate debug file: libnss_ldap.so.2-0.9.9-3.el8.i386.debug.\nHardened: \/lib\/libnss_ldap.so.2: warn: Could not find separate debug file: libnss_ldap.so.2-0.9.9-3.el8.i386.debug.\nHardened: \/lib\/libnss_ldap.so.2: warn: Could not find separate debug file: libnss_ldap.so.2-0.9.9-3.el8.i386.debug.\nHardened: \/lib\/libnss_ldap.so.2: warn: Could not find separate debug file: libnss_ldap.so.2-0.9.9-3.el8.i386.debug.\nHardened: \/lib\/libnss_ldap.so.2: PASS: No gaps found.\nHardened: \/lib\/libnss_ldap.so.2: skip: Test for -Wl,-z-now.  (Dynamic segment present, but no dynamic relocations found).\nHardened: \/lib\/libnss_ldap.so.2: skip: Branch protection.  (Not an AArch64 binary).\nHardened: \/lib\/libnss_ldap.so.2: PASS: Compiled with -fcf-protection.\nHardened: \/lib\/libnss_ldap.so.2: PASS: One dynamic section\/segment found.\nHardened: \/lib\/libnss_ldap.so.2: skip: Test of dynamic tags.  (AArch64 specific).\nHardened: \/lib\/libnss_ldap.so.2: skip: Entry point instruction is ENDBR.  (Not an executable).\nHardened: \/lib\/libnss_ldap.so.2: PASS: Compiled with -D_FORTIFY_SOURCE=2.\nHardened: \/lib\/libnss_ldap.so.2: PASS: Compiled with -D_GLIBCXX_ASSERTIONS.\nHardened: \/lib\/libnss_ldap.so.2: skip: Test for -Wl,-z,relro.  (No dynamic relocations).\nHardened: \/lib\/libnss_ldap.so.2: PASS: Stack not executable.\nHardened: \/lib\/libnss_ldap.so.2: skip: The LTO setting was not recorded (probably due to the use of an old version of the annobin plugin).\nHardened: \/lib\/libnss_ldap.so.2: PASS: Compiled with sufficient optimization.\nHardened: \/lib\/libnss_ldap.so.2: PASS: Compiled with PIC\/PIE.\nHardened: \/lib\/libnss_ldap.so.2: PASS: Compiled as a position independent binary.\nHardened: \/lib\/libnss_ldap.so.2: PASS: Good GNU Property note.\nHardened: \/lib\/libnss_ldap.so.2: PASS: DT_RPATH\/DT_RUNPATH absent or rooted at \/usr.\nHardened: \/lib\/libnss_ldap.so.2: PASS: No RWX segments found.\nHardened: \/lib\/libnss_ldap.so.2: PASS: Consistent use of the -fshort-enum option.\nHardened: \/lib\/libnss_ldap.so.2: PASS: Compiled with -fstack-clash-protection.\nHardened: \/lib\/libnss_ldap.so.2: PASS: Compiled with sufficient stack protection.\nHardened: \/lib\/libnss_ldap.so.2: PASS: Compiled with -mstack_realign.\nHardened: \/lib\/libnss_ldap.so.2: PASS: No text relocations found.\nHardened: \/lib\/libnss_ldap.so.2: PASS: No thread cancellation problems.\nHardened: \/lib\/libnss_ldap.so.2: PASS: Compiled with either -Wall and\/or -Wformat-security.\nHardened: \/lib\/libnss_ldap.so.2: PASS: GOT\/PLT relocations are read only.\nHardened: \/lib\/libnss_ldap.so.2: PASS.",
+       "remedy": "See annocheck(1) for more information."
+     },
+     {
+       "result": "INFO",
+       "waiver authorization": "Not Waivable",
+       "message": "annocheck 'hardened' test passes for \/lib\/security\/pam_ldap.so on i686",
+       "details": "annocheck: Version 9.50.\nHardened: \/lib\/security\/pam_ldap.so: warn: Could not find separate debug file: pam_ldap.so-0.9.9-3.el8.i386.debug.\nHardened: \/lib\/security\/pam_ldap.so: info: Notes produced by assembler plugin version 1\nHardened: \/lib\/security\/pam_ldap.so: info: Notes produced by gcc plugin version 9.23\nHardened: \/lib\/security\/pam_ldap.so: info: Set binary producer to GCC version 8.\nHardened: \/lib\/security\/pam_ldap.so: warn: Could not find separate debug file: pam_ldap.so-0.9.9-3.el8.i386.debug.\nHardened: \/lib\/security\/pam_ldap.so: warn: Could not find separate debug file: pam_ldap.so-0.9.9-3.el8.i386.debug.\nHardened: \/lib\/security\/pam_ldap.so: warn: Could not find separate debug file: pam_ldap.so-0.9.9-3.el8.i386.debug.\nHardened: \/lib\/security\/pam_ldap.so: warn: Could not find separate debug file: pam_ldap.so-0.9.9-3.el8.i386.debug.\nHardened: \/lib\/security\/pam_ldap.so: PASS: No gaps found.\nHardened: \/lib\/security\/pam_ldap.so: skip: Test for -Wl,-z-now.  (Dynamic segment present, but no dynamic relocations found).\nHardened: \/lib\/security\/pam_ldap.so: skip: Branch protection.  (Not an AArch64 binary).\nHardened: \/lib\/security\/pam_ldap.so: PASS: Compiled with -fcf-protection.\nHardened: \/lib\/security\/pam_ldap.so: PASS: One dynamic section\/segment found.\nHardened: \/lib\/security\/pam_ldap.so: skip: Test of dynamic tags.  (AArch64 specific).\nHardened: \/lib\/security\/pam_ldap.so: skip: Entry point instruction is ENDBR.  (Not an executable).\nHardened: \/lib\/security\/pam_ldap.so: PASS: Compiled with -D_FORTIFY_SOURCE=2.\nHardened: \/lib\/security\/pam_ldap.so: PASS: Compiled with -D_GLIBCXX_ASSERTIONS.\nHardened: \/lib\/security\/pam_ldap.so: skip: Test for -Wl,-z,relro.  (No dynamic relocations).\nHardened: \/lib\/security\/pam_ldap.so: PASS: Stack not executable.\nHardened: \/lib\/security\/pam_ldap.so: skip: The LTO setting was not recorded (probably due to the use of an old version of the annobin plugin).\nHardened: \/lib\/security\/pam_ldap.so: PASS: Compiled with sufficient optimization.\nHardened: \/lib\/security\/pam_ldap.so: PASS: Compiled with PIC\/PIE.\nHardened: \/lib\/security\/pam_ldap.so: PASS: Compiled as a position independent binary.\nHardened: \/lib\/security\/pam_ldap.so: PASS: Good GNU Property note.\nHardened: \/lib\/security\/pam_ldap.so: PASS: DT_RPATH\/DT_RUNPATH absent or rooted at \/usr.\nHardened: \/lib\/security\/pam_ldap.so: PASS: No RWX segments found.\nHardened: \/lib\/security\/pam_ldap.so: PASS: Consistent use of the -fshort-enum option.\nHardened: \/lib\/security\/pam_ldap.so: PASS: Compiled with -fstack-clash-protection.\nHardened: \/lib\/security\/pam_ldap.so: PASS: Compiled with sufficient stack protection.\nHardened: \/lib\/security\/pam_ldap.so: PASS: Compiled with -mstack_realign.\nHardened: \/lib\/security\/pam_ldap.so: PASS: No text relocations found.\nHardened: \/lib\/security\/pam_ldap.so: PASS: No thread cancellation problems.\nHardened: \/lib\/security\/pam_ldap.so: PASS: Compiled with either -Wall and\/or -Wformat-security.\nHardened: \/lib\/security\/pam_ldap.so: PASS: GOT\/PLT relocations are read only.\nHardened: \/lib\/security\/pam_ldap.so: PASS.",
+       "remedy": "See annocheck(1) for more information."
+     },
+     {
+       "result": "INFO",
+       "waiver authorization": "Not Waivable",
+       "message": "annocheck 'hardened' test passes for \/usr\/sbin\/nslcd on i686",
+       "details": "annocheck: Version 9.50.\nHardened: \/usr\/sbin\/nslcd: warn: Could not find separate debug file: nslcd-0.9.9-3.el8.i386.debug.\nHardened: \/usr\/sbin\/nslcd: info: Notes produced by assembler plugin version 1\nHardened: \/usr\/sbin\/nslcd: info: Notes produced by gcc plugin version 9.23\nHardened: \/usr\/sbin\/nslcd: info: Set binary producer to GCC version 8.\nHardened: \/usr\/sbin\/nslcd: warn: Could not find separate debug file: nslcd-0.9.9-3.el8.i386.debug.\nHardened: \/usr\/sbin\/nslcd: warn: Could not find separate debug file: nslcd-0.9.9-3.el8.i386.debug.\nHardened: \/usr\/sbin\/nslcd: warn: Could not find separate debug file: nslcd-0.9.9-3.el8.i386.debug.\nHardened: \/usr\/sbin\/nslcd: warn: Could not find separate debug file: nslcd-0.9.9-3.el8.i386.debug.\nHardened: \/usr\/sbin\/nslcd: warn: Could not find separate debug file: nslcd-0.9.9-3.el8.i386.debug.\nHardened: \/usr\/sbin\/nslcd: warn: Could not find separate debug file: nslcd-0.9.9-3.el8.i386.debug.\nHardened: \/usr\/sbin\/nslcd: warn: Could not find separate debug file: nslcd-0.9.9-3.el8.i386.debug.\nHardened: \/usr\/sbin\/nslcd: PASS: No gaps found.\nHardened: \/usr\/sbin\/nslcd: skip: Test for -Wl,-z-now.  (Dynamic segment present, but no dynamic relocations found).\nHardened: \/usr\/sbin\/nslcd: skip: Branch protection.  (Not an AArch64 binary).\nHardened: \/usr\/sbin\/nslcd: PASS: Compiled with -fcf-protection.\nHardened: \/usr\/sbin\/nslcd: PASS: One dynamic section\/segment found.\nHardened: \/usr\/sbin\/nslcd: skip: Test of dynamic tags.  (AArch64 specific).\nHardened: \/usr\/sbin\/nslcd: PASS: Entry point instruction is ENDBR.\nHardened: \/usr\/sbin\/nslcd: PASS: Compiled with -D_FORTIFY_SOURCE=2.\nHardened: \/usr\/sbin\/nslcd: PASS: Compiled with -D_GLIBCXX_ASSERTIONS.\nHardened: \/usr\/sbin\/nslcd: skip: Test for -Wl,-z,relro.  (No dynamic relocations).\nHardened: \/usr\/sbin\/nslcd: PASS: Stack not executable.\nHardened: \/usr\/sbin\/nslcd: skip: The LTO setting was not recorded (probably due to the use of an old version of the annobin plugin).\nHardened: \/usr\/sbin\/nslcd: PASS: Compiled with sufficient optimization.\nHardened: \/usr\/sbin\/nslcd: PASS: Compiled with PIC\/PIE.\nHardened: \/usr\/sbin\/nslcd: PASS: Compiled as a position independent binary.\nHardened: \/usr\/sbin\/nslcd: PASS: Good GNU Property note.\nHardened: \/usr\/sbin\/nslcd: PASS: DT_RPATH\/DT_RUNPATH absent or rooted at \/usr.\nHardened: \/usr\/sbin\/nslcd: PASS: No RWX segments found.\nHardened: \/usr\/sbin\/nslcd: PASS: Consistent use of the -fshort-enum option.\nHardened: \/usr\/sbin\/nslcd: PASS: Compiled with -fstack-clash-protection.\nHardened: \/usr\/sbin\/nslcd: PASS: Compiled with sufficient stack protection.\nHardened: \/usr\/sbin\/nslcd: PASS: Compiled with -mstack_realign.\nHardened: \/usr\/sbin\/nslcd: PASS: No text relocations found.\nHardened: \/usr\/sbin\/nslcd: PASS: No thread cancellation problems.\nHardened: \/usr\/sbin\/nslcd: PASS: Compiled with either -Wall and\/or -Wformat-security.\nHardened: \/usr\/sbin\/nslcd: PASS: GOT\/PLT relocations are read only.\nHardened: \/usr\/sbin\/nslcd: PASS.",
+       "remedy": "See annocheck(1) for more information."
+     },
+     {
+       "result": "OK",
+       "waiver authorization": "Not Waivable"
+     }
+   ],
+   "permissions": [
+     {
+       "result": "OK",
+       "waiver authorization": "Not Waivable"
+     }
+   ],
+   "capabilities": [
+     {
+       "result": "OK",
+       "waiver authorization": "Not Waivable"
+     }
+   ],
+   "path-migration": [
+     {
+       "result": "VERIFY",
+       "waiver authorization": "Anyone",
+       "message": "File \/lib\/libnss_ldap.so found should be in \/usr\/lib on i686",
+       "remedy": "Files should not be installed in old directory names.  Modify the package to install the affected file to the preferred directory."
+     },
+     {
+       "result": "VERIFY",
+       "waiver authorization": "Anyone",
+       "message": "File \/lib\/libnss_ldap.so.2 found should be in \/usr\/lib on i686",
+       "remedy": "Files should not be installed in old directory names.  Modify the package to install the affected file to the preferred directory."
+     },
+     {
+       "result": "VERIFY",
+       "waiver authorization": "Anyone",
+       "message": "File \/lib\/security\/pam_ldap.so found should be in \/usr\/lib on i686",
+       "remedy": "Files should not be installed in old directory names.  Modify the package to install the affected file to the preferred directory."
+     }
+   ],
+   "lto": [
+     {
+       "result": "OK",
+       "waiver authorization": "Not Waivable"
+     }
+   ],
+   "symlinks": [
+     {
+       "result": "OK",
+       "waiver authorization": "Not Waivable"
+     }
+   ],
+   "politics": [
+     {
+       "result": "OK",
+       "waiver authorization": "Not Waivable"
+     }
+   ],
+   "bad-functions": [
+     {
+       "result": "VERIFY",
+       "waiver authorization": "Anyone",
+       "message": "\/usr\/sbin\/nslcd may use forbidden functions on i686",
+       "details": "Forbidden function symbols found:\n\tgethostbyname\n",
+       "remedy": "Forbidden symbols were found in an ELF file in the package.  The configuration settings for rpminspect indicate the named symbols are forbidden in packages.  If this is deliberate, you may want to disable the badfuncs inspection.  If it is not deliberate, check the man pages for the named symbols to see what API functions have replaced the forbidden symbols.  Usually a function is marked as deprecated but still provided in order to allow for backwards compatibility.  Whenever possible the deprecated functions should not be used."
+     }
+   ],
+   "runpath": [
+     {
+       "result": "OK",
+       "waiver authorization": "Not Waivable"
+     }
+   ]
+ }

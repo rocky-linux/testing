@@ -40,6 +40,3 @@ A couple support scripts are also in the repository:
 <br />
 
 **repo_compare_launcher.sh :** Run all combinations of repocompare RHEL8 <---> Rocky8. Compares production, staging, source, modules, RHEL Beta, etc.
-
-
-

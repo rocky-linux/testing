@@ -1,0 +1,135 @@
+{
+   "rpminspect": [
+     {
+       "result": "INFO",
+       "waiver authorization": "Not Waivable",
+       "message": "version",
+       "details": "rpminspect version 1.5"
+     },
+     {
+       "result": "INFO",
+       "waiver authorization": "Not Waivable",
+       "message": "command line",
+       "details": "\/usr\/bin\/rpminspect -c \/usr\/share\/rpminspect\/fedora.yaml -v -E metadata,files,patches,virus,javabytecode,disttag,specname --format=json --output=\/home\/vagrant\/data\/rpminspect\/rhel\/8.4\/appstream\/jq-1.5.12.el8.i686.json \/home\/vagrant\/data\/repos\/rhel8\/8\/appstream\/Packages\/j\/jq-1.5-12.el8.i686.rpm"
+     }
+   ],
+   "license": [
+     {
+       "result": "INFO",
+       "waiver authorization": "Not Waivable",
+       "message": "Valid License Tag in jq-1.5-12.el8.i686: MIT and ASL 2.0 and CC-BY and GPLv3"
+     },
+     {
+       "result": "OK",
+       "waiver authorization": "Not Waivable"
+     }
+   ],
+   "empty-payload": [
+     {
+       "result": "OK",
+       "waiver authorization": "Not Waivable"
+     }
+   ],
+   "man-pages": [
+     {
+       "result": "OK",
+       "waiver authorization": "Not Waivable"
+     }
+   ],
+   "xml-files": [
+     {
+       "result": "OK",
+       "waiver authorization": "Not Waivable"
+     }
+   ],
+   "elf-object-properties": [
+     {
+       "result": "OK",
+       "waiver authorization": "Not Waivable"
+     }
+   ],
+   "desktop-entry-files": [
+     {
+       "result": "OK",
+       "waiver authorization": "Not Waivable"
+     }
+   ],
+   "ownership": [
+     {
+       "result": "OK",
+       "waiver authorization": "Not Waivable"
+     }
+   ],
+   "shell-syntax": [
+     {
+       "result": "OK",
+       "waiver authorization": "Not Waivable"
+     }
+   ],
+   "annocheck": [
+     {
+       "result": "VERIFY",
+       "waiver authorization": "Not Waivable",
+       "message": "annocheck 'hardened' test fails for \/usr\/bin\/jq on i686",
+       "details": "annocheck: Version 9.50.\nHardened: \/usr\/bin\/jq: warn: Could not find separate debug file: jq-1.5-12.el8.i386.debug.\nHardened: \/usr\/bin\/jq: info: Notes produced by assembler plugin version 1\nHardened: \/usr\/bin\/jq: info: Notes produced by gcc plugin version 8\nHardened: \/usr\/bin\/jq: info: Set binary producer to GCC version 8.\nHardened: \/usr\/bin\/jq: warn: Could not find separate debug file: jq-1.5-12.el8.i386.debug.\nHardened: \/usr\/bin\/jq: warn: Could not find separate debug file: jq-1.5-12.el8.i386.debug.\nHardened: \/usr\/bin\/jq: warn: Could not find separate debug file: jq-1.5-12.el8.i386.debug.\nHardened: \/usr\/bin\/jq: warn: Could not find separate debug file: jq-1.5-12.el8.i386.debug.\nHardened: \/usr\/bin\/jq: PASS: No gaps found.\nHardened: \/usr\/bin\/jq: skip: Test for -Wl,-z-now.  (Dynamic segment present, but no dynamic relocations found).\nHardened: \/usr\/bin\/jq: skip: Branch protection.  (Not an AArch64 binary).\nHardened: \/usr\/bin\/jq: PASS: Compiled with -fcf-protection.\nHardened: \/usr\/bin\/jq: PASS: One dynamic section\/segment found.\nHardened: \/usr\/bin\/jq: skip: Test of dynamic tags.  (AArch64 specific).\nHardened: \/usr\/bin\/jq: FAIL: Entry point instruction is not ENDBR32.\nHardened: \/usr\/bin\/jq:      (Entry Address: 0x34bc.  Bytes at this address: 31 ed 5e 89).\nHardened: \/usr\/bin\/jq: PASS: Compiled with -D_FORTIFY_SOURCE=2.\nHardened: \/usr\/bin\/jq: PASS: Compiled with -D_GLIBCXX_ASSERTIONS.\nHardened: \/usr\/bin\/jq: skip: Test for -Wl,-z,relro.  (No dynamic relocations).\nHardened: \/usr\/bin\/jq: PASS: Stack not executable.\nHardened: \/usr\/bin\/jq: skip: The LTO setting was not recorded (probably due to the use of an old version of the annobin plugin).\nHardened: \/usr\/bin\/jq: PASS: Compiled with sufficient optimization.\nHardened: \/usr\/bin\/jq: PASS: Compiled with PIC\/PIE.\nHardened: \/usr\/bin\/jq: PASS: Compiled as a position independent binary.\nHardened: \/usr\/bin\/jq: PASS: Good GNU Property note.\nHardened: \/usr\/bin\/jq: PASS: DT_RPATH\/DT_RUNPATH absent or rooted at \/usr.\nHardened: \/usr\/bin\/jq: PASS: No RWX segments found.\nHardened: \/usr\/bin\/jq: PASS: Consistent use of the -fshort-enum option.\nHardened: \/usr\/bin\/jq: PASS: Compiled with -fstack-clash-protection.\nHardened: \/usr\/bin\/jq: PASS: Compiled with sufficient stack protection.\nHardened: \/usr\/bin\/jq: PASS: Compiled with -mstack_realign.\nHardened: \/usr\/bin\/jq: PASS: No text relocations found.\nHardened: \/usr\/bin\/jq: PASS: No thread cancellation problems.\nHardened: \/usr\/bin\/jq: PASS: Compiled with either -Wall and\/or -Wformat-security.\nHardened: \/usr\/bin\/jq: PASS: GOT\/PLT relocations are read only.",
+       "remedy": "See annocheck(1) for more information."
+     },
+     {
+       "result": "INFO",
+       "waiver authorization": "Not Waivable",
+       "message": "annocheck 'hardened' test passes for \/usr\/lib\/libjq.so.1.0.4 on i686",
+       "details": "annocheck: Version 9.50.\nHardened: \/usr\/lib\/libjq.so.1.0.4: warn: Could not find separate debug file: libjq.so.1.0.4-1.5-12.el8.i386.debug.\nHardened: \/usr\/lib\/libjq.so.1.0.4: info: Notes produced by assembler plugin version 1\nHardened: \/usr\/lib\/libjq.so.1.0.4: info: Notes produced by gcc plugin version 8\nHardened: \/usr\/lib\/libjq.so.1.0.4: info: Set binary producer to GCC version 8.\nHardened: \/usr\/lib\/libjq.so.1.0.4: warn: Could not find separate debug file: libjq.so.1.0.4-1.5-12.el8.i386.debug.\nHardened: \/usr\/lib\/libjq.so.1.0.4: warn: Could not find separate debug file: libjq.so.1.0.4-1.5-12.el8.i386.debug.\nHardened: \/usr\/lib\/libjq.so.1.0.4: warn: Could not find separate debug file: libjq.so.1.0.4-1.5-12.el8.i386.debug.\nHardened: \/usr\/lib\/libjq.so.1.0.4: warn: Could not find separate debug file: libjq.so.1.0.4-1.5-12.el8.i386.debug.\nHardened: \/usr\/lib\/libjq.so.1.0.4: warn: Could not find separate debug file: libjq.so.1.0.4-1.5-12.el8.i386.debug.\nHardened: \/usr\/lib\/libjq.so.1.0.4: warn: Could not find separate debug file: libjq.so.1.0.4-1.5-12.el8.i386.debug.\nHardened: \/usr\/lib\/libjq.so.1.0.4: warn: Could not find separate debug file: libjq.so.1.0.4-1.5-12.el8.i386.debug.\nHardened: \/usr\/lib\/libjq.so.1.0.4: warn: Could not find separate debug file: libjq.so.1.0.4-1.5-12.el8.i386.debug.\nHardened: \/usr\/lib\/libjq.so.1.0.4: warn: Could not find separate debug file: libjq.so.1.0.4-1.5-12.el8.i386.debug.\nHardened: \/usr\/lib\/libjq.so.1.0.4: warn: Could not find separate debug file: libjq.so.1.0.4-1.5-12.el8.i386.debug.\nHardened: \/usr\/lib\/libjq.so.1.0.4: warn: Could not find separate debug file: libjq.so.1.0.4-1.5-12.el8.i386.debug.\nHardened: \/usr\/lib\/libjq.so.1.0.4: warn: Could not find separate debug file: libjq.so.1.0.4-1.5-12.el8.i386.debug.\nHardened: \/usr\/lib\/libjq.so.1.0.4: warn: Could not find separate debug file: libjq.so.1.0.4-1.5-12.el8.i386.debug.\nHardened: \/usr\/lib\/libjq.so.1.0.4: warn: Could not find separate debug file: libjq.so.1.0.4-1.5-12.el8.i386.debug.\nHardened: \/usr\/lib\/libjq.so.1.0.4: warn: Could not find separate debug file: libjq.so.1.0.4-1.5-12.el8.i386.debug.\nHardened: \/usr\/lib\/libjq.so.1.0.4: warn: Could not find separate debug file: libjq.so.1.0.4-1.5-12.el8.i386.debug.\nHardened: \/usr\/lib\/libjq.so.1.0.4: warn: Could not find separate debug file: libjq.so.1.0.4-1.5-12.el8.i386.debug.\nHardened: \/usr\/lib\/libjq.so.1.0.4: warn: Could not find separate debug file: libjq.so.1.0.4-1.5-12.el8.i386.debug.\nHardened: \/usr\/lib\/libjq.so.1.0.4: warn: Could not find separate debug file: libjq.so.1.0.4-1.5-12.el8.i386.debug.\nHardened: \/usr\/lib\/libjq.so.1.0.4: PASS: No gaps found.\nHardened: \/usr\/lib\/libjq.so.1.0.4: skip: Test for -Wl,-z-now.  (Dynamic segment present, but no dynamic relocations found).\nHardened: \/usr\/lib\/libjq.so.1.0.4: skip: Branch protection.  (Not an AArch64 binary).\nHardened: \/usr\/lib\/libjq.so.1.0.4: PASS: Compiled with -fcf-protection.\nHardened: \/usr\/lib\/libjq.so.1.0.4: PASS: One dynamic section\/segment found.\nHardened: \/usr\/lib\/libjq.so.1.0.4: skip: Test of dynamic tags.  (AArch64 specific).\nHardened: \/usr\/lib\/libjq.so.1.0.4: skip: Entry point instruction is ENDBR.  (Not an executable).\nHardened: \/usr\/lib\/libjq.so.1.0.4: PASS: Compiled with -D_FORTIFY_SOURCE=2.\nHardened: \/usr\/lib\/libjq.so.1.0.4: PASS: Compiled with -D_GLIBCXX_ASSERTIONS.\nHardened: \/usr\/lib\/libjq.so.1.0.4: skip: Test for -Wl,-z,relro.  (No dynamic relocations).\nHardened: \/usr\/lib\/libjq.so.1.0.4: PASS: Stack not executable.\nHardened: \/usr\/lib\/libjq.so.1.0.4: skip: The LTO setting was not recorded (probably due to the use of an old version of the annobin plugin).\nHardened: \/usr\/lib\/libjq.so.1.0.4: PASS: Compiled with sufficient optimization.\nHardened: \/usr\/lib\/libjq.so.1.0.4: PASS: Compiled with PIC\/PIE.\nHardened: \/usr\/lib\/libjq.so.1.0.4: PASS: Compiled as a position independent binary.\nHardened: \/usr\/lib\/libjq.so.1.0.4: PASS: Good GNU Property note.\nHardened: \/usr\/lib\/libjq.so.1.0.4: PASS: DT_RPATH\/DT_RUNPATH absent or rooted at \/usr.\nHardened: \/usr\/lib\/libjq.so.1.0.4: PASS: No RWX segments found.\nHardened: \/usr\/lib\/libjq.so.1.0.4: PASS: Consistent use of the -fshort-enum option.\nHardened: \/usr\/lib\/libjq.so.1.0.4: PASS: Compiled with -fstack-clash-protection.\nHardened: \/usr\/lib\/libjq.so.1.0.4: PASS: Compiled with sufficient stack protection.\nHardened: \/usr\/lib\/libjq.so.1.0.4: PASS: Compiled with -mstack_realign.\nHardened: \/usr\/lib\/libjq.so.1.0.4: PASS: No text relocations found.\nHardened: \/usr\/lib\/libjq.so.1.0.4: PASS: No thread cancellation problems.\nHardened: \/usr\/lib\/libjq.so.1.0.4: PASS: Compiled with either -Wall and\/or -Wformat-security.\nHardened: \/usr\/lib\/libjq.so.1.0.4: PASS: GOT\/PLT relocations are read only.\nHardened: \/usr\/lib\/libjq.so.1.0.4: PASS.",
+       "remedy": "See annocheck(1) for more information."
+     }
+   ],
+   "permissions": [
+     {
+       "result": "OK",
+       "waiver authorization": "Not Waivable"
+     }
+   ],
+   "capabilities": [
+     {
+       "result": "OK",
+       "waiver authorization": "Not Waivable"
+     }
+   ],
+   "path-migration": [
+     {
+       "result": "OK",
+       "waiver authorization": "Not Waivable"
+     }
+   ],
+   "lto": [
+     {
+       "result": "OK",
+       "waiver authorization": "Not Waivable"
+     }
+   ],
+   "symlinks": [
+     {
+       "result": "OK",
+       "waiver authorization": "Not Waivable"
+     }
+   ],
+   "politics": [
+     {
+       "result": "OK",
+       "waiver authorization": "Not Waivable"
+     }
+   ],
+   "bad-functions": [
+     {
+       "result": "OK",
+       "waiver authorization": "Not Waivable"
+     }
+   ],
+   "runpath": [
+     {
+       "result": "VERIFY",
+       "waiver authorization": "Anyone",
+       "message": "\/usr\/bin\/jq has an invalid-looking DT_RPATH on i686: \/builddir\/build\/BUILD\/jq-1.5\/.libs",
+       "remedy": "Either DT_RPATH or DT_RUNPATH properties were found on ELF shared objects in this package.  The use of DT_RPATH and DT_RUNPATH is discouraged except in certain situations.  Check to see that you a disabling rpath during the %build stage of the spec file.  If you are unable to do this easily, you can try using a program such as patchelf to remove these properties from the ELF files."
+     }
+   ]
+ }

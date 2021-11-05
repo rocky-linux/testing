@@ -1,0 +1,129 @@
+{
+   "rpminspect": [
+     {
+       "result": "INFO",
+       "waiver authorization": "Not Waivable",
+       "message": "version",
+       "details": "rpminspect version 1.5"
+     },
+     {
+       "result": "INFO",
+       "waiver authorization": "Not Waivable",
+       "message": "command line",
+       "details": "\/usr\/bin\/rpminspect -c \/usr\/share\/rpminspect\/fedora.yaml -v -E metadata,files,patches,virus,javabytecode,disttag,specname --format=json --output=\/home\/vagrant\/data\/rpminspect\/centos\/8.4\/powertools\/cppcheck-1.83.1.el8.x86_64.json \/home\/vagrant\/data\/repos\/centos\/8.4\/powertools\/Packages\/cppcheck-1.83-1.el8.x86_64.rpm"
+     }
+   ],
+   "license": [
+     {
+       "result": "INFO",
+       "waiver authorization": "Not Waivable",
+       "message": "Valid License Tag in cppcheck-1.83-1.el8.x86_64: GPLv3+"
+     },
+     {
+       "result": "OK",
+       "waiver authorization": "Not Waivable"
+     }
+   ],
+   "empty-payload": [
+     {
+       "result": "OK",
+       "waiver authorization": "Not Waivable"
+     }
+   ],
+   "man-pages": [
+     {
+       "result": "OK",
+       "waiver authorization": "Not Waivable"
+     }
+   ],
+   "xml-files": [
+     {
+       "result": "VERIFY",
+       "waiver authorization": "Anyone",
+       "message": "File \/usr\/share\/doc\/cppcheck\/manual.html is a malformed XML file on x86_64",
+       "details": "Element img does not carry attribute alt\n",
+       "remedy": "Correct the reported errors in the XML document"
+     }
+   ],
+   "elf-object-properties": [
+     {
+       "result": "OK",
+       "waiver authorization": "Not Waivable"
+     }
+   ],
+   "desktop-entry-files": [
+     {
+       "result": "OK",
+       "waiver authorization": "Not Waivable"
+     }
+   ],
+   "ownership": [
+     {
+       "result": "OK",
+       "waiver authorization": "Not Waivable"
+     }
+   ],
+   "shell-syntax": [
+     {
+       "result": "OK",
+       "waiver authorization": "Not Waivable"
+     }
+   ],
+   "annocheck": [
+     {
+       "result": "VERIFY",
+       "waiver authorization": "Not Waivable",
+       "message": "annocheck 'hardened' test fails for \/usr\/bin\/cppcheck on x86_64",
+       "details": "annocheck: Version 9.50.\nHardened: \/usr\/bin\/cppcheck: warn: Could not find separate debug file: cppcheck-1.83-1.el8.x86_64.debug.\nHardened: \/usr\/bin\/cppcheck: info: Notes produced by gcc plugin version 8.64\nHardened: \/usr\/bin\/cppcheck: info: Notes produced by assembler plugin version 1\nHardened: \/usr\/bin\/cppcheck: info: Set binary producer to GCC version 8.\nHardened: \/usr\/bin\/cppcheck: warn: Could not find separate debug file: cppcheck-1.83-1.el8.x86_64.debug.\nHardened: \/usr\/bin\/cppcheck: warn: Could not find separate debug file: cppcheck-1.83-1.el8.x86_64.debug.\nHardened: \/usr\/bin\/cppcheck: warn: Could not find separate debug file: cppcheck-1.83-1.el8.x86_64.debug.\nHardened: \/usr\/bin\/cppcheck: warn: Could not find separate debug file: cppcheck-1.83-1.el8.x86_64.debug.\nHardened: \/usr\/bin\/cppcheck: warn: Could not find separate debug file: cppcheck-1.83-1.el8.x86_64.debug.\nHardened: \/usr\/bin\/cppcheck: warn: Could not find separate debug file: cppcheck-1.83-1.el8.x86_64.debug.\nHardened: \/usr\/bin\/cppcheck: warn: Could not find separate debug file: cppcheck-1.83-1.el8.x86_64.debug.\nHardened: \/usr\/bin\/cppcheck: warn: Could not find separate debug file: cppcheck-1.83-1.el8.x86_64.debug.\nHardened: \/usr\/bin\/cppcheck: warn: Could not find separate debug file: cppcheck-1.83-1.el8.x86_64.debug.\nHardened: \/usr\/bin\/cppcheck: warn: Could not find separate debug file: cppcheck-1.83-1.el8.x86_64.debug.\nHardened: \/usr\/bin\/cppcheck: warn: Could not find separate debug file: cppcheck-1.83-1.el8.x86_64.debug.\nHardened: \/usr\/bin\/cppcheck: warn: Could not find separate debug file: cppcheck-1.83-1.el8.x86_64.debug.\nHardened: \/usr\/bin\/cppcheck: warn: Could not find separate debug file: cppcheck-1.83-1.el8.x86_64.debug.\nHardened: \/usr\/bin\/cppcheck: warn: Could not find separate debug file: cppcheck-1.83-1.el8.x86_64.debug.\nHardened: \/usr\/bin\/cppcheck: warn: Could not find separate debug file: cppcheck-1.83-1.el8.x86_64.debug.\nHardened: \/usr\/bin\/cppcheck: warn: Could not find separate debug file: cppcheck-1.83-1.el8.x86_64.debug.\nHardened: \/usr\/bin\/cppcheck: warn: Could not find separate debug file: cppcheck-1.83-1.el8.x86_64.debug.\nHardened: \/usr\/bin\/cppcheck: warn: Could not find separate debug file: cppcheck-1.83-1.el8.x86_64.debug.\nHardened: \/usr\/bin\/cppcheck: warn: Could not find separate debug file: cppcheck-1.83-1.el8.x86_64.debug.\nHardened: \/usr\/bin\/cppcheck: warn: Could not find separate debug file: cppcheck-1.83-1.el8.x86_64.debug.\nHardened: \/usr\/bin\/cppcheck: warn: Could not find separate debug file: cppcheck-1.83-1.el8.x86_64.debug.\nHardened: \/usr\/bin\/cppcheck: warn: Could not find separate debug file: cppcheck-1.83-1.el8.x86_64.debug.\nHardened: \/usr\/bin\/cppcheck: warn: Could not find separate debug file: cppcheck-1.83-1.el8.x86_64.debug.\nHardened: \/usr\/bin\/cppcheck: warn: Could not find separate debug file: cppcheck-1.83-1.el8.x86_64.debug.\nHardened: \/usr\/bin\/cppcheck: warn: Could not find separate debug file: cppcheck-1.83-1.el8.x86_64.debug.\nHardened: \/usr\/bin\/cppcheck: warn: Could not find separate debug file: cppcheck-1.83-1.el8.x86_64.debug.\nHardened: \/usr\/bin\/cppcheck: warn: Could not find separate debug file: cppcheck-1.83-1.el8.x86_64.debug.\nHardened: \/usr\/bin\/cppcheck: warn: Could not find separate debug file: cppcheck-1.83-1.el8.x86_64.debug.\nHardened: \/usr\/bin\/cppcheck: warn: Could not find separate debug file: cppcheck-1.83-1.el8.x86_64.debug.\nHardened: \/usr\/bin\/cppcheck: warn: Could not find separate debug file: cppcheck-1.83-1.el8.x86_64.debug.\nHardened: \/usr\/bin\/cppcheck: warn: Could not find separate debug file: cppcheck-1.83-1.el8.x86_64.debug.\nHardened: \/usr\/bin\/cppcheck: warn: Could not find separate debug file: cppcheck-1.83-1.el8.x86_64.debug.\nHardened: \/usr\/bin\/cppcheck: warn: Could not find separate debug file: cppcheck-1.83-1.el8.x86_64.debug.\nHardened: \/usr\/bin\/cppcheck: warn: Could not find separate debug file: cppcheck-1.83-1.el8.x86_64.debug.\nHardened: \/usr\/bin\/cppcheck: warn: Could not find separate debug file: cppcheck-1.83-1.el8.x86_64.debug.\nHardened: \/usr\/bin\/cppcheck: warn: Could not find separate debug file: cppcheck-1.83-1.el8.x86_64.debug.\nHardened: \/usr\/bin\/cppcheck: warn: Could not find separate debug file: cppcheck-1.83-1.el8.x86_64.debug.\nHardened: \/usr\/bin\/cppcheck: warn: Could not find separate debug file: cppcheck-1.83-1.el8.x86_64.debug.\nHardened: \/usr\/bin\/cppcheck: warn: Could not find separate debug file: cppcheck-1.83-1.el8.x86_64.debug.\nHardened: \/usr\/bin\/cppcheck: warn: Could not find separate debug file: cppcheck-1.83-1.el8.x86_64.debug.\nHardened: \/usr\/bin\/cppcheck: warn: Could not find separate debug file: cppcheck-1.83-1.el8.x86_64.debug.\nHardened: \/usr\/bin\/cppcheck: warn: Could not find separate debug file: cppcheck-1.83-1.el8.x86_64.debug.\nHardened: \/usr\/bin\/cppcheck: warn: Could not find separate debug file: cppcheck-1.83-1.el8.x86_64.debug.\nHardened: \/usr\/bin\/cppcheck: warn: Could not find separate debug file: cppcheck-1.83-1.el8.x86_64.debug.\nHardened: \/usr\/bin\/cppcheck: warn: Could not find separate debug file: cppcheck-1.83-1.el8.x86_64.debug.\nHardened: \/usr\/bin\/cppcheck: warn: Could not find separate debug file: cppcheck-1.83-1.el8.x86_64.debug.\nHardened: \/usr\/bin\/cppcheck: warn: Could not find separate debug file: cppcheck-1.83-1.el8.x86_64.debug.\nHardened: \/usr\/bin\/cppcheck: warn: Could not find separate debug file: cppcheck-1.83-1.el8.x86_64.debug.\nHardened: \/usr\/bin\/cppcheck: warn: Could not find separate debug file: cppcheck-1.83-1.el8.x86_64.debug.\nHardened: \/usr\/bin\/cppcheck: warn: Could not find separate debug file: cppcheck-1.83-1.el8.x86_64.debug.\nHardened: \/usr\/bin\/cppcheck: warn: Could not find separate debug file: cppcheck-1.83-1.el8.x86_64.debug.\nHardened: \/usr\/bin\/cppcheck: warn: Could not find separate debug file: cppcheck-1.83-1.el8.x86_64.debug.\nHardened: \/usr\/bin\/cppcheck: warn: Could not find separate debug file: cppcheck-1.83-1.el8.x86_64.debug.\nHardened: \/usr\/bin\/cppcheck: warn: Could not find separate debug file: cppcheck-1.83-1.el8.x86_64.debug.\nHardened: \/usr\/bin\/cppcheck: warn: Could not find separate debug file: cppcheck-1.83-1.el8.x86_64.debug.\nHardened: \/usr\/bin\/cppcheck: warn: Could not find separate debug file: cppcheck-1.83-1.el8.x86_64.debug.\nHardened: \/usr\/bin\/cppcheck: warn: Could not find separate debug file: cppcheck-1.83-1.el8.x86_64.debug.\nHardened: \/usr\/bin\/cppcheck: warn: Could not find separate debug file: cppcheck-1.83-1.el8.x86_64.debug.\nHardened: \/usr\/bin\/cppcheck: warn: Could not find separate debug file: cppcheck-1.83-1.el8.x86_64.debug.\nHardened: \/usr\/bin\/cppcheck: warn: Could not find separate debug file: cppcheck-1.83-1.el8.x86_64.debug.\nHardened: \/usr\/bin\/cppcheck: warn: Could not find separate debug file: cppcheck-1.83-1.el8.x86_64.debug.\nHardened: \/usr\/bin\/cppcheck: warn: Could not find separate debug file: cppcheck-1.83-1.el8.x86_64.debug.\nHardened: \/usr\/bin\/cppcheck: warn: Could not find separate debug file: cppcheck-1.83-1.el8.x86_64.debug.\nHardened: \/usr\/bin\/cppcheck: warn: Could not find separate debug file: cppcheck-1.83-1.el8.x86_64.debug.\nHardened: \/usr\/bin\/cppcheck: warn: Could not find separate debug file: cppcheck-1.83-1.el8.x86_64.debug.\nHardened: \/usr\/bin\/cppcheck: warn: Could not find separate debug file: cppcheck-1.83-1.el8.x86_64.debug.\nHardened: \/usr\/bin\/cppcheck: warn: Could not find separate debug file: cppcheck-1.83-1.el8.x86_64.debug.\nHardened: \/usr\/bin\/cppcheck: warn: Could not find separate debug file: cppcheck-1.83-1.el8.x86_64.debug.\nHardened: \/usr\/bin\/cppcheck: warn: Could not find separate debug file: cppcheck-1.83-1.el8.x86_64.debug.\nHardened: \/usr\/bin\/cppcheck: warn: Could not find separate debug file: cppcheck-1.83-1.el8.x86_64.debug.\nHardened: \/usr\/bin\/cppcheck: warn: Could not find separate debug file: cppcheck-1.83-1.el8.x86_64.debug.\nHardened: \/usr\/bin\/cppcheck: warn: Could not find separate debug file: cppcheck-1.83-1.el8.x86_64.debug.\nHardened: \/usr\/bin\/cppcheck: warn: Could not find separate debug file: cppcheck-1.83-1.el8.x86_64.debug.\nHardened: \/usr\/bin\/cppcheck: warn: Could not find separate debug file: cppcheck-1.83-1.el8.x86_64.debug.\nHardened: \/usr\/bin\/cppcheck: warn: Could not find separate debug file: cppcheck-1.83-1.el8.x86_64.debug.\nHardened: \/usr\/bin\/cppcheck: warn: Could not find separate debug file: cppcheck-1.83-1.el8.x86_64.debug.\nHardened: \/usr\/bin\/cppcheck: warn: Could not find separate debug file: cppcheck-1.83-1.el8.x86_64.debug.\nHardened: \/usr\/bin\/cppcheck: warn: Could not find separate debug file: cppcheck-1.83-1.el8.x86_64.debug.\nHardened: \/usr\/bin\/cppcheck: warn: Could not find separate debug file: cppcheck-1.83-1.el8.x86_64.debug.\nHardened: \/usr\/bin\/cppcheck: warn: Could not find separate debug file: cppcheck-1.83-1.el8.x86_64.debug.\nHardened: \/usr\/bin\/cppcheck: warn: Could not find separate debug file: cppcheck-1.83-1.el8.x86_64.debug.\nHardened: \/usr\/bin\/cppcheck: warn: Could not find separate debug file: cppcheck-1.83-1.el8.x86_64.debug.\nHardened: \/usr\/bin\/cppcheck: warn: Could not find separate debug file: cppcheck-1.83-1.el8.x86_64.debug.\nHardened: \/usr\/bin\/cppcheck: warn: Could not find separate debug file: cppcheck-1.83-1.el8.x86_64.debug.\nHardened: \/usr\/bin\/cppcheck: warn: Could not find separate debug file: cppcheck-1.83-1.el8.x86_64.debug.\nHardened: \/usr\/bin\/cppcheck: warn: Could not find separate debug file: cppcheck-1.83-1.el8.x86_64.debug.\nHardened: \/usr\/bin\/cppcheck: warn: Could not find separate debug file: cppcheck-1.83-1.el8.x86_64.debug.\nHardened: \/usr\/bin\/cppcheck: warn: Could not find separate debug file: cppcheck-1.83-1.el8.x86_64.debug.\nHardened: \/usr\/bin\/cppcheck: warn: Could not find separate debug file: cppcheck-1.83-1.el8.x86_64.debug.\nHardened: \/usr\/bin\/cppcheck: warn: Could not find separate debug file: cppcheck-1.83-1.el8.x86_64.debug.\nHardened: \/usr\/bin\/cppcheck: warn: Could not find separate debug file: cppcheck-1.83-1.el8.x86_64.debug.\nHardened: \/usr\/bin\/cppcheck: warn: Could not find separate debug file: cppcheck-1.83-1.el8.x86_64.debug.\nHardened: \/usr\/bin\/cppcheck: warn: Could not find separate debug file: cppcheck-1.83-1.el8.x86_64.debug.\nHardened: \/usr\/bin\/cppcheck: warn: Could not find separate debug file: cppcheck-1.83-1.el8.x86_64.debug.\nHardened: \/usr\/bin\/cppcheck: warn: Could not find separate debug file: cppcheck-1.83-1.el8.x86_64.debug.\nHardened: \/usr\/bin\/cppcheck: warn: Could not find separate debug file: cppcheck-1.83-1.el8.x86_64.debug.\nHardened: \/usr\/bin\/cppcheck: warn: Could not find separate debug file: cppcheck-1.83-1.el8.x86_64.debug.\nHardened: \/usr\/bin\/cppcheck: warn: Could not find separate debug file: cppcheck-1.83-1.el8.x86_64.debug.\nHardened: \/usr\/bin\/cppcheck: warn: Could not find separate debug file: cppcheck-1.83-1.el8.x86_64.debug.\nHardened: \/usr\/bin\/cppcheck: warn: Could not find separate debug file: cppcheck-1.83-1.el8.x86_64.debug.\nHardened: \/usr\/bin\/cppcheck: warn: Could not find separate debug file: cppcheck-1.83-1.el8.x86_64.debug.\nHardened: \/usr\/bin\/cppcheck: warn: Could not find separate debug file: cppcheck-1.83-1.el8.x86_64.debug.\nHardened: \/usr\/bin\/cppcheck: warn: Could not find separate debug file: cppcheck-1.83-1.el8.x86_64.debug.\nHardened: \/usr\/bin\/cppcheck: warn: Could not find separate debug file: cppcheck-1.83-1.el8.x86_64.debug.\nHardened: \/usr\/bin\/cppcheck: warn: Could not find separate debug file: cppcheck-1.83-1.el8.x86_64.debug.\nHardened: \/usr\/bin\/cppcheck: warn: Could not find separate debug file: cppcheck-1.83-1.el8.x86_64.debug.\nHardened: \/usr\/bin\/cppcheck: warn: Could not find separate debug file: cppcheck-1.83-1.el8.x86_64.debug.\nHardened: \/usr\/bin\/cppcheck: warn: Could not find separate debug file: cppcheck-1.83-1.el8.x86_64.debug.\nHardened: \/usr\/bin\/cppcheck: warn: Could not find separate debug file: cppcheck-1.83-1.el8.x86_64.debug.\nHardened: \/usr\/bin\/cppcheck: warn: Could not find separate debug file: cppcheck-1.83-1.el8.x86_64.debug.\nHardened: \/usr\/bin\/cppcheck: warn: Could not find separate debug file: cppcheck-1.83-1.el8.x86_64.debug.\nHardened: \/usr\/bin\/cppcheck: warn: Could not find separate debug file: cppcheck-1.83-1.el8.x86_64.debug.\nHardened: \/usr\/bin\/cppcheck: warn: Could not find separate debug file: cppcheck-1.83-1.el8.x86_64.debug.\nHardened: \/usr\/bin\/cppcheck: warn: Could not find separate debug file: cppcheck-1.83-1.el8.x86_64.debug.\nHardened: \/usr\/bin\/cppcheck: warn: Could not find separate debug file: cppcheck-1.83-1.el8.x86_64.debug.\nHardened: \/usr\/bin\/cppcheck: warn: Could not find separate debug file: cppcheck-1.83-1.el8.x86_64.debug.\nHardened: \/usr\/bin\/cppcheck: warn: Could not find separate debug file: cppcheck-1.83-1.el8.x86_64.debug.\nHardened: \/usr\/bin\/cppcheck: gap:  (5c7c6..62dbe) in annobin notes.\nHardened: \/usr\/bin\/cppcheck: warn: Could not find separate debug file: cppcheck-1.83-1.el8.x86_64.debug.\nHardened: \/usr\/bin\/cppcheck: warn: Could not find separate debug file: cppcheck-1.83-1.el8.x86_64.debug.\nHardened: \/usr\/bin\/cppcheck: warn: Could not find separate debug file: cppcheck-1.83-1.el8.x86_64.debug.\nHardened: \/usr\/bin\/cppcheck: gap:  (62e38..6ac50) in annobin notes.\nHardened: \/usr\/bin\/cppcheck: FAIL: Gaps were detected in the annobin coverage.\nHardened: \/usr\/bin\/cppcheck: skip: Test for -Wl,-z-now.  (Dynamic segment present, but no dynamic relocations found).\nHardened: \/usr\/bin\/cppcheck: skip: Branch protection.  (Not an AArch64 binary).\nHardened: \/usr\/bin\/cppcheck: PASS: Compiled with -fcf-protection.\nHardened: \/usr\/bin\/cppcheck: PASS: One dynamic section\/segment found.\nHardened: \/usr\/bin\/cppcheck: skip: Test of dynamic tags.  (AArch64 specific).\nHardened: \/usr\/bin\/cppcheck: PASS: Entry point instruction is ENDBR.\nHardened: \/usr\/bin\/cppcheck: PASS: Compiled with -D_FORTIFY_SOURCE=2.\nHardened: \/usr\/bin\/cppcheck: PASS: Compiled with -D_GLIBCXX_ASSERTIONS.\nHardened: \/usr\/bin\/cppcheck: skip: Test for -Wl,-z,relro.  (No dynamic relocations).\nHardened: \/usr\/bin\/cppcheck: PASS: Stack not executable.\nHardened: \/usr\/bin\/cppcheck: skip: The LTO setting was not recorded (probably due to the use of an old version of the annobin plugin).\nHardened: \/usr\/bin\/cppcheck: PASS: Compiled with sufficient optimization.\nHardened: \/usr\/bin\/cppcheck: PASS: Compiled with PIC\/PIE.\nHardened: \/usr\/bin\/cppcheck: PASS: Compiled as a position independent binary.\nHardened: \/usr\/bin\/cppcheck: PASS: Good GNU Property note.\nHardened: \/usr\/bin\/cppcheck: PASS: DT_RPATH\/DT_RUNPATH absent or rooted at \/usr.\nHardened: \/usr\/bin\/cppcheck: PASS: No RWX segments found.\nHardened: \/usr\/bin\/cppcheck: PASS: Consistent use of the -fshort-enum option.\nHardened: \/usr\/bin\/cppcheck: PASS: Compiled with -fstack-clash-protection.\nHardened: \/usr\/bin\/cppcheck: PASS: Compiled with sufficient stack protection.\nHardened: \/usr\/bin\/cppcheck: skip: Test for stack realignment support.  (Only needed on i686 binaries).\nHardened: \/usr\/bin\/cppcheck: PASS: No text relocations found.\nHardened: \/usr\/bin\/cppcheck: PASS: No thread cancellation problems.\nHardened: \/usr\/bin\/cppcheck: PASS: Compiled with either -Wall and\/or -Wformat-security.\nHardened: \/usr\/bin\/cppcheck: PASS: GOT\/PLT relocations are read only.",
+       "remedy": "See annocheck(1) for more information."
+     }
+   ],
+   "permissions": [
+     {
+       "result": "OK",
+       "waiver authorization": "Not Waivable"
+     }
+   ],
+   "capabilities": [
+     {
+       "result": "OK",
+       "waiver authorization": "Not Waivable"
+     }
+   ],
+   "path-migration": [
+     {
+       "result": "OK",
+       "waiver authorization": "Not Waivable"
+     }
+   ],
+   "lto": [
+     {
+       "result": "OK",
+       "waiver authorization": "Not Waivable"
+     }
+   ],
+   "symlinks": [
+     {
+       "result": "OK",
+       "waiver authorization": "Not Waivable"
+     }
+   ],
+   "politics": [
+     {
+       "result": "OK",
+       "waiver authorization": "Not Waivable"
+     }
+   ],
+   "bad-functions": [
+     {
+       "result": "OK",
+       "waiver authorization": "Not Waivable"
+     }
+   ],
+   "runpath": [
+     {
+       "result": "OK",
+       "waiver authorization": "Not Waivable"
+     }
+   ]
+ }
