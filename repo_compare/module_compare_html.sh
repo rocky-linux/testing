@@ -1,4 +1,3 @@
-
 #!/bin/bash
 
 # Simple script that takes a list of the modular packages in a group of repositories (like AppStream,CodeReady from RHEL 8) and
