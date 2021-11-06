@@ -26,3 +26,17 @@ The example compares all modules found in RHEL AppStream and CodeReady against t
 Note that only the packages contained in a module are compared.  No other metadata (module version strings, etc.) is considered, as it is likely unique and not meant to be copied.
 
 WARNING:  As with the above script, the order of the arguments absolutely matters.  Generally RHEL repos should be listed first, as the source to compare against.
+
+
+<br />
+<br />
+
+# Support Scripts
+
+A couple support scripts are also in the repository:
+
+**mkrepofile.sh :** Create repo files for Rocky and duplicate ones with friendly names for the RHEL repos
+
+<br />
+
+**repo_compare_launcher.sh :** Run all combinations of repocompare RHEL8 <---> Rocky8. Compares production, staging, source, modules, RHEL Beta, etc.
