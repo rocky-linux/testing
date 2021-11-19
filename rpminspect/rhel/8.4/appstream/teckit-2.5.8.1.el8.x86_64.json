@@ -1,0 +1,168 @@
+{
+   "rpminspect": [
+     {
+       "result": "INFO",
+       "waiver authorization": "Not Waivable",
+       "message": "version",
+       "details": "rpminspect version 1.5"
+     },
+     {
+       "result": "INFO",
+       "waiver authorization": "Not Waivable",
+       "message": "command line",
+       "details": "\/usr\/bin\/rpminspect -c \/usr\/share\/rpminspect\/fedora.yaml -v -E metadata,files,patches,virus,javabytecode,disttag,specname --format=json --output=\/home\/vagrant\/data\/rpminspect\/rhel\/8.4\/appstream\/teckit-2.5.8.1.el8.x86_64.json \/home\/vagrant\/data\/repos\/rhel8\/8\/appstream\/Packages\/t\/teckit-2.5.8-1.el8.x86_64.rpm"
+     }
+   ],
+   "license": [
+     {
+       "result": "INFO",
+       "waiver authorization": "Not Waivable",
+       "message": "Valid License Tag in teckit-2.5.8-1.el8.x86_64: LGPLv2+ or CPL"
+     },
+     {
+       "result": "OK",
+       "waiver authorization": "Not Waivable"
+     }
+   ],
+   "empty-payload": [
+     {
+       "result": "OK",
+       "waiver authorization": "Not Waivable"
+     }
+   ],
+   "man-pages": [
+     {
+       "result": "OK",
+       "waiver authorization": "Not Waivable"
+     }
+   ],
+   "xml-files": [
+     {
+       "result": "OK",
+       "waiver authorization": "Not Waivable"
+     }
+   ],
+   "elf-object-properties": [
+     {
+       "result": "OK",
+       "waiver authorization": "Not Waivable"
+     }
+   ],
+   "desktop-entry-files": [
+     {
+       "result": "OK",
+       "waiver authorization": "Not Waivable"
+     }
+   ],
+   "ownership": [
+     {
+       "result": "OK",
+       "waiver authorization": "Not Waivable"
+     }
+   ],
+   "shell-syntax": [
+     {
+       "result": "OK",
+       "waiver authorization": "Not Waivable"
+     }
+   ],
+   "annocheck": [
+     {
+       "result": "VERIFY",
+       "waiver authorization": "Not Waivable",
+       "message": "annocheck 'hardened' test fails for \/usr\/bin\/sfconv on x86_64",
+       "details": "annocheck: Version 9.50.\nHardened: \/usr\/bin\/sfconv: warn: Could not find separate debug file: sfconv-2.5.8-1.el8.x86_64.debug.\nHardened: \/usr\/bin\/sfconv: info: Notes produced by assembler plugin version 1\nHardened: \/usr\/bin\/sfconv: info: Notes produced by gcc plugin version 8\nHardened: \/usr\/bin\/sfconv: info: Set binary producer to GCC version 8.\nHardened: \/usr\/bin\/sfconv: warn: Could not find separate debug file: sfconv-2.5.8-1.el8.x86_64.debug.\nHardened: \/usr\/bin\/sfconv: warn: Could not find separate debug file: sfconv-2.5.8-1.el8.x86_64.debug.\nHardened: \/usr\/bin\/sfconv: warn: Could not find separate debug file: sfconv-2.5.8-1.el8.x86_64.debug.\nHardened: \/usr\/bin\/sfconv: warn: Could not find separate debug file: sfconv-2.5.8-1.el8.x86_64.debug.\nHardened: \/usr\/bin\/sfconv: gap:  (50d0..78b0 probable component: std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::~basic_string()) in annobin notes.\nHardened: \/usr\/bin\/sfconv: FAIL: Gaps were detected in the annobin coverage.\nHardened: \/usr\/bin\/sfconv: skip: Test for -Wl,-z-now.  (Dynamic segment present, but no dynamic relocations found).\nHardened: \/usr\/bin\/sfconv: skip: Branch protection.  (Not an AArch64 binary).\nHardened: \/usr\/bin\/sfconv: PASS: Compiled with -fcf-protection.\nHardened: \/usr\/bin\/sfconv: PASS: One dynamic section\/segment found.\nHardened: \/usr\/bin\/sfconv: skip: Test of dynamic tags.  (AArch64 specific).\nHardened: \/usr\/bin\/sfconv: PASS: Entry point instruction is ENDBR.\nHardened: \/usr\/bin\/sfconv: PASS: Compiled with -D_FORTIFY_SOURCE=2.\nHardened: \/usr\/bin\/sfconv: PASS: Compiled with -D_GLIBCXX_ASSERTIONS.\nHardened: \/usr\/bin\/sfconv: skip: Test for -Wl,-z,relro.  (No dynamic relocations).\nHardened: \/usr\/bin\/sfconv: PASS: Stack not executable.\nHardened: \/usr\/bin\/sfconv: skip: The LTO setting was not recorded (probably due to the use of an old version of the annobin plugin).\nHardened: \/usr\/bin\/sfconv: PASS: Compiled with sufficient optimization.\nHardened: \/usr\/bin\/sfconv: PASS: Compiled with PIC\/PIE.\nHardened: \/usr\/bin\/sfconv: PASS: Compiled as a position independent binary.\nHardened: \/usr\/bin\/sfconv: PASS: Good GNU Property note.\nHardened: \/usr\/bin\/sfconv: PASS: DT_RPATH\/DT_RUNPATH absent or rooted at \/usr.\nHardened: \/usr\/bin\/sfconv: PASS: No RWX segments found.\nHardened: \/usr\/bin\/sfconv: PASS: Consistent use of the -fshort-enum option.\nHardened: \/usr\/bin\/sfconv: PASS: Compiled with -fstack-clash-protection.\nHardened: \/usr\/bin\/sfconv: PASS: Compiled with sufficient stack protection.\nHardened: \/usr\/bin\/sfconv: skip: Test for stack realignment support.  (Only needed on i686 binaries).\nHardened: \/usr\/bin\/sfconv: PASS: No text relocations found.\nHardened: \/usr\/bin\/sfconv: PASS: No thread cancellation problems.\nHardened: \/usr\/bin\/sfconv: PASS: Compiled with either -Wall and\/or -Wformat-security.\nHardened: \/usr\/bin\/sfconv: PASS: GOT\/PLT relocations are read only.",
+       "remedy": "See annocheck(1) for more information."
+     },
+     {
+       "result": "INFO",
+       "waiver authorization": "Not Waivable",
+       "message": "annocheck 'hardened' test passes for \/usr\/bin\/teckit_compile on x86_64",
+       "details": "annocheck: Version 9.50.\nHardened: \/usr\/bin\/teckit_compile: warn: Could not find separate debug file: teckit_compile-2.5.8-1.el8.x86_64.debug.\nHardened: \/usr\/bin\/teckit_compile: info: Notes produced by assembler plugin version 1\nHardened: \/usr\/bin\/teckit_compile: info: Notes produced by gcc plugin version 8\nHardened: \/usr\/bin\/teckit_compile: info: Set binary producer to GCC version 8.\nHardened: \/usr\/bin\/teckit_compile: warn: Could not find separate debug file: teckit_compile-2.5.8-1.el8.x86_64.debug.\nHardened: \/usr\/bin\/teckit_compile: warn: Could not find separate debug file: teckit_compile-2.5.8-1.el8.x86_64.debug.\nHardened: \/usr\/bin\/teckit_compile: warn: Could not find separate debug file: teckit_compile-2.5.8-1.el8.x86_64.debug.\nHardened: \/usr\/bin\/teckit_compile: PASS: No gaps found.\nHardened: \/usr\/bin\/teckit_compile: skip: Test for -Wl,-z-now.  (Dynamic segment present, but no dynamic relocations found).\nHardened: \/usr\/bin\/teckit_compile: skip: Branch protection.  (Not an AArch64 binary).\nHardened: \/usr\/bin\/teckit_compile: PASS: Compiled with -fcf-protection.\nHardened: \/usr\/bin\/teckit_compile: PASS: One dynamic section\/segment found.\nHardened: \/usr\/bin\/teckit_compile: skip: Test of dynamic tags.  (AArch64 specific).\nHardened: \/usr\/bin\/teckit_compile: PASS: Entry point instruction is ENDBR.\nHardened: \/usr\/bin\/teckit_compile: PASS: Compiled with -D_FORTIFY_SOURCE=2.\nHardened: \/usr\/bin\/teckit_compile: PASS: Compiled with -D_GLIBCXX_ASSERTIONS.\nHardened: \/usr\/bin\/teckit_compile: skip: Test for -Wl,-z,relro.  (No dynamic relocations).\nHardened: \/usr\/bin\/teckit_compile: PASS: Stack not executable.\nHardened: \/usr\/bin\/teckit_compile: skip: The LTO setting was not recorded (probably due to the use of an old version of the annobin plugin).\nHardened: \/usr\/bin\/teckit_compile: PASS: Compiled with sufficient optimization.\nHardened: \/usr\/bin\/teckit_compile: PASS: Compiled with PIC\/PIE.\nHardened: \/usr\/bin\/teckit_compile: PASS: Compiled as a position independent binary.\nHardened: \/usr\/bin\/teckit_compile: PASS: Good GNU Property note.\nHardened: \/usr\/bin\/teckit_compile: PASS: DT_RPATH\/DT_RUNPATH absent or rooted at \/usr.\nHardened: \/usr\/bin\/teckit_compile: PASS: No RWX segments found.\nHardened: \/usr\/bin\/teckit_compile: PASS: Consistent use of the -fshort-enum option.\nHardened: \/usr\/bin\/teckit_compile: PASS: Compiled with -fstack-clash-protection.\nHardened: \/usr\/bin\/teckit_compile: PASS: Compiled with sufficient stack protection.\nHardened: \/usr\/bin\/teckit_compile: skip: Test for stack realignment support.  (Only needed on i686 binaries).\nHardened: \/usr\/bin\/teckit_compile: PASS: No text relocations found.\nHardened: \/usr\/bin\/teckit_compile: PASS: No thread cancellation problems.\nHardened: \/usr\/bin\/teckit_compile: PASS: Compiled with either -Wall and\/or -Wformat-security.\nHardened: \/usr\/bin\/teckit_compile: PASS: GOT\/PLT relocations are read only.\nHardened: \/usr\/bin\/teckit_compile: PASS.",
+       "remedy": "See annocheck(1) for more information."
+     },
+     {
+       "result": "INFO",
+       "waiver authorization": "Not Waivable",
+       "message": "annocheck 'hardened' test passes for \/usr\/bin\/txtconv on x86_64",
+       "details": "annocheck: Version 9.50.\nHardened: \/usr\/bin\/txtconv: warn: Could not find separate debug file: txtconv-2.5.8-1.el8.x86_64.debug.\nHardened: \/usr\/bin\/txtconv: info: Notes produced by assembler plugin version 1\nHardened: \/usr\/bin\/txtconv: info: Notes produced by gcc plugin version 8\nHardened: \/usr\/bin\/txtconv: info: Set binary producer to GCC version 8.\nHardened: \/usr\/bin\/txtconv: warn: Could not find separate debug file: txtconv-2.5.8-1.el8.x86_64.debug.\nHardened: \/usr\/bin\/txtconv: warn: Could not find separate debug file: txtconv-2.5.8-1.el8.x86_64.debug.\nHardened: \/usr\/bin\/txtconv: warn: Could not find separate debug file: txtconv-2.5.8-1.el8.x86_64.debug.\nHardened: \/usr\/bin\/txtconv: PASS: No gaps found.\nHardened: \/usr\/bin\/txtconv: skip: Test for -Wl,-z-now.  (Dynamic segment present, but no dynamic relocations found).\nHardened: \/usr\/bin\/txtconv: skip: Branch protection.  (Not an AArch64 binary).\nHardened: \/usr\/bin\/txtconv: PASS: Compiled with -fcf-protection.\nHardened: \/usr\/bin\/txtconv: PASS: One dynamic section\/segment found.\nHardened: \/usr\/bin\/txtconv: skip: Test of dynamic tags.  (AArch64 specific).\nHardened: \/usr\/bin\/txtconv: PASS: Entry point instruction is ENDBR.\nHardened: \/usr\/bin\/txtconv: PASS: Compiled with -D_FORTIFY_SOURCE=2.\nHardened: \/usr\/bin\/txtconv: PASS: Compiled with -D_GLIBCXX_ASSERTIONS.\nHardened: \/usr\/bin\/txtconv: skip: Test for -Wl,-z,relro.  (No dynamic relocations).\nHardened: \/usr\/bin\/txtconv: PASS: Stack not executable.\nHardened: \/usr\/bin\/txtconv: skip: The LTO setting was not recorded (probably due to the use of an old version of the annobin plugin).\nHardened: \/usr\/bin\/txtconv: PASS: Compiled with sufficient optimization.\nHardened: \/usr\/bin\/txtconv: PASS: Compiled with PIC\/PIE.\nHardened: \/usr\/bin\/txtconv: PASS: Compiled as a position independent binary.\nHardened: \/usr\/bin\/txtconv: PASS: Good GNU Property note.\nHardened: \/usr\/bin\/txtconv: PASS: DT_RPATH\/DT_RUNPATH absent or rooted at \/usr.\nHardened: \/usr\/bin\/txtconv: PASS: No RWX segments found.\nHardened: \/usr\/bin\/txtconv: PASS: Consistent use of the -fshort-enum option.\nHardened: \/usr\/bin\/txtconv: PASS: Compiled with -fstack-clash-protection.\nHardened: \/usr\/bin\/txtconv: PASS: Compiled with sufficient stack protection.\nHardened: \/usr\/bin\/txtconv: skip: Test for stack realignment support.  (Only needed on i686 binaries).\nHardened: \/usr\/bin\/txtconv: PASS: No text relocations found.\nHardened: \/usr\/bin\/txtconv: PASS: No thread cancellation problems.\nHardened: \/usr\/bin\/txtconv: PASS: Compiled with either -Wall and\/or -Wformat-security.\nHardened: \/usr\/bin\/txtconv: PASS: GOT\/PLT relocations are read only.\nHardened: \/usr\/bin\/txtconv: PASS.",
+       "remedy": "See annocheck(1) for more information."
+     },
+     {
+       "result": "INFO",
+       "waiver authorization": "Not Waivable",
+       "message": "annocheck 'hardened' test passes for \/usr\/lib64\/libTECkit.so.0.0.0 on x86_64",
+       "details": "annocheck: Version 9.50.\nHardened: \/usr\/lib64\/libTECkit.so.0.0.0: warn: Could not find separate debug file: libTECkit.so.0.0.0-2.5.8-1.el8.x86_64.debug.\nHardened: \/usr\/lib64\/libTECkit.so.0.0.0: info: Notes produced by assembler plugin version 1\nHardened: \/usr\/lib64\/libTECkit.so.0.0.0: info: Notes produced by gcc plugin version 8\nHardened: \/usr\/lib64\/libTECkit.so.0.0.0: info: Set binary producer to GCC version 8.\nHardened: \/usr\/lib64\/libTECkit.so.0.0.0: PASS: No gaps found.\nHardened: \/usr\/lib64\/libTECkit.so.0.0.0: skip: Test for -Wl,-z-now.  (Dynamic segment present, but no dynamic relocations found).\nHardened: \/usr\/lib64\/libTECkit.so.0.0.0: skip: Branch protection.  (Not an AArch64 binary).\nHardened: \/usr\/lib64\/libTECkit.so.0.0.0: PASS: Compiled with -fcf-protection.\nHardened: \/usr\/lib64\/libTECkit.so.0.0.0: PASS: One dynamic section\/segment found.\nHardened: \/usr\/lib64\/libTECkit.so.0.0.0: skip: Test of dynamic tags.  (AArch64 specific).\nHardened: \/usr\/lib64\/libTECkit.so.0.0.0: skip: Entry point instruction is ENDBR.  (Not an executable).\nHardened: \/usr\/lib64\/libTECkit.so.0.0.0: PASS: Compiled with -D_FORTIFY_SOURCE=2.\nHardened: \/usr\/lib64\/libTECkit.so.0.0.0: PASS: Compiled with -D_GLIBCXX_ASSERTIONS.\nHardened: \/usr\/lib64\/libTECkit.so.0.0.0: skip: Test for -Wl,-z,relro.  (No dynamic relocations).\nHardened: \/usr\/lib64\/libTECkit.so.0.0.0: PASS: Stack not executable.\nHardened: \/usr\/lib64\/libTECkit.so.0.0.0: skip: The LTO setting was not recorded (probably due to the use of an old version of the annobin plugin).\nHardened: \/usr\/lib64\/libTECkit.so.0.0.0: PASS: Compiled with sufficient optimization.\nHardened: \/usr\/lib64\/libTECkit.so.0.0.0: PASS: Compiled with PIC\/PIE.\nHardened: \/usr\/lib64\/libTECkit.so.0.0.0: PASS: Compiled as a position independent binary.\nHardened: \/usr\/lib64\/libTECkit.so.0.0.0: PASS: Good GNU Property note.\nHardened: \/usr\/lib64\/libTECkit.so.0.0.0: PASS: DT_RPATH\/DT_RUNPATH absent or rooted at \/usr.\nHardened: \/usr\/lib64\/libTECkit.so.0.0.0: PASS: No RWX segments found.\nHardened: \/usr\/lib64\/libTECkit.so.0.0.0: PASS: Consistent use of the -fshort-enum option.\nHardened: \/usr\/lib64\/libTECkit.so.0.0.0: PASS: Compiled with -fstack-clash-protection.\nHardened: \/usr\/lib64\/libTECkit.so.0.0.0: PASS: Compiled with sufficient stack protection.\nHardened: \/usr\/lib64\/libTECkit.so.0.0.0: skip: Test for stack realignment support.  (Only needed on i686 binaries).\nHardened: \/usr\/lib64\/libTECkit.so.0.0.0: PASS: No text relocations found.\nHardened: \/usr\/lib64\/libTECkit.so.0.0.0: PASS: No thread cancellation problems.\nHardened: \/usr\/lib64\/libTECkit.so.0.0.0: PASS: Compiled with either -Wall and\/or -Wformat-security.\nHardened: \/usr\/lib64\/libTECkit.so.0.0.0: PASS: GOT\/PLT relocations are read only.\nHardened: \/usr\/lib64\/libTECkit.so.0.0.0: PASS.",
+       "remedy": "See annocheck(1) for more information."
+     },
+     {
+       "result": "INFO",
+       "waiver authorization": "Not Waivable",
+       "message": "annocheck 'hardened' test passes for \/usr\/lib64\/libTECkit_Compiler.so.0.0.0 on x86_64",
+       "details": "annocheck: Version 9.50.\nHardened: \/usr\/lib64\/libTECkit_Compiler.so.0.0.0: warn: Could not find separate debug file: libTECkit_Compiler.so.0.0.0-2.5.8-1.el8.x86_64.debug.\nHardened: \/usr\/lib64\/libTECkit_Compiler.so.0.0.0: info: Notes produced by assembler plugin version 1\nHardened: \/usr\/lib64\/libTECkit_Compiler.so.0.0.0: info: Notes produced by gcc plugin version 8\nHardened: \/usr\/lib64\/libTECkit_Compiler.so.0.0.0: info: Set binary producer to GCC version 8.\nHardened: \/usr\/lib64\/libTECkit_Compiler.so.0.0.0: warn: Could not find separate debug file: libTECkit_Compiler.so.0.0.0-2.5.8-1.el8.x86_64.debug.\nHardened: \/usr\/lib64\/libTECkit_Compiler.so.0.0.0: warn: Could not find separate debug file: libTECkit_Compiler.so.0.0.0-2.5.8-1.el8.x86_64.debug.\nHardened: \/usr\/lib64\/libTECkit_Compiler.so.0.0.0: warn: Could not find separate debug file: libTECkit_Compiler.so.0.0.0-2.5.8-1.el8.x86_64.debug.\nHardened: \/usr\/lib64\/libTECkit_Compiler.so.0.0.0: PASS: No gaps found.\nHardened: \/usr\/lib64\/libTECkit_Compiler.so.0.0.0: skip: Test for -Wl,-z-now.  (Dynamic segment present, but no dynamic relocations found).\nHardened: \/usr\/lib64\/libTECkit_Compiler.so.0.0.0: skip: Branch protection.  (Not an AArch64 binary).\nHardened: \/usr\/lib64\/libTECkit_Compiler.so.0.0.0: PASS: Compiled with -fcf-protection.\nHardened: \/usr\/lib64\/libTECkit_Compiler.so.0.0.0: PASS: One dynamic section\/segment found.\nHardened: \/usr\/lib64\/libTECkit_Compiler.so.0.0.0: skip: Test of dynamic tags.  (AArch64 specific).\nHardened: \/usr\/lib64\/libTECkit_Compiler.so.0.0.0: skip: Entry point instruction is ENDBR.  (Not an executable).\nHardened: \/usr\/lib64\/libTECkit_Compiler.so.0.0.0: PASS: Compiled with -D_FORTIFY_SOURCE=2.\nHardened: \/usr\/lib64\/libTECkit_Compiler.so.0.0.0: PASS: Compiled with -D_GLIBCXX_ASSERTIONS.\nHardened: \/usr\/lib64\/libTECkit_Compiler.so.0.0.0: skip: Test for -Wl,-z,relro.  (No dynamic relocations).\nHardened: \/usr\/lib64\/libTECkit_Compiler.so.0.0.0: PASS: Stack not executable.\nHardened: \/usr\/lib64\/libTECkit_Compiler.so.0.0.0: skip: The LTO setting was not recorded (probably due to the use of an old version of the annobin plugin).\nHardened: \/usr\/lib64\/libTECkit_Compiler.so.0.0.0: PASS: Compiled with sufficient optimization.\nHardened: \/usr\/lib64\/libTECkit_Compiler.so.0.0.0: PASS: Compiled with PIC\/PIE.\nHardened: \/usr\/lib64\/libTECkit_Compiler.so.0.0.0: PASS: Compiled as a position independent binary.\nHardened: \/usr\/lib64\/libTECkit_Compiler.so.0.0.0: PASS: Good GNU Property note.\nHardened: \/usr\/lib64\/libTECkit_Compiler.so.0.0.0: PASS: DT_RPATH\/DT_RUNPATH absent or rooted at \/usr.\nHardened: \/usr\/lib64\/libTECkit_Compiler.so.0.0.0: PASS: No RWX segments found.\nHardened: \/usr\/lib64\/libTECkit_Compiler.so.0.0.0: PASS: Consistent use of the -fshort-enum option.\nHardened: \/usr\/lib64\/libTECkit_Compiler.so.0.0.0: PASS: Compiled with -fstack-clash-protection.\nHardened: \/usr\/lib64\/libTECkit_Compiler.so.0.0.0: PASS: Compiled with sufficient stack protection.\nHardened: \/usr\/lib64\/libTECkit_Compiler.so.0.0.0: skip: Test for stack realignment support.  (Only needed on i686 binaries).\nHardened: \/usr\/lib64\/libTECkit_Compiler.so.0.0.0: PASS: No text relocations found.\nHardened: \/usr\/lib64\/libTECkit_Compiler.so.0.0.0: PASS: No thread cancellation problems.\nHardened: \/usr\/lib64\/libTECkit_Compiler.so.0.0.0: PASS: Compiled with either -Wall and\/or -Wformat-security.\nHardened: \/usr\/lib64\/libTECkit_Compiler.so.0.0.0: PASS: GOT\/PLT relocations are read only.\nHardened: \/usr\/lib64\/libTECkit_Compiler.so.0.0.0: PASS.",
+       "remedy": "See annocheck(1) for more information."
+     }
+   ],
+   "permissions": [
+     {
+       "result": "OK",
+       "waiver authorization": "Not Waivable"
+     }
+   ],
+   "capabilities": [
+     {
+       "result": "OK",
+       "waiver authorization": "Not Waivable"
+     }
+   ],
+   "path-migration": [
+     {
+       "result": "OK",
+       "waiver authorization": "Not Waivable"
+     }
+   ],
+   "lto": [
+     {
+       "result": "OK",
+       "waiver authorization": "Not Waivable"
+     }
+   ],
+   "symlinks": [
+     {
+       "result": "OK",
+       "waiver authorization": "Not Waivable"
+     }
+   ],
+   "politics": [
+     {
+       "result": "OK",
+       "waiver authorization": "Not Waivable"
+     }
+   ],
+   "bad-functions": [
+     {
+       "result": "OK",
+       "waiver authorization": "Not Waivable"
+     }
+   ],
+   "runpath": [
+     {
+       "result": "VERIFY",
+       "waiver authorization": "Anyone",
+       "message": "\/usr\/bin\/sfconv has an invalid-looking DT_RPATH on x86_64: \/usr\/lib64",
+       "remedy": "Either DT_RPATH or DT_RUNPATH properties were found on ELF shared objects in this package.  The use of DT_RPATH and DT_RUNPATH is discouraged except in certain situations.  Check to see that you a disabling rpath during the %build stage of the spec file.  If you are unable to do this easily, you can try using a program such as patchelf to remove these properties from the ELF files."
+     },
+     {
+       "result": "VERIFY",
+       "waiver authorization": "Anyone",
+       "message": "\/usr\/bin\/teckit_compile has an invalid-looking DT_RPATH on x86_64: \/usr\/lib64",
+       "remedy": "Either DT_RPATH or DT_RUNPATH properties were found on ELF shared objects in this package.  The use of DT_RPATH and DT_RUNPATH is discouraged except in certain situations.  Check to see that you a disabling rpath during the %build stage of the spec file.  If you are unable to do this easily, you can try using a program such as patchelf to remove these properties from the ELF files."
+     },
+     {
+       "result": "VERIFY",
+       "waiver authorization": "Anyone",
+       "message": "\/usr\/bin\/txtconv has an invalid-looking DT_RPATH on x86_64: \/usr\/lib64",
+       "remedy": "Either DT_RPATH or DT_RUNPATH properties were found on ELF shared objects in this package.  The use of DT_RPATH and DT_RUNPATH is discouraged except in certain situations.  Check to see that you a disabling rpath during the %build stage of the spec file.  If you are unable to do this easily, you can try using a program such as patchelf to remove these properties from the ELF files."
+     }
+   ]
+ }

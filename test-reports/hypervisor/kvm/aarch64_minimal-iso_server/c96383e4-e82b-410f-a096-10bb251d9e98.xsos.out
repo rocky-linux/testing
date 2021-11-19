@@ -1,0 +1,131 @@
+DMIDECODE
+  BIOS:
+    Vend: EFI Development Kit II / OVMF
+    Vers: 0.0.0
+    Date: 02/06/2015
+    BIOS Rev: 0.0
+    FW Rev:  
+  System:
+    Mfr:  QEMU
+    Prod: KVM Virtual Machine
+    Vers: virt-6.1
+    Ser:  ⣿⣿⣿ ⣿⣿⣿⣿⣿⣿⣿⣿⣿
+    UUID: ⣿⣿⣿⣿⣿⣿⣿⣿-⣿⣿⣿⣿-⣿⣿⣿⣿-⣿⣿⣿⣿-⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+  CPU:
+    16 of 16 CPU sockets populated, 1 cores/1 threads per CPU
+    16 total cores, 16 total threads
+    Mfr:  QEMU
+    Fam: 
+    Freq: 2000 MHz
+    Vers: virt-6.1
+  Memory:
+    Total: 65536 MiB (64 GiB)
+    DIMMs: 4 of 4 populated
+    MaxCapacity: 65536 MiB (64 GiB / 0.06 TiB)
+
+OS
+  Hostname: SCRUBBED
+  Distro:   [redhat-release] Rocky Linux release 8.5 (Green Obsidian)
+            [centos-release] Rocky Linux release 8.5 (Green Obsidian)
+            [rocky-release] Rocky Linux release 8.5 (Green Obsidian)
+            [os-release] Rocky Linux 8.5 (Green Obsidian) 8.5 (Green Obsidian)
+  RHN:      (missing)
+  RHSM:     (missing)
+  YUM:      1 enabled plugins: debuginfo-install
+  Runlevel: N 3  (default multi-user)
+  SELinux:  enforcing  (default enforcing)
+  Arch:     mach=aarch64  cpu=aarch64  platform=aarch64
+  Kernel:
+    Booted kernel:  4.18.0-348.el8.0.1.aarch64
+    GRUB default:   unknown  (no grub config file)  
+    Build version:
+      Linux version 4.18.0-348.el8.0.1.aarch64 
+      (mockbuild@ord1-prod-a64build004.svc.aws.rockylinux.org) (gcc version 
+      8.5.0 20210514 (Red Hat 8.5.0-4) (GCC)) #1 SMP Thu Nov 11 16:04:25 UTC 
+      2021
+    Booted kernel cmdline:
+      BOOT_IMAGE=(hd0,gpt2)/vmlinuz-4.18.0-348.el8.0.1.aarch64 
+      root=/dev/mapper/rl-root ro crashkernel=auto rd.lvm.lv=rl/root 
+      rd.lvm.lv=rl/swap
+    GRUB default kernel cmdline:  
+      unknown  (no grub config file)
+    Taint-check: 0  (kernel untainted)
+    - - - - - - - - - - - - - - - - - - -
+  Sys time:  Fri Nov 12 19:04:18 EST 2021
+  Boot time: Fri Nov 12 18:59:52 EST 2021  (epoch: 1636761592)
+  Time Zone: America/New_York
+  Uptime:    4 min,  1 user
+  LoadAvg:   [16 CPU] 0.00 (0%), 0.03 (0%), 0.00 (0%)
+  /proc/stat:
+    procs_running: 1   procs_blocked: 0    processes [Since boot]: 6131
+    cpu [Utilization since boot]:
+      us 0%, ni 0%, sys 0%, idle 99%, iowait 0%, irq 0%, sftirq 0%, steal 0%
+
+CPU
+  16 logical processors 
+   (flags: aes) 
+
+MEMORY
+  Stats graphed as percent of MemTotal:
+    MemUsed    ▊.................................................   2.2%
+    Buffers    ..................................................   0.0%
+    Cached     ..................................................   0.8%
+    HugePages  ..................................................   0.0%
+    Dirty      ..................................................   0.0%
+  RAM:
+    63.4 GiB total ram
+    1.4 GiB (2%) used
+    0.9 GiB (1%) used excluding Buffers/Cached
+    0 GiB (0%) dirty
+  HugePages:
+    No ram pre-allocated to HugePages
+  THP:
+    THP not currently in use
+  LowMem/Slab/PageTables/Shmem:
+    0.24 GiB (0%) of total ram used for Slab
+    0.02 GiB (0%) of total ram used for PageTables
+    0.02 GiB (0%) of total ram used for Shmem
+  Swap:
+    0 GiB (0%) used of 20 GiB total
+
+STORAGE
+  Whole Disks from /proc/partitions:
+    1 disks, totaling 200 GiB (0.20 TiB)
+    - - - - - - - - - - - - - - - - - - - - -
+    Disk 	Size in GiB
+    ----	-----------
+    vda 	200
+
+  Disk layout from lsblk:
+    NAME        MAJ:MIN RM   SIZE RO TYPE MOUNTPOINT
+    sr0          11:0    1  1024M  0 rom  
+    vda         252:0    0   200G  0 disk 
+    ├─vda1      252:1    0   600M  0 part /boot/efi
+    ├─vda2      252:2    0     1G  0 part /boot
+    └─vda3      252:3    0 198.4G  0 part 
+      ├─rl-root 253:0    0    70G  0 lvm  /
+      ├─rl-swap 253:1    0    20G  0 lvm  [SWAP]
+      └─rl-home 253:2    0 108.4G  0 lvm  /home
+
+  Filesystem usage from df:
+    Filesystem          1K-blocks    Used Available Use% Mounted on
+    /dev/mapper/rl-root  73364480 2490452  70874028   4% /
+    /dev/vda2             1038336  178648    859688  18% /boot
+    /dev/vda1              613184    6892    606292   2% /boot/efi
+    /dev/mapper/rl-home 113620784  825212 112795572   1% /home
+
+LSPCI
+  Net:
+    (1) Red Hat, Inc. Virtio network device (rev 01)
+  Storage:
+    (1) Red Hat, Inc. Virtio SCSI (rev 01)
+    (1) Red Hat, Inc. Virtio block device (rev 01)
+  VGA:
+    Red Hat, Inc. Virtio GPU (rev 01)
+
+ETHTOOL
+  Interface Status:
+    enp1s0  0000:01:00.0  link=up Unknown! unknown! (autoneg=N)  rx ring 256/256  drv virtio_net v1.0.0 / fw UNKNOWN
+  Interface Errors:
+    [None]
+

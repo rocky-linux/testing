@@ -1,0 +1,271 @@
+DMIDECODE
+  BIOS:
+    Vend: Dell Inc.
+    Vers: 2.9.4
+    Date: 11/06/2020
+    BIOS Rev: 2.9
+    FW Rev:
+  System:
+    Mfr:  Dell Inc.
+    Prod: PowerEdge R640
+    Vers: Not Specified
+    Ser:  8W3TL73
+    UUID: 4c4c4544-0057-3310-8054-b8c04f4c3733
+  CPU:
+    2 of 2 CPU sockets populated, 18 cores/36 threads per CPU
+    36 total cores, 72 total threads
+    Mfr:  Intel
+    Fam:  Xeon
+    Freq: 2200 MHz
+    Vers: Intel(R) Xeon(R) Gold 5220 CPU @ 2.20GHz
+  Memory:
+    Total: 393216 MiB (384 GiB)
+    DIMMs: 12 of 72 populated
+    MaxCapacity: 7864320 MiB (7680 GiB / 7.50 TiB)
+
+OS
+  Hostname: bm-test
+  Distro:   [redhat-release] Rocky Linux release 8.4 (Green Obsidian)
+            [rocky-release] Rocky Linux release 8.4 (Green Obsidian)
+            [os-release] Rocky Linux 8.4 (Green Obsidian) 8.4 (Green Obsidian)
+  RHN:      serverURL = https://enter.your.server.url.here/XMLRPC
+            enableProxy = 0
+  RHSM:     hostname = subscription.rhsm.redhat.com
+            proxy_hostname =
+  YUM:      3 enabled plugins: debuginfo-install, product-id, subscription-manager
+  Runlevel: N 3  (default multi-user)
+  SELinux:  disabled  (default disabled)
+  Arch:     mach=x86_64  cpu=x86_64  platform=x86_64
+  Kernel:
+    Booted kernel:  4.18.0-305.el8.x86_64
+    GRUB default:
+    Build version:
+      Linux version 4.18.0-305.el8.x86_64 (mockbuild@ord1-prod-x86build004.svc.aws.rockylinux.org) (gcc version 8.4.1 20200928 (Red Hat 8.4.1-1) (GCC)) #1
+      SMP Thu May 27 16:46:28 UTC 2021
+    Booted kernel cmdline:
+      BOOT_IMAGE=(hd0,gpt2)/vmlinuz-4.18.0-305.el8.x86_64 root=UUID=c7524680-0a87-4e14-99ea-84abb4c3db4f ro crashkernel=auto
+      resume=UUID=e1e96034-a538-446c-aff3-7a8965091bd6 biosdevname=0 net.ifnames=0 rhgb quiet numa=off intel_idle.max_cstate=0 processor.max_cstate=0
+      transparent_hugepage=never pcie_aspm.policy=performance
+    GRUB default kernel cmdline:
+
+    Taint-check: 0  (kernel untainted)
+    - - - - - - - - - - - - - - - - - - -
+  Sys time:  Sun Jun 20 12:39:10 KST 2021
+  Boot time: Sun Jun 20 12:33:52 KST 2021  (epoch: 1624160032)
+  Time Zone: Asia/Seoul
+  Uptime:    5 min,  1 user
+  LoadAvg:   [72 CPU] 0.06 (0%), 0.79 (1%), 0.51 (1%)
+  /proc/stat:
+    procs_running: 1   procs_blocked: 0    processes [Since boot]: 9045
+    cpu [Utilization since boot]:
+      us 0%, ni 0%, sys 0%, idle 100%, iowait 0%, irq 0%, sftirq 0%, steal 0%
+
+CPU
+  72 logical processors (36 CPU cores)
+  2 Intel Xeon Gold 5220 CPU @ 2.20GHz (flags: aes,constant_tsc,ht,lm,nx,pae,rdrand,vmx)
+  └─36 threads / 18 cores each
+
+MEMORY
+  Stats graphed as percent of MemTotal:
+    MemUsed    ..................................................   0.4%
+    Buffers    ..................................................   0.0%
+    Cached     ..................................................   0.1%
+    HugePages  ..................................................   0.0%
+    Dirty      ..................................................   0.0%
+  RAM:
+    376.3 GiB total ram
+    1.5 GiB (0%) used
+    1.1 GiB (0%) used excluding Buffers/Cached
+    0 GiB (0%) dirty
+  HugePages:
+    No ram pre-allocated to HugePages
+  THP:
+    THP not currently in use
+  LowMem/Slab/PageTables/Shmem:
+    0.29 GiB (0%) of total ram used for Slab
+    0.01 GiB (0%) of total ram used for PageTables
+    0.01 GiB (0%) of total ram used for Shmem
+  Swap:
+    0 GiB (0%) used of 4 GiB total
+
+STORAGE
+  Whole Disks from /proc/partitions:
+    1 disks, totaling 12515 GiB (12.22 TiB)
+    - - - - - - - - - - - - - - - - - - - - -
+    Disk        Size in GiB
+    ----        -----------
+    sda         12515
+
+  Disk layout from lsblk:
+    NAME   MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
+    sda      8:0    0 12.2T  0 disk
+    ├─sda1   8:1    0  300M  0 part /boot/efi
+    ├─sda2   8:2    0  512M  0 part /boot
+    ├─sda3   8:3    0 12.2T  0 part /
+    └─sda4   8:4    0    4G  0 part [SWAP]
+
+  Filesystem usage from df:
+    Filesystem       1K-blocks     Used   Available Use% Mounted on
+    /dev/sda3      13115944960 96582628 13019362332   1% /
+    /dev/sda2           519404   263312      256092  51% /boot
+    /dev/sda1           307016     5968      301048   2% /boot/efi
+
+DM-MULTIPATH
+  [No paths detected]
+
+LSPCI
+  Net:
+    2 dual-port (4) Intel Corporation Ethernet Controller X710 for 10GbE SFP+ (rev 02)
+  Storage:
+    (1) Broadcom / LSI MegaRAID SAS-3 3108 [Invader] (rev 02)
+    (1) Intel Corporation C620 Series Chipset Family SSATA Controller [AHCI mode] (rev 09)
+    (1) Intel Corporation C620 Series Chipset Family SATA Controller [AHCI mode] (rev 09)
+  VGA:
+    Matrox Electronics Systems Ltd. Integrated Matrox G200eW3 Graphics Controller (rev 04)
+
+ETHTOOL
+  Interface Status:
+    bond0                link=up 10000Mb/s full (autoneg=N)  rx ring UNKNOWN   drv bonding v4.18.0-305.el8.x86_64 / fw 2
+    eth0   0000:5e:00.0  link=up 10000Mb/s full (autoneg=N)  rx ring 512/4096  drv i40e v4.18.0-305.el8.x86_64 / fw 7.10 0x800075df 19.5.12
+    eth1   0000:5e:00.1  link=DOWN                           rx ring 512/4096  drv i40e v4.18.0-305.el8.x86_64 / fw 7.10 0x800075df 19.5.12
+    eth2   0000:d8:00.0  link=up 10000Mb/s full (autoneg=N)  rx ring 512/4096  drv i40e v4.18.0-305.el8.x86_64 / fw 7.10 0x800075df 19.5.12
+    eth3   0000:d8:00.1  link=DOWN                           rx ring 512/4096  drv i40e v4.18.0-305.el8.x86_64 / fw 7.10 0x800075df 19.5.12
+  Interface Errors:
+    [None]
+
+[root@bm-test ~]# cat *.xsos.out
+DMIDECODE
+  BIOS:
+    Vend: Dell Inc.
+    Vers: 2.9.4
+    Date: 11/06/2020
+    BIOS Rev: 2.9
+    FW Rev:
+  System:
+    Mfr:  Dell Inc.
+    Prod: PowerEdge R640
+    Vers: Not Specified
+    Ser:  8W3TL73
+    UUID: 4c4c4544-0057-3310-8054-b8c04f4c3733
+  CPU:
+    2 of 2 CPU sockets populated, 18 cores/36 threads per CPU
+    36 total cores, 72 total threads
+    Mfr:  Intel
+    Fam:  Xeon
+    Freq: 2200 MHz
+    Vers: Intel(R) Xeon(R) Gold 5220 CPU @ 2.20GHz
+  Memory:
+    Total: 393216 MiB (384 GiB)
+    DIMMs: 12 of 72 populated
+    MaxCapacity: 7864320 MiB (7680 GiB / 7.50 TiB)
+
+OS
+  Hostname: bm-test
+  Distro:   [redhat-release] Rocky Linux release 8.4 (Green Obsidian)
+            [rocky-release] Rocky Linux release 8.4 (Green Obsidian)
+            [os-release] Rocky Linux 8.4 (Green Obsidian) 8.4 (Green Obsidian)
+  RHN:      serverURL = https://enter.your.server.url.here/XMLRPC
+            enableProxy = 0
+  RHSM:     hostname = subscription.rhsm.redhat.com
+            proxy_hostname =
+  YUM:      3 enabled plugins: debuginfo-install, product-id, subscription-manager
+  Runlevel: N 3  (default multi-user)
+  SELinux:  disabled  (default disabled)
+  Arch:     mach=x86_64  cpu=x86_64  platform=x86_64
+  Kernel:
+    Booted kernel:  4.18.0-305.el8.x86_64
+    GRUB default:
+    Build version:
+      Linux version 4.18.0-305.el8.x86_64 (mockbuild@ord1-prod-x86build004.svc.aws.rockylinux.org) (gcc version 8.4.1 20200928 (Red Hat 8.4.1-1) (GCC)) #1
+      SMP Thu May 27 16:46:28 UTC 2021
+    Booted kernel cmdline:
+      BOOT_IMAGE=(hd0,gpt2)/vmlinuz-4.18.0-305.el8.x86_64 root=UUID=c7524680-0a87-4e14-99ea-84abb4c3db4f ro crashkernel=auto
+      resume=UUID=e1e96034-a538-446c-aff3-7a8965091bd6 biosdevname=0 net.ifnames=0 rhgb quiet numa=off intel_idle.max_cstate=0 processor.max_cstate=0
+      transparent_hugepage=never pcie_aspm.policy=performance
+    GRUB default kernel cmdline:
+
+    Taint-check: 0  (kernel untainted)
+    - - - - - - - - - - - - - - - - - - -
+  Sys time:  Sun Jun 20 12:39:10 KST 2021
+  Boot time: Sun Jun 20 12:33:52 KST 2021  (epoch: 1624160032)
+  Time Zone: Asia/Seoul
+  Uptime:    5 min,  1 user
+  LoadAvg:   [72 CPU] 0.06 (0%), 0.79 (1%), 0.51 (1%)
+  /proc/stat:
+    procs_running: 1   procs_blocked: 0    processes [Since boot]: 9045
+    cpu [Utilization since boot]:
+      us 0%, ni 0%, sys 0%, idle 100%, iowait 0%, irq 0%, sftirq 0%, steal 0%
+
+CPU
+  72 logical processors (36 CPU cores)
+  2 Intel Xeon Gold 5220 CPU @ 2.20GHz (flags: aes,constant_tsc,ht,lm,nx,pae,rdrand,vmx)
+  └─36 threads / 18 cores each
+
+MEMORY
+  Stats graphed as percent of MemTotal:
+    MemUsed    ..................................................   0.4%
+    Buffers    ..................................................   0.0%
+    Cached     ..................................................   0.1%
+    HugePages  ..................................................   0.0%
+    Dirty      ..................................................   0.0%
+  RAM:
+    376.3 GiB total ram
+    1.5 GiB (0%) used
+    1.1 GiB (0%) used excluding Buffers/Cached
+    0 GiB (0%) dirty
+  HugePages:
+    No ram pre-allocated to HugePages
+  THP:
+    THP not currently in use
+  LowMem/Slab/PageTables/Shmem:
+    0.29 GiB (0%) of total ram used for Slab
+    0.01 GiB (0%) of total ram used for PageTables
+    0.01 GiB (0%) of total ram used for Shmem
+  Swap:
+    0 GiB (0%) used of 4 GiB total
+
+STORAGE
+  Whole Disks from /proc/partitions:
+    1 disks, totaling 12515 GiB (12.22 TiB)
+    - - - - - - - - - - - - - - - - - - - - -
+    Disk        Size in GiB
+    ----        -----------
+    sda         12515
+
+  Disk layout from lsblk:
+    NAME   MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
+    sda      8:0    0 12.2T  0 disk
+    ├─sda1   8:1    0  300M  0 part /boot/efi
+    ├─sda2   8:2    0  512M  0 part /boot
+    ├─sda3   8:3    0 12.2T  0 part /
+    └─sda4   8:4    0    4G  0 part [SWAP]
+
+  Filesystem usage from df:
+    Filesystem       1K-blocks     Used   Available Use% Mounted on
+    /dev/sda3      13115944960 96582628 13019362332   1% /
+    /dev/sda2           519404   263312      256092  51% /boot
+    /dev/sda1           307016     5968      301048   2% /boot/efi
+
+DM-MULTIPATH
+  [No paths detected]
+
+LSPCI
+  Net:
+    2 dual-port (4) Intel Corporation Ethernet Controller X710 for 10GbE SFP+ (rev 02)
+  Storage:
+    (1) Broadcom / LSI MegaRAID SAS-3 3108 [Invader] (rev 02)
+    (1) Intel Corporation C620 Series Chipset Family SSATA Controller [AHCI mode] (rev 09)
+    (1) Intel Corporation C620 Series Chipset Family SATA Controller [AHCI mode] (rev 09)
+  VGA:
+    Matrox Electronics Systems Ltd. Integrated Matrox G200eW3 Graphics Controller (rev 04)
+
+ETHTOOL
+  Interface Status:
+    bond0                link=up 10000Mb/s full (autoneg=N)  rx ring UNKNOWN   drv bonding v4.18.0-305.el8.x86_64 / fw 2
+    eth0   0000:5e:00.0  link=up 10000Mb/s full (autoneg=N)  rx ring 512/4096  drv i40e v4.18.0-305.el8.x86_64 / fw 7.10 0x800075df 19.5.12
+    eth1   0000:5e:00.1  link=DOWN                           rx ring 512/4096  drv i40e v4.18.0-305.el8.x86_64 / fw 7.10 0x800075df 19.5.12
+    eth2   0000:d8:00.0  link=up 10000Mb/s full (autoneg=N)  rx ring 512/4096  drv i40e v4.18.0-305.el8.x86_64 / fw 7.10 0x800075df 19.5.12
+    eth3   0000:d8:00.1  link=DOWN                           rx ring 512/4096  drv i40e v4.18.0-305.el8.x86_64 / fw 7.10 0x800075df 19.5.12
+  Interface Errors:
+    [None]
+
