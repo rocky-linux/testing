@@ -1,0 +1,125 @@
+DMIDECODE
+  BIOS:
+    Vend: innotek GmbH
+    Vers: VirtualBox
+    Date: 12/01/2006
+    BIOS Rev:
+    FW Rev:  
+  System:
+    Mfr:  innotek GmbH
+    Prod: VirtualBox
+    Vers: 1.2
+    Ser:  0
+    UUID: 8a4f0726-665a-af42-b577-8d01bc749f18
+  CPU:
+    0 of 0 CPU sockets populated, 0 cores/0 threads per CPU
+    0 total cores, 0 total threads
+    Mfr: 
+    Fam: 
+    Freq:
+    Vers:
+  Memory:
+    Total: 0 MiB (0 GiB)
+    DIMMs: 0 of 0 populated
+    MaxCapacity: 0 MiB (0 GiB / 0.00 TiB)
+
+OS
+  Hostname: localhost.localdomain
+  Distro:   [redhat-release] Rocky Linux release 8.5 (Green Obsidian)
+            [centos-release] Rocky Linux release 8.5 (Green Obsidian)
+            [rocky-release] Rocky Linux release 8.5 (Green Obsidian)
+            [os-release] Rocky Linux 8.5 (Green Obsidian) 8.5 (Green Obsidian)
+  RHN:      (missing)
+  RHSM:     (missing)
+  YUM:      1 enabled plugins: debuginfo-install
+  Runlevel: N 3  (default multi-user)
+  SELinux:  enforcing  (default enforcing)
+  Arch:     mach=x86_64  cpu=x86_64  platform=x86_64
+  Kernel:
+    Booted kernel:  4.18.0-348.el8.0.2.x86_64
+    GRUB default:     
+    Build version:
+      Linux version 4.18.0-348.el8.0.2.x86_64 (mockbuild@dal1-prod-builder001.bld.equ.rockylinux.org) (gcc version 8.5.0 20210514 (Red Hat 8.5.0-3) (GCC)) #1 SMP Sun Nov 14 00:51:12 UTC 2021
+    Booted kernel cmdline:
+      BOOT_IMAGE=(hd0,gpt1)/vmlinuz-4.18.0-348.el8.0.2.x86_64 root=UUID=3aaadf42-8aea-45ae-a160-1f534e8c7c18 ro console=tty1 earlyprintk=ttyS0,115200 net.ifnames=0 biosdevname=0 rootdelay=300 scsi_mod.use_blk_mq=y crashkernel=auto
+    GRUB default kernel cmdline:  
+      
+    Taint-check: 134217728  (see https://access.redhat.com/solutions/40594)
+      27  BIT_BY_ZOMBIE: Kernel booted with OMGZOMBIES param
+    - - - - - - - - - - - - - - - - - - -
+  Sys time:  Tue Nov 16 16:50:40 UTC 2021
+  Boot time: Mon Nov 15 22:18:18 UTC 2021  (epoch: 1637014698)
+  Time Zone: UTC
+  Uptime:    18:32,  1 user
+  LoadAvg:   [1 CPU] 0.00 (0%), 0.00 (0%), 0.00 (0%)
+  /proc/stat:
+    procs_running: 5   procs_blocked: 0    processes [Since boot]: 2103
+    cpu [Utilization since boot]:
+      us 0%, ni 0%, sys 0%, idle 100%, iowait 0%, irq 0%, sftirq 0%, steal 0%
+
+CPU
+  1 logical processors 
+  1 Intel Core i9-8950HK CPU @ 2.90GHz (flags: aes,constant_tsc,ht,lm,nx,pae,rdrand) 
+
+MEMORY
+  Stats graphed as percent of MemTotal:
+    MemUsed    ▊▊▊▊▊▊▊...........................................  14.1%
+    Buffers    ..................................................   0.1%
+    Cached     ▊▊▊▊..............................................   8.6%
+    HugePages  ..................................................   0.0%
+    Dirty      ..................................................   0.0%
+  RAM:
+    3.6 GiB total ram
+    0.5 GiB (14%) used
+    0.2 GiB (5%) used excluding Buffers/Cached
+    0 GiB (0%) dirty
+  HugePages:
+    No ram pre-allocated to HugePages
+  THP:
+    18432 kB allocated to THP 
+  LowMem/Slab/PageTables/Shmem:
+    0.06 GiB (2%) of total ram used for Slab
+    0.01 GiB (0%) of total ram used for PageTables
+    0.02 GiB (0%) of total ram used for Shmem
+  Swap:
+    No system swap space configured
+
+STORAGE
+  Whole Disks from /proc/partitions:
+    1 disks, totaling 20 GiB (0.02 TiB)
+    - - - - - - - - - - - - - - - - - - - - -
+    Disk 	Size in GiB
+    ----	-----------
+    sda 	20
+
+  Disk layout from lsblk:
+    NAME    MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
+    sda       8:0    0   20G  0 disk 
+    ├─sda1    8:1    0  500M  0 part /boot
+    ├─sda2    8:2    0   19G  0 part /
+    ├─sda14   8:14   0    4M  0 part 
+    └─sda15   8:15   0  495M  0 part /boot/efi
+
+  Filesystem usage from df:
+    Filesystem     1K-blocks    Used Available Use% Mounted on
+    /dev/sda2       19935232 1379272  18555960   7% /
+    /dev/sda1         506528  138704    367824  28% /boot
+    /dev/sda15        506600    5936    500664   2% /boot/efi
+
+DM-MULTIPATH
+  [No paths detected]
+
+LSPCI
+  Net:
+    (1) Intel Corporation 82540EM Gigabit Ethernet Controller (rev 02)
+  Storage:
+    (1) Intel Corporation 82801HM/HEM (ICH8M/ICH8M-E) SATA Controller [AHCI mode] (rev 02)
+  VGA:
+    VMware SVGA II Adapter
+
+ETHTOOL
+  Interface Status:
+    eth0  0000:00:03.0  link=up 1000Mb/s full (autoneg=Y)  rx ring 256/4096  drv e1000 v7.3.21-k8-NAPI / fw UNKNOWN
+  Interface Errors:
+    [None]
+

@@ -1,0 +1,127 @@
+DMIDECODE
+  BIOS:
+    Vend: Phoenix Technologies LTD
+    Vers: 6.00
+    Date: 11/12/2020
+    BIOS Rev: 4.6
+    FW Rev:   0.0
+  System:
+    Mfr:  VMware, Inc.
+    Prod: VMware Virtual Platform
+    Vers: None
+    Ser:  ⣿⣿⣿⣿⣿⣿-⣿⣿ ⣿⣿ ⣿⣿ ⣿⣿ ⣿⣿ ⣿⣿ ⣿⣿ ⣿⣿-⣿⣿ ⣿⣿ ⣿⣿ ⣿⣿ ⣿⣿ ⣿⣿ ⣿⣿ ⣿⣿
+    UUID: ⣿⣿⣿⣿⣿⣿⣿⣿-⣿⣿⣿⣿-⣿⣿⣿⣿-⣿⣿⣿⣿-⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+  CPU:
+    4 of 4 CPU sockets populated, 1 cores/0 threads per CPU
+    4 total cores, 0 total threads
+    Mfr:  GenuineIntel
+    Fam:  Unknown
+    Freq: 2700 MHz
+    Vers: Intel(R) Core(TM) i7-3740QM CPU @ 2.70GHz
+  Memory:
+    Total: 4096 MiB (4 GiB)
+    DIMMs: 1 of 192 populated
+    MaxCapacity: 5120 MiB (5 GiB / 0.00 TiB)
+
+OS
+  Hostname: SCRUBBED
+  Distro:   [redhat-release] Rocky Linux release 8.5 (Green Obsidian)
+            [centos-release] Rocky Linux release 8.5 (Green Obsidian)
+            [rocky-release] Rocky Linux release 8.5 (Green Obsidian)
+            [os-release] Rocky Linux 8.5 (Green Obsidian) 8.5 (Green Obsidian)
+  RHN:      (missing)
+  RHSM:     (missing)
+  YUM:      1 enabled plugins: debuginfo-install
+  Runlevel: N 3  (default multi-user)
+  SELinux:  enforcing  (default enforcing)
+  Arch:     mach=x86_64  cpu=x86_64  platform=x86_64
+  Kernel:
+    Booted kernel:  4.18.0-348.el8.0.1.x86_64
+    GRUB default:     
+    Build version:
+      Linux version 4.18.0-348.el8.0.1.x86_64 
+      (mockbuild@dal1-prod-builder001.bld.equ.rockylinux.org) (gcc version 
+      8.5.0 20210514 (Red Hat 8.5.0-3) (GCC)) #1 SMP Thu Nov 11 13:18:18 UTC 
+      2021
+    Booted kernel cmdline:
+      BOOT_IMAGE=(hd0,msdos1)/vmlinuz-4.18.0-348.el8.0.1.x86_64 
+      root=/dev/mapper/rl_rocky8t04-root ro crashkernel=auto 
+      resume=/dev/mapper/rl_rocky8t04-swap rd.lvm.lv=rl_rocky8t04/root 
+      rd.lvm.lv=rl_rocky8t04/swap
+    GRUB default kernel cmdline:  
+      
+    Taint-check: 0  (kernel untainted)
+    - - - - - - - - - - - - - - - - - - -
+  Sys time:  Sat Nov 13 12:39:42 CST 2021
+  Boot time: Sat Nov 13 12:37:27 CST 2021  (epoch: 1636828647)
+  Time Zone: America/Chicago
+  Uptime:    2 min,  1 user
+  LoadAvg:   [4 CPU] 0.05 (1%), 0.05 (1%), 0.02 (0%)
+  /proc/stat:
+    procs_running: 1   procs_blocked: 0    processes [Since boot]: 1665
+    cpu [Utilization since boot]:
+      us 1%, ni 0%, sys 1%, idle 95%, iowait 3%, irq 0%, sftirq 0%, steal 0%
+
+CPU
+  4 logical processors 
+  4 Intel Core i7-3740QM CPU @ 2.70GHz (flags: aes,constant_tsc,lm,nx,pae,rdrand) 
+
+MEMORY
+  Stats graphed as percent of MemTotal:
+    MemUsed    ▊▊▊▊▊▊▊...........................................  13.7%
+    Buffers    ..................................................   0.1%
+    Cached     ▊▊▊▊..............................................   7.7%
+    HugePages  ..................................................   0.0%
+    Dirty      ..................................................   0.0%
+  RAM:
+    3.6 GiB total ram
+    0.5 GiB (14%) used
+    0.2 GiB (6%) used excluding Buffers/Cached
+    0 GiB (0%) dirty
+  HugePages:
+    No ram pre-allocated to HugePages
+  THP:
+    22528 kB allocated to THP 
+  LowMem/Slab/PageTables/Shmem:
+    0.07 GiB (2%) of total ram used for Slab
+    0.01 GiB (0%) of total ram used for PageTables
+    0.01 GiB (0%) of total ram used for Shmem
+  Swap:
+    0 GiB (0%) used of 1.6 GiB total
+
+STORAGE
+  Whole Disks from /proc/partitions:
+    1 disks, totaling 16 GiB (0.02 TiB)
+    - - - - - - - - - - - - - - - - - - - - -
+    Disk 	Size in GiB
+    ----	-----------
+    sda 	16
+
+  Disk layout from lsblk:
+    NAME                  MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
+    sda                     8:0    0   16G  0 disk 
+    ├─sda1                  8:1    0    1G  0 part /boot
+    └─sda2                  8:2    0   15G  0 part 
+      ├─rl_rocky8t04-root 253:0    0 13.4G  0 lvm  /
+      └─rl_rocky8t04-swap 253:1    0  1.6G  0 lvm  [SWAP]
+    sr0                    11:0    1    2G  0 rom  
+
+  Filesystem usage from df:
+    Filesystem                    1K-blocks    Used Available Use% Mounted on
+    /dev/mapper/rl_rocky8t04-root  14034944 1839536  12195408  14% /
+    /dev/sda1                       1038336  196060    842276  19% /boot
+
+LSPCI
+  Net:
+    (1) VMware VMXNET3 Ethernet Controller (rev 01)
+  Storage:
+    (1) VMware PVSCSI SCSI Controller (rev 02)
+  VGA:
+    VMware SVGA II Adapter
+
+ETHTOOL
+  Interface Status:
+    ens192  0000:0b:00.0  link=up 10000Mb/s full (autoneg=N)  rx ring 1024/4096  drv vmxnet3 v1.5.0.0-k-NAPI / fw UNKNOWN
+  Interface Errors:
+    [None]
+

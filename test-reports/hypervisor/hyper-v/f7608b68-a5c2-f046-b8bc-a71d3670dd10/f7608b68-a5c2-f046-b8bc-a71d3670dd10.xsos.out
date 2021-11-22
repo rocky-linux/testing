@@ -1,0 +1,124 @@
+DMIDECODE
+  BIOS:
+    Vend: Microsoft Corporation
+    Vers: Hyper-V UEFI Release v1.0
+    Date: 11/26/2012
+    BIOS Rev: 1.0
+    FW Rev:  
+  System:
+    Mfr:  Microsoft Corporation
+    Prod: Virtual Machine
+    Vers: Hyper-V UEFI Release v1.0
+    Ser:  4179-4564-2337-9370-5011-7884-01
+    UUID: f7608b68-a5c2-f046-b8bc-a71d3670dd10
+  CPU:
+    1 of 1 CPU sockets populated, 0 cores/0 threads per CPU
+    0 total cores, 0 total threads
+    Mfr:  None
+    Fam:  Unknown
+    Freq:
+    Vers: None
+  Memory:
+    Total: 4096 MiB (4 GiB)
+    DIMMs: 2 of 4 populated
+    MaxCapacity: 0 MiB (0 GiB / 0.00 TiB)
+
+OS
+  Hostname: localhost
+  Distro:   [redhat-release] Rocky Linux release 8.5 (Green Obsidian)
+            [centos-release] Rocky Linux release 8.5 (Green Obsidian)
+            [rocky-release] Rocky Linux release 8.5 (Green Obsidian)
+            [os-release] Rocky Linux 8.5 (Green Obsidian) 8.5 (Green Obsidian)
+  RHN:      (missing)
+  RHSM:     (missing)
+  YUM:      1 enabled plugins: debuginfo-install
+  Runlevel: N 3  (default multi-user)
+  SELinux:  enforcing  (default enforcing)
+  Arch:     mach=x86_64  cpu=x86_64  platform=x86_64
+  Kernel:
+    Booted kernel:  4.18.0-348.el8.0.2.x86_64
+    GRUB default:     
+    Build version:
+      Linux version 4.18.0-348.el8.0.2.x86_64 (mockbuild@dal1-prod-builder001.bld.equ.rockylinux.org) (gcc version 8.5.0 
+      20210514 (Red Hat 8.5.0-3) (GCC)) #1 SMP Sun Nov 14 00:51:12 UTC 2021
+    Booted kernel cmdline:
+      BOOT_IMAGE=(hd1,gpt1)/vmlinuz-4.18.0-348.el8.0.2.x86_64 root=UUID=14d53536-0105-47f2-9915-4292c5abea0f ro console=tty1 
+      console=ttyS0,115200n8 earlyprintk=ttyS0,115200 rootdelay=300 scsi_mod.use_blk_mq=y crashkernel=auto
+    GRUB default kernel cmdline:  
+      
+    Taint-check: 0  (kernel untainted)
+    - - - - - - - - - - - - - - - - - - -
+  Sys time:  Tue Nov 16 16:35:22 UTC 2021
+  Boot time: Mon Nov 15 20:46:12 UTC 2021  (epoch: 1637009172)
+  Time Zone: Etc/UTC
+  Uptime:    19:49,  1 user
+  LoadAvg:   [1 CPU] 0.00 (0%), 0.01 (1%), 0.00 (0%)
+  /proc/stat:
+    procs_running: 4   procs_blocked: 0    processes [Since boot]: 208284
+    cpu [Utilization since boot]:
+      us 0%, ni 0%, sys 1%, idle 99%, iowait 0%, irq 0%, sftirq 0%, steal 0%
+
+CPU
+  1 logical processors 
+  1 Intel Xeon CPU E5-2673 v3 @ 2.40GHz (flags: aes,constant_tsc,lm,nx,pae,rdrand) 
+
+MEMORY
+  Stats graphed as percent of MemTotal:
+    MemUsed    ▊▊▊▊▊▊▊▊▊▊▊▊......................................  24.6%
+    Buffers    ..................................................   0.1%
+    Cached     ▊▊▊▊▊▊............................................  12.7%
+    HugePages  ..................................................   0.0%
+    Dirty      ..................................................   0.0%
+  RAM:
+    3.6 GiB total ram
+    0.9 GiB (25%) used
+    0.4 GiB (12%) used excluding Buffers/Cached
+    0 GiB (0%) dirty
+  HugePages:
+    No ram pre-allocated to HugePages
+  THP:
+    6144 kB allocated to THP 
+  LowMem/Slab/PageTables/Shmem:
+    0.16 GiB (5%) of total ram used for Slab
+    0.01 GiB (0%) of total ram used for PageTables
+    0.07 GiB (2%) of total ram used for Shmem
+  Swap:
+    No system swap space configured
+
+STORAGE
+  Whole Disks from /proc/partitions:
+    1 disks, totaling 30 GiB (0.03 TiB)
+    - - - - - - - - - - - - - - - - - - - - -
+    Disk 	Size in GiB
+    ----	-----------
+    sda 	30
+
+  Disk layout from lsblk:
+    NAME    MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
+    sda       8:0    0   30G  0 disk 
+    ├─sda1    8:1    0  500M  0 part /boot
+    ├─sda2    8:2    0   29G  0 part /
+    ├─sda14   8:14   0    4M  0 part 
+    └─sda15   8:15   0  495M  0 part /boot/efi
+    sr0      11:0    1  366K  0 rom  
+
+  Filesystem usage from df:
+    Filesystem     1K-blocks    Used Available Use% Mounted on
+    /dev/sda2       30416376 2065252  28351124   7% /
+    /dev/sda1         507116  110928    396188  22% /boot
+    /dev/sda15        506600    5936    500664   2% /boot/efi
+
+DM-MULTIPATH
+  [No paths detected]
+
+LSPCI
+  Net:
+  Storage:
+  VGA:
+
+ETHTOOL
+  Interface Status:
+    eth0    link=up 10000Mb/s full (autoneg=N)  rx ring 9709/18811  drv hv_netvsc v4.18.0-348.el8.0.2.x86_64 / fw N/A
+  Interface Errors:
+    [None]
+
