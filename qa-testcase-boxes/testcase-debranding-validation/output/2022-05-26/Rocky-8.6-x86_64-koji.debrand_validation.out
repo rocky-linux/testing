@@ -1,0 +1,131 @@
+
+================================================================================
+Package Debrand Validation for x86_64 builds in koji
+
+anaconda	cloud-init	dnf		fwupd
+
+
+================================================================================
+General Processing Parameters
+
+             type: koji
+          version: 8.6
+             arch: x86_64
+          baseurl: http://dl.rockylinux.org/pub/rocky
+      iso_baseurl: http://dl.rockylinux.org/pub/rocky/8.6/isos
+       iso_prefix: Rocky
+       repo_names: baseos,appstream,powertools,extras
+         koji_tag: dist-rocky8-compose
+        rocky_rel: 8
+          log_dir: /home/rocky/testing/output/2022-05-26
+  log_file_suffix: debrand_validation.out
+         extended: 1
+       script_dir: /home/rocky/testing/scripts
+    rpm_cache_dir: /home/rocky/testing/rpms
+
+================================================================================
+anaconda
+
+r8.yaml contents for anaconda
+
+          modular: false
+            check: FileContents
+          nvr_pkg: anaconda-core-33.16.6.7-1.el8.rocky.0.4
+             file: /etc/anaconda/product.d/rocky.conf
+          content: rocky_help_placeholder.xml
+            value: true
+         pkg_arch: x86_64
+           source: na
+
+       binary_pkg: anaconda-core-33.16.6.7-1.el8.rocky.0.4.x86_64.rpm
+         koji_pkg: anaconda-core-33.16.6.7-1.el8.rocky.0.4.x86_64.rpm
+
+Downloading: anaconda-core-33.16.6.7-1.el8.rocky.0.4.x86_64.rpm
+[==============                      ]  41% 1.00 MiB / 2.43 MiB[=============================       ]  82% 2.00 MiB / 2.43 MiB[====================================] 100% 2.43 MiB / 2.43 MiB
+
+       cache_path: /home/rocky/testing/rpms/anaconda-core-33.16.6.7-1.el8.rocky.0.4.x86_64.rpm
+
+23009 blocks
+
+
+SUCCESS: FileContents found pattern.
+
+================================================================================
+cloud-init
+
+r8.yaml contents for cloud-init
+
+          modular: false
+            check: FileContents
+          nvr_pkg: cloud-init-21.1-15.el8
+             file: /usr/lib/python3.6/site-packages/cloudinit/distros/__init__.py
+          content: rocky
+            value: true
+         pkg_arch: noarch
+           source: na
+
+       binary_pkg: cloud-init-21.1-15.el8.noarch.rpm
+         koji_pkg: .rpm
+
+2022-05-26 15:29:03,944 [ERROR] koji: GenericError: invalid format:
+
+       cache_path: /home/rocky/testing/rpms/cloud-init-21.1-15.el8.noarch.rpm
+
+7278 blocks
+
+
+SUCCESS: FileContents found pattern.
+
+================================================================================
+dnf
+
+r8.yaml contents for dnf
+
+          modular: false
+            check: FileContents
+          nvr_pkg: python3-dnf-4.7.0-8.el8
+             file: /usr/lib/python3.6/site-packages/dnf/const.py
+          content: BUGTRACKER='https://bugs.rockylinux.org/'
+            value: true
+         pkg_arch: noarch
+           source: na
+
+       binary_pkg: python3-dnf-4.7.0-8.el8.noarch.rpm
+         koji_pkg: python3-dnf-4.7.0-8.el8.noarch.rpm
+
+Downloading: python3-dnf-4.7.0-8.el8.noarch.rpm
+File python3-dnf-4.7.0-8.el8.noarch.rpm already downloaded, skipping
+
+       cache_path: /home/rocky/testing/rpms/python3-dnf-4.7.0-8.el8.noarch.rpm
+
+3816 blocks
+
+
+SUCCESS: FileContents found pattern.
+
+================================================================================
+fwupd
+
+r8.yaml contents for fwupd
+
+          modular: false
+            check: BinaryStrings
+          nvr_pkg: fwupd-1.7.4-2.el8
+             file: /usr/libexec/fwupd/efi/fwupdx64.efi.signed
+          content: Rocky Linux Secure Boot Root CA
+            value: true
+         pkg_arch: x86_64
+           source: na
+
+       binary_pkg: fwupd-1.7.4-2.el8.x86_64.rpm
+         koji_pkg: fwupd-1.7.4-2.el8.x86_64.rpm
+
+2022-05-26 15:29:06,951 [ERROR] koji: PermissionError: [Errno 13] Permission denied: 'fwupd-1.7.4-2.el8.x86_64.rpm'
+Downloading: fwupd-1.7.4-2.el8.x86_64.rpm
+
+       cache_path: /home/rocky/testing/rpms/fwupd-1.7.4-2.el8.x86_64.rpm
+
+17009 blocks
+
+
+SUCCESS: BinaryStrings found pattern.
