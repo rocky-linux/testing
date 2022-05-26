@@ -1,0 +1,61 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+require 'yaml'
+
+# Vagrantfile API/syntax version. Don't touch unless you know what you're doing!
+VAGRANTFILE_API_VERSION = "2"
+
+# configs, custom updates defaults
+defaults_cfg = YAML.load_file('vagrant-settings.yaml_defaults')
+if File.exist?('vagrant-settings.yaml')
+  custom_cfg = YAML.load_file('vagrant-settings.yaml')
+  cfg = defaults_cfg.merge(custom_cfg)
+else
+  cfg = defaults_cfg
+end
+
+Vagrant.configure("2") do |config|
+  config.vm.box = cfg["box_image"]
+
+  config.vm.provider "virtualbox" do |vb|
+    vb.memory = cfg["box_ram"]
+    vb.cpus = cfg["box_cpus"]
+  end
+
+  config.vm.provision "shell", name: "Start Timestamp", inline: <<-SHELL
+    echo "Starting QA:Testcase-Mediacheck on $(date)"
+  SHELL
+
+  config.vm.provision "shell", name: "Install requirements", inline: <<-SHELL
+    dnf -y --enablerepo=extras,powertools update
+    dnf -y install coreutils curl dnf isomd5sum python3 rpm util-linux
+  SHELL
+
+  config.vm.provision "shell", name: "Prepare testing directories", inline: <<-SHELL
+    mkdir -pv /vagrant/{isos,output}
+  SHELL
+
+  config.vm.provision "shell" do |script|
+    script.name   = "Rocky #{cfg['version']} #{cfg['arch']} boot ISO"
+    script.inline = "/vagrant/scripts/test_wrapper.sh $1 $2 $3"
+    script.args   = ["boot", "#{ cfg['arch'] }", "#{ cfg['version'] }"]
+  end
+
+  config.vm.provision "shell" do |script|
+    script.name   = "Rocky #{cfg['version']} #{cfg['arch']} minimal ISO"
+    script.inline = "/vagrant/scripts/test_wrapper.sh $1 $2 $3"
+    script.args   = ["minimal", "#{ cfg['arch'] }", "#{ cfg['version'] }"]
+  end
+
+  config.vm.provision "shell" do |script|
+    script.name   = "Rocky #{cfg['version']} #{cfg['arch']} dvd1 ISO"
+    script.inline = "/vagrant/scripts/test_wrapper.sh $1 $2 $3"
+    script.args   = ["dvd1", "#{ cfg['arch'] }", "#{ cfg['version'] }"]
+  end
+
+  config.vm.provision "shell", name: "End Timestamp", inline: <<-SHELL
+    echo "Finished QA:Testcase-Mediacheck on $(date)"
+  SHELL
+
+end
