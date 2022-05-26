@@ -1,0 +1,6 @@
+.DS_Store
+*.rpm
+*.iso
+.vagrant
+vagrant-settings.yaml
+patch.yml
