@@ -2,10 +2,10 @@
 "r9":   # This file is incomplete as we wait for all packages to be built in Peridot
   "open-vm-tools":
     modular: true
-    check: FileContents
-    nvr_pkg: TBD
-    file: TBD
-    content: TBD
+    check: BinaryStrings
+    nvr_pkg: open-vm-tools-11.3.5-1.el9
+    file: /usr/lib64/libguestlib.so.0
+    content: /etc/rocky-release
     value: true
     pkg_arch:
     source:
@@ -106,8 +106,8 @@
     check: FileContents
     nvr_pkg: gnome-settings-daemon-40.0.1-6.el9
     file: gnome-settings-daemon.spec
-    content: "%if %{with subman}"
-    value: false
+    content: "%if %{undefined rocky}"
+    value: true
     pkg_arch: src
     source:
   "grub2":
@@ -158,7 +158,7 @@
   "libreoffice":
     modular: true
     check: FileContents
-    nvr_pkg: libreoffice-
+    nvr_pkg: libreoffice-7.1.8.1-6.el9
     file: libreoffice.spec
     content: Rocky Enterprise Software Foundation
     value: true
@@ -167,7 +167,7 @@
   "libreport":
     modular: false
     check: FileContents
-    nvr_pkg: libreport-2.15.2-6.el9.rocky.0.1
+    nvr_pkg: libreport-2.15.2-6.el9.rocky.0.2
     file: /usr/share/doc/libreport/README.md
     content: https://bugs.rockylinux.org
     value: true
@@ -248,9 +248,9 @@
   "scap-security-guide":
     modular: false
     check: FileContents
-    nvr_pkg: scap-security-guide-
+    nvr_pkg: scap-security-guide-0.1.60-6.el9_0.rocky.0.2
     file: scap-security-guide.spec
-    content: DSSG_PRODUCT_ROCKY8
+    content: DSSG_PRODUCT_ROCKY9
     value: true
     pkg_arch: src
     source:
