@@ -1,5 +1,14 @@
 ---
 "r8":
+  "abrt":
+    modular: false
+    check: PackageRequires
+    nvr_pkg: abrt-2.10.9-21.el8.rocky.0
+    file: na
+    content: libreport-plugin-rhtsupport
+    value: false
+    pkg_arch:
+    source:
   "dotnet":
     modular: false
     check: FileContents
@@ -101,15 +110,6 @@
     source:
 ---
 "all":
-  "abrt":
-    modular: false
-    check: PackageRequires
-    nvr_pkg: abrt-2.10.9-21.el8.rocky.0
-    file: na
-    content: libreport-plugin-rhtsupport
-    value: false
-    pkg_arch:
-    source:
   "anaconda":
     modular: false
     check: FileContents
