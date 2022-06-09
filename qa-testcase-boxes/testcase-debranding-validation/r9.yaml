@@ -131,8 +131,8 @@
   "kernel":
     modular: false
     check: BinaryStrings
-    nvr_pkg: kernel-core-5.14.0-70.13.1.el9
-    file: /lib/modules/5.14.0-70.13.1.el9.x86_64/vmlinuz
+    nvr_pkg: kernel-core-5.14.0-70.13.1.el9_0
+    file: /lib/modules/5.14.0-70.13.1.el9_0.x86_64/vmlinuz
     content: Rocky Linux Secure Boot Root CA
     value: true
     pkg_arch:
@@ -140,8 +140,8 @@
   "kernel-rt":
     modular: false
     check: BinaryStrings
-    nvr_pkg: kernel-rt-core-5.14.0-70.13.1.rt21.83.el9
-    file: /lib/modules/5.14.0-70.13.1.rt21.83.el9.x86_64/vmlinuz
+    nvr_pkg: kernel-rt-core-5.14.0-70.13.1.rt21.83.el9_0
+    file: /lib/modules/5.14.0-70.13.1.rt21.83.el9_0.x86_64/vmlinuz
     content: Rocky Linux Secure Boot Root CA
     value: true
     pkg_arch:
