@@ -72,12 +72,14 @@ do
       set -x
       if [[ "${PDOT_DNF_COMMAND}" == "download" ]]; then
         dnf \
+          --refresh \
           --repofrompath=pdot-"${PDOT_ARCH},https://${PDOT_YUMREPOFS_HOST}/v1/projects/${PDOT_PROJECT_ID}/repo/all/src" \
           --repo=pdot-"${PDOT_ARCH}" \
           "${PDOT_DNF_COMMAND}" --source \
           "${pkg}"
       else
         dnf \
+          --refresh \
           --repofrompath=pdot-"${PDOT_ARCH},https://${PDOT_YUMREPOFS_HOST}/v1/projects/${PDOT_PROJECT_ID}/repo/all/src" \
           --repo=pdot-"${PDOT_ARCH}" \
           "${PDOT_DNF_COMMAND}" \
@@ -88,6 +90,7 @@ do
     false)
       set -x
       dnf \
+        --refresh \
         --forcearch="${PDOT_ARCH}" \
         --repofrompath=pdot-"${PDOT_ARCH},https://${PDOT_YUMREPOFS_HOST}/v1/projects/${PDOT_PROJECT_ID}/repo/all/${PDOT_ARCH}" \
         --repo=pdot-"${PDOT_ARCH}" \
