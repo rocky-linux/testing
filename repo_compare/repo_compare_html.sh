@@ -20,8 +20,8 @@ pkglist2=$(dnf repoquery --latest-limit 1 --repo "${REPO2}"   --queryformat "%{n
 # 3: If a dotrelease tag is not present, then simply take the .el8* off from the end
 # 4: Remove any trailing ".rocky" tag as well from the end if a dotrelease is not present
 # The moduleXYZ will never match versions, and the el8 tagging may be different (el8 vs. el8_3, el8_4, etc.)
-pkglist1=$(echo "${pkglist1}" | sed -e 's/\.module.*$/\.module/g'   |  sed -e 's/\.el8.*\.\(.*\)$/\.\1/g' | sed -e 's/\.el.*$//g'  |  sed 's/\.rocky$//')
-pkglist2=$(echo "${pkglist2}" | sed -e 's/\.module.*$/\.module/g'   |  sed -e 's/\.el8.*\.\(.*\)$/\.\1/g' | sed -e 's/\.el.*$//g'  |  sed 's/\.rocky$//')
+pkglist1=$(echo "${pkglist1}" | sed -e 's/\.module.*$/\.module/g'   |  sed -e 's/\.el.*\.\(.*\)$/\.\1/g' | sed -e 's/\.el.*$//g'  |  sed 's/\.rocky$//')
+pkglist2=$(echo "${pkglist2}" | sed -e 's/\.module.*$/\.module/g'   |  sed -e 's/\.el.*\.\(.*\)$/\.\1/g' | sed -e 's/\.el.*$//g'  |  sed 's/\.rocky$//')
 
 
 # Turn the first pkg list into a comma-separated list (instead of newline-separated)
