@@ -183,61 +183,10 @@ The final directory in the hierarchy should be unique. You can use the `UUID` of
 
 ## Hierarchy
 
-The reports for different targets are stored in a filesystem hierarchy to allow reports for specific configuration be quickly found.
+The reports for different targets are stored in a filesystem hierarchy to allow reports for specific configuration be quickly found. The prefered format is Resource -> Vendor -> Model -> Rocky major version -> UUID. This format allows for the easiest sorting and lookup of information, though sub-categories are allowed.
 
-```
-~/git/github/tcooper/testing on main ⇡2 ?1 ❯ tree ./test-reports
-./test-reports
-├── README.md
-├── cloud
-│   ├── aws
-│   │   └── p4
-│   ├── azure
-│   └── gcp
-├── container
-│   ├── README.md
-│   ├── docker
-│   │   └── macOS
-│   │       └── 7d295e32-9313-40ab-a370-52ed8c121c8e
-│   │           ├── 7d295e32-9313-40ab-a370-52ed8c121c8e.out
-│   │           ├── docker-container-list.out
-│   │           └── docker-image-inspect.out
-│   ├── podman
-│   ├── shifter
-│   └── singularity
-├── hardware
-│   ├── dell
-│   │   ├── PowerEdge_C4130
-│   │   │   └── 4c4c4544-0033-4310-8043-b7c04f484832
-│   │   │       └── 4c4c4544-0033-4310-8043-b7c04f484832-xsos.out
-│   │   ├── PowerEdge_C6525
-│   │   │   └── 4c4c4544-0048-5a10-8056-b3c04f4e3233
-│   │   │       └── 4c4c4544-0048-5a10-8056-b3c04f4e3233-xsos.out
-│   │   ├── PowerEdge_R730
-│   │   │   └── 4c4c4544-0044-5710-804a-c6c04f533232
-│   │   │       └── 4c4c4544-0044-5710-804a-c6c04f533232-xsos.out
-│   │   ├── PowerEdge_R930
-│   │   │   └── 4c4c4544-004b-5310-8033-b4c04f533532
-│   │   │       └── 4c4c4544-004b-5310-8033-b4c04f533532-xsos.out
-│   │   └── PowerEdge_SOS6320
-│   │       └── 4c4c4544-0043-4c10-8036-b9c04f4a3332
-│   │           └── 4c4c4544-0043-4c10-8036-b9c04f4a3332-xsos.out
-│   ├── hpe
-│   ├── quanta
-│   │   └── QuantaPlex_T41S-2U
-│   │       └── 33826433-7BEC-1000-8BDF-2C600C06B5FE
-│   │           └── 33826433-7BEC-1000-8BDF-2C600C06B5FE.xsos.out
-│   └── supermicro
-└── hypervisor
-    ├── proxmox
-    ├── qemu
-    ├── virtualbox
-    │   ├── linux
-    │   ├── macOS
-    │   │   └── 738e4134-21d8-9842-96ce-fb2f473f486c
-    │   │       └── 738e4134-21d8-9842-96ce-fb2f473f486c-xsos.out
-    │   └── windows
-    └── vmware
-
-38 directories, 12 files
-```
+* Resource is one of four: cloud, container, hardware, hypervisor.
+* Vendor is the primary company (eg: Supermicro, Naver cloud, ect)
+* Model is the best description of the model. Some make this easy, others may need to specify model with the generation.
+* Rocky major version: 8 or 9
+* If you are submitting multiple information files, please included them in a sub-folder that matches the systems UUID. If it is a single file, then no sub-directory is sufficent.
