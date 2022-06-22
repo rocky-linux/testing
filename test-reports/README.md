@@ -4,7 +4,7 @@
 
 The script included in this repository require the use of `xsos`.
 
-```
+```bash
 xsos - https://github.com/ryran/xsos
 ```
 
@@ -14,37 +14,35 @@ xsos - https://github.com/ryran/xsos
 
 Follow the guide...
 
-```
-$ curl -Lo ./xsos bit.ly/xsos-direct
-$ chmod +x ./xsos
-$ dnf install -y pciutils # Needed for lspci
+```bash
+curl -Lo ./xsos bit.ly/xsos-direct
+chmod +x ./xsos
+dnf install -y pciutils # Needed for lspci
 ```
 
 ## Using `xsos`
 
-```
-$ sudo ./xsos -x --bios --os --cpu --disks --ethtool --lspci --mem --mpath | \
+```bash
+sudo ./xsos -x --bios --os --cpu --disks --ethtool --lspci --mem --mpath | \
     tee "${HOME}/$(sudo dmidecode -t 1 | awk '/UUID:/ {print $2}').xsos.out"
-$ cat *.xsos.out
+cat *.xsos.out
 ```
 
 ### Scrubbing Private Information
 
 `xsos` will let you scrub information from the report which is probably a good idea. If you wish to scrub everything automatically before uploading using the following comand instead. This will generate a random UUID instead of using your system UUID.
 
-```
-$ sudo ./xsos -x --bios --os --cpu --disks --ethtool --lspci --mem --mpath --scrub | \
+```bash
+sudo ./xsos -x --bios --os --cpu --disks --ethtool --lspci --mem --mpath --scrub | \
     tee "${HOME}/$(uuidgen).xsos.out"
-$ cat *.xsos.out
+cat *.xsos.out
 ```
 
 The above will generate a unique identifier that is not tied to your system instead of using the one generate by the kernel for your machine. If you do this be sure to keep track yourself of which machine is which in your testing if you test multiple systems. To that end you may which to manually scrub / sanitize the output of `xsos`.
 
-
 ### Containers
 
 See the [README.md](./container/README.md) in the containers sub-directory.
-
 
 ## Report Contents
 
@@ -171,7 +169,6 @@ ETHTOOL
 
 *NOTE: The above output if for a vm running in VirtualBox which explains why multipath and lspci outputs are not available.*
 
-
 ## Reporting
 
 Find the proper location in the filesystem hierarchy being used to organize reports and add a directory to the tree. You may need to add your vendor and likely will need to add a directory for your model.
@@ -180,13 +177,12 @@ Please replace `space` characters in all vendor and model names with `underscore
 
 The final directory in the hierarchy should be unique. You can use the `UUID` of your system or you can generate your own `UUID` with `uuidgen`. Both methods are shown below.
 
-
 ## Hierarchy
 
-The reports for different targets are stored in a filesystem hierarchy to allow reports for specific configuration be quickly found. The prefered format is Resource -> Vendor -> Model -> Rocky major version -> UUID. This format allows for the easiest sorting and lookup of information, though sub-categories are allowed.
+The reports for different targets are stored in a filesystem hierarchy to allow reports for specific configuration be quickly found. The prefered format is Resource -> Vendor -> Model/Version -> Rocky major version -> UUID. This format allows for the easiest sorting and lookup of information, though sub-categories are allowed.
 
 * Resource is one of four: cloud, container, hardware, hypervisor.
-* Vendor is the primary company (eg: Supermicro, Naver cloud, ect)
-* Model is the best description of the model. Some make this easy, others may need to specify model with the generation.
-* Rocky major version: 8 or 9
+* Vendor is the primary company (eg: Supermicro, Naver cloud, etc.)
+* Model is the best description of the model. Some make this easy, others may need to specify model with the generation. (for container and hypervisor there might not be a model but instead a version, use the major/minor version which is feature stable)
+* Rocky major version: rl8 or rl9
 * If you are submitting multiple information files, please included them in a sub-folder that matches the systems UUID. If it is a single file, then no sub-directory is sufficent.

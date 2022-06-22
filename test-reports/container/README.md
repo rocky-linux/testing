@@ -4,7 +4,7 @@ Some containers are run without a `systemd` setup inside of them and they also w
 
 ## Docker example
 
-```
+```bash
 ~ ❯ docker exec -it a36fe2564052c9620e005973e766a793a83ef834621591e11e85a52a7cbf9064 /bin/sh
 
 sh-4.4# curl -Lo ./xsos bit.ly/xsos-direct
