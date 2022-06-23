@@ -182,7 +182,7 @@ The final directory in the hierarchy should be unique. You can use the `UUID` of
 The reports for different targets are stored in a filesystem hierarchy to allow reports for specific configuration be quickly found. The prefered format is Resource -> Vendor -> Model/Version -> Rocky major version -> UUID. This format allows for the easiest sorting and lookup of information, though sub-categories are allowed.
 
 * Resource is one of four: cloud, container, hardware, hypervisor.
-* Vendor is the primary company (eg: Supermicro, Naver cloud, etc.)
+* Vendor is the primary company (eg: Supermicro, Naver cloud, etc.) For homebuilt systems, please use the motherboard vendor as the base, and the model and revision as the model.
 * Model is the best description of the model. Some make this easy, others may need to specify model with the generation. (for container and hypervisor there might not be a model but instead a version, use the major/minor version which is feature stable)
 * Rocky major version: rl8 or rl9
 * If you are submitting multiple information files, please included them in a sub-folder that matches the systems UUID. If it is a single file, then no sub-directory is sufficent.
