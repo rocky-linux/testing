@@ -1,0 +1,92 @@
+Added AppStream repo from /media/AppStream
+Added BaseOS repo from /media/BaseOS
+Getting complete filelist for:
+file:///media/AppStream
+file:///media/BaseOS
+867725 files found.
+
+Looking for duplicated filenames:
+107287 duplicates found.
+
+Doing more advanced checks to see if these are real conflicts:
+  5% complete (  5364/107287, 11694/sec),    0 found - eta 0:00:08
+ 10% complete ( 10728/107287, 2261130/sec),    0 found - eta 0:00:04
+ 15% complete ( 16092/107287, 2292698/sec),    0 found - eta 0:00:02
+ 20% complete ( 21456/107287, 12240/sec),    3 found - eta 0:00:03
+ 25% complete ( 26820/107287, 45579/sec),    3 found - eta 0:00:03
+ 30% complete ( 32184/107287,  3652/sec),    3 found - eta 0:00:05
+ 35% complete ( 37548/107287, 49061/sec),    3 found - eta 0:00:04
+ 40% complete ( 42912/107287, 2178795/sec),    3 found - eta 0:00:03
+ 45% complete ( 48276/107287, 2271632/sec),    3 found - eta 0:00:03
+ 50% complete ( 53640/107287, 291654/sec),    3 found - eta 0:00:02
+ 55% complete ( 59004/107287, 1114823/sec),    3 found - eta 0:00:02
+ 60% complete ( 64368/107287, 69486/sec),    4 found - eta 0:00:01
+ 65% complete ( 69732/107287, 319418/sec),    4 found - eta 0:00:01
+ 70% complete ( 75096/107287, 185158/sec),    4 found - eta 0:00:01
+ 75% complete ( 80460/107287, 33596/sec),    4 found - eta 0:00:00
+ 80% complete ( 85824/107287, 135688/sec),    4 found - eta 0:00:00
+ 85% complete ( 91188/107287, 81493/sec),    4 found - eta 0:00:00
+ 90% complete ( 96552/107287, 13137/sec),    4 found - eta 0:00:00
+ 95% complete (101916/107287, 493350/sec),    4 found - eta 0:00:00
+100% complete (107280/107287, 203674/sec),    4 found - eta 0:00:00
+
+4 file conflicts found.
+13 package conflicts found.
+
+== Package conflicts ==
+mariadb-test-3:10.3.32-2.module+el8.5.0+777+18007c86.x86_64
+mysql-test-8.0.26-1.module+el8.4.0+652+6de068a7.x86_64
+
+mariadb-3:10.3.32-2.module+el8.5.0+777+18007c86.x86_64
+mysql-8.0.26-1.module+el8.4.0+652+6de068a7.x86_64
+
+mariadb-devel-3:10.3.32-2.module+el8.5.0+777+18007c86.x86_64
+mysql-devel-8.0.26-1.module+el8.4.0+652+6de068a7.x86_64
+
+mariadb-server-3:10.3.32-2.module+el8.5.0+777+18007c86.x86_64
+mysql-server-8.0.26-1.module+el8.4.0+652+6de068a7.x86_64
+
+libcmpiCppImpl0-2.0.3-15.el8.i686
+tog-pegasus-libs-2:2.14.1-46.el8.i686
+
+libev-libevent-devel-4.24-6.el8.i686
+libev-libevent-devel-4.24-6.el8.x86_64
+libevent-devel-2.1.8-5.el8.i686
+libevent-devel-2.1.8-5.el8.x86_64
+
+mariadb-server-utils-3:10.3.32-2.module+el8.5.0+777+18007c86.x86_64
+mysql-server-8.0.26-1.module+el8.4.0+652+6de068a7.x86_64
+
+libcmpiCppImpl0-2.0.3-15.el8.x86_64
+tog-pegasus-libs-2:2.14.1-46.el8.x86_64
+
+mariadb-connector-c-devel-3.1.11-2.el8_3.i686
+mariadb-connector-c-devel-3.1.11-2.el8_3.x86_64
+mariadb-devel-3:10.3.32-2.module+el8.5.0+777+18007c86.x86_64
+mysql-devel-8.0.26-1.module+el8.4.0+652+6de068a7.x86_64
+
+bind-32:9.11.36-3.el8.x86_64
+bind9.16-32:9.16.23-0.7.el8.x86_64
+
+python3-mod_wsgi-4.6.4-4.el8.x86_64
+python38-mod_wsgi-4.6.8-3.module+el8.4.0+570+c2eaf144.x86_64
+python39-mod_wsgi-4.7.1-4.module+el8.4.0+574+843c4898.x86_64
+
+bind-utils-32:9.11.36-3.el8.x86_64
+bind9.16-utils-32:9.16.23-0.7.el8.x86_64
+
+mariadb-connector-c-devel-3.1.11-2.el8_3.i686
+mariadb-connector-c-devel-3.1.11-2.el8_3.x86_64
+mysql-devel-8.0.26-1.module+el8.4.0+652+6de068a7.x86_64
+
+
+== File conflicts, listed by conflicting packages ==
+composer-cli-28.14.68-1.el8.x86_64
+weldr-client-35.5-1.el8.x86_64
+  /etc/bash_completion.d/composer-cli
+  /usr/bin/composer-cli
+  /usr/share/man/man1/composer-cli.1.gz
+
+mariadb-server-3:10.3.32-2.module+el8.5.0+777+18007c86.x86_64
+mysql-test-8.0.26-1.module+el8.4.0+652+6de068a7.x86_64
+  /usr/bin/mysqld_safe

@@ -1,0 +1,10 @@
+---
+# copy it to vagrant-settings.yaml then Vagrantfile
+# will use values from this file
+
+box_image: "rockylinux/8"
+box_ram: 2048
+box_cpus: 2
+
+version: "8.6"
+download_base: "http://dl.rockylinux.org/pub/rocky/8/isos"

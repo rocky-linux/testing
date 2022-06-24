@@ -1,0 +1,10 @@
+---
+# copy this file to vagrant-settings.yaml to override Vagrant defaults
+
+box_image: "rockylinux/8"
+box_ram: 2048
+box_cpus: 2
+
+version: "8.6"
+arch: "x86_64"
+download_base: "http://dl.rockylinux.org/pub/rocky/8/isos"

@@ -1,0 +1,55 @@
+Added AppStream repo from /media/AppStream
+Added BaseOS repo from /media/BaseOS
+Getting complete filelist for:
+file:///media/AppStream
+file:///media/BaseOS
+576198 files found.
+
+Looking for duplicated filenames:
+5269 duplicates found.
+
+Doing more advanced checks to see if these are real conflicts:
+  5% complete (   263/  5269,  2291/sec),    0 found - eta 0:00:02
+ 10% complete (   526/  5269,  2308/sec),    3 found - eta 0:00:02
+ 15% complete (   789/  5269, 614541/sec),    3 found - eta 0:00:01
+ 20% complete (  1052/  5269, 727639/sec),    3 found - eta 0:00:00
+ 25% complete (  1315/  5269, 98844/sec),    3 found - eta 0:00:00
+ 30% complete (  1578/  5269, 689869/sec),    3 found - eta 0:00:00
+ 35% complete (  1841/  5269, 24197/sec),    3 found - eta 0:00:00
+ 40% complete (  2104/  5269, 519106/sec),    3 found - eta 0:00:00
+ 45% complete (  2367/  5269, 738354/sec),    3 found - eta 0:00:00
+ 50% complete (  2630/  5269,   234/sec),    3 found - eta 0:00:01
+ 55% complete (  2893/  5269,  4872/sec),    3 found - eta 0:00:01
+ 60% complete (  3156/  5269, 287490/sec),    3 found - eta 0:00:00
+ 65% complete (  3419/  5269, 286222/sec),    3 found - eta 0:00:00
+ 70% complete (  3682/  5269,  1526/sec),    3 found - eta 0:00:00
+ 75% complete (  3945/  5269,  9796/sec),    3 found - eta 0:00:00
+ 80% complete (  4208/  5269, 422968/sec),    3 found - eta 0:00:00
+ 85% complete (  4471/  5269, 126357/sec),    3 found - eta 0:00:00
+ 90% complete (  4734/  5269, 686435/sec),    3 found - eta 0:00:00
+ 95% complete (  4997/  5269, 18157/sec),    3 found - eta 0:00:00
+100% complete (  5260/  5269,   519/sec),    3 found - eta 0:00:00
+
+3 file conflicts found.
+4 package conflicts found.
+
+== Package conflicts ==
+libcmpiCppImpl0-2.0.3-15.el8.aarch64
+tog-pegasus-libs-2:2.14.1-46.el8.aarch64
+
+bind-utils-32:9.11.36-3.el8.aarch64
+bind9.16-utils-32:9.16.23-0.7.el8.aarch64
+
+libev-libevent-devel-4.24-6.el8.aarch64
+libevent-devel-2.1.8-5.el8.aarch64
+
+bind-32:9.11.36-3.el8.aarch64
+bind9.16-32:9.16.23-0.7.el8.aarch64
+
+
+== File conflicts, listed by conflicting packages ==
+composer-cli-28.14.68-1.el8.aarch64
+weldr-client-35.5-1.el8.aarch64
+  /etc/bash_completion.d/composer-cli
+  /usr/bin/composer-cli
+  /usr/share/man/man1/composer-cli.1.gz
