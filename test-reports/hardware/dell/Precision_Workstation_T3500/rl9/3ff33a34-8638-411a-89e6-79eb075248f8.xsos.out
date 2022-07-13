@@ -1,0 +1,138 @@
+DMIDECODE
+  BIOS:
+    Vend: Dell Inc.
+    Vers: A17
+    Date: 05/28/2013
+    BIOS Rev: 0.0
+    FW Rev:
+  System:
+    Mfr:  Dell Inc.
+    Prod: Precision WorkStation T3500
+    Vers: Not Specified
+    Ser:  ⣿⣿⣿⣿⣿⣿⣿
+    UUID: ⣿⣿⣿⣿⣿⣿⣿⣿-⣿⣿⣿⣿-⣿⣿⣿⣿-⣿⣿⣿⣿-⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+  CPU:
+    1 of 1 CPU sockets populated, 4 cores/2 threads per CPU
+    4 total cores, 2 total threads
+    Mfr:  Intel
+    Fam:  Xeon
+    Freq: 3066 MHz
+    Vers: Not Specified
+  Memory:
+    Total: 12288 MiB (12 GiB)
+    DIMMs: 3 of 6 populated
+    MaxCapacity: 24576 MiB (24 GiB / 0.02 TiB)
+
+OS
+  Hostname: SCRUBBED
+  Distro:   [redhat-release] Rocky Linux release 9.0 (Blue Onyx)
+            [rocky-release] Rocky Linux release 9.0 (Blue Onyx)
+            [os-release] Rocky Linux 9.0 (Blue Onyx) 9.0 (Blue Onyx)
+  RHN:      (missing)
+  RHSM:     (missing)
+  YUM:      1 enabled plugins: debuginfo-install
+  Runlevel: N 3  (default multi-user)
+  SELinux:  enforcing  (default enforcing)
+  Arch:     mach=x86_64  cpu=x86_64  platform=x86_64
+  Kernel:
+    Booted kernel:  5.14.0-70.13.1.el9_0.x86_64
+    GRUB default:
+    Build version:
+     (Rescue mode detected; build info captured from logs of last boot)
+      Linux version 5.14.0-70.13.1.el9_0.x86_64 (mockbuild@dal1-prod-builder001.bld.equ.rockylinux.org) (gcc (GCC) 11.2.1
+      20220127 (Red Hat 11.2.1-9), GNU ld version 2.35.2-17.el9) #1 SMP PREEMPT Wed May 25 21:01:57 UTC 2022
+    Booted kernel cmdline:
+     (Rescue mode detected)
+      BOOT_IMAGE=(hd0,msdos1)/vmlinuz-5.14.0-70.13.1.el9_0.x86_64 root=/dev/mapper/HOST-root ro
+      crashkernel=1G-4G:192M,4G-64G:256M,64G-:512M resume=/dev/mapper/HOST-swap rd.lvm.lv=HOST/root rd.lvm.lv=HOST/swap
+      console=tty1 console=ttyS0,115200n81r consoleblanks=120
+    GRUB default kernel cmdline:
+
+    Taint-check: 2048  (see https://access.redhat.com/solutions/40594)
+      11  FIRMWARE_WORKAROUND: Working around severe firmware bug
+    - - - - - - - - - - - - - - - - - - -
+  Sys time:  Tue Jul 12 09:05:22 PM ZULU 2022
+  Boot time: Mon Jul 11 01:28:59 PM ZULU 2022
+  Time Zone: America/Chicago
+  Uptime:    1 day,  7:36,  5 users
+  LoadAvg:   [8 CPU] 0.00 (0%), 0.00 (0%), 0.00 (0%)
+  /proc/stat:
+    procs_running: 1   procs_blocked: 0    processes [Since boot]: 32212
+    cpu [Utilization since boot]:
+      us 0%, ni 0%, sys 0%, idle 100%, iowait 0%, irq 0%, sftirq 0%, steal 0%
+
+CPU
+  8 logical processors (4 CPU cores)
+  1 Intel Xeon CPU W3550 @ 3.07GHz (flags: constant_tsc,ht,lm,nx,pae,vmx)
+  └─8 threads / 4 cores each
+
+MEMORY
+  WARNING: RESCUE MODE DETECTED
+  meminfo reflects rescue env; inspect sysctl.conf manually for HugePages
+  Stats graphed as percent of MemTotal:
+    MemUsed    ▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊..................................  31.2%
+    Buffers    ▊▊▊▊▊▊............................................  11.9%
+    Cached     ▊▊▊▊..............................................   7.1%
+    HugePages  ..................................................   0.0%
+    Dirty      ..................................................   0.0%
+  RAM:
+    11.4 GiB total ram
+    3.6 GiB (31%) used
+    1.4 GiB (12%) used excluding Buffers/Cached
+    0 GiB (0%) dirty
+  HugePages:
+    No ram pre-allocated to HugePages
+  THP:
+    0.14 GiB allocated to THP
+  LowMem/Slab/PageTables/Shmem:
+    1.02 GiB (9%) of total ram used for Slab
+    0 GiB (0%) of total ram used for PageTables
+    0.01 GiB (0%) of total ram used for Shmem
+  Swap:
+    0 GiB (0%) used of 8 GiB total
+
+STORAGE
+  Whole Disks from /proc/partitions:
+    2 disks, totaling 2101 GiB (2.05 TiB)
+    - - - - - - - - - - - - - - - - - - - - -
+    Disk	Size in GiB
+    ----	-----------
+    sda		238
+    sdb		1863
+
+  Disk layout from lsblk:
+    NAME                MAJ:MIN RM   SIZE RO TYPE MOUNTPOINTS
+    sda                   8:0    0 238.5G  0 disk
+    ├─sda1                8:1    0     1G  0 part /boot
+    └─sda2                8:2    0 237.5G  0 part
+      ├─HOST-root       253:0    0    40G  0 lvm  /
+      ├─HOST-swap       253:1    0     8G  0 lvm  [SWAP]
+      └─HOST-var        253:4    0    80G  0 lvm  /var
+    sdb                   8:16   0   1.8T  0 disk
+    ├─buvg-bulv         253:2    0   1.6T  0 lvm  /bu
+    └─buvg-var_cache_lv 253:3    0 111.8G  0 lvm
+
+  Filesystem usage from df:
+    Filesystem               1K-blocks       Used Available Use% Mounted on
+    /dev/mapper/HOST-root   40973536    3531660  35328340  10% /
+    /dev/sda1                  1030828     188104    790296  20% /boot
+    /dev/mapper/HOST-var    81987992     487460  77289844   1% /var
+    /dev/mapper/buvg-bulv   1729441324 1497761720 143755076  92% /bu
+
+DM-MULTIPATH
+  [No paths detected]
+
+LSPCI
+  Net:
+    (1) Broadcom Inc. and subsidiaries NetXtreme BCM5761 Gigabit Ethernet PCIe (rev 10)
+    (1) Intel Corporation 82574L Gigabit Network Connection
+  Storage:
+    (1) Intel Corporation 82801JI (ICH10 Family) SATA AHCI Controller
+  VGA:
+
+ETHTOOL
+  Interface Status:
+    enp4s0  0000:04:00.0  link=up 1000Mb/s full (autoneg=Y)  rx ring 256/4096  drv e1000e v5.14.0-70.13.1.el9_0.x86_64 / fw 1.8-0
+    enp5s0  0000:05:00.0  link=DOWN                          rx ring 200/511   drv tg3 v5.14.0-70.13.1.el9_0.x86_64 / fw 5761-v3.68
+  Interface Errors:
+    [None]
