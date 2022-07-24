@@ -1,0 +1,111 @@
+OS
+  Hostname: SCRUBBED
+  Distro:   [redhat-release] Rocky Linux release 8.6 (Green Obsidian)
+            [centos-release] Rocky Linux release 8.6 (Green Obsidian)
+            [rocky-release] Rocky Linux release 8.6 (Green Obsidian)
+            [os-release] Rocky Linux 8.6 (Green Obsidian) 8.6 (Green Obsidian)
+  RHN:      (missing)
+  RHSM:     (missing)
+  YUM:      1 enabled plugins: debuginfo-install
+  Runlevel: N 5  (default )
+  SELinux:  enforcing  (default enforcing)
+  Arch:     mach=aarch64  cpu=aarch64  platform=aarch64
+  Kernel:
+    Booted kernel:  5.10.52-v8.1.el8
+    GRUB default:   unknown  (no grub config file)  
+    Build version:
+      Linux version 5.10.52-v8.1.el8 (mockbuild@RpiRockyDev) (gcc (GCC) 8.4.1 20200928 (Red Hat 8.4.1-1), GNU ld version 2.30-93.el8) #1 SMP PREEMPT Wed Sep 1 12:36:41 EDT 2021
+    Booted kernel cmdline:
+      coherent_pool=1M 8250.nr_uarts=0 snd_bcm2835.enable_compat_alsa=0 snd_bcm2835.enable_hdmi=1 bcm2708_fb.fbwidth=0 bcm2708_fb.fbheight=0 bcm2708_fb.fbswap=1 smsc95xx.macaddr=XX:XX:XX:XX:XX:XX 
+      vc_mem.mem_base=0x3ec00000 vc_mem.mem_size=0x40000000  console=ttyAMA0,115200 console=tty1 root=PARTUUID=9c755c73-03 rootfstype=ext4 elevator=deadline rootwait
+    GRUB default kernel cmdline:  
+      unknown  (no grub config file)
+    Taint-check: 1024  (see https://access.redhat.com/solutions/40594)
+      10  CRAP: Modules from drivers/staging are loaded
+    - - - - - - - - - - - - - - - - - - -
+  Sys time:  Thu Jun 23 02:27:04 UTC 2022
+  Boot time: Thu Jun  9 02:26:11 UTC 2022  (epoch: 1654741571)
+  Time Zone: UTC
+  Uptime:    14 days, 0 min,  2 users
+  LoadAvg:   [4 CPU] 5.98 (150%), 5.42 (136%), 4.84 (121%)
+  /proc/stat:
+    procs_running: 8   procs_blocked: 0    processes [Since boot]: 4797272
+    cpu [Utilization since boot]:
+      us 1%, ni 97%, sys 1%, idle 1%, iowait 0%, irq 0%, sftirq 0%, steal 0%
+
+CPU
+  4 logical processors 
+    
+
+MEMORY
+  Stats graphed as percent of MemTotal:
+    MemUsed    ▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊......  87.3%
+    Buffers    ▊▊................................................   5.0%
+    Cached     ▊▊▊▊▊▊▊▊▊▊▊▊......................................  24.1%
+    HugePages  ..................................................   0.0%
+    Dirty      ..................................................   0.0%
+  RAM:
+    1.8 GiB total ram
+    1.6 GiB (87%) used
+    1.1 GiB (58%) used excluding Buffers/Cached
+    0 GiB (0%) dirty
+  HugePages:
+    No ram pre-allocated to HugePages
+  THP:
+    No ram allocated to THP
+  LowMem/Slab/PageTables/Shmem:
+    0.1 GiB (6%) of total ram used for Slab
+    0.01 GiB (0%) of total ram used for PageTables
+    0.05 GiB (3%) of total ram used for Shmem
+  Swap:
+    0 GiB (1%) used of 0.5 GiB total
+
+STORAGE
+  Whole Disks from /proc/partitions:
+    17 disks, totaling 14 GiB (0.01 TiB)
+    - - - - - - - - - - - - - - - - - - - - -
+    Disk 	Size in GiB
+    ----	-----------
+    mmcblk0 	14
+    ram0 	0
+    ram1 	0
+    ram10 	0
+    ram11 	0
+    ram12 	0
+    ram13 	0
+    ram14 	0
+    ram15 	0
+    ram2 	0
+    ram3 	0
+    ram4 	0
+    ram5 	0
+    ram6 	0
+    ram7 	0
+    ram8 	0
+    ram9 	0
+
+  Disk layout from lsblk:
+    NAME        MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
+    mmcblk0     179:0    0 14.4G  0 disk 
+    ├─mmcblk0p1 179:1    0  286M  0 part /boot
+    ├─mmcblk0p2 179:2    0  488M  0 part [SWAP]
+    └─mmcblk0p3 179:3    0 13.7G  0 part /
+
+  Filesystem usage from df:
+    Filesystem     1K-blocks    Used Available Use% Mounted on
+    /dev/root       14039340 8041500   5954112  58% /
+    /dev/mmcblk0p1    292696   66280    226416  23% /boot
+
+LSPCI
+  Net:
+  Storage:
+  VGA:
+
+ETHTOOL
+  Interface Status:
+    eth0                link=up 1000Mb/s full (autoneg=Y)  rx ring UNKNOWN  drv bcmgenet v5.10.52-v8.1.el8 / fw UNKNOWN
+    wlan0  mmc1:0001:1  link=UNKNOWN                       rx ring UNKNOWN  drv brcmfmac v7.45.234 / fw 01-996384e2
+  Interface Errors:
+    eth0  rx_errors: 3653
+          mdf_err_cnt: 672197
+          rxq16_errors: 3653

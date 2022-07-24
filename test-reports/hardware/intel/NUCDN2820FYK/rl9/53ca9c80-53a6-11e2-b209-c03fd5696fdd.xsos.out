@@ -1,0 +1,131 @@
+DMIDECODE
+  BIOS:
+    Vend: Intel Corp.
+    Vers: FYBYT10H.86A.0072.2020.0609.0913
+    Date: 06/09/2020
+    BIOS Rev: 5.6
+    FW Rev:  
+  System:
+    Mfr:  
+    Prod: 
+    Vers: 
+    Ser:                                   
+    UUID: ⣿⣿⣿⣿⣿⣿⣿⣿-⣿⣿⣿⣿-⣿⣿⣿⣿-⣿⣿⣿⣿-⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+  CPU:
+    1 of 1 CPU sockets populated, 2 cores/2 threads per CPU
+    2 total cores, 2 total threads
+    Mfr:  Intel
+    Fam:  Celeron
+    Freq: 2160 MHz
+    Vers: Intel(R) Celeron(R) CPU N2830 @ 2.16GHz
+  Memory:
+    Total: 4096 MiB (4 GiB)
+    DIMMs: 1 of 2 populated
+    MaxCapacity: 8192 MiB (8 GiB / 0.01 TiB)
+
+OS
+  Hostname: SCRUBBED
+  Distro:   [redhat-release] Rocky Linux release 9.0 (Blue Onyx)
+            [rocky-release] Rocky Linux release 9.0 (Blue Onyx)
+            [os-release] Rocky Linux 9.0 (Blue Onyx) 9.0 (Blue Onyx)
+  RHN:      (missing)
+  RHSM:     (missing)
+  YUM:      1 enabled plugins: debuginfo-install
+  Runlevel: N 5  (default graphical)
+  SELinux:  enforcing  (default enforcing)
+  Arch:     mach=x86_64  cpu=x86_64  platform=x86_64
+  Kernel:
+    Booted kernel:  5.14.0-70.13.1.el9_0.x86_64
+    GRUB default:     
+    Build version:
+      Linux version 5.14.0-70.13.1.el9_0.x86_64 
+      (mockbuild@dal1-prod-builder001.bld.equ.rockylinux.org) (gcc (GCC) 11.2.1 20220127 (Red Hat 
+      11.2.1-9), GNU ld version 2.35.2-17.el9) #1 SMP PREEMPT Wed May 25 21:01:57 UTC 2022
+    Booted kernel cmdline:
+      BOOT_IMAGE=(hd0,msdos1)/vmlinuz-5.14.0-70.13.1.el9_0.x86_64 root=/dev/mapper/rl-root ro 
+      crashkernel=1G-4G:192M,4G-64G:256M,64G-:512M resume=/dev/mapper/rl-swap rd.lvm.lv=rl/root 
+      rd.lvm.lv=rl/swap rhgb quiet
+    GRUB default kernel cmdline:  
+      
+    Taint-check: 0  (kernel untainted)
+    - - - - - - - - - - - - - - - - - - -
+  Sys time:  Tue Jun 28 01:34:20 PM CDT 2022
+  Boot time: Tue Jun 28 12:30:57 PM CDT 2022
+  Time Zone: America/Chicago
+  Uptime:    1:03,  1 user
+  LoadAvg:   [2 CPU] 0.00 (0%), 0.00 (0%), 0.00 (0%)
+  /proc/stat:
+    procs_running: 1   procs_blocked: 0    processes [Since boot]: 2405
+    cpu [Utilization since boot]:
+      us 0%, ni 0%, sys 0%, idle 99%, iowait 1%, irq 0%, sftirq 0%, steal 0%
+
+CPU
+  2 logical processors (2 CPU cores)
+  1 Intel Celeron CPU N2830 @ 2.16GHz (flags: constant_tsc,ht,lm,nx,pae,rdrand,vmx) 
+  └─2 threads / 2 cores each
+
+MEMORY
+  Stats graphed as percent of MemTotal:
+    MemUsed    ▊▊▊▊▊▊▊▊▊▊▊▊......................................  24.7%
+    Buffers    ..................................................   0.1%
+    Cached     ▊▊▊▊▊▊............................................  11.6%
+    HugePages  ..................................................   0.0%
+    Dirty      ..................................................   0.0%
+  RAM:
+    3.5 GiB total ram
+    0.9 GiB (25%) used
+    0.5 GiB (13%) used excluding Buffers/Cached
+    0 GiB (0%) dirty
+  HugePages:
+    No ram pre-allocated to HugePages
+  THP:
+    0.1 GiB allocated to THP 
+  LowMem/Slab/PageTables/Shmem:
+    0.08 GiB (2%) of total ram used for Slab
+    0.01 GiB (0%) of total ram used for PageTables
+    0.01 GiB (0%) of total ram used for Shmem
+  Swap:
+    0 GiB (0%) used of 3.8 GiB total
+
+STORAGE
+  Whole Disks from /proc/partitions:
+    1 disks, totaling 466 GiB (0.45 TiB)
+    - - - - - - - - - - - - - - - - - - - - -
+    Disk 	Size in GiB
+    ----	-----------
+    sda 	466
+
+  Disk layout from lsblk:
+    NAME        MAJ:MIN RM   SIZE RO TYPE MOUNTPOINTS
+    sda           8:0    0 465.8G  0 disk 
+    ├─sda1        8:1    0     1G  0 part /boot
+    └─sda2        8:2    0 464.8G  0 part 
+      ├─rl-root 253:0    0    70G  0 lvm  /
+      ├─rl-swap 253:1    0   3.8G  0 lvm  [SWAP]
+      └─rl-home 253:2    0   391G  0 lvm  /home
+
+  Filesystem usage from df:
+    Filesystem          1K-blocks    Used Available Use% Mounted on
+    /dev/mapper/rl-root  73364480 4817416  68547064   7% /
+    /dev/sda1             1038336  276736    761600  27% /boot
+    /dev/mapper/rl-home 409768460 2981184 406787276   1% /home
+
+DM-MULTIPATH
+  [No paths detected]
+
+LSPCI
+  Net:
+    (1) Realtek Semiconductor Co., Ltd. RTL8111/8168/8411 PCI Express Gigabit Ethernet Controller (rev 0c)
+    (1) Intel Corporation Wireless 7260 (rev 73)
+  Storage:
+    (1) Intel Corporation Atom Processor E3800 Series SATA AHCI Controller (rev 0e)
+  VGA:
+    Intel Corporation Atom Processor Z36xxx/Z37xxx Series Graphics & Display (rev 0e)
+
+ETHTOOL
+  Interface Status:
+    enp3s0  0000:03:00.0  link=up 1000Mb/s full (autoneg=Y)  rx ring 256/256  drv r8169 v5.14.0-70.13.1.el9_0.x86_64 / fw rtl8168g-2_0.0.1 02/06/13
+    wlp2s0  0000:02:00.0  link=DOWN                          rx ring n/a/n/a  drv iwlwifi v5.14.0-70.13.1.el9_0.x86_64 / fw 17.3216344376.0 7260-17.ucode
+  Interface Errors:
+    [None]
+
