@@ -182,24 +182,6 @@
     value: true
     pkg_arch:
     source:
-  "opa-ff":
-    modular: false
-    check: FileContents
-    nvr_pkg: opa-ff-10.11.0.2-1.el9.rocky
-    file: 5000-add-rocky.patch
-    content: Rocky Linux
-    value: true
-    pkg_arch: src
-    source:
-  "opa-fm":
-    modular: false
-    check: FileContents
-    nvr_pkg: opa-fm-10.11.0.2-1.el9.rocky
-    file: 5000-add-rocky.patch
-    content: Rocky Linux
-    value: true
-    pkg_arch: src
-    source:
   "openscap":   # temporary, submitting upstream PR
     modular: false
     check: FileContents
@@ -294,6 +276,15 @@
     modular: false
     check: FileContents
     nvr_pkg: subscription-manager-1.29.26-3.el9_0
+    file: /etc/dnf/plugins/subscription-manager.conf
+    content: "enabled=0"
+    value: true
+    pkg_arch:
+    source:
+  "subscription-manager-cockpit":
+    modular: false
+    check: FileContents
+    nvr_pkg: subscription-manager-cockpit-1.29.26-3.el9_0
     file: /etc/dnf/plugins/subscription-manager.conf
     content: "enabled=0"
     value: true
