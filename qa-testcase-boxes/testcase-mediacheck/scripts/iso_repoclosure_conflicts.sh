@@ -37,8 +37,10 @@ full_path="$(realpath "$0")"
 dir_path="$(dirname "$full_path")"
 parent_path="$(dirname "$dir_path")"
 
+. /etc/os-release
+
 # Defaults
-iso_version="8.6"
+iso_version="${VERSION_ID}"
 iso_arch="$(arch)"
 iso_type="boot"
 iso_mirror_base="http://dl.rockylinux.org/pub/rocky/${iso_version}/isos"

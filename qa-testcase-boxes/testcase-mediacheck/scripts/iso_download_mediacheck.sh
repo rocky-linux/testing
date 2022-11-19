@@ -49,8 +49,10 @@ full_path="$(realpath "$0")"
 dir_path="$(dirname "$full_path")"
 parent_path="$(dirname "$dir_path")"
 
+. /etc/os-release
+
 # Defaults
-iso_version="8.6"
+iso_version="${VERSION_ID}"
 iso_arch="$(arch)"
 iso_type="boot"
 iso_mirror_base="http://dl.rockylinux.org/pub/rocky/${iso_version}/isos"
@@ -155,10 +157,19 @@ curl "${curl_opts}" "${iso_checksum_url}${curl_suffix}" -o "${parent_path}/$(bas
   tee -a "${log_base}.mediacheck.out"
 test -f "${parent_path}/${iso_checksum_name}" || exit
 
-log_msg "Downloading: ${iso_checksum_sig_url} ..."
-curl "${curl_opts}" "${iso_checksum_sig_url}${curl_suffix}" -o "${parent_path}/$(basename "${iso_checksum_sig_url}")" 2>&1 | \
-  tee -a "${log_base}.mediacheck.out"
-test -f "${parent_path}/${iso_checksum_name}${iso_checksum_sig}" || exit
+log_msg "Verifying: ${iso_checksum_sig_url} exists..."
+set +e
+if ! curl --silent --fail -I "${iso_checksum_sig_url}" >/dev/null 2>&1
+then
+  log_msg "WARNING: ${iso_checksum_sig_url} does NOT exist.\nWARNING: GPG signature validation of ${iso_checksum_name} will fail."
+  set -e
+else
+  log_msg "Downloading: ${iso_checksum_sig_url} ..."
+  set -e
+  curl "${curl_opts}" "${iso_checksum_sig_url}${curl_suffix}" -o "${parent_path}/$(basename "${iso_checksum_sig_url}")" 2>&1 | \
+    tee -a "${log_base}.mediacheck.out"
+  test -f "${parent_path}/${iso_checksum_name}${iso_checksum_sig}" || exit
+fi
 
 # Pull the signing key and ISO only if they don't exist in $PWD
 test -f "${iso_key_name}" || \
@@ -195,3 +206,4 @@ log_msg "Verifying internal ISO md5: ${parent_path}/${iso_name} ..." | \
   tee -a "${log_base}.mediacheck.out"
 checkisomd5 "${parent_path}/${iso_name}"  2>&1 | \
   tee -a "${log_base}.mediacheck.out"
+
