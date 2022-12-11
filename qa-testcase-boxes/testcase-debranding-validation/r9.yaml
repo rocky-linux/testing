@@ -254,15 +254,6 @@
     value: true
     pkg_arch: src
     source:
-  "sos":
-    modular: false
-    check: FileContents
-    nvr_pkg: sos-4.2-15.el9
-    file: /usr/lib/python3.9/site-packages/sos/policies/distros/rocky.py
-    content: Rocky Enterprise Software Foundation
-    value: true
-    pkg_arch: noarch
-    source:
   "subscription-manager":
     modular: false
     check: FileContents
