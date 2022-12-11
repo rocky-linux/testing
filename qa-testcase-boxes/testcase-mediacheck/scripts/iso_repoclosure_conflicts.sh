@@ -85,6 +85,7 @@ while getopts ${optstring} arg; do
   esac
 done
 
+dnf clean all
 
 iso_url="${iso_mirror_base}/${iso_version}/isos/${iso_arch}/${iso_prefix}-${iso_version}-${iso_arch}-${iso_type}.iso"
 iso_name=$(basename "${iso_url}")
