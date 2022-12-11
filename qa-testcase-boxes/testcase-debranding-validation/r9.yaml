@@ -23,8 +23,8 @@
   "anaconda-user-help":
     modular: false
     check: FileContents
-    file: /usr/share/anaconda/help/rocky/en-US/anaconda-help.xml
     nvr_pkg: anaconda-user-help-9.0.0-1.el9.rocky.0.2
+    file: /usr/share/anaconda/help/rhel/en-US/anaconda-help.xml
     content: Welcome to Rocky Linux
     value: true
     pkg_arch: noarch
@@ -187,7 +187,7 @@
     check: FileContents
     nvr_pkg: openscap-1.3.6-4.el9.rocky.0.2
     file: /usr/share/openscap/cpe/openscap-cpe-oval.xml
-    content: <platform>Rocky Linux 8</platform>
+    content: <platform>Rocky Linux 9</platform>
     value: true
     pkg_arch:
     source:
@@ -232,7 +232,7 @@
     check: FileContents
     nvr_pkg: scap-security-guide-0.1.63-5.el9.rocky.1.5
     file: scap-security-guide.spec
-    content: DSSG_PRODUCT_ROCKY9
+    content: DSSG_ROCKY_LINUX_DERIVATIVES_ENABLED
     value: true
     pkg_arch: src
     source:
@@ -284,11 +284,11 @@
   "subscription-manager-cockpit":
     modular: false
     check: FileContents
-    file: /etc/dnf/plugins/subscription-manager.conf
-    content: "enabled=0"
     nvr_pkg: subscription-manager-cockpit-4-1.el9.rocky.0.1
+    file: subscription-manager-cockpit.spec
+    content: Remove Red Hat specific references
     value: true
-    pkg_arch:
+    pkg_arch: src
     source:
   "systemd":
     modular: false
