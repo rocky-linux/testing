@@ -118,15 +118,6 @@
     content: Welcome to Rocky Linux
     value: true
     pkg_arch: noarch
-  "chrony":
-    modular: false
-    check: FileContents
-    nvr_pkg: chrony-4.2-1.el8.rocky.0.1
-    file: chrony.spec
-    content: Use rhel ntp pool temporarily
-    value: true
-    pkg_arch: src
-    source: koji
   "cloud-init":   # temporary till 21.3
     modular: false
     check: FileContents
