@@ -28,7 +28,9 @@ Vagrant.configure("2") do |config|
   SHELL
 
   config.vm.provision "shell", name: "Install requirements", inline: <<-SHELL
-    dnf -y --enablerepo=extras,powertools update
+    . /etc/os-release
+    [[ "${VERSION_ID}" =~ ^8 ]] && dnf -y --enablerepo=extras,powertools update
+    [[ "${VERSION_ID}" =~ ^ ]] && dnf -y --enablerepo=extras,crb update
     dnf -y install coreutils curl dnf isomd5sum python3 rpm util-linux
   SHELL
 

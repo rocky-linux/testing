@@ -28,9 +28,13 @@ Vagrant.configure("2") do |config|
   SHELL
 
   config.vm.provision "shell", name: "Install requirements", inline: <<-SHELL
-    dnf -y --enablerepo=extras,powertools update
+    . /etc/os-release
+    [[ "${VERSION_ID}" =~ ^8 ]] && dnf -y --enablerepo=extras,powertools update
+    [[ "${VERSION_ID}" =~ ^ ]] && dnf -y --enablerepo=extras,crb update
     dnf -y install epel-release
     dnf -y install jq koji python3
+    dnf config-manager --set-enabled rt
+    dnf config-manager --set-enabled ha
     curl -LR https://github.com/mikefarah/yq/releases/download/v4.25.1/yq_linux_amd64 -o yq
     chmod +x yq && mv yq /usr/local/bin
   SHELL
