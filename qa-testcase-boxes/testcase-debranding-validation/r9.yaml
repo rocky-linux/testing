@@ -1,5 +1,14 @@
 ---
 "r9":   # This file is incomplete as we wait for all packages to be built in Peridot
+  "gnome-session":
+    modular: false
+    check: FileContents
+    nvr_pkg: gnome-session-40.1.1-6.el9.rocky.1
+    file: gnome-session.spec
+    content: subscription-manager-support.patch
+    value: false
+    pkg_arch: src
+    source: peridot
 ---
 "all":
   "anaconda":
