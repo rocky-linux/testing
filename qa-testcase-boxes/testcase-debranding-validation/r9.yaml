@@ -1,14 +1,5 @@
 ---
 "r9":   # This file is incomplete as we wait for all packages to be built in Peridot
-  "open-vm-tools":
-    modular: true
-    check: BinaryStrings
-    nvr_pkg: open-vm-tools-11.3.5-1.el9
-    file: /usr/lib64/libguestlib.so.0
-    content: /etc/rocky-release
-    value: true
-    pkg_arch:
-    source:
 ---
 "all":
   "anaconda":
