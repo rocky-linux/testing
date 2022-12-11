@@ -31,7 +31,7 @@
 
 function usage {
   printf "Usage: %s " "$(basename "${BASH_SOURCE[1]}")"
-  printf "[-h] [-x] [-t minimal|dvd1|repo|koji|cache] [-a x86_64|aarch64|ppc64le|s390x] [-v 8.6|9.0|maj.min] [others... see -h] [package(s)]\n"
+  printf "[-h] [-x] [-t minimal|dvd|dvd1|repo|koji|cache] [-a x86_64|aarch64|ppc64le|s390x] [-v 8.6|9.0|maj.min] [others... see -h] [package(s)]\n"
   printf "Perform debranding analysis on PACKAGEs.\n"
 
   cat <<- "EOF"
@@ -39,7 +39,7 @@ function usage {
   -h                        provide this help
   -x                        enable extended output
   -t                        specify source for packages
-                              minimal and dvd1 specify locally available ISO
+                              minimal and {dvd,dvd1} specify locally available ISO
                               media, repo and koji specify Internet package sources
                               and cache specifies local package cache. If/when
                               using repo or koji packages pulled from that location
@@ -184,7 +184,7 @@ declare -r patch_yml="https://git.rockylinux.org/rocky/metadata/-/raw/main/patch
 # if packages were supplied on the command line then this overrides the contents of patch.yml
 if (( ${#all_pkgs[@]} == 0 )); then
   # get patch.yml from git.r.o and extract debrand pkgs
-  curl -sLOR "${patch_yml}"
+  #curl -sLOR "${patch_yml}"
   readarray all_pkgs < <(/usr/local/bin/yq '.debrand.r'"${rocky_rel}"' + .debrand.all | sort() | .[]' patch.yml)
 fi
 
@@ -274,7 +274,7 @@ koji_pkg_name(){
       #       Optionally, search for ${yml_nv_pkg} in ${yml_nvr_pkg} to see if
       #       RELEASE has been updated - TODO
   fi
-  echo "${koji_pkg}.rpm"
+  echo "${koji_pkg}"
 }
 
 download_from_koji(){
@@ -310,7 +310,7 @@ download_and_extract(){
   pushd "${tmpdir}" >/dev/null || return
 
   case "${iso_type}" in
-    (dvd1|minimal)
+    (dvd|dvd1|minimal)
       download_from_iso "${1}" "${2}"
       extract_pkg "${2}"
       ;;
@@ -335,7 +335,7 @@ download_and_extract(){
 download_only(){
   # download directly to package cache
   case "${iso_type}" in
-    (dvd1|minimal)
+    (dvd|dvd1|minimal)
       download_from_iso "${1}" "${2}"
       ;;
     (koji)
@@ -379,7 +379,7 @@ do
   log_extra "           source: $yml_source"
 
   case "${iso_type}" in
-    (dvd1|minimal)
+    (dvd|dvd1|minimal)
       if [[ "${yml_pkg_arch}" == "src" ]]; then
         src_pkg="${yml_nvr_pkg}.${yml_pkg_arch}.rpm"
         log_extra "src_pkg: ${src_pkg}\n"
@@ -528,7 +528,7 @@ do
 done
 
 case "${iso_type}" in
-  (dvd1|minimal)
+  (dvd|dvd1|minimal)
     sudo umount /media
     ;;
   (*)
