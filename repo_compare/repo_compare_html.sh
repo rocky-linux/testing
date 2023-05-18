@@ -4,9 +4,8 @@
 # The arguments must be named dnf/yum repos on the system
 #
 # We will loop through the RPM names from SOURCEREPO, and attempt to find name/version/release matches in TARGETREPO
-# An HTML table page will be output showing the differences
+# An HTML table page will be sent to stdout showing the differences
 #
-# -Skip Grube, 2021-06-29
 
 
 REPO1="$1"
@@ -15,10 +14,14 @@ REPO2="$2"
 pkglist1=$(dnf repoquery --latest-limit 1 --repo "${REPO1}"   --queryformat "%{name} %{version} %{release}"  |  grep -vi " subscription ")
 pkglist2=$(dnf repoquery --latest-limit 1 --repo "${REPO2}"   --queryformat "%{name} %{version} %{release}"  |  grep -vi " subscription ")
 
-# Strip ending moduleXYZ and .el8* information away from the release info, as 
-# They may not match (or will never match in the module's case)
-pkglist1=$(echo "${pkglist1}" | sed -e 's/\.module.*$/\.module/g'   |  sed -e 's/\.el.*$//g')
-pkglist2=$(echo "${pkglist2}" | sed -e 's/\.module.*$/\.module/g'   |  sed -e 's/\.el.*$//g')
+# Strip some ending package info off like this:
+# 1: moduleXYZ info comes off
+# 2: If a dotrelease tag is present (like .el8_4.3), then preserve the .3 but remove the el8_* tag
+# 3: If a dotrelease tag is not present, then simply take the .el8* off from the end
+# 4: Remove any trailing ".rocky" tag as well from the end if a dotrelease is not present
+# The moduleXYZ will never match versions, and the el8 tagging may be different (el8 vs. el8_3, el8_4, etc.)
+pkglist1=$(echo "${pkglist1}" | sed -e 's/\.module.*$/\.module/g'   |  sed -e 's/\.el8.*\.\(.*\)$/\.\1/g' | sed -e 's/\.el.*$//g'  |  sed 's/\.rocky$//')
+pkglist2=$(echo "${pkglist2}" | sed -e 's/\.module.*$/\.module/g'   |  sed -e 's/\.el8.*\.\(.*\)$/\.\1/g' | sed -e 's/\.el.*$//g'  |  sed 's/\.rocky$//')
 
 
 # Turn the first pkg list into a comma-separated list (instead of newline-separated)

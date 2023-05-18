@@ -1,0 +1,133 @@
+DMIDECODE
+  BIOS:
+    Vend: Intel Corp.
+    Vers: INWHL357.0044.2021.1206.1742
+    Date: 12/06/2021
+    BIOS Rev: 5.13
+    FW Rev:  
+  System:
+    Mfr:  Intel(R) Client Systems
+    Prod: NUC8i7INH
+    Vers: K47348-402
+    Ser:  ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+    UUID: ⣿⣿⣿⣿⣿⣿⣿⣿-⣿⣿⣿⣿-⣿⣿⣿⣿-⣿⣿⣿⣿-⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+  CPU:
+    1 of 1 CPU sockets populated, 4 cores/8 threads per CPU
+    4 total cores, 8 total threads
+    Mfr:  Intel(R) Corporation
+    Fam:  Core i7
+    Freq: 1683 MHz
+    Vers: Intel(R) Core(TM) i7-8565U CPU @ 1.80GHz
+  Memory:
+    Total: 8192 MiB (8 GiB)
+    DIMMs: 2 of 10 populated
+    MaxCapacity: 8192 MiB (8 GiB / 0.01 TiB)
+
+OS
+  Hostname: SCRUBBED
+  Distro:   [redhat-release] Rocky Linux release 9.0 (Blue Onyx)
+            [rocky-release] Rocky Linux release 9.0 (Blue Onyx)
+            [os-release] Rocky Linux 9.0 (Blue Onyx) 9.0 (Blue Onyx)
+  RHN:      (missing)
+  RHSM:     (missing)
+  YUM:      1 enabled plugins: debuginfo-install
+  Runlevel: N 3  (default multi-user)
+  SELinux:  enforcing  (default enforcing)
+  Arch:     mach=x86_64  cpu=x86_64  platform=x86_64
+  Kernel:
+    Booted kernel:  5.14.0-70.13.1.el9_0.x86_64
+    GRUB default:     
+    Build version:
+      Linux version 5.14.0-70.13.1.el9_0.x86_64 
+      (mockbuild@dal1-prod-builder001.bld.equ.rockylinux.org) (gcc (GCC) 11.2.1 20220127 (Red Hat 
+      11.2.1-9), GNU ld version 2.35.2-17.el9) #1 SMP PREEMPT Wed May 25 21:01:57 UTC 2022
+    Booted kernel cmdline:
+      BOOT_IMAGE=(hd0,gpt2)/vmlinuz-5.14.0-70.13.1.el9_0.x86_64 root=/dev/mapper/rl_node01-root ro 
+      crashkernel=1G-4G:192M,4G-64G:256M,64G-:512M resume=/dev/mapper/rl_node01-swap 
+      rd.lvm.lv=rl_node01/root rd.lvm.lv=rl_node01/swap
+    GRUB default kernel cmdline:  
+      
+    Taint-check: 0  (kernel untainted)
+    - - - - - - - - - - - - - - - - - - -
+  Sys time:  Tue Jun 28 01:34:14 PM CDT 2022
+  Boot time: Tue Jun 28 01:02:45 PM CDT 2022
+  Time Zone: America/Chicago
+  Uptime:    31 min,  1 user
+  LoadAvg:   [8 CPU] 0.00 (0%), 0.00 (0%), 0.00 (0%)
+  /proc/stat:
+    procs_running: 1   procs_blocked: 0    processes [Since boot]: 15947
+    cpu [Utilization since boot]:
+      us 0%, ni 0%, sys 0%, idle 100%, iowait 0%, irq 0%, sftirq 0%, steal 0%
+
+CPU
+  8 logical processors (4 CPU cores)
+  1 Intel Core i7-8565U CPU @ 1.80GHz (flags: aes,constant_tsc,ht,lm,nx,pae,rdrand,vmx) 
+  └─8 threads / 4 cores each
+
+MEMORY
+  Stats graphed as percent of MemTotal:
+    MemUsed    ▊▊▊▊..............................................   8.8%
+    Buffers    ..................................................   0.1%
+    Cached     ▊▊................................................   4.6%
+    HugePages  ..................................................   0.0%
+    Dirty      ..................................................   0.0%
+  RAM:
+    7.4 GiB total ram
+    0.7 GiB (9%) used
+    0.3 GiB (4%) used excluding Buffers/Cached
+    0 GiB (0%) dirty
+  HugePages:
+    No ram pre-allocated to HugePages
+  THP:
+    0.02 GiB allocated to THP 
+  LowMem/Slab/PageTables/Shmem:
+    0.12 GiB (2%) of total ram used for Slab
+    0 GiB (0%) of total ram used for PageTables
+    0.01 GiB (0%) of total ram used for Shmem
+  Swap:
+    0 GiB (0%) used of 7.8 GiB total
+
+STORAGE
+  Whole Disks from /proc/partitions:
+    1 disks, totaling 238 GiB (0.23 TiB)
+    - - - - - - - - - - - - - - - - - - - - -
+    Disk 	Size in GiB
+    ----	-----------
+    sda 	238
+
+  Disk layout from lsblk:
+    NAME               MAJ:MIN RM   SIZE RO TYPE MOUNTPOINTS
+    sda                  8:0    0 238.5G  0 disk 
+    ├─sda1               8:1    0   600M  0 part /boot/efi
+    ├─sda2               8:2    0     1G  0 part /boot
+    └─sda3               8:3    0 236.9G  0 part 
+      ├─rl_node01-root 253:0    0    70G  0 lvm  /
+      ├─rl_node01-swap 253:1    0   7.8G  0 lvm  [SWAP]
+      └─rl_node01-home 253:2    0 159.1G  0 lvm  /home
+
+  Filesystem usage from df:
+    Filesystem                 1K-blocks    Used Available Use% Mounted on
+    /dev/mapper/rl_node01-root  73364480 1574468  71790012   3% /
+    /dev/sda2                    1038336  207244    831092  20% /boot
+    /dev/sda1                     613160    7136    606024   2% /boot/efi
+    /dev/mapper/rl_node01-home 166732244 1195764 165536480   1% /home
+
+DM-MULTIPATH
+  [No paths detected]
+
+LSPCI
+  Net:
+    (1) Intel Corporation Ethernet Connection (6) I219-V (rev 30)
+    (1) Intel Corporation Cannon Point-LP CNVi [Wireless-AC] (rev 30)
+  Storage:
+    (1) Intel Corporation Cannon Point-LP SATA Controller [AHCI Mode] (rev 30)
+  VGA:
+    Advanced Micro Devices, Inc. [AMD/ATI] Lexa [Radeon 540X/550X/630 / RX 640 / E9171 MCM] (rev c3)
+
+ETHTOOL
+  Interface Status:
+    enp0s31f6  0000:00:1f.6  link=up 1000Mb/s full (autoneg=Y)  rx ring 256/4096  drv e1000e v5.14.0-70.13.1.el9_0.x86_64 / fw 0.5-4
+    wlp0s20f3  0000:00:14.3  link=DOWN                          rx ring n/a/n/a   drv iwlwifi v5.14.0-70.13.1.el9_0.x86_64 / fw 46.4e1ceb39.0 9000-pu-b0-jf-b0-
+  Interface Errors:
+    [None]
+
