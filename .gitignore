@@ -1,0 +1,17 @@
+.DS_Store
+.RPM_CACHE_DIR
+CHECKSUM*
+RPM-GPG-KEY*
+*.cache
+*.diff
+*.iso
+*.log
+*.out
+*.rpm
+*.save
+.vagrant
+vagrant-settings.yaml
+patch.yml
+*/*/pdot
+*/*/pdot-dev
+*/*/isos

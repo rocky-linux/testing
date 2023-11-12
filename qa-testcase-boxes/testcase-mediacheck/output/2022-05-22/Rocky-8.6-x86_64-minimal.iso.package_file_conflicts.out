@@ -1,0 +1,38 @@
+Added BaseOS repo from /media/BaseOS
+Added Minimal repo from /media/Minimal
+Getting complete filelist for:
+file:///media/BaseOS
+file:///media/Minimal
+185139 files found.
+
+Looking for duplicated filenames:
+17229 duplicates found.
+
+Doing more advanced checks to see if these are real conflicts:
+  5% complete (   861/ 17229, 11429/sec),    0 found - eta 0:00:01
+ 10% complete (  1722/ 17229,  5409/sec),    0 found - eta 0:00:02
+ 15% complete (  2583/ 17229, 42762/sec),    0 found - eta 0:00:01
+ 20% complete (  3444/ 17229, 70417/sec),    0 found - eta 0:00:01
+ 25% complete (  4305/ 17229,  3308/sec),    0 found - eta 0:00:01
+ 30% complete (  5166/ 17229, 342140/sec),    0 found - eta 0:00:01
+ 35% complete (  6027/ 17229, 2050707/sec),    0 found - eta 0:00:00
+ 40% complete (  6888/ 17229, 148674/sec),    0 found - eta 0:00:00
+ 45% complete (  7749/ 17229, 264312/sec),    0 found - eta 0:00:00
+ 50% complete (  8610/ 17229, 103647/sec),    0 found - eta 0:00:00
+ 55% complete (  9471/ 17229, 2018611/sec),    0 found - eta 0:00:00
+ 60% complete ( 10332/ 17229, 2220969/sec),    0 found - eta 0:00:00
+ 65% complete ( 11193/ 17229, 2129301/sec),    0 found - eta 0:00:00
+ 70% complete ( 12054/ 17229, 2236096/sec),    0 found - eta 0:00:00
+ 75% complete ( 12915/ 17229, 2248627/sec),    0 found - eta 0:00:00
+ 80% complete ( 13776/ 17229, 2121795/sec),    0 found - eta 0:00:00
+ 85% complete ( 14637/ 17229, 41822/sec),    0 found - eta 0:00:00
+ 90% complete ( 15498/ 17229, 17042/sec),    0 found - eta 0:00:00
+ 95% complete ( 16359/ 17229, 2154711/sec),    0 found - eta 0:00:00
+100% complete ( 17220/ 17229, 2035679/sec),    0 found - eta 0:00:00
+
+0 file conflicts found.
+0 package conflicts found.
+
+== Package conflicts ==
+
+== File conflicts, listed by conflicting packages ==
