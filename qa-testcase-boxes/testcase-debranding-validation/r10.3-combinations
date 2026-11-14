@@ -1,27 +1,29 @@
-anaconda                      anaconda-core-40.22.3.57-1.el10.rocky.0.6         x86_64  SUCCESS
-cloud-init                    cloud-init-24.4-7.el10_2.1.rocky.0.1              noarch  SUCCESS
-crash                         crash-9.0.2-1.el10                                src     SUCCESS
-dnf                           python3-dnf-4.20.0-28.el10.rocky.0.1              noarch  SUCCESS
-dnf5                          python3-libdnf5-5.1.12-1.el10.rocky.0.1           x86_64  SUCCESS
-firefox                       firefox-140.16.0-1.el10_2                         x86_64  SUCCESS
-fwupd-efi                     fwupd-efi-1.8-1.el10_2.rocky.0.1                  x86_64  SUCCESS
-gcc                           gcc-14.4.1-3.el10                                 x86_64  SUCCESS
-gdb                           gdb-headless-17.2-4.el10_3                        x86_64  SUCCESS
-gnome-initial-setup           gnome-initial-setup-46.7-3.el10.rocky.0.1         src     SUCCESS
-gnome-settings-daemon         gnome-settings-daemon-47.2-10.el10_2.rocky.0.2    src     SUCCESS
-gnome-shell                   gnome-shell-49.5-13.el10.rocky.0.2                src     SUCCESS
-gnome-tour                    gnome-tour-46.0-4.el10.rocky.0.1                  src     SUCCESS
-grub2                         grub2-efi-x64-2.12-56.el10_3.rocky.0.1            x86_64  SUCCESS
-ima-evm-utils                 ima-evm-utils-1.6.2-6.el10.rocky.0.2              x86_64  SUCCESS
-image-builder                 image-builder-79.0.0-1.el10.rocky.0.1             src     SUCCESS
-kernel                        kernel-core-6.12.0-264.7.1.el10_3                 x86_64  SUCCESS
-libdnf                        libdnf-0.73.1-17.el10.rocky.0.1                   x86_64  SUCCESS
-openssh                       openssh-clients-9.9p1-32.el10_3.rocky.0.1         x86_64  SUCCESS
-osbuild                       osbuild-191-1.el10.rocky.0.3                      x86_64  SUCCESS
-osbuild-composer              osbuild-composer-176-1.el10.rocky.0.1             src     SUCCESS
-redhat-rpm-config             redhat-rpm-config-296-1.el10.rocky.0.2            noarch  SUCCESS
-scap-security-guide           scap-security-guide-0.1.82-2.el10_2.rocky.1.1     src     SUCCESS
-subscription-manager          subscription-manager-1.30.16-1.el10.rocky.0.1     x86_64  SUCCESS
-subscription-manager-cockpit  subscription-manager-cockpit-17-1.el10.rocky.0.1  src     SUCCESS
-systemd                       systemd-257-33.el10.rocky.0.1                     src     SUCCESS
-thunderbird                   thunderbird-140.16.0-1.el10_2                     x86_64  SUCCESS
+#source_name                  name                          name-version-release                              arch    status
+#---------------------------  ----------------------------  ------------------------------------------------  ------  -------
+anaconda                      anaconda-core                 anaconda-core-40.22.3.57-1.el10.rocky.0.6         x86_64  SUCCESS
+cloud-init                    cloud-init                    cloud-init-24.4-7.el10_2.1.rocky.0.1              noarch  SUCCESS
+crash                         crash                         crash-9.0.2-1.el10                                src     SUCCESS
+dnf                           python3-dnf                   python3-dnf-4.20.0-28.el10.rocky.0.1              noarch  SUCCESS
+dnf5                          python3-libdnf5               python3-libdnf5-5.1.12-1.el10.rocky.0.1           x86_64  SUCCESS
+firefox                       firefox                       firefox-153.6.0-1.el10_2                          x86_64  SUCCESS
+fwupd-efi                     fwupd-efi                     fwupd-efi-1.8-1.el10_2.rocky.0.1                  x86_64  SUCCESS
+gcc                           gcc                           gcc-14.4.1-5.el10_3                               x86_64  SUCCESS
+gdb                           gdb-headless                  gdb-headless-17.2-4.el10_3                        x86_64  SUCCESS
+gnome-initial-setup           gnome-initial-setup           gnome-initial-setup-46.7-3.el10.rocky.0.1         src     SUCCESS
+gnome-settings-daemon         gnome-settings-daemon         gnome-settings-daemon-47.2-10.el10_2.rocky.0.2    src     SUCCESS
+gnome-shell                   gnome-shell                   gnome-shell-49.5-13.el10.rocky.0.2                src     SUCCESS
+gnome-tour                    gnome-tour                    gnome-tour-46.0-4.el10.rocky.0.1                  src     SUCCESS
+grub2                         grub2-efi-x64                 grub2-efi-x64-2.12-56.el10_3.rocky.0.1            x86_64  SUCCESS
+image-builder                 image-builder                 image-builder-79.0.0-1.el10.rocky.0.1             src     SUCCESS
+ima-evm-utils                 ima-evm-utils                 ima-evm-utils-1.6.2-6.el10.rocky.0.2              x86_64  SUCCESS
+kernel                        kernel-core                   kernel-core-6.12.0-264.16.1.el10_3                x86_64  SUCCESS
+libdnf                        libdnf                        libdnf-0.73.1-17.el10.rocky.0.1                   x86_64  SUCCESS
+openssh                       openssh-clients               openssh-clients-9.9p1-33.el10_3.rocky.0.1         x86_64  SUCCESS
+osbuild                       osbuild                       osbuild-191-1.el10.rocky.0.3                      x86_64  SUCCESS
+osbuild-composer              osbuild-composer              osbuild-composer-176-1.el10.rocky.0.1             src     SUCCESS
+redhat-rpm-config             redhat-rpm-config             redhat-rpm-config-296-1.el10.rocky.0.2            noarch  SUCCESS
+scap-security-guide           scap-security-guide           scap-security-guide-0.1.82-2.el10_2.rocky.1.1     src     SUCCESS
+subscription-manager          subscription-manager          subscription-manager-1.30.16-1.el10.rocky.0.1     x86_64  SUCCESS
+subscription-manager-cockpit  subscription-manager-cockpit  subscription-manager-cockpit-17-1.el10.rocky.0.1  src     SUCCESS
+systemd                       systemd                       systemd-257-33.el10.rocky.0.1                     src     SUCCESS
+thunderbird                   thunderbird                   thunderbird-153.6.0-1.el10_2                      x86_64  SUCCESS

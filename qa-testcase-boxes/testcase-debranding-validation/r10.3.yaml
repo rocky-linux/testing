@@ -48,7 +48,7 @@
   "firefox":
     modular: false
     check: FileContents
-    nvr_pkg: firefox-140.16.0-1.el10_2
+    nvr_pkg: firefox-153.6.0-1.el10_2
     file: /usr/lib64/firefox/defaults/preferences/all-redhat.js
     content: https://rockylinux.org
     value: true
@@ -66,7 +66,7 @@
   "gcc":
     modular: false
     check: FileContents
-    nvr_pkg: gcc-14.4.1-3.el10
+    nvr_pkg: gcc-14.4.1-5.el10_3
     file: /usr/share/man/man1/gcc.1.gz
     content: https://bugs.rockylinux.org
     value: true
@@ -126,15 +126,6 @@
     value: true
     pkg_arch:
     source:
-  "ima-evm-utils":
-    modular: false
-    check: BinaryStrings
-    nvr_pkg: ima-evm-utils-1.6.2-6.el10.rocky.0.2
-    file: /etc/keys/ima/rocky-imarelease.der
-    content: Rocky Linux IMA Release Key
-    value: true
-    pkg_arch:
-    source:
   "image-builder":
     modular: false
     check: FileContents
@@ -144,11 +135,20 @@
     value: true
     pkg_arch: src
     source: 
+  "ima-evm-utils":
+    modular: false
+    check: BinaryStrings
+    nvr_pkg: ima-evm-utils-1.6.2-6.el10.rocky.0.2
+    file: /etc/keys/ima/rocky-imarelease.der
+    content: Rocky Linux IMA Release Key
+    value: true
+    pkg_arch:
+    source:
   "kernel":
     modular: false
     check: BinaryStrings
-    nvr_pkg: kernel-core-6.12.0-264.7.1.el10_3
-    file: /lib/modules/6.12.0-264.7.1.el10_3.x86_64/vmlinuz
+    nvr_pkg: kernel-core-6.12.0-264.16.1.el10_3
+    file: /lib/modules/6.12.0-264.16.1.el10_3.x86_64/vmlinuz
     content: Rocky Linux Secure Boot Root CA
     value: true
     pkg_arch:
@@ -165,7 +165,7 @@
   "openssh":
     modular: false
     check: BinaryStrings
-    nvr_pkg: openssh-clients-9.9p1-32.el10_3.rocky.0.1
+    nvr_pkg: openssh-clients-9.9p1-33.el10_3.rocky.0.1
     file: /usr/bin/ssh
     content: redhat_help_message
     value: false
@@ -246,7 +246,7 @@
   "thunderbird":
     modular: false
     check: FileContents
-    nvr_pkg: thunderbird-140.16.0-1.el10_2
+    nvr_pkg: thunderbird-153.6.0-1.el10_2
     file: /usr/lib64/thunderbird/defaults/pref/all-redhat.js
     content: Rocky
     value: true
