@@ -1,0 +1,18 @@
+
+================================================================================
+Running:
+	dnf --verbose repoclosure --repofrompath BaseOS,/media/BaseOS --repo BaseOS --repofrompath Minimal,/media/Minimal --repo Minimal ...
+
+Loaded plugins: builddep, changelog, config-manager, copr, debug, debuginfo-install, download, generate_completion_cache, groups-manager, needs-restarting, playground, repoclosure, repodiff, repograph, repomanage, reposync
+DNF version: 4.7.0
+cachedir: /var/cache/dnf
+Added BaseOS repo from /media/BaseOS
+Added Minimal repo from /media/Minimal
+User-Agent: constructed: 'libdnf (Rocky Linux 8.6; generic; Linux.x86_64)'
+repo: downloading from remote: BaseOS
+BaseOS                                           74 MB/s | 2.6 MB     00:00
+BaseOS: using metadata from Sun 15 May 2022 08:59:01 PM UTC.
+repo: downloading from remote: Minimal
+Minimal                                         128 kB/s | 384  B     00:00
+Minimal: using metadata from Sun 15 May 2022 08:59:06 PM UTC.
+Completion plugin: Generating completion cache...

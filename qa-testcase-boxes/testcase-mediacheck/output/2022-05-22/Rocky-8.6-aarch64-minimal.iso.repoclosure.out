@@ -1,0 +1,16 @@
+
+================================================================================
+Running:
+	dnf --verbose repoclosure --repofrompath BaseOS,/media/BaseOS --repo BaseOS --repofrompath Minimal,/media/Minimal --repo Minimal ...
+
+Loaded plugins: builddep, changelog, config-manager, copr, debug, debuginfo-install, download, generate_completion_cache, groups-manager, needs-restarting, playground, repoclosure, repodiff, repograph, repomanage, reposync
+DNF version: 4.7.0
+cachedir: /var/cache/dnf
+Added BaseOS repo from /media/BaseOS
+Added Minimal repo from /media/Minimal
+User-Agent: constructed: 'libdnf (Rocky Linux 8.6; generic; Linux.x86_64)'
+repo: using cache for: BaseOS
+BaseOS: using metadata from Sun 15 May 2022 08:59:01 PM UTC.
+repo: using cache for: Minimal
+Minimal: using metadata from Sun 15 May 2022 08:59:06 PM UTC.
+Last metadata expiration check: 1:35:23 ago on Sun 22 May 2022 07:10:25 PM UTC.

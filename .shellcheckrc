@@ -1,0 +1,8 @@
+# Disable specific warnings
+disable=SC1091,SC1901,SC2034,SC2154,SC2329
+
+# Specify shell dialect
+shell=bash
+
+# Allow external sources
+external-sources=true

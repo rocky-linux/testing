@@ -1,0 +1,6 @@
+[peridot_ppc64le]
+name=peridot_ppc64le
+baseurl=https://yumrepofs.build.resf.org/v1/projects/55b17281-bc54-4929-8aca-a8a11d628738/repo/all/ppc64le
+gpgcheck=0
+enabled=1
+priority=10

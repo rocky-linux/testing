@@ -1,0 +1,18 @@
+
+================================================================================
+Running:
+	dnf --verbose repoclosure --repofrompath AppStream,/media/AppStream --repo AppStream --repofrompath BaseOS,/media/BaseOS --repo BaseOS ...
+
+Loaded plugins: builddep, changelog, config-manager, copr, debug, debuginfo-install, download, generate_completion_cache, groups-manager, needs-restarting, playground, repoclosure, repodiff, repograph, repomanage, reposync
+DNF version: 4.7.0
+cachedir: /var/cache/dnf
+Added AppStream repo from /media/AppStream
+Added BaseOS repo from /media/BaseOS
+User-Agent: constructed: 'libdnf (Rocky Linux 8.6; generic; Linux.x86_64)'
+repo: downloading from remote: AppStream
+AppStream                                        50 MB/s | 7.8 MB     00:00
+AppStream: using metadata from Sun 15 May 2022 09:01:50 PM UTC.
+repo: using cache for: BaseOS
+BaseOS: using metadata from Sun 15 May 2022 08:59:01 PM UTC.
+Last metadata expiration check: 0:00:01 ago on Sun 22 May 2022 07:39:31 PM UTC.
+Completion plugin: Generating completion cache...

@@ -1,0 +1,36 @@
+anaconda                      anaconda-core-40.22.3.30-1.el10.rocky.0.2       x86_64      SUCCESS
+cloud-init                    cloud-init-24.4-5.el10.0.1                      noarch      SUCCESS
+cockpit-composer              cockpit-composer-53-1.el10.rocky.0.1            noarch      FAIL, needs fine tuning, RHEL in README.md with no replacement with Enterprise Linux
+crash                         crash-9.0.0-1.el10                              src         SUCCESS
+dhcp                          dhcp-4.4.3-13.P1.el10                           src         SUCCESS
+dnf                           python3-dnf-4.20.0-14.el10.rocky.0.1            noarch      SUCCESS
+dnf5                          python3-libdnf5-5.1.12-1.el10.rocky.0.1         x86_64      SUCCESS
+firefox                       firefox-128.10.0-1.el10_0.0.1                   x86_64      SUCCESS
+fwupd-efi                     fwupd-efi-1.6-3.el10.rocky.0.2                  x86_64      SUCCESS
+gcc                           gcc-14.2.1-7.el10                               x86_64      SUCCESS
+gdb                           gdb-headless-14.2-4.1.el10_0                    x86_64      SUCCESS
+gnome-initial-setup           gnome-initial-setup-46.alpha-15.el10_0          x86_64      SUCCESS
+gnome-session                 gnome-session-46.0-8.el10_0.rocky.0.2           src         SUCCESS
+gnome-settings-daemon         gnome-settings-daemon-47.2-5.el10.rocky.0.1     src         SUCCESS
+gnome-shell                   gnome-shell-47.4-2.el10.rocky.0.2               src         SUCCESS
+gnome-tour                    gnome-tour-46.0-4.el10.rocky.0.1                src         SUCCESS
+grub2                         grub2-efi-x64-2.12-14.el10_0                    x86_64      SUCCESS
+ima-evm-utils                 ima-evm-utils-1.6.2-1.el10.rocky.0.2            x86_64      SUCCESS
+kernel                        kernel-core-6.12.0-88.el10                      x86_64      SUCCESS
+libdnf                        libdnf-0.73.1-10.el10.rocky.0.1                 x86_64      SUCCESS
+nginx                         nginx-1.26.3-1.el10                             x86_64      no r10 branch in patches/nginx but in the all portion of patch.yml
+openscap                      openscap-1.3.12-2.el8_10.rocky.1.0              x86_64      SUCCESS
+osbuild                       osbuild-149-1.el10.rocky.0.2                    noarch      SUCCESS
+osbuild-composer              osbuild-composer-141-1.el10.rocky.0.6           src         SUCCESS
+PackageKit                    PackageKit-1.2.8-8.el10                         x86_64      SUCCESS
+redhat-rpm-config             redhat-rpm-config-288-1.el10_0.1                noarch      SUCCESS
+scap-security-guide           scap-security-guide-0.1.76-2.el10.rocky.0.2     src         SUCCESS
+shim                          shim-15.8-3.el10                                src         SUCCESS
+shim-unsigned-aarch64         shim-unsigned-aarch64-15.8-2.el10               src         SUCCESS
+shim-unsigned-x64             him-unsigned-x64-15.8-2.el10                    src         SUCCESS
+subscription-manager          subscription-manager-1.30.7-1.el10.rocky.0.1    x86_64      SUCCESS
+subscription-manager-cockpit  subscription-manager-cockpit-7-1.el10.rocky.0.1 src         SUCCESS
+systemd                       systemd-257-11.el10                             src         SUCCESS
+thunderbird                   thunderbird-128.10.0-1.el10_0                   x86_64      SUCCESS
+WALinuxAgent                  WALinuxAgent-2.13.1.1-1.el10                    noarch      SUCCESS
+

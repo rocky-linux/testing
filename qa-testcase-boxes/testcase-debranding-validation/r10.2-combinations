@@ -1,0 +1,31 @@
+anaconda                      anaconda-core-40.22.3.46-1.el10.rocky.0.6         x86_64  SUCCESS
+cloud-init                    cloud-init-24.4-7.el10.0.1                        noarch  SUCCESS
+crash                         crash-9.0.1-1.el10                                src     SUCCESS
+dnf                           python3-dnf-4.20.0-22.el10_2.rocky.0.1            noarch  SUCCESS
+dnf5                          python3-libdnf5-5.1.12-1.el10.rocky.0.1           x86_64  SUCCESS
+firefox                       firefox-140.10.2-1.el10_2                         x86_64  SUCCESS
+fwupd-efi                     fwupd-efi-1.6-7.el10_2                            x86_64  SUCCESS
+gcc                           gcc-14.3.1-4.4.el10                               x86_64  SUCCESS
+gdb                           gdb-headless-16.3-3.el10                          x86_64  SUCCESS, IN YAML BUT DEPRECATED
+gnome-initial-setup           gnome-initial-setup-46.7-3.el10.rocky.0.1         x86_64  WARN, IN YAML BUT DEPRECATED
+gnome-session                 gnome-session-46.0-11.el10                        src     SKIPPED NOT IN YAML
+gnome-settings-daemon         gnome-settings-daemon-47.2-10.el10_2.rocky.0.2    src     SUCCESS
+gnome-shell                   gnome-shell-49.4-3.el10_2.rocky.0.2               src     SUCCESS
+gnome-tour                    gnome-tour-46.0-4.el10.rocky.0.1                  src     SUCCESS
+grub2                         grub2-efi-x64-2.12-46.el10_2                      x86_64  SUCCESS
+ima-evm-utils                 ima-evm-utils-1.6.2-4.el10.rocky.0.2              x86_64  SUCCESS
+image-builder                 image-builder-51-1.el10.rocky.0.1                 x86_64  IN YAML BUT DEPRECATED
+kernel                        kernel-core-6.12.0-211.16.1.el10_2                x86_64  SUCCESS
+libdnf                        libdnf-0.73.1-15.el10_2.rocky.0.1                 x86_64  SUCCESS
+nginx                         nginx-1.26.3-6.el10_2.3                           x86_64  IN YAML BUT NO PATCH FOR 10 IN REPO
+openssh                       openssh-clients-9.9p1-23.el10_2.rocky.0.1         x86_64  SUCCESS
+osbuild                       osbuild-174-1.el10.rocky.0.3                      noarch  SUCCESS
+osbuild-composer              osbuild-composer-164-1.el10.rocky.0.8             src     SUCCESS
+PackageKit                    PackageKit-1.2.8-8.el10                           x86_64  SUCCESS, IN YAML BUT DEPRECATED
+redhat-rpm-config             redhat-rpm-config-295-1.el10.rocky.0.2            noarch  SUCCESS
+scap-security-guide           scap-security-guide-0.1.80-1.el10_1.rocky.1.1     src     SUCCESS
+shim                          shim-16.1-1.el10                                  src     SKIPPED NOT IN YAML
+subscription-manager          subscription-manager-1.30.12-1.el10.rocky.0.1     x86_64  SUCCESS
+subscription-manager-cockpit  subscription-manager-cockpit-13-1.el10.rocky.0.1  src     SUCCESS
+systemd                       systemd-257-23.el10_2.1.rocky.0.1                 src     SUCCESS
+thunderbird                   thunderbird-140.10.1-1.el10_2                     x86_64  SUCCESS

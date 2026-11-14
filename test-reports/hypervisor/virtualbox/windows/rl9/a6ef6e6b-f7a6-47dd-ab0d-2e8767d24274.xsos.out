@@ -1,0 +1,128 @@
+DMIDECODE
+  BIOS:
+    Vend: innotek GmbH
+    Vers: VirtualBox
+    Date: 12/01/2006
+    BIOS Rev:
+    FW Rev:  
+  System:
+    Mfr:  innotek GmbH
+    Prod: VirtualBox
+    Vers: 1.2
+    Ser:  ⣿
+    UUID: ⣿⣿⣿⣿⣿⣿⣿⣿-⣿⣿⣿⣿-⣿⣿⣿⣿-⣿⣿⣿⣿-⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+  CPU:
+    0 of 0 CPU sockets populated, 0 cores/0 threads per CPU
+    0 total cores, 0 total threads
+    Mfr: 
+    Fam: 
+    Freq:
+    Vers:
+  Memory:
+    Total: 0 MiB (0 GiB)
+    DIMMs: 0 of 0 populated
+    MaxCapacity: 0 MiB (0 GiB / 0.00 TiB)
+
+OS
+  Hostname: SCRUBBED
+  Distro:   [redhat-release] Rocky Linux release 9.0 (Blue Onyx)
+            [rocky-release] Rocky Linux release 9.0 (Blue Onyx)
+            [os-release] Rocky Linux 9.0 (Blue Onyx) 9.0 (Blue Onyx)
+  RHN:      (missing)
+  RHSM:     (missing)
+  YUM:      1 enabled plugins: debuginfo-install
+  Runlevel: N 3  (default multi-user)
+  SELinux:  enforcing  (default enforcing)
+  Arch:     mach=x86_64  cpu=x86_64  platform=x86_64
+  Kernel:
+    Booted kernel:  5.14.0-70.13.1.el9_0.x86_64
+    GRUB default:     
+    Build version:
+      Linux version 5.14.0-70.13.1.el9_0.x86_64 (mockbuild@dal1-prod-builder001.bld.equ.rockylinux.org) (gcc (GCC) 11.2.1 20220127 (Red Hat 11.2.1-9), GNU ld 
+      version 2.35.2-17.el9) #1 SMP PREEMPT Wed May 25 21:01:57 UTC 2022
+    Booted kernel cmdline:
+      BOOT_IMAGE=(hd0,gpt2)/vmlinuz-5.14.0-70.13.1.el9_0.x86_64 root=/dev/mapper/rl_rocky9-root ro crashkernel=1G-4G:192M,4G-64G:256M,64G-:512M 
+      resume=/dev/mapper/rl_rocky9-swap rd.lvm.lv=rl_rocky9/root rd.lvm.lv=rl_rocky9/swap
+    GRUB default kernel cmdline:  
+      
+    Taint-check: 0  (kernel untainted)
+    - - - - - - - - - - - - - - - - - - -
+  Sys time:  Mon Jun 20 11:26:46 AM CEST 2022
+  Boot time: Mon Jun 20 10:15:01 AM CEST 2022
+  Time Zone: Europe/Belgrade
+  Uptime:    1:11,  1 user
+  LoadAvg:   [2 CPU] 0.00 (0%), 0.02 (1%), 0.00 (0%)
+  /proc/stat:
+    procs_running: 1   procs_blocked: 0    processes [Since boot]: 11582
+    cpu [Utilization since boot]:
+      us 0%, ni 0%, sys 0%, idle 99%, iowait 0%, irq 0%, sftirq 0%, steal 0%
+
+CPU
+  2 logical processors (2 CPU cores)
+  1 Intel Pentium CPU G4560 @ 3.50GHz (flags: aes,constant_tsc,ht,lm,nx,pae,rdrand) 
+  └─2 threads / 2 cores each
+
+MEMORY
+  Stats graphed as percent of MemTotal:
+    MemUsed    ▊▊▊▊▊▊▊▊▊▊▊▊▊▊....................................  28.4%
+    Buffers    ..................................................   0.3%
+    Cached     ▊▊▊▊▊▊▊...........................................  14.4%
+    HugePages  ..................................................   0.0%
+    Dirty      ..................................................   0.0%
+  RAM:
+    1.7 GiB total ram
+    0.5 GiB (28%) used
+    0.2 GiB (14%) used excluding Buffers/Cached
+    0 GiB (0%) dirty
+  HugePages:
+    No ram pre-allocated to HugePages
+  THP:
+    0.01 GiB allocated to THP 
+  LowMem/Slab/PageTables/Shmem:
+    0.06 GiB (4%) of total ram used for Slab
+    0 GiB (0%) of total ram used for PageTables
+    0 GiB (0%) of total ram used for Shmem
+  Swap:
+    0 GiB (0%) used of 0.8 GiB total
+
+STORAGE
+  Whole Disks from /proc/partitions:
+    1 disks, totaling 8 GiB (0.01 TiB)
+    - - - - - - - - - - - - - - - - - - - - -
+    Disk 	Size in GiB
+    ----	-----------
+    sda 	8
+
+  Disk layout from lsblk:
+    NAME               MAJ:MIN RM  SIZE RO TYPE MOUNTPOINTS
+    sda                  8:0    0    8G  0 disk 
+    ├─sda1               8:1    0  600M  0 part /boot/efi
+    ├─sda2               8:2    0    1G  0 part /boot
+    └─sda3               8:3    0  6.4G  0 part 
+      ├─rl_rocky9-root 253:0    0  5.6G  0 lvm  /
+      └─rl_rocky9-swap 253:1    0  820M  0 lvm  [SWAP]
+    sr0                 11:0    1 1024M  0 rom  
+
+  Filesystem usage from df:
+    Filesystem                 1K-blocks    Used Available Use% Mounted on
+    /dev/mapper/rl_rocky9-root   5871616 1025108   4846508  18% /
+    /dev/sda2                    1038336  194368    843968  19% /boot
+    /dev/sda1                     613184    7136    606048   2% /boot/efi
+
+DM-MULTIPATH
+  [No paths detected]
+
+LSPCI
+  Net:
+    (1) Red Hat, Inc. Virtio network device
+  Storage:
+    (1) Red Hat, Inc. Virtio SCSI (rev 01)
+  VGA:
+    VMware SVGA II Adapter
+
+ETHTOOL
+  Interface Status:
+    enp0s3  0000:00:03.0  link=up Unknown! unknown! (autoneg=N)  rx ring 256/256  drv virtio_net v1.0.0 / fw UNKNOWN
+  Interface Errors:
+    [None]
+

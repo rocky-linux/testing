@@ -1,0 +1,15 @@
+[peridot]
+name=peridot
+#baseurl=https://yumrepofs.build.resf.org/v1/projects/dff20351-7d36-4f7c-9eea-7f039f5026d0/repo/all/$basearch
+baseurl=https://yumrepofs.build.resf.org/v1/projects/6202c09e-6252-4d3a-bcd3-9c7751682970/repo/all/$basearch
+gpgcheck=0
+enabled=1
+priority=10
+
+[peridot_AppStream]
+name=peridot_AppStream
+#baseurl=https://yumrepofs.build.resf.org/v1/projects/dff20351-7d36-4f7c-9eea-7f039f5026d0/repo/all/$basearch
+baseurl=https://yumrepofs.build.resf.org/v1/projects/6202c09e-6252-4d3a-bcd3-9c7751682970/repo/all/$basearch
+gpgcheck=0
+enabled=1
+priority=10

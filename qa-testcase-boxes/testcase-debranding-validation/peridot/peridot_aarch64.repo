@@ -1,0 +1,12 @@
+[peridot_aarch64]
+name=peridot_aarch64
+baseurl=https://yumrepofs.build.resf.org/v1/projects/df5bcbfc-ba83-4da8-84d6-ae0168921b4d/repo/all/aarch64
+gpgcheck=0
+enabled=1
+priority=10
+
+# Rocky 9.0 - 55b17281-bc54-4929-8aca-a8a11d628738
+# Rocky 9.1 - 0048077b-1573-4cb7-8ba7-cce823857ba5
+# Rocky 9.2 - dff20351-7d36-4f7c-9eea-7f039f5026d0
+# Rocky 9.3 - 6202c09e-6252-4d3a-bcd3-9c7751682970
+# Rocky 9.4 - df5bcbfc-ba83-4da8-84d6-ae0168921b4d

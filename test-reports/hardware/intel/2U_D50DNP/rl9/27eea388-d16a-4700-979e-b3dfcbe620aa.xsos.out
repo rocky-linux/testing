@@ -1,0 +1,127 @@
+DMIDECODE
+  BIOS:
+    Vend: Intel Corporation
+    Vers: SE5C6301.86B.7314.D09.2202231344
+    Date: 02/23/2022
+    BIOS Rev:
+    FW Rev:  
+  System:
+    Mfr:  Intel Corporation
+    Prod: D50DNP
+    Vers: ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+    Ser:  ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+    UUID: ⣿⣿⣿⣿⣿⣿⣿⣿-⣿⣿⣿⣿-⣿⣿⣿⣿-⣿⣿⣿⣿-⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+  CPU:
+    2 of 2 CPU sockets populated, 56 cores/112 threads per CPU
+    112 total cores, 224 total threads
+    Mfr:  Intel(R) Corporation
+    Fam:  Xeon
+    Freq: 1900 MHz
+    Vers: Genuine Intel(R) CPU 0000%@
+  Memory:
+    Total: 262144 MiB (256 GiB)
+    DIMMs: 8 of 48 populated
+    MaxCapacity: 6291456 MiB (6144 GiB / 6.00 TiB)
+
+OS
+  Hostname: SCRUBBED
+  Distro:   [redhat-release] Rocky Linux release 9.0 (Blue Onyx)
+            [rocky-release] Rocky Linux release 9.0 (Blue Onyx)
+            [os-release] Rocky Linux 9.0 (Blue Onyx) 9.0 (Blue Onyx)
+  RHN:      (missing)
+  RHSM:     (missing)
+  YUM:      1 enabled plugins: debuginfo-install
+  Runlevel: N 3  (default multi-user)
+  SELinux:  enforcing  (default enforcing)
+  Arch:     mach=x86_64  cpu=x86_64  platform=x86_64
+  Kernel:
+    Booted kernel:  5.14.0-70.13.1.el9_0.x86_64
+    GRUB default:     
+    Build version:
+      Linux version 5.14.0-70.13.1.el9_0.x86_64 (mockbuild@dal1-prod-builder001.bld.equ.rockylinux.org) (gcc (GCC) 11.2.1 20220127 (Red Hat 11.2.1-9), GNU ld version 2.35.2-17.el9) #1 SMP PREEMPT Wed May 25 
+      21:01:57 UTC 2022
+    Booted kernel cmdline:
+      BOOT_IMAGE=(hd0,gpt2)/vmlinuz-5.14.0-70.13.1.el9_0.x86_64 root=/dev/mapper/rl-root ro crashkernel=1G-4G:192M,4G-64G:256M,64G-:512M resume=/dev/mapper/rl-swap rd.lvm.lv=rl/root rd.lvm.lv=rl/swap
+    GRUB default kernel cmdline:  
+      
+    Taint-check: 0  (kernel untainted)
+    - - - - - - - - - - - - - - - - - - -
+  Sys time:  Thu Jun 23 04:42:55 PM CDT 2022
+  Boot time: Thu Jun 23 04:36:28 PM CDT 2022
+  Time Zone: America/Chicago
+  Uptime:    6 min,  1 user
+  LoadAvg:   [112 CPU] 0.03 (0%), 0.07 (0%), 0.04 (0%)
+  /proc/stat:
+    procs_running: 1   procs_blocked: 0    processes [Since boot]: 20158
+    cpu [Utilization since boot]:
+      us 0%, ni 0%, sys 0%, idle 100%, iowait 0%, irq 0%, sftirq 0%, steal 0%
+
+CPU
+  112 logical processors (112 CPU cores)
+  2 Genuine Intel CPU 0000%@ (flags: aes,constant_tsc,ht,lm,nx,pae,rdrand,vmx) 
+  └─56 threads / 56 cores each
+
+MEMORY
+  Stats graphed as percent of MemTotal:
+    MemUsed    ..................................................   0.8%
+    Buffers    ..................................................   0.0%
+    Cached     ..................................................   0.1%
+    HugePages  ..................................................   0.0%
+    Dirty      ..................................................   0.0%
+  RAM:
+    251.2 GiB total ram
+    2 GiB (1%) used
+    1.6 GiB (1%) used excluding Buffers/Cached
+    0 GiB (0%) dirty
+  HugePages:
+    No ram pre-allocated to HugePages
+  THP:
+    0.02 GiB allocated to THP 
+  LowMem/Slab/PageTables/Shmem:
+    0.46 GiB (0%) of total ram used for Slab
+    0 GiB (0%) of total ram used for PageTables
+    0.01 GiB (0%) of total ram used for Shmem
+  Swap:
+    0 GiB (0%) used of 4 GiB total
+
+STORAGE
+  Whole Disks from /proc/partitions:
+    0 disks, totaling 0 GiB (0.00 TiB)
+    - - - - - - - - - - - - - - - - - - - - -
+    Disk 	Size in GiB
+    ----	-----------
+
+  Disk layout from lsblk:
+    NAME        MAJ:MIN RM  SIZE RO TYPE MOUNTPOINTS
+    nvme0n1     259:0    0  1.7T  0 disk 
+    ├─nvme0n1p1 259:2    0  600M  0 part /boot/efi
+    ├─nvme0n1p2 259:3    0    1G  0 part /boot
+    └─nvme0n1p3 259:4    0  1.7T  0 part 
+      ├─rl-root 253:0    0   70G  0 lvm  /
+      ├─rl-swap 253:1    0    4G  0 lvm  [SWAP]
+      └─rl-home 253:2    0  3.4T  0 lvm  /home
+    nvme1n1     259:1    0  1.7T  0 disk 
+    └─nvme1n1p1 259:5    0  1.7T  0 part 
+      └─rl-home 253:2    0  3.4T  0 lvm  /home
+
+  Filesystem usage from df:
+    Filesystem           1K-blocks     Used  Available Use% Mounted on
+    /dev/mapper/rl-root   73364480  1576596   71787884   3% /
+    /dev/nvme0n1p2         1038336   195388     842948  19% /boot
+    /dev/nvme0n1p1          613184     7136     606048   2% /boot/efi
+    /dev/mapper/rl-home 3669689652 25620804 3644068848   1% /home
+
+LSPCI
+  Net:
+    (1) Intel Corporation Ethernet Controller X710 for 10GBASE-T (rev 02)
+  Storage:
+  VGA:
+    ASPEED Technology, Inc. ASPEED Graphics Family (rev 52)
+
+ETHTOOL
+  Interface Status:
+    eno0             0000:17:00.0          link=up 1000Mb/s full (autoneg=Y)  rx ring 512/4096  drv i40e v5.14.0-70.13.1.el9_0.x86_64 / fw 8.40 0x8000b620 1.2992.0
+    enp0s20f0u5u3c2  usb-0000:00:14.0-5.3  link=DOWN                          rx ring UNKNOWN   drv cdc_ether v5.14.0-70.13.1.el9_0.x86_64 / fw CDC Ethernet Device
+  Interface Errors:
+    [None]
+

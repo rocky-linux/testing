@@ -1,0 +1,27 @@
+# rocky.repo
+#
+# Peridot Project for Rocky Linux 9.4 = df5bcbfc-ba83-4da8-84d6-ae0168921b4d
+# Repository names from https://peridot.build.resf.org/df5bcbfc-ba83-4da8-84d6-ae0168921b4d/repositories
+#
+
+[baseos]
+name=Rocky Linux Peridot 9.4 - BaseOS
+baseurl=https://yumrepofs.build.resf.org/v1/projects/df5bcbfc-ba83-4da8-84d6-ae0168921b4d/repo/BaseOS/$basearch
+gpgcheck=0
+enabled=1
+priority=10
+
+[appstream]
+name=Rocky Linux Peridot 9.4 - AppStream
+baseurl=https://yumrepofs.build.resf.org/v1/projects/df5bcbfc-ba83-4da8-84d6-ae0168921b4d/repo/AppStream/$basearch
+gpgcheck=0
+enabled=1
+priority=10
+
+[crb]
+name=Rocky Linux Peridot 9.4 - CRB
+baseurl=https://yumrepofs.build.resf.org/v1/projects/df5bcbfc-ba83-4da8-84d6-ae0168921b4d/repo/CRB/$basearch
+gpgcheck=0
+enabled=1
+priority=10
+

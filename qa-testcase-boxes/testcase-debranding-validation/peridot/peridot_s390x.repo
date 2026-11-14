@@ -1,0 +1,6 @@
+[peridot_s390x]
+name=peridot_s390x
+baseurl=https://yumrepofs.build.resf.org/v1/projects/55b17281-bc54-4929-8aca-a8a11d628738/repo/all/s390x
+gpgcheck=0
+enabled=1
+priority=10

@@ -1,0 +1,149 @@
+
+================================================================================
+Derived URLs...
+
+
+================================================================================
+Verifying: http://dl.rockylinux.org/pub/rocky/8/isos exists...
+
+
+================================================================================
+Verifying: http://dl.rockylinux.org/pub/rocky/8/isos/x86_64/Rocky-8.6-x86_64-minimal.iso exists...
+
+
+================================================================================
+Downloading: http://dl.rockylinux.org/pub/rocky/8/isos/x86_64/CHECKSUM ...
+
+*   Trying 146.75.94.132...
+* TCP_NODELAY set
+* Connected to dl.rockylinux.org (146.75.94.132) port 80 (#0)
+> GET /pub/rocky/8/isos/x86_64/CHECKSUM?v=4c92e505b3679b427adb43ac36541725 HTTP/1.1
+> Host: dl.rockylinux.org
+> User-Agent: curl/7.61.1
+> Accept: */*
+>
+< HTTP/1.1 200 OK
+< Content-Type: application/octet-stream
+< Server: nginx
+< Last-Modified: Sun, 15 May 2022 22:25:57 GMT
+< ETag: "62817df5-1c2"
+< Accept-Ranges: bytes
+< Via: 1.1 varnish, 1.1 varnish
+< Content-Length: 450
+< Date: Sun, 22 May 2022 19:04:17 GMT
+< Connection: keep-alive
+< X-Served-By: cache-mdw17331-MDW, cache-bur-kbur8200144-BUR
+< X-Cache: MISS, MISS
+< X-Cache-Hits: 0, 0
+< X-Timer: S1653246258.501824,VS0,VE80
+<
+{ [450 bytes data]
+* Connection #0 to host dl.rockylinux.org left intact
+
+================================================================================
+Downloading: http://dl.rockylinux.org/pub/rocky/8/isos/x86_64/CHECKSUM.sig ...
+
+*   Trying 146.75.94.132...
+* TCP_NODELAY set
+* Connected to dl.rockylinux.org (146.75.94.132) port 80 (#0)
+> GET /pub/rocky/8/isos/x86_64/CHECKSUM.sig?v=4c92e505b3679b427adb43ac36541725 HTTP/1.1
+> Host: dl.rockylinux.org
+> User-Agent: curl/7.61.1
+> Accept: */*
+>
+< HTTP/1.1 200 OK
+< Content-Type: application/octet-stream
+< Server: nginx
+< Last-Modified: Mon, 16 May 2022 02:41:30 GMT
+< ETag: "6281b9da-236"
+< Accept-Ranges: bytes
+< Via: 1.1 varnish, 1.1 varnish
+< Content-Length: 566
+< Date: Sun, 22 May 2022 19:04:17 GMT
+< Connection: keep-alive
+< X-Served-By: cache-mdw17347-MDW, cache-bur-kbur8200158-BUR
+< X-Cache: MISS, MISS
+< X-Cache-Hits: 0, 0
+< X-Timer: S1653246258.783926,VS0,VE71
+<
+{ [566 bytes data]
+* Connection #0 to host dl.rockylinux.org left intact
+
+
+================================================================================================================================================================
+Downloading: Rocky-8.6-x86_64-minimal.iso ...
+
+
+Downloading: Rocky-8.6-x86_64-minimal.iso ...
+
+*   Trying 146.75.94.132...
+* TCP_NODELAY set
+* Connected to dl.rockylinux.org (146.75.94.132) port 80 (#0)
+> GET /pub/rocky/8/isos/x86_64/Rocky-8.6-x86_64-minimal.iso?v=4c92e505b3679b427adb43ac36541725 HTTP/1.1
+> Host: dl.rockylinux.org
+> User-Agent: curl/7.61.1
+> Accept: */*
+>
+< HTTP/1.1 200 OK
+< Content-Type: application/octet-stream
+< Server: nginx
+< Last-Modified: Sun, 15 May 2022 22:21:52 GMT
+< ETag: "62817d00-87100000"
+< Via: 1.1 varnish, 1.1 varnish
+< Cache-Control: max-age=11059200, public, stale-while-revalidate=86400, stale-if-error=259200
+< Accept-Ranges: bytes
+< Date: Sun, 22 May 2022 19:04:17 GMT
+< Age: 0
+< Connection: keep-alive
+< X-Served-By: cache-mdw17328-MDW, cache-bur-kbur8200047-BUR
+< X-Cache: MISS, MISS
+< X-Cache-Hits: 0, 0
+< X-Timer: S1653246258.916143,VS0,VE75
+< Content-Length: 2265972736
+<
+{ [4380 bytes data]
+* Connection #0 to host dl.rockylinux.org left intact
+
+================================================================================
+Importing: RPM-GPG-KEY-rockyofficial ...
+
+gpg: key 15AF5DAC6D745A60: "Release Engineering <infrastructure@rockylinux.org>" not changed
+gpg: Total number processed: 1
+gpg:              unchanged: 1
+
+
+================================================================================================================================================================
+Verifying gpg signature: /home/rocky/testing/CHECKSUM.sig ...
+
+
+Verifying gpg signature: /home/rocky/testing/CHECKSUM.sig ...
+
+gpg: assuming signed data in '/home/rocky/testing/CHECKSUM'
+gpg: Signature made Mon 16 May 2022 02:41:30 AM UTC
+gpg:                using RSA key 7051C470A929F454CEBE37B715AF5DAC6D745A60
+gpg: Good signature from "Release Engineering <infrastructure@rockylinux.org>" [unknown]
+gpg: WARNING: This key is not certified with a trusted signature!
+gpg:          There is no indication that the signature belongs to the owner.
+Primary key fingerprint: 7051 C470 A929 F454 CEBE  37B7 15AF 5DAC 6D74 5A60
+
+
+================================================================================================================================================================
+Verifying sha256sum: /home/rocky/testing/Rocky-8.6-x86_64-minimal.iso ...
+
+
+Verifying sha256sum: /home/rocky/testing/Rocky-8.6-x86_64-minimal.iso ...
+
+Rocky-8.6-x86_64-minimal.iso: OK
+
+
+================================================================================================================================================================
+Verifying internal ISO md5: /home/rocky/testing/Rocky-8.6-x86_64-minimal.iso ...
+
+
+Verifying internal ISO md5: /home/rocky/testing/Rocky-8.6-x86_64-minimal.iso ...
+
+
+The media check is complete, the result is: PASS.
+
+It is OK to use this media.
+Press [Esc] to abort check.

@@ -1,0 +1,273 @@
+---
+"all":
+  "anaconda":
+    modular: false
+    check: FileContents
+    nvr_pkg: anaconda-core-40.22.3.46-1.el10.rocky.0.6
+    file: /usr/lib64/python3.12/site-packages/pyanaconda/core/constants.py
+    content: Used by EL derivatives for minimal images only
+    value: true
+    pkg_arch:
+    source:
+  "cloud-init":
+    modular: false
+    check: FileContents
+    nvr_pkg: cloud-init-24.4-7.el10.0.1
+    file: /usr/lib/python3.12/site-packages/cloudinit/distros/__init__.py
+    content: rocky
+    value: true
+    pkg_arch: noarch
+    source:
+  "crash":
+    modular: false
+    check: FileContents
+    nvr_pkg: crash-9.0.1-1.el10
+    file: crash.spec
+    content: Rocky Linux
+    value: true
+    pkg_arch: src
+    source: koji
+  "dnf":
+    modular: false
+    check: FileContents
+    nvr_pkg: python3-dnf-4.20.0-22.el10_2.rocky.0.1
+    file: /usr/lib/python3.12/site-packages/dnf/const.py
+    content: "BUGTRACKER='https://bugs.rockylinux.org/'"
+    value: true
+    pkg_arch: noarch
+    source:
+  "dnf5":
+    modular: false
+    check: BinaryStrings
+    nvr_pkg: python3-libdnf5-5.1.12-1.el10.rocky.0.1
+    file: /usr/lib64/python3.12/site-packages/libdnf5/_conf.so
+    content: https://bugs.rockylinux.org/
+    value: true
+    pkg_arch:
+    source:
+  "firefox":
+    modular: false
+    check: FileContents
+    nvr_pkg: firefox-140.10.2-1.el10_2
+    file: /usr/lib64/firefox/defaults/preferences/all-redhat.js
+    content: https://rockylinux.org
+    value: true
+    pkg_arch:
+    source:
+  "fwupd-efi":
+    modular: false
+    check: BinaryStrings
+    nvr_pkg: fwupd-efi-1.6-7.el10_2
+    file: /usr/libexec/fwupd/efi/fwupdx64.efi.signed
+    content: "mailto:security@rockylinux.org"
+    value: true
+    pkg_arch:
+    source:
+  "gcc":
+    modular: false
+    check: FileContents
+    nvr_pkg: gcc-14.3.1-4.4.el10
+    file: /usr/share/man/man1/gcc.1.gz
+    content: https://bugs.rockylinux.org
+    value: true
+    pkg_arch:
+    source:
+  "gdb":
+    modular: false
+    check: BinaryStrings
+    nvr_pkg: gdb-headless-16.3-3.el10
+    file: /usr/libexec/gdb
+    content: Rocky Linux
+    value: true
+    pkg_arch:
+    source:
+  "gnome-initial-setup":
+    modular: false
+    check: FileContents
+    nvr_pkg: gnome-initial-setup-46.7-3.el10.rocky.0.1
+    file: gnome-initial-setup.spec
+    content: '^#Patch\: *0001-RHEL10-style-illustrations.patch'
+    value: true
+    pkg_arch: src
+    source: stg
+  "gnome-session":
+    modular: false
+    check: FileContents
+    nvr_pkg: gnome-session-46.0-11.el10
+    file: gnome-session.spec
+    content: Disable subman dependencies
+    value: true
+    pkg_arch: src
+    source: koji
+  "gnome-settings-daemon":
+    modular: false
+    check: FileContents
+    nvr_pkg: gnome-settings-daemon-47.2-10.el10_2.rocky.0.2
+    file: gnome-settings-daemon.spec
+    content: Disable subman dependencies
+    value: true
+    pkg_arch: src
+    source: koji
+  "gnome-shell":
+    modular: false
+    check: FileContents
+    nvr_pkg: gnome-shell-49.4-3.el10_2.rocky.0.2
+    file: gnome-shell.spec
+    content: 0001-Add-custom-start-logo.patch
+    value: true
+    pkg_arch: src
+    source: koji
+  "gnome-tour":
+    modular: false
+    check: FileContents
+    nvr_pkg: gnome-tour-46.0-4.el10.rocky.0.1
+    file: gnome-tour.spec
+    content: Use default gnome-tour illustrations
+    value: true
+    pkg_arch: src
+    source: koji
+  "grub2":
+    modular: false
+    check: BinaryStrings
+    nvr_pkg: grub2-efi-x64-2.12-46.el10_2.rocky.0.1
+    file: /boot/efi/EFI/rocky/grubx64.efi
+    content: Rocky Linux Secure Boot Root CA
+    value: true
+    pkg_arch:
+    source:
+  "ima-evm-utils":
+    modular: false
+    check: BinaryStrings
+    nvr_pkg: ima-evm-utils-1.6.2-4.el10.rocky.0.2
+    file: /etc/keys/ima/rocky-imarelease.der
+    content: Rocky Linux IMA Release Key
+    value: true
+    pkg_arch:
+    source:
+  "kernel":
+    modular: false
+    check: BinaryStrings
+    nvr_pkg: kernel-core-6.12.0-211.16.1.el10_2.0.1
+    file: /lib/modules/6.12.0-211.16.1.el10_2.0.1.x86_64/vmlinuz
+    content: Rocky Linux Secure Boot Root CA
+    value: true
+    pkg_arch:
+    source:
+  "libdnf":
+    modular: false
+    check: BinaryStrings
+    nvr_pkg: libdnf-0.73.1-15.el10_2.rocky.0.1
+    file: /usr/lib64/libdnf.so.2
+    content: https://bugs.rockylinux.org/
+    value: true
+    pkg_arch:
+    source:
+  "nginx":
+    modular: true
+    check: FileContents
+    nvr_pkg: nginx-1.26.3-6.el10_2.2
+    file: nginx.spec
+    content: Debrand default pages
+    value: true
+    pkg_arch: src
+    source:
+  "openssh":
+    modular: false
+    check: BinaryStrings
+    nvr_pkg: openssh-clients-9.9p1-23.el10_2.rocky.0.1
+    file: /usr/bin/ssh
+    content: redhat_help_message
+    value: false
+    pkg_arch:
+    source:
+  "osbuild":
+    modular: false
+    check: FileExists
+    nvr_pkg: osbuild-174-1.el10.rocky.0.3
+    file: /usr/lib/osbuild/runners/org.osbuild.rocky9
+    content: na
+    value: true
+    pkg_arch: x86_64
+    source:
+  "osbuild-composer":
+    modular: false
+    check: FileExists
+    nvr_pkg: osbuild-composer-164-1.el10.rocky.0.8
+    file: osbuild-composer.spec
+    content: repositories/rocky
+    value: true
+    pkg_arch: src
+    source: koji
+  "PackageKit":
+    modular: false
+    check: FileContents
+    nvr_pkg: PackageKit-1.2.8-8.el10
+    file: /etc/PackageKit/Vendor.conf
+    content: https://wiki.rockylinux.org/
+    value: true
+    pkg_arch:
+    source:
+  "redhat-rpm-config":
+    modular: false
+    check: FileContents
+    nvr_pkg: redhat-rpm-config-295-1.el10.rocky.0.2
+    file: /usr/lib/rpm/redhat/dist.sh
+    content: Rocky
+    value: true
+    pkg_arch: noarch
+    source:
+  "scap-security-guide":
+    modular: false
+    check: FileContents
+    nvr_pkg: scap-security-guide-0.1.80-1.el10_1.rocky.1.1
+    file: scap-security-guide.spec
+    content: DSSG_ROCKY_LINUX_DERIVATIVES_ENABLED
+    value: true
+    pkg_arch: src
+    source: koji
+  "shim":
+    modular: false
+    check: BinaryStrings
+    nvr_pkg: shim-15.8-3.el10
+    file: shimx64.efi
+    content: Rocky Linux Secure Boot Root CA
+    value: true
+    pkg_arch: src
+    source: stg
+  "subscription-manager":
+    modular: false
+    check: FileContents
+    nvr_pkg: subscription-manager-1.30.12-1.el10.rocky.0.1
+    file: /etc/dnf/plugins/subscription-manager.conf
+    content: "enabled=0"
+    value: true
+    pkg_arch:
+    source:
+  "subscription-manager-cockpit":
+    modular: false
+    check: FileContents
+    nvr_pkg: subscription-manager-cockpit-13-1.el10.rocky.0.1
+    file: subscription-manager-cockpit.spec
+    content: Remove Red Hat references
+    value: true
+    pkg_arch: src
+    source: koji
+  "systemd":
+    modular: false
+    check: FileContents
+    nvr_pkg: systemd-257-23.el10_2.1.rocky.0.1
+    file: systemd.spec
+    content: 0028-journal-change-support-URL-shown-in-the-catalog-entr.patch
+    value: false
+    pkg_arch: src
+    source: koji
+  "thunderbird":
+    modular: false
+    check: FileContents
+    nvr_pkg: thunderbird-140.10.1-1.el10_2
+    file: /usr/lib64/thunderbird/defaults/pref/all-redhat.js
+    content: Rocky
+    value: true
+    pkg_arch:
+    source:
+...
