@@ -75,7 +75,7 @@
   "firefox":
     modular: false
     check: FileContents
-    nvr_pkg: firefox-140.16.0-1.el9_8
+    nvr_pkg: firefox-153.7.0-1.el9_9
     file: /usr/lib64/firefox/defaults/preferences/all-redhat.js
     content: https://rockylinux.org
     value: true
@@ -93,7 +93,7 @@
   "gcc":
     modular: false
     check: FileContents
-    nvr_pkg: gcc-11.5.0-15.el9
+    nvr_pkg: gcc-11.5.0-17.el9_9
     file: /usr/share/man/man1/gcc.1.gz
     content: https://bugs.rockylinux.org
     value: true
@@ -156,8 +156,8 @@
   "kernel":
     modular: false
     check: BinaryStrings
-    nvr_pkg: kernel-core-5.14.0-741.9.1.el9_9
-    file: /lib/modules/5.14.0-741.9.1.el9_9.x86_64/vmlinuz
+    nvr_pkg: kernel-core-5.14.0-741.22.1.el9_9
+    file: /lib/modules/5.14.0-741.22.1.el9_9.x86_64/vmlinuz
     content: Rocky Linux Secure Boot Root CA
     value: true
     pkg_arch:
@@ -165,8 +165,8 @@
   "kernel-rt":
     modular: false
     check: BinaryStrings
-    nvr_pkg: kernel-rt-core-5.14.0-741.9.1.el9_9
-    file: /lib/modules/5.14.0-741.9.1.el9_9.x86_64+rt/vmlinuz
+    nvr_pkg: kernel-rt-core-5.14.0-741.22.1.el9_9
+    file: /lib/modules/5.14.0-741.22.1.el9_9.x86_64+rt/vmlinuz
     content: Rocky Linux Secure Boot Root CA
     value: true
     pkg_arch:
@@ -183,7 +183,7 @@
   "libreoffice":
     modular: false
     check: FileContents
-    nvr_pkg: libreoffice-7.1.8.1-15.el9_8.2
+    nvr_pkg: libreoffice-7.1.8.1-16.el9_9.1
     file: libreoffice.spec
     content: Rocky Enterprise Software Foundation
     value: true
@@ -210,7 +210,7 @@
   "nginx":
     modular: true
     check: FileContents
-    nvr_pkg: nginx-1.20.1-28.el9_8.6.rocky.0.1
+    nvr_pkg: nginx-1.20.1-32.el9_9.1.rocky.0.1
     file: /usr/share/nginx/html/404.html
     content: <a href="https://www.rockylinux.org/">
     value: true
@@ -228,7 +228,7 @@
   "openssh":
     modular: false
     check: BinaryStrings
-    nvr_pkg: openssh-clients-9.9p1-15.el9_9.rocky.0.1
+    nvr_pkg: openssh-clients-9.9p1-16.el9_9.rocky.0.1
     file: /usr/bin/ssh
     content: redhat_help_message
     value: false
@@ -318,7 +318,7 @@
   "thunderbird":
     modular: false
     check: FileContents
-    nvr_pkg: thunderbird-140.16.0-1.el9_8
+    nvr_pkg: thunderbird-153.6.0-1.el9_8
     file: /usr/lib64/thunderbird/defaults/pref/all-redhat.js
     content: Rocky
     value: true
